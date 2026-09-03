@@ -563,3 +563,39 @@ Then: repo Settings → Pages → Source = "GitHub Actions". Every push to `main
 
 *This app is 100% yours — open source, no subscriptions, no vendor lock-in. You can
 host it anywhere, move it anytime, and it will keep working.*
+
+
+---
+
+## 🔁 Automatic deploys for `max-codes-cbt-lab-2` (this build)
+
+This repository is already configured for hands-off deployment. Nothing here
+needs to be edited — it is a record of what runs and why.
+
+| Piece | Location | Behaviour |
+|---|---|---|
+| Vercel project settings | `vercel.json` | framework `vite`, `npm ci`, `npm run build`, output `dist`, SPA rewrite `/(.*) → /`, immutable cache headers for `/assets`, `/fonts`, `/katex` and 7-day cache for `/images`. |
+| Build skipping | `vercel.json → ignoreCommand` | Compares `$VERCEL_GIT_PREVIOUS_SHA` with `$VERCEL_GIT_COMMIT_SHA`; exits 0 (skip) when only docs changed, 1 (build) otherwise, and always builds when there is no previous SHA. |
+| Pre-deploy gate | `.github/workflows/ci.yml` | On push/PR to `main`: installs with `npm ci`, runs `npm run validate` (catches duplicate ids, bad option indices, missing topics) and `npm run build`, then asserts `dist/index.html`, `dist/fonts` and `dist/images` exist. A red check here means Vercel would ship a broken build — fix before merging. |
+| Deploy-hook fallback | `.github/workflows/vercel-deploy-hook.yml` | Only active if you add a `VERCEL_DEPLOY_HOOK_URL` repository secret. Use it when the project was imported without the GitHub integration. |
+| Node pinning | `.nvmrc` (20) + `package.json → engines` | Keeps local, CI and Vercel on the same Node major. |
+
+### Day-to-day workflow
+
+```bash
+# edit questions in src/data.js (or anything in src/)
+npm run validate        # catch bank errors locally
+git add -A
+git commit -m "Add 20 EEE 252 past questions"
+git push origin main    # → CI runs → Vercel rebuilds → live in ~30-60 s
+```
+
+### Watch-outs
+
+- **Never commit `dist/`** — it is gitignored; Vercel builds it.
+- **Keep `package-lock.json` committed** — `npm ci` (used by both CI and
+  Vercel) fails without it.
+- **Bump `accessVersion`** in `src/gateConfig.js` whenever you rotate the
+  access code; the change rides the same automatic deploy.
+- Large binary images (~4.5 MB in `public/images`) are fine on Vercel, but
+  compress future diagrams before adding them to keep builds fast.

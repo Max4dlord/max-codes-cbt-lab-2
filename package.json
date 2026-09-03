@@ -24,5 +24,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Max4dlord/max-codes-cbt-lab-2.git"
+  },
+  "engines": {
+    "node": ">=18.18"
   }
 }

@@ -1,0 +1,54 @@
+# ============================================================================
+# CI — runs on every push and pull request to main.
+# Vercel builds straight from the branch, so this job is the safety net:
+# if the question bank or the app is broken, the check goes red here BEFORE
+# Vercel ships a bad build to students.
+# ============================================================================
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Validate bank & build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node from .nvmrc
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate question bank
+        run: npm run validate
+
+      - name: Build
+        run: npm run build
+
+      - name: Confirm build output
+        run: |
+          test -f dist/index.html || (echo "dist/index.html missing" && exit 1)
+          test -d dist/fonts || (echo "self-hosted fonts missing from dist" && exit 1)
+          test -d dist/images || (echo "diagram images missing from dist" && exit 1)
+          echo "Build output OK:" && du -sh dist
+
+      - name: Upload build artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+          retention-days: 7

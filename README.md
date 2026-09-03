@@ -1,3 +1,8 @@
+![CI](https://github.com/Max4dlord/max-codes-cbt-lab-2/actions/workflows/ci.yml/badge.svg)
+![Vercel](https://img.shields.io/badge/deploy-Vercel%20auto-black?logo=vercel)
+![Theme](https://img.shields.io/badge/theme-Crimson%20%26%20Ivory-%23C1121F)
+![Font](https://img.shields.io/badge/font-Inter-2A1216)
+
 # Max-codes — CBT Lab
 
 A clean, exam-realistic, **multi-course Computer-Based Testing platform**.
@@ -152,10 +157,32 @@ Everything lives in **`src/data.js`**. Each question is one object:
 
 ## 🚀 Deploy on Vercel (auto-deploy from GitHub)
 
-1. Push this repo to GitHub.
-2. On [vercel.com](https://vercel.com) → **Add New Project → Import** the repo.
-3. Vercel auto-detects Vite (`vercel.json` is already in the repo) → **Deploy**.
-4. Every `git push` to `main` rebuilds and updates the live site automatically (~30 s).
+This repo is **pre-wired for zero-click deploys**. One-time setup:
+
+1. Open the import link →
+   **https://vercel.com/new/import?repository-url=https://github.com/Max4dlord/max-codes-cbt-lab-2**
+   (or: Add New Project → Import → pick `max-codes-cbt-lab-2`).
+2. Leave every setting on the default — `vercel.json` already declares
+   framework `vite`, `npm ci`, `npm run build`, output `dist`, SPA rewrites
+   and cache headers. Press **Deploy**.
+3. Done. **Every `git push` to `main` now rebuilds and updates the live site
+   automatically (~30–60 s)**, and every push/PR also gets a build status here.
+
+What makes pushes safe & cheap:
+
+| File | What it does |
+|---|---|
+| `.github/workflows/ci.yml` | Runs `npm run validate` + `npm run build` on every push/PR, so a broken question bank or bad commit goes red **before** Vercel ships it. Uploads `dist` as an artefact. |
+| `vercel.json → ignoreCommand` | Skips the deploy entirely when a push only touched docs (README, guides) — saves build minutes. Pushes touching `src/`, `public/`, `index.html`, `package*.json` or `vite.config.js` always build. |
+| `vercel.json → installCommand: npm ci` | Reproducible installs from `package-lock.json`. |
+| `.nvmrc` + `engines` | Pins Node 20 for both GitHub Actions and Vercel. |
+| `.github/workflows/vercel-deploy-hook.yml` | Optional fallback if you ever import the project **without** Vercel's Git integration — add a `VERCEL_DEPLOY_HOOK_URL` secret and pushes trigger builds. Does nothing until the secret exists. |
+
+Deploying by hand (if ever needed):
+
+```bash
+npx vercel --prod      # first run links the project, then builds & deploys
+```
 
 > Full walkthrough, plus Netlify/GitHub Pages alternatives and
 > maintenance & security tips: see **DEPLOYMENT-AND-MAINTENANCE-GUIDE.md**.

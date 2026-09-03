@@ -1,5 +1,8 @@
 node_modules/
 dist/
+.vercel/
 .vite/
 *.zip
-.github/
+.DS_Store
+.env
+.env.local
