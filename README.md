@@ -109,9 +109,13 @@ npm run build    # production build -> dist/
 - **Results & review**: score ring, breakdown (correct / wrong / skipped / time used),
   per-question verdict with a one-line explanation, and a **side panel with full worked
   solutions** — no redirect, no lost progress.
-- **Diagrams**: 12 hand-drawn SVG figures (diode, potentiometer divider, thermistor, LDR,
-  capacitor types, zener, DMM probing a TO-92 BJT, CRO traces, Lissajous) — stored **inline**
-  in `src/data.js` and rendered as live, zoomable SVG.
+- **Diagrams**: **all 30 questions carry a figure** — hand-drawn SVG stored **inline** in
+  `src/data.js` and rendered as live, zoomable SVG. Every one is specific to what the question
+  asks (active vs passive panels, the two-diode BJT model, DMM probe setups, fault signatures…).
+- **Full CRO everywhere**: all 12 CRO questions show the complete instrument — chassis,
+  graticule screen, TIME/DIV, VOLTS/DIV, POSITION, TRIGGER, INTENSITY/FOCUS, CH1/CH2 BNC
+  inputs and the DC-AC-GND coupling switch — with the control under discussion highlighted in
+  OAU gold, and the relevant trace drawn on the screen.
 - **Components reference**: a modal table of the 20 most-used active and passive components with
   their circuit symbols and uses, reachable from Study Mode and Review on any
   *Active & Passive Components* question.

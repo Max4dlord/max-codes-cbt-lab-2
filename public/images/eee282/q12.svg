@@ -1,0 +1,12 @@
+<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" width="560" height="248" viewBox="0 0 560 248" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Splitting emitter from collector: V(BE) reads slightly higher than V(BC)"><style>
+ text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#111a3d}
+ .gl{stroke:#c3cad9;stroke-width:1}.ax{stroke:#7d89a8;stroke-width:1.3}
+ .ac{fill:none;stroke:#B08A1B;stroke-width:2.2}
+ .t11{font-size:11px}.t12{font-size:12px}.t13{font-size:13px}.t15{font-size:15px}
+ .tb{font-size:13px;font-weight:700}.tg{font-size:13px;font-weight:700;fill:#7a5f0a}
+ .l{fill:none;stroke:#010080;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+ .w{fill:none;stroke:#010080;stroke-width:2.8;stroke-linejoin:round;stroke-linecap:round}
+ .w2{fill:none;stroke:#a52a2a;stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+ .dm{fill:none;stroke:#010080;stroke-width:1.5;stroke-dasharray:5 4}
+ .dg{fill:none;stroke:#1e7a45;stroke-width:1.5;stroke-dasharray:6 4}
+</style><text class="tb" x="280" y="24" text-anchor="middle">Splitting emitter from collector</text><g transform="translate(120,60) scale(1.7)"><g fill="none" stroke="#010080" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="52" cy="30" r="24"/><path d="M0,30 H46"/><path d="M46,15 V45"/><path d="M46,24 L74,14"/><path d="M74,14 H100"/><path d="M46,36 L76,46"/><path d="M76,46 H100"/><polygon points="78,46 66,43 70,50" fill="#010080" stroke="none"/></g></g><text class="tb" x="150" y="130" text-anchor="middle">NPN</text><rect x="330" y="70" width="210" height="120" rx="10" fill="#f7f9fd" stroke="#010080" stroke-width="1.6"/><text class="tb" x="435" y="96" text-anchor="middle">Junction drops</text><text class="t13" x="350" y="126" >V(BE) = 0.712 V</text><text class="tg" x="350" y="152" >&#8594; larger = EMITTER</text><text class="t13" x="350" y="178" >V(BC) = 0.704 V</text><text class="t12" x="280" y="226" text-anchor="middle">The emitter is more heavily doped, so its junction drop is 5&#8211;15 mV higher.</text></svg>
