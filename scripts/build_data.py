@@ -56,6 +56,20 @@ CAPTIONS = {
 # Some builders (q04, q05) draw arrows but forget to emit <defs>; an invalid
 # marker reference makes the browser drop the whole line, so we guarantee the
 # markers exist for every reference we find.
+
+
+
+CAPTIONS.update({
+    'q31': "Resistor shorthand: the letter K replaces the decimal point, so 2K7 reads 2.7 k\u03a9 (2700 \u03a9)",
+    'q32': "Four-band resistor Green-Blue-Silver-Gold decoding to 56 \u00d7 0.01 = 0.56 \u03a9 at \u00b15%",
+    'q33': "A probe tip bridging the base and collector leads of a transistor in a live circuit",
+    'q34': "Ceramic disc marked 229: the third digit 9 means \u00d70.1, so 22 \u00d7 0.1 = 2.2 pF",
+    'q35': "Two 104 ceramic discs: identical 100 nF, but K = \u00b110% while J = \u00b15%",
+    'q36': "BJT symbols: the emitter arrow points away from the base on an NPN and towards it on a PNP",
+    'q37': "Digital multimeter in diode mode with the red probe common on pin 1 \u2014 two forward-biased junctions",
+})
+
+
 MARKERS = {
     'ah':   ('#C9A227', 9, 'M0,1 L9,5 L0,9 z'),     # gold arrowhead
     'ahn':  ('#010080', 9, 'M0,1 L9,5 L0,9 z'),     # navy arrowhead
@@ -1035,6 +1049,221 @@ figure drifts and cannot be read.""")
 # ===========================================================================
 # Course / topic metadata
 # ===========================================================================
+# ===========================================================================
+# PRACTICAL-BATCH QUESTIONS  (q31 - q37)
+# ===========================================================================
+
+q(id='eee282_q31', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q31'),
+  question="A student is reading a circuit diagram and finds a resistor labeled '2K7'. According to standard resistor shorthand, what is the exact resistance value they should measure with a multimeter?",
+  options=[
+      '27 kΩ',
+      '2.7 kΩ',
+      '270 Ω',
+      '2.07 kΩ',
+  ], correct=1,
+  short='K sits where the decimal point goes and means ×1000, so 2K7 = 2.7 kΩ = 2700 Ω.',
+  solution="""### Answer
+**2.7 kΩ** (2700 Ω)
+
+### Why
+In resistor shorthand, letters like R, K, and M replace the decimal point to prevent misreading.
+The letter K signifies multiplying the value by 1000. Therefore, 2K7 means 2.7 kΩ or 2700 Ω.
+
+### The rest of the code
+| Letter | Means | Example |
+|---|---|---|
+| **R** | ×1 (ohms) | 1R0 = 1.0 Ω |
+| **K** | ×1 000 | 4K7 = 4.7 kΩ |
+| **M** | ×1 000 000 | 1M0 = 1.0 MΩ |
+
+A letter never adds a digit of its own — it *is* the decimal point.
+
+### Why the other options are wrong
+- **27 kΩ** — that value would be printed 27K, not 2K7.
+- **270 Ω** — 2K7 divided by ten; the letter is a multiplier, not a digit.
+- **2.07 kΩ** — treats the letter as if it inserted a zero.""")
+
+q(id='eee282_q32', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q32'),
+  question='You are verifying the values of small resistors in the lab. A four-band resistor has the colors Green, Blue, Silver, and Gold. What is its theoretical value and tolerance?',
+  options=[
+      '5.6 Ω ± 5%',
+      '0.56 Ω ± 5%',
+      '56 kΩ ± 10%',
+      '0.56 Ω ± 10%',
+  ], correct=1,
+  short='Green = 5, Blue = 6, Silver as the third band = ×0.01 and Gold = ±5%, so 56 × 0.01 = 0.56 Ω ±5%.',
+  solution="""### Answer
+**0.56 Ω ± 5%**
+
+### Why
+For small value resistors (less than 10 ohm), a silver third band acts as a multiplier of 0.01.
+The first bands Green (5) and Blue (6) represent 56, so 56 x 0.01 = 0.56 Ω. A gold fourth band
+indicates a tolerance of ±5%.
+
+### The four bands
+| Band | Colour | Value |
+|---|---|---|
+| 1st | Green | 5 |
+| 2nd | Blue | 6 |
+| 3rd | Silver | ×0.01 |
+| 4th | Gold | ±5% |
+
+Silver and gold change meaning with position: as a **multiplier** they are ×0.01 and ×0.1, but as
+a **tolerance** band they are ±10% and ±5%.
+
+### Why the other options are wrong
+- **5.6 Ω** — needs a gold (×0.1) third band, not silver.
+- **56 kΩ** — silver in the third position is never a large multiplier.
+- **±10%** — that is a silver *tolerance* band; the fourth band here is gold.""")
+
+q(id='eee282_q33', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q33'),
+  question='During a practical troubleshooting session, you accidentally short-circuit the base and collector of a bipolar junction transistor with a meter probe while the circuit is operating. What is the most likely outcome?',
+  options=[
+      'The transistor will temporarily shut off until power is cycled.',
+      'The multimeter fuse will blow, protecting the circuit.',
+      'The transistor will almost instantly be destroyed.',
+      'The transistor will enter saturation mode safely.',
+  ], correct=2,
+  short='A base-to-collector short in a live circuit destroys the transistor almost instantly — always test transistors out of circuit.',
+  solution="""### Answer
+**The transistor will almost instantly be destroyed.**
+
+### Why
+Transistors are highly sensitive to improper handling during operation; a short circuit from the
+base to the collector in an operating circuit will almost instantly destroy the transistor.
+
+### What actually happens
+The base normally sits behind a bias resistor that limits base current. Bridging base to
+collector with a probe puts the collector supply straight onto the base-emitter junction with
+nothing to limit the current, so the junction overheats and the device dies in milliseconds.
+
+### Why the other options are wrong
+- It does not simply shut off — the damage is thermal and permanent.
+- The meter fuse is not in that current path, so it will not save the transistor.
+- Saturation is a *designed* state reached through a proper base resistor; a dead short is not saturation.""")
+
+q(id='eee282_q34', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q34'),
+  question="You are given a ceramic capacitor marked with the three-digit code '229'. What is the actual capacitance value?",
+  options=[
+      '220,000 pF',
+      '22 pF',
+      '2.2 pF',
+      '0.22 µF',
+  ], correct=2,
+  short='The third digit 9 means ×0.1, so 229 is 22 × 0.1 = 2.2 pF — digits 8 and 9 reduce the value instead of adding zeros.',
+  solution="""### Answer
+**2.2 pF**
+
+### Why
+While a third number usually indicates the multiplier adding zeros, the numbers eight and nine
+are exceptions that decrease the value. If the third number is nine, you multiply the first two
+digits by 0.1. Therefore, a capacitor labeled '229' has a value of 22 x 0.1 = 2.2 pF.
+
+### The multiplier digits
+| Third digit | 0 | 1 | 2 | 3 | 4 | 8 | 9 |
+|---|---|---|---|---|---|---|---|
+| Multiply by | 1 | 10 | 100 | 1 000 | 10 000 | 0.01 | 0.1 |
+
+### Why the other options are wrong
+- **220,000 pF** — that is the code 224, not 229.
+- **22 pF** — that would be the code 220, forgetting the third digit entirely.
+- **0.22 µF** — 220,000 pF again, the code 224.""")
+
+q(id='eee282_q35', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q35'),
+  question="A student is replacing a faulty 104K ceramic disc capacitor on a motherboard. They find a replacement marked '104J'. What is the difference between the original and the replacement?",
+  options=[
+      'The replacement has a capacitance of 100 nF instead of 10 nF.',
+      "The replacement has a tighter tolerance of 5% compared to the original's 10%.",
+      'The replacement is polarized and will explode if installed backwards.',
+      'The replacement is rated for a lower operating voltage.',
+  ], correct=1,
+  short='Both are 10 × 10 000 pF = 100 000 pF (100 nF); the letter is tolerance only — K = ±10%, J = ±5%.',
+  solution="""### Answer
+**The replacement has a tighter tolerance of 5% compared to the original's 10%.**
+
+### Why
+Both '104' capacitors have a value of 100,000 pF (100 nF). The letters dictate tolerance: 'K'
+indicates a tolerance of 10%, whereas 'J' indicates a tighter tolerance of 5%.
+
+### Reading the code
+- **10** — the two significant figures
+- **4** — the multiplier, 10 000, so 10 × 10 000 = 100 000 pF
+- **K / J** — tolerance only, never the capacitance
+
+A tighter tolerance is not a problem here: 104J is a perfectly good substitute for 104K.
+
+### Why the other options are wrong
+- The capacitance is identical at 100 nF — only the letter changed.
+- Ceramic disc capacitors are not polarised, so orientation does not matter.
+- The marking says nothing about voltage rating; that is a separate specification.""")
+
+q(id='eee282_q36', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q36'),
+  question='When examining transistor circuit symbols on a schematic, how can you theoretically distinguish an NPN transistor from a PNP transistor?',
+  options=[
+      'In an NPN transistor, the arrow on the emitter points away from the base.',
+      'In an NPN transistor, the arrow on the collector points towards the base.',
+      'In a PNP transistor, the arrow on the emitter points away from the base.',
+      'In a PNP transistor, there are arrows on both the emitter and collector.',
+  ], correct=0,
+  short='The emitter arrow points away from the base on an NPN and towards the base on a PNP.',
+  solution="""### Answer
+**In an NPN transistor, the arrow on the emitter points away from the base.**
+
+### Why
+The symbols for BJT transistors use an arrow on the emitter lead to indicate current flow
+direction. In NPN transistors, the arrow points away from the base. In a PNP type, the arrow
+points towards the base.
+
+### Remembering which is which
+- **NPN** — **N**ot **P**ointing i**N** (arrow points out)
+- **PNP** — **P**ointing i**N** (arrow points in)
+
+The arrow is always on the **emitter**, never the collector — so find the emitter lead first,
+then read the direction.
+
+### Why the other options are wrong
+- The collector never carries an arrow.
+- A PNP does not sprout a second arrow: one arrow, in the opposite direction.
+- Saying the NPN arrow points inwards simply swaps the two types over.""")
+
+q(id='eee282_q37', topicId=T['active'], kind='theory', type='mcq',
+  image=IMG.format('q37'),
+  question='Using a digital multimeter in diode-check mode, a student tests an unmarked transistor. When the positive lead is placed on Pin 1, they get a low resistance reading when touching the negative lead to either Pin 2 or Pin 3. What element is Pin 1, and what type of transistor is this?',
+  options=[
+      'Pin 1 is the Collector; NPN Transistor',
+      'Pin 1 is the Base; PNP Transistor',
+      'Pin 1 is the Emitter; PNP Transistor',
+      'Pin 1 is the Base; NPN Transistor',
+  ], correct=3,
+  short='Red probe common on pin 1 with a drop to both other pins → pin 1 is the base, and red common means NPN.',
+  solution="""### Answer
+**Pin 1 is the Base; NPN Transistor**
+
+### Why
+To identify the base, you find the lead that gives a low resistance when the meter's positive
+lead is on it and the negative lead touches the remaining two terminals. Because the positive
+(anode) probe forward-biases both junctions from this pin, it confirms Pin 1 is the P-type Base
+of an N-P-N transistor.
+
+### The rule you are applying
+- **Red lead common → NPN** — the red probe forward-biases both junctions from the P-type base
+- **Black lead common → PNP**
+
+Only the **base** can show a junction drop to *both* other pins, because a transistor is two
+diodes that share the base.
+
+### Why the other options are wrong
+- The collector cannot show a drop to both other pins on a healthy transistor.
+- The emitter is found only *after* the base, by comparing the two drops.
+- PNP would require the **black** lead to be the common one.""")
+
+
 COURSE = {
     'id': 'eee282',
     'code': 'EEE 282',

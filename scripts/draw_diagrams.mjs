@@ -577,6 +577,187 @@ D.q27 = () => croPanel({
 })
 
 // ===========================================================================
+// PRACTICAL-BATCH FIGURES  (q31 - q37)
+// ===========================================================================
+
+// Text with an explicit size/colour. Inline style wins over the .t11/.t12
+// classes in styles.css (a presentation attribute would not).
+const big = (x, y, size, s, fill = NAVY, anchor = 'middle', weight = 700) =>
+  `<text x="${x}" y="${y}" text-anchor="${anchor}" style="font-size:${size}px;font-weight:${weight};fill:${fill}">${s}</text>`
+
+// Ceramic disc capacitor, printed code on the face, two leads below.
+function disc(cx, cy, r, code, size = 24) {
+  let s = `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#f0dfb0" stroke="${NAVY}" stroke-width="2.5"/>`
+  s += line(cx - 22, cy + r - 6, cx - 22, cy + r + 36, NAVY, 3)
+  s += line(cx + 22, cy + r - 6, cx + 22, cy + r + 36, NAVY, 3)
+  s += big(cx, cy + size / 3, size, code)
+  return s
+}
+
+// A small labelled key box (used by the colour-code / tolerance figures).
+function keyBox(x, y, w, h, swatch, lines, value, valueColour = GOLD) {
+  let s = box(x, y, w, h, '#f7f9fd', NAVY, 1.5, 8)
+  if (swatch) s += box(x + 14, y + 12, w - 28, 8, swatch, 'none', 0, 0)
+  s += txt(x + w / 2, y + 38, 't11', lines[0], 'text-anchor="middle"')
+  if (lines[1]) s += txt(x + w / 2, y + 56, 'tb', lines[1], 'text-anchor="middle"')
+  s += big(x + w / 2, y + h - 12, 16, value, valueColour)
+  return s
+}
+
+// ---- q31: resistor shorthand, 2K7 ----
+D.q31 = () => {
+  const p = []
+  p.push(txt(310, 26, 'tb', 'Resistor shorthand: the letter marks the decimal point', 'text-anchor="middle"'))
+  p.push(line(60, 110, 110, 110, NAVY, 3))
+  p.push(line(320, 110, 370, 110, NAVY, 3))
+  p.push(box(110, 68, 210, 84, '#f2e6c8', NAVY, 2.5, 14))
+  p.push(big(185, 124, 30, '2', NAVY))
+  p.push(big(215, 124, 30, 'K', GOLD))
+  p.push(big(245, 124, 30, '7', NAVY))
+  p.push(txt(215, 176, 't12', 'the code printed on the body', 'text-anchor="middle"'))
+  p.push(big(215, 218, 22, '2.7 k&#937;  =  2700 &#937;', NAVY))
+  p.push(big(310, 258, 14, '1R0 = 1.0 &#937;      4K7 = 4.7 k&#937;      1M0 = 1.0 M&#937;', GREY, 'middle', 400))
+
+  p.push(box(400, 68, 200, 108, '#f7f9fd', GOLD, 2, 10))
+  p.push(txt(500, 92, 'tb', 'Letter = multiplier', 'text-anchor="middle"'))
+  p.push(txt(500, 116, 't12', 'R = &#215;1  (ohms)', 'text-anchor="middle"'))
+  p.push(txt(500, 138, 't12', 'K = &#215;1 000', 'text-anchor="middle"'))
+  p.push(txt(500, 160, 't12', 'M = &#215;1 000 000', 'text-anchor="middle"'))
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q32: four-band colour code, Green Blue Silver Gold ----
+D.q32 = () => {
+  const p = []
+  p.push(txt(310, 26, 'tb', 'Four-band code: Green &#183; Blue &#183; Silver &#183; Gold', 'text-anchor="middle"'))
+  p.push(line(30, 125, 70, 125, NAVY, 3))
+  p.push(line(370, 125, 410, 125, NAVY, 3))
+  p.push(box(70, 70, 300, 110, '#f2e6c8', NAVY, 2.5, 14))
+  p.push(box(105, 70, 18, 110, '#1E7A3C', 'none', 0, 0))   // green  = 5
+  p.push(box(160, 70, 18, 110, '#1B4FA0', 'none', 0, 0))   // blue   = 6
+  p.push(box(215, 70, 18, 110, '#B8BCC4', 'none', 0, 0))   // silver = x0.01
+  p.push(box(325, 70, 18, 110, '#C9A227', 'none', 0, 0))   // gold   = ±5%
+  p.push(txt(220, 200, 't11', 'silver as the THIRD band means &#215;0.01, not &#215;0.1 or &#215;1', 'text-anchor="middle"'))
+
+  p.push(keyBox(20, 215, 140, 78, '#1E7A3C', ['1st band', 'Green'], '5', NAVY))
+  p.push(keyBox(170, 215, 140, 78, '#1B4FA0', ['2nd band', 'Blue'], '6', NAVY))
+  p.push(keyBox(320, 215, 140, 78, '#B8BCC4', ['3rd band', 'Silver'], '&#215;0.01', NAVY))
+  p.push(keyBox(470, 215, 140, 78, '#C9A227', ['4th band', 'Gold'], '&#177;5%', NAVY))
+  p.push(big(310, 330, 18, '56 &#215; 0.01  =  0.56 &#937;   &#177; 5 %', GREEN))
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 350" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q33: shorting base to collector on a live circuit ----
+D.q33 = () => {
+  const p = []
+  p.push(txt(310, 26, 'tb', 'A probe that slips across base and collector', 'text-anchor="middle"'))
+  p.push(to92(60, 70, ['E', 'B', 'C']))
+  // the probe tip bridges the B and C leads
+  p.push(line(250, 52, 122, 150, '#1f2937', 5))
+  p.push(`<circle cx="122" cy="150" r="5" fill="#1f2937"/>`)
+  p.push(txt(258, 60, 't12', 'one probe tip', 'text-anchor="start"'))
+  p.push(line(108, 150, 136, 150, RED, 7))
+  p.push(`<circle cx="122" cy="150" r="20" fill="none" stroke="${RED}" stroke-width="2" stroke-dasharray="5 4"/>`)
+  p.push(txt(122, 198, 'tb', 'B and C shorted together', `text-anchor="middle" fill="${RED}"`))
+
+  p.push(box(330, 78, 270, 148, '#fdf3f3', RED, 2, 12))
+  p.push(big(465, 112, 20, 'DESTROYED', RED))
+  p.push(txt(465, 142, 't12', 'With no base resistor in that', 'text-anchor="middle"'))
+  p.push(txt(465, 160, 't12', 'path, nothing limits the current', 'text-anchor="middle"'))
+  p.push(txt(465, 178, 't12', 'and the junctions burn out.', 'text-anchor="middle"'))
+  p.push(txt(465, 206, 'tg', 'Test transistors OUT of circuit', 'text-anchor="middle"'))
+  p.push(txt(310, 262, 't12', 'One momentary slip is enough &#8212; the device dies in milliseconds.', 'text-anchor="middle"'))
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q34: ceramic capacitor code 229 ----
+D.q34 = () => {
+  const p = []
+  p.push(txt(310, 26, 'tb', 'Ceramic capacitor code: 229', 'text-anchor="middle"'))
+  p.push(disc(140, 130, 68, '229', 26))
+  p.push(txt(140, 258, 't12', 'ceramic disc', 'text-anchor="middle"'))
+
+  p.push(box(250, 66, 350, 116, '#f7f9fd', GOLD, 2, 10))
+  p.push(big(425, 100, 20, '22 &#215; 0.1  =  2.2 pF', GOLD))
+  p.push(txt(425, 128, 't12', 'first two digits give the significant figures: 22', 'text-anchor="middle"'))
+  p.push(txt(425, 150, 't12', 'the third digit is the multiplier: 9 &#8594; &#215;0.1', 'text-anchor="middle"'))
+  p.push(txt(425, 172, 'tg', '8 and 9 are the exceptions', 'text-anchor="middle"'))
+
+  p.push(box(40, 274, 540, 56, '#f7f9fd', NAVY, 1.5, 10))
+  p.push(txt(310, 296, 't12', 'third digit:  0 = &#215;1    1 = &#215;10    2 = &#215;100    3 = &#215;1 000    4 = &#215;10 000', 'text-anchor="middle"'))
+  p.push(txt(310, 318, 'tg', '8 = &#215;0.01    9 = &#215;0.1   &#8592; these two REDUCE the value', 'text-anchor="middle"'))
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 340" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q35: 104K vs 104J ----
+D.q35 = () => {
+  const p = []
+  p.push(txt(310, 26, 'tb', '104K vs 104J: same capacitance, different tolerance', 'text-anchor="middle"'))
+  p.push(disc(160, 112, 60, '104K', 22))
+  p.push(disc(440, 112, 60, '104J', 22))
+  p.push(txt(310, 100, 'tb', 'same value', 'text-anchor="middle"'))
+  p.push(txt(310, 120, 't12', 'only the last', 'text-anchor="middle"'))
+  p.push(txt(310, 138, 't12', 'letter changes', 'text-anchor="middle"'))
+
+  p.push(txt(160, 232, 't12', '10 &#215; 10 000 pF = 100 000 pF = 100 nF', 'text-anchor="middle"'))
+  p.push(big(160, 262, 17, 'K = &#177;10 %', NAVY))
+  p.push(txt(440, 232, 't12', '10 &#215; 10 000 pF = 100 000 pF = 100 nF', 'text-anchor="middle"'))
+  p.push(big(440, 262, 17, 'J = &#177;5 %', GREEN))
+
+  p.push(box(60, 288, 500, 44, '#f7f9fd', NAVY, 1.5, 10))
+  p.push(txt(310, 316, 't12', 'tolerance letters:   J = &#177;5 %   &#183;   K = &#177;10 %   &#183;   M = &#177;20 %', 'text-anchor="middle"'))
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 345" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q36: NPN vs PNP symbols (the emitter arrow) ----
+D.q36 = () => {
+  const p = []
+  p.push(txt(310, 26, 'tb', 'The arrow is always on the emitter, never the collector', 'text-anchor="middle"'))
+  const S = 1.6, Y = 78
+  p.push(sym('NPN transistor (BJT)', 40, Y, S))
+  p.push(txt(46, Y + 38, 'tb', 'B (base)', 'text-anchor="start"'))
+  p.push(txt(206, Y + 24, 'tb', 'C', 'text-anchor="start"'))
+  p.push(txt(206, Y + 78, 'tb', 'E', 'text-anchor="start"'))
+  p.push(`<circle cx="154" cy="${Y + 74}" r="17" fill="none" stroke="${GOLD}" stroke-width="2" stroke-dasharray="4 3"/>`)
+
+  p.push(sym('PNP transistor (BJT)', 340, Y, S))
+  p.push(txt(346, Y + 38, 'tb', 'B (base)', 'text-anchor="start"'))
+  p.push(txt(506, Y + 24, 'tb', 'C', 'text-anchor="start"'))
+  p.push(txt(506, Y + 78, 'tb', 'E', 'text-anchor="start"'))
+  p.push(`<circle cx="434" cy="${Y + 66}" r="17" fill="none" stroke="${GOLD}" stroke-width="2" stroke-dasharray="4 3"/>`)
+
+  p.push(big(120, 208, 18, 'NPN', NAVY))
+  p.push(txt(120, 232, 't12', 'arrow points AWAY from the base', 'text-anchor="middle"'))
+  p.push(big(420, 208, 18, 'PNP', NAVY))
+  p.push(txt(420, 232, 't12', 'arrow points TOWARDS the base', 'text-anchor="middle"'))
+
+  p.push(box(60, 254, 500, 56, '#f7f9fd', GOLD, 2, 10))
+  p.push(big(310, 280, 15, 'NPN = Not Pointing iN     &#183;     PNP = Pointing iN', GOLD))
+  p.push(txt(310, 300, 't12', 'conventional current follows the arrow: out of the emitter on an NPN', 'text-anchor="middle"'))
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 320" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q37: DMM diode check, red probe common on pin 1 ----
+D.q37 = () => probeFigure({
+  title: 'RED probe on pin 1 &#8594; a drop to BOTH other pins',
+  commonPin: '1',
+  probeColour: RED,
+  readings: {
+    label: '0.65 V', colour: NAVY,
+    probes: [
+      { from: [140, 190], to: [228, 152], reading: '0.65 V', anchor: 'end' },
+      { from: [140, 190], to: [256, 152], reading: '0.65 V' },
+    ],
+  },
+  verdict: { type: 'NPN', colour: GREEN, lines: ['red = common base', '&#8594; NPN'] },
+  notes: [
+    'The RED probe forward-biases both junctions from pin 1,',
+    'so pin 1 is the P-type middle layer &#8212; the base of an NPN.',
+  ],
+})
+
+
+// ===========================================================================
 // write files
 // ===========================================================================
 let n = 0
