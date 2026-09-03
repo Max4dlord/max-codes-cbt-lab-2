@@ -62,6 +62,16 @@ for (const course of courses) {
       if (ids.some((id) => /^ah(sb|n|s)?$/.test(id)))
         errors.push(`${tag}: marker ids must be namespaced per question (found a bare 'ah')`)
       if (!q.diagramCaption) errors.push(`${tag}: diagram needs a caption`)
+      // every internal reference (arrowhead markers, …) must be defined in the same figure —
+      // an unresolved marker makes the browser drop the whole line
+      const refIds = [...d.matchAll(/id="([^"]+)"/g)].map((m) => m[1])
+      const refs = [...d.matchAll(/url\(#([^)]+)\)/g)].map((m) => m[1])
+      for (const r of refs) {
+        if (!refIds.includes(r)) errors.push(`${tag}: diagram references url(#${r}) but never defines it`)
+      }
+      // named entities (&mdash;) are undefined in XML, so the .svg copies would not render
+      const named = d.match(/&[a-zA-Z][a-zA-Z0-9]*;/g)
+      if (named) errors.push(`${tag}: diagram uses named entity ${named[0]} — use a numeric reference (&#8212;)`)
     }
     // ---- typed-answer (calc / text) contract ----
     const qType = q.type || 'mcq'
