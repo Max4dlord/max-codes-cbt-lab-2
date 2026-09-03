@@ -162,6 +162,14 @@ Active/Passive filters, sticky header, card layout under 720 px). It is opened b
 
 ---
 
+## 🔧 Regenerating the artwork
+```bash
+node scripts/draw_diagrams.mjs    # redraws all 30 figures into public/images/eee282/
+python3 scripts/build_data.py     # inlines them into src/data.js (minified, safe, responsive)
+npm run validate                  # checks the bank and every injected SVG
+```
+Both scripts live in the repo, so the figures are reproducible rather than hand-edited.
+
 ## 🗂️ Add questions
 
 Everything lives in **`src/data.js`**. Each question is one object:
@@ -221,7 +229,7 @@ Everything lives in **`src/data.js`**. Each question is one object:
     oau-favicon-180.png  apple-touch-icon
     favicon.svg          navy/gold OAU mark
     fonts/               Inter variable woff2 (self-hosted)
-    images/eee282/       12 question diagrams (SVG)
+    images/eee282/       30 question diagrams (SVG) — one per question
 ```
 
 ---
