@@ -1,0 +1,28 @@
+{
+  "name": "max-codes-cbt-lab-2",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Max-codes CBT Lab 2 \u2014 multi-course computer-based testing platform (AEE 202, MTH 202, EEE 202, EEE 252): timed tests, study mode, shuffled question banks, auto-saved progress and full worked solutions. Crimson & Ivory theme, Inter typography.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "katex": "^0.16.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Max4dlord/max-codes-cbt-lab-2.git"
+  }
+}
