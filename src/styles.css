@@ -138,6 +138,20 @@ p { margin: 0 0 1em; }
 .diagram-frame .diagram-svg { display: block; width: 100%; height: auto; margin: 0 auto; }
 .diagram-cap { margin-top: 8px; font-size: 12px; color: var(--muted); text-align: center; }
 
+/* ---- Key terms drawer: per-question abbreviation key ---- */
+.terms { margin: 16px 0 2px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--card-2); overflow: hidden; }
+.terms-toggle { width: 100%; display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border: 0; background: transparent; cursor: pointer;
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--navy); text-align: left; }
+.terms-toggle:hover { background: rgba(1, 0, 128, 0.05); }
+.terms-caret { width: 12px; color: var(--gold); font-size: 11px; }
+.terms-list { margin: 0; padding: 2px 14px 12px; display: grid; gap: 7px; }
+.terms-row { display: grid; grid-template-columns: 92px 1fr; gap: 12px; align-items: baseline; }
+.terms-row dt { margin: 0; font-size: 12.5px; font-weight: 700; color: var(--navy); }
+.terms-row dd { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.45; }
+@media (max-width: 520px) { .terms-row { grid-template-columns: 1fr; gap: 2px; } }
+
 .diagram-zoom {
   width: min(1100px, 96vw); max-height: 92vh; display: flex; flex-direction: column;
   background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow-lg);
@@ -157,6 +171,7 @@ p { margin: 0 0 1em; }
 .diagram-svg .gl { stroke: #c3cad9; stroke-width: 1; }
 .diagram-svg .ax { stroke: #7d89a8; stroke-width: 1.3; }
 .diagram-svg .ac { fill: none; stroke: #B08A1B; stroke-width: 2.2; }
+.diagram-svg .t10 { font-size: 10px; }
 .diagram-svg .t11 { font-size: 11px; }
 .diagram-svg .t12 { font-size: 12px; }
 .diagram-svg .t13 { font-size: 13px; }

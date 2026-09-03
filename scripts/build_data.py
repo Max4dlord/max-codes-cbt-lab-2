@@ -1136,6 +1136,153 @@ The offset is the **midpoint** of the waveform, not its peak.
 ]
 
 
+# ---------------------------------------------------------------------------
+# Abbreviations
+# ---------------------------------------------------------------------------
+# Two different jobs, deliberately kept apart:
+#
+# 1. The cathode ray oscilloscope is ALWAYS written out in full -
+#    "cathode ray oscilloscope (CRO)" - at every single place it appears, so
+#    nobody ever has to guess what "CRO" stands for.  (INLINE)
+#
+# 2. Every other technical abbreviation keeps its short form in the prose,
+#    because that is how it is written in the lab manual and printed on the
+#    instrument panel.  Instead of cluttering the sentences, each question
+#    carries a "Key terms" drawer listing the full meaning of only the
+#    abbreviations that question actually uses.  (TERMS)
+#
+# Math spans ($...$, $$...$$) and code spans (`...`) are never touched.
+
+INLINE = [
+    dict(re=r'\bCRO\b', lower='cathode ray oscilloscope (CRO)',
+         title='Cathode Ray Oscilloscope (CRO)'),
+]
+
+# (pattern, short form, full meaning) — grouped roughly by theme.
+TERMS = [
+    (r'\bBJTs?\b', 'BJT', 'bipolar junction transistor'),
+    (r'\bDMMs?\b', 'DMM', 'digital multimeter'),
+    (r'\bMOSFETs?\b', 'MOSFET', 'metal-oxide-semiconductor field-effect transistor'),
+    (r'\bJFETs?\b', 'JFET', 'junction field-effect transistor'),
+    (r'\bFETs?\b', 'FET', 'field-effect transistor'),
+    (r'\bSCRs?\b', 'SCR', 'silicon-controlled rectifier'),
+    (r'\bLEDs?\b', 'LED', 'light-emitting diode'),
+    (r'\bLCDs?\b', 'LCD', 'liquid crystal display'),
+    (r'\bLDRs?\b', 'LDR', 'light-dependent resistor'),
+    (r'\bNTC\b', 'NTC', 'negative temperature coefficient'),
+    (r'\bPTC\b', 'PTC', 'positive temperature coefficient'),
+    (r'\bICs?\b', 'IC', 'integrated circuit'),
+    (r'\bop-amps?\b', 'op-amp', 'operational amplifier'),
+    (r'\bBNC\b', 'BNC', 'Bayonet Neill-Concelman connector (the twist-lock socket)'),
+    (r'\bCOM\b', 'COM', 'common terminal — where the meter\'s black lead plugs in'),
+    (r'\bOL\b', 'OL', 'over-limit — what the meter shows when nothing conducts'),
+    (r'\bRMS\b', 'RMS', 'root mean square'),
+    (r'\bGND\b', 'GND', 'ground — the 0 V reference line'),
+    (r'\bAC\b', 'AC', 'alternating current'),
+    (r'\bDC\b', 'DC', 'direct current'),
+    (r'\bNPN\b', 'NPN', 'negative-positive-negative'),
+    (r'\bPNP\b', 'PNP', 'positive-negative-positive'),
+    (r'\bV\(BE\)\b', 'V(BE)', 'base-emitter voltage'),
+    (r'\bV\(BC\)\b', 'V(BC)', 'base-collector voltage'),
+    (r'\bV\(CE\)\b', 'V(CE)', 'collector-emitter voltage'),
+    (r'\bC[-–—]E\b', 'C-E', 'collector-emitter'),
+    (r'\bV-I\b', 'V-I', 'voltage-current'),
+    (r'\bVp-p\b', 'Vp-p', 'peak-to-peak voltage'),
+    (r'\bVrms\b', 'Vrms', 'root-mean-square voltage'),
+    (r'\bVp\b(?!-)', 'Vp', 'peak voltage'),
+    (r'\bVolts/Div\b', 'Volts/Div', 'volts per division — the vertical scale'),
+    (r'\bTime/Div\b', 'Time/Div', 'time per division — the horizontal scale'),
+    (r'\bV/div\b', 'V/div', 'volts per division'),
+    (r'\bms/div\b', 'ms/div', 'milliseconds per division'),
+    (r'\bs/div\b', 's/div', 'seconds per division'),
+    (r'\bCH1\b', 'CH1', 'channel 1 input'),
+    (r'\bCH2\b', 'CH2', 'channel 2 input'),
+]
+
+_MATH_OR_CODE = re.compile(r'\$\$[\s\S]*?\$\$|\$[^$\n]*\$|`[^`]*`')
+_ARTICLE = re.compile(r'\b([Aa])n\s+(?=[bcdfgjklmnpqrstvwz])')
+_TERMS = [(re.compile(p, re.I), abbr, full) for p, abbr, full in TERMS]
+
+
+def expand(text):
+    """Write "cathode ray oscilloscope (CRO)" out in full, everywhere."""
+    if not isinstance(text, str) or not text:
+        return text
+    spans = []
+
+    def stash(m):
+        spans.append(m.group(0))
+        return '\x00%d\x00' % (len(spans) - 1)
+
+    protected = _MATH_OR_CODE.sub(stash, text)
+    result, cursor = [], 0
+    for m in re.finditer('\x00(\\d+)\x00', protected):
+        result.append(_expand_segment(protected[cursor:m.start()]))
+        result.append(spans[int(m.group(1))])
+        cursor = m.end()
+    result.append(_expand_segment(protected[cursor:]))
+    return _ARTICLE.sub(lambda m: m.group(1) + ' ', ''.join(result))
+
+
+def _expand_segment(seg):
+    for entry in INLINE:
+        pattern = re.compile(entry['re'], re.I)
+        base = entry['lower'].split('(')[0].strip()
+        guard = base.lower() if len(base.split()) >= 2 else None
+        out, last = [], 0
+        for m in pattern.finditer(seg):
+            window = seg[max(0, m.start() - 60):m.start()].lower()
+            if guard and guard in window:      # already spelled out by hand
+                continue
+            raw = seg[:m.start()]
+            # capitalise only when the abbreviation opens the string, its line
+            # (bullet) or a sentence - never mid-sentence after a colon or dash
+            form = entry['title'] if (raw == '' or raw.rstrip() == ''
+                                      or raw.rstrip().endswith(('.', '!', '?'))
+                                      or raw.endswith(('\n', '- ', '* '))) \
+                else entry['lower']
+            out.append(seg[last:m.start()])
+            out.append(form)
+            last = m.end()
+        if out:
+            out.append(seg[last:])
+            seg = ''.join(out)
+    return seg
+
+
+def collect_terms(*blocks):
+    """Abbreviations a question actually uses, for its "Key terms" drawer.
+
+    A term that the text already spells out in words is left out — the drawer
+    exists to explain, not to repeat.
+    """
+    text = '\n'.join(b for b in blocks if isinstance(b, str))
+    if not text.strip():
+        return []
+    text = _MATH_OR_CODE.sub(' ', text)
+    lower = text.lower()
+    found, seen = [], set()
+    for pattern, abbr, full in _TERMS:
+        if abbr in seen:
+            continue
+        if pattern.search(text) and full.split(' —')[0].strip().lower() not in lower:
+            seen.add(abbr)
+            found.append({'abbr': abbr, 'full': full})
+    return found
+
+
+def expand_fields(obj, fields):
+    """Expand a set of human-readable string / list-of-string fields in place."""
+    for f in fields:
+        v = obj.get(f)
+        if isinstance(v, str):
+            obj[f] = expand(v)
+        elif isinstance(v, list):
+            obj[f] = [expand(x) if isinstance(x, str) else x for x in v]
+    return obj
+
+
+
 def main():
     out = []
     out.append('// ===========================================================================\n'
@@ -1149,6 +1296,13 @@ def main():
                '//   expected: the model typed answer shown in Study mode and Results\n'
                '// ===========================================================================\n')
 
+    # spell out every abbreviation in the human-readable copy
+    for k in ('title', 'blurb'):
+        COURSE[k] = expand(COURSE[k])
+    for t in TOPICS:
+        t['name'] = expand(t['name'])
+        t['summaryNotes'] = expand(t.get('summaryNotes', ''))
+
     out.append('export const courses = [\n' + json.dumps(COURSE, indent=2) + ',\n]\n')
     out.append('export const categoryMeta = {}\n')
     out.append('export const topicMeta = ' + json.dumps({'eee282': TOPICS}, indent=2) + '\n')
@@ -1159,8 +1313,13 @@ def main():
         if item.get('image'):
             key = item['image'].rsplit('/', 1)[-1].replace('.svg', '')
             item['diagram'] = inline_diagram(key, item['id'])
-            item['diagramCaption'] = CAPTIONS.get(key, '')
+            item['diagramCaption'] = expand(CAPTIONS.get(key, ''))
             del item['image']
+        expand_fields(item, ('question', 'short', 'solution', 'expected', 'options'))
+        terms = collect_terms(item.get('question', ''), item.get('diagramCaption', ''),
+                              *(item.get('options') or []))
+        if terms:
+            item['terms'] = terms
         bank.append(item)
     out.append('export const questionBank = ' + json.dumps({'eee282': bank}, indent=2) + '\n')
 
@@ -1176,7 +1335,7 @@ def main():
     from collections import Counter
     print('topics :', Counter(q_['topicId'] for q_ in Q))
     print('types  :', Counter(q_['type'] for q_ in Q))
-    print('diagrams:', sum(1 for q_ in Q if q_.get('image')))
+    print('diagrams:', sum(1 for q_ in Q if q_.get('diagram')))
 
 
 if __name__ == '__main__':

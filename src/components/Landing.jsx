@@ -51,7 +51,8 @@ export default function Landing() {
         <p className="lead">
           A clean, exam-realistic testing environment built around the {course.code} practical
           syllabus — active &amp; passive components, transistor identification with a multimeter,
-          and CRO measurements. Configure your test, shuffle the bank, pause when you need to, and
+          and cathode ray oscilloscope (CRO) measurements. Configure your test, shuffle the bank,
+          pause when you need to, and
           review every answer with full worked solutions.
         </p>
         <div className="hero-cta">

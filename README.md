@@ -170,6 +170,22 @@ npm run validate                  # checks the bank and every injected SVG
 ```
 Both scripts live in the repo, so the figures are reproducible rather than hand-edited.
 
+## 🔤 Abbreviations
+
+Two rules, enforced in `scripts/build_data.py`:
+
+1. **CRO is always written out in full** — "cathode ray oscilloscope (CRO)" — at every
+   place it appears, in questions, options, solutions, captions, topic notes and UI copy.
+   Nobody should ever have to guess what "CRO" means.
+2. **Every other abbreviation keeps its short form in the prose** (that is how it is
+   written in the lab manual and printed on the instrument panel) but is listed in that
+   question's **Key terms** drawer — a collapsed list of only the abbreviations that
+   question actually uses. 22 of the 30 questions have one; the other 8 use none.
+   A term the sentence already spells out in words is left out of the drawer.
+
+To add a term, append it to `TERMS` in `scripts/build_data.py`. To make an abbreviation
+behave like CRO (always spelled out), move it into `INLINE`.
+
 ## 🗂️ Add questions
 
 Everything lives in **`src/data.js`**. Each question is one object:

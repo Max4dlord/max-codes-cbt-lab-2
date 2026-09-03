@@ -110,6 +110,9 @@ function vBracket(y1, y2, x, label, colour = GOLD) {
   return p.join('')
 }
 
+const PANEL_LEGEND = 'CH1/CH2 = channel 1 / channel 2   &#183;   DC = direct current   '
+  + '&#183;   AC = alternating current   &#183;   GND = ground (0 V reference)'
+
 // --------------------------- CRO front panel ------------------------------
 function knob(cx, cy, r, label, value, hl = false, angle = -140) {
   let s = ''
@@ -200,7 +203,10 @@ function croPanel({ screen, vb, volts = '5 V/div', time = '2 ms/div', hl = null,
   p.push(couplingSwitch(150, 380, xy ? 'DC' : hl === 'coupling' ? 'AC' : 'DC'))
   p.push(bnc(330, 412, 'CH2', hl === 'bnc2'))
   p.push(couplingSwitch(384, 380, 'GND'))
-  if (footer) p.push(txt(40, 470, 't12', footer))
+  if (footer) p.push(txt(40, 466, 't12', footer))
+  // legend: the face labels are abbreviations, so spell them out once,
+  // on the instrument itself, rather than editing the panel silkscreen.
+  p.push(txt(40, 488, 't10', PANEL_LEGEND))
   return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}"` +
     ` preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
 }

@@ -3,6 +3,7 @@ import { useNavigate, Navigate, Link } from 'react-router-dom'
 import Timer from './Timer.jsx'
 import RichText from './RichText.jsx'
 import Diagram from './Diagram.jsx'
+import TermsDrawer from './TermsDrawer.jsx'
 import { loadSession, saveSession, clearSession, saveResults } from '../progress.js'
 import { gradeTyped, hasTypedAnswer, typedPrompt } from '../graders.js'
 
@@ -129,6 +130,7 @@ export default function TestRunner() {
         options: qq.options,
         diagram: qq.diagram,
         diagramCaption: qq.diagramCaption,
+        terms: qq.terms,
         correct: qq.correct,
         userAnswer: ua,
         typedAnswer: tw || undefined,
@@ -194,6 +196,8 @@ export default function TestRunner() {
           <RichText text={q.question} className="qtext" />
 
           <Diagram svg={q.diagram} caption={q.diagramCaption} />
+
+          <TermsDrawer terms={q.terms} />
 
           <div className="options">
             {q.options.map((opt, i) => (

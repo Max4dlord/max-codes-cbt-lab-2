@@ -6,6 +6,7 @@ import { hasTypedAnswer } from '../graders.js'
 import { isComponentsTopic } from '../utils.js'
 import RichText from './RichText.jsx'
 import Diagram from './Diagram.jsx'
+import TermsDrawer from './TermsDrawer.jsx'
 import ComponentsTableModal from './ComponentsTableModal.jsx'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -141,6 +142,8 @@ export default function StudyRunner() {
           <RichText text={q.question} className="qtext" />
 
           <Diagram svg={q.diagram} caption={q.diagramCaption} />
+
+          <TermsDrawer terms={q.terms} />
 
           {topicImage && !q.diagram && (
             <div style={{ margin: '16px 0', padding: 12, background: 'var(--bg-soft)', border: '1px solid var(--border)', borderRadius: 12, textAlign: 'center', opacity: 0.9 }}>

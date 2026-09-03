@@ -1,5 +1,6 @@
 import { TELEGRAM_URL } from '../utils.js'
 import RichText from './RichText.jsx'
+import TermsDrawer from './TermsDrawer.jsx'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -18,6 +19,8 @@ export default function SolutionPanel({ item, topicName, onClose }) {
         </div>
 
         <RichText text={item.question} className="panel-q" />
+
+        <TermsDrawer terms={item.terms} />
 
         <div className="panel-ans">
           Correct answer: <strong>{LETTERS[item.correct]}. {item.options[item.correct]}</strong>
