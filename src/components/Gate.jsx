@@ -47,8 +47,10 @@ export default function Gate({ onUnlock }) {
     <div className="gate-shell">
       <div className="gate-card">
         <div className="gate-brand">
-          <span className="nav-logo">MC</span>
-          <span className="gate-brand-name">Max-codes · <em>CBT Lab</em></span>
+          <img src="/oau-crest.png" alt="Obafemi Awolowo University crest" className="nav-crest" />
+          <span className="gate-brand-name">
+            Obafemi Awolowo University · <em>EEE 282 CBT Lab</em>
+          </span>
         </div>
 
         <h1>{gateConfig.title}</h1>

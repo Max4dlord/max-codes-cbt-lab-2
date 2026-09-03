@@ -187,17 +187,27 @@ export default function Dashboard() {
 
           <div className="field">
             <label>Course</label>
-            <div className="course-select-wrap">
-              <select value={courseId} onChange={(e) => { setCourseId(e.target.value); setCategoryId(null); setTopicId(null); setMode('full') }}>
-                {courses.map((c) => (
-                  <option key={c.id} value={c.id}>{c.code} — {c.title}{c.available ? '' : ' (soon)'}</option>
-                ))}
-              </select>
-              <div className="course-pill">
-                <span className="course-dot" style={{ background: course.accent }} />
-                <span className="muted" style={{ fontSize: 13 }}>{course.available ? 'Available' : 'Coming soon'}</span>
+            {courses.length > 1 ? (
+              <div className="course-select-wrap">
+                <select value={courseId} onChange={(e) => { setCourseId(e.target.value); setCategoryId(null); setTopicId(null); setMode('full') }}>
+                  {courses.map((c) => (
+                    <option key={c.id} value={c.id}>{c.code} — {c.title}{c.available ? '' : ' (soon)'}</option>
+                  ))}
+                </select>
+                <div className="course-pill">
+                  <span className="course-dot" style={{ background: course.accent }} />
+                  <span className="muted" style={{ fontSize: 13 }}>{course.available ? 'Available' : 'Coming soon'}</span>
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="course-pill" style={{ padding: '10px 14px', border: '1px solid var(--border)', borderRadius: 10 }}>
+                <span className="course-dot" style={{ background: course.accent }} />
+                <strong style={{ fontSize: 15 }}>{course.code} — {course.title}</strong>
+                <span className="muted" style={{ fontSize: 12, marginLeft: 'auto' }}>
+                  {getQuestionCount(course.id)} questions
+                </span>
+              </div>
+            )}
             <p className="info-line">{course.blurb}</p>
           </div>
 
@@ -357,7 +367,7 @@ export default function Dashboard() {
       </div>
 
       {/* -------- STUDY MODE — No timer, immediate explanation, correct pre-ticked, very long explanations -------- */}
-      <div className="card" style={{ marginTop: 24, borderLeft: '4px solid var(--primary)', background: 'linear-gradient(135deg, rgba(193,18,31,0.04), rgba(180,83,9,0.02))' }}>
+      <div className="card" style={{ marginTop: 24, borderLeft: '4px solid var(--primary)', background: 'linear-gradient(135deg, rgba(1,0,128,0.04), rgba(138,106,18,0.02))' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12, marginBottom: 8 }}>
           <div>
             <h2 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: 10 }}>📖 Study Mode <span style={{ fontSize: 12, background: 'var(--primary)', color: '#fff', padding: '4px 10px', borderRadius: 999 }}>NEW</span></h2>
@@ -472,7 +482,7 @@ export default function Dashboard() {
         {studyError && <p style={{ color: 'var(--red)', fontSize: 14, marginTop: 12 }}>{studyError}</p>}
 
         <div style={{ marginTop: 20 }}>
-          <button className="btn btn-primary btn-lg" onClick={startStudy} style={{ width: '100%', background: 'linear-gradient(135deg, var(--primary), #B45309)' }}>
+          <button className="btn btn-primary btn-lg" onClick={startStudy} style={{ width: '100%', background: 'linear-gradient(135deg, var(--primary), #8A6A12)' }}>
             Start Study Mode — No Timer, See Answers Instantly →
           </button>
         </div>

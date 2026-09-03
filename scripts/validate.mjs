@@ -17,11 +17,13 @@ let total = 0
 // topic's list, otherwise a diagram could show up on unrelated questions.
 // ---------------------------------------------------------------------------
 const IMAGE_ALLOW = {
-  'welding-processes-defects': ['welding-defects.png', 'flame-zones.png'],
-  'fasteners': ['taper-pin.png'],
-  'metal-working': ['anvil-diagram.png'],
-  'cutting-tools': ['hacksaw-tpi.png'],
-  'jigs-fixtures': ['jig-vs-fixture.png'],
+  // EEE 282 — one diagram per question, all drawn from the question's own SVG.
+  'active-passive': ['eee282/q02.svg', 'eee282/q03.svg', 'eee282/q04.svg', 'eee282/q05.svg',
+    'eee282/q06.svg', 'eee282/q07.svg'],
+  'bjt-diagnostics': ['eee282/q13.svg'],
+  'cro-controls': [],
+  'cro-calculations': ['eee282/q24.svg', 'eee282/q25.svg', 'eee282/q28.svg', 'eee282/q29.svg',
+    'eee282/q30.svg'],
 }
 
 for (const course of courses) {
@@ -59,6 +61,24 @@ for (const course of courses) {
           errors.push(`${tag}: image '${base}' is not approved for topic '${q.topicId}' (allowed: ${allowed.join(', ')})`)
       }
     }
+    // ---- typed-answer (calc / text) contract ----
+    const qType = q.type || 'mcq'
+    if (!['mcq', 'calc', 'text'].includes(qType))
+      errors.push(`${tag}: unknown type '${qType}'`)
+    if (qType === 'calc') {
+      if (!q.num || !Array.isArray(q.num.values) || !q.num.values.length)
+        errors.push(`${tag}: type 'calc' needs num.values[]`)
+      else if (q.num.values.some((v) => typeof v !== 'number' || !isFinite(v)))
+        errors.push(`${tag}: num.values must all be finite numbers`)
+      if (!q.expected) errors.push(`${tag}: type 'calc' needs an 'expected' model answer`)
+    }
+    if (qType === 'text') {
+      if (!q.match) errors.push(`${tag}: type 'text' needs a 'match' keyword rule`)
+      if (!q.expected) errors.push(`${tag}: type 'text' needs an 'expected' model answer`)
+    }
+    if (qType !== 'mcq' && q.expected && !String(q.expected).trim())
+      errors.push(`${tag}: empty 'expected'`)
+
     // ---- answer-marker heuristic (warnings only) ----
     const text = `${q.short}\n${q.solution}`
     const sentences = text.split(/(?<=[.!?])\s+/)
@@ -126,6 +146,15 @@ if (Object.keys(imgByTopic).length) {
     console.log(`  ${key}: ${Object.entries(imgs).map(([i, n]) => `${i} ×${n}`).join(', ')}`)
   }
 }
+
+// ---- typed-answer audit ----
+const typed = []
+for (const course of courses) {
+  for (const q of questionBank[course.id] || []) {
+    if (q.type && q.type !== 'mcq') typed.push(`${course.id}/${q.id} (${q.type})`)
+  }
+}
+if (typed.length) console.log(`\nTyped-answer questions: ${typed.length}\n  ` + typed.join('\n  '))
 
 console.log(`\nTotal questions checked: ${total}`)
 if (warnings.length) console.log(`\n⚠️  ${warnings.length} warning(s):\n  ` + warnings.slice(0, 20).join('\n  '))

@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { courses } from '../data.js'
-import { getTopics, getCategories } from '../utils.js'
+import { getTopics, getCategories, getQuestionCount } from '../utils.js'
+
+const UNIVERSITY = 'Obafemi Awolowo University'
+const CAMPUS = 'Ile-Ife, Osun State · Faculty of Technology'
 
 const FEATURES = [
   { ico: '⏱️', title: 'Timed tests, your way', text: 'Pick a duration and how many questions you want. A live countdown with Pause / Resume keeps you in control.' },
@@ -29,14 +32,27 @@ export default function Landing() {
   return (
     <>
       <section className="hero">
-        <span className="badge"><span className="dot" /> CBT Practice Platform · Live</span>
+        <div className="oau-band">
+          <img src="/oau-crest.png" alt="Obafemi Awolowo University crest" className="oau-crest" />
+          <div>
+            <div className="oau-uni">{UNIVERSITY}</div>
+            <div className="oau-place">{CAMPUS}</div>
+          </div>
+          <div className="oau-dept">
+            <strong>Department of Electronic &amp; Electrical Engineering</strong>
+            {course.code} · {course.title}
+          </div>
+        </div>
+
+        <span className="badge"><span className="dot" /> OAU CBT Practice Platform · Live</span>
         <h1>
-          Master your exams with <span className="grad">Max-codes CBT Lab</span>
+          Master <span className="grad">{course.code}</span> before the bench exam
         </h1>
         <p className="lead">
-          A clean, exam-realistic testing environment for past questions. Configure your test,
-          shuffle the question bank, pause when you need to, and review every answer with
-          full worked solutions.
+          A clean, exam-realistic testing environment built around the {course.code} practical
+          syllabus — active &amp; passive components, transistor identification with a multimeter,
+          and CRO measurements. Configure your test, shuffle the bank, pause when you need to, and
+          review every answer with full worked solutions.
         </p>
         <div className="hero-cta">
           <Link to="/dashboard" className="btn btn-primary btn-lg">Start a test →</Link>
@@ -45,8 +61,8 @@ export default function Landing() {
         <p className="hero-note">No sign-up needed · works offline · your progress is saved on this device</p>
 
         <div className="hero-card">
-          <div className="stat"><div className="num grad">{availableCourses.length}</div><div className="lbl">Courses live now</div></div>
-          <div className="stat"><div className="num">{getTopics(course.id).length}</div><div className="lbl">Topic categories</div></div>
+          <div className="stat"><div className="num grad">{getQuestionCount(course.id)}</div><div className="lbl">Questions in the bank</div></div>
+          <div className="stat"><div className="num">{getTopics(course.id).length}</div><div className="lbl">Topic areas</div></div>
           <div className="stat"><div className="num grad">100%</div><div className="lbl">Free to practice</div></div>
           <div className="stat"><div className="num">∞</div><div className="lbl">Reshuffles per test</div></div>
         </div>
@@ -129,7 +145,12 @@ export default function Landing() {
       </div>
 
       <footer>
-        © 2026 Max-codes CBT Lab — Built for focused, exam-realistic practice.
+        <img src="/oau-crest.png" alt="OAU crest" className="oau-footer-crest" />
+        <div>
+          © {new Date().getFullYear()} {UNIVERSITY}, {CAMPUS.split(' · ')[0]} — {course.code} CBT Lab.
+          <br />
+          Built for focused, exam-realistic practice. “For Learning and Culture.”
+        </div>
       </footer>
     </>
   )

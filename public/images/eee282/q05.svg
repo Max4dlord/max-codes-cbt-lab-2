@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="174" viewBox="0 0 400 174" role="img" xmlns="http://www.w3.org/2000/svg"><style>
+ text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#111a3d}
+ .gl{stroke:#c3cad9;stroke-width:1}
+ .ax{stroke:#7d89a8;stroke-width:1.3}
+ .ac{fill:none;stroke:#B08A1B;stroke-width:2.2}
+ .t11{font-size:11px}.t12{font-size:12px}.t13{font-size:13px}.t15{font-size:15px}
+ .tb{font-size:13px;font-weight:700}
+ .tg{font-size:13px;font-weight:700;fill:#7a5f0a}
+ .l{fill:none;stroke:#010080;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+ .w{fill:none;stroke:#010080;stroke-width:2.8;stroke-linejoin:round;stroke-linecap:round}
+ .w2{fill:none;stroke:#a52a2a;stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+ .dm{fill:none;stroke:#010080;stroke-width:1.5;stroke-dasharray:5 4}
+ .dg{fill:none;stroke:#1e7a45;stroke-width:1.5;stroke-dasharray:6 4}
+</style><rect width="400" height="174" fill="#ffffff"/><g transform="translate(30,34) scale(2.4)"><g fill="none" stroke="#010080" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0,30 H26"/><rect x="26" y="20" width="48" height="20"/><path d="M74,30 H100"/><path d="M34,10 L48,18"/><polygon points="48,18 40,19 44,12" fill="#010080" stroke="none"/><path d="M66,10 L52,18"/><polygon points="52,18 60,19 56,12" fill="#010080" stroke="none"/></g></g><text class="t15" x="34" y="146">LDR (photoresistor)</text><text class="t13" x="300" y="58">Dark</text><text class="t13" x="300" y="76">R very HIGH</text><text class="t13" x="300" y="112">Bright light</text><text class="t13" x="300" y="130">R very LOW</text><line class="ac" x1="286" y1="52" x2="286" y2="134" marker-end="url(#ahs)"/><text class="t12" x="34" y="166" fill="#5b6478">Highest resistance occurs in total darkness.</text></svg>

@@ -66,7 +66,7 @@ export default function Results() {
       {/* ---------- Review ---------- */}
       <div className="page-head" style={{ marginBottom: 18 }}>
         <h1 style={{ fontSize: 24 }}>Review & solutions</h1>
-        <p>Every question with a short explanation. Tap “Show full explanation” for the complete worked solution.</p>
+        <p>Every question with a short explanation. Tap “Show full explanation” for the complete worked solution. Where you typed an answer instead of picking an option, your typed value is what was marked.</p>
       </div>
 
       <div className="flex" style={{ justifyContent: 'flex-end', marginBottom: 14 }}>
@@ -103,6 +103,21 @@ export default function Results() {
                   <div className="ri-opt" style={{ color: 'var(--muted)' }}><em>You didn't answer this question.</em></div>
                 )}
               </div>
+
+              {item.typedAnswer && (
+                <div className={`ri-typed ${item.typedOk ? 'ok' : 'bad'}`}>
+                  <div className="ri-typed-head">
+                    You typed: <strong>{item.typedAnswer}</strong>
+                    <span className={`ri-typed-tag ${item.typedOk ? 'ok' : 'bad'}`}>
+                      {item.typedOk ? '✓ marked correct' : '✗ marked incorrect'}
+                    </span>
+                  </div>
+                  {item.expected && (
+                    <div className="ri-typed-exp">Model answer: {item.expected}</div>
+                  )}
+                  {item.typedDetail && <div className="ri-typed-detail">{item.typedDetail}</div>}
+                </div>
+              )}
 
               <div className="ri-short">
                 <strong>{item.status === 'ok' ? "Why it's right: " : "Why it's wrong: "}</strong>{' '}

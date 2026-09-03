@@ -1,5 +1,5 @@
 // ===========================================================================
-// ACCESS GATE CONFIG  —  Max-codes CBT Lab
+// ACCESS GATE CONFIG  —  OAU EEE 282 CBT Lab
 // ===========================================================================
 // Everything that controls the "join → unlock" gate lives in this one file.
 //
@@ -44,7 +44,7 @@ export const gateConfig = {
   accessVersion: 1,       // ← bump this to force everyone to re-unlock
   code: 'Maxprep3060',    // ← the access code (change anytime; bump version too)
 
-  title: 'Unlock Max-codes CBT Lab',
+  title: 'Unlock the OAU EEE 282 CBT Lab',
   subtitle:
     'The CBT lab is free for our community. Complete the step(s) below, then enter the access code — it is posted inside our WhatsApp channel.',
 

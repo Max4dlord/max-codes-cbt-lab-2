@@ -13,8 +13,10 @@ export default function Navbar() {
   return (
     <header className="nav">
       <Link to="/" className="nav-brand">
-        <span className="nav-logo">MC</span>
-        <span className="nav-title">Max-codes · <em>CBT Lab</em></span>
+        <img src="/oau-crest.png" alt="Obafemi Awolowo University crest" className="nav-crest" />
+        <span className="nav-title">
+          OAU <em>· EEE 282 CBT Lab</em>
+        </span>
       </Link>
       <nav className="nav-links">
         <NavLink to="/" end>Home</NavLink>

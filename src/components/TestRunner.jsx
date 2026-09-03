@@ -3,6 +3,7 @@ import { useNavigate, Navigate, Link } from 'react-router-dom'
 import Timer from './Timer.jsx'
 import RichText from './RichText.jsx'
 import { loadSession, saveSession, clearSession, saveResults } from '../progress.js'
+import { gradeTyped, hasTypedAnswer, typedPrompt } from '../graders.js'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -13,6 +14,7 @@ export default function TestRunner() {
   // Live state, hydrated from the saved session.
   const [index, setIndex] = useState(session?.index ?? 0)
   const [answers, setAnswers] = useState(session?.answers ?? {})
+  const [typed, setTyped] = useState(session?.typed ?? {})
   const [flagged, setFlagged] = useState(session?.flagged ?? [])
   const [remaining, setRemaining] = useState(session?.remainingSec ?? 0)
   const [paused, setPaused] = useState(session?.paused ?? false)
@@ -25,7 +27,9 @@ export default function TestRunner() {
   const questions = session.questionSet
   const total = questions.length
   const q = questions[index]
-  const answeredCount = Object.keys(answers).length
+  const answeredCount = questions.filter(
+    (qq) => answers[qq.id] !== undefined || String(typed[qq.id] || '').trim()
+  ).length
 
   // ----- Countdown effect -----
   useEffect(() => {
@@ -44,16 +48,23 @@ export default function TestRunner() {
     if (submittedRef.current) return
     setSession((prev) => {
       if (!prev) return prev
-      const next = { ...prev, index, answers, flagged, remainingSec: remaining, paused }
+      const next = { ...prev, index, answers, typed, flagged, remainingSec: remaining, paused }
       saveSession(next)
       return next
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, answers, flagged, remaining, paused])
+  }, [index, answers, typed, flagged, remaining, paused])
 
   function selectOption(optIndex) {
     if (paused) return
+    // Choosing an option clears any typed answer so the two never conflict.
+    setTyped((t) => ({ ...t, [q.id]: '' }))
     setAnswers((a) => ({ ...a, [q.id]: optIndex }))
+  }
+
+  function setTypedAnswer(value) {
+    if (paused) return
+    setTyped((t) => ({ ...t, [q.id]: value }))
   }
 
   function go(i) {
@@ -89,8 +100,17 @@ export default function TestRunner() {
 
     const items = questions.map((qq) => {
       const ua = answers[qq.id]
+      const tw = String(typed[qq.id] || '').trim()
       let status
-      if (ua === undefined || ua === null) {
+      let typedResult = null
+
+      if (tw) {
+        // A typed answer always takes precedence over the picked option.
+        typedResult = gradeTyped(qq, tw)
+        status = typedResult.ok ? 'ok' : 'bad'
+        if (typedResult.ok) correctCount++
+        else wrongCount++
+      } else if (ua === undefined || ua === null) {
         status = 'skip'
         unanswered++
       } else if (ua === qq.correct) {
@@ -100,6 +120,7 @@ export default function TestRunner() {
         status = 'bad'
         wrongCount++
       }
+
       return {
         id: qq.id,
         topicId: qq.topicId,
@@ -107,6 +128,10 @@ export default function TestRunner() {
         options: qq.options,
         correct: qq.correct,
         userAnswer: ua,
+        typedAnswer: tw || undefined,
+        typedOk: typedResult ? typedResult.ok : null,
+        typedDetail: typedResult ? typedResult.detail : '',
+        expected: qq.expected,
         short: qq.short,
         solution: qq.solution,
         status
@@ -185,6 +210,32 @@ export default function TestRunner() {
             ))}
           </div>
 
+          {hasTypedAnswer(q) && (
+            <div className="typed-box">
+              <div className="typed-label">
+                ✍️ Type your answer — just like the written exam
+              </div>
+              <div className="typed-row">
+                <input
+                  className="typed-input"
+                  type="text"
+                  inputMode="decimal"
+                  autoComplete="off"
+                  placeholder={q.type === 'calc' ? 'e.g. 20, 10, 7.07' : 'Your answer in your own words…'}
+                  value={typed[q.id] || ''}
+                  disabled={paused}
+                  onChange={(e) => setTypedAnswer(e.target.value)}
+                />
+                {typed[q.id] ? (
+                  <button className="btn btn-ghost btn-sm" onClick={() => setTypedAnswer('')} disabled={paused}>
+                    Clear
+                  </button>
+                ) : null}
+              </div>
+              <div className="typed-hint">{typedPrompt(q)}</div>
+            </div>
+          )}
+
           <div className="qnav">
             <button className="btn btn-ghost" onClick={() => go(index - 1)} disabled={index === 0}>← Previous</button>
             <button className="flag-btn" onClick={toggleFlag} style={{ padding: '10px 16px' }}>
@@ -205,7 +256,7 @@ export default function TestRunner() {
             {questions.map((qq, i) => {
               const cls = [
                 'pcell',
-                answers[qq.id] !== undefined ? 'answered' : '',
+                (answers[qq.id] !== undefined || String(typed[qq.id] || '').trim()) ? 'answered' : '',
                 flagged.includes(qq.id) ? 'flagged' : '',
                 i === index ? 'current' : ''
               ].filter(Boolean).join(' ')
