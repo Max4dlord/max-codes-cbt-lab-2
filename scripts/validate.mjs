@@ -5,7 +5,7 @@
 // are ever reordered.
 
 import { existsSync } from 'fs'
-import { courses, topicMeta, questionBank, categoryMeta } from '../src/data.js'
+import { courses, topicMeta, questionBank, categoryMeta, componentSymbols } from '../src/data.js'
 
 const errors = []
 const warnings = []
@@ -48,18 +48,20 @@ for (const course of courses) {
     if (!q.solution || String(q.solution).trim().length < 5) errors.push(`${tag}: missing 'solution'`)
     if (q.kind && !['calc', 'theory'].includes(q.kind)) errors.push(`${tag}: unknown kind '${q.kind}'`)
     if (!q.topicId || !topicIds.has(q.topicId)) errors.push(`${tag}: unknown topicId '${q.topicId}'`)
-    if (q.image) {
-      const path = './public' + q.image
-      if (!existsSync(path)) errors.push(`${tag}: missing image file ${q.image}`)
-      // image must be appropriate for the question's topic
-      const allowed = IMAGE_ALLOW[q.topicId]
-      if (!allowed) {
-        errors.push(`${tag}: topic '${q.topicId}' has no approved images, but question carries ${q.image}`)
-      } else {
-        const base = q.image.replace(/^\/images\//, '')
-        if (!allowed.includes(base))
-          errors.push(`${tag}: image '${base}' is not approved for topic '${q.topicId}' (allowed: ${allowed.join(', ')})`)
-      }
+    // ---- inline SVG diagram contract ----
+    if (q.image) errors.push(`${tag}: uses the legacy 'image' field — diagrams are inline 'diagram' strings now`)
+    if (q.diagram) {
+      const d = String(q.diagram)
+      if (!d.startsWith('<svg')) errors.push(`${tag}: diagram must start with <svg`)
+      if (!/viewBox="0 0 \d+ \d+"/.test(d)) errors.push(`${tag}: diagram needs a viewBox so it can scale`)
+      if (/<\s*script/i.test(d)) errors.push(`${tag}: diagram must not contain <script>`)
+      if (/<\s*style/i.test(d)) errors.push(`${tag}: diagram must not embed <style> (scope those rules in styles.css)`)
+      if (!/class="diagram-svg"/.test(d)) errors.push(`${tag}: diagram needs class="diagram-svg"`)
+      const ids = [...d.matchAll(/id="([^"]+)"/g)].map((m) => m[1])
+      if (new Set(ids).size !== ids.length) errors.push(`${tag}: duplicate ids inside the diagram`)
+      if (ids.some((id) => /^ah(sb|n|s)?$/.test(id)))
+        errors.push(`${tag}: marker ids must be namespaced per question (found a bare 'ah')`)
+      if (!q.diagramCaption) errors.push(`${tag}: diagram needs a caption`)
     }
     // ---- typed-answer (calc / text) contract ----
     const qType = q.type || 'mcq'
@@ -155,6 +157,27 @@ for (const course of courses) {
   }
 }
 if (typed.length) console.log(`\nTyped-answer questions: ${typed.length}\n  ` + typed.join('\n  '))
+
+// ---- component reference table ----
+if (!Array.isArray(componentSymbols)) {
+  errors.push('componentSymbols: must be an array')
+} else {
+  const seen = new Set()
+  for (const c of componentSymbols) {
+    if (seen.has(c.name)) errors.push(`componentSymbols: duplicate '${c.name}'`)
+    seen.add(c.name)
+    if (!['Active', 'Passive'].includes(c.category))
+      errors.push(`componentSymbols/${c.name}: category must be Active or Passive`)
+    if (!c.symbol || !String(c.symbol).startsWith('<svg'))
+      errors.push(`componentSymbols/${c.name}: symbol must be a raw <svg> string`)
+    if (!c.symbol || !/viewBox="0 0 \d+ \d+"/.test(String(c.symbol)))
+      errors.push(`componentSymbols/${c.name}: symbol needs a viewBox`)
+    if (!c.uses || String(c.uses).trim().length < 15)
+      errors.push(`componentSymbols/${c.name}: 'uses' description is too short`)
+  }
+  const active = componentSymbols.filter((c) => c.category === 'Active').length
+  console.log(`\nComponent reference: ${componentSymbols.length} entries (${active} active / ${componentSymbols.length - active} passive)`)
+}
 
 console.log(`\nTotal questions checked: ${total}`)
 if (warnings.length) console.log(`\n⚠️  ${warnings.length} warning(s):\n  ` + warnings.slice(0, 20).join('\n  '))

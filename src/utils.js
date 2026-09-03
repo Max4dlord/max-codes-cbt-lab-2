@@ -79,6 +79,14 @@ export function buildQuestionSet(courseId, { mode, topicId, categoryId, count })
   return shuffled.slice(0, n)
 }
 
+// The topic that owns the components reference table. The
+// "View Components Table" button only appears for questions in this topic.
+export const COMPONENTS_TOPIC_ID = 'active-passive'
+
+export function isComponentsTopic(question) {
+  return !!question && question.topicId === COMPONENTS_TOPIC_ID
+}
+
 // Optional Telegram channel/group link. Set this to your real invite link to
 // surface a "Discuss in Telegram" button inside the solution panel. The link
 // opens in a new tab so the test/progress is never disturbed.

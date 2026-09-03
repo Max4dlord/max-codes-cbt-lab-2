@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useNavigate, Navigate, Link } from 'react-router-dom'
 import Timer from './Timer.jsx'
 import RichText from './RichText.jsx'
+import Diagram from './Diagram.jsx'
 import { loadSession, saveSession, clearSession, saveResults } from '../progress.js'
 import { gradeTyped, hasTypedAnswer, typedPrompt } from '../graders.js'
 
@@ -126,6 +127,8 @@ export default function TestRunner() {
         topicId: qq.topicId,
         question: qq.question,
         options: qq.options,
+        diagram: qq.diagram,
+        diagramCaption: qq.diagramCaption,
         correct: qq.correct,
         userAnswer: ua,
         typedAnswer: tw || undefined,
@@ -190,12 +193,7 @@ export default function TestRunner() {
           </div>
           <RichText text={q.question} className="qtext" />
 
-          {q.image && (
-            <div style={{ margin: '16px 0', padding: 12, background: 'var(--bg-soft)', border: '1px solid var(--border)', borderRadius: 12, textAlign: 'center' }}>
-              <img src={q.image} alt="Question diagram" style={{ maxWidth: '100%', maxHeight: 320, borderRadius: 8, border: '1px solid var(--border)' }} />
-              <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 8 }}>Diagram for visual understanding — tap to zoom</div>
-            </div>
-          )}
+          <Diagram svg={q.diagram} caption={q.diagramCaption} />
 
           <div className="options">
             {q.options.map((opt, i) => (

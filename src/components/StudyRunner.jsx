@@ -3,7 +3,10 @@ import { useNavigate, Navigate, Link } from 'react-router-dom'
 import { loadStudySession, saveStudySession } from '../progress.js'
 import { topicMeta } from '../data.js'
 import { hasTypedAnswer } from '../graders.js'
+import { isComponentsTopic } from '../utils.js'
 import RichText from './RichText.jsx'
+import Diagram from './Diagram.jsx'
+import ComponentsTableModal from './ComponentsTableModal.jsx'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -72,6 +75,7 @@ export default function StudyRunner() {
   const [index, setIndex] = useState(session?.index ?? 0)
   const [showSolution, setShowSolution] = useState(false)
   const [revealed, setRevealed] = useState({})
+  const [showComponents, setShowComponents] = useState(false)
 
   if (!session) return <Navigate to="/dashboard" replace />
 
@@ -136,14 +140,9 @@ export default function StudyRunner() {
           </div>
           <RichText text={q.question} className="qtext" />
 
-          {q.image && (
-            <div style={{ margin: '16px 0', padding: 12, background: 'var(--bg-soft)', border: '1px solid var(--border)', borderRadius: 12, textAlign: 'center' }}>
-              <img src={q.image} alt="Question diagram" style={{ maxWidth: '100%', maxHeight: 320, borderRadius: 8, border: '1px solid var(--border)' }} />
-              <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 8 }}>Diagram for visual understanding — tap to zoom</div>
-            </div>
-          )}
+          <Diagram svg={q.diagram} caption={q.diagramCaption} />
 
-          {topicImage && !q.image && (
+          {topicImage && !q.diagram && (
             <div style={{ margin: '16px 0', padding: 12, background: 'var(--bg-soft)', border: '1px solid var(--border)', borderRadius: 12, textAlign: 'center', opacity: 0.9 }}>
               <div style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 8, fontWeight: 600 }}>📐 Topic Diagram — {topicLabel}</div>
               <img src={topicImage} alt={`${topicLabel} diagram`} style={{ maxWidth: '100%', maxHeight: 260, borderRadius: 8, border: '1px solid var(--border)' }} />
@@ -182,6 +181,15 @@ export default function StudyRunner() {
             <button className="btn btn-primary" onClick={handleSeeExplanation} style={{ flex: 1, minWidth: 200 }}>
               {showSolution ? '✓ Explanation below — scroll down' : 'See Detailed Explanation →'}
             </button>
+            {isComponentsTopic(q) && (
+              <button
+                className="btn btn-primary"
+                onClick={() => setShowComponents(true)}
+                style={{ flex: 1, minWidth: 200 }}
+              >
+                🔌 View Components Table
+              </button>
+            )}
             <button className="btn btn-ghost" onClick={() => go(index + 1)} disabled={index === total - 1}>
               Next Question →
             </button>
@@ -263,6 +271,8 @@ export default function StudyRunner() {
           </p>
         </div>
       </div>
+
+      <ComponentsTableModal open={showComponents} onClose={() => setShowComponents(false)} />
     </div>
   )
 }

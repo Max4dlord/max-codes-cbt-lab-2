@@ -129,6 +129,123 @@ p { margin: 0 0 1em; }
 .ri-typed-exp { margin-top: 7px; color: var(--green); font-weight: 600; }
 .ri-typed-detail { margin-top: 5px; color: var(--muted); font-size: 13px; }
 
+/* ------------------- Inline question diagrams ------------------- */
+.diagram { margin: 18px 0 4px; }
+.diagram-frame {
+  padding: 12px; background: var(--bg-soft); border: 1px solid var(--border);
+  border-radius: 12px; text-align: center; cursor: zoom-in; overflow: hidden;
+}
+.diagram-frame .diagram-svg { display: block; width: 100%; height: auto; margin: 0 auto; }
+.diagram-cap { margin-top: 8px; font-size: 12px; color: var(--muted); text-align: center; }
+
+.diagram-zoom {
+  width: min(1100px, 96vw); max-height: 92vh; display: flex; flex-direction: column;
+  background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.diagram-zoom-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 16px; border-bottom: 1px solid var(--border);
+  font-weight: 700; color: var(--navy); font-size: 14px;
+}
+.diagram-zoom-body { padding: 18px; overflow: auto; background: #fff; }
+.diagram-zoom-body .diagram-svg { display: block; width: 100%; height: auto; }
+
+/* diagram-internal classes (were embedded <style> in the standalone files —
+   scoped here so they can never leak into the rest of the app) */
+.diagram-svg text { font-family: var(--font-sans); fill: #111a3d; }
+.diagram-svg .gl { stroke: #c3cad9; stroke-width: 1; }
+.diagram-svg .ax { stroke: #7d89a8; stroke-width: 1.3; }
+.diagram-svg .ac { fill: none; stroke: #B08A1B; stroke-width: 2.2; }
+.diagram-svg .t11 { font-size: 11px; }
+.diagram-svg .t12 { font-size: 12px; }
+.diagram-svg .t13 { font-size: 13px; }
+.diagram-svg .t15 { font-size: 15px; }
+.diagram-svg .tb { font-size: 13px; font-weight: 700; }
+.diagram-svg .tg { font-size: 13px; font-weight: 700; fill: #7a5f0a; }
+.diagram-svg .l { fill: none; stroke: #010080; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.diagram-svg .w { fill: none; stroke: #010080; stroke-width: 2.8; stroke-linejoin: round; stroke-linecap: round; }
+.diagram-svg .w2 { fill: none; stroke: #a52a2a; stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round; }
+.diagram-svg .dm { fill: none; stroke: #010080; stroke-width: 1.5; stroke-dasharray: 5 4; }
+.diagram-svg .dg { fill: none; stroke: #1e7a45; stroke-width: 1.5; stroke-dasharray: 6 4; }
+
+/* ------------------- Components reference table ------------------- */
+.sym-svg { display: block; width: 100%; max-width: 118px; height: auto; margin: 0 auto; }
+
+.comp-overlay {
+  position: fixed; inset: 0; z-index: 90; background: rgba(14, 20, 54, 0.55);
+  backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center;
+  padding: 20px; animation: fadeIn 0.15s ease;
+}
+.comp-panel {
+  width: min(1000px, 100%); max-height: 90vh; display: flex; flex-direction: column;
+  background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  border-top: 5px solid var(--navy); overflow: hidden;
+}
+.comp-head {
+  display: flex; align-items: flex-start; gap: 14px; flex-wrap: wrap;
+  padding: 18px 20px 14px; border-bottom: 1px solid var(--border);
+}
+.comp-head h3 { margin: 0 0 4px; font-size: 19px; color: var(--navy); }
+.comp-head p { margin: 0; font-size: 13px; color: var(--muted); }
+.comp-close { margin-left: auto; }
+.comp-tools {
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  padding: 12px 20px; border-bottom: 1px solid var(--border); background: var(--card-2);
+}
+.comp-search {
+  flex: 1; min-width: 200px; padding: 9px 13px; font-size: 14px; font-family: var(--font-sans);
+  color: var(--text); background: var(--card); border: 1px solid var(--border);
+  border-radius: 9px; outline: none;
+}
+.comp-search:focus { border-color: var(--navy); box-shadow: 0 0 0 3px rgba(1,0,128,0.10); }
+.comp-filter { display: flex; gap: 6px; }
+.comp-filter button {
+  padding: 8px 14px; font-size: 13px; font-weight: 600; font-family: var(--font-sans);
+  border-radius: 999px; border: 1px solid var(--border); background: var(--card);
+  color: var(--muted); cursor: pointer; transition: 0.15s;
+}
+.comp-filter button.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+.comp-body { overflow: auto; padding: 4px 20px 20px; }
+.comp-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.comp-table th {
+  position: sticky; top: 0; background: var(--card); z-index: 1;
+  text-align: left; padding: 12px 10px; font-size: 12px; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted); border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+.comp-table td { padding: 12px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.comp-table tr:hover td { background: var(--card-2); }
+.comp-sym-cell { width: 140px; background: var(--bg-soft); border-radius: 8px; }
+.comp-name { font-weight: 700; color: var(--text); }
+.comp-cat {
+  display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.04em;
+  text-transform: uppercase; padding: 4px 10px; border-radius: 999px; white-space: nowrap;
+}
+.comp-cat.active { background: var(--primary-soft); color: var(--navy); border: 1px solid rgba(1,0,128,0.18); }
+.comp-cat.passive { background: var(--gold-soft); color: #7a5f0a; border: 1px solid rgba(201,162,39,0.35); }
+.comp-uses { color: var(--muted); line-height: 1.5; }
+.comp-empty { padding: 40px 10px; text-align: center; color: var(--muted); }
+.comp-foot {
+  padding: 12px 20px; border-top: 1px solid var(--border); background: var(--card-2);
+  font-size: 12px; color: var(--muted);
+}
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+
+@media (max-width: 720px) {
+  .comp-overlay { padding: 0; align-items: stretch; }
+  .comp-panel { max-height: 100%; border-radius: 0; height: 100%; }
+  .comp-table thead { display: none; }
+  .comp-table, .comp-table tbody, .comp-table tr, .comp-table td { display: block; width: 100%; }
+  .comp-table tr { border: 1px solid var(--border); border-radius: 12px; margin: 12px 0; padding: 6px; }
+  .comp-table td { border: none; padding: 6px 10px; }
+  .comp-sym-cell { width: 100%; border-radius: 8px; padding: 10px; }
+  .comp-table td::before {
+    content: attr(data-label); display: block; font-size: 11px; font-weight: 800;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 4px;
+  }
+}
+
 /* ----------------------------- Navbar ----------------------------- */
 .nav {
   position: sticky; top: 0; z-index: 40;

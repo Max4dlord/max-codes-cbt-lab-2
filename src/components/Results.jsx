@@ -4,6 +4,9 @@ import { loadResults, clearResults } from '../progress.js'
 import { formatTime } from '../utils.js'
 import SolutionPanel from './SolutionPanel.jsx'
 import RichText from './RichText.jsx'
+import Diagram from './Diagram.jsx'
+import ComponentsTableModal from './ComponentsTableModal.jsx'
+import { isComponentsTopic } from '../utils.js'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -11,6 +14,7 @@ export default function Results() {
   const [results, setResults] = useState(() => loadResults())
   const [openId, setOpenId] = useState(null)
   const [expandAll, setExpandAll] = useState(false)
+  const [showComponents, setShowComponents] = useState(false)
 
   if (!results) return <Navigate to="/dashboard" replace />
 
@@ -86,6 +90,8 @@ export default function Results() {
                 <span className={`ri-status ${item.status}`}>{statusLabel}</span>
               </div>
 
+              <Diagram svg={item.diagram} caption={item.diagramCaption} maxHeight={240} />
+
               <div className="ri-opts">
                 {item.options.map((opt, oi) => {
                   const isCorrect = oi === item.correct
@@ -132,6 +138,11 @@ export default function Results() {
                 <button className="btn btn-ghost btn-sm" onClick={() => setOpenId(item.id)}>
                   📖 Show full explanation
                 </button>
+                {isComponentsTopic(item) && (
+                  <button className="btn btn-ghost btn-sm" onClick={() => setShowComponents(true)}>
+                    🔌 View Components Table
+                  </button>
+                )}
               </div>
             </div>
           )
@@ -139,6 +150,8 @@ export default function Results() {
       </div>
 
       <SolutionPanel item={openItem} topicName={topicName} onClose={() => setOpenId(null)} />
+
+      <ComponentsTableModal open={showComponents} onClose={() => setShowComponents(false)} />
     </div>
   )
 }

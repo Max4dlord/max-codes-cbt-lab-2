@@ -110,8 +110,51 @@ npm run build    # production build -> dist/
   per-question verdict with a one-line explanation, and a **side panel with full worked
   solutions** — no redirect, no lost progress.
 - **Diagrams**: 12 hand-drawn SVG figures (diode, potentiometer divider, thermistor, LDR,
-  capacitor types, zener, DMM probing a TO-92 BJT, CRO traces, Lissajous).
+  capacitor types, zener, DMM probing a TO-92 BJT, CRO traces, Lissajous) — stored **inline**
+  in `src/data.js` and rendered as live, zoomable SVG.
+- **Components reference**: a modal table of the 20 most-used active and passive components with
+  their circuit symbols and uses, reachable from Study Mode and Review on any
+  *Active & Passive Components* question.
 - **LaTeX**: every formula is rendered live by KaTeX.
+
+---
+
+## 🖼️ Diagrams & the components table
+
+### Question diagrams live in the data
+Each question can carry a `diagram` — a raw, responsive SVG string in `src/data.js`
+(replacing the old `image` path). `src/components/Diagram.jsx` injects it and scales it:
+
+```js
+{ id: '…', diagram: '<svg class="diagram-svg" viewBox="0 0 400 180">…</svg>',
+  diagramCaption: 'PN junction diode: anode and cathode' }
+```
+
+Rules the build enforces (`npm run validate`):
+- must start with `<svg`, carry a `viewBox`, and no fixed `width`/`height` (so it scales);
+- **no `<style>` and no `<script>`** — the figure's internal classes (`.gl`, `.ax`, `.ac`, `.l`,
+  `.w`…) are defined in `styles.css` **scoped under `.diagram-svg`**, so they can never leak
+  into the rest of the app;
+- marker/element ids are **namespaced per question** (`id="ah-eee282_q02"`), so several figures
+  can share a page without id collisions.
+
+### Component reference table
+`componentSymbols` in `src/data.js` holds 20 entries — 10 passive, 10 active:
+
+```js
+{ name: 'Zener diode', category: 'Active', symbol: '<svg class="sym-svg" …>…</svg>',
+  uses: 'Operates safely in reverse breakdown at a fixed voltage…' }
+```
+
+`src/components/ComponentsTableModal.jsx` renders it in a responsive overlay (search +
+Active/Passive filters, sticky header, card layout under 720 px). It is opened by the
+**“🔌 View Components Table”** button, which appears **only** on questions whose topic is
+*Active & Passive Components*:
+
+| View | Placement | Classes |
+|---|---|---|
+| Study Mode (`StudyRunner.jsx`) | in the same inline flex row as “See Detailed Explanation”, with `style={{ flex: 1, minWidth: 200 }}` | `.btn .btn-primary` |
+| Review (`Results.jsx`) | inside `.ri-actions`, next to “Show full explanation” — the container's flex handles layout, no inline style | `.btn .btn-ghost .btn-sm` |
 
 ---
 
@@ -166,6 +209,8 @@ Everything lives in **`src/data.js`**. Each question is one object:
       StudyRunner.jsx    study mode: answers pre-ticked, model answers, deep explanations
       Results.jsx        score + review + show-full-explanation
       SolutionPanel.jsx  side panel with full worked solutions
+      Diagram.jsx        renders a raw, responsive inline SVG (tap to zoom)
+      ComponentsTableModal.jsx  active/passive components reference overlay
   public/
     oau-crest.png        official OAU crest (from oauife.edu.ng)
     oau-wordmark.png     crest + wordmark lockup
