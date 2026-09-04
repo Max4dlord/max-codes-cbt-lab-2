@@ -109,7 +109,7 @@ npm run build    # production build -> dist/
 - **Results & review**: score ring, breakdown (correct / wrong / skipped / time used),
   per-question verdict with a one-line explanation, and a **side panel with full worked
   solutions** — no redirect, no lost progress.
-- **Diagrams**: **all 37 questions carry a figure** — hand-drawn SVG stored **inline** in
+- **Diagrams**: **all 44 questions carry a figure** — hand-drawn SVG stored **inline** in
   `src/data.js` and rendered as live, zoomable SVG. Every one is specific to what the question
   asks (active vs passive panels, the two-diode BJT model, DMM probe setups, fault signatures…).
 - **Full CRO everywhere**: all 12 CRO questions show the complete instrument — chassis,
@@ -164,7 +164,7 @@ Active/Passive filters, sticky header, card layout under 720 px). It is opened b
 
 ## 🔧 Regenerating the artwork
 ```bash
-node scripts/draw_diagrams.mjs    # redraws all 37 figures into public/images/eee282/
+node scripts/draw_diagrams.mjs    # redraws all 44 figures into public/images/eee282/
 python3 scripts/build_data.py     # inlines them into src/data.js (minified, safe, responsive)
 npm run validate                  # checks the bank and every injected SVG
 ```
@@ -214,7 +214,7 @@ Two rules, enforced in `scripts/build_data.py`:
 2. **Every other abbreviation keeps its short form in the prose** (that is how it is
    written in the lab manual and printed on the instrument panel) but is listed in that
    question's **Key terms** drawer — a collapsed list of only the abbreviations that
-   question actually uses. 24 of the 37 questions have one; the other 13 use none.
+   question actually uses. 30 of the 44 questions have one; the other 14 use none.
    A term the sentence already spells out in words is left out of the drawer.
 
 To add a term, append it to `TERMS` in `scripts/build_data.py`. To make an abbreviation

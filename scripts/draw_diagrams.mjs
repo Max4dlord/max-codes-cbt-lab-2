@@ -101,12 +101,13 @@ function hBracket(x1, x2, y, label, colour = GOLD) {
   p.push(txt((x1 + x2) / 2, y - 10, 'tg', label, 'text-anchor="middle"'))
   return p.join('')
 }
-function vBracket(y1, y2, x, label, colour = GOLD) {
+function vBracket(y1, y2, x, label, colour = GOLD, anchor = 'start') {
   const p = []
   p.push(line(x, y1, x, y2, colour, 1.8))
   p.push(line(x - 6, y1, x + 6, y1, colour, 1.8))
   p.push(line(x - 6, y2, x + 6, y2, colour, 1.8))
-  p.push(txt(x + 10, (y1 + y2) / 2 + 4, 'tg', label))
+  p.push(txt(anchor === 'end' ? x - 10 : x + 10, (y1 + y2) / 2 + 4, 'tg', label,
+    `text-anchor="${anchor}"`))
   return p.join('')
 }
 
@@ -201,6 +202,7 @@ function croPanel({ screen, vb, volts = '5 V/div', time = '2 ms/div', hl = null,
   p.push(line(40, 362, 510, 362, '#c3cad9', 1.2))
   p.push(bnc(96, 412, 'CH1', hl === 'bnc1'))
   p.push(couplingSwitch(150, 380, xy ? 'DC' : hl === 'coupling' ? 'AC' : 'DC'))
+  if (hl === 'couplingDC') p.push(box(136, 354, 120, 108, 'none', GOLD, 2.5, 10))
   p.push(bnc(330, 412, 'CH2', hl === 'bnc2'))
   p.push(couplingSwitch(384, 380, 'GND'))
   if (footer) p.push(txt(40, 466, 't12', footer))
@@ -283,8 +285,8 @@ D.q08 = () => {
     p.push(txt(x + 125, y + 30, 'tb', name, 'text-anchor="middle"'))
     p.push(txt(x + 125, y + 100, 'tg', cls, 'text-anchor="middle"'))
   }
-  p.push(txt(280, 300, 't12', 'Active = needs a supply and can control or amplify. Passive = stores or dissipates only.',
-    'text-anchor="middle"'))
+  p.push(txt(280, 292, 't12', 'Active = needs a supply and can control or amplify.', 'text-anchor="middle"'))
+  p.push(txt(280, 310, 't12', 'Passive = stores or dissipates only.', 'text-anchor="middle"'))
   return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
 }
 
@@ -344,7 +346,8 @@ D.q10 = () => probeFigure({
     ],
   },
   verdict: { type: 'NPN', colour: NAVY, lines: ['red = common base', '&#8594; NPN'] },
-  notes: ['Red probe forward-biases both junctions from the same pin, so pin 2 is the P-type middle layer.'],
+  notes: ['Red probe forward-biases both junctions from the same pin,',
+    'so pin 2 is the P-type middle layer &#8212; the base of an NPN.'],
 })
 
 D.q11 = () => probeFigure({
@@ -359,7 +362,8 @@ D.q11 = () => probeFigure({
     ],
   },
   verdict: { type: 'PNP', colour: NAVY, lines: ['black = common base', '&#8594; PNP'] },
-  notes: ['Black (COM) on the shared pin means it is the N-type middle layer &#8212; a PNP transistor.'],
+  notes: ['Black (COM) on the shared pin means it is the N-type middle',
+    'layer &#8212; the base of a PNP transistor.'],
 })
 
 D.q14 = () => probeFigure({
@@ -461,7 +465,7 @@ D.q18 = () => {
   p.push(box(350, 60, 230, 130, '#f7f9fd', NAVY, 1.6, 10))
   p.push(txt(465, 86, 'tb', 'Probe results', 'text-anchor="middle"'))
   p.push(txt(365, 112, 't12', 'red on 1: pin 2 = 0.6 V, pin 3 = OL'))
-  p.push(txt(365, 136, 't12', 'black on 1: pin 2 = OL, pin 3 = 0.6 V'))
+  p.push(txt(300, 136, 't12', 'black on 1: pin 2 = OL, pin 3 = 0.6 V', 'text-anchor="middle"'))
   p.push(txt(365, 168, 'tg', 'No single pin reaches both.'))
   p.push(txt(300, 224, 't12', 'A BJT must have ONE pin that conducts to both others with the SAME polarity.',
     'text-anchor="middle"'))
@@ -485,8 +489,8 @@ D.q19 = () => croPanel({
   screen: [
     grid(),
     `<path class="w" d="${wavePath(G.x, cy, G.w, 2, 2 * dy, 0, 0)}"/>`,
-    hBracket(G.x, G.x + dx, G.y + G.h + 26, '1 div'),
-    txt(G.x + G.w / 2, G.y + G.h + 56, 't13', 'horizontal axis = TIME &#8594; controlled by TIME/DIV', 'text-anchor="middle"'),
+    hBracket(G.x, G.x + dx, G.y + G.h - 14, '1 div'),
+    txt(G.x + G.w / 2, 34, 't13', 'horizontal axis = TIME &#8594; controlled by TIME/DIV', 'text-anchor="middle"'),
   ].join(''),
 })
 
@@ -498,8 +502,8 @@ D.q20 = () => croPanel({
     grid(),
     `<path class="w" d="${wavePath(G.x, cy, G.w, 2, 2 * dy, 0, 0)}"/>`,
     vBracket(cy - dy, cy, G.x - 22, '1 div'),
-    txt(G.x + G.w + 8, cy - 30, 't13', 'vertical axis = VOLTS'),
-    txt(G.x + G.w + 8, cy - 12, 't13', '&#8594; VOLTS/DIV'),
+    txt(G.x + G.w - 12, cy - 3 * dy, 't13', 'vertical axis = VOLTS', 'text-anchor="end"'),
+    txt(G.x + G.w - 12, cy - 3 * dy + 18, 't13', '&#8594; VOLTS/DIV', 'text-anchor="end"'),
   ].join(''),
 })
 
@@ -527,7 +531,7 @@ D.q22 = () => croPanel({
     `<rect x="${G.x + 3 * dx}" y="${G.y + 2 * dy}" width="${dx}" height="${dy}" fill="rgba(201,162,39,0.28)" stroke="${GOLD}" stroke-width="2"/>`,
     hBracket(G.x + 3 * dx, G.x + 4 * dx, G.y + 3 * dy + 34, '1 cm'),
     vBracket(G.y + 2 * dy, G.y + 3 * dy, G.x + 4 * dx + 46, '1 cm'),
-    txt(G.x + G.w / 2, G.y + G.h + 74, 't13', 'one major division = 1 cm &#215; 1 cm (&#215;5 minor ticks each way)', 'text-anchor="middle"'),
+    txt(G.x + G.w / 2, 34, 't13', 'one major division = 1 cm &#215; 1 cm (&#215;5 minor ticks each way)', 'text-anchor="middle"'),
   ].join(''),
 })
 
@@ -541,7 +545,7 @@ D.q23 = () => croPanel({
     `<path class="dm" d="${wavePath(G.x, cy, G.w, 2, 1.5 * dy, -2 * dy, 0)}"/>`,
     `<path d="M${G.x + G.w + 22},${cy} L${G.x + G.w + 22},${cy - 2 * dy}" fill="none" stroke="${GOLD}" stroke-width="2" marker-end="url(#ahsq23)"/>`,
     `<defs><marker id="ahsq23" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="${GOLD}"/></marker></defs>`,
-    txt(G.x + G.w + 30, cy - dy, 'tg', 'position'),
+    txt(G.x + G.w - 12, cy - dy, 'tg', 'position', 'text-anchor="end"'),
     txt(G.x + 8, cy - 3 * dy - 6, 't12', 'same amplitude, shifted up'),
     txt(G.x + 8, cy + 3 * dy + 4, 't12', 'reference trace'),
   ].join(''),
@@ -557,7 +561,7 @@ D.q26 = () => croPanel({
     line(G.x + dx, cy - 3 * dy, G.x + dx, cy + 3 * dy, GOLD, 1.4, '5 4'),
     line(G.x + 5 * dx, cy - 3 * dy, G.x + 5 * dx, cy + 3 * dy, GOLD, 1.4, '5 4'),
     hBracket(G.x + dx, G.x + 5 * dx, cy + 3 * dy + 14, '1 cycle = 4 div = 4 ms'),
-    txt(G.x + G.w / 2, G.y + G.h + 62, 't13', 'f = 1 / T = 1 / 4 ms = 250 Hz', 'text-anchor="middle"'),
+    txt(G.x + G.w / 2, G.y + G.h - 8, 't13', 'f = 1 / T = 1 / 4 ms = 250 Hz', 'text-anchor="middle"'),
   ].join(''),
 })
 
@@ -570,7 +574,7 @@ D.q27 = () => croPanel({
     `<path class="w" d="${wavePath(G.x, cy, G.w, 2, 2 * dy, 0, 0)}"/>`,
     line(G.x - 16, cy - 2 * dy, G.x + G.w + 16, cy - 2 * dy, GOLD, 1.4, '5 4'),
     line(G.x - 16, cy + 2 * dy, G.x + G.w + 16, cy + 2 * dy, GOLD, 1.4, '5 4'),
-    vBracket(cy - 2 * dy, cy + 2 * dy, G.x + G.w + 24, 'Vp-p = 4 div'),
+    vBracket(cy - 2 * dy, cy + 2 * dy, G.x + G.w - 30, 'Vp-p = 4 div', GOLD, 'end'),
     txt(G.x + 8, cy - 3 * dy, 't13', 'Vp = 20 V'),
     txt(G.x + 8, cy + 4 * dy, 't13', 'Vrms = 14.14 V'),
   ].join(''),
@@ -756,6 +760,162 @@ D.q37 = () => probeFigure({
   ],
 })
 
+
+// ===========================================================================
+// CRO PRACTICAL-BATCH FIGURES  (q38 - q44)
+// ===========================================================================
+
+// ---- q38: cutaway of a cathode ray tube (CRT) ----
+D.q38 = () => {
+  const p = []
+  const Y0 = 160                                  // beam axis
+  p.push(txt(310, 26, 'tb', 'Inside a cathode ray tube: gun &#8594; plates &#8594; screen', 'text-anchor="middle"'))
+
+  // glass envelope: a narrow neck flaring out to the face plate
+  p.push(`<path d="M40,100 H300 L556,42 V278 L300,220 H40 Z" fill="#f7f9fd" stroke="${NAVY}" stroke-width="2.4" stroke-linejoin="round"/>`)
+  // fluorescent screen on the inside of the face plate
+  p.push(line(556, 42, 556, 278, GREEN, 7))
+
+  // ---- the electron gun ----
+  // heater filament
+  p.push(`<path d="M48,150 L56,170 L64,150 L72,170 L78,160" fill="none" stroke="${RED}" stroke-width="2.6" stroke-linejoin="round"/>`)
+  // cathode
+  p.push(box(84, 146, 17, 28, '#e8edf6', NAVY, 2, 3))
+  // apertured electrodes: cylinder (control grid), focusing anode, accelerating anode
+  const aperture = (x, w) => box(x, 138, w, 10, NAVY, NAVY, 1.6, 2) + box(x, 172, w, 10, NAVY, NAVY, 1.6, 2)
+  p.push(aperture(112, 26))
+  p.push(aperture(152, 30))
+  p.push(aperture(196, 30))
+
+  // ---- deflection plates ----
+  p.push(box(240, 124, 52, 9, NAVY, NAVY, 1.6, 2))   // Y plate, above the beam
+  p.push(box(240, 187, 52, 9, NAVY, NAVY, 1.6, 2))   // Y plate, below the beam
+  // X plates are turned 90 degrees to these, so they are seen edge-on
+  p.push(box(316, 116, 9, 26, NAVY, NAVY, 1.6, 2))
+  p.push(box(316, 178, 9, 26, NAVY, NAVY, 1.6, 2))
+
+  // ---- the beam: straight, then kicked down by the Y plates ----
+  p.push(`<path d="M101,${Y0} L240,${Y0} L292,174 L552,248" fill="none" stroke="${GOLD}" stroke-width="2.6" stroke-dasharray="7 5"/>`)
+  p.push(`<circle cx="552" cy="248" r="13" fill="rgba(201,162,39,0.25)" stroke="none"/>`)
+  p.push(`<circle cx="552" cy="248" r="6" fill="${GOLD}"/>`)
+
+  // ---- numbered callouts ----
+  const tag = (n, x, y, hl = false) =>
+    `<circle cx="${x}" cy="${y}" r="11" fill="#ffffff" stroke="${hl ? GOLD : NAVY}" stroke-width="${hl ? 2.6 : 2}"/>` +
+    txt(x, y + 4, hl ? 'tg' : 't12', String(n), 'text-anchor="middle"')
+  const marks = [[1, 63, 196], [2, 92, 196], [3, 126, 196], [4, 167, 196],
+    [5, 211, 196], [6, 266, 208, true], [7, 330, 248], [8, 556, 300]]
+  marks.forEach(([n, x, y, hl]) => p.push(tag(n, x, y, hl)))
+
+  // ---- legend ----
+  const LEG = [
+    [1, 'Heater (filament)'], [2, 'Cathode'],
+    [3, 'Cylinder / control grid &#8212; intensity'], [4, 'Focusing anode'],
+    [5, 'Accelerating anode'], [6, 'Y-plates &#8212; VERTICAL deflection', true],
+    [7, 'X-plates &#8212; HORIZONTAL sweep'], [8, 'Fluorescent screen'],
+  ]
+  LEG.forEach(([n, label, hl], i) => {
+    const x = i < 4 ? 40 : 340
+    const y = 320 + (i % 4) * 20
+    p.push(tag(n, x, y - 4, hl))
+    p.push(txt(x + 18, y, hl ? 'tg' : 't12', label))
+  })
+  return `<svg class="diagram-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 396" preserveAspectRatio="xMidYMid meet" role="img">${p.join('')}</svg>`
+}
+
+// ---- q39: measuring a DC level, 3.5 divisions at 2 V/div ----
+D.q39 = () => croPanel({
+  vb: '0 0 640 320',
+  volts: '2 V/div', time: '5 ms/div', hl: 'voltsdiv',
+  footer: 'A steady DC level sits 3.5 divisions above the 0 V line: 3.5 &#215; 2 V/div = 7.0 V.',
+  screen: [
+    grid(),
+    line(G.x, cy, G.x + G.w, cy, '#7d89a8', 1.3, '8 5'),
+    txt(G.x + 8, cy + 16, 't12', '0 V reference'),
+    `<path class="w" d="M${G.x},${cy - 3.5 * dy} H${G.x + G.w}"/>`,
+    vBracket(cy - 3.5 * dy, cy, G.x + G.w - 34, '3.5 div', GOLD, 'end'),
+    txt(G.x + 8, cy - 3.5 * dy + 20, 't13', 'DC level = 3.5 div &#215; 2 V/div = 7.0 V'),
+  ].join(''),
+})
+
+// ---- q40: one cycle across 4 divisions (SCOPE_SINE_GRID, time base) ----
+const SINE_6DIV = (extra = []) => [
+  grid(),
+  `<path class="w" d="${wavePath(G.x, cy, G.w, 2.5, 3 * dy, 0, 0)}"/>`,
+  ...extra,
+].join('')
+
+D.q40 = () => croPanel({
+  vb: '0 0 640 320',
+  volts: '5 V/div', time: '5 ms/div', hl: 'timediv',
+  footer: 'One cycle spans 4 horizontal divisions: T = 4 &#215; 5 ms = 20 ms, so f = 1 / T = 50 Hz.',
+  screen: SINE_6DIV([
+    line(G.x, cy - 3 * dy, G.x, cy + 3 * dy, GOLD, 1.4, '5 4'),
+    line(G.x + 4 * dx, cy - 3 * dy, G.x + 4 * dx, cy + 3 * dy, GOLD, 1.4, '5 4'),
+    hBracket(G.x, G.x + 4 * dx, cy + 3 * dy + 16, '1 cycle = 4 div = 20 ms'),
+    txt(G.x + G.w / 2, 34, 't13', 'T = 4 div &#215; 5 ms/div = 20 ms   &#8594;   f = 1 / 0.02 s = 50 Hz', 'text-anchor="middle"'),
+  ]),
+})
+
+// ---- q41: 6 divisions peak-to-peak (SCOPE_SINE_GRID, amplitude) ----
+D.q41 = () => croPanel({
+  vb: '0 0 640 320',
+  volts: '5 V/div', time: '5 ms/div', hl: 'voltsdiv',
+  footer: 'Six divisions peak-to-peak at 5 V/div is 30 V, so the peak is half of that: Vp = 15 V.',
+  screen: SINE_6DIV([
+    line(G.x - 16, cy - 3 * dy, G.x + G.w + 16, cy - 3 * dy, GOLD, 1.4, '5 4'),
+    line(G.x - 16, cy + 3 * dy, G.x + G.w + 16, cy + 3 * dy, GOLD, 1.4, '5 4'),
+    vBracket(cy - 3 * dy, cy + 3 * dy, G.x + G.w - 26, 'Vp-p = 6 div = 30 V', GOLD, 'end'),
+    txt(G.x + 8, cy - 3 * dy + 22, 't13', 'Vp = Vp-p / 2 = 15 V'),
+  ]),
+})
+
+// ---- q42: DC coupling keeps the offset ----
+D.q42 = () => croPanel({
+  vb: '0 0 640 320',
+  volts: '1 V/div', time: '1 ms/div', hl: 'couplingDC',
+  footer: 'DC coupling passes everything: the ripple keeps its DC level instead of centring on 0 V.',
+  screen: [
+    grid(),
+    line(G.x, cy, G.x + G.w, cy, '#7d89a8', 1.3, '8 5'),
+    txt(G.x + 8, cy + 16, 't12', '0 V (ground)'),
+    `<path class="w" d="${wavePath(G.x, cy - 2 * dy, G.w, 2, 1.1 * dy, 0, 0)}"/>`,
+    txt(G.x + 8, cy - 3.4 * dy, 't13', 'DC coupling: the whole signal, offset included'),
+  ].join(''),
+})
+
+// ---- q43: reversing the supply flips the trace across zero ----
+D.q43 = () => croPanel({
+  vb: '0 0 640 320',
+  volts: '2 V/div', time: '5 ms/div',
+  footer: 'Reversing the supply flips the trace to the same number of divisions the other side of zero.',
+  screen: [
+    grid(),
+    line(G.x, cy, G.x + G.w, cy, '#7d89a8', 1.3, '8 5'),
+    txt(G.x + 8, cy + 16, 't12', '0 V reference'),
+    `<path class="w" d="M${G.x},${cy - 2 * dy} H${G.x + G.w}"/>`,
+    `<path class="dm" d="M${G.x},${cy + 2 * dy} H${G.x + G.w}"/>`,
+    `<defs><marker id="ahsq43" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="${GOLD}"/></marker></defs>`,
+    `<path d="M${G.x + G.w - 56},${cy - 2 * dy + 6} L${G.x + G.w - 56},${cy + 2 * dy - 4}" fill="none" stroke="${GOLD}" stroke-width="2" marker-end="url(#ahsq43)"/>`,
+    txt(G.x + 8, cy - 2 * dy - 10, 't13', 'before: +2 div (positive supply)'),
+    txt(G.x + 8, cy + 2 * dy + 24, 't13', 'after reversing: &#8722;2 div'),
+  ].join(''),
+})
+
+// ---- q44: -8 V at 2 V/div is 4 divisions down ----
+D.q44 = () => croPanel({
+  vb: '0 0 640 320',
+  volts: '2 V/div', time: '5 ms/div', hl: 'voltsdiv',
+  footer: '&#8722;8 V at 2 V/div is &#8722;4 divisions, so the trace sits four divisions below zero.',
+  screen: [
+    grid(),
+    line(G.x, cy - 2 * dy, G.x + G.w, cy - 2 * dy, GOLD, 1.4, '8 5'),
+    txt(G.x + 8, cy - 2 * dy - 10, 't12', '0 V reference (parked here)'),
+    `<path class="w" d="M${G.x},${cy + 2 * dy} H${G.x + G.w}"/>`,
+    vBracket(cy - 2 * dy, cy + 2 * dy, G.x + G.w - 34, '4 div down', GOLD, 'end'),
+    txt(G.x + 8, cy + 2 * dy + 24, 't13', '&#8722;8 V &#247; 2 V/div = &#8722;4 divisions'),
+  ].join(''),
+})
 
 // ===========================================================================
 // write files
