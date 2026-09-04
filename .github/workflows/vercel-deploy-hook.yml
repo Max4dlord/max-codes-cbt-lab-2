@@ -36,7 +36,8 @@ jobs:
     steps:
       - name: Skip when no hook is configured
         if: env.HOOK == ''
-        run: echo "VERCEL_DEPLOY_HOOK_URL is not set — nothing to trigger (Vercel Git integration handles deploys)."
+        run: |
+          echo "::warning title=Vercel deploy hook not configured::VERCEL_DEPLOY_HOOK_URL is unset, so this job deploys nothing. If the project is connected to Vercel through the GitHub integration, pushes already deploy automatically and this workflow can be deleted. Otherwise add the secret: Vercel -> Settings -> Git -> Deploy Hooks -> copy the URL, then GitHub -> Settings -> Secrets and variables -> Actions -> New repository secret -> VERCEL_DEPLOY_HOOK_URL."
 
       - name: Trigger Vercel build
         if: env.HOOK != ''

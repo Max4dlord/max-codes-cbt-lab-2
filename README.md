@@ -170,6 +170,40 @@ npm run validate                  # checks the bank and every injected SVG
 ```
 Both scripts live in the repo, so the figures are reproducible rather than hand-edited.
 
+## 🚀 Deployment (Vercel)
+
+The project deploys through **Vercel's GitHub integration**: connect the repo once and
+**every push to `main` goes live automatically**. Branches and pull requests get their own
+preview URLs.
+
+One-time setup (from the Vercel dashboard):
+
+1. **Add New… → Project → Import** `Max4dlord/max-codes-cbt-lab-2`
+2. Leave the defaults — `vercel.json` supplies them:
+
+   | Setting | Value |
+   |---|---|
+   | Framework | Vite |
+   | Build Command | `npm run build` |
+   | Output Directory | `dist` |
+   | Install Command | `npm ci` |
+   | Root Directory | `./` (repo root) |
+
+3. **No environment variables** — the app is client-only, with no backend or secrets.
+4. **Deploy**
+
+Confirm it is live: **Settings → Git** should read *Connected to GitHub* with production
+branch `main`.
+
+Notes:
+
+- `vercel.json` sets an `ignoreCommand`, so pushes that touch nothing under `src/`, `public/`,
+  `package*.json`, `vite.config.js` or `index.html` deliberately **skip** the build.
+- The app uses a `HashRouter`, so deep links (`/#/dashboard`) need no SPA rewrite rule.
+- `.github/workflows/vercel-deploy-hook.yml` is a fallback for a project imported *without*
+  the Git integration. It does nothing until a `VERCEL_DEPLOY_HOOK_URL` secret exists, and
+  warns instead of passing silently.
+
 ## 🔤 Abbreviations
 
 Two rules, enforced in `scripts/build_data.py`:
