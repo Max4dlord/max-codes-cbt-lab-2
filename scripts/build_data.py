@@ -60,6 +60,16 @@ CAPTIONS = {
 
 
 CAPTIONS.update({
+    'q38': "Cutaway of a cathode ray tube: heater, cathode, cylinder, anodes, Y-plates, X-plates and screen",
+    'q39': "Cathode ray oscilloscope (CRO) screen: the trace sits 3.5 divisions above the zero line at 2 V/div",
+    'q40': "Cathode ray oscilloscope (CRO) screen: one cycle spans 4 horizontal divisions at 5 ms/div",
+    'q41': "Cathode ray oscilloscope (CRO) screen: the sine spans 6 vertical divisions peak-to-peak at 5 V/div",
+    'q42': "Cathode ray oscilloscope (CRO) with the channel coupling switch set to DC and highlighted",
+    'q43': "Cathode ray oscilloscope (CRO) screen: the trace moves from +2 divisions to -2 divisions when the supply is reversed",
+    'q44': "Cathode ray oscilloscope (CRO) screen: -8 V at 2 V/div drops the trace 4 divisions below zero",
+})
+
+CAPTIONS.update({
     'q31': "Resistor shorthand: the letter K replaces the decimal point, so 2K7 reads 2.7 k\u03a9 (2700 \u03a9)",
     'q32': "Four-band resistor Green-Blue-Silver-Gold decoding to 56 \u00d7 0.01 = 0.56 \u03a9 at \u00b15%",
     'q33': "A probe tip bridging the base and collector leads of a transistor in a live circuit",
@@ -1264,6 +1274,211 @@ diodes that share the base.
 - PNP would require the **black** lead to be the common one.""")
 
 
+# ===========================================================================
+# CRO PRACTICAL-BATCH QUESTIONS  (q38 - q44)
+# ===========================================================================
+
+q(id='eee282_q38', topicId=T['cro'], kind='theory', type='mcq',
+  image=IMG.format('q38'),
+  question="In a standard Cathode Ray Tube (CRT) diagram, what is the primary function of the components usually labeled as the 'Y-plates'?",
+  options=[
+      'To accelerate the electron beam towards the fluorescent screen.',
+      'To deflect the electron beam vertically based on the amplitude of the input signal.',
+      'To control the intensity or brightness of the trace on the screen.',
+      'To provide the time-base sweep for the horizontal axis.',
+  ], correct=1,
+  short='The Y-plates deflect the beam vertically in proportion to the signal; the X-plates provide the horizontal sweep.',
+  solution="""### Answer
+**To deflect the electron beam vertically based on the amplitude of the input signal.**
+
+### Why
+The Y-plates (Vertical Deflection Plates) apply an electric field that deflects the electron
+beam up or down proportionally to the voltage of the incoming signal. The X-plates handle
+horizontal sweep, and the anodes handle acceleration.
+
+### Who does what inside the tube
+| Part | Job |
+|---|---|
+| **Heater** | heats the cathode so it emits electrons |
+| **Cathode** | emits the electron beam |
+| **Cylinder (control grid)** | sets how many electrons pass — this is the brightness control |
+| **Anodes** | focus and accelerate the beam towards the screen |
+| **Y-plates** | vertical deflection — driven by the **signal** you are measuring |
+| **X-plates** | horizontal deflection — driven by the internal **time base** |
+| **Screen** | phosphor that glows where the beam lands |
+
+### Why the other options are wrong
+- **Acceleration** is the job of the anodes, not the Y-plates.
+- **Brightness** is set by the control grid (the cylinder), not the deflection plates.
+- **The time-base sweep** belongs to the X-plates.""")
+
+q(id='eee282_q39', topicId=T['calc'], kind='theory', type='mcq',
+  image=IMG.format('q39'),
+  question='During a laboratory experiment to measure D.C. voltage, the trace on the oscilloscope shifts vertically by 3.5 divisions from the center zero reference line. If the Volts/Div control is set to 2V/div, what is the actual D.C. voltage measured?',
+  options=[
+      '7.0 V',
+      '3.5 V',
+      '1.75 V',
+      '5.5 V',
+  ], correct=0,
+  short='Voltage = (divisions occupied) × (Volts/Div) = 3.5 × 2 = 7.0 V.',
+  solution="""### Answer
+**7.0 V**
+
+### Why
+Actual D.C. voltage is calculated using the formula: Voltage = (Number of Divisions Occupied)
+× (Volts/Div Setting). Therefore, 3.5 divisions × 2 V/div = 7.0 V.
+
+### The bench habit that earns the mark
+1. Set the coupling to **GND** and park the trace exactly on the centre graticule line — that
+   line is now true zero.
+2. Switch back to **DC** and count the divisions the trace moved.
+3. Multiply by the Volts/Div setting.
+
+### Why the other options are wrong
+- **3.5 V** — that is the division count, forgetting to multiply by 2 V/div.
+- **1.75 V** — dividing by 2 instead of multiplying.
+- **5.5 V** — adding the 2 V/div to 3.5 instead of multiplying.""")
+
+q(id='eee282_q40', topicId=T['calc'], kind='theory', type='mcq',
+  image=IMG.format('q40'),
+  question='An AC waveform displayed on an oscilloscope graticule completes one full cycle across exactly 4 horizontal divisions. If the Time/Div base is set to 5 ms/div, what is the frequency of the waveform?',
+  options=[
+      '50 Hz',
+      '200 Hz',
+      '20 Hz',
+      '5 Hz',
+  ], correct=0,
+  short='T = 4 div × 5 ms/div = 20 ms = 0.02 s, so f = 1 / T = 1 / 0.02 = 50 Hz.',
+  solution="""### Answer
+**50 Hz**
+
+### Why
+First, find the period ($T$). $T$ = (4 divisions) × (5 ms/div) = 20 ms, which is 0.02 seconds.
+Frequency ($f$) is the reciprocal of the period ($f = 1/T$). Therefore, $f = 1 / 0.02 = 50$ Hz.
+
+### Watch the units
+20 ms is **0.02 s**, not 0.002 s. Converting milli to units **before** you divide is where most
+of the marks are lost on this question.
+
+### Why the other options are wrong
+- **200 Hz** — using 5 ms instead of 20 ms for the period.
+- **20 Hz** — reporting the period in milliseconds as if it were a frequency.
+- **5 Hz** — using the Time/Div setting as the period.""")
+
+q(id='eee282_q41', topicId=T['calc'], kind='theory', type='mcq',
+  image=IMG.format('q41'),
+  question='Observing a sinusoidal signal from a 12V a.c. step-down transformer on a scope, the waveform spans a total of 6 vertical divisions from its positive peak to its negative peak. If the Volts/Div setting is 5V/div, what is the peak voltage ($V_p$) of the signal?',
+  options=[
+      '30 V',
+      '15 V',
+      '12 V',
+      '60 V',
+  ], correct=1,
+  short='Vp-p = 6 div × 5 V/div = 30 V, and the peak is half of that: Vp = 30 / 2 = 15 V.',
+  solution="""### Answer
+**15 V**
+
+### Why
+First, calculate the Peak-to-Peak voltage ($V_{pp}$). $V_{pp}$ = 6 divisions × 5 V/div = 30 V.
+The peak voltage ($V_p$) is half of the peak-to-peak voltage ($V_p = V_{pp} / 2$). Therefore,
+$V_p = 30 / 2 = 15$ V.
+
+### Read the question twice
+It asks for the **peak**, not the peak-to-peak. Peak-to-peak is measured from the positive crest
+to the negative trough; the peak is measured from zero to one crest, so it is always **half**.
+
+### Why the other options are wrong
+- **30 V** — that is $V_{pp}$, not $V_p$.
+- **12 V** — the transformer's nominal rating, which is an RMS figure and is not what the screen shows.
+- **60 V** — doubling instead of halving.""")
+
+q(id='eee282_q42', topicId=T['cro'], kind='theory', type='mcq',
+  image=IMG.format('q42'),
+  question='On the front panel of an oscilloscope, a student wants to observe the direct current (D.C.) component of a mixed signal. Which coupling switch setting must they select for the respective channel to bypass the internal blocking capacitor?',
+  options=[
+      'AC',
+      'GND',
+      'DC',
+      'ALT',
+  ], correct=2,
+  short='DC coupling connects the input straight to the vertical amplifier, so both the AC and the DC parts of the signal reach the screen.',
+  solution="""### Answer
+**DC**
+
+### Why
+Setting the coupling switch to 'DC' connects the input signal directly to the vertical amplifier,
+allowing both AC and DC components to pass. 'AC' coupling inserts a capacitor to block the DC
+component, and 'GND' grounds the input.
+
+### The three positions
+| Position | What it does | When to use it |
+|---|---|---|
+| **DC** | everything passes | measuring DC levels, offsets, power-supply ripple |
+| **AC** | a series capacitor blocks the DC | looking at a small ripple sitting on a large DC level |
+| **GND** | input disconnected, amplifier grounded | finding the true zero line before you measure |
+
+### Why the other options are wrong
+- **AC** is the setting that *inserts* the blocking capacitor — the opposite of what is asked.
+- **GND** shows only the zero reference; the signal never reaches the amplifier.
+- **ALT** alternates between two channels on a dual-trace scope; it is not a coupling mode.""")
+
+q(id='eee282_q43', topicId=T['calc'], kind='theory', type='mcq',
+  image=IMG.format('q43'),
+  question='A student measures a positive D.C. voltage which deflects the oscilloscope trace 2 divisions above the central ground line. According to laboratory procedure, what happens to the trace if the polarity of the D.C. power supply is immediately reversed without changing any oscilloscope settings?',
+  options=[
+      'The trace disappears from the screen.',
+      'The trace shifts to 2 divisions below the central ground line.',
+      'The trace remains at 2 divisions but becomes inverted.',
+      'The time base speeds up to compensate for the phase shift.',
+  ], correct=1,
+  short='Reversing the polarity applies the same magnitude with the opposite sign, so the trace drops to 2 divisions below zero.',
+  solution="""### Answer
+**The trace shifts to 2 divisions below the central ground line.**
+
+### Why
+Reversing the polarity applies a negative voltage of the exact same magnitude to the input.
+Because the vertical axis represents voltage, the trace will deflect downwards by the same
+number of divisions (2 divisions below the zero reference).
+
+### Reading the vertical axis
+Positive voltage deflects **up**, negative voltage deflects **down**, and the centre graticule
+line — set with the coupling on GND — is zero. Nothing else about the display changes.
+
+### Why the other options are wrong
+- The trace cannot disappear; the beam is still being deflected, just the other way.
+- "Inverted" describes a waveform flipped about the time axis; a steady DC level has no shape to invert.
+- The time base is a horizontal control and is untouched by a change in input polarity.""")
+
+q(id='eee282_q44', topicId=T['calc'], kind='theory', type='mcq',
+  image=IMG.format('q44'),
+  question="According to standard data tabulation for comparing a D.C. power supply with an oscilloscope, if a power supply is adjusted to -8V and the oscilloscope's Y-sensitivity (Volts/Div) is set to 2V/div, how many divisions and in what direction will the trace move from the zero position?",
+  options=[
+      '4 divisions upwards',
+      '4 divisions downwards',
+      '16 divisions downwards',
+      '8 divisions downwards',
+  ], correct=1,
+  short='Divisions = voltage / (Volts/Div) = -8 / 2 = -4, so 4 divisions downwards.',
+  solution="""### Answer
+**4 divisions downwards**
+
+### Why
+Divisions occupied = Voltage / (Volts/Div). Here, -8V / 2V/div = -4 divisions. The negative value
+indicates a downward deflection on the Y-axis.
+
+### Rearranging the same formula
+- Measuring a voltage: $V = (\\text{divisions}) \\times (\\text{Volts/Div})$
+- Predicting a deflection: $\\text{divisions} = V \\div (\\text{Volts/Div})$
+
+The sign of the voltage gives the direction: positive is up, negative is down.
+
+### Why the other options are wrong
+- **Upwards** — that would be +8 V, not -8 V.
+- **16 divisions** — multiplying by 2 instead of dividing; this would also run off the screen.
+- **8 divisions** — forgetting the Volts/Div setting entirely.""")
+
+
 COURSE = {
     'id': 'eee282',
     'code': 'EEE 282',
@@ -1389,6 +1604,7 @@ INLINE = [
 
 # (pattern, short form, full meaning) — grouped roughly by theme.
 TERMS = [
+    (r'\bCRTs?\b', 'CRT', 'cathode ray tube'),
     (r'\bBJTs?\b', 'BJT', 'bipolar junction transistor'),
     (r'\bDMMs?\b', 'DMM', 'digital multimeter'),
     (r'\bMOSFETs?\b', 'MOSFET', 'metal-oxide-semiconductor field-effect transistor'),
