@@ -846,10 +846,10 @@ D.q40 = () => croPanel({
   footer: 'T = 4 div &#215; 5 ms/div = 20 ms = 0.02 s, so f = 1 / T = 1 / 0.02 = 50 Hz.',
   screen: [
     grid(),
-    `<path class="w" d="${wavePath(G.x, cy, G.w, 2.5, 2 * dy, 0, 0)}"/>`,
+    `<path class="w" d="${wavePath(G.x, cy, G.w, 2.5, 3 * dy, 0, 0)}"/>`,
     line(G.x, cy - 3 * dy, G.x, cy + 3 * dy, GOLD, 1.4, '5 4'),
     line(G.x + 4 * dx, cy - 3 * dy, G.x + 4 * dx, cy + 3 * dy, GOLD, 1.4, '5 4'),
-    hBracket(G.x, G.x + 4 * dx, cy + 3 * dy + 18, '1 cycle = 4 div'),
+    hBracket(G.x, G.x + 4 * dx, cy + 3 * dy + 22, '1 cycle = 4 div'),
     txt(320, 36, 't13', 'T = 4 &#215; 5 ms = 20 ms   &#8594;   f = 1 / 0.02 s = 50 Hz', 'text-anchor="middle"'),
   ].join(''),
 })
@@ -861,7 +861,7 @@ D.q41 = () => croPanel({
   footer: 'Vp-p = 6 div &#215; 5 V/div = 30 V, and the peak is half of that: Vp = 30 / 2 = 15 V.',
   screen: [
     grid(),
-    `<path class="w" d="${wavePath(G.x, cy, G.w, 2, 3 * dy, 0, 0)}"/>`,
+    `<path class="w" d="${wavePath(G.x, cy, G.w, 2.5, 3 * dy, 0, 0)}"/>`,
     line(G.x - 16, cy - 3 * dy, G.x + G.w + 16, cy - 3 * dy, GOLD, 1.4, '5 4'),
     line(G.x - 16, cy + 3 * dy, G.x + G.w + 16, cy + 3 * dy, GOLD, 1.4, '5 4'),
     vBracket(cy - 3 * dy, cy + 3 * dy, G.x + G.w + 24, 'Vp-p = 6 div'),
