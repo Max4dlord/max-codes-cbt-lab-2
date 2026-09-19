@@ -1,55 +1,98 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gateConfig } from '../gateConfig.js'
-import { saveUnlock } from '../progress.js'
+import { deviceId, deviceLabel, redeemCode } from '../gateStore.js'
 
 /**
- * Access gate — shown instead of the app until the visitor completes the
- * configured tasks (e.g. follows the WhatsApp channel) and enters the code
- * posted there. Purely client-side; config lives in src/gateConfig.js.
+ * Multi-step access gate.
+ *
+ *   1. Save my contact      (mandatory first — nothing else unlocks until done)
+ *   2. Follow the channel
+ *   3. Request code on WhatsApp  (pre-typed message carrying their device ID)
+ *   4. Paste code -> server verifies -> in for 7 days
+ *
+ * Each step only unlocks the next one, and link steps arm their confirm box
+ * only after a dwell timer, so nobody can blind-tick through.
  */
 export default function Gate({ onUnlock }) {
-  const [done, setDone] = useState({})
+  const [saved, setSaved] = useState(false)      // step 1 confirmed
+  const [followed, setFollowed] = useState(false) // step 2 confirmed
+  const [requested, setRequested] = useState(false) // step 3 tapped
+  const [armed, setArmed] = useState({})          // dwell timers per step
+  const [opened, setOpened] = useState({})
+  const [, setTick] = useState(0)
   const [code, setCode] = useState('')
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
+  const [copied, setCopied] = useState(false)
+  const timers = useRef({})
 
-  const tasks = gateConfig.tasks || []
-  const allDone = tasks.every((t) => done[t.id])
+  useEffect(() => {
+    const id = setInterval(() => setTick((t) => t + 1), 500)
+    return () => clearInterval(id)
+  }, [])
+  useEffect(() => () => Object.values(timers.current).forEach(clearTimeout), [])
 
-  function toggleTask(id) {
-    setDone((d) => ({ ...d, [id]: !d[id] }))
+  const dev = deviceId()
+  const label = deviceLabel()
+  const wa = gateConfig.whatsappNumber
+  const dwell = gateConfig.dwellSeconds ?? 6
+
+  // Pre-typed WhatsApp message carrying the device ID.
+  const msg = `${gateConfig.requestWord} ${label}`
+  const dmUrl = `https://wa.me/${wa}?text=${encodeURIComponent(msg)}`
+
+  // vCard download so "save my contact" is one tap, not a manual copy.
+  const vcard = [
+    'BEGIN:VCARD', 'VERSION:3.0',
+    `FN:${gateConfig.contactName}`,
+    `N:${gateConfig.contactName};;;;`,
+    `TEL;TYPE=CELL:+${wa}`,
+    `NOTE:Max-codes CBT Lab access`,
+    'END:VCARD',
+  ].join('\n')
+  const vcardUrl = `data:text/vcard;charset=utf-8,${encodeURIComponent(vcard)}`
+
+  function open(step) {
+    setOpened((o) => ({ ...o, [step]: Date.now() }))
+    timers.current[step] = setTimeout(
+      () => setArmed((a) => ({ ...a, [step]: true })),
+      dwell * 1000
+    )
   }
 
-  function tryUnlock() {
+  function left(step) {
+    const s = opened[step]
+    if (!s) return dwell
+    return Math.max(0, Math.ceil((dwell * 1000 - (Date.now() - s)) / 1000))
+  }
+
+  function copyId() {
+    try {
+      navigator.clipboard.writeText(label)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    } catch {}
+  }
+
+  async function submit() {
     setError('')
-    if (!allDone) {
-      setError('Please complete the step(s) above first.')
-      return
-    }
-    if (!code.trim()) {
-      setError('Enter the access code from the WhatsApp channel.')
-      return
-    }
+    if (!code.trim()) { setError('Paste the code you received on WhatsApp.'); return }
     setBusy(true)
-    // small delay keeps the UI feeling deliberate
-    setTimeout(() => {
-      if (code.trim().toLowerCase() === gateConfig.code.toLowerCase()) {
-        saveUnlock(gateConfig.accessVersion)
-        onUnlock()
-      } else {
-        setError('That code is not correct. Check the latest post in the WhatsApp channel and try again.')
-        setBusy(false)
-      }
-    }, 350)
+    const r = await redeemCode(code.trim())
+    if (r.ok) onUnlock(r.exp)
+    else { setError(r.error); setBusy(false) }
   }
+
+  const stepClass = (active, done) =>
+    `gate-step ${done ? 'is-done' : ''} ${active ? 'is-active' : 'is-locked'}`
 
   return (
     <div className="gate-shell">
       <div className="gate-card">
         <div className="gate-brand">
-          <img src="/oau-crest.png" alt="Obafemi Awolowo University crest" className="nav-crest" />
+          <span className="nav-logo">MC</span>
           <span className="gate-brand-name">
-            Obafemi Awolowo University · <em>EEE 282 CBT Lab</em>
+            {gateConfig.brandName} · <em>{gateConfig.brandSub}</em>
           </span>
         </div>
 
@@ -57,64 +100,143 @@ export default function Gate({ onUnlock }) {
         <p className="gate-sub">{gateConfig.subtitle}</p>
 
         <ol className="gate-steps">
-          {tasks.map((t, i) => (
-            <li key={t.id} className="gate-step">
-              <div className="gate-step-head">
-                <span className="gate-step-no">{i + 1}</span>
-                <div>
-                  <div className="gate-step-label">{t.label}</div>
-                  <div className="gate-step-desc">{t.description}</div>
+          {/* ---------------- STEP 1 — save contact ---------------- */}
+          <li className={stepClass(true, saved)}>
+            <div className="gate-step-head">
+              <span className="gate-step-no">{saved ? '✓' : '1'}</span>
+              <div>
+                <div className="gate-step-label">Save my contact first</div>
+                <div className="gate-step-desc">
+                  WhatsApp will not deliver my reply if my number is not saved.
+                  Tap to download the contact card, then save it.
                 </div>
               </div>
+            </div>
+            <div className="gate-step-actions">
+              <a
+                className="btn gate-btn-wa"
+                href={vcardUrl}
+                download="Max-codes-CBT.vcf"
+                onClick={() => open('save')}
+              >
+                Save contact (+{wa}) ↓
+              </a>
+              <label className={`gate-check ${saved ? 'checked' : ''} ${armed.save ? '' : 'disabled'}`}>
+                <input
+                  type="checkbox" checked={saved} disabled={!armed.save}
+                  onChange={() => setSaved((v) => !v)}
+                />
+                <span>
+                  {armed.save ? 'I have saved the contact'
+                    : opened.save ? `Verifying… ${left('save')}s`
+                    : 'Tap the button above first'}
+                </span>
+              </label>
+            </div>
+          </li>
+
+          {/* ---------------- STEP 2 — follow channel ---------------- */}
+          <li className={stepClass(saved, followed)}>
+            <div className="gate-step-head">
+              <span className="gate-step-no">{followed ? '✓' : '2'}</span>
+              <div>
+                <div className="gate-step-label">Follow our WhatsApp channel</div>
+                <div className="gate-step-desc">
+                  New question banks, updates and announcements land there first.
+                </div>
+              </div>
+            </div>
+            {saved ? (
               <div className="gate-step-actions">
                 <a
-                  className="btn gate-btn-wa"
-                  href={t.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  className="btn gate-btn-wa" href={gateConfig.channelUrl}
+                  target="_blank" rel="noopener noreferrer"
+                  onClick={() => open('follow')}
                 >
-                  {t.buttonLabel}
+                  Open WhatsApp channel →
                 </a>
-                <label className={`gate-check ${done[t.id] ? 'checked' : ''}`}>
+                <label className={`gate-check ${followed ? 'checked' : ''} ${armed.follow ? '' : 'disabled'}`}>
                   <input
-                    type="checkbox"
-                    checked={!!done[t.id]}
-                    onChange={() => toggleTask(t.id)}
+                    type="checkbox" checked={followed} disabled={!armed.follow}
+                    onChange={() => setFollowed((v) => !v)}
                   />
-                  <span>{t.confirmLabel}</span>
+                  <span>
+                    {armed.follow ? 'I have followed the channel'
+                      : opened.follow ? `Verifying… ${left('follow')}s`
+                      : 'Tap the button above first'}
+                  </span>
                 </label>
               </div>
-            </li>
-          ))}
+            ) : (
+              <p className="gate-locked-note">🔒 Complete step 1 first</p>
+            )}
+          </li>
+
+          {/* ---------------- STEP 3 — request code ---------------- */}
+          <li className={stepClass(saved && followed, requested)}>
+            <div className="gate-step-head">
+              <span className="gate-step-no">{requested ? '✓' : '3'}</span>
+              <div>
+                <div className="gate-step-label">Request your personal code</div>
+                <div className="gate-step-desc">
+                  The message is already typed for you — just hit send. Your code
+                  works on <strong>this phone only</strong>.
+                </div>
+              </div>
+            </div>
+            {saved && followed ? (
+              <div className="gate-step-actions">
+                <a
+                  className="btn btn-primary gate-btn-wa" href={dmUrl}
+                  target="_blank" rel="noopener noreferrer"
+                  onClick={() => setRequested(true)}
+                >
+                  Send &ldquo;{gateConfig.requestWord}&rdquo; on WhatsApp →
+                </a>
+                <div className="gate-devid">
+                  <span>Your device ID</span>
+                  <code>{label}</code>
+                  <button type="button" className="btn btn-ghost btn-sm" onClick={copyId}>
+                    {copied ? 'Copied ✓' : 'Copy'}
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <p className="gate-locked-note">🔒 Complete steps 1 and 2 first</p>
+            )}
+          </li>
         </ol>
 
-        <div className="gate-code">
-          <label htmlFor="gate-code-input">Access code</label>
-          <input
-            id="gate-code-input"
-            className="gate-input"
-            type="text"
-            placeholder="Paste the code from the channel"
-            value={code}
-            onChange={(e) => { setCode(e.target.value); setError('') }}
-            onKeyDown={(e) => { if (e.key === 'Enter') tryUnlock() }}
-            autoComplete="off"
-            spellCheck="false"
-          />
-        </div>
+        {/* ---------------- STEP 4 — enter code ---------------- */}
+        {saved && followed && requested && (
+          <>
+            <div className="gate-code">
+              <label htmlFor="gate-code-input">Enter the code I sent you</label>
+              <input
+                id="gate-code-input" className="gate-input" type="text"
+                placeholder="e.g. MAX-XXXXXX" value={code}
+                onChange={(e) => { setCode(e.target.value); setError('') }}
+                onKeyDown={(e) => { if (e.key === 'Enter') submit() }}
+                autoComplete="off" spellCheck="false"
+              />
+            </div>
 
-        {error && <p className="gate-error" role="alert">{error}</p>}
+            {error && <p className="gate-error" role="alert">{error}</p>}
 
-        <button
-          className="btn btn-primary btn-lg gate-unlock"
-          onClick={tryUnlock}
-          disabled={!allDone || !code.trim() || busy}
-        >
-          {busy ? 'Checking…' : 'Unlock the CBT Lab →'}
-        </button>
+            <button
+              className="btn btn-primary btn-lg gate-unlock"
+              onClick={submit} disabled={!code.trim() || busy}
+            >
+              {busy ? 'Verifying…' : 'Unlock the CBT Lab →'}
+            </button>
+          </>
+        )}
 
         <p className="gate-note">
-          🔒 This unlocks once on this device. You will only be asked again when a new access code is issued.
+          🔒 Codes are generated per phone and verified on our server — a code
+          sent to someone else will never work here. Access lasts 7 days, then
+          you just request a new code. <strong>Your test progress, scores and
+          saved sessions are never affected.</strong>
         </p>
       </div>
     </div>
