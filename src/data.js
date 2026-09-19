@@ -14,6 +14,7 @@ export const courses = [
   "id": "eee282",
   "code": "EEE 282",
   "title": "Electronic & Electrical Introductory Practicals II",
+  "department": "Department of Electronic & Electrical Engineering",
   "blurb": "Practical-first preparation for the EEE 282 bench exam: active vs passive components and their symbols, transistor (BJT) type and pin identification with a digital multimeter, and cathode ray oscilloscope (CRO) controls plus every waveform calculation (Vp-p, Vp, Vrms, period, frequency, phase and Lissajous). 30 questions \u2014 each with a diagram where it helps, a worked solution and distractor analysis.",
   "accent": "#010080",
   "available": true

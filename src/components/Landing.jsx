@@ -46,7 +46,10 @@ export default function Landing() {
             <div className="oau-place">{CAMPUS}</div>
           </div>
           <div className="oau-dept">
-            <strong>{course.department || 'Department of Electronic & Electrical Engineering'}</strong>
+            {/* Department line is opt-in per course: a course only shows one if
+                it declares `department` in data.js. SWEP 200 is faculty-wide,
+                so it deliberately has none — no misleading fallback. */}
+            {course.department && <strong>{course.department}</strong>}
             {course.code} · {course.title}
           </div>
         </div>

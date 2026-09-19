@@ -756,3 +756,19 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
 .course-switch-btn.active {
   background: var(--text); color: var(--bg); border-color: var(--text);
 }
+
+/* ---------- RichText: markdown tables in solutions & study notes ---------- */
+.rt-table-wrap { overflow-x: auto; margin: 10px 0 14px; }
+.rt-table {
+  border-collapse: collapse; width: 100%; font-size: .92em;
+  background: var(--card, #fff);
+}
+.rt-table th, .rt-table td {
+  border: 1px solid var(--border, #DCE2F2);
+  padding: 7px 11px; text-align: left; vertical-align: top;
+}
+.rt-table th {
+  background: rgba(1, 0, 128, .06);
+  font-weight: 700; white-space: nowrap;
+}
+.rt-table tbody tr:nth-child(even) { background: rgba(0, 0, 0, .02); }

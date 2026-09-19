@@ -1,5 +1,5 @@
 // ===========================================================================
-// ACCESS GATE CONFIG  —  OAU EEE 282 CBT Lab
+// ACCESS GATE CONFIG  —  OAU CBT Lab
 // ===========================================================================
 // This file holds only PUBLIC, cosmetic settings. Nothing here is a secret —
 // it all ships in the browser bundle. The real secrets (GATE_SECRET, ADMIN_KEY)
@@ -30,13 +30,13 @@ export const gateConfig = {
   // format can never produce a broken "chat not found" link for a student.
   whatsappNumber: '08071202598',
   defaultCountryCode: '234',   // used when the number starts with 0
-  contactName: 'Max-codes EEE 282 CBT',
+  contactName: 'Max-codes OAU CBT Lab',
   channelUrl: 'https://whatsapp.com/channel/0029VbCgWG9Fy72HO20EgY3F',
 
   // The word they send you. Their device ID is appended automatically.
   requestWord: 'ACCESS',
 
-  title: 'Unlock the OAU EEE 282 CBT Lab',
+  title: 'Unlock the OAU CBT Lab',
   subtitle:
     'Free for our community. Do the three quick steps below, get your personal code on WhatsApp, and you are in for 7 days.',
 
@@ -44,5 +44,5 @@ export const gateConfig = {
   dwellSeconds: 6,
 
   brandName: 'Max-codes',
-  brandSub: 'EEE 282 CBT Lab',
+  brandSub: 'CBT Lab',
 }
