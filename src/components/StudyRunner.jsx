@@ -11,8 +11,10 @@ import ComponentsTableModal from './ComponentsTableModal.jsx'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
-// Topic deep dives for EEE 282 — shown whenever a topic has no summaryNotes of its own
-const TOPIC_DEEP_DIVE = {
+// Topic deep dives for EEE 282 — shown whenever a topic has no summaryNotes of
+// its own. Scoped per course (see DEEP_DIVE_BY_COURSE below) so a new course
+// never inherits EEE 282 prose through a coincidentally-similar topic id.
+const EEE282_DEEP_DIVE = {
   'active-passive': `### The rule that settles every classification
 An **active** part needs an external supply and can control current or deliver power gain
 (diode, zener, LED, BJT, MOSFET, op-amp, SCR). A **passive** part only stores or dissipates energy
@@ -62,12 +64,17 @@ $$\\frac{f_y}{f_x} = \\frac{\\text{horizontal tangencies}}{\\text{vertical tange
 
 
 // Topic-level diagrams for EEE 282 (used only when the question has none of its own)
-const TOPIC_IMAGES = {
+const EEE282_TOPIC_IMAGES = {
   'active-passive': '/images/eee282/q02.svg',
   'bjt-diagnostics': '/images/eee282/q13.svg',
   'cro-controls': '/images/eee282/q25.svg',
   'cro-calculations': '/images/eee282/q24.svg',
 }
+
+// Per-course lookups. A course that is not listed simply falls back to its own
+// summaryNotes (authored in data.js), which is what every new course should use.
+const DEEP_DIVE_BY_COURSE = { eee282: EEE282_DEEP_DIVE }
+const TOPIC_IMAGES_BY_COURSE = { eee282: EEE282_TOPIC_IMAGES }
 
 
 export default function StudyRunner() {
@@ -86,7 +93,8 @@ export default function StudyRunner() {
   const topicMetaEntry = (topicMeta[session.courseId] || []).find((t) => t.id === q.topicId) || {}
   const topicNote = topicMetaEntry.summaryNotes
   const topicLabel = topicMetaEntry.name || 'Mixed topics'
-  const deepDive = topicNote || TOPIC_DEEP_DIVE[q.topicId] || `This topic covers ${q.topicId.replace(/-/g, ' ')}. Review the core definitions, formulas, and typical exam traps for this topic. Focus on understanding the *why* behind each option, not just memorizing the answer.`
+  const courseDeepDive = DEEP_DIVE_BY_COURSE[session.courseId] || {}
+  const deepDive = topicNote || courseDeepDive[q.topicId] || `This topic covers ${q.topicId.replace(/-/g, ' ')}. Review the core definitions, formulas, and typical exam traps for this topic. Focus on understanding the *why* behind each option, not just memorizing the answer.`
 
   useEffect(() => {
     if (!session) return
@@ -111,7 +119,7 @@ export default function StudyRunner() {
   }
 
   const pct = Math.round(((index + 1) / total) * 100)
-  const topicImage = TOPIC_IMAGES[q.topicId]
+  const topicImage = (TOPIC_IMAGES_BY_COURSE[session.courseId] || {})[q.topicId]
 
   return (
     <div className="test-shell">
@@ -184,7 +192,7 @@ export default function StudyRunner() {
             <button className="btn btn-primary" onClick={handleSeeExplanation} style={{ flex: 1, minWidth: 200 }}>
               {showSolution ? '✓ Explanation below — scroll down' : 'See Detailed Explanation →'}
             </button>
-            {isComponentsTopic(q) && (
+            {isComponentsTopic(q, session.courseId) && (
               <button
                 className="btn btn-primary"
                 onClick={() => setShowComponents(true)}

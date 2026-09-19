@@ -79,12 +79,18 @@ export function buildQuestionSet(courseId, { mode, topicId, categoryId, count })
   return shuffled.slice(0, n)
 }
 
-// The topic that owns the components reference table. The
-// "View Components Table" button only appears for questions in this topic.
-export const COMPONENTS_TOPIC_ID = 'active-passive'
+// The components reference table is an EEE 282 practical aid only. It is keyed
+// by COURSE as well as topic so that a new course can never inherit another
+// course's furniture just because a topic id happens to look similar.
+// Courses absent from this map simply never show the button.
+export const COMPONENTS_TOPIC_BY_COURSE = {
+  eee282: 'active-passive',
+}
 
-export function isComponentsTopic(question) {
-  return !!question && question.topicId === COMPONENTS_TOPIC_ID
+export function isComponentsTopic(question, courseId) {
+  if (!question) return false
+  const topicId = COMPONENTS_TOPIC_BY_COURSE[courseId]
+  return !!topicId && question.topicId === topicId
 }
 
 // Optional Telegram channel/group link. Set this to your real invite link to

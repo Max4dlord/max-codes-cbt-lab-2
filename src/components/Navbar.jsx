@@ -16,7 +16,7 @@ export default function Navbar({ accessExp }) {
       <Link to="/" className="nav-brand">
         <img src="/oau-crest.png" alt="Obafemi Awolowo University crest" className="nav-crest" />
         <span className="nav-title">
-          OAU <em>· EEE 282 CBT Lab</em>
+          OAU <em>· CBT Lab</em>
         </span>
       </Link>
       <nav className="nav-links">

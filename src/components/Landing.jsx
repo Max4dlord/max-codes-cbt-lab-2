@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { courses } from '../data.js'
 import { getTopics, getCategories, getQuestionCount } from '../utils.js'
@@ -23,7 +24,13 @@ const STEPS = [
 
 export default function Landing() {
   const availableCourses = courses.filter((c) => c.available)
-  const course = availableCourses[0] || courses[0]
+  // Landing showcases one course at a time. With more than one live course the
+  // visitor picks which to preview; everything below is derived from that
+  // choice, so no copy is hard-wired to a single course any more.
+  const [courseId, setCourseId] = useState(
+    () => (availableCourses[0] || courses[0]).id
+  )
+  const course = courses.find((c) => c.id === courseId) || courses[0]
   const topics = getTopics(course.id)
   function scrollToFeatures() {
     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -39,22 +46,33 @@ export default function Landing() {
             <div className="oau-place">{CAMPUS}</div>
           </div>
           <div className="oau-dept">
-            <strong>Department of Electronic &amp; Electrical Engineering</strong>
+            <strong>{course.department || 'Department of Electronic & Electrical Engineering'}</strong>
             {course.code} · {course.title}
           </div>
         </div>
 
         <span className="badge"><span className="dot" /> OAU CBT Practice Platform · Live</span>
         <h1>
-          Master <span className="grad">{course.code}</span> before the bench exam
+          Master <span className="grad">{course.code}</span> {course.heroTagline || 'before the exam'}
         </h1>
-        <p className="lead">
-          A clean, exam-realistic testing environment built around the {course.code} practical
-          syllabus — active &amp; passive components, transistor identification with a multimeter,
-          and cathode ray oscilloscope (CRO) measurements. Configure your test, shuffle the bank,
-          pause when you need to, and
-          review every answer with full worked solutions.
-        </p>
+        <p className="lead">{course.blurb}</p>
+
+        {availableCourses.length > 1 && (
+          <div className="course-switch" role="tablist" aria-label="Choose a course">
+            {availableCourses.map((c) => (
+              <button
+                key={c.id}
+                role="tab"
+                aria-selected={c.id === courseId}
+                className={`course-switch-btn ${c.id === courseId ? 'active' : ''}`}
+                onClick={() => setCourseId(c.id)}
+              >
+                <span className="course-dot" style={{ background: c.accent }} />
+                {c.code}
+              </button>
+            ))}
+          </div>
+        )}
         <div className="hero-cta">
           <Link to="/dashboard" className="btn btn-primary btn-lg">Start a test →</Link>
           <button type="button" onClick={scrollToFeatures} className="btn btn-ghost btn-lg">Explore features</button>
@@ -148,7 +166,7 @@ export default function Landing() {
       <footer>
         <img src="/oau-crest.png" alt="OAU crest" className="oau-footer-crest" />
         <div>
-          © {new Date().getFullYear()} {UNIVERSITY}, {CAMPUS.split(' · ')[0]} — {course.code} CBT Lab.
+          © {new Date().getFullYear()} {UNIVERSITY}, {CAMPUS.split(' · ')[0]} — CBT Lab.
           <br />
           Built for focused, exam-realistic practice. “For Learning and Culture.”
         </div>

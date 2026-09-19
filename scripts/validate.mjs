@@ -26,6 +26,23 @@ const IMAGE_ALLOW = {
     'eee282/q30.svg'],
 }
 
+// Courses that ship a category layer must declare it properly: every topic
+// needs a categoryId, every category needs at least one topic, and ids must be
+// unique. Checked generically so any new course is covered automatically.
+function checkCategoryIntegrity(course, cats, topics, errors) {
+  const seenCat = new Set()
+  for (const c of cats) {
+    if (!c.id) errors.push(`${course.id}: a category is missing an id`)
+    if (seenCat.has(c.id)) errors.push(`${course.id}: duplicate category id '${c.id}'`)
+    seenCat.add(c.id)
+    if (!c.name || !String(c.name).trim())
+      errors.push(`${course.id}/${c.id}: category needs a name`)
+    const owned = topics.filter((t) => t.categoryId === c.id)
+    if (!owned.length)
+      errors.push(`${course.id}/${c.id}: category has no topics attached`)
+  }
+}
+
 for (const course of courses) {
   const bank = questionBank[course.id] || []
   const topicIds = new Set((topicMeta[course.id] || []).map((t) => t.id))
@@ -125,6 +142,7 @@ for (const course of courses) {
 
   // ---- category structure checks ----
   if (cats.length > 0) {
+    checkCategoryIntegrity(course, cats, topicMeta[course.id] || [], errors)
     for (const t of topicMeta[course.id] || []) {
       if (!t.categoryId || !catIds.has(t.categoryId))
         errors.push(`${course.id}: topic '${t.id}' has unknown categoryId '${t.categoryId}'`)

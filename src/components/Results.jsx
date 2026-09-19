@@ -138,7 +138,7 @@ export default function Results() {
                 <button className="btn btn-ghost btn-sm" onClick={() => setOpenId(item.id)}>
                   📖 Show full explanation
                 </button>
-                {isComponentsTopic(item) && (
+                {isComponentsTopic(item, results.courseId) && (
                   <button className="btn btn-ghost btn-sm" onClick={() => setShowComponents(true)}>
                     🔌 View Components Table
                   </button>

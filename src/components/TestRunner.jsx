@@ -145,6 +145,7 @@ export default function TestRunner() {
 
     const results = {
       v: 1,
+      courseId: session.courseId,
       courseCode: session.courseCode,
       courseTitle: session.courseTitle,
       topicName: session.topicName,

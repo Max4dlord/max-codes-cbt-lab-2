@@ -739,3 +739,20 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   text-decoration: none; opacity: .55;
 }
 .gate-admin-link a:hover { opacity: 1; text-decoration: underline; }
+
+/* ---------- Landing: course switcher (appears with 2+ live courses) ---------- */
+.course-switch {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  justify-content: center; margin: 18px 0 4px;
+}
+.course-switch-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: transparent;
+  color: var(--muted); font-weight: 600; font-size: .9rem;
+  transition: all .15s ease;
+}
+.course-switch-btn:hover { color: var(--text); border-color: var(--text); }
+.course-switch-btn.active {
+  background: var(--text); color: var(--bg); border-color: var(--text);
+}
