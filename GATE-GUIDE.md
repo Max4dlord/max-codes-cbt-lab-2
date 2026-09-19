@@ -72,16 +72,14 @@ position all survive. Re-verifying drops them exactly where they stopped.
 
 ## SETUP — do this once
 
-### 1. Set your WhatsApp number
+### 1. WhatsApp number — already set ✅
 
-In `src/gateConfig.js`:
+`src/gateConfig.js` is set to **08071202598**.
 
-```js
-whatsappNumber: '2348000000000',   // ⚠️ REPLACE — country code, digits only, no + and no spaces
-```
-
-For Nigeria: `0803 123 4567` becomes `2348031234567`. **The gate will not work
-until you change this.**
+You can write it in **any** format — `08071202598`, `+234 807 120 2598` or
+`2348071202598`. `src/phone.js` normalises it to the international form that
+`wa.me` requires, so a student can never land on a "chat not found" page.
+To change it later, edit that one line (or just ask me).
 
 ### 2. Add the environment variables in Vercel
 
@@ -90,15 +88,20 @@ Production, Preview and Development for each:
 
 | Name | Value |
 |---|---|
-| `GATE_SECRET` | a long random string (see below) |
-| `ADMIN_KEY` | your private admin password |
+| `GATE_SECRET` | `53191c1cfdc793b0066ce5bea949be466795a9c984282489498e543720e05637` |
+| `ADMIN_KEY` | `Dafidi1357` |
 | `CODE_PREFIX` | `EEE-` |
 
-Generate a strong secret:
+**What GATE_SECRET is:** the master key the server uses to generate and check
+codes. You paste it into Vercel **once** and then forget it — you never type it
+again, and it is never shown to anyone. You do not need to memorise it.
+Keep one copy somewhere safe (password manager / a private note) purely as a
+backup. If you ever lose it, just generate a new one — the only consequence is
+that everyone currently unlocked has to request a fresh code.
 
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-```
+**What ADMIN_KEY is:** your personal password for the `#/admin-code` page.
+Only someone who knows it can generate codes. It is checked on the server, so
+it is never in the browser bundle and cannot be extracted from the site.
 
 > No `VITE_` prefix — that's deliberate. It keeps them server-only.
 > Changing `GATE_SECRET` later invalidates every code and every active session.
@@ -113,18 +116,29 @@ Env vars only apply to **new** deployments. Vercel → Deployments → ⋯ → R
 
 A student DMs you: `ACCESS A1B2C3-D4E5F6`
 
-1. Go to **`your-site.vercel.app/#/admin-code`**
-2. Enter your admin key
-3. Paste their whole message — it extracts the ID automatically
-4. Hit **Generate code**
-5. Hit **Copy full reply** → paste into WhatsApp → send
+1. Go to **`your-site.vercel.app/#/admin-code`** (bookmark it — it is not linked
+   anywhere in the UI)
+2. Enter your admin key **once**; paste their message into the second box
+3. Hit **Generate code**
+4. Hit **Send on WhatsApp →** — opens WhatsApp with the whole reply pre-typed.
+   Pick the student's chat and press send.
 
-The reply is pre-written:
+Total effort: paste, tap, tap. No typing of codes, ever.
 
-> Your access code: EEE-XXXXXX
-> Go back to the CBT Lab and paste it in. Works on your phone only, valid for 7 days. Enjoy 💪
+The reply includes a **one-tap magic link**:
 
-Bookmark the admin page. It's not linked anywhere in the UI.
+> Here is your access ✅
+> Just tap this link and you are in:
+> https://your-site.vercel.app/#/?c=EEE-XXXXXX
+> Or enter this code manually: EEE-XXXXXX
+> Works on your phone only. Valid for 7 days. Enjoy 💪
+
+When the student taps that link, the app redeems the code **automatically** and
+drops them straight into the lab — they never type or paste anything. The code
+is then stripped from the URL so it does not linger in their history.
+
+Note the link still only works on **their** phone. Forwarding it to a friend
+fails, exactly like the bare code.
 
 ---
 

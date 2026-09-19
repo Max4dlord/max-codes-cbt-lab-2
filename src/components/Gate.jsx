@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { gateConfig } from '../gateConfig.js'
 import { deviceId, deviceLabel, redeemCode } from '../gateStore.js'
+import { normalizeWhatsApp, displayWhatsApp } from '../phone.js'
 
 /**
  * Multi-step access gate.
@@ -30,11 +31,33 @@ export default function Gate({ onUnlock }) {
     const id = setInterval(() => setTick((t) => t + 1), 500)
     return () => clearInterval(id)
   }, [])
+
+  // MAGIC LINK: if the admin sent  .../#/?c=MAX-XXXXXX  the student just taps it
+  // and we redeem automatically — no typing, no paste, no mistakes.
+  useEffect(() => {
+    const q = window.location.hash.split('?')[1]
+    if (!q) return
+    const c = new URLSearchParams(q).get('c')
+    if (!c) return
+    setCode(c)
+    setSaved(true); setFollowed(true); setRequested(true)
+    setBusy(true)
+    redeemCode(c.trim()).then((r) => {
+      // Clean the code out of the URL either way, so it is not left in history.
+      try { window.history.replaceState(null, '', window.location.pathname + '#/') } catch {}
+      if (r.ok) onUnlock(r.exp)
+      else { setError(r.error); setBusy(false) }
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   useEffect(() => () => Object.values(timers.current).forEach(clearTimeout), [])
 
   const dev = deviceId()
   const label = deviceLabel()
-  const wa = gateConfig.whatsappNumber
+  // Normalised so ANY format in gateConfig (0..., +234..., 234...) builds a
+  // working wa.me link. Students never see a broken "chat not found" page.
+  const wa = normalizeWhatsApp(gateConfig.whatsappNumber, gateConfig.defaultCountryCode)
+  const waPretty = displayWhatsApp(gateConfig.whatsappNumber, gateConfig.defaultCountryCode)
   const dwell = gateConfig.dwellSeconds ?? 6
 
   // Pre-typed WhatsApp message carrying the device ID.
@@ -119,7 +142,7 @@ export default function Gate({ onUnlock }) {
                 download="Max-codes-CBT.vcf"
                 onClick={() => open('save')}
               >
-                Save contact (+{wa}) ↓
+                Save contact ({waPretty}) ↓
               </a>
               <label className={`gate-check ${saved ? 'checked' : ''} ${armed.save ? '' : 'disabled'}`}>
                 <input

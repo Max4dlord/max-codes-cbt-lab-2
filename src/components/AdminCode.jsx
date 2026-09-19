@@ -51,8 +51,13 @@ export default function AdminCode() {
     } catch {}
   }
 
+  // One-tap magic link: student taps it and the app redeems the code itself.
+  const magicLink = result
+    ? `${window.location.origin}/#/?c=${encodeURIComponent(result.code)}`
+    : ''
+
   const reply = result
-    ? `Your access code: ${result.code}\n\nGo back to the CBT Lab and paste it in. Works on your phone only, valid for 7 days. Enjoy 💪`
+    ? `Here is your access ✅\n\nJust tap this link and you are in:\n${magicLink}\n\nOr enter this code manually: ${result.code}\n\nWorks on your phone only. Valid for 7 days. Enjoy 💪`
     : ''
 
   return (
@@ -103,9 +108,21 @@ export default function AdminCode() {
               {result.code}
             </div>
 
-            <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
+            <a
+              className="btn btn-primary btn-lg"
+              style={{ display: 'block', textAlign: 'center', marginTop: 12 }}
+              href={`https://wa.me/?text=${encodeURIComponent(reply)}`}
+              target="_blank" rel="noopener noreferrer"
+            >
+              Send on WhatsApp →
+            </a>
+
+            <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
               <button className="btn btn-ghost" onClick={() => copy(result.code, 'code')}>
                 {copied === 'code' ? 'Copied ✓' : 'Copy code'}
+              </button>
+              <button className="btn btn-ghost" onClick={() => copy(magicLink, 'link')}>
+                {copied === 'link' ? 'Copied ✓' : 'Copy link'}
               </button>
               <button className="btn btn-primary" onClick={() => copy(reply, 'reply')}>
                 {copied === 'reply' ? 'Copied ✓' : 'Copy full reply'}

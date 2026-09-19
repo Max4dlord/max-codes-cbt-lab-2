@@ -24,7 +24,12 @@ export const gateConfig = {
 
   // ---- your details -------------------------------------------------------
   // International format, digits only, no "+" and no spaces.
-  whatsappNumber: '2348000000000',   // ⚠️ REPLACE with your real WhatsApp number
+  // Your WhatsApp number. Write it however you like — '08071202598',
+  // '+234 807 120 2598' or '2348071202598' all work. It is normalised to the
+  // international form automatically before any link is built, so a wrong
+  // format can never produce a broken "chat not found" link for a student.
+  whatsappNumber: '08071202598',
+  defaultCountryCode: '234',   // used when the number starts with 0
   contactName: 'Max-codes EEE 282 CBT',
   channelUrl: 'https://whatsapp.com/channel/0029VbCgWG9Fy72HO20EgY3F',
 
