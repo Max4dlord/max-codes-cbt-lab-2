@@ -6,10 +6,12 @@
 // boolean to flip, only a token they cannot forge.
 // ---------------------------------------------------------------------------
 
-import { verifyToken, cleanDevice, json, readBody } from './_lib.js'
+import { verifyToken, cleanDevice, json, readBody, configError } from './_lib.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { ok: false, error: 'Method not allowed' })
+
+  if (configError()) return json(res, 503, { ok: false, reason: 'not-configured' })
 
   const body = await readBody(req)
   const deviceId = cleanDevice(body.deviceId)

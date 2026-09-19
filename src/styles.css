@@ -731,3 +731,11 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   font-size: .76rem; padding: 3px 9px; border-radius: 999px;
   background: rgba(0,0,0,.07); color: var(--muted, #6b7280); font-weight: 600;
 }
+
+/* Discreet admin entry on the gate */
+.gate-admin-link { text-align: center; margin-top: 14px; }
+.gate-admin-link a {
+  font-size: .72rem; color: var(--muted, #9ca3af);
+  text-decoration: none; opacity: .55;
+}
+.gate-admin-link a:hover { opacity: 1; text-decoration: underline; }

@@ -13,8 +13,18 @@
 
 import crypto from 'node:crypto'
 
-export const SECRET = process.env.GATE_SECRET || 'dev-only-insecure-secret-change-me'
-export const ADMIN_KEY = process.env.ADMIN_KEY || 'dev-admin-key'
+// NO FALLBACK VALUES — deliberately.
+// A hard-coded default would sit in the public repo, and anyone reading it
+// could mint their own codes. If the env vars are missing we fail CLOSED and
+// say so, rather than silently running on a guessable secret.
+export const SECRET = process.env.GATE_SECRET || ''
+export const ADMIN_KEY = process.env.ADMIN_KEY || ''
+
+export function configError() {
+  if (!SECRET || SECRET.length < 16) return 'GATE_SECRET is not set on the server.'
+  if (!ADMIN_KEY) return 'ADMIN_KEY is not set on the server.'
+  return null
+}
 
 // How long one *code cycle* lasts. A code issued in week N works in week N
 // (and week N-1 as grace, so a code sent late at night never dies on them).

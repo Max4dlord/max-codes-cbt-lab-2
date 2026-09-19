@@ -261,6 +261,12 @@ export default function Gate({ onUnlock }) {
           you just request a new code. <strong>Your test progress, scores and
           saved sessions are never affected.</strong>
         </p>
+
+        {/* Discreet admin entry. Harmless to students: the panel itself is
+            useless without the admin key, which is verified server-side. */}
+        <p className="gate-admin-link">
+          <a href="#/admin-code">Admin</a>
+        </p>
       </div>
     </div>
   )

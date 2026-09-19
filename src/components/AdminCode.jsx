@@ -14,6 +14,7 @@ export default function AdminCode() {
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
   const [copied, setCopied] = useState('')
+  const [notConfigured, setNotConfigured] = useState('')
 
   // Accepts "ACCESS A1B2C3-D4E5F6", "A1B2C3-D4E5F6" or the raw id.
   function parseId(text) {
@@ -25,7 +26,7 @@ export default function AdminCode() {
   }
 
   async function generate() {
-    setError(''); setResult(null)
+    setError(''); setResult(null); setNotConfigured('')
     const deviceId = parseId(raw)
     if (!deviceId) { setError('Could not read a device ID from that text.'); return }
     setBusy(true)
@@ -37,6 +38,7 @@ export default function AdminCode() {
       })
       const data = await r.json()
       if (data.ok) setResult(data)
+      else if (r.status === 503) setNotConfigured(data.error || 'Server not configured.')
       else setError(data.error || 'Failed.')
     } catch {
       setError('Network error. Are you online?')
@@ -88,6 +90,17 @@ export default function AdminCode() {
             autoComplete="off" spellCheck="false"
           />
         </div>
+
+        {notConfigured && (
+          <div className="gate-error" role="alert" style={{ textAlign: 'left', lineHeight: 1.6 }}>
+            <strong>Setup needed.</strong> {notConfigured}
+            <br /><br />
+            Go to <strong>Vercel → this project → Settings → Environment
+            Variables</strong> and add <code>GATE_SECRET</code>,{' '}
+            <code>ADMIN_KEY</code> and <code>CODE_PREFIX</code> (tick Production,
+            Preview and Development), then <strong>redeploy</strong>.
+          </div>
+        )}
 
         {error && <p className="gate-error" role="alert">{error}</p>}
 

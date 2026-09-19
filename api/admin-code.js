@@ -8,13 +8,16 @@
 
 import {
   codeFor, codeWindow, CODE_PERIOD_MS, ADMIN_KEY,
-  cleanDevice, safeEqual, json, readBody,
+  cleanDevice, safeEqual, json, readBody, configError,
 } from './_lib.js'
 
 const PREFIX = process.env.CODE_PREFIX || 'MAX-'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { ok: false, error: 'Method not allowed' })
+
+  const cfg = configError()
+  if (cfg) return json(res, 503, { ok: false, error: `Server not configured: ${cfg} Add it in Vercel -> Settings -> Environment Variables, then redeploy.` })
 
   const body = await readBody(req)
   if (!body.adminKey || !safeEqual(body.adminKey, ADMIN_KEY)) {

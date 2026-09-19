@@ -10,12 +10,15 @@
 // that only Vercel holds — DevTools cannot forge one.
 // ---------------------------------------------------------------------------
 
-import { isCodeValid, signToken, cleanDevice, json, readBody } from './_lib.js'
+import { isCodeValid, signToken, cleanDevice, json, readBody, configError } from './_lib.js'
 
 const PREFIX = process.env.CODE_PREFIX || 'MAX-'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { ok: false, error: 'Method not allowed' })
+
+  const cfg = configError()
+  if (cfg) return json(res, 503, { ok: false, error: 'Access system not configured yet. Please tell the admin.', detail: cfg })
 
   const body = await readBody(req)
   const deviceId = cleanDevice(body.deviceId)
