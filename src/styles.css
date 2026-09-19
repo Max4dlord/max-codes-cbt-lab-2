@@ -772,3 +772,20 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   font-weight: 700; white-space: nowrap;
 }
 .rt-table tbody tr:nth-child(even) { background: rgba(0, 0, 0, .02); }
+
+/* ---------- Gate: progress bar + optional badge ---------- */
+.gate-progress {
+  height: 4px; border-radius: 999px; overflow: hidden;
+  background: rgba(0, 0, 0, .08); margin: 4px 0 18px;
+}
+.gate-progress-bar {
+  height: 100%; background: var(--green, #16a34a);
+  transition: width .35s ease;
+}
+.gate-optional {
+  display: inline-block; margin-left: 8px; padding: 1px 8px;
+  border-radius: 999px; font-size: .68rem; font-weight: 700;
+  letter-spacing: .03em; text-transform: uppercase;
+  background: rgba(0, 0, 0, .07); color: var(--muted, #6b7280);
+  vertical-align: middle;
+}

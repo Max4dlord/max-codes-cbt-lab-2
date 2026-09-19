@@ -34,6 +34,14 @@ export function getTopics(courseId) {
   }))
 }
 
+// A category flagged `spansAll: true` is VIRTUAL: it owns no topics of its own
+// and instead draws from the whole course, shuffled. That is what "General"
+// means — one tap to test right across every other category.
+export function isSpanAllCategory(courseId, categoryId) {
+  const c = (categoryMeta[courseId] || []).find((x) => x.id === categoryId)
+  return !!c && c.spansAll === true
+}
+
 // Main categories for a course, each carrying its nested topics (with live
 // counts). Returns [] for courses that have no category structure.
 export function getCategories(courseId) {
@@ -42,6 +50,8 @@ export function getCategories(courseId) {
   const qs = questionBank[courseId] || []
   const topics = topicMeta[courseId] || []
   return cats.map((c) => {
+    // Virtual span-all category: no topics of its own, counts the whole bank.
+    if (c.spansAll) return { ...c, topics: [], count: qs.length }
     const subs = topics
       .filter((t) => t.categoryId === c.id)
       .map((t) => ({ ...t, count: qs.filter((q) => q.topicId === t.id).length }))
@@ -66,7 +76,9 @@ export function buildQuestionSet(courseId, { mode, topicId, categoryId, count })
   if (mode === 'topic' && topicId) {
     pool = pool.filter((q) => q.topicId === topicId)
   }
-  if (mode === 'category' && categoryId) {
+  // A span-all category ("General") deliberately does NOT filter: it shuffles
+  // right across every topic in the course.
+  if (mode === 'category' && categoryId && !isSpanAllCategory(courseId, categoryId)) {
     const ids = new Set(
       (topicMeta[courseId] || [])
         .filter((t) => t.categoryId === categoryId)

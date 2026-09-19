@@ -13,6 +13,7 @@
 
 const DEV_KEY = 'cbt_device_v1'
 const TOKEN_KEY = 'cbt_token_v1'
+const STEPS_KEY = 'cbt_gate_steps_v1'
 
 function randHex(bytes = 16) {
   try {
@@ -81,7 +82,55 @@ export async function verifyAccess() {
   }
 }
 
-/** Redeem the code the admin DM'd them. */
+// ---------------------------------------------------------------------------
+// Gate step progress.
+//
+// Tapping "save contact" or "open channel" navigates AWAY from the page (on
+// phones WhatsApp/LinkedIn often replace the tab entirely). When the visitor
+// comes back the React state is gone, so progress MUST live in localStorage or
+// the gate appears to restart from scratch. Shape:
+//   { [stepId]: { openedAt: ms, done: bool } }
+// ---------------------------------------------------------------------------
+
+export function loadSteps() {
+  try {
+    const raw = localStorage.getItem(STEPS_KEY)
+    const v = raw ? JSON.parse(raw) : null
+    return v && typeof v === 'object' ? v : {}
+  } catch { return {} }
+}
+
+export function saveSteps(steps) {
+  try { localStorage.setItem(STEPS_KEY, JSON.stringify(steps)) } catch {}
+}
+
+export function clearSteps() {
+  try { localStorage.removeItem(STEPS_KEY) } catch {}
+}
+
+/**
+ * Automated access: the server issues a device-bound 7-day session once the
+ * required steps are complete. No code is typed and nothing is shared.
+ */
+export async function requestAccess(steps) {
+  // Send only what the server needs: completion + how long they dwelled.
+  const payload = {}
+  for (const [id, v] of Object.entries(steps || {})) {
+    payload[id] = {
+      done: !!v.done,
+      dwellMs: v.openedAt ? Math.max(0, Date.now() - v.openedAt) : 0,
+    }
+  }
+  try {
+    const { data } = await post('/api/issue', { deviceId: deviceId(), steps: payload })
+    if (data.ok && data.token) { setToken(data.token); return { ok: true, exp: data.exp } }
+    return { ok: false, error: data.error || 'Could not grant access just yet.' }
+  } catch {
+    return { ok: false, error: 'No internet connection. Connect and try again.' }
+  }
+}
+
+/** Redeem a code (kept as a fallback / magic-link path). */
 export async function redeemCode(code) {
   try {
     const { data } = await post('/api/unlock', { deviceId: deviceId(), code })

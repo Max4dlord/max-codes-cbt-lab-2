@@ -37,6 +37,13 @@ function checkCategoryIntegrity(course, cats, topics, errors) {
     seenCat.add(c.id)
     if (!c.name || !String(c.name).trim())
       errors.push(`${course.id}/${c.id}: category needs a name`)
+    // A `spansAll` category is virtual — it draws from the whole course and
+    // owns no topics by design, so the "no topics" rule must not apply to it.
+    if (c.spansAll) {
+      if (topics.some((t) => t.categoryId === c.id))
+        errors.push(`${course.id}/${c.id}: a spansAll category must not own topics`)
+      continue
+    }
     const owned = topics.filter((t) => t.categoryId === c.id)
     if (!owned.length)
       errors.push(`${course.id}/${c.id}: category has no topics attached`)
@@ -149,6 +156,8 @@ for (const course of courses) {
     }
     const perCat = cats
       .map((c) => {
+        // A spansAll category draws from the entire bank, not from owned topics.
+        if (c.spansAll) return `${c.id}:${bank.length}qs (all)`
         const ids = (topicMeta[course.id] || []).filter((t) => t.categoryId === c.id).map((t) => t.id)
         const n = bank.filter((q) => ids.includes(q.topicId)).length
         return `${c.id}:${n}qs`

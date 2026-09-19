@@ -33,6 +33,12 @@ export const courses = [
 export const categoryMeta = {
   "swep200": [
     {
+      "id": "general",
+      "name": "General",
+      "spansAll": true,
+      "blurb": "Shuffled across every SWEP Day and lecture \u2014 the full-course mix."
+    },
+    {
       "id": "swep-days",
       "name": "SWEP Days",
       "blurb": "Test one orientation day at a time, exactly as it was delivered."

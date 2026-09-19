@@ -234,7 +234,13 @@ export default function Dashboard() {
                     onClick={() => setCategoryId(c.id)}
                   >
                     <div className="cat-name">{c.name}</div>
-                    <div className="cat-count">{c.count === 0 ? 'Coming soon' : `${c.count} questions · ${c.topics.length} topics`}</div>
+                    <div className="cat-count">
+                      {c.count === 0
+                        ? 'Coming soon'
+                        : c.spansAll
+                        ? `${c.count} questions · everything, shuffled`
+                        : `${c.count} questions · ${c.topics.length} topics`}
+                    </div>
                   </button>
                 ))}
               </div>
@@ -246,7 +252,7 @@ export default function Dashboard() {
               <label>Pick a topic</label>
               {hasCats ? (
                 <div>
-                  {categories.map((c) => (
+                  {categories.filter((c) => !c.spansAll).map((c) => (
                     <div key={c.id} className="topic-group">
                       {c.topics.length > 0 && (
                         <div className="topic-group-head">{c.name}</div>
@@ -416,7 +422,13 @@ export default function Dashboard() {
                   onClick={() => setStudyCategoryId(c.id)}
                 >
                   <div className="cat-name">{c.name}</div>
-                  <div className="cat-count">{c.count === 0 ? 'Coming soon' : `${c.count} questions · ${c.topics.length} topics`}</div>
+                  <div className="cat-count">
+                    {c.count === 0
+                      ? 'Coming soon'
+                      : c.spansAll
+                      ? `${c.count} questions · everything, shuffled`
+                      : `${c.count} questions · ${c.topics.length} topics`}
+                  </div>
                 </button>
               ))}
             </div>
@@ -428,7 +440,7 @@ export default function Dashboard() {
             <label>Pick a topic to study</label>
             {studyHasCats ? (
               <div>
-                {studyCats.map((c) => (
+                {studyCats.filter((c) => !c.spansAll).map((c) => (
                   <div key={c.id} className="topic-group">
                     {c.topics.length > 0 && <div className="topic-group-head">{c.name}</div>}
                     <div className="topic-grid">

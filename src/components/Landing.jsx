@@ -128,7 +128,9 @@ export default function Landing() {
         </div>
         {getCategories(course.id).length > 0 ? (
           <div>
-            {getCategories(course.id).map((c) => (
+            {/* Virtual span-all categories (e.g. "General") own no topics, so
+                they are not listed in this topic breakdown. */}
+            {getCategories(course.id).filter((c) => !c.spansAll).map((c) => (
               <div key={c.id} className="topic-group">
                 <div className="topic-group-head">
                   {c.name}

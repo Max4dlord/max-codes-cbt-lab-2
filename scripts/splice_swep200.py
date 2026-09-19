@@ -47,9 +47,13 @@ COURSE = {
 
 CATEGORIES = [
     {
+        # VIRTUAL category: owns no topics. `spansAll` makes the app shuffle
+        # across every question in the course, so "General" = test everything
+        # from all SWEP Days and all lectures at once.
         "id": "general",
         "name": "General",
-        "blurb": "Cross-cutting SWEP 200 knowledge drawn from the whole orientation.",
+        "spansAll": True,
+        "blurb": "Shuffled across every SWEP Day and lecture \u2014 the full-course mix.",
     },
     {
         "id": "swep-days",
@@ -185,8 +189,11 @@ def main():
         if q['topicId'] not in topic_ids:
             raise SystemExit(f"{q['id']}: unknown topicId {q['topicId']!r}")
     used_cats = {t['categoryId'] for t in TOPICS}
-    cats = [c for c in CATEGORIES if c['id'] in used_cats]
-    dropped = [c['id'] for c in CATEGORIES if c['id'] not in used_cats]
+    # Keep a category if it owns topics OR if it is a virtual span-all one.
+    cats = [c for c in CATEGORIES
+            if c['id'] in used_cats or c.get('spansAll')]
+    dropped = [c['id'] for c in CATEGORIES
+               if c['id'] not in used_cats and not c.get('spansAll')]
     if dropped:
         print(f'  (categories with no topics yet, omitted: {", ".join(dropped)})')
 

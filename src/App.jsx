@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar.jsx'
 import Landing from './components/Landing.jsx'
@@ -8,7 +8,6 @@ import TestRunner from './components/TestRunner.jsx'
 import StudyRunner from './components/StudyRunner.jsx'
 import Results from './components/Results.jsx'
 import Gate from './components/Gate.jsx'
-import AdminCode from './components/AdminCode.jsx'
 import { gateConfig } from './gateConfig.js'
 import { verifyAccess } from './gateStore.js'
 
@@ -29,8 +28,6 @@ function Loading() {
 }
 
 function Shell() {
-  const location = useLocation()
-  const isAdmin = location.pathname === '/admin-code'
 
   // 'checking' | 'in' | 'out'  — never a plain boolean the user can flip,
   // because the answer always comes from the server.
@@ -50,15 +47,6 @@ function Shell() {
     return () => window.removeEventListener('focus', onFocus)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  // Admin console is always reachable and never gated.
-  if (isAdmin) {
-    return (
-      <Routes>
-        <Route path="/admin-code" element={<AdminCode />} />
-      </Routes>
-    )
-  }
 
   if (state === 'checking') return <Loading />
   if (state === 'out') {
