@@ -18,11 +18,36 @@ export const courses = [
   "accent": "#010080",
   "available": true
 },
+{
+  "id": "swep200",
+  "code": "SWEP 200",
+  "title": "Students Workshop Experience Programme",
+  "heroTagline": "before the assessment",
+  "blurb": "Orientation-week preparation for SWEP 200: the NUC/ITF mandate and the tripartite structure, programme timelines and durations, the history and spread of the Industrial Training Fund, the SIWES story at OAU, and the amphitheatre rules you are assessed on. Test yourself across the whole course, one orientation day, or a single lecture \u2014 every question carries a full explanation traced back to the slide it came from.",
+  "accent": "#0F7B3F",
+  "available": true
+},
 ]
 
-export const categoryMeta = {}
+export const categoryMeta = {
+  "swep200": [
+    {
+      "id": "swep-days",
+      "name": "SWEP Days",
+      "blurb": "Test one orientation day at a time, exactly as it was delivered."
+    }
+  ],
+}
 
 export const topicMeta = {
+  "swep200": [
+    {
+      "id": "swep-day-1",
+      "name": "Day 1 \u2014 Monday, 14th September",
+      "categoryId": "swep-days",
+      "summaryNotes": "### What Day 1 covered\nThree lectures, recorded in the orientation ledger:\n\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Introduction to SWEP & SIWES; scope, durations, rules & regulations | **Prof. O. A. Olojede** |\n| 2 | History & spread of the Industrial Training Fund (ITF) in Nigeria | **Prof. M. D. Shittu** |\n| 3 | Benefits of Industrial Training for Science & Engineering students | **Prof. E. A. Taiwo** |\n\n### The dates that carry marks\n| Year | Event |\n|---|---|\n| **1971** | ITF established under **Act No. 47**; take-off grant **\u20a61,000,000 (\u00a3500,000)** |\n| **1973** | SIWES established by ITF; **OAU (then University of Ife) among the first participants** |\n| 1974 | SIWES actually started |\n| to 1978 | ITF **fully funded** SIWES |\n| **1979** | FME makes a **one-year IT programme compulsory** for Polytechnics/Colleges of Technology |\n| **Jan 1980** | ITF **withdraws** from financing SIWES |\n| 1980\u20131984 | **NUC & NBTE** fund the scheme; NBTE renames SIWES **COSITA** |\n| **1984** | Scheme **expanded** to sciences, environmental sciences, agriculture; ITF resumes management **Nov 1984** (**IAGR** Dept.) |\n| **1985** | **Decree No. 16 of August 1985** gives SIWES legal backing |\n| 1987 | Austerity measures + **SAP** \u2014 firms stop providing accommodation |\n| 1994 | **30% of firms** reject institutional requests; individual-merit applications |\n| **1995** | ITF/NUC allocate **3\u201315 credit units** |\n| 2011 | **ITF Amendment Act** \u2014 NISDP, WOSEP, STEPP-C, CONSEP, **SUPA** |\n\n### Durations and credit units\n- **SWEP 200** \u2014 ideally **12 weeks**, strict minimum **8 weeks** (after 200-Level Rain Semester)\n- **SIWES I** \u2014 12 weeks, after the **300**-Level Rain Semester\n- **SIWES II** \u2014 **24 weeks (6 months)**, 400-Level Rain Semester + vacation. **Only SIWES II receives ITF stipends.**\n- Polytechnics/Colleges of Education **4 months**; Universities **6 months**\n- Credit units: **Year II: 3 \u00b7 Year III: 3 \u00b7 Year IV: 9** (Technology & EDM)\n- Exempt 4-year programmes: **Architecture, Fine and Applied Arts, Industrial Chemistry**\n- **Faculty of Agriculture** \u2014 consolidated **1-year 'Farm Year'**\n\n### The daily schedule\n| Time | Activity |\n|---|---|\n| 08:00 \u2013 08:30 | Arrival + **first** attendance check |\n| 08:30 \u2013 09:00 | Recap of previous day |\n| 09:00 \u2013 10:30 | Lecture 1 |\n| 10:30 \u2013 12:00 | Lecture 2 |\n| 12:00 \u2013 12:30 | Break \u2014 **second check strictly 12:25\u201312:30** |\n| 12:30 \u2013 14:00 | Lecture 3 |\n\nOrientation = **5 days, 14 lectures**. Signing the register for another student\nis **handled as a criminal act**.\n\n### ITF structure\n**13-member Governing Council**; **15 Departments and 5 Units** at HQ; **42 Area\nOffices**; **5 Skills Training Centres**. Four units report straight to the\nDirector-General: **Legal and Council Affairs, Internal Audit, Public Relations\nand Publicity, SERVICOM**.\n\n### Institutions participating in SIWES\n| Type | Federal | State | Private |\n|---|---|---|---|\n| Universities | 56 | 58 | 72 |\n| Polytechnics | 78 | **107** | 31 |\n| Colleges of Education | 6 | 10 | 6 |\n| **Total** | **140** | **175** | **109** |\n\n### Traps to watch\n- **SWEP = Students *Workshop* Experience Programme** (not \"Work\").\n- **Act 47 \u2192 1971 \u2192 created the ITF.** **Decree 16 \u2192 1985 \u2192 backed SIWES.**\n- \u20a690 is the **1976** allowance, not 1981 (**\u20a6250**).\n- Supervisory allowance is **10%** of the student allowance.\n- **42** = Area Offices, not HQ units.\n- E-SIWES portal is **www.siwesdata.org**; e-payment came from **Yar'Adua's 2009 budget**.\n"
+    }
+  ],
   "eee282": [
     {
       "id": "active-passive",
@@ -48,6 +73,712 @@ export const topicMeta = {
 }
 
 export const questionBank = {
+  "swep200": [
+    {
+      "id": "swep_day1_01",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. O.A. Olojede's lecture on University Rules & Regulations, the SWEP/SIWES scheme is jointly coordinated by the NUC and ITF. What does the acronym SET stand for in the NUC mandate, and what year was the ITF established?",
+      "options": [
+        "Science, Engineering, and Technology; 1971",
+        "Science, Education, and Technology; 1973",
+        "Students, Engineering, and Training; 1974",
+        "Science, Engineering, and Technology; 1985"
+      ],
+      "correct": 0,
+      "short": "SET stands for Science, Engineering, and Technology, and the ITF was established in 1971.",
+      "solution": "### Why this is the answer\nThe NUC mandate approved SWEP/SIWES for **S**cience, **E**ngineering and\n**T**echnology (SET) courses in Nigerian tertiary institutions, specifically to\nsolve the practical-experience deficiency in those disciplines. The Industrial\nTraining Fund was established in **1971**, under Act No. 47 of that year.\n\n### The tripartite structure\nThe scheme is jointly coordinated by the **NUC** and the **ITF**, and involves\nthree parties: the **Students**, the **Universities** and the **Industry**.\n\n### Source\nProf. O. A. Olojede, \"Background & Rationale\" slide; corroborated by Prof. M. D.\nShittu's opening slide (\"set up under Act 47 of 1971\") and by the handwritten\nDay 1 ledger, which records \"NUC and ITF (est. 1971)\".\n\n### Why the others fail\n- **Science, *Education*, and Technology; 1973** \u2014 swaps Engineering for\n  Education. 1973 is when SIWES was established, not the ITF.\n- **Students, Engineering, and Training; 1974** \u2014 fabricated expansion. 1974 is\n  the year the ITF actually *started* running SIWES.\n- **...; 1985** \u2014 1985 is Decree No. 16, which gave SIWES legal backing. It has\n  nothing to do with the ITF's founding."
+    },
+    {
+      "id": "swep_day1_02",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Based on the 2026 SWEP 200 Orientation Daily Schedule presented by Prof. O. A. Olojede, what is the exact time window for the Second Attendance Registry Check, and which 5-year track module is the only one to receive ITF stipends?",
+      "options": [
+        "12:00 \u2013 12:30; SIWES I",
+        "12:25 \u2013 12:30; SIWES II",
+        "08:00 \u2013 08:30; SIWES II",
+        "12:25 \u2013 12:30; SWEP 200"
+      ],
+      "correct": 1,
+      "short": "The second check is strictly 12:25\u201312:30, and only SIWES II receives ITF stipends.",
+      "solution": "### Why this is the answer\nTwo separate facts have to line up:\n\n1. **The midday break runs 12:00\u201312:30**, but the **Second Attendance Registry\n   Check is strictly taken between 12:25 and 12:30** \u2014 the last five minutes.\n   The break is for stretching; the register is not open for the whole half hour.\n2. **Only SIWES II receives ITF stipends.** SIWES II spans the entire 400-Level\n   Rain Semester plus part of the long vacation \u2014 a full **6 months (24 weeks)**.\n\n### The full daily rhythm\n| Time | Activity |\n|---|---|\n| 08:00 \u2013 08:30 | Arrival + **First** attendance check |\n| 08:30 \u2013 09:00 | Recap of previous day |\n| 09:00 \u2013 10:30 | Lecture 1 |\n| 10:30 \u2013 12:00 | Lecture 2 |\n| 12:00 \u2013 12:30 | Break (**Second** check at 12:25\u201312:30) |\n| 12:30 \u2013 14:00 | Lecture 3 |\n\n### Source\nProf. O. A. Olojede, \"Training Timelines\" and \"Program Timelines\" slides.\n\n### Why the others fail\n- **12:00\u201312:30; SIWES I** \u2014 assumes the register stays open the whole break,\n  and SIWES I carries no stipend.\n- **08:00\u201308:30; SIWES II** \u2014 that is the *morning* (first) registry window.\n- **12:25\u201312:30; SWEP 200** \u2014 right time, wrong module. SWEP 200 is unpaid."
+    },
+    {
+      "id": "swep_day1_03",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Prof. E. A. Taiwo's lecture on the Benefits of Industrial Training, he detailed the historical progression of students' SIWES allowances. What were the exact allowance amounts paid in 1974, 1981, and 2000 respectively?",
+      "options": [
+        "\u20a630, \u20a690, \u20a62,500",
+        "\u20a630, \u20a6250, \u20a62,500",
+        "\u20a690, \u20a6250, \u20a62,500",
+        "\u20a630, \u20a6250, \u20a62,000"
+      ],
+      "correct": 1,
+      "short": "The allowances were \u20a630 in 1974, \u20a6250 in 1981, and \u20a62,500 in 2000.",
+      "solution": "### Why this is the answer\nThe \"Allowances\" slide lists **four** monthly figures, and the question asks for\nthree of them. Read the years carefully:\n\n| Year | Students' allowance (per month) |\n|---|---|\n| 1974 | **\u20a630** |\n| 1976 | \u20a690 |\n| **1981** | **\u20a6250** |\n| 2000 | **\u20a62,500** |\n\nSo 1974 \u2192 \u20a630, 1981 \u2192 \u20a6250, 2000 \u2192 \u20a62,500. The \u20a690 figure belongs to **1976**\nand is the trap sitting in the middle of the list.\n\n### Source\nProf. E. A. Taiwo, \"Allowances\" slide. The same slide notes the present-day\namount is left open (\"???\").\n\n### Why the others fail\n- **\u20a630, \u20a690, \u20a62,500** \u2014 substitutes the 1976 figure for the 1981 one.\n- **\u20a690, \u20a6250, \u20a62,500** \u2014 shifts the whole series one year forward.\n- **\u20a630, \u20a6250, \u20a62,000** \u2014 correct until the year 2000, which was \u20a62,500."
+    },
+    {
+      "id": "swep_day1_04",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "During the period when the ITF withdrew from financing SIWES (1980-1984), the NBTE renamed the scheme to COSITA. What is the full meaning of the acronym COSITA as presented in Day 1 lectures?",
+      "options": [
+        "Compulsory Supervised Industrial Training Attachment",
+        "Cooperative Students Industrial Training Agency",
+        "Coordinated Supervised Industrial Technical Attachment",
+        "Compulsory Students Industrial Training Allowance"
+      ],
+      "correct": 0,
+      "short": "COSITA stands for Compulsory Supervised Industrial Training Attachment.",
+      "solution": "### Why this is the answer\nBetween **1980 and 1984** the Federal Government funded the scheme through the\n**NUC and NBTE** rather than the ITF. During that window the **NBTE renamed\nSIWES as COSITA \u2014 Compulsory Supervised Industrial Training Attachment**.\n\n### How the name fits the history\nEach word is doing work: the programme had just been made **compulsory** (the\n1979 FME mandate), it remained **supervised**, it was **industrial training**,\nand it took the form of an **attachment** to a firm.\n\n### Source\nProf. E. A. Taiwo, \"2.7 Brief History of SIWES\" slide.\n\n### Why the others fail\nAll three are invented expansions built from plausible SIWES vocabulary \u2014\n\"Cooperative\", \"Coordinated\", \"Agency\", \"Allowance\". This question tests whether\nyou memorised the exact historical wording, so the near-misses are deliberate."
+    },
+    {
+      "id": "swep_day1_05",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. M.D. Shittu's presentation on the History of ITF, what was the exact initial take-off grant provided by the Federal Government for the 1970-74 Plan Period, and in what year did the ITF and NUC allocate credit units to the SIWES programme at OAU?",
+      "options": [
+        "\u20a62,500,000 (\u00a31,000,000); 1985",
+        "\u20a61,000,000 (\u00a3500,000); 1995",
+        "\u20a61,000,000 (\u00a3500,000); 1994",
+        "\u20a6500,000 (\u00a3250,000); 1973"
+      ],
+      "correct": 1,
+      "short": "The initial grant was \u20a61,000,000 (\u00a3500,000), and credit units were allocated in 1995.",
+      "solution": "### Why this is the answer\nTwo dates from opposite ends of Prof. Shittu's deck:\n\n- **The take-off grant:** the Federal Government made available\n  **\u20a61,000,000 (\u00a3500,000)** during the **1970\u201374 Plan Period**.\n- **Credit units:** in **1995**, the ITF and the supervisory agencies adopted a\n  resolution allocating credit units to SIWES \u2014 the ITF and NUC allocated\n  **between 3 and 15 credit units** depending on course of study.\n\n### Source\nProf. M. D. Shittu, \"History of the Industrial Training Fund\" and \"The SIWES\nProgramme at OAU\" slides.\n\n### Why the others fail\n- **\u20a62,500,000 (\u00a31,000,000); 1985** \u2014 both figures invented.\n- **\u20a61,000,000 (\u00a3500,000); 1994** \u2014 correct grant, wrong year. **1994** is when\n  about **30% of firms began rejecting institutional requests**, preferring\n  students to apply on individual merit. This is the sharpest distractor here.\n- **\u20a6500,000 (\u00a3250,000); 1973** \u2014 halves the grant; 1973 is when SIWES began."
+    },
+    {
+      "id": "swep_day1_06",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Following the 1995 resolution discussed by Prof. M.D. Shittu, what is the exact distribution of SIWES credit units for Year II, Year III, and Year IV students in the OAU Faculty of Technology?",
+      "options": [
+        "Year II: 2 units, Year III: 3 units, Year IV: 9 units",
+        "Year II: 3 units, Year III: 3 units, Year IV: 6 units",
+        "Year II: 3 units, Year III: 3 units, Year IV: 9 units",
+        "Year II: 0 units, Year III: 6 units, Year IV: 9 units"
+      ],
+      "correct": 2,
+      "short": "The units are distributed as Year II: 3 units, Year III: 3 units, Year IV: 9 units.",
+      "solution": "### Why this is the answer\nThe 1995 allocation distributes the credit units across the years of study as:\n\n| Year of study | Credit units |\n|---|---|\n| Year II (SWEP 200) | **3** |\n| Year III (SIWES I) | **3** |\n| Year IV (SIWES II) | **9** |\n\nTotal = **15 units**, which is the top of the \"3 to 15 credit units\" band the\nITF and NUC agreed.\n\n### Why Year IV carries the weight\nYear IV is **SIWES II** \u2014 the full **6-month (24-week)** industrial attachment,\nand the only module that attracts ITF stipends. The heavier academic load\nmatches the far longer time commitment.\n\n### Scope\nThis allocation is limited to the **Faculty of Technology** and most courses in\nthe **Faculty of Environmental Design and Management (EDM)**.\n\n### Source\nProf. M. D. Shittu, \"The SIWES Programme at OAU\" slide.\n\n### Why the others fail\nEach alters one figure \u2014 2 units in Year II, 6 units in Year IV, or a zeroed\nYear II. Remember the shape: **3 / 3 / 9**."
+    },
+    {
+      "id": "swep_day1_07",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Based on the Day 1 Summary of Activities handwritten ledger, which lecturer delivered the section explicitly highlighting the \"primary concept, importance processes and interdependent relationship between Science and Engineering\"?",
+      "options": [
+        "Prof. O.A. Olojede",
+        "Prof. M.D. Shittu",
+        "Prof. E.A. Taiwo",
+        "Engr. E.A. Taiwo"
+      ],
+      "correct": 2,
+      "short": "Prof. E.A. Taiwo delivered the lecture on the relationship between Science and Engineering.",
+      "solution": "### Why this is the answer\nThe handwritten Day 1 ledger records three lectures with three speakers. The\nthird entry \u2014 \"**Benefits of Industrial Training for Science & Engineering\nStudents**\", which \"highlighted the primary concept, importance processes and\ninterdependent relationship between Science and Engineering\" \u2014 is signed\n**Speaker: Prof. E. A. Taiwo**.\n\nThis matches the title slide of his deck: *Prof. E. A. Taiwo, Department of\nChemical Engineering, Obafemi Awolowo University*.\n\n### Day 1 at a glance\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Introduction to SWEP & SIWES; rules & regulations | Prof. O. A. Olojede |\n| 2 | History & spread of the ITF in Nigeria | Prof. M. D. Shittu |\n| 3 | Benefits of Industrial Training for Science & Engineering students | **Prof. E. A. Taiwo** |\n\n### Why the others fail\n- **Prof. Olojede** \u2014 taught rules, regulations and timelines.\n- **Prof. Shittu** \u2014 taught ITF history and spread.\n- **Engr. E. A. Taiwo** \u2014 right person, **wrong title**. The ledger and the\n  slides both read **Prof.** Read titles as carefully as names."
+    },
+    {
+      "id": "swep_day1_08",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Prof. E. A. Taiwo highlighted several intervention programs by the ITF designed to stimulate self-sufficiency in the Nation. What does the newest addition to these programs, the acronym SUPA, stand for?",
+      "options": [
+        "Students Upgraded Practical Attachment",
+        "Skill-Up Artisans",
+        "Supervised Undergraduate Practical Assessment",
+        "Standardized Utility for Professional Artisans"
+      ],
+      "correct": 1,
+      "short": "SUPA stands for Skill-Up Artisans.",
+      "solution": "### Why this is the answer\nThe **Amendment ITF Act of 2011** expanded the Fund's scope to \"provide, promote\nand encourage the acquisition of skills in order to stimulate self-sufficiency\nin the Nation\". On that premise the ITF launched several intervention\nprogrammes, of which **Skill-Up Artisans (SUPA)** is explicitly described as\n**\"the newest addition\"**.\n\n### What SUPA actually does\n- Tech-driven training\n- Provides **official licensing**\n- Grants access to **essential toolkits**\n- Enhances craftsmanship and drives professional excellence\n- Gives artisans access to **credit facilities**\n\n### The full 2011 intervention list\nNISDP, WOSEP, STEPP-C, CONSEP, and **SUPA**.\n\n### Source\nProf. E. A. Taiwo, \"ITF Mandate\" and \"Skill-Up Artisans (SUPA) \u2014 programme\"\nslides.\n\n### Why the others fail\nNote that SUPA targets **artisans**, not students. Two distractors wrongly frame\nit as a student/undergraduate scheme; the fourth is corporate-sounding filler."
+    },
+    {
+      "id": "swep_day1_09",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which specific legal instrument legally backed the SIWES scheme, requiring all enrolled students in specialized engineering and applied sciences to have supervised industrial attachment, and directed the ITF to resume management?",
+      "options": [
+        "Act 47 of 1971",
+        "Decree No. 16 of August 1985",
+        "The 2011 ITF Amendment Act",
+        "Decree 47 of 1971"
+      ],
+      "correct": 1,
+      "short": "Decree No. 16 of August 1985 legally backed the scheme and directed the ITF to resume management.",
+      "solution": "### Why this is the answer\nIn **1985** the Federal Government legally backed SIWES through **Decree No. 16\nof August 1985**. It required that *\"all students enrolled in specialized\nengineering, technical, business, applied sciences and applied arts should have\nsupervised industrial attachment as part of their studies\"*.\n\nThe ITF was equally directed to **take charge and resume responsibility** for\nmanaging SIWES (from November 1984), in collaboration with the supervising\nagencies (NUC, NBTE).\n\n### Don't confuse the two laws\n| Instrument | Year | What it did |\n|---|---|---|\n| **Act / Decree 47** | 1971 | **Established the ITF itself** |\n| **Decree No. 16** | 1985 | **Legally backed SIWES**, mandated attachment |\n| 2011 Amendment | 2011 | Expanded ITF scope; launched NISDP, WOSEP, SUPA, etc. |\n\n### Source\nProf. E. A. Taiwo, \"2.7 Brief History of SIWES\" (continued) slide.\n\n### Why the others fail\nAct 47 and Decree 47 of 1971 are the *same instrument* under two names, and both\ncreated the Fund \u2014 they did not force SIWES expansion in the mid-80s. The 2011\nAmendment came 26 years later."
+    },
+    {
+      "id": "swep_day1_10",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. E. A. Taiwo, what is the exact approved rate for the Supervisory allowance paid to the university to augment supervision expenses?",
+      "options": [
+        "5% of students' allowance per month",
+        "\u20a62,500 per student supervised",
+        "10% of students' allowance per month",
+        "15% of students' allowance per month"
+      ],
+      "correct": 2,
+      "short": "The supervisory allowance is exactly 10% of the students' allowance per month.",
+      "solution": "### Why this is the answer\nThe \"Allowances\" slide splits payment into two streams:\n\n1. **Students' allowance** \u2014 the monthly figure paid to the trainee.\n2. **Supervisory allowance** \u2014 \"money paid to the university to augment\n   supervision expenses\", set at **10% of students' allowance per month**.\n\nBecause it is a **percentage**, the supervisory allowance automatically rises\nwhenever the student allowance is reviewed upward.\n\n### Eligibility (same slide)\nSatisfactory completion of **6 months** SIWES, evidenced by **Logbooks, Form 8\nand Form SPE-1**, plus adequate vetting of logbooks.\n\n### Source\nProf. E. A. Taiwo, \"Allowances\" slide.\n\n### Why the others fail\n- **\u20a62,500 per student** \u2014 that is the *year-2000 student* allowance, not the\n  supervisory rate, and the supervisory figure is a percentage, not a flat sum.\n- **5% / 15%** \u2014 plausible but simply wrong. The figure is **10%**."
+    },
+    {
+      "id": "swep_day1_11",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. O.A. Olojede, what is the ideal duration and the strict minimum duration for the SWEP 200 programme?",
+      "options": [
+        "12 weeks ideally (strict minimum of 10 weeks)",
+        "12 weeks ideally (strict minimum of 8 weeks)",
+        "14 weeks ideally (strict minimum of 8 weeks)",
+        "10 weeks ideally (strict minimum of 6 weeks)"
+      ],
+      "correct": 1,
+      "short": "SWEP 200 has an ideal duration of 12 weeks, with a strict minimum of 8 weeks.",
+      "solution": "### Why this is the answer\nSWEP 200 runs for **ideally 12 weeks, with a strict minimum of 8 weeks**, during\nthe long vacation following the **200-Level Rain Semester**. The 8-week floor is\nindependently confirmed on Prof. Taiwo's \"Components of SIWES\" slide:\n*\"SWEP \u2013 Students Workshop Experience Programme (Min. of 8 wks.)\"*.\n\n### All three modules side by side\n| Module | Duration | When |\n|---|---|---|\n| **SWEP 200** | 12 wks ideal, **8 wks minimum** | After 200-Level Rain Semester |\n| **SIWES I** | 12 weeks | After 300-Level Rain Semester |\n| **SIWES II** | **24 weeks (6 months)** | 400-Level Rain Semester + vacation |\n\n### Source\nProf. O. A. Olojede, \"Training Timelines: Scope, Durations & Programme\nFrameworks\" slide.\n\n### Why the others fail\nEach moves either the ideal figure or the floor. Anchor on **12 ideal / 8\nminimum** \u2014 two numbers, both worth marks."
+    },
+    {
+      "id": "swep_day1_12",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Under the 4-Year Program Exemptions outlined by Prof. Olojede, which specific disciplines are exempt from specific practical SWEP modules?",
+      "options": [
+        "Architecture, Fine and Applied Arts, and Industrial Chemistry",
+        "Chemical Engineering, Fine and Applied Arts, and Agricultural Science",
+        "Architecture, Quantity Surveying, and Industrial Chemistry",
+        "Architecture, Fine and Applied Arts, and Computer Engineering"
+      ],
+      "correct": 0,
+      "short": "Architecture, Fine and Applied Arts, and Industrial Chemistry are exempt.",
+      "solution": "### Why this is the answer\nUnder **4-Year Program Exemptions**, the named programmes are\n**Architecture**, **Fine and Applied Arts**, and **Industrial Chemistry** \u2014\nthese are exempt from specific practical modules.\n\n### The related special case\nThe **Faculty of Agriculture** is handled separately: it employs a consolidated\n**1-year 'Farm Year'** placement across the entire fourth academic session,\nrather than the standard modules. That is a *substitution*, not an exemption.\n\n### Source\nProf. O. A. Olojede, \"Training Timelines\" slide.\n\n### Why the others fail\nEach swaps in a discipline that is **not** exempt \u2014 Chemical Engineering,\nQuantity Surveying and Computer Engineering are all core technical programmes\nthat keep their practical modules. Note the trap: *Industrial Chemistry* is\nexempt, but *Chemical Engineering* is not."
+    },
+    {
+      "id": "swep_day1_13",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How many strategically selected lectures are contained within the 5-day Orientation Blueprint for SWEP 200?",
+      "options": [
+        "10 lectures",
+        "12 lectures",
+        "14 lectures",
+        "15 lectures"
+      ],
+      "correct": 2,
+      "short": "The orientation spans 5 days and contains exactly 14 lectures.",
+      "solution": "### Why this is the answer\nThe Orientation Blueprint **spans 5 days and contains 14 strategically selected\nlectures**.\n\n### Why it is not simply 15\nThe daily schedule runs **three lectures a day** (09:00\u201310:30, 10:30\u201312:00,\n12:30\u201314:00). Five days \u00d7 three lectures = 15 slots, but the programme is\nbuilt around **14** lectures \u2014 one slot is not a numbered lecture. This is\nexactly why the question is asked: the arithmetic guess gives the wrong answer.\n\n### Source\nProf. O. A. Olojede, \"Program Timelines: 2026 SWEP 200 Orientation Daily\nSchedule\" slide.\n\n### Why the others fail\n10 and 12 are simply too low. **15** is the tempting one \u2014 it is the number of\n*slots*, not the number of *lectures*."
+    },
+    {
+      "id": "swep_day1_14",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Regarding Amphitheatre Ground Rules (Part 2), what is the strict stance on device usage and physical posture?",
+      "options": [
+        "iPads are allowed for note-taking, but dozing off is prohibited.",
+        "Electronic restrictions require iPads and laptops to be put away entirely unless authorized, and dozing off or leaning heavily on trainees is disallowed.",
+        "Laptops are allowed if muted, and audio headphones can be used for recording.",
+        "Mobile phones can be on loud, but dietary rules bar any food."
+      ],
+      "correct": 1,
+      "short": "Electronics must be put away unless authorized, and dozing/leaning is completely disallowed.",
+      "solution": "### Why this is the answer\n**Electronic restrictions:** put away iPads, laptops and tablets **entirely**\nunless they are part of authorised class activities. Audio\nheadphones/earphones are **prohibited**.\n\n**Physical posture:** dozing off, deep sleeping, or leaning heavily on fellow\ntrainees is **completely disallowed**.\n\n### The rest of Part 2\n- **Movement control** \u2014 no aimless loitering between rows during a lecture.\n- **Dietary & hygiene** \u2014 no food or drink other than **clean water**; no litter.\n- **Dress code** \u2014 casual, inappropriate or indecent dressing is prohibited;\n  dress formally. Leaving the venue needs **express coordinator permission**.\n\nAnd from Part 1: mobile phones must remain **permanently on silent or vibration**.\n\n### Source\nProf. O. A. Olojede, \"Venue Decorum & Discipline: Amphitheatre Ground Rules\nPart 2\" slide.\n\n### Why the others fail\nEach contains one permission the rules never grant \u2014 iPads for notes, headphones\nfor recording, or phones on loud. Only clean water is allowed, and only\nauthorised device use."
+    },
+    {
+      "id": "swep_day1_15",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the institutional consequence of attempting to sign the attendance register for another student during SWEP orientation?",
+      "options": [
+        "A warning and deduction of attendance points.",
+        "Immediate removal from the amphitheater.",
+        "Handled as a criminal act.",
+        "Suspension of the student's SIWES portal."
+      ],
+      "correct": 2,
+      "short": "Signing for another student is explicitly handled as a criminal act.",
+      "solution": "### Why this is the answer\nUnder **Attendance Integrity**, the rule is unambiguous: you must sign the\nregister **for yourself and by yourself only**, and *attempting to sign for\nanother student is handled as a criminal act*.\n\nNote the wording \u2014 **attempting** is enough. The offence does not require that\nthe forged signature succeed.\n\n### Why the penalty is set so high\nAttendance is the backbone of the orientation: there are **two registry checks\nevery day** (08:00\u201308:30 and 12:25\u201312:30) across all five days. Signing for an\nabsent friend is falsification of an official record, which is why the\ndocumentation escalates it beyond ordinary misconduct.\n\n### Source\nProf. O. A. Olojede, \"Venue Decorum & Integrity: Amphitheatre Ground Rules\nPart 1\" slide.\n\n### Why the others fail\nWarnings, removal from the hall and portal suspension are all softer,\n*assumed* penalties. The slide deliberately uses the phrase **\"criminal act\"** \u2014\ndo not downgrade it."
+    },
+    {
+      "id": "swep_day1_16",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the Daily Schedule, what specific activity takes place between 08:30 and 09:00 every morning?",
+      "options": [
+        "First Attendance Registry Check",
+        "Lecture 1",
+        "Recap of previous day",
+        "Midday Break"
+      ],
+      "correct": 2,
+      "short": "08:30\u201309:00 is reserved for a recap of the previous day.",
+      "solution": "### Why this is the answer\nThe morning block is explicit: **08:30\u201309:00 is the Recap of the previous day**,\nwhich sits between the arrival window and the first lecture.\n\n### The full day\n| Time | Activity |\n|---|---|\n| 08:00 \u2013 08:30 | Arrival + **First** attendance registry check |\n| **08:30 \u2013 09:00** | **Recap of previous day** |\n| 09:00 \u2013 10:30 | Lecture 1 |\n| 10:30 \u2013 12:00 | Lecture 2 |\n| 12:00 \u2013 12:30 | Midday break (**Second** check, 12:25\u201312:30) |\n| 12:30 \u2013 14:00 | Lecture 3 |\n\nTrainees must be **fully seated by 08:30** every morning \u2014 so the recap starts\nthe moment the arrival window closes.\n\n### Source\nProf. O. A. Olojede, \"Program Timelines\" slide.\n\n### Why the others fail\nThe registry check is **08:00\u201308:30**, Lecture 1 is **09:00\u201310:30**, and the\nmidday break is **12:00\u201312:30**. Each distractor is a real event at the wrong\ntime."
+    },
+    {
+      "id": "swep_day1_17",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Prof. E.A. Taiwo provided a direct definition of the components of SIWES. What does the acronym SWEP specifically stand for?",
+      "options": [
+        "Students Work Experience Programme",
+        "Students Workshop Experience Programme",
+        "Supervised Work Environment Protocol",
+        "Students Working Experience Protocol"
+      ],
+      "correct": 1,
+      "short": "SWEP strictly stands for Students Workshop Experience Programme.",
+      "solution": "### Why this is the answer\nUnder **Components of SIWES**, the slide reads:\n*\"SWEP - Students **Workshop** Experience Programme (Min. of 8 wks.)\"*.\n\nThe key word is **Workshop** \u2014 SWEP is Module 1, undergone **inside the school**\nin the workshops, focusing on general workshop skills, safety protocols and\nhands-on tool usage. SIWES is the module served **outside** in industry.\n\n### The 3-tier OAU structure\n| Tier | Full name | Duration |\n|---|---|---|\n| **SWEP** | Students **Workshop** Experience Programme | Min. 8 wks |\n| SIWES I | Students Industrial Work Experience Scheme | 12 wks |\n| SIWES II | Students Industrial Work Experience Scheme | 24 wks |\n\n### Source\nProf. E. A. Taiwo, \"2.0 Industrial Training \u2014 2.1 Definitions\" slide.\n\n### Why the others fail\n**\"Students Work Experience Programme\"** is the everyday misnomer, and it is the\nanswer most students pick \u2014 but it drops **Workshop**, which is the whole point\nof the in-school module. The other two are fabricated."
+    },
+    {
+      "id": "swep_day1_18",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In what year did the Federal Ministry of Education (FME) make it compulsory for all students of Polytechnics and Colleges of Technology to undergo a One-year IT programme?",
+      "options": [
+        "1974",
+        "1978",
+        "1979",
+        "1980"
+      ],
+      "correct": 2,
+      "short": "The FME made it compulsory in 1979.",
+      "solution": "### Why this is the answer\nIn **1979**, the Federal Ministry of Education made it **compulsory** for all\nstudents of Polytechnics and Colleges of Technology to undergo a **One-year\nIndustrial Training programme**.\n\n### Why this single year matters so much\nIt triggered everything that followed: the new compulsory intake made the\nfinancial commitment unsustainable, so **by January 1980 the ITF withdrew from\nfinancing SIWES** \u2014 which in turn handed funding to the NUC/NBTE (1980\u20131984)\nand produced the **COSITA** renaming.\n\n### The timeline in order\n| Year | Event |\n|---|---|\n| 1973 | SIWES established by ITF |\n| 1974 | SIWES actually started |\n| to 1978 | ITF **fully funded** SIWES |\n| **1979** | **FME makes 1-year IT compulsory** |\n| Jan 1980 | ITF withdraws from financing |\n\n### Source\nProf. E. A. Taiwo, \"2.7 Brief History of SIWES\" slide.\n\n### Why the others fail\n1974 is when SIWES started; 1978 is the end of full ITF funding; 1980 is the\nwithdrawal. Each distractor is the year immediately before or after."
+    },
+    {
+      "id": "swep_day1_19",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Due to extreme financial commitment after the 1979 FME mandate, in what exact month and year did the ITF temporarily withdraw from financing SIWES?",
+      "options": [
+        "January 1980",
+        "August 1980",
+        "November 1984",
+        "January 1978"
+      ],
+      "correct": 0,
+      "short": "The ITF withdrew from financing SIWES in January 1980.",
+      "solution": "### Why this is the answer\nThe slide is precise: after the 1979 mandate *\"the commitment was much, **by\nJanuary 1980, ITF withdrew from financing SIWES**\"*.\n\n### Cause and effect\nThe 1979 FME directive made a one-year IT programme compulsory for **all**\nPolytechnic and College of Technology students. That multiplied the number of\nfunded trainees overnight, and the Fund could not carry it.\n\n### What filled the gap\n**1980\u20131984:** the Federal Government funded the scheme through the **NUC and\nNBTE**, and the NBTE renamed SIWES **COSITA**. The ITF was then directed to\nresume management in **November 1984**.\n\n### Source\nProf. E. A. Taiwo, \"2.7 Brief History of SIWES\" slide.\n\n### Why the others fail\n- **August 1980** \u2014 right year, invented month. *August* belongs to **Decree\n  No. 16 of August 1985**.\n- **November 1984** \u2014 the opposite event: when the ITF **resumed** control.\n- **January 1978** \u2014 1978 is when *full* ITF funding ended, before the mandate."
+    },
+    {
+      "id": "swep_day1_20",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In what year was the SIWES scheme expanded to include courses in sciences, environmental sciences, agriculture, and other professional but non-technical courses?",
+      "options": [
+        "1980",
+        "1984",
+        "1985",
+        "1995"
+      ],
+      "correct": 1,
+      "short": "The scheme was expanded to include these additional courses in 1984.",
+      "solution": "### Why this is the answer\n**In 1984** the scheme was expanded to include more courses in **sciences,\nenvironmental sciences, agriculture and some other professional but\nnon-technical courses**.\n\nUntil then SIWES had been aimed at students whose courses were *directly related\nto industry*. The 1984 expansion is what opened it to the broader spread of\ndisciplines participating today.\n\n### 1984 was a busy year\nIt also saw the ITF **directed to resume management** of SIWES in **November\n1984**, with the **IAGR Department** taking over administration.\n\n### Source\nProf. E. A. Taiwo, \"Brief History of SIWES\" (continued) slide.\n\n### Why the others fail\n- **1980** \u2014 the NUC/NBTE funding takeover.\n- **1985** \u2014 Decree No. 16 gave SIWES legal backing (the year *after*).\n- **1995** \u2014 OAU credit-unit allocation, eleven years later."
+    },
+    {
+      "id": "swep_day1_21",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "When the ITF resumed responsibility for the management of SIWES in November 1984, which specific ITF department was responsible for SIWES administration?",
+      "options": [
+        "Technical and Vocational Skills Training Department (TVSTD)",
+        "Business Training and Development Department (BTD)",
+        "Industrial Attachment, Grants and Reimbursement (IAGR) Department",
+        "Field Services Department (FSD)"
+      ],
+      "correct": 2,
+      "short": "The IAGR Department was responsible for SIWES administration at that time.",
+      "solution": "### Why this is the answer\nWhen the ITF resumed responsibility in **November 1984** \u2014 in collaboration with\nthe supervising agencies (NUC, NBTE) \u2014 the **Industrial Attachment, Grants and\nReimbursement (IAGR) Department** of the ITF was responsible for SIWES\nadministration **then**.\n\nThe name describes the three jobs exactly: placing students on **industrial\nattachment**, disbursing **grants**, and handling employer **reimbursement**.\n\n### Why \"then\" is the operative word\nIAGR is the **historical** answer for 1984. The ITF has since restructured; the\nmodern organogram routes SIWES through the **Field Services Department**, which\ncontains a **SIWES Division** alongside Grants & Reimbursements. Read the date\nin the question before answering.\n\n### Source\nProf. E. A. Taiwo, \"Brief History of SIWES\" (continued) slide; modern structure\nfrom Figure 1, Organogram of ITF.\n\n### Why the others fail\nTVSTD, BTD and FSD are all **current** ITF departments. They are correct names\nin the wrong era."
+    },
+    {
+      "id": "swep_day1_22",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. Taiwo's lecture on E-SIWES, what is the exact official website URL used for transferring student records electronically?",
+      "options": [
+        "www.itf-siwes.gov.ng",
+        "www.siwesdata.org",
+        "www.esiwes.edu.ng",
+        "www.itf.org/siwes"
+      ],
+      "correct": 1,
+      "short": "The official portal is www.siwesdata.org.",
+      "solution": "### Why this is the answer\nThe **2.4 E-SIWES** slide states that *\"it was planned that student records are\ntransferred electronically with the use of **www.siwesdata.org**\"*.\n\n### Why E-SIWES exists\nThe ITF had administered the scheme **manually**, and with the growing number of\ninstitutions and students that became *\"grueling\"* and *\"virtually impossible to\nrun hitch-free\"*. Under E-SIWES, data is submitted online and allowances are\npaid by **e-payment**.\n\n### What the portal does\n- Each participating **student and institution can verify** submitted records\n- All relevant **forms can be downloaded**\n- The slide notes the portal was still *\"being perfected\"* and hoped to launch\n  soon\n\n### Source\nProf. E. A. Taiwo, \"2.4 E-SIWES\" slide.\n\n### Why the others fail\nThe other three borrow official-looking Nigerian domains (`.gov.ng`, `.edu.ng`)\nwhich look more authoritative than the real answer. The actual portal is a\nplain **`.org`**."
+    },
+    {
+      "id": "swep_day1_23",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The E-payment system for SIWES is described as a subset of e-government. This initiative emerged from the budget presentation of which Nigerian President, and in what year?",
+      "options": [
+        "President Olusegun Obasanjo in 2006",
+        "President Goodluck Jonathan in 2011",
+        "President Muhammadu Buhari in 2016",
+        "President Umaru Musa Yar'Adua in 2009"
+      ],
+      "correct": 3,
+      "short": "It emerged from President Umaru Musa Yar'Adua's 2009 budget presentation.",
+      "solution": "### Why this is the answer\nThe **2.8 E-Payment System** slide states that e-payment is *a subset of\ne-government*, **\"emerging from the 2009 budget presentation by President Umaru\nMusa Yar'Adua to the National Assembly\"**.\n\n### What e-government means here\nThe application of **electronic means** in the interaction between Government\nand citizens, and Government and Business \u2014 direct payment and banking\n**without physical appearance** of the agencies or bank.\n\n### Source\nProf. E. A. Taiwo, \"2.8 E-Payment System\" slide.\n\n### Why the others fail\nEach pairs a real Nigerian president with a plausible year, but only\n**Yar'Adua / 2009** matches the slide. Note that Yar'Adua's presidency\n(2007\u20132010) is the only one that contains 2009."
+    },
+    {
+      "id": "swep_day1_24",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Based on the structure of the Industrial Training Fund (ITF), how many Departments and Units operate at the Headquarters?",
+      "options": [
+        "10 Departments and 3 Units",
+        "15 Departments and 5 Units",
+        "12 Departments and 4 Units",
+        "15 Departments and 42 Units"
+      ],
+      "correct": 1,
+      "short": "The ITF operates with 15 Departments and 5 Units at the Headquarters.",
+      "solution": "### Why this is the answer\nThe **2.5 ITF AND SIWES** slide gives the full structure:\n\n- A **13-member Governing Council**, headed by the Director-General\n- **15 Departments and 5 Units** at the **Headquarters**\n- **42 Area Offices**\n- **5 Skills Training Centres**\n- A **Centre for Industrial Training Excellence**\n\n### Source\nProf. E. A. Taiwo, \"2.5 ITF AND SIWES\" slide.\n\n### Why the others fail\n**15 Departments and 42 Units** is the trap worth understanding: **42** is real,\nbut it counts **Area Offices** spread across the country, not Units at\nheadquarters. Keep the four numbers separate \u2014 **13** council members,\n**15 + 5** at HQ, **42** area offices, **5** training centres."
+    },
+    {
+      "id": "swep_day1_25",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT an acronym for one of the intervention programs expanded by the ITF under the 2011 Amendment Act to combat poverty and underemployment?",
+      "options": [
+        "NISDP",
+        "WOSEP",
+        "CONSEP",
+        "COSITA"
+      ],
+      "correct": 3,
+      "short": "COSITA is a historical name for SIWES, not an intervention program under the 2011 Act.",
+      "solution": "### Why this is the answer\nThis is a **NOT** question \u2014 find the odd one out.\n\nThe **2011 ITF Amendment Act** intervention programmes are:\n\n| Acronym | Full name |\n|---|---|\n| **NISDP** | National Industrial Skills Development Programme |\n| **WOSEP** | Women Skills Empowerment Programme |\n| **STEPP-C** | Skills Training & Empowerment Programme for the Physically Challenged |\n| **CONSEP** | Construction Skills Empowerment Programme |\n| **SUPA** | Skill-Up Artisans (the newest addition) |\n\n**COSITA** belongs to a completely different era: it was the **NBTE's 1980\u20131984\nrenaming of SIWES** \u2014 Compulsory Supervised Industrial Training Attachment. It\npredates the 2011 Act by roughly three decades.\n\n### The purpose of the 2011 programmes\nTo develop **human capital** in order to combat *poverty, underemployment,\nunemployment and youth restiveness*.\n\n### Source\nProf. E. A. Taiwo, \"ITF Mandate\" slide.\n\n### Why the others fail\nNISDP, WOSEP and CONSEP are all **explicitly listed** 2011 intervention\nprogrammes, so none of them can be the exception."
+    },
+    {
+      "id": "swep_day1_26",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the chart on \"Institutions Participating in SIWES\", what is the exact breakdown of Federal, State, and Private Universities?",
+      "options": [
+        "56 Federal, 58 State, 72 Private",
+        "78 Federal, 107 State, 31 Private",
+        "58 Federal, 56 State, 72 Private",
+        "140 Federal, 175 State, 109 Private"
+      ],
+      "correct": 0,
+      "short": "Universities are divided into 56 Federal, 58 State, and 72 Private.",
+      "solution": "### Why this is the answer\nThe **Institutions Participating in SIWES** bar chart reads, for the\n**UNIVERSITIES** cluster: **Fed 56, State 58, Private 72**.\n\n### The complete chart\n| Institution type | Federal | State | Private |\n|---|---|---|---|\n| **Universities** | **56** | **58** | **72** |\n| Polytechnics | 78 | 107 | 31 |\n| Colleges of Education | 6 | 10 | 6 |\n| **TOTAL** | **140** | **175** | **109** |\n\nPrivate universities (72) actually outnumber both Federal and State \u2014 the only\nrow where private leads.\n\n### Source\nBar chart slide, \"Institutions Participating in SIWES\", Prof. E. A. Taiwo.\n\n### Why the others fail\n- **78 / 107 / 31** \u2014 that is the **Polytechnics** row.\n- **58 / 56 / 72** \u2014 swaps Federal and State. Federal is the **smaller** at 56.\n- **140 / 175 / 109** \u2014 the **TOTAL** column across all institution types."
+    },
+    {
+      "id": "swep_day1_27",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the chart on \"Institutions Participating in SIWES\", what is the exact number of State Polytechnics participating in the scheme?",
+      "options": [
+        "58",
+        "107",
+        "78",
+        "175"
+      ],
+      "correct": 1,
+      "short": "There are exactly 107 State Polytechnics participating.",
+      "solution": "### Why this is the answer\nIn the **POLYTECHNICS** cluster of the bar chart the values are\n**Fed 78, State 107, Private 31**. State Polytechnics therefore number\n**107** \u2014 the tallest single non-total bar on the whole chart.\n\n### Cross-check against the totals\nState institutions sum to **58 (universities) + 107 (polytechnics) + 10\n(colleges of education) = 175**, which matches the State total bar exactly. That\narithmetic confirms 107 is right.\n\n### Source\nBar chart slide, \"Institutions Participating in SIWES\", Prof. E. A. Taiwo.\n\n### Why the others fail\n- **58** \u2014 State **Universities**, not polytechnics.\n- **78** \u2014 **Federal** Polytechnics (same cluster, wrong bar).\n- **175** \u2014 the **total** for all State institutions combined."
+    },
+    {
+      "id": "swep_day1_28",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who served as the very first Chief Executive (Secretary) of the ITF from 1971 to 1973?",
+      "options": [
+        "Mrs. Ekei Nene Archibong",
+        "Alhaji Muhammed Dikko",
+        "Dr. Abel Ubeku, OFR",
+        "Prof. Olu E. Akeredolu/Akerejola"
+      ],
+      "correct": 2,
+      "short": "Dr. Abel Ubeku served as the first Secretary from 1971-1973.",
+      "solution": "### Why this is the answer\n\"ITF Chief Executives from Inception to Date\" opens with **1971\u20131973 \u00b7 Dr. Abel\nUbeku, OFR \u00b7 Secretary** \u2014 the very first entry, matching the Fund's founding\nyear.\n\n### Note the changing job title\nThe role was styled **Secretary** at first, then **Director**, and only later\n**Director-General**:\n\n| Period | Chief Executive | Designation |\n|---|---|---|\n| **1971\u20131973** | **Dr. Abel Ubeku, OFR** | **Secretary** |\n| 1973\u20131975 | Mrs. Ekei Nene Archibong | Secretary |\n| 1976\u20131979 | Alhaji Muhammed Dikko | Director |\n| 1980\u20131989 | Alhaji Muhammed Lawal Tildun Wada | Director-General |\n\n### Source\nTable slide, Prof. E. A. Taiwo's presentation.\n\n### Why the others fail\nMrs. Archibong was the **second** Secretary (1973\u20131975); Alhaji Dikko was\n**Director** (1976\u20131979); Prof. Akeredolu was DG (2000\u20132006)."
+    },
+    {
+      "id": "swep_day1_29",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which Chief Executive (Director-General) of the ITF served during the period 2000-2006?",
+      "options": [
+        "Prof. Longmas Sambo Wapmuk, OON",
+        "Alhaji Hassan Ahmed II, mni, MFR",
+        "Sir Joseph Ntung Ari, KSM, KSS",
+        "Prof. Olu E. Akeredolu/Akerejola"
+      ],
+      "correct": 3,
+      "short": "Prof. Olu E. Akeredolu/Akerejola served as DG from 2000-2006.",
+      "solution": "### Why this is the answer\nThe table maps **2000\u20132006** to **Prof. Olu E. Akeredolu/Akerejola**,\nDirector-General.\n\n### The surrounding sequence\n| Period | Director-General |\n|---|---|\n| 1989\u20132000 | Alhaji Hassan Ahmed II, mni, MFR |\n| **2000\u20132006** | **Prof. Olu E. Akeredolu/Akerejola** |\n| 2006\u20132014 | Prof. Longmas Sambo Wapmuk, OON |\n| 2014\u20132016 | Mrs. Juliet O. E. Chukkas-Onaeko, MFR |\n| 2016\u20132023 | Sir Joseph Ntung Ari, KSM, KSS |\n\nBecause the periods run back-to-back, every distractor here is a **genuine DG**\nfrom an adjacent block \u2014 you are being tested on the dates, not the names.\n\n### Source\nTable slide, \"ITF Chief Executives from Inception to Date\".\n\n### Why the others fail\nProf. Wapmuk followed him (2006\u20132014); Alhaji Ahmed II preceded him\n(1989\u20132000); Sir Joseph came much later (2016\u20132023)."
+    },
+    {
+      "id": "swep_day1_30",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who is the current Director-General of the ITF as of 2024?",
+      "options": [
+        "Mr. Dickson Onuoha",
+        "Dr. Afiz Oluwatoyin Ogun",
+        "Mrs. Juliet O. E. Chukkas-Onaeko, MFR",
+        "Sir Joseph Ntung Ari"
+      ],
+      "correct": 1,
+      "short": "Dr. Afiz Oluwatoyin Ogun became the Director-General in 2024.",
+      "solution": "### Why this is the answer\nThe final row of the table reads **2024\u2013present \u00b7 Dr. Afiz Oluwatoyin Ogun \u00b7\nDirector-General**.\n\n### The immediate handover\n| Period | Chief Executive | Designation |\n|---|---|---|\n| 2016\u20132023 | Sir Joseph Ntung Ari, KSM, KSS | Director-General |\n| 2023\u20132024 | Mr. Dickson Onuoha | **Acting** Director-General |\n| **2024\u2013present** | **Dr. Afiz Oluwatoyin Ogun** | **Director-General** |\n\n### Source\nTable slide, \"ITF Chief Executives from Inception to Date\".\n\n### Why the others fail\n**Mr. Dickson Onuoha** is the sharpest distractor \u2014 he held the office in\n2023\u20132024, but only in an **Acting** capacity, and handed over in 2024. Mrs.\nChukkas-Onaeko (2014\u20132016) and Sir Joseph (2016\u20132023) are earlier substantive DGs."
+    },
+    {
+      "id": "swep_day1_31",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Prof. M.D. Shittu's presentation, what specific legal Act set up the Industrial Training Fund?",
+      "options": [
+        "Act 16 of 1985",
+        "Act 47 of 1971",
+        "Decree 16 of 1971",
+        "The NUC Mandate of 1973"
+      ],
+      "correct": 1,
+      "short": "The ITF was set up under Act 47 of 1971.",
+      "solution": "### Why this is the answer\nProf. Shittu's opening slide states plainly: *\"The Industrial Training Fund\n(ITF) was set up under **Act No. 47 of 1971**.\"* Prof. Taiwo's deck refers to the\nsame instrument as *\"Decree 47 of 1971 as Amended in the 2011 ITF ACT\"* \u2014 **Act\n47 and Decree 47 are the same law** under two naming conventions.\n\n### What the Act was for\nTo **promote and encourage the acquisition of skills in industry and commerce**,\ngenerating a pool of indigenous trained manpower sufficient for the economy. It\nprovided for **contributions from employers** and **subventions from the Federal\nGovernment**.\n\n### Keep the two numbers apart\n- **47 \u2192 1971 \u2192 created the ITF**\n- **16 \u2192 1985 \u2192 legally backed SIWES**\n\n### Source\nProf. M. D. Shittu, \"History of the Industrial Training Fund\" slide.\n\n### Why the others fail\n\"Act 16 of 1985\" and \"Decree 16 of 1971\" both scramble the 1985 SIWES decree\ninto the ITF's founding. The NUC mandate is a policy approval, not the\nestablishing statute."
+    },
+    {
+      "id": "swep_day1_32",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. Shittu's presentation on \"The SIWES Programme\", what are the designated durations of the scheme for Polytechnics and Universities respectively?",
+      "options": [
+        "Four months for Polytechnics; Six months for Universities",
+        "Six months for Polytechnics; Four months for Universities",
+        "Three months for Polytechnics; Six months for Universities",
+        "Six months for both Polytechnics and Universities"
+      ],
+      "correct": 0,
+      "short": "It is 4 months for Polytechnics and 6 months for Universities.",
+      "solution": "### Why this is the answer\nUnder **Duration** on the SIWES Programme slide: **four months for Polytechnics\nand Colleges of Education, and six months for the Universities**.\n\n### Cross-check\nThe six-month university figure is consistent across the whole day's material:\n**SIWES II spans 24 weeks (6 months)**, and eligibility for allowances requires\n*\"satisfactory completion of 6 months SIWES\"*.\n\n### The rest of that slide\n- **Operators** \u2014 the ITF, the coordinating agencies (**NUC, NBTE, NCCE**),\n  employers of labour, and the institutions\n- **Funding** \u2014 Federal Government of Nigeria\n- **Beneficiaries** \u2014 Agriculture, Engineering, Technology, Environmental\n  Sciences, Education, Medical Sciences, Pure and Applied Sciences, Computing, etc.\n\n### Source\nProf. M. D. Shittu, \"THE SIWES PROGRAMME\" slide.\n\n### Why the others fail\nUniversities always take the **longer** attachment. Reversing the two, shrinking\npolytechnics to three months, or equalising both at six all contradict the slide."
+    },
+    {
+      "id": "swep_day1_33",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In what year was the SIWES Programme officially introduced, and when did Obafemi Awolowo University (then University of Ife) first start participating?",
+      "options": [
+        "Introduced 1971; OAU joined 1974",
+        "Introduced 1973; OAU joined 1973",
+        "Introduced 1974; OAU joined 1979",
+        "Introduced 1980; OAU joined 1985"
+      ],
+      "correct": 1,
+      "short": "The scheme was introduced in 1973, and OAU was one of the first participating institutions that same year.",
+      "solution": "### Why this is the answer\n*\"When the SIWES Programme was introduced in **1973**, University of Ife (now\nObafemi Awolowo University) was **one of the first participating\ninstitutions**.\"* Both halves therefore fall in the **same year, 1973**.\n\n### Reconciling 1973 and 1974\nProf. Taiwo's deck says SIWES was *\"Established by ITF in 1973; but started\n1974\"* \u2014 establishment in 1973, first operation in 1974. Prof. Shittu's slide,\nwhich this question is drawn from, uses **1973** for both the introduction and\nOAU's entry. When a question names the lecturer, answer from that lecturer's\nslide.\n\n### What OAU participation looked like then\nStudents were placed on attachment **by the university**; host firms provided\n**accommodation and transportation**; stipends were paid to the institution\nbefore trainees arrived. It was a **graduation requirement carrying no credit\nunits** \u2014 that only changed in **1995**.\n\n### Source\nProf. M. D. Shittu, \"The SIWES Programme at OAU\" slide.\n\n### Why the others fail\n1971 is the ITF's founding; 1974 is when SIWES began operating; 1980 and 1985\nare the funding-crisis and legal-backing years."
+    },
+    {
+      "id": "swep_day1_34",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the history of SIWES at OAU, what significant economic event in 1987 forced surviving companies to stop providing accommodation for trainees?",
+      "options": [
+        "The 1987 NUC mandate withdrawal",
+        "The privatization of Federal industries",
+        "The second republic austerity measures and Structural Adjustment Programme (SAP)",
+        "The withdrawal of ITF funding"
+      ],
+      "correct": 2,
+      "short": "The SAP and second republic austerity measures in 1987 impacted companies.",
+      "solution": "### Why this is the answer\nBy **1987**, the effects of the **second republic austerity measures** and the\nthen newly introduced **Structural Adjustment Programme (SAP)** by the military\nadministration had started hitting the firms hosting trainees.\n\n### The knock-on effect\nSurviving companies faced **massive retrenchment of staff**. They were still\nreceptive to institutional requests for placement, but **could no longer afford\naccommodation** for trainees. Students were then placed on the basis of their\nown ability to secure accommodation in the firms' cities \u2014 a situation that\nlasted about **six years**, leading directly into the 1994 shift.\n\n### Source\nProf. M. D. Shittu, \"The SIWES Programme at OAU\" slide.\n\n### Why the others fail\n- **ITF funding withdrawal** \u2014 real, but that was **January 1980**, seven years\n  earlier and a different crisis.\n- **NUC mandate withdrawal** and **privatisation of Federal industries** \u2014 not\n  events described in this lecture."
+    },
+    {
+      "id": "swep_day1_35",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What major shift in SIWES placement requests occurred at OAU in the year 1994?",
+      "options": [
+        "30% of firms started rejecting institutional requests, preferring students to apply on individual merits.",
+        "The university stopped placing students entirely, forcing ITF to step in.",
+        "Companies stopped paying stipends to students.",
+        "The university made SIWES optional due to placement difficulties."
+      ],
+      "correct": 0,
+      "short": "In 1994, 30% of firms began rejecting bulk institutional placement requests.",
+      "solution": "### Why this is the answer\nIn **1994**, about **30% of the firms** started rejecting institutional requests,\npreferring instead that **students apply for attachments on their individual\nmerits**. The institutions could hardly refuse, because the firms \u2014 mainly\ncorporate ones \u2014 were accepting students with **high cumulative grade points**.\n\n### What it led to\nOther industrial and commercial concerns adopted the same method, increasingly\nbased on **connections students could make** with firms, and institutional\nrequests became **practically phased out**. Firms began paying **stipends** for\naccommodation and transport, and competition shifted to *which company offered\nthe highest stipend* \u2014 a dynamic Prof. Shittu notes is **still with us today**.\n\n### Source\nProf. M. D. Shittu, \"The SIWES Programme at OAU\" slide.\n\n### Why the others fail\n- Stipends **started**, not stopped, in this period.\n- The university did not stop placing students outright \u2014 placement decayed\n  gradually.\n- SIWES remained **compulsory** throughout; it was never made optional."
+    },
+    {
+      "id": "swep_day1_36",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "While the Faculty of Technology and EDM strictly allocate 3-15 SIWES credit units, which other faculties are expected to design and allocate credit units but are structurally lagging behind?",
+      "options": [
+        "Law, Arts, and Humanities",
+        "Sciences, Agriculture, Pharmacy, Health Sciences, Administration, and Social Sciences",
+        "Education and Clinical Sciences only",
+        "Environmental Design and Applied Arts"
+      ],
+      "correct": 1,
+      "short": "Sciences, Agriculture, Pharmacy, Health Sciences, Admin, and Social Sciences are also expected to allocate units.",
+      "solution": "### Why this is the answer\nProf. Shittu notes that the 1995 credit allocation is **limited to the Faculty of\nTechnology and most courses in EDM**, then lists the disciplines that *should\nalso benefit*: the **Sciences, Agriculture, Pharmacy, some departments in Health\nSciences, Administration and the Social Sciences**.\n\nEach major discipline is **expected to design and allocate credit units** in\naccordance with the periods allocated to SIWES in those courses \u2014 but, as he\nputs it, *\"this trend obtains till the present\"*, meaning the gap persists.\n\n### Source\nProf. M. D. Shittu, closing slides of \"The SIWES Programme at OAU\".\n\n### Why the others fail\n- **Law, Arts and Humanities** \u2014 not SIWES beneficiary disciplines.\n- **Education and Clinical Sciences only** \u2014 far too narrow; Education is\n  already a listed SIWES beneficiary.\n- **Environmental Design and Applied Arts** \u2014 EDM is one of the faculties that\n  **already allocates** units, so it cannot be among those lagging."
+    },
+    {
+      "id": "swep_day1_37",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "As part of the support machinery for training, the ITF gives a specific type of award. What is the name of this award as presented by Prof. Shittu?",
+      "options": [
+        "Merit-based financial awards",
+        "Ex-gratia awards",
+        "Pro-bono institutional grants",
+        "Subsidized corporate awards"
+      ],
+      "correct": 1,
+      "short": "The ITF gives ex-gratia awards as part of its support machinery.",
+      "solution": "### Why this is the answer\n\"The support machinery for training\" lists six ways the Fund supports training,\nand point **6** is simply *\"giving **ex-gratia awards**\"*.\n\n### What \"ex-gratia\" means\nLatin for *\"out of grace\"* \u2014 a payment made voluntarily, as a favour rather than\nfrom legal obligation. The ITF is not contractually bound to give these; they\nare discretionary.\n\n### The full six-point machinery\n1. Bearing a proportion of employers' **direct training costs**\n2. Assisting and strengthening **training capability and facilities** nationwide\n3. Directly building up **its own training facilities**\n4. Organising **research and studies** into training\n5. Publishing **training guides and manuals**\n6. **Giving ex-gratia awards**\n\n### Source\nProf. M. D. Shittu, \"The support machinery for training\" slide.\n\n### Why the others fail\nAll three alternatives are plausible corporate phrasings, but the slide uses the\nexact legal term **ex-gratia** \u2014 which is precisely what the question is testing."
+    },
+    {
+      "id": "swep_day1_38",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Based on the Organizational Structure (Organogram) of the ITF presented by Prof. Shittu, which three units report directly to the Director-General alongside the Internal Audit Unit?",
+      "options": [
+        "Field Services, SIWES Division, and Procurement Unit",
+        "Legal and Council Affairs Unit, Public Relations and Publicity Unit, and SERVICOM Office",
+        "Human Resources, Finance, and SERVICOM Office",
+        "Corporate Planning, Legal and Council Affairs, and Audit Unit"
+      ],
+      "correct": 1,
+      "short": "The three parallel units are Legal and Council Affairs, Public Relations and Publicity, and the SERVICOM Office.",
+      "solution": "### Why this is the answer\nIn **Figure 1: Organogram of ITF**, four arrows branch sideways from the\n**Director-General** to four staff units:\n\n1. **Legal and Council Affairs Unit**\n2. **Internal Audit Unit** *(named in the question)*\n3. **Public Relations and Publicity Unit**\n4. **SERVICOM Office**\n\nSo the three *alongside* Internal Audit are Legal and Council Affairs, Public\nRelations and Publicity, and SERVICOM.\n\n### Units vs Departments \u2014 read the chart shape\nAbove the DG sits the **Governing Council**. The four **units** hang off to the\n**side** (advisory/oversight). The six **departments** sit in a row **below**:\nAdministration & Human Resource; Finance and Accounts; Consultancy, Research and\nInformation Tech.; **Field Services**; Industrial Training Devt.; and Business\nTraining Dev.\n\nNote that **SIWES Div.** lives *under* the Field Services Department \u2014 two\nlevels down, not reporting to the DG.\n\n### Source\nProf. M. D. Shittu, Figure 1: Organogram of ITF.\n\n### Why the others fail\nEach mixes tiers: Field Services and the SIWES Division are department-level or\nlower, and Human Resources, Finance, Procurement and Corporate Planning are\n**departments**, not the side units."
+    },
+    {
+      "id": "swep_day1_39",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Based on the handwritten summary notes for Day 1, which speaker handled the sub-topic concerning the \"Rules & Regulations guiding trainees/students conduct while the programme lasts\"?",
+      "options": [
+        "Prof. E.A. Taiwo",
+        "Prof. M.D. Shittu",
+        "Prof. O.A. Olojede",
+        "Engr. M.D. Shittu"
+      ],
+      "correct": 2,
+      "short": "Prof. O.A. Olojede taught the Rules & Regulations.",
+      "solution": "### Why this is the answer\nThe Day 1 handwritten ledger records: *\"Rules & Regulations guiding\ntrainees/students conduct while the programme lasts as well as the university\nRules for registration & Examination were treated. **Speaker: Prof. O. A.\nOlojede**.\"*\n\nThis matches his slide deck exactly \u2014 its full title is *\"General Introduction,\nUniversity Rules & Regulations on Course Registration & Examinations\"*, and he\nis **Deputy Director, ITCU, OAU**. The deck contains both amphitheatre decorum\nsections and the OAU Academic Code.\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 1 (Monday, 14th\nSeptember); Prof. Olojede's slide headers.\n\n### Why the others fail\n- **Prof. Taiwo** \u2014 benefits of industrial training.\n- **Prof. Shittu** \u2014 ITF history and spread.\n- **Engr. M. D. Shittu** \u2014 wrong person *and* wrong title."
+    },
+    {
+      "id": "swep_day1_40",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the handwritten Day 1 Summary, which speaker specifically taught \"How SIWES programme came into existence (Generally & in OAU)\"?",
+      "options": [
+        "Prof. E.A. Taiwo",
+        "Prof. O.A. Olojede",
+        "Prof. M.D. Shittu",
+        "Engr. O.A. Olojede"
+      ],
+      "correct": 2,
+      "short": "Prof. M.D. Shittu taught how SIWES came into existence generally and in OAU.",
+      "solution": "### Why this is the answer\nThe ledger's second entry covers the **History & spread of the Industrial\nTraining Fund (ITF) in Nigeria**, and lists under it *\"How SIWES programme came\ninto existence (Generally & in OAU)\"*, closing with **Speaker: Prof. M. D.\nShittu**.\n\nHis deck confirms the scope \u2014 its outline runs: History of the ITF, Services\noffered by ITF, ITF centres nationwide, **The SIWES Programme**, and **SIWES at\nOAU**. The phrase *\"Generally & in OAU\"* maps onto those last two sections exactly.\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 1; Prof. Shittu's\noutline slide.\n\n### Why the others fail\n- **Prof. Taiwo** \u2014 benefits of industrial training.\n- **Prof. Olojede** \u2014 rules, regulations and timelines.\n- **Engr. O. A. Olojede** \u2014 wrong person *and* wrong title."
+    },
+    {
+      "id": "swep_day1_41",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Under the \"Scope, Durations & Programme Frameworks\" timeline, when exactly is SIWES I held for students on 5-Year Tracks?",
+      "options": [
+        "During the 400-Level Rain Semester",
+        "During the long vacation following the 200-Level Rain Semester",
+        "During the long vacation immediately after the 300-Level Rain Semester",
+        "Throughout their entire fourth academic session"
+      ],
+      "correct": 2,
+      "short": "SIWES I is held during the long vacation after the 300-Level Rain Semester.",
+      "solution": "### Why this is the answer\nFor 5-Year Tracks, **SIWES I is held during the long vacation immediately after\nthe 300-Level Rain Semester**.\n\n### The full ladder \u2014 note every option below is a real entry\n| Module | When |\n|---|---|\n| **SWEP 200** | Long vacation after the **200**-Level Rain Semester |\n| **SIWES I** | Long vacation after the **300**-Level Rain Semester |\n| **SIWES II** | The entire **400**-Level Rain Semester + part of the vacation (24 wks) |\n| Agriculture's 'Farm Year' | The entire **fourth academic session** |\n\nEvery distractor in this question is a genuine timeline from the same slide,\nattached to the wrong module \u2014 so match the **level number** to the module.\n\n### Source\nProf. O. A. Olojede, \"Training Timelines: Scope, Durations & Programme\nFrameworks\" slide.\n\n### Why the others fail\nThe 400-Level Rain Semester is **SIWES II**; the 200-Level vacation is **SWEP\n200**; the fourth-session placement is the **Faculty of Agriculture's Farm Year**."
+    },
+    {
+      "id": "swep_day1_42",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which specific faculty employs a consolidated 1-year 'Farm Year' placement throughout their entire fourth academic session in place of standard modules?",
+      "options": [
+        "Faculty of Environmental Design",
+        "Faculty of Agriculture",
+        "Faculty of Science",
+        "Faculty of Technology"
+      ],
+      "correct": 1,
+      "short": "The Faculty of Agriculture employs the 1-year 'Farm Year'.",
+      "solution": "### Why this is the answer\nThe **Faculty of Agriculture** employs a consolidated **1-year 'Farm Year'**\nplacement throughout their **entire fourth academic session**, in place of the\nstandard SWEP/SIWES module pattern.\n\n### Why agriculture is treated differently\nFarming is **seasonal**. A 12-week vacation attachment cannot cover a full\nplanting-to-harvest cycle, so agriculture students need a continuous year on\nplacement to experience the complete agricultural calendar.\n\n### Related but distinct\nThis is a **substitution**, not an exemption. Contrast it with the **4-Year\nProgram Exemptions** \u2014 Architecture, Fine and Applied Arts, and Industrial\nChemistry \u2014 which are exempt from specific practical modules altogether.\n\n### Source\nProf. O. A. Olojede, \"Training Timelines\" slide.\n\n### Why the others fail\nTechnology and EDM run the standard 3/3/9 credit-unit modules; the Faculty of\nScience follows standard arrangements. Only Agriculture uses the 'Farm Year'\nstructure and terminology."
+    },
+    {
+      "id": "swep_day1_43",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. Taiwo, what is one major implication/benefit of the E-Payment system regarding the handling of physical cheques?",
+      "options": [
+        "It requires students to physically verify cheques at the ITF office.",
+        "It eliminates the stealing of cheques, forging of signatures, and disparity between amounts in words and figures.",
+        "It allows institutions to print cheques locally to save time.",
+        "It increases transaction costs but guarantees faster delivery."
+      ],
+      "correct": 1,
+      "short": "E-payment eliminates stolen cheques, forged signatures, and number disparities.",
+      "solution": "### Why this is the answer\nUnder **\"The implications\"**, the final bullet reads *\"**Eliminates Writing of\ncheques:** No stolen of cheques again, forging of signature and disparity\nbetween amount in words and figures will be eliminated totally.\"*\n\nRemove the physical cheque and you remove all three failure modes at once \u2014\ntheft, forgery, and the words-versus-figures mismatch.\n\n### The other implications listed\n- Cheque/cash payment of supervisory and student allowances **abrogated**\n- **No physical contact** between ITF accounts officials and beneficiaries\n- Easy **tracking of payments**, assisting the audit trail\n- **Reduces cases of corruption**\n- **Reduced transaction costs** and increased convenience\n- Improved **financial reporting, transparency and accountability**\n\n### Source\nProf. E. A. Taiwo, \"The implications\" slide (E-Payment System).\n\n### Why the others fail\nThe system **removes** physical contact (so no office verification), **abolishes**\ncheques rather than printing them locally, and **reduces** transaction costs\nrather than increasing them. Each distractor inverts a stated benefit."
+    },
+    {
+      "id": "swep_day1_44",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How is the SIWES programme primarily funded according to the \"Operators and Funding\" section of Prof. Shittu's lecture?",
+      "options": [
+        "Jointly by the Federal Government and Private Industries",
+        "Solely by the NUC and NBTE",
+        "By the Federal Government of Nigeria",
+        "By student union contributions and ITF grants"
+      ],
+      "correct": 2,
+      "short": "SIWES is funded by the Federal Government of Nigeria.",
+      "solution": "### Why this is the answer\nOn \"THE SIWES PROGRAMME\" slide, **Funding** is listed with a single line:\n**\"Federal Government of Nigeria\"**.\n\n### Don't confuse operators with funders\nThe same slide separates the roles clearly:\n\n| Role | Who |\n|---|---|\n| **Operators** | ITF, coordinating agencies (**NUC, NBTE, NCCE**), employers of labour, institutions |\n| **Funding** | **Federal Government of Nigeria** |\n| Beneficiaries | Agriculture, Engineering, Technology, Environmental Sciences, Education, Medical Sciences, Pure & Applied Sciences, Computing, etc. |\n\nEmployers **operate** the scheme by hosting and supervising students \u2014 that is\nnot the same as funding it.\n\n### Source\nProf. M. D. Shittu, \"THE SIWES PROGRAMME\" slide.\n\n### Why the others fail\n- **Jointly with Private Industries** \u2014 industries host and may pay stipends,\n  but formal funding is Federal Government.\n- **Solely by NUC and NBTE** \u2014 true only for the **1980\u20131984** interregnum.\n- **Student union contributions** \u2014 never a funding source."
+    }
+  ],
   "eee282": [
     {
       "id": "eee282_q01",
