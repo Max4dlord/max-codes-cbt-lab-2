@@ -65,6 +65,18 @@ export const topicMeta = {
       "name": "Day 3 \u2014 Wednesday, 16th September",
       "categoryId": "swep-days",
       "summaryNotes": "### What Day 3 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** (Agricultural Economics) |\n| 2 | Renewable Energy & PV Technology | **Dr. F. K. Ariyo** (Electronic & Electrical Engineering) |\n| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** (PhD, REng (Mech), MNIMechE, MNIEM, MNSE) |\n\n### 5G \u2014 the three superpowers\n| Superpower | What it is | Its label |\n|---|---|---|\n| **eMBB** | Insanely high speed, massive bandwidth | \u201ccontent and data delivery\u201d |\n| **URLLC** | **~1 ms** latency, extreme reliability | \u201creal-time control and safety\u201d |\n| **mMTC** | Huge numbers of low-power devices | \u201cmassive data collection\u201d |\n\n**Enablers:** **Network slicing** (rent a virtual network \u2014 lowers barrier to entry)\nand **Edge computing** (process locally \u2014 privacy-first, real-time AI).\n\n**Generations:** 1G AMPS/TACS/NMT (1980s) \u00b7 2G GSM (1990s) \u00b7 3G WCDMA/HSPA (2000s) \u00b7\n**4G LTE (2010s)** \u00b7 **5G NR (2020s)**.\n\n**5G targets:** **>10 Gbps** peak \u00b7 **<1 ms** radio latency \u00b7 100 Mbps whenever needed \u00b7\n10 000\u00d7 traffic \u00b7 10\u2013100\u00d7 devices \u00b7 10 years on battery.\n\n**Capabilities vs LTE:** 10\u00d7 data rates \u2192 10 Gbps \u00b7 10\u00d7 lower cost \u2192 <2 cent/GB \u00b7\n10\u00d7 lower latency \u2192 **<1 ms** \u00b7 10\u00d7 lower IoT power \u2192 <10 \u03bcWh/tx \u00b7\n5\u00d7 energy efficiency \u2192 <2 kWh/TB \u00b7 5\u00d7 spectral efficiency \u2192 >10 bps/cell/Hz.\n\n**Spectrum:** 20\u201390 GHz \u2192 1 GHz/operator \u2192 5\u201320 Gbps \u00b7 Below 6 GHz \u2192 100 MHz \u2192 2 Gbps \u00b7\nBelow 1 GHz \u2192 10 MHz \u2192 0.2 Gbps. NR spans **400 MHz \u2013 90 GHz**.\n\n**5 technology components:** new spectrum \u00b7 beamforming \u00b7 network slicing \u00b7\nLTE dual connectivity/coexistence \u00b7 cloud-optimised architecture.\n\n**Journey:** start with a **pain point**, then apply the **5G lens**. Team =\ndomain + technical + business. Monetise **as-a-service**. **6G** converges with\n**AI, quantum computing and advanced sensing**.\n\n### PV \u2014 solar as a multidisciplinary system\n**Energy flow:** Sunlight \u2192 **PV cell** \u2192 **MPPT** \u2192 **inverter** \u2192 load/grid.\n**Scaling:** CELL \u2192 MODULE \u2192 STRING \u2192 ARRAY.\n**I\u2013V curve:** **Isc**, **MPP**, **Voc** \u2014 MPP is the *point*, MPPT the *technology*.\n**Why MPPT:** irradiance and temperature change, so the MPP **moves**\n(less sun \u2192 less current; hotter cell \u2192 lower voltage).\n\n**Six performance factors:** irradiance \u00b7 temperature \u00b7 shading \u00b7 soiling \u00b7\nmismatch \u00b7 degradation.\n\n| Architecture | Flow | Use |\n|---|---|---|\n| Grid-tied | PV \u2192 inverter \u2192 grid/load | Homes, offices, campuses |\n| **Off-grid** | PV \u2192 controller \u2192 battery \u2192 loads | Remote sites, PHCs |\n| Hybrid | PV + grid/generator + battery | Critical loads, resilience |\n\n**Storage:** **kW = how fast** (power), **kWh = how much** (energy).\nA 2-kW load for 4 h needs **8 kWh**. Terms: SoC, DoD, BMS, efficiency.\n**Three components to recognise:** inverter (DC\u2192AC) \u00b7 MPPT controller \u00b7 LiFePO\u2084 battery.\n**Diagnostics:** soiling\u2192power loss \u00b7 partial shade\u2192mismatch \u00b7 hot spot\u2192thermal risk \u00b7\nloose connector\u2192arcing/outage \u00b7 inverter trip\u2192no AC output.\n**Clinic challenge:** 8 kWh/day, 2 kW peak, 1 day autonomy.\n**Safety:** **PV DC stays energised in sunlight** \u2014 isolation must be planned.\n\n### Workshop practice, workforce & national growth\n**Resources:** hand tools (hammers, saws, pliers, marking tools) \u00b7 machine tools\n(lathe, milling, drilling, **power hack saw**) \u00b7 manufacturing methods (machining,\ncasting, powder metallurgy, welding, additive).\n\n**Sequence:** identify materials \u2192 measurements \u2192 marking out (**on the\nmarking-out table**) \u2192 cutting to size \u2192 joining or machining.\n\n**Activity focuses:** skill development \u00b7 team building \u00b7 problem-solving.\n**Five outcomes:** hands-on experience \u00b7 skill development \u00b7 safety awareness \u00b7\nunderstanding manufacturing processes \u00b7 application in industrial production.\n\n**Workforce** = all physically able and available people, **employed and\nunemployed**. The question: *how many of the employable are employed?*\n\n**Eq. 1:** Workshop Practice + Workforce = **\u00bd(National Growth)**\n**Eq. 2:** Workshop Practice + Workforce + **Development Plan** = National Growth\nEngineering **drives**; the development plan **catalyses**.\n\n**GDP:** Nigeria Q1 2025 **3.13%** (up from **2.27%** in Q1 2024); Ghana **5.4%**.\nDriver: reduced petrol imports via the **Dangote Refinery**.\n**Growth factors:** government policies \u00b7 global economy \u00b7 **human capital**.\n**NDP 2021\u20132025**, aligned with **Nigeria Agenda 2050**, four strategic objectives.\n**Outcomes:** **TVET** in all Technical Colleges \u00b7 **COREN** to regulate engineering admissions.\n\n### Traps to watch\n- **100 Mbps** is the \u201cwhenever needed\u201d rate; **>10 Gbps** is the peak.\n- **Quantum computing** belongs to the **6G** slide, not the 5 technology components.\n- **MPP** is a point on the curve; **MPPT** is the tracking technology.\n- **kW vs kWh** \u2014 inverter rated in kW, battery sized in kWh.\n- **2.27%** is Nigeria\u2019s **Q1 2024** figure, not 2025.\n- Eq. 1 gives only **half** of national growth \u2014 the plan supplies the rest.\n- Ayanwale teaches 5G but is from **Agricultural Economics**; Adeleke (Materials\n  Science) belongs to **Day 2**.\n"
+    },
+    {
+      "id": "swep-day-4",
+      "name": "Day 4 \u2014 Thursday, 17th September",
+      "categoryId": "swep-days",
+      "summaryNotes": "### What Day 4 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Food Science & Engineering, Value-Addition and National Development (4IR) | **Dr. W. A. Adebayo** (Food Science and Technology) |\n| 2 | Demystifying Artificial Intelligence | **Dr. Aderonke Lawal** (Computer Engineering) |\n| 3 | Fire Awareness and Prevention | **Mr. M. A. Ibrahim** |\n\n### Food Science \u2014 definitions and food security\n- **Food Science** \u2014 the **study** of the physical, microbiological and chemical makeup of food\n- **Food Technology** \u2014 the **application** of food science to selection, preservation, processing, packaging, distribution of **safe** food\n- **Food Engineering** \u2014 the **multidisciplinary field** applying **engineering principles** to production, processing, preservation and distribution\n- **Value-Addition** \u2014 transforming raw produce into **desirable, convenient, nutritious** products, raising **market value, shelf life, acceptability**\n\n**Four dimensions of food security:** **Availability** (sufficient quantity/quality,\nincl. imports) \u00b7 **Access** (entitlements) \u00b7 **Utilization** (diet, clean water,\nsanitation, health care) \u00b7 **Stability** (at all times; no shocks/cyclical loss).\n\n**Autarky** = deliberate isolation, **eliminating** international trade (China under\n**Mao Tse Tung**, Japan, North Korea). **Food self-reliance** = integrated management\nof production, export, import, storage, distribution + **strategic reserves**.\n\n### Industrial Revolutions \u2014 exact dates\n| IR | Dates | Defining change |\n|---|---|---|\n| Agrarian | before 1IR | Foraging \u2192 farming + domestication |\n| **1IR** | **1760\u20131840, Britain** | Muscle/animal \u2192 **mechanical power**; birth of factories |\n| **2IR** | **1860\u20131930** | **Electricity**, assembly lines \u2192 **mass production** |\n| **3IR** | Began **1960s** | **Computer and information age** |\n| **4IR** | About **2000** | Fusion across **physical, digital, biological** |\n\n**IR definition:** *abrupt and radical change*. **Causative agents: energy,\ncommunication, transportation.**\n**3IR catalysts:** semiconductors \u00b7 mainframes (1960s) \u00b7 PCs (1970s\u201380s) \u00b7 internet (1990s).\n**3IR drivers:** renewable energy \u00b7 ICT \u00b7 **3D printing**.\n**4IR characteristics:** ubiquitous mobile internet \u00b7 cheaper, smaller sensors \u00b7 **AI and ML**;\nenables **SMART FACTORIES**. Impacts are **HISTORIC, PROFOUND, DISRUPTIVE, MULTIFACETED**.\n**4IR clusters:** Physical \u00b7 Digital \u00b7 Biological.\n**Graphene: 200\u00d7 stronger than steel, one million times thinner than human hair**, good conductor.\n**Four intelligences:** Contextual (**mind**) \u00b7 Emotional (**heart**) \u00b7 Inspired (**soul**) \u00b7 Physical (**body**).\n\n### AI \u2014 models and learning\n**Model** = a **mathematical representation of patterns learned from data**; a *digital brain*.\n**Process:** **Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model**.\n**Accuracy** = % of correct predictions (95/100 = **95%**).\n**Limitations:** **biased data** (Western vs African names) \u00b7 **overfitting** (the crammer) \u00b7 **lack of context** (sarcasm).\n| Type | Learns from |\n|---|---|\n| **Supervised** | **Labelled** data \u2014 spam detection, face unlock |\n| **Unsupervised** | **Unlabelled** data \u2014 Spotify clustering, Google News |\n| **Reinforcement** | **Rewards/penalties** \u2014 self-driving cars, AlphaGo |\n\n**LLM = Large Language Model.** Teachable Machine: **20\u201330 samples per class**.\n**Challenges:** data privacy \u00b7 bias and fairness \u00b7 job displacement \u00b7 **lack of regulation**.\n**Ways forward:** ethical AI \u00b7 inclusive data \u00b7 policies \u00b7 **human-AI collaboration**.\n\n### Fire Awareness\n**Fire triangle: Heat + Fuel + Oxygen.**\n**Control:** **Cooling** (heat) \u00b7 **Smothering** (oxygen) \u00b7 **Starvation** (fuel).\n**Spread:** conduction, convection, radiation, spontaneous combustion.\n\n| Class | Fuel | Examples |\n|---|---|---|\n| **A** | Solids | Paper, wood, textiles |\n| **B** | Flammable liquids | Kerosene, petrol, perfumes, alcohol |\n| **C** | Flammable gases | Methane, acetylene, butane |\n| **D** | Combustible metals | Potassium, sodium, calcium |\n| **E** | Energized electrical | **Least frequent origin** |\n\n**Colour bands:** **RED** water \u00b7 **BLUE** dry powder \u00b7 **CREAM** foam \u00b7 **BLACK** CO\u2082.\n**CO\u2082** is multipurpose (electrical + liquids) and **leaves no residue**.\n**OAU hostel fire ranking:** **Moremi (most)** \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 **PG (least)**.\n**Comparative safety** = manage it **inside**; **Absolute safety** = **evacuate**.\n**In smoke: toxic smoke rises \u2014 lie flat and crawl.**\n\n### Traps to watch\n- Food **Science** studies, **Technology** applies, **Engineering** builds.\n- 1IR **1760\u20131840**; 2IR **1860\u20131930** \u2014 do not swap.\n- Graphene: **200\u00d7 stronger** than steel but **one million times thinner** than hair.\n- **Overfitting** = memorising; the crammer analogy.\n- Class **D** is metals, **E** is electrical.\n- Day 2 used extinguisher **shapes**; Day 4 uses **colour bands**. Answer per the named lecture.\n"
+    },
+    {
+      "id": "swep-day-5",
+      "name": "Day 5 \u2014 Friday, 18th September",
+      "categoryId": "swep-days",
+      "summaryNotes": "### What Day 5 covered\nA single session: **Employers\u2019 Expectations from Fresh Graduates in the\n21st-Century Job Market**, delivered by a Representative of the **Nigeria\nEmployers\u2019 Consultative Association (NECA)**.\n\n### Core concepts\n- SIWES is **not** an escape from academics \u2014 it is a period to convert experience\n  into **verifiable skills** that guarantee **employability**\n- It is for **building human networks** \u2014 *network brings good net worth*\n- **Mindset shift:** see yourself as a **professional in training**, not a mere\n  student \u2014 *you are being equipped to **create value and build evidence***\n\n### The three numbers\n| Number | What it counts |\n|---|---|\n| **3 to 5** | Learning **goals** |\n| **4 to 5** | **Days** in the critical first period |\n| **12** | **Weeks** in the action plan |\n\n### Before SIWES\nResearch the **assigned organisation** \u00b7 update **CV and LinkedIn** (**professional\nemail**) \u00b7 define **3\u20135 learning goals** \u00b7 prepare a **professional wardrobe** \u00b7 daily\nroutine, notebooks, documents \u00b7 know your **reporting line** \u00b7 get a **Role Title** \u00b7\nmeet all **ITF requirements**.\n\n### First 4 to 5 days\nFrom day one **observe, listen, introduce yourself properly**. **Ask questions** \u2014\n*career development is a **strategic effort***: *Who is my supervisor? What is my\nresponsibility? **What does success look like?*** Keep a **daily learning record**,\n**dress appropriately**, **protect confidential information**.\n\n### What employers notice (6)\n**Punctuality \u00b7 Communication** (listening and asking questions) **\u00b7 Initiative \u00b7\nTeam work** (supporting colleagues) **\u00b7 Professionalism \u00b7 Integrity**\n> **Beware of office politics! Nobody is your best friend at work.**\n\n### SIWES Learning Loop\n**Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect**\n*Don\u2019t just collect tasks, but **collate evidence** (How, when & what). Have a\n**digital portfolio**. Do not have a **career mismatch**.*\n\n### Skills to develop (7)\nTechnical skills acquisition \u00b7 communication \u00b7 **digital literacy** \u00b7 team work \u00b7\n**speaking/presentation** \u00b7 **work ethics** \u00b7 **networking**.\nOnly **one** is technical \u2014 the rest are soft/transferable.\n\n### Twelve Weeks Action Plan\nSet **3\u20135 goals** \u00b7 **CV and LinkedIn tailored to your goals** \u00b7 build a **job\nportfolio \u2014 document evidence** \u00b7 build **technical skills** \u00b7 **document evidence\nof skills** \u00b7 **close your skill gap**, develop and improve consistently.\n\n### Traps to watch\n- **Prepare notebooks** is *before*; **keep a daily learning record** is *during*.\n- **Communication** and **team work** appear on **both** the employers\u2019 list and the\n  skills list \u2014 they cannot distinguish the two.\n- **Punctuality, integrity, professionalism** are **observed traits**, not listed skills.\n- **12 weeks** is the plan; **8 weeks** is the SWEP minimum; **24 weeks** is SIWES II.\n- The note names the speaker only as a **NECA representative** \u2014 no personal name is given.\n"
     }
   ],
   "eee282": [
@@ -2156,6 +2168,1286 @@ export const questionBank = {
       "correct": 2,
       "short": "Prof. V. Omidiji is credited as PhD, REng (Mech), MNIMechE, MNIEM, MNSE.",
       "solution": "### Why this is the answer\nEach Day 3 deck carries its author's own credentials on the title slide:\n\n| Speaker | As stated on their material |\n|---|---|\n| Prof. A. B. Ayanwale | Professor, **Department of Agricultural Economics**, OAU |\n| Dr. F. K. Ariyo | **Department of Electronic and Electrical Engineering**, OAU |\n| **Prof. V. Omidiji** | **PhD, REng (Mech), MNIMechE, MNIEM, MNSE** |\n\nOnly the Omidiji pairing is correct.\n\n### The detail worth pausing on\nThe 5G entrepreneurship lecture was delivered by a professor of **Agricultural\nEconomics** \u2014 not an engineer. That is not an oddity; it reinforces the lecture's\nown argument that a 5G venture needs **domain experts and business strategists**,\nnot only technical experts. The messenger demonstrates the message.\n\n### How the distractors were built\nOptions A and B **swap Ayanwale's and Ariyo's departments** with each other.\nOption D borrows **Materials Science and Engineering** \u2014 which is real, but it is\n**Prof. A. A. Adeleke's** department from Day 2.\n\n### Source\nTitle slides of all three Day 3 decks; Day 2 deck for the Materials Science\nattribution."
+    },
+    {
+      "id": "swep_day4_01",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Dr. W. A. Adebayo distinguishes three related terms. Which definition is correctly matched?",
+      "options": [
+        "Food Science \u2014 the application of food science to selection, preservation, processing, packaging and distribution",
+        "Food Technology \u2014 the study of the physical, microbiological and chemical makeup of food",
+        "Food Engineering \u2014 the multidisciplinary field applying engineering principles to production, processing, preservation and distribution of foods",
+        "Food Engineering \u2014 the study of consumer sensory preferences and new product development"
+      ],
+      "correct": 2,
+      "short": "Food Engineering applies engineering principles to food production and processing.",
+      "solution": "### Why this is the answer\nThe three key words are defined separately, and the distractors swap them:\n\n| Term | Definition |\n|---|---|\n| **Food Science** | The **study** of the physical, microbiological and chemical **makeup** of food |\n| **Food Technology** | The **application** of food science to selection, preservation, processing, packaging, distribution and use of **safe** food |\n| **Food Engineering** | The **multidisciplinary field** applying **engineering principles** \u2014 chemical, mechanical, process \u2014 to production, processing, preservation and distribution |\n\n### The logic that separates them\n**Science studies it. Technology applies it. Engineering builds the systems.**\nOnly Food Engineering invokes *engineering principles* by name.\n\n### The branches of each\n- **Food Science:** food chemistry, processing, food nutrition, food microbiology,\n  food sensory, new product development\n- **Food Engineering:** food safety engineering, sustainability and waste\n  management, process engineering, packaging engineering, equipment design,\n  refrigeration and cold chain\n\n### Source\nDr. W. A. Adebayo, \"Key Words\" and \"Branches\" slides.\n\n### Why the others fail\nOptions A and B are genuine definitions attached to the **wrong term**. Option D\nlists *food sensory* and *new product development*, which are branches of Food\n**Science**, not the definition of Food Engineering."
+    },
+    {
+      "id": "swep_day4_02",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, what is Value-Addition in food systems?",
+      "options": [
+        "The taxation applied to processed food products before sale",
+        "The transformation of raw agricultural produce into more desirable, convenient and nutritious products to increase market value, shelf life and consumer acceptability",
+        "The addition of artificial preservatives to extend expiry dates",
+        "The increase in farm-gate prices caused by seasonal scarcity"
+      ],
+      "correct": 1,
+      "short": "Value-addition transforms raw produce into more desirable, convenient, nutritious products.",
+      "solution": "### Why this is the answer\nValue-addition *\"involves food transformation of **raw agricultural produce**\ninto more **desirable, convenient, and nutritious** products to increase their\n**market value, shelf life and consumers' acceptability**.\"*\n\nThree inputs to remember \u2014 desirable, convenient, nutritious \u2014 and three outputs:\nmarket value, shelf life, acceptability.\n\n### Its impact on national development\nValue addition contributes to national development by driving economic growth,\nimproving **FOOD SECURITY** and fostering social progress, specifically through:\n\n| Channel |\n|---|\n| Economic growth |\n| **Food security** and waste management |\n| Rural development |\n| Health and nutrition |\n| Industrial and technological advancement |\n\n### Why option C is a near-miss\nExtending shelf life **is** one of the three stated outputs \u2014 but through\n*transformation* into better products, not merely by dosing raw produce with\npreservatives. The definition is about **upgrading the product**, not\nstabilising it.\n\n### Source\nDr. W. A. Adebayo, \"Key Words (Cont'd)\" slide."
+    },
+    {
+      "id": "swep_day4_03",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture gives a formal definition of Food Security. Which statement matches it?",
+      "options": [
+        "Food security exists when a country produces all of its own food without imports",
+        "Food security exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food meeting their dietary needs and food preferences for an active and healthy life",
+        "Food security exists when national strategic grain reserves exceed one year of consumption",
+        "Food security exists when food prices remain stable throughout the year"
+      ],
+      "correct": 1,
+      "short": "All people, at all times, with physical and economic access to sufficient, safe, nutritious food.",
+      "solution": "### Why this is the answer\nThe definition is quoted precisely: *\"Food security **only exists when all\npeople, at all times**, have **physical and economic access** to **sufficient,\nsafe and nutritious** food that meets their **dietary needs and food\npreferences** for an active and healthy life.\"*\n\nEvery clause is load-bearing \u2014 **all** people, at **all** times, with **both**\nphysical and economic access.\n\n### The four dimensions it points to\n| Dimension | What it means |\n|---|---|\n| **Availability** | Sufficient quantities of appropriate quality, from domestic production **or imports (including food aid)** |\n| **Access** | Individuals' adequate resources \u2014 **entitlements** \u2014 to acquire appropriate foods |\n| **Utilization** | Adequate diet, **clean water, sanitation and health care** to reach nutritional well-being |\n| **Stability** | Access at **all times**, without risk from sudden shocks (economic/climatic) or cyclical events (seasonal insecurity) |\n\n**Utilization** is the dimension students overlook \u2014 it shows that **non-food\ninputs** matter to food security.\n\n### Why option A is wrong\nAvailability explicitly includes **imports**. Producing everything yourself is\n**autarky**, a different concept the lecture treats separately.\n\n### Source\nDr. W. A. Adebayo, \"Food Security\" slides."
+    },
+    {
+      "id": "swep_day4_04",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture contrasts autarky with food self-reliance. Which description of AUTARKY is correct?",
+      "options": [
+        "A country controlling its food needs through integrated management of production, export, import, storage and distribution",
+        "A system of producing only those foods in which a country has comparative advantage",
+        "A policy of maintaining strategic food reserves for natural disasters",
+        "A deliberate economic policy of isolating a country to attain food self-sufficiency and eliminate international trade"
+      ],
+      "correct": 3,
+      "short": "Autarky is deliberate isolation to attain self-sufficiency and eliminate international trade.",
+      "solution": "### Why this is the answer\n**Autarky** is *\"the situation whereby a country embarks on a **deliberate\neconomic policy of isolating itself** in order to attain food self-sufficiency\nand **eliminate international trade**.\"* It is explicitly described as *\"the\nopposite of free trade and open market system.\"*\n\n### Historical examples given\nSome Asiatic countries attempted this extreme policy: **China during the\nCultural Revolution** led by the late **Mao Tse Tung**, **Japan's isolation**,\nand **North Korea**.\n\n### The contrast being tested\n| Concept | Stance on trade |\n|---|---|\n| **Autarky** | **Eliminates** international trade \u2014 isolation |\n| **Food self-reliance** | **Manages** trade \u2014 production, **export, import**, storage, distribution |\n\nEvery other option describes **food self-reliance**: integrated management,\nstrategic reserves for emergencies, and producing where you hold **comparative\nadvantage**. Self-reliance is control, not isolation \u2014 that is the whole\ndistinction.\n\n### Source\nDr. W. A. Adebayo, \"The State of Food Security in Nigeria\" slides."
+    },
+    {
+      "id": "swep_day4_05",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does the lecture define an Industrial Revolution (IR), and what are its causative agents?",
+      "options": [
+        "A gradual improvement in factory output; agents are labour, capital and land",
+        "A change in consumer taste; agents are advertising, media and fashion",
+        "A political reorganisation of industry; agents are government, unions and investors",
+        "An abrupt and radical change where new technologies or novel ways of perceiving the world trigger profound change in economic systems and social structures; agents are energy, communication and transportation"
+      ],
+      "correct": 3,
+      "short": "An IR is abrupt, radical change driven by energy, communication and transportation.",
+      "solution": "### Why this is the answer\nThe lecture first defines the word: *\"By the word **'revolution'**, we mean\n**'abrupt and radical change'**.\"* It then notes that *no society is static \u2014\nevery society is perpetually in transition*.\n\nAn **Industrial Revolution (IR)** *\"occurs when **new technologies and/or novel\nways of perceiving the world** trigger **profound change in economic systems and\nsocial structures**.\"*\n\n### The three causative agents\n> **Energy \u00b7 Communication \u00b7 Transportation**\n\nThese three recur throughout the lecture: the **Agrarian Revolution**, the\n**1IR** and the **2IR** are each said to have changed *energy/production systems,\ntransportation systems and communication systems*. That repetition is the\nlecture's structural spine.\n\n### The Agrarian Revolution \u2014 what came before\nPrior to industrialisation, early men and women were **foraging** \u2014 gatherers of\nfruits and hunters of animals. The transition to **farming and domestication of\nanimals**, using the combined efforts of **humans plus animals**, produced the\nsame three changes.\n\n### Source\nDr. W. A. Adebayo, \"Industrial Revolutions\" slides."
+    },
+    {
+      "id": "swep_day4_06",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the stated dates and defining transition of the First Industrial Revolution (1IR)?",
+      "options": [
+        "1760\u20131840 in Britain; transition from muscle/animal power to mechanical power",
+        "1860\u20131930 in Germany; transition to electric power and assembly lines",
+        "1760\u20131840 in France; transition from agriculture to trade",
+        "1800\u20131900 in Britain; transition from steam to electricity"
+      ],
+      "correct": 0,
+      "short": "1760\u20131840 in Britain, from muscle/animal power to mechanical power.",
+      "solution": "### Why this is the answer\nThe 1IR *\"happened in the mid-18th to mid-19th Century. Precisely **1760\u20131840\nin Britain**. It marked transition from **muscle/animal power to mechanical\npower**. The transition to use of machines led to the **birth of the\nfactories**.\"*\n\n### The full timeline of revolutions\n| Revolution | Dates | Defining change |\n|---|---|---|\n| **1IR** | **1760\u20131840**, Britain | Muscle/animal \u2192 **mechanical power**; birth of factories |\n| **2IR** | **1860\u20131930** | **Electricity**, electrically driven production and assembly lines; **mass production** |\n| **3IR** | Began **1960s** | **Computer and information age** |\n| **4IR** | Began about **2000** | Fusion of physical, digital and biological technologies |\n\n### The trap in option B\n**1860\u20131930** is real \u2014 but it belongs to the **2IR**, and the deck does not\nattribute it to Germany. Adjacent-revolution dates are the sharpest distractors\nin this topic, so anchor each pair firmly.\n\n### Source\nDr. W. A. Adebayo, \"First Industrial Revolution\" and \"Second Industrial\nRevolution\" slides."
+    },
+    {
+      "id": "swep_day4_07",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The Second Industrial Revolution (2IR) is said to have been heralded by which development, producing what economic outcome?",
+      "options": [
+        "The steam engine, producing the factory system",
+        "The internet, producing the digital economy",
+        "The semiconductor, producing the information economy",
+        "The advent of electricity and electrically driven production/assembly lines, producing mass production or a manufacturing economy"
+      ],
+      "correct": 3,
+      "short": "Electricity and electrically driven assembly lines produced mass production.",
+      "solution": "### Why this is the answer\nThe 2IR occurred *\"late in the 19th to early 20th Century. Precisely\n**1860\u20131930**\"*, and was heralded by:\n\n- the **advent of electricity**, that is, **electric power**\n- **electrically driven production and assembly lines**\n\n*\"This massive leap in power generation gave birth to **mass production or\nmanufacturing economy**.\"* Like its predecessors, the 2IR also changed\n**energy/production, transportation and communication** systems.\n\n### Matching each driver to its revolution\n| Driver | Revolution |\n|---|---|\n| Steam / mechanical power | **1IR** |\n| **Electricity** | **2IR** |\n| **Semiconductors, computing** | **3IR** |\n| Fusion of physical/digital/biological | **4IR** |\n\nEvery distractor here is a genuine driver \u2014 of a **different** revolution. The\ninternet in particular belongs to the **3IR** (the 1990s catalyst), not the 2IR.\n\n### Source\nDr. W. A. Adebayo, \"Second Industrial Revolution (2IR)\" slide."
+    },
+    {
+      "id": "swep_day4_08",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, what catalysed the Third Industrial Revolution (3IR), and when did it begin?",
+      "options": [
+        "Began in the 1940s; catalysed by the telegraph and radio",
+        "Began in the 1960s; catalysed by semiconductors, mainframe computing (1960s), personal computing (1970s\u20131980s) and the internet (1990s)",
+        "Began in the 1980s; catalysed by mobile telephony and satellites",
+        "Began about 2000; catalysed by artificial intelligence and robotics"
+      ],
+      "correct": 1,
+      "short": "The 3IR began in the 1960s, catalysed by semiconductors, computing and the internet.",
+      "solution": "### Why this is the answer\nThe 3IR *\"began in the **1960s**. This was/is the **COMPUTER and INFORMATION\nage**.\"* It was catalysed by:\n\n| Catalyst | Era |\n|---|---|\n| Development of **semiconductors** | \u2014 |\n| **Mainframe computing** | 1960s |\n| **Personal computing** | 1970s + 1980s |\n| **Internet** | 1990s |\n\n### Its main driver \u2014 a convergence\nThe lecture names the convergence of:\n- **Renewable energy** \u2014 which could lead to an **energy internet**\n- **ICT** \u2014 clever software + internet\n- **3D printing**\n\nThe fuller list of converging technologies: *clever software, novel materials,\nmore dexterous robots, new processes, and 3D printing* \u2014 described as *\"the\nwonders of the 3IR\"*.\n\n### Why option D is the trap\nAbout **2000** is when the **4IR** began \u2014 and the deck stresses the 4IR is *\"an\n**offshoot of the 3IR**, because it builds on computer and information\nrevolutions\"*. Some academics even argue they are not distinct.\n\n### Source\nDr. W. A. Adebayo, \"Third Industrial Revolution (3IR)\" slides."
+    },
+    {
+      "id": "swep_day4_09",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What makes the Fourth Industrial Revolution (4IR) fundamentally different from previous industrial revolutions?",
+      "options": [
+        "Its reliance on fossil fuels for mass production",
+        "Its rejection of computing in favour of biological systems",
+        "Its confinement to the manufacturing sector alone",
+        "The fusion of different technologies and their interaction across the physical, digital and biological domains"
+      ],
+      "correct": 3,
+      "short": "The fusion and interaction of technologies across physical, digital and biological domains.",
+      "solution": "### Why this is the answer\n*\"It is the **fusion of different technologies and their interaction across the\nphysical, digital and biological domains** that make the 4IR **fundamentally\ndifferent** from previous IRs.\"*\n\n### The three clusters\n> **Physical \u00b7 Digital \u00b7 Biological**\n> *\"All three are deeply interrelated and the various technologies benefit from\n> each other based on the discoveries and progress each makes.\"*\n\n### Its distinguishing characteristics\n- Much more **ubiquitous and mobile internet**\n- **Smaller and more powerful sensors** that have become **cheaper**\n- **Artificial Intelligence (AI) and Machine Learning**\n\nBy enabling **\"SMART FACTORIES\"**, the 4IR creates a world in which **virtual and\nphysical systems of manufacturing cooperate flexibly**.\n\n### Its impacts\nDescribed as **HISTORIC, PROFOUND, DISRUPTIVE and MULTIFACETED** \u2014 disrupting\nincumbents and reshaping production, consumption, transportation and delivery.\nThis **PARADIGM SHIFT** is *\"fundamentally changing the way we live, work, and\nrelate to one another.\"*\n\n### Source\nDr. W. A. Adebayo, \"Fourth Industrial Revolution (4IR)\" slides."
+    },
+    {
+      "id": "swep_day4_10",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Under the Physical MegaTrend of the 4IR, the lecture cites an advanced material with specific properties. Which material and figures are given?",
+      "options": [
+        "Kevlar \u2014 100 times stronger than steel and twice as thin as human hair",
+        "Carbon fibre \u2014 50 times stronger than steel and a poor conductor of heat",
+        "Graphene \u2014 200 times stronger than steel, one million times thinner than human hair, and a good conductor of heat and electricity",
+        "Titanium alloy \u2014 200 times stronger than steel and self-healing"
+      ],
+      "correct": 2,
+      "short": "Graphene: 200\u00d7 stronger than steel, one million times thinner than human hair.",
+      "solution": "### Why this is the answer\nUnder **New Materials**, the lecture describes smart materials that are\n**self-healing, self-cleaning**, and **metals with memory** (which revert to\ntheir original shapes). Its named example is:\n\n> **Graphene** \u2014 *\"an advanced material which is **200 times stronger than\n> steel**, **one million times thinner than human hair**, and also a **good\n> conductor of heat and electricity**.\"*\n\nThree figures, all examinable: **200\u00d7**, **one million\u00d7**, and **good conductor**\nof both heat and electricity.\n\n### The full Physical MegaTrend\n| Trend | Detail |\n|---|---|\n| **Autonomous vehicles** | Driverless cars, trucks, **drones, aircraft, boats and submersibles** |\n| **3D Printing** | Creates a physical object layer upon layer from a digital 3D drawing |\n| **Advanced Robotics** | Now across **all sectors** \u2014 military, nursing, agriculture; modern robots **access information remotely and act autonomously** instead of being programmed |\n| **New Materials** | Self-healing, self-cleaning, memory metals \u2014 **graphene** |\n\n### Source\nDr. W. A. Adebayo, \"Physical MegaTrend\" slides."
+    },
+    {
+      "id": "swep_day4_11",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does the lecture define the Internet of Things (IoT) under the Digital MegaTrend?",
+      "options": [
+        "A network of undersea fibre-optic cables linking continents",
+        "A protocol for encrypting mobile banking transactions",
+        "A cloud storage service for industrial data archives",
+        "Physical objects with sensors, processing ability, software and other technologies that connect and exchange data with other devices and systems over the internet or other communication networks"
+      ],
+      "correct": 3,
+      "short": "IoT is physical objects with sensors and software exchanging data over networks.",
+      "solution": "### Why this is the answer\nThe **Internet of Things (IoT)** *\"describes **physical objects with sensors,\nprocessing ability, software and other technologies** that **connect and\nexchange data** with other devices and systems over the internet or other\ncommunication networks.\"*\n\nNote the four attributes an IoT object must have: **sensors, processing ability,\nsoftware, and connectivity**.\n\n### The scale given\n*\"**Billions** of devices \u2014 smartphones, tablets, and computers \u2014 are connected\nto the Internet and also **interconnected**.\"* Such monitoring systems can track\nthe **movement and trailing of objects and people**.\n\n### The Biological MegaTrend, for contrast\nMainly in **Genetics** \u2014 *\"not in the realm of simple biotechnology,\nbioengineering or genetic modification\"* \u2014 made possible by huge computing power\nin **Bioinformatics**. Its benefits:\n- Increasing ease of **gene sequencing**\n- **Gene activation**\n- **Gene editing** \u2014 ability to edit DNA and alter traits\n- **Synthetic biology** \u2014 ability to customise by **writing DNA**\n\n### Source\nDr. W. A. Adebayo, \"Digital MegaTrend\" and \"Biological MegaTrend\" slides."
+    },
+    {
+      "id": "swep_day4_12",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture prescribes four types of intelligence for navigating the 4IR. Which pairing of intelligence to its seat is correct?",
+      "options": [
+        "Contextual intelligence \u2014 the heart",
+        "Emotional intelligence \u2014 the mind",
+        "Inspired intelligence \u2014 the body",
+        "Physical intelligence \u2014 the body"
+      ],
+      "correct": 3,
+      "short": "Physical intelligence has to do with the body.",
+      "solution": "### Why this is the answer\nTo adapt, shape and harness the potential of disruption, the lecture says we\nmust nurture and apply **four different types of intelligence**, each tied to a\ndifferent seat:\n\n| Intelligence | Seat | What it is about |\n|---|---|---|\n| **Contextual** | **Mind** | How we **understand and apply knowledge** \u2014 a prerequisite for adaptation and survival |\n| **Emotional** | **Heart** | How we **process and integrate thoughts and feelings** and relate to ourselves and one another |\n| **Inspired** | **Soul** | **Inspiration from the spiritual realm** |\n| **Physical** | **Body** | **Self-preservation** \u2014 supporting and nourishing personal health and well-being |\n\nOnly **Physical \u2192 body** is correctly paired.\n\n### The framing sentence\n*\"We can only meaningfully address these challenges if we mobilize the\n**collective wisdom of our minds, hearts and souls**.\"* Mind, heart, soul \u2014 and\nthen body \u2014 is the exact order the four intelligences follow.\n\n### On physical intelligence\nAdvances such as **implantable technologies** and **telemedicine** have positive\neffects on it.\n\n### Source\nDr. W. A. Adebayo, \"How do I prepare to manage the impacts of the 4IR?\" slides."
+    },
+    {
+      "id": "swep_day4_13",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the impacts of the 4IR on value-addition in food systems?",
+      "options": [
+        "Enhanced processing and efficiency through automation, robotics, IoT and smart sensors",
+        "Improved product quality and innovation through AI, machine learning and 3D food printing",
+        "Supply chain optimization through blockchain, traceability and cold chain technologies",
+        "Elimination of the need for food safety regulation and inspection"
+      ],
+      "correct": 3,
+      "short": "Eliminating food safety regulation is not a listed impact.",
+      "solution": "### Why this is the answer\nA **NOT** question. The lecture lists exactly four impacts of the 4IR on\nvalue-addition in food systems:\n\n| Impact | Enabling technologies |\n|---|---|\n| **Enhanced processing and efficiency** | Automation and robotics; **IoT and smart sensors** |\n| **Improved product quality and innovation** | AI and machine learning; **3D food printing** |\n| **Supply chain optimization** | **Blockchain and traceability**; cold chain technologies |\n| **Consumer-centric value addition** | **Big data and AI**; smart packaging |\n\nNothing suggests regulation disappears \u2014 and it would contradict the deck, which\nnames **Food Safety Engineering** as a branch of food engineering.\n\n### Note the fourth impact\n**Consumer-centric value addition** is the one students forget, since the first\nthree are process-facing and only this one is customer-facing.\n\n### The closing provocation\n*\"Now that **5IR** is fast approaching, what are your Plans/Preparations?\"* \u2014\nthe lecture ends by pointing past the 4IR entirely.\n\n### Source\nDr. W. A. Adebayo, \"Impacts of 4IR on Value-addition in Food Systems\" slide."
+    },
+    {
+      "id": "swep_day4_14",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which two of the four food security dimensions are correctly described?",
+      "options": [
+        "Availability \u2014 access by individuals to adequate resources or entitlements; Stability \u2014 sufficient quantities of appropriate quality",
+        "Access \u2014 adequate diet, clean water, sanitation and health care; Utilization \u2014 sufficient quantities from domestic production or imports",
+        "Availability \u2014 sufficient quantities of appropriate quality from domestic production or imports; Stability \u2014 access to adequate food at all times, without risk from sudden shocks or cyclical events",
+        "Utilization \u2014 access at all times without risk of shocks; Access \u2014 clean water and sanitation"
+      ],
+      "correct": 2,
+      "short": "Availability is sufficient quantity/quality; Stability is access at all times.",
+      "solution": "### Why this is the answer\nThe four dimensions are distinct, and every distractor shuffles them:\n\n| Dimension | Correct description |\n|---|---|\n| **Availability** | Sufficient **quantities** of appropriate **quality**, supplied through **domestic production or imports (including food aids)** |\n| **Access** | Access by individuals to adequate **resources (entitlements)** for acquiring appropriate foods for a nutritious diet |\n| **Utilization** | Adequate **diet, clean water, sanitation and health care** to reach nutritional well-being |\n| **Stability** | Access to adequate food **at all times** \u2014 no risk of loss from **sudden shocks** (economic/climatic crisis) or **cyclical events** (seasonal insecurity) |\n\nOnly option C states two of them correctly.\n\n### The memory hook\n**Availability** = is the food *there*? **Access** = can you *get* it?\n**Utilization** = can your body *use* it? **Stability** = is it there *always*?\n\n### The wider definition it feeds\n**National food security** is *\"the ability of a country to ensure on a\n**long-term basis** that its food systems provide the total population with\naccess to **timely, reliable and nutritionally adequate** supply of food.\"*\n\n### Source\nDr. W. A. Adebayo, \"Food Security\" slides."
+    },
+    {
+      "id": "swep_day4_15",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the Day 4 ledger, who delivered the lecture on Food Science and the Fourth Industrial Revolution?",
+      "options": [
+        "Dr. Aderonke Lawal",
+        "Mr. M. A. Ibrahim",
+        "Dr. W. A. Adebayo",
+        "Prof. V. Omidiji"
+      ],
+      "correct": 2,
+      "short": "Dr. W. A. Adebayo delivered the Food Science & 4IR lecture.",
+      "solution": "### Why this is the answer\nThe Day 4 ledger (Thursday, 17th September) records **Food Science & 4IR (4th\nIndustrial Revolution) \u2014 Dr. W. A. Adebayo**, noting that he covered the\nbranches of food engineering and the concept of food security, highlighting how\nthe 4IR impacts national development through **value addition and optimized food\nsystems**.\n\nHis title slide confirms: **Dr. W. A. Adebayo (Food Process Engineering),\nDepartment of Food Science and Technology, Obafemi Awolowo University, Ile-Ife**.\n\n### Day 4 at a glance\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | **Food Science & 4IR** | **Dr. W. A. Adebayo** |\n| 2 | Demystifying AI | Dr. Aderonke Lawal |\n| 3 | Fire Awareness and Prevention | Mr. M. A. Ibrahim |\n\n### Note the titles\nTwo **Dr.** and one **Mr.** \u2014 Mr. M. A. Ibrahim is the fire-safety speaker.\n**Prof. V. Omidiji** is a genuine SWEP lecturer but belongs to **Day 3**\n(Workshop Practice, Workforce and National Growth).\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 4; deck title slide."
+    },
+    {
+      "id": "swep_day4_16",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does Dr. Aderonke Lawal define a model in Artificial Intelligence?",
+      "options": [
+        "A physical robot that performs human tasks",
+        "A mathematical representation of patterns learned from data",
+        "A database of pre-written answers retrieved on request",
+        "A programming language used to write intelligent software"
+      ],
+      "correct": 1,
+      "short": "A model is a mathematical representation of patterns learned from data.",
+      "solution": "### Why this is the answer\n*\"A model is a **mathematical representation of patterns learned from data**. It\nfunctions like a **digital brain** that recognizes patterns.\"*\n\nThe analogy offered: *\"A student learns to solve problems by **practicing many\nexamples**.\"*\n\n### Why option C is decisively wrong\nA model does **not** store answers to retrieve. This is the deck's central\ncorrection: it **learns patterns** and then **generalises** to new data. The\nlive-demo takeaway makes it explicit \u2014 *\"Model learns by **generalising, not\nmemorising**\"* \u2014 and a model that memorises instead is the defined failure mode\ncalled **overfitting**.\n\n### The AI learning process \u2014 big picture\n> **Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model**\n\n*\"AI systems learn by analyzing data and adjusting over time. The model is\n**tested, corrected, and refined**.\"*\n\n### Source\nDr. Aderonke Lawal, \"What Is a Model in AI?\" and \"The AI Learning Process\" slides."
+    },
+    {
+      "id": "swep_day4_17",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the correct order of the six stages in the AI learning process presented in the lecture?",
+      "options": [
+        "Training \u2192 Data \u2192 Model \u2192 Feedback \u2192 Prediction \u2192 Improved Model",
+        "Data \u2192 Model \u2192 Training \u2192 Prediction \u2192 Improved Model \u2192 Feedback",
+        "Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model",
+        "Model \u2192 Data \u2192 Training \u2192 Feedback \u2192 Prediction \u2192 Improved Model"
+      ],
+      "correct": 2,
+      "short": "Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model.",
+      "solution": "### Why this is the answer\nThe lecture numbers the big picture 01 to 06:\n\n| # | Stage |\n|---|---|\n| 01 | **Data** |\n| 02 | **Training** |\n| 03 | **Model** |\n| 04 | **Prediction** |\n| 05 | **Feedback** |\n| 06 | **Improved Model** |\n\n### Why the order cannot be rearranged\nEach stage consumes the previous one's output. You cannot train without **data**;\nthe model is what training *produces*, so it cannot precede training; and\nfeedback is only possible once a **prediction** exists to be judged. The loop\nthen closes \u2014 the improved model becomes the basis for the next round.\n\n### The training steps, made concrete\nUsing a **cat vs dog classifier**:\n1. Collect images of cats and dogs\n2. **Label** each image\n3. Feed into a **neural network**\n4. Adjust internal settings (**weights/biases**)\n5. Use the model to classify **new** images\n\n### Source\nDr. Aderonke Lawal, \"The AI Learning Process \u2014 Big Picture\" and \"How Training\nWorks\" slides."
+    },
+    {
+      "id": "swep_day4_18",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the lecture, how is model Accuracy defined and illustrated?",
+      "options": [
+        "The speed at which a model produces predictions, measured in seconds",
+        "The number of layers in a neural network",
+        "The quantity of data used to train a model, measured in gigabytes",
+        "The percentage of correct predictions a model makes \u2014 e.g. a facial recognition system correct 95 times out of 100 attempts has 95% accuracy"
+      ],
+      "correct": 3,
+      "short": "Accuracy is the percentage of correct predictions \u2014 95 of 100 attempts is 95%.",
+      "solution": "### Why this is the answer\n*\"**Accuracy is the percentage of correct predictions** a model makes. It tells\nus **how often** the model gets it right.\"*\n\nThe worked example: *\"Imagine using a facial recognition system to unlock your\nphone. If out of **100 attempts**, the phone correctly recognises your face\n**95 times** \u2192 **Accuracy = 95%**.\"*\n\n### The caution attached \u2014 and it is the real lesson\n> **Key Point:** *\"High accuracy is good, **but what kinds of errors is the\n> model making?**\"*\n\nA model can score well overall and still fail badly on a specific group. That\nwarning leads directly into the next slide on **biased data producing biased\nresults** \u2014 a language model trained mostly on **Western names** might struggle\nwith **African names**, even at high headline accuracy.\n\n### Source\nDr. Aderonke Lawal, \"Model Accuracy\" slide."
+    },
+    {
+      "id": "swep_day4_19",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture names three limitations of AI models. Which limitation is matched with the correct illustration?",
+      "options": [
+        "Overfitting \u2014 a chatbot giving wrong advice because it cannot understand sarcasm",
+        "Lack of context \u2014 a language model trained mostly on Western names struggling with African names",
+        "Overfitting \u2014 a student who crams past questions but cannot answer new ones in the real exam",
+        "Biased data \u2014 a model memorising training data but failing on new data"
+      ],
+      "correct": 2,
+      "short": "Overfitting is illustrated by a student who crams past questions but fails new ones.",
+      "solution": "### Why this is the answer\nThree limitations, each with its own illustration \u2014 and the distractors swap them:\n\n| Limitation | What it is | Illustration |\n|---|---|---|\n| **Biased Data \u2192 Biased Results** | Trained only on certain data types, so unfair or inaccurate | A language model trained mostly on **Western names** struggling with **African names** |\n| **Overfitting** | The model **memorises training data** but fails on new data | **A student who crams past questions but can't answer new ones** |\n| **Lack of Context** | Models don't **\"understand\"** like humans do | A chatbot giving wrong advice because it can't understand **sarcasm or emotion** |\n\nOnly option C pairs correctly.\n\n### Why the overfitting analogy is so apt for students\nIt is the exact opposite of the desired behaviour described in the live demo:\n*\"Model learns by **generalising, not memorising**.\"* An overfitted model is a\ncrammer \u2014 perfect on the past paper, lost in the exam hall.\n\n### Source\nDr. Aderonke Lawal, \"Limitations of AI Models\" slide."
+    },
+    {
+      "id": "swep_day4_20",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which type of machine learning is defined as learning from labelled data \u2014 data that already has the correct answer?",
+      "options": [
+        "Unsupervised learning",
+        "Reinforcement learning",
+        "Supervised learning",
+        "Deep learning"
+      ],
+      "correct": 2,
+      "short": "Supervised learning learns from labelled data.",
+      "solution": "### Why this is the answer\nThe lecture names three types of learning models:\n\n| Type | Learns from | Analogy given |\n|---|---|---|\n| **Supervised** | **Labelled data** \u2014 already has the correct answer | *\"Practising with **past questions and answers** before a test\"* |\n| **Unsupervised** | **Unlabelled data** \u2014 must find patterns itself | *\"Sorting your clothes by colour or size **without anyone telling you how**\"* |\n| **Reinforcement** | **Rewards and penalties** from an environment | *\"Learning to ride a bicycle \u2014 you **fall, adjust, and improve**\"* |\n\n**Supervised learning** is *\"like a **teacher** guiding a student by giving both\nthe question **and the correct answer** during practice.\"*\n\n### Its real-world examples\n- **Email spam detection** \u2014 trained on emails labelled \"spam\" / \"not spam\"\n- **Exam grading apps** \u2014 score answers against a bank of correct responses\n- **Face unlock** \u2014 trained with your labelled face data (your photo = \"you\")\n\n### Note\n**Deep learning** is not one of the three types named in this lecture.\n\n### Source\nDr. Aderonke Lawal, \"Types of Learning Models\" and \"Supervised Learning\" slides."
+    },
+    {
+      "id": "swep_day4_21",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which real-life example is correctly matched to its type of machine learning?",
+      "options": [
+        "Spotify playlist clustering \u2014 supervised learning",
+        "Google News grouping similar stories \u2014 reinforcement learning",
+        "Email spam detection \u2014 unsupervised learning",
+        "Self-driving cars learning to stay in lane by being rewarded \u2014 reinforcement learning"
+      ],
+      "correct": 3,
+      "short": "Self-driving cars learning through rewards is reinforcement learning.",
+      "solution": "### Why this is the answer\nEach learning type has its own examples in the deck, and the distractors move\nthem around:\n\n| Example | Correct type |\n|---|---|\n| Email spam detection | **Supervised** (labelled spam/not spam) |\n| Exam grading apps, Face unlock | **Supervised** |\n| **Spotify playlist clustering** | **Unsupervised** |\n| Customer segmentation, Google News grouping | **Unsupervised** |\n| **Self-driving cars rewarded for safe driving** | **Reinforcement** |\n| Game AI (**AlphaGo**), personalised ads | **Reinforcement** |\n\n### The test to apply\nAsk what the model is given:\n- Given **the right answers** \u2192 supervised\n- Given **nothing but data** \u2192 unsupervised\n- Given **rewards and penalties** \u2192 reinforcement\n\n*\"Learn to stay in lane or stop at lights **by being rewarded** for safe\ndriving\"* names the reward mechanism explicitly, so it can only be\nreinforcement learning.\n\n### Source\nDr. Aderonke Lawal, \"Supervised / Unsupervised / Reinforcement Learning\" slides."
+    },
+    {
+      "id": "swep_day4_22",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the abbreviation LLM stand for, as used in the ChatGPT demonstration?",
+      "options": [
+        "Large Language Model",
+        "Logical Learning Machine",
+        "Linear Learning Method",
+        "Layered Language Mechanism"
+      ],
+      "correct": 0,
+      "short": "LLM stands for Large Language Model.",
+      "solution": "### Why this is the answer\nDemo 2 is described as *\"ChatGPT or any **LLM (Large Language Model)**\"*, used to\nshow how AI **predicts the next word** in a sentence using **pattern recognition\nfrom large datasets**.\n\n### The demo's central takeaway\n> *\"**ChatGPT doesn't think, it predicts** based on learned text patterns.\"*\n\nStudents type a partial sentence (e.g. *\"Once upon a time, there was a ___\"*),\nguess the next word themselves, then reveal ChatGPT's prediction. The discussion\npoint: *\"how it works through **probability, not understanding**.\"*\n\nThis connects straight back to the stated limitation **Lack of Context** \u2014\nmodels don't *\"understand\"* like humans do.\n\n### The other demo, for contrast\n**Demo 1: Google Teachable Machine** (image recognition) at\n`teachablemachine.withgoogle.com` \u2014 no coding required, uses a webcam, record\n**20\u201330 samples per class**, then train and test live. It demonstrates\n**pattern recognition through examples** and that the model **generalises, not\nmemorises**.\n\n### Source\nDr. Aderonke Lawal, \"Demo 2: ChatGPT Prompt Prediction\" and \"Take Aways\" slides."
+    },
+    {
+      "id": "swep_day4_23",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the Google Teachable Machine demonstration, how many samples per class does the lecture instruct students to record?",
+      "options": [
+        "20\u201330 samples",
+        "5\u201310 samples",
+        "100\u2013150 samples",
+        "500 samples"
+      ],
+      "correct": 0,
+      "short": "Record 20\u201330 samples per class.",
+      "solution": "### Why this is the answer\nThe step-by-step instructions for **Demo 1** are explicit:\n\n1. Visit the site and click **'Get Started'**\n2. Choose **'Image Project' > 'Standard image model'**\n3. Rename Class 1 and Class 2 (e.g. **'Hand Up'**, **'Hand Down'**)\n4. **Record 20\u201330 samples per class** using your webcam\n5. Click **'Train Model'** to build the model\n6. Test predictions live using your gestures\n\n### Why the number matters pedagogically\nIt is small enough to do live in a lecture, yet enough for the model to\ngeneralise \u2014 demonstrating the key takeaway that *\"more quality data = better\nresults\"* without needing a dataset of thousands.\n\nThe follow-up question posed to the class: *\"**How did the model learn and how\ndid it predict?**\"*\n\n### The demo's stated takeaways\nDemonstrates **pattern recognition through examples**; the model **learns by\ngeneralising, not memorising**; *\"similar to how students study past\nquestions\"*; and it is a *\"great entry point to machine learning concepts\"*.\n\n### Source\nDr. Aderonke Lawal, \"Live Demo: Teachable Machine: Step-by-Step\" slide."
+    },
+    {
+      "id": "swep_day4_24",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the four challenges of Artificial Intelligence?",
+      "options": [
+        "Data privacy and security",
+        "Bias and fairness",
+        "Excessive electricity consumption by data centres",
+        "Job displacement"
+      ],
+      "correct": 2,
+      "short": "Electricity consumption by data centres is not among the four listed challenges.",
+      "solution": "### Why this is the answer\nA **NOT** question. The lecture lists exactly four challenges, each with an\nexample:\n\n| # | Challenge | Example given |\n|---|---|---|\n| 1 | **Data Privacy and Security** | A fitness app tracking location and health metrics could be **hacked or misused** |\n| 2 | **Bias and Fairness** | A **hiring algorithm** favouring one ethnic group due to biased historical data |\n| 3 | **Job Displacement** | **Chatbots** taking over customer service in banks or telecom companies |\n| 4 | **Lack of Regulation** | **Deepfakes** spreading fake news with no consequences |\n\nEnergy consumption appears nowhere.\n\n### The four ways forward, paired against them\n| Way forward | Example |\n|---|---|\n| **Ethical AI Development** | Building AI to **support teachers, not replace them** |\n| **Inclusive and Diverse Data** | Including **Nigerian voices** in voice recognition training |\n| **Clear Policies and Regulations** | **Nigeria's AI policy** for fair, safe use in healthcare and education |\n| **Human-AI Collaboration** | Doctors using AI for faster diagnosis but **making the final decision themselves** |\n\nEach remedy answers a challenge: inclusive data answers bias, policy answers the\nregulation gap, collaboration answers displacement.\n\n### Source\nDr. Aderonke Lawal, \"Challenges of Artificial Intelligence\" and \"Ways Forward\"\nslides."
+    },
+    {
+      "id": "swep_day4_25",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, how is AI transforming Electrical engineering specifically?",
+      "options": [
+        "Smart grids and IoT",
+        "Defect detection using computer vision",
+        "Precision farming and drone technology",
+        "Process optimization and AI-driven simulations"
+      ],
+      "correct": 0,
+      "short": "Electrical engineering is transformed through smart grids and IoT.",
+      "solution": "### Why this is the answer\nThe lecture maps AI onto each engineering discipline, and every distractor\nbelongs to a different one:\n\n| Field | How AI transforms it |\n|---|---|\n| **Civil** | Smart cities, **predictive maintenance** of infrastructure |\n| **Mechanical** | Robotics, intelligent control systems |\n| **Electrical** | **Smart grids, IoT** |\n| **Chemical** | Process optimization, AI-driven simulations |\n| **Metallurgical** | **Defect detection using computer vision** |\n| **Agricultural** | Precision farming, drone tech |\n| **Food** | Quality control, smart supply chains |\n| **Computer/Software** | ML models, algorithms, ethics |\n\n### Why this slide matters in a SWEP context\nSWEP 200 draws students from every engineering department, so the lecture gives\neach one its own entry point. It also echoes Day 3's PV lecture, where\n**forecasting, anomaly detection and fault diagnosis** were presented as the\nmeeting point of power engineering and data science.\n\n### Key takeaways from the same deck\nAI **learns from examples, not direct instructions**; a trained model makes\nuseful predictions; **more quality data = better results**; models need\nevaluation over time. *\"AI is powerful but **not perfect** \u2014 it needs **human\noversight** and continuous improvement.\"*\n\n### Source\nDr. Aderonke Lawal, \"How is AI transforming your field\" and \"Key Takeaways\"\nslides."
+    },
+    {
+      "id": "swep_day4_26",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who delivered the Demystifying Artificial Intelligence lecture, and from which department?",
+      "options": [
+        "Dr. W. A. Adebayo \u2014 Food Science and Technology",
+        "Dr. Aderonke Lawal \u2014 Computer Engineering Department",
+        "Mr. M. A. Ibrahim \u2014 Works and Services",
+        "Dr. F. K. Ariyo \u2014 Electronic and Electrical Engineering"
+      ],
+      "correct": 1,
+      "short": "Dr. Aderonke Lawal, Senior Lecturer, Computer Engineering Department, OAU.",
+      "solution": "### Why this is the answer\nThe title slide reads: *\"Demystifying Artificial Intelligence \u2014 What You Should\nKnow About the Machine Learning World. **Dr Aderonke Lawal, Senior Lecturer,\nComputer Engineering Department, OAU, Ile-Ife**.\"*\n\nThe Day 4 ledger confirms: **Demystifying AI (Dr. Lawal Aderonke)** \u2014 explained\nAI models, learning types (**supervised, unsupervised, reinforcement**), and\nAI's transformative role across engineering specializations, also addressing\ncritical challenges like **biased data, privacy and job displacement**.\n\n### Why option D is the sharpest distractor\n**Dr. F. K. Ariyo** is genuinely from **Electronic and Electrical Engineering**\n\u2014 but he delivered **Day 3's** Renewable Energy & PV Technology lecture. Both\nare real people with real departments; only the day differs.\n\n### Source\nDeck title slide; handwritten Day 4 ledger."
+    },
+    {
+      "id": "swep_day4_27",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The AI lecture opens with an analogy for how a model learns. Which analogy is used?",
+      "options": [
+        "A student who learns to solve problems by practising many examples",
+        "A library that stores every book ever written",
+        "A calculator that follows fixed arithmetic rules",
+        "A dictionary that looks up definitions on demand"
+      ],
+      "correct": 0,
+      "short": "A student who learns to solve problems by practising many examples.",
+      "solution": "### Why this is the answer\nImmediately after defining a model as a *mathematical representation of patterns\nlearned from data* that *functions like a **digital brain***, the lecture gives\nits analogy:\n\n> *\"A **student learns to solve problems by practicing many examples**.\"*\n\n### Why this analogy and not the others\nOptions A, C and D all describe **retrieval or fixed rules** \u2014 storing, looking\nup, or following instructions. The deck's whole thesis is the opposite:\n\n> **\"AI learns from examples, not direct instructions.\"**\n\nA calculator follows rules it was given; a model **infers** patterns it was never\ntold. That distinction is why the student analogy recurs across the deck \u2014 in\nsupervised learning (*\"practising with past questions and answers\"*), in\noverfitting (*\"a student who crams\"*), and in the Teachable Machine demo\n(*\"similar to how students study past questions\"*).\n\n### Source\nDr. Aderonke Lawal, \"What Is a Model in AI?\" and \"Key Takeaways\" slides."
+    },
+    {
+      "id": "swep_day4_28",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the exam-score prediction example, what are the four stages the lecture describes?",
+      "options": [
+        "Data collection, training the model, making a prediction, evaluation",
+        "Hypothesis, experiment, observation, conclusion",
+        "Input, processing, output, storage",
+        "Design, build, test, deploy"
+      ],
+      "correct": 0,
+      "short": "Data collection, training the model, making a prediction, evaluation.",
+      "solution": "### Why this is the answer\nThe lecture builds a model that predicts student exam scores from study habits,\nin four numbered stages:\n\n| # | Stage | What happens |\n|---|---|---|\n| 1 | **Data Collection** | Students: **study hours, attendance, past grades**, etc. |\n| 2 | **Training the Model** | The model learns how study habits **relate to** exam scores |\n| 3 | **Making a Prediction** | A new student inputs data (e.g. **5 hours of study/day**) and the model predicts a likely score |\n| 4 | **Evaluation** | **Compare the predicted score to the actual score** to check accuracy |\n\n### How it maps to the big picture\nThese four are the same loop in miniature: **Data \u2192 Training \u2192 Model/Prediction\n\u2192 Feedback**. Stage 4 is where feedback enters, producing the improved model.\n\n### The analogy given\n*\"Like a teacher guessing your likely performance based on your study routine \u2014\nbut the AI uses **hundreds of patterns**!\"*\n\n### Source\nDr. Aderonke Lawal, \"The Prediction Process \u2014 Can AI Predict Your Exam Score?\"\nslide."
+    },
+    {
+      "id": "swep_day4_29",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What three elements make up the Fire Triangle, described as the factors of combustion?",
+      "options": [
+        "Heat, fuel and oxygen",
+        "Heat, smoke and fuel",
+        "Fuel, oxygen and carbon dioxide",
+        "Heat, pressure and oxygen"
+      ],
+      "correct": 0,
+      "short": "The fire triangle is Heat + Fuel + Oxygen.",
+      "solution": "### Why this is the answer\n*\"**The Fire Triangle (Factors of Combustion):** Fire requires **three essential\nelements** to sustain combustion: **Heat + Fuel + Oxygen**.\"*\n\n### Why the triangle matters practically\nEvery method of fire control works by **breaking one side of the triangle**:\n\n| Method | Side removed | Example |\n|---|---|---|\n| **Cooling** | **Heat** | Lowering temperature below ignition point, e.g. using **water** |\n| **Smothering** | **Oxygen** | Cutting off oxygen supply, e.g. a **fire blanket** or **CO\u2082** |\n| **Starvation** | **Fuel** | Clearing, excavating or **isolating unburned combustible materials** away from the fire path |\n\nThree elements, three counter-measures, one-to-one. That symmetry is the whole\ntheory of firefighting in this lecture.\n\n### Why CO\u2082 is not a triangle element\nCarbon dioxide is an **extinguishing agent** \u2014 it works by *displacing* oxygen\n(smothering). Listing it as a component of combustion inverts its role.\n\n### How fire spreads\nThrough **conduction, convection, radiation and spontaneous combustion**. And a\nkey principle: *\"while different materials burn at different rates, **almost no\nmatter is entirely immune to burning** under sufficient temperature and heat\nexposure.\"*\n\n### Source\nMr. M. A. Ibrahim, \"Factors of Combustion & Fire Sources\" and \"Principles of\nFire Control\" sections."
+    },
+    {
+      "id": "swep_day4_30",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the historical fire outbreak statistics for OAU campus hostels, which hall records the highest occurrence of fire outbreaks?",
+      "options": [
+        "Akintola Hall",
+        "Alumni Hall",
+        "Moremi Hall",
+        "Mozambique Hall"
+      ],
+      "correct": 2,
+      "short": "Moremi Hall records the most frequent fire outbreaks.",
+      "solution": "### Why this is the answer\nThe statistical insight for **Obafemi Awolowo University (OAU)** hostels ranks\nfire outbreak occurrence in this exact order:\n\n| Rank | Hall |\n|---|---|\n| **1** | **Moremi Hall (most frequent)** |\n| 2 | Akintola Hall |\n| 3 | Alumni Hall |\n| 4 | Mozambique Hall |\n| 5 | Postgraduate (PG) Hall |\n\n### Why the ordering is examinable, not trivia\nEvery distractor is a **real hall on the same list** \u2014 this is a pure\nrank-position question, so knowing the halls is not enough; you must know the\norder. **Moremi first, PG last.**\n\n### The context it sits in\nThe statistic appears under **Causes of Fire Outbreaks**, immediately after\n**Negligence & Human Error** \u2014 carelessness, poor safety attitudes (the *\"I\ndon't care\" attitude*) and improper handling of combustible materials. The\nranking is presented as evidence of where that negligence concentrates.\n\n### Source\nMr. M. A. Ibrahim, \"Causes of Fire Outbreaks \u2014 Statistical Insight (OAU Campus\nHostels)\"."
+    },
+    {
+      "id": "swep_day4_31",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the classification of fires, which class is correctly matched with its fuel type?",
+      "options": [
+        "Class B \u2014 combustible metals such as potassium and sodium",
+        "Class C \u2014 highly flammable liquids such as kerosene and petrol",
+        "Class D \u2014 combustible metals such as potassium, sodium and calcium",
+        "Class A \u2014 flammable gases such as methane and acetylene"
+      ],
+      "correct": 2,
+      "short": "Class D covers combustible metals \u2014 potassium, sodium, calcium.",
+      "solution": "### Why this is the answer\nThe classification table runs A to E, and the distractors shuffle it:\n\n| Class | Fuel type | Examples |\n|---|---|---|\n| **A** | Free-burning **solid** combustible materials | Paper, wood, textiles, rubbish |\n| **B** | Highly flammable **liquids** | Kerosene, petrol, perfumes, alcohol |\n| **C** | Flammable **gases** | Methane, acetylene, butane |\n| **D** | Combustible **metals** | **Potassium, sodium, calcium** |\n| **E / Electrical** | **Energized electrical equipment** | Short-circuited wiring, appliances (**least frequent origin**) |\n\nOnly **Class D \u2192 combustible metals** is correct.\n\n### The memory ladder\n**A** solids \u2192 **B** liquids \u2192 **C** gases \u2192 **D** metals \u2192 **E** electrical.\nIt moves through the states of matter in order, then finishes with electricity.\n\n### The statistic worth noting\n**Class E / Electrical** is marked as the **least frequent origin** \u2014 a useful\ncounter to the common assumption that most fires start electrically.\n\n### Source\nMr. M. A. Ibrahim, \"Classification of Fires\" table."
+    },
+    {
+      "id": "swep_day4_32",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the standard colour code bands for extinguishers given in this lecture, which pairing is correct?",
+      "options": [
+        "BLACK \u2014 Carbon dioxide (CO\u2082) gas extinguisher",
+        "BLUE \u2014 Foam extinguisher",
+        "RED \u2014 Dry powder extinguisher",
+        "CREAM \u2014 Water extinguisher"
+      ],
+      "correct": 0,
+      "short": "BLACK indicates a carbon dioxide (CO\u2082) gas extinguisher.",
+      "solution": "### Why this is the answer\nThe standard colour code bands are given as:\n\n| Colour | Extinguisher |\n|---|---|\n| **RED** | **Water** |\n| **BLUE** | **Dry Powder** |\n| **CREAM / BUTTER COLOUR** | **Foam** |\n| **BLACK** | **Carbon Dioxide (CO\u2082) Gas** |\n\nOnly **BLACK \u2192 CO\u2082** is correctly paired; each distractor moves a real colour to\nthe wrong agent.\n\n### What each extinguisher contains\n- **Water** \u2014 expels water or dilute chemical solutions to **cool** Class A\n  fires; available as **air-compressed (stored pressure)** or **gas cartridge**\n- **Gas (CO\u2082)** \u2014 compressed carbon dioxide under high pressure; multipurpose for\n  **electrical and flammable liquid** fires; **leaves no residue**\n- **Dry Powder** \u2014 active chemicals such as **Sodium Bicarbonate** or\n  **Aluminium Sulphate** in powdered form; effective on Classes **A, B and C**\n- **Foam** \u2014 chemical solutions (**Aluminium Sulphate and Sodium Bicarbonate in\n  liquid form**) with **double expellants**, creating a **blanket** over\n  flammable liquids\n\n### Note for cross-day consistency\nDay 2's safety lecture described extinguishers as *red bodies with coloured\nmarkings* (green triangle, black square, cream label, blue circle). This lecture\nuses the **colour band** convention. When a question names the lecture, answer\nfrom that lecture's scheme.\n\n### Source\nMr. M. A. Ibrahim, \"Types of Fire Extinguishers & Color Codes\"."
+    },
+    {
+      "id": "swep_day4_33",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture distinguishes Comparative Safety from Absolute Safety. Which definition of ABSOLUTE SAFETY is correct?",
+      "options": [
+        "Immediately evacuating and exiting the hazardous building or area to guarantee personal protection",
+        "Attempting to manage, suppress or contain the situation while still inside the building where fire is present",
+        "Comparing the relative risk of two different fire classes before acting",
+        "Ensuring the building complies fully with fire safety policy before occupation"
+      ],
+      "correct": 0,
+      "short": "Absolute safety is immediate evacuation to guarantee personal protection.",
+      "solution": "### Why this is the answer\nThe two safety management concepts are defined in direct contrast:\n\n| Concept | Definition |\n|---|---|\n| **Comparative Safety** | *\"Attempting to **manage, suppress, or contain** the situation **while still inside** the building where fire is present\"* |\n| **Absolute Safety** | *\"**Immediately evacuating and exiting** the hazardous building/area to **guarantee personal protection**\"* |\n\nThe distinction is **stay and fight** versus **leave and survive**. Only\nevacuation *guarantees* protection \u2014 hence \"absolute\".\n\n### Where it fits in the response protocol\nThe handling steps are:\n- **Stay calm & raise alarm** \u2014 do not panic or cause a stampede; gently and\n  calmly inform occupants for **orderly evacuation**\n- **Structural & building safety** \u2014 mind architectural design and wall\n  partitioning to prevent rapid spread\n- **Electrical wiring safety** \u2014 proper, shielded, insulated wiring to avoid\n  short circuits and overheating\n- **Navigating smoke** \u2014 *\"**toxic smoke rises**; **lie flat on the floor and\n  crawl**\"* toward the nearest emergency exit; **do not walk upright**\n- **Emergency call** \u2014 contact the Fire Service as soon as it is safe\n\n### Source\nMr. M. A. Ibrahim, \"How to Handle and Control a Fire Outbreak \u2014 Safety\nManagement Concepts\"."
+    },
+    {
+      "id": "swep_day4_34",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the lecture instruct a person to do in a smoke-filled room, and why?",
+      "options": [
+        "Walk upright quickly, because smoke settles near the floor",
+        "Lie flat on the floor and crawl toward the nearest exit, because toxic smoke rises",
+        "Hold the breath and run in any direction to escape faster",
+        "Open all windows first to release the smoke before moving"
+      ],
+      "correct": 1,
+      "short": "Lie flat and crawl \u2014 toxic smoke rises.",
+      "solution": "### Why this is the answer\nThe instruction is explicit: *\"In a smoke-filled room, **do not walk upright**.\n**Toxic smoke rises**; **lie flat on the floor and crawl** toward the nearest\nemergency exit.\"*\n\n### The physics behind it\nHot smoke is **less dense** than the surrounding air, so it accumulates at\nceiling level and works downward. The **breathable air is lowest in the room** \u2014\nwhich is exactly why standing puts your head in the most toxic layer. Option A\ninverts the physics, which is what makes it dangerous rather than merely wrong.\n\n### Why smoke, not flame, is the priority\nThe rescue technique listed in the practical demonstrations is *\"how to lift and\ncarry an **unconscious victim affected by smoke inhalation** while asleep\"* \u2014\nsmoke incapacitates before fire reaches people.\n\n### The related practical guidance\n- **Extinguishing materials:** water, fire blankets, asbestos safety sheets\n- **Field improvisation:** if professional equipment is unavailable, **soak\n  heavy fabric/blankets in water** and use them to **smother** the oxygen supply\n- **Emergency access:** clear safety doors and emergency exit windows\n\n### Source\nMr. M. A. Ibrahim, \"How to Handle and Control a Fire Outbreak\" and \"Practical\nDemonstrations & Improvisation\"."
+    },
+    {
+      "id": "swep_day4_35",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the causes or sources of fire outbreaks in the lecture?",
+      "options": [
+        "Lightning and thunder as a natural igniter",
+        "House pests or rodents gnawing through electrical wires",
+        "Earth tremors fracturing underground gas pipelines",
+        "Carelessness and the \"I don't care\" safety attitude"
+      ],
+      "correct": 2,
+      "short": "Earth tremors fracturing gas pipelines is not a listed cause.",
+      "solution": "### Why this is the answer\nA **NOT** question. The causes given are:\n\n| Category | Cause |\n|---|---|\n| **Natural igniter** | **Lightning and thunder** |\n| **Biological/Animal** | **House pests or rodents gnawing through electrical wires** |\n| **Negligence & Human Error** | Carelessness, poor safety attitudes (**\"I don't care\" attitude**), improper handling of combustible materials |\n\nEarth tremors appear nowhere.\n\n### The framing principle\n*\"Fire outbreaks can stem from both **natural and artificial** causes.\"* The\nlecture opens by noting that the basic necessities of human life are **food,\nshelter and clothing**, and that the **human brain and sensory organs** \u2014 such\nas the **olfactory lobes for smell** \u2014 serve as **natural detectors** of\npotential dangers like fire outbreaks.\n\n### Common sources and volatile substances\n- **Flammable gases:** **acetylene**, **butane**, **methane**\n- **Volatile solvents and chemicals:** **perfumes**, **alcohol**, and illicit\n  substances like **Colorado** (Indian hemp / synthetic cannabis)\n\nNote that **perfumes and alcohol** also appear as **Class B** examples \u2014 the deck\nis consistent across both sections.\n\n### Source\nMr. M. A. Ibrahim, \"Introduction & Fundamental Concepts\" and \"Causes of Fire\nOutbreaks\"."
+    },
+    {
+      "id": "swep_day4_36",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Fire can be controlled by breaking a side of the fire triangle. Which control method is correctly described?",
+      "options": [
+        "Cooling \u2014 cutting off the supply of oxygen using a fire blanket",
+        "Smothering \u2014 lowering the temperature below the ignition point using water",
+        "Starvation \u2014 removing or isolating unburned combustible materials away from the path of the fire",
+        "Starvation \u2014 reducing the oxygen concentration with carbon dioxide"
+      ],
+      "correct": 2,
+      "short": "Starvation removes the fuel \u2014 isolating unburned combustibles from the fire path.",
+      "solution": "### Why this is the answer\nThree control methods, each breaking a different side of the triangle:\n\n| Method | Side broken | How |\n|---|---|---|\n| **Cooling** | **Heat** | Lowering the temperature **below the ignition point**, e.g. using **water** |\n| **Smothering** | **Oxygen** | **Cutting off the oxygen supply**, e.g. a **fire blanket** or **CO\u2082** |\n| **Starvation** | **Fuel** | **Removing what is making the fire continuously burn** \u2014 clearing, excavating or **isolating unburned combustible materials** away from the fire path |\n\nOnly option C is correct. Options A and B **swap cooling and smothering**, and\noption D gives starvation an oxygen mechanism that belongs to smothering.\n\n### The naming logic\nThe word tells you the side: you *cool* heat, you *smother* oxygen, you *starve*\nfuel. If you can recall the triangle \u2014 **heat, fuel, oxygen** \u2014 you can\nreconstruct all three methods without memorising them separately.\n\n### Field application\nThe improvisation guidance applies **smothering** directly: soak heavy\nfabric/blankets in water and use them to **cut off the oxygen supply** from\nflames.\n\n### Source\nMr. M. A. Ibrahim, \"Principles of Fire Control\"."
+    },
+    {
+      "id": "swep_day4_37",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The Fire Awareness lecture states that the human body itself acts as a natural detector of danger. Which organ is specifically named?",
+      "options": [
+        "The eyes, for detecting smoke",
+        "The olfactory lobes, for smell",
+        "The ears, for detecting alarms",
+        "The skin, for detecting radiant heat"
+      ],
+      "correct": 1,
+      "short": "The olfactory lobes, which detect smell.",
+      "solution": "### Why this is the answer\n*\"The **human brain and sensory organs** (such as the **olfactory lobes for\nsmell**) serve as **natural detectors of potential dangers** that could lead to\ndisasters like fire outbreaks.\"*\n\nOnly the **olfactory lobes** are named specifically.\n\n### Why smell, of all the senses\nSmell detects fire **earliest**. You can smell burning insulation or smouldering\nmaterial before there is visible flame, visible smoke, or an audible alarm \u2014 and\ncrucially, **while asleep**, smell is not entirely disabled the way sight is.\nThat matters given the lecture's own rescue scenario of a victim overcome by\n**smoke inhalation while asleep**.\n\n### The framing it belongs to\nThe introduction establishes that the basic necessities of human life are\n**food, shelter and clothing**, then presents the body's sensory apparatus as the\nfirst line of fire detection \u2014 before any engineered detector.\n\n### Source\nMr. M. A. Ibrahim, \"Introduction & Fundamental Concepts\"."
+    },
+    {
+      "id": "swep_day4_38",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which extinguisher type is described as multipurpose for electrical and flammable liquid fires, leaving no residue?",
+      "options": [
+        "Water extinguisher",
+        "Foam extinguisher",
+        "Dry powder extinguisher",
+        "Gas (CO\u2082) extinguisher"
+      ],
+      "correct": 3,
+      "short": "The CO\u2082 gas extinguisher is multipurpose and leaves no residue.",
+      "solution": "### Why this is the answer\n*\"**Gas (CO\u2082) Extinguishers:** Contain **compressed carbon dioxide gas under\nhigh pressure**. **Multipurpose for electrical and flammable liquid fires**.\n**Leave no residue**.\"*\n\n### Why \"no residue\" matters\nIt is the reason CO\u2082 is chosen for **electrical equipment** \u2014 servers,\nswitchgear, laboratory instruments. Powder and foam would contaminate or corrode\nthe equipment they save; CO\u2082 simply disperses.\n\n### How it works\nCO\u2082 extinguishes by **smothering** \u2014 displacing oxygen, which breaks the oxygen\nside of the fire triangle. The Principles of Fire Control name it explicitly as\na smothering agent alongside the fire blanket.\n\n### The comparison set\n| Extinguisher | Distinctive feature |\n|---|---|\n| **Water** | Cools; **air-compressed** or **gas cartridge** types |\n| **Foam** | **Double expellants**, forms a **blanket** over flammable liquids |\n| **Dry Powder** | Sodium Bicarbonate or Aluminium Sulphate in **powdered** form; Classes **A, B, C** |\n| **Gas (CO\u2082)** | **Multipurpose**, electrical + liquids, **no residue** |\n\nNote that foam and dry powder share the same active chemicals \u2014 **Aluminium\nSulphate and Sodium Bicarbonate** \u2014 differing in **liquid** versus **powdered**\nform.\n\n### Source\nMr. M. A. Ibrahim, \"Types of Fire Extinguishers & Color Codes\"."
+    },
+    {
+      "id": "swep_day4_39",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who delivered the Fire Awareness and Prevention session on Day 4?",
+      "options": [
+        "Dr. W. A. Adebayo",
+        "Dr. Aderonke Lawal",
+        "Mr. M. A. Ibrahim",
+        "Prof. A. A. Adeleke"
+      ],
+      "correct": 2,
+      "short": "Mr. M. A. Ibrahim delivered the Fire Awareness and Prevention session.",
+      "solution": "### Why this is the answer\nThe Day 4 ledger records **Fire Awareness & Prevention (Mr. M. A. Ibrahim)**,\nnoting that he detailed the **factors of combustion**, **fire classifications\n(Class A to E)**, and the correct identification of fire extinguishers **by\ncolour code** (e.g. **Red for water, Blue for dry powder**), concluding with\npractical safety protocols for handling outbreaks, including **safe evacuation\ntechniques and emergency rescue demonstrations**.\n\nThe notes themselves are headed: *\"FIRE AWARENESS AND PREVENTION \u2014 Speaker:\n**Mr. M. A. Ibrahim**.\"*\n\n### Note the title\nHe is the only Day 4 speaker titled **Mr.** \u2014 the other two are **Dr.** That\nalone distinguishes him.\n\n### Why option D is the trap\n**Prof. A. A. Adeleke** also lectured on safety \u2014 but that was **Day 2's\nWorkshop and Industrial Safety**, covering PPE standards, the hierarchy of\ncontrol and safety signage. Two different safety lectures, two different days,\ntwo different speakers.\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 4; notes header."
+    },
+    {
+      "id": "swep_day4_40",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which Day 4 statistic or figure is correctly stated?",
+      "options": [
+        "Graphene is 200 times stronger than steel; the 1IR ran 1760\u20131840 in Britain; Moremi Hall records the most frequent OAU hostel fires",
+        "Graphene is 20 times stronger than steel; the 1IR ran 1860\u20131930; Akintola Hall records the most frequent fires",
+        "Graphene is 200 times thinner than steel; the 2IR began in the 1960s; PG Hall records the most frequent fires",
+        "Graphene is one million times stronger than steel; the 3IR ran 1760\u20131840; Alumni Hall records the most frequent fires"
+      ],
+      "correct": 0,
+      "short": "Graphene 200\u00d7 stronger than steel; 1IR 1760\u20131840 Britain; Moremi Hall most frequent.",
+      "solution": "### Why this is the answer\nThis question gathers Day 4's three headline figures into one check. Only option\nA states all three correctly:\n\n| Figure | Correct value | Source lecture |\n|---|---|---|\n| **Graphene strength** | **200 times stronger than steel** (and **one million times thinner than human hair**) | Food Science / 4IR |\n| **First Industrial Revolution** | **1760\u20131840**, in **Britain** | Food Science / 4IR |\n| **Most frequent OAU hostel fires** | **Moremi Hall** | Fire Awareness |\n\n### How each distractor breaks\n- **B** \u2014 shrinks graphene to 20\u00d7, moves the 1IR to the **2IR's** dates\n  (1860\u20131930), and promotes Akintola (rank **2**) to first.\n- **C** \u2014 swaps graphene's *strength* and *thinness* comparisons, gives the 2IR\n  the **3IR's** start (1960s), and names PG Hall, which is **last (rank 5)**.\n- **D** \u2014 applies the \"one million times\" figure to the wrong property (it is\n  **thinness vs human hair**, not strength vs steel), gives the 3IR the 1IR's\n  dates, and names Alumni (rank **3**).\n\n### The lesson\nEvery wrong element is a **real Day 4 number attached to the wrong thing**. With\nstatistics, the danger is never the number you have never seen \u2014 it is the one\nyou have seen somewhere else.\n\n### Source\nDr. W. A. Adebayo, \"Physical MegaTrend\" and \"First Industrial Revolution\";\nMr. M. A. Ibrahim, \"Statistical Insight (OAU Campus Hostels)\"."
+    },
+    {
+      "id": "swep_day5_01",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The Day 5 session was delivered by a representative of which organisation?",
+      "options": [
+        "National Universities Commission (NUC)",
+        "Industrial Training Fund (ITF)",
+        "Nigeria Employers' Consultative Association (NECA)",
+        "Council for the Regulation of Engineering in Nigeria (COREN)"
+      ],
+      "correct": 2,
+      "short": "The Nigeria Employers' Consultative Association (NECA).",
+      "solution": "### Why this is the answer\nThe Day 5 note is headed *\"Employers' Expectation from Fresh Graduates in the\n21st-Century Job Market \u2014 Speaker: Representative, **Nigeria Employers'\nConsultative Association**.\"*\n\n### Why the organisation matters to the content\nThis is the only SWEP lecture delivered from the **employers' side of the\ntable**. Every other day was taught by academics or institutional officers;\nDay 5 is industry telling students directly what it looks for. That is why the\nnote reads as expectations and warnings rather than theory \u2014 including the blunt\nline *\"Nobody is your best friend at work.\"*\n\n### The other bodies, and where they actually appear\n| Body | Where it features in SWEP |\n|---|---|\n| **NUC** | Day 1 \u2014 approved SWEP/SIWES for **SET** courses; allocated credit units with ITF |\n| **ITF** | Day 1 \u2014 established **1971** under Act 47; Day 5 \u2014 *\"meet all **ITF requirements** for valid participation\"* |\n| **COREN** | Day 3 \u2014 *\"will now regulate admissions into our engineering programmes\"* |\n\nAll three are real SWEP organisations, which is exactly what makes them good\ndistractors.\n\n### Source\nSWEP Day 5 note header; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_02",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, what is SIWES properly meant to be?",
+      "options": [
+        "A period to gain experience that should be converted into verifiable skills in order to guarantee employability",
+        "A break from academic activities before final year",
+        "A compulsory formality required only for graduation clearance",
+        "An opportunity to secure immediate permanent employment"
+      ],
+      "correct": 0,
+      "short": "A period to convert experience into verifiable skills that guarantee employability.",
+      "solution": "### Why this is the answer\nThe note opens by correcting a misconception: *\"SIWES is **not just an\nindustrial training or a means of escape from academic activities**, but a\nperiod to gain experience that should be **converted into verifiable skills** in\norder to **guarantee employability**.\"*\n\nNote the operative word: **verifiable**. Experience alone is not the deliverable\n\u2014 evidence of skill is.\n\n### The second core concept\n*\"The SIWES period is for **building human networks**, as **network brings good\nnet worth**.\"*\n\nTwo purposes, then: **verifiable skills** and **human networks**. Both recur\nthrough the rest of the note \u2014 the portfolio serves the first, networking skills\nthe second.\n\n### The view the note explicitly rejects\nThe phrase *\"a means of escape from academic activities\"* appears in the note\nprecisely so it can be denied. It is the attitude the lecture exists to correct.\n\n### Source\nDay 5 note, \"Core Concepts of SIWES\"."
+    },
+    {
+      "id": "swep_day5_03",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What mindset shift does the lecture ask students to make?",
+      "options": [
+        "See yourself as an employee entitled to a salary",
+        "See yourself as a temporary visitor to the organisation",
+        "See yourself as an observer with no responsibilities",
+        "See yourself as a professional in training, not just a mere student, being equipped to create value and build evidence"
+      ],
+      "correct": 3,
+      "short": "See yourself as a professional in training, not a mere student.",
+      "solution": "### Why this is the answer\n*\"See yourself as a **professional in training**, not just a mere student. You\nare being **equipped to create value and build evidence**.\"*\n\nThe handwritten ledger reinforces it: the session *\"emphasised transitioning\nfrom a **student mindset** to a **'professional in training'** to build\n**verifiable skills and networks**.\"*\n\n### The two verbs that define the shift\n| Verb | What it means in practice |\n|---|---|\n| **Create value** | You are there to contribute, not merely to watch |\n| **Build evidence** | Every contribution should leave a documented trace |\n\n### Why this is the note's hinge\nEvery later instruction follows from it. A *student* collects tasks and waits to\nbe graded; a *professional in training* documents outcomes, asks strategic\nquestions, protects confidential information and manages a reporting line. The\nmindset dictates the behaviour \u2014 which is why the note places it before the\nchecklists rather than after them.\n\n### Source\nDay 5 note, \"Mindset Shift\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_04",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How many learning goals does the lecture instruct students to define for their SIWES programme?",
+      "options": [
+        "1 to 2 goals",
+        "10 goals",
+        "6 to 8 goals",
+        "3 to 5 goals"
+      ],
+      "correct": 3,
+      "short": "Define 3 to 5 learning goals.",
+      "solution": "### Why this is the answer\nUnder **Things to Do Before SIWES**: *\"**Define 3 to 5 learning goals** for your\nSIWES program.\"*\n\nThe same figure returns at the very end, under the **Twelve Weeks Action Plan**:\n*\"**Set 3-5 goals**.\"* The note states it twice \u2014 before the attachment and as\nthe first item of the action plan \u2014 which is a strong signal it is examinable.\n\n### The three numbers of Day 5\n| Number | What it counts |\n|---|---|\n| **3 to 5** | **Learning goals** |\n| **4 to 5** | **Days** in the critical first period |\n| **12** | **Weeks** in the action plan |\n\nThese are the only quantities in the entire note, and they are easily swapped\nunder pressure. **Goals 3-5, days 4-5, weeks 12.**\n\n### Why so few goals\nThree to five is small enough to pursue seriously across twelve weeks and to\nevidence individually in a portfolio. A longer list would produce attendance\nrather than achievement.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\" and \"Twelve Weeks Action Plan\"."
+    },
+    {
+      "id": "swep_day5_05",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the things to do BEFORE SIWES?",
+      "options": [
+        "Make research on the assigned organisation",
+        "Know your reporting line \u2014 whom to always report to",
+        "Keep a daily learning record of tasks completed",
+        "Prepare your professional wardrobe and avoid casual dressing"
+      ],
+      "correct": 2,
+      "short": "Keeping a daily learning record belongs to the first days DURING SIWES.",
+      "solution": "### Why this is the answer\nA **NOT** question turning on the note's deliberate before/during split.\n\n**Things to Do BEFORE SIWES:**\n- Make **research** on the assigned organisation\n- Update your **CV and social media profiles** (e.g. **LinkedIn**; use a\n  **professional email address**)\n- Define **3 to 5 learning goals**\n- Prepare your **professional wardrobe**; avoid casual dressing\n- Have a **daily routine**, prepare notebooks and necessary documents\n- Know your **reporting line** \u2014 whom to always report to\n- Make sure to get a **Role Title** \u2014 know your responsibility\n- Meet all **ITF requirements** for valid participation\n\n**Keep a daily learning record** appears under *What to Do During the First 4 to\n5 Days*, not before.\n\n### The distinction being tested\nYou cannot *record learning* before the attachment begins \u2014 there is nothing yet\nto record. What you prepare beforehand is the **notebook**; what you do\nafterwards is **fill it**. The note lists \"prepare notebooks\" before and \"keep a\ndaily learning record\" during, and that pairing is the trap.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\" and \"What to Do During the First 4 to 5\nDays in SIWES\"."
+    },
+    {
+      "id": "swep_day5_06",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture gives specific guidance on the first days of SIWES. What period does it cover, and what does it say to do from day one?",
+      "options": [
+        "The first 4 to 5 days; observe, listen, and introduce yourself properly to the audience",
+        "The first 1 to 2 days; sit quietly and avoid drawing attention",
+        "The first 2 weeks; complete as many tasks as possible to impress",
+        "The first month; request a formal performance review"
+      ],
+      "correct": 0,
+      "short": "The first 4 to 5 days: observe, listen and introduce yourself properly.",
+      "solution": "### Why this is the answer\nThe section is headed **\"What to Do During the First 4 to 5 Days in SIWES\"**,\nand its opening instruction is: *\"**From day one: Observe, listen, and introduce\nyourself properly** to the audience.\"*\n\n### The full first-days checklist\n- **From day one:** observe, listen, introduce yourself properly\n- **Ask questions** \u2014 *\"career development is a **strategic effort**\"*. The\n  examples given: *Who is my supervisor? What is my responsibility? **What does\n  success look like?***\n- Keep a **daily learning record** and **dress appropriately**\n- Always **protect confidential information** and **always ask questions**\n\n### The posture the note rejects\nThe note says the opposite of sitting quietly. **Asking questions** is repeated\n**twice** in four bullets \u2014 once with examples and once as a closing emphasis.\nSilence is not the recommended posture; **strategic enquiry** is.\n\n### The best of the three sample questions\n*\"**What does success look like?\"** \u2014 it converts a vague placement into a\nmeasurable target, which is what the whole note is driving at.\n\n### Source\nDay 5 note, \"What to Do During the First 4 to 5 Days in SIWES\"."
+    },
+    {
+      "id": "swep_day5_07",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which set correctly lists what employers notice, observe or expect?",
+      "options": [
+        "Punctuality, communication, initiative, team work, professionalism and integrity",
+        "Punctuality, digital literacy, networking, work ethics and presentation skills",
+        "Initiative, technical skills acquisition, team work and communication skills",
+        "Integrity, observation, reflection, documentation and practice"
+      ],
+      "correct": 0,
+      "short": "Punctuality, communication, initiative, team work, professionalism, integrity.",
+      "solution": "### Why this is the answer\n**What Employers Notice, Observe, or Expect** \u2014 exactly six items:\n\n| # | Trait |\n|---|---|\n| 1 | **Punctuality** |\n| 2 | **Communication** (listening and asking questions) |\n| 3 | **Initiative** |\n| 4 | **Team work** (supporting colleagues) |\n| 5 | **Professionalism** |\n| 6 | **Integrity** |\n\n### Why the distractors are dangerous\nThe note contains **three separate lists** that overlap heavily, and each wrong\noption blends two of them:\n\n| List | Contents |\n|---|---|\n| **Employers notice** | Punctuality \u00b7 communication \u00b7 initiative \u00b7 team work \u00b7 professionalism \u00b7 integrity |\n| **Skills to develop** | Technical skills \u00b7 communication \u00b7 **digital literacy** \u00b7 team work \u00b7 **speaking/presentation** \u00b7 **work ethics** \u00b7 **networking** |\n| **Learning loop** | **Observe \u00b7 ask questions/practice \u00b7 document \u00b7 reflect** |\n\n*Communication* and *team work* appear in two lists; *digital literacy*,\n*networking* and *presentation* belong only to skills; *observe* and *reflect*\nonly to the loop.\n\n### The warning attached\n> **Beware of office politics! Nobody is your best friend at work.**\n\n### Source\nDay 5 note, \"What Employers Notice, Observe, or Expect\"."
+    },
+    {
+      "id": "swep_day5_08",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the correct order of the four stages of the SIWES Learning Loop?",
+      "options": [
+        "Observe \u2192 ask questions / practice \u2192 document experiences \u2192 reflect",
+        "Reflect \u2192 observe \u2192 document \u2192 practice",
+        "Document \u2192 observe \u2192 reflect \u2192 practice",
+        "Ask questions \u2192 reflect \u2192 observe \u2192 document"
+      ],
+      "correct": 0,
+      "short": "Observe \u2192 ask questions/practice \u2192 document experiences \u2192 reflect.",
+      "solution": "### Why this is the answer\nThe **SIWES Learning Loop** \u2014 *\"using every assignment and activity as a\nlearning capability\"* \u2014 runs:\n\n| # | Stage |\n|---|---|\n| 1 | **Observe** |\n| 2 | **Ask questions / Practice** |\n| 3 | **Document experiences** |\n| 4 | **Reflect** |\n\nThe handwritten ledger confirms the same order: *\"the 'SIWES learning loop'\n(**observe, practice, document, reflect**) to convert daily activities into\n**tangible capabilities** rather than just completing tasks.\"*\n\n### Why the sequence is logical\nYou must **observe** before you know what to ask; you **practise** what you\nasked about; you **document** what you practised; and only then can you\n**reflect** on documented evidence rather than vague memory. Reflection first \u2014\nas that alternative proposes \u2014 would have nothing to work on.\n\n### The instruction attached\n> *\"**Don't just collect tasks, but collate evidence** (How, when & what). Have\n> a **digital portfolio**. Do not have a **career mismatch**.\"*\n\n**Collect tasks** versus **collate evidence** is the distinction the whole loop\nexists to enforce.\n\n### Source\nDay 5 note, \"SIWES Learning Loop\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_09",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture warns students about a specific workplace hazard in social terms. What is the warning?",
+      "options": [
+        "Beware of office politics \u2014 nobody is your best friend at work",
+        "Beware of overtime \u2014 never work beyond official hours",
+        "Beware of supervisors \u2014 avoid reporting to more than one person",
+        "Beware of colleagues \u2014 never share any information at all"
+      ],
+      "correct": 0,
+      "short": "Beware of office politics! Nobody is your best friend at work.",
+      "solution": "### Why this is the answer\nThe note's warning is stated bluntly, immediately after the list of traits\nemployers look for:\n\n> **Note: Beware of office politics! Nobody is your best friend at work.**\n\n### How to read it correctly\nIt is a caution about **discretion**, not hostility. Read alongside two other\ninstructions, its meaning is clear:\n\n- *\"Always **protect confidential information**\"* \u2014 guard what you disclose\n- *\"The SIWES period is for **building human networks**, as **network brings\n  good net worth**\"* \u2014 but *do* build relationships\n\nSo the note simultaneously tells students to **network deliberately** and to\n**not confide indiscriminately**. That alternative overstates it into never sharing\nanything, which would contradict the networking instruction entirely.\n\n### A related instruction, not a hazard\nKnowing your **reporting line** \u2014 *\"whom to always report to\"* \u2014 is listed as a\npositive preparation task, not a hazard to avoid.\n\n### Source\nDay 5 note, \"What Employers Notice, Observe, or Expect\"."
+    },
+    {
+      "id": "swep_day5_10",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is listed under \"Skills to Develop\" rather than under what employers notice?",
+      "options": [
+        "Punctuality",
+        "Integrity",
+        "Digital literacy",
+        "Professionalism"
+      ],
+      "correct": 2,
+      "short": "Digital literacy is listed under Skills to Develop.",
+      "solution": "### Why this is the answer\n**Skills to Develop** \u2014 seven items:\n\n| # | Skill |\n|---|---|\n| 1 | Technical skills acquisition |\n| 2 | Communication skills |\n| 3 | **Digital literacy** |\n| 4 | Team work |\n| 5 | Speaking / Presentation skills |\n| 6 | Work ethics |\n| 7 | Networking skills |\n\n**Punctuality, integrity and professionalism** belong to **What Employers\nNotice, Observe, or Expect** \u2014 not to this list.\n\n### The conceptual difference between the two lists\n| List | Nature |\n|---|---|\n| **Employers notice** | **Behaviours and character** \u2014 how you conduct yourself |\n| **Skills to develop** | **Capabilities** \u2014 what you can do |\n\nPunctuality and integrity are not *skills* you train; they are dispositions you\ndemonstrate. Digital literacy and presentation *are* trainable capabilities.\nThat is why the note separates them.\n\n### The overlap to watch\n**Communication** and **team work** appear on **both** lists \u2014 they are\nsimultaneously observed and developed, which is why they cannot be used to tell\nthe lists apart.\n\n### Source\nDay 5 note, \"Skills to Develop\" and \"What Employers Notice, Observe, or Expect\"."
+    },
+    {
+      "id": "swep_day5_11",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the lecture say about networks, in the phrase used in the note?",
+      "options": [
+        "Network brings good net worth",
+        "Network guarantees immediate employment",
+        "Network replaces the need for technical skills",
+        "Network is only useful after graduation"
+      ],
+      "correct": 0,
+      "short": "Network brings good net worth.",
+      "solution": "### Why this is the answer\n*\"The SIWES period is for **building human networks**, as **network brings good\nnet worth**.\"*\n\nThe wordplay is deliberate \u2014 **net\u00b7work \u2192 net\u00b7worth** \u2014 which is precisely why it\nis memorable and examinable.\n\n### Where it reappears\n**Networking skills** is the final entry in **Skills to Develop**, and the\nbefore-SIWES checklist requires updating your **LinkedIn profile** \u2014 a\nnetworking instrument. The 12-week plan then asks for *\"a CV and **LinkedIn\nprofile** tailored to your goals\"*. The theme runs the length of the note.\n\n### Why that alternative is decisively wrong\nThe note never opposes networks to skills \u2014 it pairs them. The two stated\npurposes of SIWES are *\"**verifiable skills**\"* **and** *\"building **human\nnetworks**\"*. The ledger records both together: *\"to build **verifiable skills\nand networks**.\"*\n\nThey are complements, not substitutes.\n\n### Source\nDay 5 note, \"Core Concepts of SIWES\"."
+    },
+    {
+      "id": "swep_day5_12",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the lecture instruct regarding CVs and online presence before SIWES?",
+      "options": [
+        "Update your CV and social media profiles, e.g. LinkedIn, and use a professional email address",
+        "Delete all social media accounts to avoid distraction",
+        "Wait until after SIWES before writing a CV",
+        "Use a single generic CV for every organisation"
+      ],
+      "correct": 0,
+      "short": "Update your CV and social profiles (e.g. LinkedIn) and use a professional email address.",
+      "solution": "### Why this is the answer\nAmong the things to do **before** SIWES: *\"**Update your CV and social media\nprofiles** (e.g. **LinkedIn**; use a **professional email address**).\"*\n\nThree components: the **CV**, the **profiles**, and the **email address**.\n\n### Why the email address earns its own mention\nIt is the first thing an employer sees when you make contact \u2014 and an\nunprofessional address undermines every other preparation. It is a small detail\nthe note singles out deliberately.\n\n### A claim the note rules out\nThe **12-week action plan** requires *\"a CV and LinkedIn profile **tailored to\nyour goals**\"*. A single generic CV is the opposite of tailoring, and it would\nalso conflict with the instruction to *\"make research on the assigned\norganisation\"*.\n\n### The connected warning\n> *\"Do not have a **career mismatch**.\"*\n\nTailoring your CV to your stated goals, and your goals to the organisation you\nresearched, is how a mismatch is avoided.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\" and \"Twelve Weeks Action Plan\"."
+    },
+    {
+      "id": "swep_day5_13",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which questions does the lecture give as examples of strategic questions to ask during the first days?",
+      "options": [
+        "Who is my supervisor? What is my responsibility? What does success look like?",
+        "When is payday? How much leave do I get? Can I work from home?",
+        "Who is the highest paid here? Who is likely to be promoted? Who dislikes whom?",
+        "Can I skip the logbook? Is attendance compulsory? When can I leave early?"
+      ],
+      "correct": 0,
+      "short": "Who is my supervisor? What is my responsibility? What does success look like?",
+      "solution": "### Why this is the answer\nThe note states: *\"**Ask questions** (career development is a **strategic\neffort**). Examples: **Who is my supervisor? What is my responsibility? What\ndoes success look like?**\"*\n\n### What makes these strategic\nEach one converts uncertainty into something actionable:\n\n| Question | What it establishes |\n|---|---|\n| **Who is my supervisor?** | Your **reporting line** \u2014 also a before-SIWES item |\n| **What is my responsibility?** | Your **Role Title** and scope |\n| **What does success look like?** | The **standard you will be judged against** |\n\nThe third is the most valuable, because without it you can work hard and still\nmiss what the organisation actually wanted.\n\n### The behaviour the note disqualifies\nThose are exactly the enquiries the note's warning targets: *\"**Beware of office\npolitics!** Nobody is your best friend at work.\"* Asking who dislikes whom is\nparticipating in politics, not avoiding it.\n\n### Source\nDay 5 note, \"What to Do During the First 4 to 5 Days in SIWES\"."
+    },
+    {
+      "id": "swep_day5_14",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The Twelve Weeks Action Plan contains a specific set of instructions. Which of the following is among them?",
+      "options": [
+        "Build a job portfolio and document evidence",
+        "Change your organisation if the first week is difficult",
+        "Delay skill-building until the final two weeks",
+        "Focus only on technical skills and ignore soft skills"
+      ],
+      "correct": 0,
+      "short": "Build a job portfolio and document evidence.",
+      "solution": "### Why this is the answer\nThe **Twelve Weeks Action Plan** lists six instructions:\n\n| # | Instruction |\n|---|---|\n| 1 | **Set 3-5 goals** |\n| 2 | Have a **CV and LinkedIn profile tailored to your goals** |\n| 3 | **Build a job portfolio \u2014 document evidence** |\n| 4 | **Build technical skills** |\n| 5 | **Document evidence of skills** |\n| 6 | **Close your skill gap**, develop, and improve consistently |\n\n### Note how often documentation appears\n**Three** of the six items concern evidence \u2014 building the portfolio,\ndocumenting evidence, and documenting evidence *of skills*. This echoes the\nlearning loop's instruction: *\"**Don't just collect tasks, but collate\nevidence** (How, when & what). Have a **digital portfolio**.\"*\n\nEvidence is the single most repeated idea in the entire Day 5 note.\n\n### A claim the note rules out\nThe ledger records the plan as *\"acquiring **both technical and soft skills**\"*,\nand **Skills to Develop** lists communication, digital literacy, team work,\npresentation, work ethics and networking alongside technical acquisition.\n\n### Source\nDay 5 note, \"Twelve Weeks Action Plan\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_15",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the lecture mean by \"collate evidence\" rather than \"collect tasks\"?",
+      "options": [
+        "Gather certificates from other organisations to boost your CV",
+        "Collect signatures from every staff member you meet",
+        "Record how, when and what you did, building a digital portfolio rather than merely completing assignments",
+        "Keep copies of the organisation's confidential documents as proof"
+      ],
+      "correct": 2,
+      "short": "Record how, when and what you did, in a digital portfolio.",
+      "solution": "### Why this is the answer\nThe note's instruction is precise: *\"**Don't just collect tasks, but collate\nevidence** (**How, when & what**). Have a **digital portfolio**. Do not have a\n**career mismatch**.\"*\n\nThe three-part bracket is the definition: evidence means recording **how** you\ndid it, **when**, and **what** it was.\n\n### Task-collecting vs evidence-collating\n| Collecting tasks | Collating evidence |\n|---|---|\n| \"I worked in the maintenance unit\" | \"In week 3, I diagnosed and documented 12 motor faults using X procedure\" |\n| Unverifiable | **Verifiable** |\n\nThat word again \u2014 the note's opening promise was converting experience into\n**verifiable** skills. The portfolio is the mechanism.\n\n### A seriously wrong approach\nIt would violate an explicit instruction: *\"Always **protect confidential\ninformation**.\"* Taking an organisation's confidential documents as personal\nproof is a breach of the **integrity** employers are said to be watching for.\n\n### Source\nDay 5 note, \"SIWES Learning Loop\"."
+    },
+    {
+      "id": "swep_day5_16",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the note, why must a student get a Role Title before or at the start of SIWES?",
+      "options": [
+        "To negotiate a higher stipend",
+        "To be listed on the organisation's payroll",
+        "To qualify for ITF reimbursement",
+        "To know your responsibility"
+      ],
+      "correct": 3,
+      "short": "A Role Title establishes what your responsibility is.",
+      "solution": "### Why this is the answer\nThe instruction reads: *\"Make sure to get a **Role Title** \u2014 **know your\nresponsibility**.\"*\n\n### Why this is more than administrative\nWithout a defined role, a SIWES student drifts into whatever odd jobs happen to\nneed doing \u2014 which produces attendance, not capability. A Role Title:\n\n- anchors the **3 to 5 learning goals** to something concrete\n- makes *\"What is my responsibility?\"* answerable on day one\n- gives the **portfolio** a heading under which evidence can accumulate\n- guards against the note's own warning: *\"Do not have a **career mismatch**.\"*\n\n### Its neighbours in the checklist\nIt sits directly beside **\"Know your reporting line (i.e. whom to always report\nto)\"** and **\"Meet all ITF requirements for valid participation.\"** Together\nthese three define your **position** (role), your **line** (supervisor) and your\n**standing** (ITF compliance) \u2014 the structural facts you need before work begins.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\"."
+    },
+    {
+      "id": "swep_day5_17",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which requirement must a student meet for valid participation in SIWES, as stated in the Day 5 note?",
+      "options": [
+        "All NUC accreditation requirements",
+        "All NECA membership requirements",
+        "All COREN registration requirements",
+        "All ITF requirements"
+      ],
+      "correct": 3,
+      "short": "Meet all ITF requirements for valid participation.",
+      "solution": "### Why this is the answer\nThe final item under **Things to Do Before SIWES** is: *\"**Meet all ITF\nrequirements for valid participation**.\"*\n\n### Why it is the ITF specifically\nFrom Day 1: the **Industrial Training Fund (ITF)**, established in **1971** under\n**Act No. 47**, is the body that **established SIWES in 1973** and administers\nit. Eligibility for allowances depends on ITF documentation \u2014 **Logbooks, Form 8\nand Form SPE-1**, with adequate vetting of logbooks.\n\n\"Valid participation\" is therefore a **compliance** matter with the ITF, not an\nacademic or professional-body matter.\n\n### The other bodies, correctly placed\n| Body | Actual role |\n|---|---|\n| **NUC** | Approved SWEP/SIWES for SET courses; allocated credit units with ITF |\n| **COREN** | Will regulate **admissions into engineering programmes** (Day 3) |\n| **NECA** | The **employers' association** delivering this very lecture |\n\nEach is real and each appears somewhere in SWEP \u2014 but only the **ITF** governs\nparticipation validity.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\"; cross-referenced with Day 1 material."
+    },
+    {
+      "id": "swep_day5_18",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following pairs a Day 5 instruction with the correct section of the note?",
+      "options": [
+        "\"Protect confidential information\" \u2014 Things to Do Before SIWES",
+        "\"Prepare your professional wardrobe\" \u2014 What to Do During the First 4 to 5 Days",
+        "\"Reflect\" \u2014 SIWES Learning Loop",
+        "\"Networking skills\" \u2014 What Employers Notice"
+      ],
+      "correct": 2,
+      "short": "\"Reflect\" is the fourth stage of the SIWES Learning Loop.",
+      "solution": "### Why this is the answer\nEach option places an instruction in a section, and only one is correct:\n\n| Instruction | Correct section |\n|---|---|\n| Protect confidential information | **During the first 4 to 5 days** |\n| Prepare your professional wardrobe | **Before SIWES** |\n| **Reflect** | **SIWES Learning Loop** \u2713 |\n| Networking skills | **Skills to Develop** |\n\n### Why this question is worth asking\nThe Day 5 note is short but densely sectioned \u2014 **seven** headings across three\npages, with overlapping vocabulary. A student who reads it as one continuous list\nwill know all the content and still fail placement questions like this one.\n\n### The seven sections, in order\n1. Core Concepts of SIWES\n2. Mindset Shift\n3. Things to Do Before SIWES\n4. What to Do During the First 4 to 5 Days\n5. What Employers Notice, Observe, or Expect\n6. SIWES Learning Loop\n7. Skills to Develop \u2192 Twelve Weeks Action Plan\n\nNotice the **chronological logic**: concepts \u2192 mindset \u2192 before \u2192 first days \u2192\nwhat is watched \u2192 how to learn \u2192 what to build.\n\n### Source\nDay 5 note, all sections."
+    },
+    {
+      "id": "swep_day5_19",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the note say about dressing, both before and during SIWES?",
+      "options": [
+        "Casual dressing is acceptable once you are known in the office",
+        "Uniforms are provided by the ITF for all SIWES students",
+        "Dress code depends entirely on the organisation and needs no preparation",
+        "Prepare a professional wardrobe beforehand and dress appropriately during the attachment; avoid casual dressing"
+      ],
+      "correct": 3,
+      "short": "Prepare a professional wardrobe beforehand; dress appropriately throughout.",
+      "solution": "### Why this is the answer\nDressing appears **twice**, once in each phase:\n\n| Phase | Instruction |\n|---|---|\n| **Before SIWES** | *\"**Prepare your professional wardrobe**; **avoid casual dressing**.\"* |\n| **First 4 to 5 days** | *\"Keep a daily learning record and **dress appropriately**.\"* |\n\nThe handwritten ledger also lists **\"dressing professionally\"** among the\npre-SIWES preparations.\n\n### Why it is treated as preparation, not improvisation\nA professional wardrobe is something you **assemble in advance** \u2014 which is why\nit sits in the *before* list. Turning up on day one intending to sort it out\nlater is exactly the failure the instruction anticipates.\n\n### How it connects to the rest\nDress feeds **Professionalism**, one of the six things **employers notice**, and\nit is a visible marker of the **mindset shift** \u2014 a *professional in training*\npresents as one. It costs nothing in skill and is judged immediately.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\" and \"What to Do During the First 4 to 5\nDays\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_20",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The Day 5 ledger summarises the session in three parts. Which is NOT one of them?",
+      "options": [
+        "Employer expectations and mindset shift from fresh graduates in the 21st century",
+        "Workplace conduct and protocols",
+        "Skill acquisition and action plan",
+        "Salary negotiation and contract law"
+      ],
+      "correct": 3,
+      "short": "Salary negotiation and contract law is not part of the Day 5 summary.",
+      "solution": "### Why this is the answer\nA **NOT** question. The Day 5 ledger records three parts:\n\n| Part | Content |\n|---|---|\n| **Employer Expectations & Mindset Shift** | Transitioning from a student mindset to a *\"professional in training\"* to build **verifiable skills and networks**; pre-SIWES preparations \u2014 researching the assigned organisation, updating **CVs and LinkedIn**, defining learning goals, dressing professionally |\n| **Workplace Conduct & Protocols** | Essential steps for the first few days \u2014 **active observation**, asking **strategic questions** about responsibilities, maintaining **confidentiality**; key traits employers expect \u2014 **punctuality, integrity, team work**, and the ability to **navigate office politics** |\n| **Skill Acquisition & Action Plan** | The **SIWES learning loop** (observe, practice, document, reflect) to convert daily activities into **tangible capabilities** rather than just completing tasks; a **12-week action plan** on closing skill gaps, creating a **digital portfolio**, and acquiring **both technical and soft skills** |\n\n**Salary negotiation and contract law** appears nowhere \u2014 neither in the ledger\nnor in the note itself.\n\n### Why its absence is consistent\nThe lecture's premise is that SIWES is about **building verifiable skills and\nnetworks**, not terms of employment. The note never discusses pay at all.\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 5."
+    },
+    {
+      "id": "swep_day5_21",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the ledger, what is the purpose of the SIWES learning loop?",
+      "options": [
+        "To fill the logbook with as many completed tasks as possible",
+        "To convert daily activities into tangible capabilities rather than just completing tasks",
+        "To reduce the number of hours spent at the organisation",
+        "To allow students to rotate between multiple organisations"
+      ],
+      "correct": 1,
+      "short": "To convert daily activities into tangible capabilities, not just completed tasks.",
+      "solution": "### Why this is the answer\nThe ledger states it directly: the loop \u2014 *\"**observe, practice, document,\nreflect**\"* \u2014 exists *\"to **convert daily activities into tangible capabilities\nrather than just completing tasks**.\"*\n\nThe note puts the same idea in its own words: *\"**Don't just collect tasks, but\ncollate evidence**.\"*\n\n### Task versus capability\n| Completing tasks | Building capability |\n|---|---|\n| Measured in **activity** | Measured in **what you can now do** |\n| Ends when the task ends | **Persists** beyond the placement |\n| Fills a logbook | Fills a **portfolio** |\n\nCollecting tasks is the precise failure mode the loop is designed to prevent \u2014 a full\nlogbook and an empty portfolio.\n\n### The vocabulary to notice\nThree related words run through Day 5: **verifiable** skills (core concept),\n**evidence** (learning loop), **tangible** capabilities (ledger). All three\ninsist the same thing \u2014 the outcome must be demonstrable to someone else.\n\n### Source\nHandwritten Day 5 ledger; Day 5 note, \"SIWES Learning Loop\"."
+    },
+    {
+      "id": "swep_day5_22",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which statement best captures what the lecture says about asking questions during SIWES?",
+      "options": [
+        "Ask only when absolutely necessary to avoid appearing ignorant",
+        "Career development is a strategic effort \u2014 ask questions, and always ask questions",
+        "Direct all questions to fellow students rather than supervisors",
+        "Submit all questions in writing at the end of the programme"
+      ],
+      "correct": 1,
+      "short": "Career development is a strategic effort \u2014 ask questions, always.",
+      "solution": "### Why this is the answer\nThe note treats questioning as central, stating it **twice** within the\nfirst-days section:\n\n- *\"**Ask questions** (**career development is a strategic effort**).\"*\n- *\"Always protect confidential information and **always ask questions**.\"*\n\n### Where else it appears\n| Location | How questioning features |\n|---|---|\n| **Learning loop** | Stage 2 is *\"**Ask questions** / Practice\"* |\n| **Employers notice** | Communication is defined as *\"listening and **asking questions**\"* |\n| **First days** | Three sample **strategic questions** are supplied |\n\nFour separate sections, one behaviour. That density is the strongest possible\nsignal of what the lecture wants students to take away.\n\n### Why \"strategic\" is the key adjective\nIt reframes asking from a confession of ignorance \u2014 that alternative's assumption \u2014 into\na **deliberate career tactic**. The sample questions prove the point: *\"What\ndoes success look like?\"* is not ignorance, it is target-setting.\n\n### Source\nDay 5 note, \"What to Do During the First 4 to 5 Days\", \"SIWES Learning Loop\" and\n\"What Employers Notice\"."
+    },
+    {
+      "id": "swep_day5_23",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The note instructs students to close a particular gap during the twelve weeks. What gap?",
+      "options": [
+        "The attendance gap",
+        "The generation gap",
+        "The salary gap",
+        "The skill gap"
+      ],
+      "correct": 3,
+      "short": "Close your skill gap, develop and improve consistently.",
+      "solution": "### Why this is the answer\nThe final item of the **Twelve Weeks Action Plan** reads: *\"**Close your skill\ngap**, develop, and improve consistently.\"*\n\nThe ledger repeats it: the 12-week plan is *\"focused on **closing skill gaps**,\ncreating a digital portfolio, and acquiring both technical and soft skills.\"*\n\n### Why a \"gap\" framing is used\nIt presupposes you have **identified** one \u2014 which is only possible if you have\nfirst defined **3 to 5 learning goals** and know what **success looks like** in\nyour role. The gap is the distance between your current capability and those\ntargets.\n\nThat is why closing it is the **last** instruction: it depends on goal-setting\n(item 1), tailoring (item 2), portfolio-building (item 3) and skill-building\n(items 4-5) having already happened.\n\n### Note the closing words\n*\"...develop, and **improve consistently**.\"* Not once, not at the end \u2014\nconsistently across the twelve weeks. The loop is meant to run repeatedly, which\nis exactly why it is called a **loop**.\n\n### Source\nDay 5 note, \"Twelve Weeks Action Plan\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_24",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the lecture mean by warning students not to have a \"career mismatch\"?",
+      "options": [
+        "Do not accept a placement in a different state from your university",
+        "Do not change your course of study after SIWES",
+        "Do not apply to more than one organisation at a time",
+        "Do not allow your documented experience and portfolio to diverge from the career direction you intend to pursue"
+      ],
+      "correct": 3,
+      "short": "Do not let your experience and evidence diverge from your intended career direction.",
+      "solution": "### Why this is the answer\nThe warning appears at the close of the **SIWES Learning Loop**, immediately\nafter the instruction to collate evidence and keep a **digital portfolio**:\n*\"Have a digital portfolio. **Do not have a career mismatch**.\"*\n\nIts placement is the clue. It is about **alignment between what you document and\nwhere you are going**.\n\n### What alignment looks like in the note\n| Instruction | How it prevents mismatch |\n|---|---|\n| **Make research on the assigned organisation** | Know what the placement can offer |\n| **Define 3 to 5 learning goals** | Decide what you intend to gain |\n| **CV and LinkedIn tailored to your goals** | Present a coherent direction |\n| **Build a portfolio \u2014 document evidence** | Accumulate proof pointing the same way |\n| **Close your skill gap** | Correct the distance to your target |\n\nA mismatch is what happens when twelve weeks of evidence points somewhere you\nnever intended to go.\n\n### Why the alternatives miss\nNone concerns direction. Geography, application volume and course changes are\nnot discussed anywhere in the note.\n\n### Source\nDay 5 note, \"SIWES Learning Loop\", read against \"Things to Do Before SIWES\" and\nthe \"Twelve Weeks Action Plan\"."
+    },
+    {
+      "id": "swep_day5_25",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which two skills appear on BOTH the \"what employers notice\" list and the \"skills to develop\" list?",
+      "options": [
+        "Punctuality and integrity",
+        "Initiative and professionalism",
+        "Digital literacy and networking",
+        "Communication and team work"
+      ],
+      "correct": 3,
+      "short": "Communication and team work appear on both lists.",
+      "solution": "### Why this is the answer\nLaying the two lists side by side:\n\n| What employers notice | Skills to develop |\n|---|---|\n| Punctuality | Technical skills acquisition |\n| **Communication** | **Communication skills** |\n| Initiative | Digital literacy |\n| **Team work** | **Team work** |\n| Professionalism | Speaking / Presentation skills |\n| Integrity | Work ethics |\n| \u2014 | Networking skills |\n\nOnly **communication** and **team work** appear on both.\n\n### Why those two specifically\nThey are the only entries that are simultaneously a **trainable capability** and\nan **observable behaviour**. You can be taught to communicate better, and an\nemployer can watch you do it. Punctuality is observed but not trained as a\nskill; digital literacy is trained but not what the note lists as observed.\n\n### How the note qualifies each\n- **Communication** is glossed as *\"listening and asking questions\"*\n- **Team work** is glossed as *\"supporting colleagues\"*\n\nBoth definitions describe **conduct toward other people** \u2014 which is why they\nstraddle the two lists.\n\n### Source\nDay 5 note, \"What Employers Notice, Observe, or Expect\" and \"Skills to Develop\"."
+    },
+    {
+      "id": "swep_day5_26",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does the lecture characterise career development, in the phrase used in the note?",
+      "options": [
+        "A matter of luck and timing",
+        "A strategic effort",
+        "The responsibility of the employer alone",
+        "An activity best begun after graduation"
+      ],
+      "correct": 1,
+      "short": "Career development is a strategic effort.",
+      "solution": "### Why this is the answer\nThe phrase appears as a parenthetical justification for asking questions:\n*\"Ask questions (**career development is a strategic effort**).\"*\n\n### Why the word \"strategic\" carries the note\nIt frames the entire Day 5 message as **deliberate action rather than passive\nprogression**. Every instruction in the note is an instance of strategy:\n\n| Instruction | The strategy behind it |\n|---|---|\n| Research the organisation **before** arriving | Prepare, don't react |\n| Define **3-5 goals** | Choose outcomes in advance |\n| Ask *\"what does success look like?\"* | Learn the standard early |\n| **Document evidence** | Build proof deliberately |\n| **Close your skill gap** | Correct course intentionally |\n\n### The contrast with that alternative\nThe note's premise is the opposite \u2014 career development begins **during** SIWES,\nin the second year of study, not after graduation. That is why there is a\ntwelve-week action plan rather than post-graduation advice.\n\nDay 2's employability lecture made the same argument: *\"An employable person\nmust learn how to **manage his/her career early**.\"*\n\n### Source\nDay 5 note, \"What to Do During the First 4 to 5 Days in SIWES\"."
+    },
+    {
+      "id": "swep_day5_27",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of these is explicitly listed among the \"Things to Do Before SIWES\"?",
+      "options": [
+        "Negotiate your monthly allowance with the organisation",
+        "Complete your final year project proposal",
+        "Request a change of supervisor if unsatisfied",
+        "Have a daily routine, prepare notebooks and necessary documents"
+      ],
+      "correct": 3,
+      "short": "Have a daily routine, prepare notebooks and necessary documents.",
+      "solution": "### Why this is the answer\nThe complete before-SIWES checklist is:\n\n| # | Task |\n|---|---|\n| 1 | Make **research** on the assigned organisation |\n| 2 | Update your **CV and social media profiles** (LinkedIn; professional email) |\n| 3 | Define **3 to 5 learning goals** |\n| 4 | Prepare your **professional wardrobe**; avoid casual dressing |\n| 5 | **Have a daily routine, prepare notebooks and necessary documents** |\n| 6 | Know your **reporting line** |\n| 7 | Get a **Role Title** \u2014 know your responsibility |\n| 8 | Meet all **ITF requirements** for valid participation |\n\n### Why the notebook matters more than it looks\nIt is the physical precondition for the **daily learning record** kept during the\nfirst days, and ultimately for the **portfolio**. The note's logic is sequential:\nprepare the notebook *before*, fill it *during*, convert it to evidence *after*.\n\nThe **daily routine** serves **punctuality** \u2014 the first trait employers are\nsaid to notice.\n\n### Why the others are absent\nAllowances are never discussed in this note. Changing supervisors contradicts\n*\"know your reporting line\"*. Final-year projects are outside the scope of a\n200-level industrial attachment.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\"."
+    },
+    {
+      "id": "swep_day5_28",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the note identify as the two things SIWES is FOR, taken together?",
+      "options": [
+        "Earning a stipend and fulfilling a graduation requirement",
+        "Building verifiable skills and building human networks",
+        "Observing professionals and avoiding responsibility",
+        "Testing career options and taking a break from study"
+      ],
+      "correct": 1,
+      "short": "Verifiable skills and human networks.",
+      "solution": "### Why this is the answer\nThe two **Core Concepts of SIWES** state exactly this:\n\n1. *\"SIWES is not just an industrial training or a means of escape from academic\n   activities, but a period to gain experience that should be converted into\n   **verifiable skills** in order to guarantee employability.\"*\n2. *\"The SIWES period is for **building human networks**, as network brings good\n   net worth.\"*\n\nThe handwritten ledger compresses both into one phrase: *\"to build **verifiable\nskills and networks**.\"*\n\n### How the rest of the note serves these two purposes\n| Purpose | Served by |\n|---|---|\n| **Verifiable skills** | Learning loop \u00b7 digital portfolio \u00b7 document evidence \u00b7 close the skill gap \u00b7 technical + soft skills |\n| **Human networks** | LinkedIn profile \u00b7 networking skills \u00b7 introduce yourself properly \u00b7 knowing your reporting line |\n\nEvery section of the note attaches to one or the other. That is the structure\nbeneath what looks like a list of tips.\n\n### The view the note explicitly rejects\n*\"Not just an industrial training or a **means of escape from academic\nactivities**\"* \u2014 the note names and denies the low view of SIWES before offering\nthe right one.\n\n### Source\nDay 5 note, \"Core Concepts of SIWES\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_29",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which trait, listed among what employers notice, is glossed in the note as \"supporting colleagues\"?",
+      "options": [
+        "Initiative",
+        "Integrity",
+        "Team work",
+        "Professionalism"
+      ],
+      "correct": 2,
+      "short": "Team work is glossed as supporting colleagues.",
+      "solution": "### Why this is the answer\nThe note attaches a short gloss to two of the six traits:\n\n| Trait | Gloss given |\n|---|---|\n| Punctuality | \u2014 |\n| **Communication** | *(listening and asking questions)* |\n| Initiative | \u2014 |\n| **Team work** | ***(supporting colleagues)*** |\n| Professionalism | \u2014 |\n| Integrity | \u2014 |\n\nOnly **communication** and **team work** are defined \u2014 and, tellingly, those are\nthe same two that reappear under **Skills to Develop**.\n\n### What the gloss tells you\n\"Supporting colleagues\" frames team work as **contribution to others**, not mere\nparticipation in a group. Day 2's employability lecture made the identical\npoint: *\"The important thing is to learn how to **contribute without always\nneeding to dominate**.\"*\n\n### Why the glosses exist at all\nThe other four traits \u2014 punctuality, initiative, professionalism, integrity \u2014\nare self-explanatory. Communication and team work are vague enough to be\nmisunderstood, so the note pins them down.\n\n### Source\nDay 5 note, \"What Employers Notice, Observe, or Expect\"."
+    },
+    {
+      "id": "swep_day5_30",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Taken together, how many weeks does the Day 5 action plan cover, and how many goals should it contain?",
+      "options": [
+        "8 weeks and 3-5 goals",
+        "12 weeks and 3-5 goals",
+        "12 weeks and 6-8 goals",
+        "24 weeks and 3-5 goals"
+      ],
+      "correct": 1,
+      "short": "A twelve-week plan containing 3 to 5 goals.",
+      "solution": "### Why this is the answer\nThe section is titled **\"Twelve Weeks Action Plan\"**, and its first instruction\nis **\"Set 3-5 goals.\"** The ledger confirms: *\"Concluded with a **12-week action\nplan**.\"*\n\n### Why twelve weeks, cross-referenced with Day 1\nDay 1 established the programme durations:\n\n| Module | Duration |\n|---|---|\n| **SWEP 200** | **12 weeks ideal** (minimum 8) |\n| SIWES I | 12 weeks |\n| SIWES II | 24 weeks (6 months) |\n\nThe twelve-week plan matches the **ideal SWEP 200 duration** exactly \u2014 it is\nbuilt for the attachment students are about to begin, not a generic timeframe.\n\n### A real trap in the numbers\n**24 weeks** is genuine \u2014 but it is **SIWES II**, the 400-level module, and the\nonly one that attracts ITF stipends. Wrong module, wrong year.\n\n### The three Day 5 numbers, once more\n**3-5** goals \u00b7 **4-5** first days \u00b7 **12** weeks.\n\n### Source\nDay 5 note, \"Twelve Weeks Action Plan\"; handwritten Day 5 ledger;\ncross-referenced with Day 1 durations."
+    },
+    {
+      "id": "swep_day5_31",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which instruction about confidentiality does the note give?",
+      "options": [
+        "Share all findings openly to demonstrate transparency",
+        "Always protect confidential information",
+        "Publish your daily learning record on social media",
+        "Confidentiality applies only to senior staff, not SIWES students"
+      ],
+      "correct": 1,
+      "short": "Always protect confidential information.",
+      "solution": "### Why this is the answer\nAmong the first-days instructions: *\"**Always protect confidential information**\nand always ask questions.\"*\n\nThe ledger lists the same duty among workplace conduct essentials: *\"maintaining\n**confidentiality**.\"*\n\n### Note the pairing in the sentence\nProtecting information and asking questions appear in **one sentence**, joined by\n\"and\". They are not in tension \u2014 you are expected to be **inquisitive about your\nwork** and **discreet about the organisation's information** at the same time.\n\n### How it connects to integrity\n**Integrity** is one of the six traits employers notice, and confidentiality is\nits most testable form during a placement. A student who leaks information has\ndemonstrated the opposite of the trait being watched for.\n\n### A genuine modern risk\nThe note requires a **daily learning record** and a **digital portfolio** \u2014 both\ninvolve writing down what you did. The confidentiality instruction sets the\nboundary: document **your learning**, not the organisation's protected\ninformation. That distinction is what the \"How, when & what\" of evidence is\nmeant to capture.\n\n### Source\nDay 5 note, \"What to Do During the First 4 to 5 Days\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_32",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the seven \"Skills to Develop\"?",
+      "options": [
+        "Digital literacy",
+        "Speaking / Presentation skills",
+        "Financial accounting skills",
+        "Work ethics"
+      ],
+      "correct": 2,
+      "short": "Financial accounting is not among the seven skills to develop.",
+      "solution": "### Why this is the answer\nA **NOT** question. The seven skills are:\n\n| # | Skill |\n|---|---|\n| 1 | Technical skills acquisition |\n| 2 | Communication skills |\n| 3 | **Digital literacy** |\n| 4 | Team work |\n| 5 | **Speaking / Presentation skills** |\n| 6 | **Work ethics** |\n| 7 | Networking skills |\n\n**Financial accounting** appears nowhere in the Day 5 note.\n\n### The composition worth noticing\nOnly **one** of the seven \u2014 technical skills acquisition \u2014 is technical. The\nother six are **soft or transferable**. That balance is deliberate, and the\nledger confirms the intent: acquiring *\"both **technical and soft skills**.\"*\n\nIt also echoes Day 2, where **communication** was called *\"perhaps the most\nfundamental employability skill\"* and the warning ran: *\"A highly intelligent\nperson who cannot communicate effectively may struggle in the workplace.\"*\n\n### Source\nDay 5 note, \"Skills to Develop\"."
+    },
+    {
+      "id": "swep_day5_33",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the note say a student should do from day one of the attachment?",
+      "options": [
+        "Begin submitting reports to the ITF immediately",
+        "Observe, listen, and introduce yourself properly to the audience",
+        "Request a written job description before starting work",
+        "Identify who holds informal power in the office"
+      ],
+      "correct": 1,
+      "short": "Observe, listen and introduce yourself properly.",
+      "solution": "### Why this is the answer\nThe first bullet of the first-days section reads: *\"**From day one: Observe,\nlisten, and introduce yourself properly** to the audience.\"*\n\nThree actions, and the order is meaningful \u2014 **observe** and **listen** come\nbefore you speak, but introducing yourself is still a day-one duty, not something\nto postpone.\n\n### How it maps to the learning loop\nThe loop's first stage is **Observe**, and the ledger calls it *\"**active\nobservation**\"* \u2014 not passive watching. Day one begins the loop immediately.\n\n### The behaviour the note disqualifies\nIdentifying informal power is office politics \u2014 precisely what the note warns\nagainst: *\"**Beware of office politics!** Nobody is your best friend at work.\"*\n\n### Why that alternative misses\nKnowing your **Role Title** and **reporting line** are *before*-SIWES tasks. By\nday one you should already have them; asking then would mean the preparation was\nskipped.\n\n### Source\nDay 5 note, \"What to Do During the First 4 to 5 Days in SIWES\"; handwritten\nDay 5 ledger."
+    },
+    {
+      "id": "swep_day5_34",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which pairing of a Day 5 concept with its correct description is accurate?",
+      "options": [
+        "Learning loop \u2014 a list of six traits employers look for",
+        "Twelve weeks action plan \u2014 the four stages of observing and reflecting",
+        "Digital portfolio \u2014 documented evidence of how, when and what you did",
+        "Reporting line \u2014 the 3 to 5 goals you set for the programme"
+      ],
+      "correct": 2,
+      "short": "A digital portfolio holds documented evidence \u2014 how, when and what.",
+      "solution": "### Why this is the answer\nEach option attaches a real Day 5 term to a description belonging to a different\none. The correct definitions are:\n\n| Term | What it actually is |\n|---|---|\n| **SIWES Learning Loop** | Four stages: **observe \u2192 ask questions/practice \u2192 document \u2192 reflect** |\n| **Twelve Weeks Action Plan** | Six instructions: goals, tailored CV/LinkedIn, portfolio, technical skills, documented evidence, close the skill gap |\n| **Digital portfolio** | **Documented evidence \u2014 how, when and what** you did |\n| **Reporting line** | **Whom you always report to** |\n\nOnly the digital-portfolio pairing is correct.\n\n### Why the portfolio is the centre of Day 5\nIt is where the note's two demands converge: **verifiable** skills need\n**evidence**, and evidence needs somewhere to live. The note mentions\ndocumentation in the learning loop *and* twice more in the action plan \u2014\n**three** separate instructions pointing at one artefact.\n\nThe ledger agrees: the plan focuses on *\"closing skill gaps, **creating a digital\nportfolio**, and acquiring both technical and soft skills.\"*\n\n### Source\nDay 5 note, \"SIWES Learning Loop\", \"Twelve Weeks Action Plan\" and \"Things to Do\nBefore SIWES\"."
+    },
+    {
+      "id": "swep_day5_35",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the note, what should a student research before the attachment begins?",
+      "options": [
+        "The salaries paid by competing organisations",
+        "The assigned organisation",
+        "The examination timetable for the next session",
+        "The personal backgrounds of the staff"
+      ],
+      "correct": 1,
+      "short": "Research the assigned organisation.",
+      "solution": "### Why this is the answer\nThe very first item under **Things to Do Before SIWES** is: *\"**Make research on\nthe assigned organisation**.\"*\n\nThe ledger lists it first too: pre-SIWES preparations include *\"**researching\nassigned organisations**, updating CVs and LinkedIn profiles, defining learning\ngoals, and dressing professionally.\"*\n\n### Why it comes first\nEverything downstream depends on it. You cannot set meaningful **3-5 learning\ngoals** without knowing what the organisation actually does, and you cannot\n**tailor a CV to your goals** without knowing which of your capabilities are\nrelevant to it. Research is the input to the entire preparation sequence.\n\n### It also guards against the note's own warning\n*\"Do not have a **career mismatch**.\"* Researching the organisation before\narriving is the earliest opportunity to notice a mismatch \u2014 while something can\nstill be done about it.\n\n### A claim the note rules out\nResearching **staff backgrounds** rather than the organisation edges toward the\npersonal, which sits badly with the office-politics warning. The note directs\nattention at the **institution**, not individuals.\n\n### Source\nDay 5 note, \"Things to Do Before SIWES\"; handwritten Day 5 ledger."
+    },
+    {
+      "id": "swep_day5_36",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which statement about the Day 5 lecture's view of tasks versus capabilities is correct?",
+      "options": [
+        "Completing many tasks is the primary measure of a successful SIWES",
+        "Tasks and capabilities are the same thing in an industrial setting",
+        "Daily activities should be converted into tangible capabilities rather than merely being completed",
+        "Capabilities matter only after the twelve weeks have ended"
+      ],
+      "correct": 2,
+      "short": "Daily activities should be converted into tangible capabilities.",
+      "solution": "### Why this is the answer\nThe ledger states the purpose of the learning loop as converting *\"daily\nactivities into **tangible capabilities** rather than just completing tasks.\"*\n\nThe note gives the same instruction in its own register: *\"**Don't just collect\ntasks, but collate evidence** (How, when & what).\"*\n\n### Task vs capability\n| | Task | Capability |\n|---|---|---|\n| **Measured by** | Activity completed | What you can now **do** |\n| **Ends** | When the task ends | **Persists** beyond the placement |\n| **Shown by** | A full logbook | A **portfolio** |\n| **Verifiable?** | Not by itself | **Yes** \u2014 with evidence |\n\n### Why this echoes Day 2\nProf. Ekanola drew the identical distinction between a **skill** (performing a\ntask) and a **capability** (applying knowledge in changing circumstances), and\ninsisted *\"**experience converts knowledge into competence**.\"* Day 5 supplies\nthe mechanism \u2014 the loop \u2014 by which that conversion actually happens during an\nattachment.\n\n### A claim the note rules out\nThe conversion must happen **during** the twelve weeks, through the loop run\nrepeatedly. Waiting until the end leaves you with undocumented memories.\n\n### Source\nHandwritten Day 5 ledger; Day 5 note, \"SIWES Learning Loop\"."
+    },
+    {
+      "id": "swep_day5_37",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The note lists both technical and non-technical development. Which item represents the technical strand?",
+      "options": [
+        "Work ethics",
+        "Networking skills",
+        "Technical skills acquisition",
+        "Speaking / presentation skills"
+      ],
+      "correct": 2,
+      "short": "Technical skills acquisition is the technical strand.",
+      "solution": "### Why this is the answer\nOf the seven **Skills to Develop**, only **technical skills acquisition** is\ntechnical. The remaining six \u2014 communication, digital literacy, team work,\nspeaking/presentation, work ethics, networking \u2014 are soft or transferable.\n\n### Where it reappears\nThe **Twelve Weeks Action Plan** dedicates two of its six items to this strand:\n- *\"**Build technical skills**\"*\n- *\"**Document evidence of skills**\"*\n\nAnd the ledger closes with *\"acquiring **both technical and soft skills**.\"*\n\n### The balance being struck\n| Strand | Count in the list |\n|---|---|\n| Technical | **1 of 7** |\n| Soft / transferable | **6 of 7** |\n\nThat ratio is not an oversight. Employers, per this lecture, take technical\ncompetence as the entry ticket and then judge on **punctuality, communication,\ninitiative, team work, professionalism and integrity** \u2014 five of which are not\ntechnical at all.\n\n### Source\nDay 5 note, \"Skills to Develop\" and \"Twelve Weeks Action Plan\"; handwritten\nDay 5 ledger."
+    },
+    {
+      "id": "swep_day5_38",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the note instruct regarding the CV and LinkedIn profile within the twelve-week plan?",
+      "options": [
+        "Have a CV and LinkedIn profile tailored to your goals",
+        "Keep them unchanged until after graduation",
+        "Replace the CV entirely with a video introduction",
+        "Maintain separate profiles for each supervisor"
+      ],
+      "correct": 0,
+      "short": "Have a CV and LinkedIn profile tailored to your goals.",
+      "solution": "### Why this is the answer\nThe second instruction of the **Twelve Weeks Action Plan** is: *\"Have a **CV and\nLinkedIn profile tailored to your goals**.\"*\n\n### Note that this is the second mention\nIt appeared first under **Things to Do Before SIWES** \u2014 *\"Update your CV and\nsocial media profiles (e.g. LinkedIn; use a professional email address)\"* \u2014 and\nreturns here in the action plan.\n\nThe difference between the two mentions is the crucial part:\n\n| Stage | Instruction |\n|---|---|\n| **Before SIWES** | **Update** them |\n| **During the 12 weeks** | **Tailor** them **to your goals** |\n\nUpdating is housekeeping; **tailoring** is strategy. The note escalates from one\nto the other once your **3-5 goals** exist to tailor toward.\n\n### Why it belongs in the plan rather than the preparation list\nA tailored profile depends on goals you have set and evidence you have\naccumulated. It is therefore a **living document** revised across the twelve\nweeks, not a one-off task ticked off beforehand.\n\n### Source\nDay 5 note, \"Twelve Weeks Action Plan\" and \"Things to Do Before SIWES\"."
+    },
+    {
+      "id": "swep_day5_39",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which Day 5 numerical detail is correctly stated?",
+      "options": [
+        "Define 5 to 8 learning goals; the first 4 to 5 days are critical; a 12-week action plan",
+        "Define 3 to 5 learning goals; the first 4 to 5 days are critical; a 12-week action plan",
+        "Define 3 to 5 learning goals; the first 2 weeks are critical; an 8-week action plan",
+        "Define 3 to 5 learning goals; the first 4 to 5 days are critical; a 24-week action plan"
+      ],
+      "correct": 1,
+      "short": "3 to 5 goals, the first 4 to 5 days, and a 12-week plan.",
+      "solution": "### Why this is the answer\nDay 5 contains exactly three numbers, and only that alternative states all of them\ncorrectly:\n\n| Detail | Correct value | Where stated |\n|---|---|---|\n| **Learning goals** | **3 to 5** | Before SIWES; repeated in the action plan |\n| **Critical first period** | **First 4 to 5 days** | Section heading |\n| **Action plan** | **Twelve weeks** | Section heading; confirmed by the ledger |\n\n### How each distractor breaks\n- **A** \u2014 inflates the goals to *5 to 8*.\n- **C** \u2014 stretches the first days to *2 weeks* and shortens the plan to *8\n  weeks*. Note that **8 weeks** is real, but it is the **minimum SWEP 200\n  duration** from Day 1, not the plan length.\n- **D** \u2014 uses **24 weeks**, which is genuine but belongs to **SIWES II**, the\n  400-level module.\n\n### The pattern across the week\nAs on Day 4, every wrong figure is a **real SWEP number borrowed from elsewhere**\n\u2014 8 weeks from the SWEP minimum, 24 weeks from SIWES II. With statistics, the\ndanger is always the number you have seen in a different place.\n\n### Keep them straight\n**Goals 3-5 \u00b7 Days 4-5 \u00b7 Weeks 12.**\n\n### Source\nDay 5 note, all sections; handwritten Day 5 ledger; cross-referenced with Day 1\ndurations."
+    },
+    {
+      "id": "swep_day5_40",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which summary best captures the overall message of the Day 5 session?",
+      "options": [
+        "SIWES is a formality to be completed with minimum effort before final year",
+        "Shift from a student mindset to a professional in training, convert daily activity into verifiable skills and evidence, and build networks over a structured twelve weeks",
+        "Focus exclusively on technical competence, since employers judge nothing else",
+        "Rely on the organisation to direct your learning, since goals are set by supervisors"
+      ],
+      "correct": 1,
+      "short": "Shift mindset, convert activity into verifiable skills and evidence, and build networks.",
+      "solution": "### Why this is the answer\nEvery element of that alternative is stated in the source:\n\n| Element | Where it comes from |\n|---|---|\n| **Shift from student to professional in training** | Mindset Shift; ledger |\n| **Convert activity into verifiable skills** | Core Concepts; learning loop |\n| **Evidence** | *\"Collate evidence (How, when & what)\"*; digital portfolio |\n| **Build networks** | *\"Network brings good net worth\"*; networking skills |\n| **Structured twelve weeks** | Twelve Weeks Action Plan |\n\n### Why each distractor is explicitly contradicted\n| Claim | The note's actual position |\n|---|---|\n| A formality, minimum effort | *\"**Not just** an industrial training or a **means of escape** from academic activities\"* |\n| Technical competence only | Six of seven skills are soft; employers notice punctuality, communication, initiative, team work, professionalism, integrity |\n| Supervisors set your goals | *\"**Define 3 to 5 learning goals**\"* \u2014 yours to set; *\"career development is a **strategic effort**\"* |\n\n### The single sentence that holds it together\n> *\"You are being **equipped to create value and build evidence**.\"*\n\nCreate value \u2014 that is the networks and the contribution. Build evidence \u2014 that\nis the portfolio and the verifiable skills. Day 5 is those two instructions,\nexpanded.\n\n### Source\nDay 5 note, all sections; handwritten Day 5 ledger."
     }
   ],
   "eee282": [

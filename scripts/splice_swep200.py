@@ -27,6 +27,8 @@ sys.path.insert(0, str(HERE))
 from swep200_day1 import QUESTIONS as DAY1  # noqa: E402
 from swep200_day2 import QUESTIONS as DAY2  # noqa: E402
 from swep200_day3 import QUESTIONS as DAY3  # noqa: E402
+from swep200_day4 import QUESTIONS as DAY4  # noqa: E402
+from swep200_day5 import QUESTIONS as DAY5  # noqa: E402
 
 DATA = ROOT / 'src' / 'data.js'
 
@@ -350,9 +352,160 @@ Driver: reduced petrol imports via the **Dangote Refinery**.
   Science) belongs to **Day 2**.
 """,
     },
+    {
+        "id": "swep-day-4",
+        "name": "Day 4 \u2014 Thursday, 17th September",
+        "categoryId": "swep-days",
+        "summaryNotes": """### What Day 4 covered
+| # | Lecture | Speaker |
+|---|---|---|
+| 1 | Food Science & Engineering, Value-Addition and National Development (4IR) | **Dr. W. A. Adebayo** (Food Science and Technology) |
+| 2 | Demystifying Artificial Intelligence | **Dr. Aderonke Lawal** (Computer Engineering) |
+| 3 | Fire Awareness and Prevention | **Mr. M. A. Ibrahim** |
+
+### Food Science \u2014 definitions and food security
+- **Food Science** \u2014 the **study** of the physical, microbiological and chemical makeup of food
+- **Food Technology** \u2014 the **application** of food science to selection, preservation, processing, packaging, distribution of **safe** food
+- **Food Engineering** \u2014 the **multidisciplinary field** applying **engineering principles** to production, processing, preservation and distribution
+- **Value-Addition** \u2014 transforming raw produce into **desirable, convenient, nutritious** products, raising **market value, shelf life, acceptability**
+
+**Four dimensions of food security:** **Availability** (sufficient quantity/quality,
+incl. imports) \u00b7 **Access** (entitlements) \u00b7 **Utilization** (diet, clean water,
+sanitation, health care) \u00b7 **Stability** (at all times; no shocks/cyclical loss).
+
+**Autarky** = deliberate isolation, **eliminating** international trade (China under
+**Mao Tse Tung**, Japan, North Korea). **Food self-reliance** = integrated management
+of production, export, import, storage, distribution + **strategic reserves**.
+
+### Industrial Revolutions \u2014 exact dates
+| IR | Dates | Defining change |
+|---|---|---|
+| Agrarian | before 1IR | Foraging \u2192 farming + domestication |
+| **1IR** | **1760\u20131840, Britain** | Muscle/animal \u2192 **mechanical power**; birth of factories |
+| **2IR** | **1860\u20131930** | **Electricity**, assembly lines \u2192 **mass production** |
+| **3IR** | Began **1960s** | **Computer and information age** |
+| **4IR** | About **2000** | Fusion across **physical, digital, biological** |
+
+**IR definition:** *abrupt and radical change*. **Causative agents: energy,
+communication, transportation.**
+**3IR catalysts:** semiconductors \u00b7 mainframes (1960s) \u00b7 PCs (1970s\u201380s) \u00b7 internet (1990s).
+**3IR drivers:** renewable energy \u00b7 ICT \u00b7 **3D printing**.
+**4IR characteristics:** ubiquitous mobile internet \u00b7 cheaper, smaller sensors \u00b7 **AI and ML**;
+enables **SMART FACTORIES**. Impacts are **HISTORIC, PROFOUND, DISRUPTIVE, MULTIFACETED**.
+**4IR clusters:** Physical \u00b7 Digital \u00b7 Biological.
+**Graphene: 200\u00d7 stronger than steel, one million times thinner than human hair**, good conductor.
+**Four intelligences:** Contextual (**mind**) \u00b7 Emotional (**heart**) \u00b7 Inspired (**soul**) \u00b7 Physical (**body**).
+
+### AI \u2014 models and learning
+**Model** = a **mathematical representation of patterns learned from data**; a *digital brain*.
+**Process:** **Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model**.
+**Accuracy** = % of correct predictions (95/100 = **95%**).
+**Limitations:** **biased data** (Western vs African names) \u00b7 **overfitting** (the crammer) \u00b7 **lack of context** (sarcasm).
+| Type | Learns from |
+|---|---|
+| **Supervised** | **Labelled** data \u2014 spam detection, face unlock |
+| **Unsupervised** | **Unlabelled** data \u2014 Spotify clustering, Google News |
+| **Reinforcement** | **Rewards/penalties** \u2014 self-driving cars, AlphaGo |
+
+**LLM = Large Language Model.** Teachable Machine: **20\u201330 samples per class**.
+**Challenges:** data privacy \u00b7 bias and fairness \u00b7 job displacement \u00b7 **lack of regulation**.
+**Ways forward:** ethical AI \u00b7 inclusive data \u00b7 policies \u00b7 **human-AI collaboration**.
+
+### Fire Awareness
+**Fire triangle: Heat + Fuel + Oxygen.**
+**Control:** **Cooling** (heat) \u00b7 **Smothering** (oxygen) \u00b7 **Starvation** (fuel).
+**Spread:** conduction, convection, radiation, spontaneous combustion.
+
+| Class | Fuel | Examples |
+|---|---|---|
+| **A** | Solids | Paper, wood, textiles |
+| **B** | Flammable liquids | Kerosene, petrol, perfumes, alcohol |
+| **C** | Flammable gases | Methane, acetylene, butane |
+| **D** | Combustible metals | Potassium, sodium, calcium |
+| **E** | Energized electrical | **Least frequent origin** |
+
+**Colour bands:** **RED** water \u00b7 **BLUE** dry powder \u00b7 **CREAM** foam \u00b7 **BLACK** CO\u2082.
+**CO\u2082** is multipurpose (electrical + liquids) and **leaves no residue**.
+**OAU hostel fire ranking:** **Moremi (most)** \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 **PG (least)**.
+**Comparative safety** = manage it **inside**; **Absolute safety** = **evacuate**.
+**In smoke: toxic smoke rises \u2014 lie flat and crawl.**
+
+### Traps to watch
+- Food **Science** studies, **Technology** applies, **Engineering** builds.
+- 1IR **1760\u20131840**; 2IR **1860\u20131930** \u2014 do not swap.
+- Graphene: **200\u00d7 stronger** than steel but **one million times thinner** than hair.
+- **Overfitting** = memorising; the crammer analogy.
+- Class **D** is metals, **E** is electrical.
+- Day 2 used extinguisher **shapes**; Day 4 uses **colour bands**. Answer per the named lecture.
+""",
+    },
+    {
+        "id": "swep-day-5",
+        "name": "Day 5 \u2014 Friday, 18th September",
+        "categoryId": "swep-days",
+        "summaryNotes": """### What Day 5 covered
+A single session: **Employers\u2019 Expectations from Fresh Graduates in the
+21st-Century Job Market**, delivered by a Representative of the **Nigeria
+Employers\u2019 Consultative Association (NECA)**.
+
+### Core concepts
+- SIWES is **not** an escape from academics \u2014 it is a period to convert experience
+  into **verifiable skills** that guarantee **employability**
+- It is for **building human networks** \u2014 *network brings good net worth*
+- **Mindset shift:** see yourself as a **professional in training**, not a mere
+  student \u2014 *you are being equipped to **create value and build evidence***
+
+### The three numbers
+| Number | What it counts |
+|---|---|
+| **3 to 5** | Learning **goals** |
+| **4 to 5** | **Days** in the critical first period |
+| **12** | **Weeks** in the action plan |
+
+### Before SIWES
+Research the **assigned organisation** \u00b7 update **CV and LinkedIn** (**professional
+email**) \u00b7 define **3\u20135 learning goals** \u00b7 prepare a **professional wardrobe** \u00b7 daily
+routine, notebooks, documents \u00b7 know your **reporting line** \u00b7 get a **Role Title** \u00b7
+meet all **ITF requirements**.
+
+### First 4 to 5 days
+From day one **observe, listen, introduce yourself properly**. **Ask questions** \u2014
+*career development is a **strategic effort***: *Who is my supervisor? What is my
+responsibility? **What does success look like?*** Keep a **daily learning record**,
+**dress appropriately**, **protect confidential information**.
+
+### What employers notice (6)
+**Punctuality \u00b7 Communication** (listening and asking questions) **\u00b7 Initiative \u00b7
+Team work** (supporting colleagues) **\u00b7 Professionalism \u00b7 Integrity**
+> **Beware of office politics! Nobody is your best friend at work.**
+
+### SIWES Learning Loop
+**Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect**
+*Don\u2019t just collect tasks, but **collate evidence** (How, when & what). Have a
+**digital portfolio**. Do not have a **career mismatch**.*
+
+### Skills to develop (7)
+Technical skills acquisition \u00b7 communication \u00b7 **digital literacy** \u00b7 team work \u00b7
+**speaking/presentation** \u00b7 **work ethics** \u00b7 **networking**.
+Only **one** is technical \u2014 the rest are soft/transferable.
+
+### Twelve Weeks Action Plan
+Set **3\u20135 goals** \u00b7 **CV and LinkedIn tailored to your goals** \u00b7 build a **job
+portfolio \u2014 document evidence** \u00b7 build **technical skills** \u00b7 **document evidence
+of skills** \u00b7 **close your skill gap**, develop and improve consistently.
+
+### Traps to watch
+- **Prepare notebooks** is *before*; **keep a daily learning record** is *during*.
+- **Communication** and **team work** appear on **both** the employers\u2019 list and the
+  skills list \u2014 they cannot distinguish the two.
+- **Punctuality, integrity, professionalism** are **observed traits**, not listed skills.
+- **12 weeks** is the plan; **8 weeks** is the SWEP minimum; **24 weeks** is SIWES II.
+- The note names the speaker only as a **NECA representative** \u2014 no personal name is given.
+""",
+    },
 ]
 
-QUESTION_SETS = [DAY1, DAY2, DAY3]
+QUESTION_SETS = [DAY1, DAY2, DAY3, DAY4, DAY5]
 
 BEGIN = '// ==== SWEP 200 BEGIN (generated by scripts/splice_swep200.py) ===='
 END = '// ==== SWEP 200 END ===='
