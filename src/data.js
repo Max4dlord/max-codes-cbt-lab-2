@@ -59,6 +59,12 @@ export const topicMeta = {
       "name": "Day 2 \u2014 Tuesday, 15th September",
       "categoryId": "swep-days",
       "summaryNotes": "### What Day 2 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Substance Abuse Awareness | **Dr. A. Olatunji** |\n| 2 | Workshop & Industrial Safety | **Prof. A. A. Adeleke** |\n| 3 | 21st-Century Employability Skills | **Prof. A. B. Ekanola** |\n\n### Substance abuse \u2014 the numbers\n| Measure | Figure |\n|---|---|\n| Global average use | **5.3%** |\n| Nigeria, aged 15\u201364 | **14.3%** (\u2248 14.4 million people) |\n| Lifetime prevalence, SW Nigerian universities | **45% \u2013 84.5%** |\n\nMost abused: **alcohol, tobacco, codeine cough syrups, tramadol, cannabis**.\n\n**Five categories of warning sign** \u2014 know which is which:\n- **Physical** \u2014 bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene\n- **Behavioural** \u2014 new friend groups, secrecy, stealing, **impulsivity/risk-taking**\n- **Academic** \u2014 absenteeism, falling grades, discipline, **unsubmitted assignments**\n- **Psychological/Emotional** \u2014 mood swings, anxiety, depression, **hallucinations**\n- **Social/Lifestyle** \u2014 money trouble, fights/cultism, sleep changes, drug joints\n\n**Prevention** (before) vs **Intervention** (after):\n- Prevention: campus drug education, life skills, peer support, restricting access, parents/community\n- Intervention: early screening, counselling, medical treatment/rehab, policy & discipline, media campaigns\n- **Multi-sectoral collaboration**: **NDLEA**, Federal Ministry of Health, NGOs, campus health services\n\n### Safety \u2014 the numbers\n- **5,486** US fatal occupational injuries in 2022 (**+5.7%** on 2021)\n- **WHO**: **20\u201350%** of workers face workplace hazards\n- **ILO**: economic cost **1.8%\u20136% of GDP**\n\n**High-risk industries**: construction, healthcare, manufacturing, transportation,\nagriculture, iron & steel, chemical/petrochemical, heavy equipment operation.\n\n**PPE standards**\n| Standard | Covers | Region |\n|---|---|---|\n| **ANSI Z87.1** | Safety glasses | **US** |\n| EN 166 | Safety glasses | Europe |\n| EN ISO 20471 | High-visibility clothing | Europe |\n| EN ISO 11611 | Welding protection | Europe |\n\n**Hierarchy of control** (most \u2192 least effective):\n**Elimination** \u2192 Substitution \u2192 Engineering \u2192 Administrative \u2192 **PPE (last line)**\n\n**Safety signs \u2014 shape + colour**\n| Type | Shape | Colour |\n|---|---|---|\n| Prohibition | Circular | Red border + diagonal |\n| Warning | **Triangular** | Yellow/amber |\n| Mandatory | Circular | **Blue** |\n| Emergency/First-aid | Rectangular | **Green** |\n\n**Fire extinguishers** \u2014 all red bodies, coded markings:\nWater **green triangle** (A) \u00b7 CO2 **black square** (B, C) \u00b7\nFoam **cream label** (A, B) \u00b7 Dry powder **blue circle** (A, B, C).\nNever use water on an electrical fire.\n\n**Bodies**: US \u2014 **OSHA** (enforces), **NIOSH** (research).\nNigeria \u2014 **NISCN**, **ISPON**, OSHAssociation, MAN, NACCIMA.\n\n### Employability\n**Definition**: the capabilities to **obtain, retain, perform and progress** in\nemployment. You can be employed yet barely employable if your skills are going obsolete.\n\n**Agents of transformation**: AI, automation, digital platforms, globalisation, remote work.\n\n**8 clusters**: communication \u00b7 critical thinking & problem-solving \u00b7 digital &\ntechnological \u00b7 creativity & innovation \u00b7 collaboration & teamwork \u00b7 personal\neffectiveness & emotional intelligence \u00b7 career management, entrepreneurship &\nleadership \u00b7 adaptability, lifelong learning & professional development.\n\n**Critical thinking order**: identify the problem \u2192 research \u2192 determine data\nrelevance \u2192 ask questions \u2192 identify best solution \u2192 present \u2192 analyse the decision.\n\n**Key distinctions**\n- **Creativity** sees possibilities; **innovation** converts them into useful outcomes.\n- **Adaptability** = functioning through change; **resilience** = recovering from setbacks.\n- A **skill** performs a task; a **capability** applies knowledge in *changing* circumstances.\n- A **CV claims**; a **portfolio demonstrates**.\n- Goal with AI: an **AI-enabled professional**, not competing with AI, not blind delegation.\n\n**Career model**: Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 transition \u2192\nlifelong learning (via micro-credentials and short courses).\n\n**Five things to build alongside the degree**: communication ability \u00b7 digital\ncapability \u00b7 evidence of practical experience \u00b7 a professional network \u00b7 a learning habit.\n\n### Traps to watch\n- **5.3%** global vs **14.3%** Nigeria vs **45\u201384.5%** university lifetime prevalence.\n- Every warning-sign distractor is a **real** sign under a **different** category.\n- **Prevention** precedes the problem; **intervention** follows it.\n- **EN** = European, so **ANSI Z87.1** is the US one.\n- **PPE is the weakest** control, not the strongest.\n- Prohibition and mandatory signs are **both circular** \u2014 red vs blue decides.\n- **8** skill clusters, but **5** things to build. Different lists.\n"
+    },
+    {
+      "id": "swep-day-3",
+      "name": "Day 3 \u2014 Wednesday, 16th September",
+      "categoryId": "swep-days",
+      "summaryNotes": "### What Day 3 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** (Agricultural Economics) |\n| 2 | Renewable Energy & PV Technology | **Dr. F. K. Ariyo** (Electronic & Electrical Engineering) |\n| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** (PhD, REng (Mech), MNIMechE, MNIEM, MNSE) |\n\n### 5G \u2014 the three superpowers\n| Superpower | What it is | Its label |\n|---|---|---|\n| **eMBB** | Insanely high speed, massive bandwidth | \u201ccontent and data delivery\u201d |\n| **URLLC** | **~1 ms** latency, extreme reliability | \u201creal-time control and safety\u201d |\n| **mMTC** | Huge numbers of low-power devices | \u201cmassive data collection\u201d |\n\n**Enablers:** **Network slicing** (rent a virtual network \u2014 lowers barrier to entry)\nand **Edge computing** (process locally \u2014 privacy-first, real-time AI).\n\n**Generations:** 1G AMPS/TACS/NMT (1980s) \u00b7 2G GSM (1990s) \u00b7 3G WCDMA/HSPA (2000s) \u00b7\n**4G LTE (2010s)** \u00b7 **5G NR (2020s)**.\n\n**5G targets:** **>10 Gbps** peak \u00b7 **<1 ms** radio latency \u00b7 100 Mbps whenever needed \u00b7\n10 000\u00d7 traffic \u00b7 10\u2013100\u00d7 devices \u00b7 10 years on battery.\n\n**Capabilities vs LTE:** 10\u00d7 data rates \u2192 10 Gbps \u00b7 10\u00d7 lower cost \u2192 <2 cent/GB \u00b7\n10\u00d7 lower latency \u2192 **<1 ms** \u00b7 10\u00d7 lower IoT power \u2192 <10 \u03bcWh/tx \u00b7\n5\u00d7 energy efficiency \u2192 <2 kWh/TB \u00b7 5\u00d7 spectral efficiency \u2192 >10 bps/cell/Hz.\n\n**Spectrum:** 20\u201390 GHz \u2192 1 GHz/operator \u2192 5\u201320 Gbps \u00b7 Below 6 GHz \u2192 100 MHz \u2192 2 Gbps \u00b7\nBelow 1 GHz \u2192 10 MHz \u2192 0.2 Gbps. NR spans **400 MHz \u2013 90 GHz**.\n\n**5 technology components:** new spectrum \u00b7 beamforming \u00b7 network slicing \u00b7\nLTE dual connectivity/coexistence \u00b7 cloud-optimised architecture.\n\n**Journey:** start with a **pain point**, then apply the **5G lens**. Team =\ndomain + technical + business. Monetise **as-a-service**. **6G** converges with\n**AI, quantum computing and advanced sensing**.\n\n### PV \u2014 solar as a multidisciplinary system\n**Energy flow:** Sunlight \u2192 **PV cell** \u2192 **MPPT** \u2192 **inverter** \u2192 load/grid.\n**Scaling:** CELL \u2192 MODULE \u2192 STRING \u2192 ARRAY.\n**I\u2013V curve:** **Isc**, **MPP**, **Voc** \u2014 MPP is the *point*, MPPT the *technology*.\n**Why MPPT:** irradiance and temperature change, so the MPP **moves**\n(less sun \u2192 less current; hotter cell \u2192 lower voltage).\n\n**Six performance factors:** irradiance \u00b7 temperature \u00b7 shading \u00b7 soiling \u00b7\nmismatch \u00b7 degradation.\n\n| Architecture | Flow | Use |\n|---|---|---|\n| Grid-tied | PV \u2192 inverter \u2192 grid/load | Homes, offices, campuses |\n| **Off-grid** | PV \u2192 controller \u2192 battery \u2192 loads | Remote sites, PHCs |\n| Hybrid | PV + grid/generator + battery | Critical loads, resilience |\n\n**Storage:** **kW = how fast** (power), **kWh = how much** (energy).\nA 2-kW load for 4 h needs **8 kWh**. Terms: SoC, DoD, BMS, efficiency.\n**Three components to recognise:** inverter (DC\u2192AC) \u00b7 MPPT controller \u00b7 LiFePO\u2084 battery.\n**Diagnostics:** soiling\u2192power loss \u00b7 partial shade\u2192mismatch \u00b7 hot spot\u2192thermal risk \u00b7\nloose connector\u2192arcing/outage \u00b7 inverter trip\u2192no AC output.\n**Clinic challenge:** 8 kWh/day, 2 kW peak, 1 day autonomy.\n**Safety:** **PV DC stays energised in sunlight** \u2014 isolation must be planned.\n\n### Workshop practice, workforce & national growth\n**Resources:** hand tools (hammers, saws, pliers, marking tools) \u00b7 machine tools\n(lathe, milling, drilling, **power hack saw**) \u00b7 manufacturing methods (machining,\ncasting, powder metallurgy, welding, additive).\n\n**Sequence:** identify materials \u2192 measurements \u2192 marking out (**on the\nmarking-out table**) \u2192 cutting to size \u2192 joining or machining.\n\n**Activity focuses:** skill development \u00b7 team building \u00b7 problem-solving.\n**Five outcomes:** hands-on experience \u00b7 skill development \u00b7 safety awareness \u00b7\nunderstanding manufacturing processes \u00b7 application in industrial production.\n\n**Workforce** = all physically able and available people, **employed and\nunemployed**. The question: *how many of the employable are employed?*\n\n**Eq. 1:** Workshop Practice + Workforce = **\u00bd(National Growth)**\n**Eq. 2:** Workshop Practice + Workforce + **Development Plan** = National Growth\nEngineering **drives**; the development plan **catalyses**.\n\n**GDP:** Nigeria Q1 2025 **3.13%** (up from **2.27%** in Q1 2024); Ghana **5.4%**.\nDriver: reduced petrol imports via the **Dangote Refinery**.\n**Growth factors:** government policies \u00b7 global economy \u00b7 **human capital**.\n**NDP 2021\u20132025**, aligned with **Nigeria Agenda 2050**, four strategic objectives.\n**Outcomes:** **TVET** in all Technical Colleges \u00b7 **COREN** to regulate engineering admissions.\n\n### Traps to watch\n- **100 Mbps** is the \u201cwhenever needed\u201d rate; **>10 Gbps** is the peak.\n- **Quantum computing** belongs to the **6G** slide, not the 5 technology components.\n- **MPP** is a point on the curve; **MPPT** is the tracking technology.\n- **kW vs kWh** \u2014 inverter rated in kW, battery sized in kWh.\n- **2.27%** is Nigeria\u2019s **Q1 2024** figure, not 2025.\n- Eq. 1 gives only **half** of national growth \u2014 the plan supplies the rest.\n- Ayanwale teaches 5G but is from **Agricultural Economics**; Adeleke (Materials\n  Science) belongs to **Day 2**.\n"
     }
   ],
   "eee282": [
@@ -1510,6 +1516,646 @@ export const questionBank = {
       "correct": 1,
       "short": "Communication ability, digital capability, practical experience, a professional network and a learning habit.",
       "solution": "### Why this is the answer\nUnder **\"A Special Message to Students and Graduates\"**, the lecture opens with\n*\"Your degree is the **beginning** of your professional learning\"* and then lists\nfive things to develop **while still in university**:\n\n1. A strong **communication** ability\n2. A **digital** capability\n3. Evidence of **practical experience**\n4. A professional **network**\n5. A **learning habit**\n\n### Why these five\nEach maps onto a theme running through the whole lecture:\n\n| Item | Where it comes from |\n|---|---|\n| Communication | *\"Perhaps the most fundamental employability skill\"* |\n| Digital capability | *\"A basic requirement for participation in modern economic life\"* |\n| Practical experience | *\"Experience converts knowledge into competence\"* |\n| Network | *\"Not only what you know but who knows what you can do\"* |\n| Learning habit | *\"Above all: be a lifelong learner\"* |\n\n### Do not confuse it with the 8 clusters\n**8** clusters of employability skills; **5** things to build alongside the\ndegree. Two different lists on two different slides.\n\n### Source\nProf. A. B. Ekanola, \"A Special Message to Students and Graduates\" slide."
+    },
+    {
+      "id": "swep_day3_01",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Prof. A. B. Ayanwale's lecture, the motivation for the 5G4BE course cites Sub-Saharan Africa's population and its projected youth profile. What are the two figures given?",
+      "options": [
+        "More than 1 billion people, half of whom will be under 25 by 2050",
+        "More than 2 billion people, half of whom will be under 25 by 2050",
+        "More than 1 billion people, a quarter of whom will be under 25 by 2030",
+        "About 800 million people, half of whom will be under 35 by 2050"
+      ],
+      "correct": 0,
+      "short": "Sub-Saharan Africa has more than 1 billion people, half under 25 by 2050.",
+      "solution": "### Why this is the answer\nThe motivation slide states that Sub-Saharan Africa is *\"home to **more than 1\nbillion people**, half of whom will be **under 25 years old by 2050**\"* \u2014 a\ndiverse continent whose human and natural resources can yield inclusive growth,\neradicate poverty and improve livelihoods.\n\n### The second figure on the same slide\nThe continent hosts the world's **largest free trade area** and a\n**1.2-billion-person market**, creating an entirely new development path.\n\nNote the two population numbers are different things:\n| Figure | What it describes |\n|---|---|\n| **1 billion+** | Sub-Saharan Africa's current population |\n| **1.2 billion** | The size of the free-trade market |\n\n### Why this opens an entrepreneurship lecture\nA very young, very large, newly integrated market is precisely the condition in\nwhich new digital ventures scale. The demographics *are* the business case.\n\n### Source\nProf. A. B. Ayanwale, \"Overview of the 5G4BE course \u2014 Motivation\" slide.\n\n### Why the others fail\nEach alters one element \u2014 the population, the age threshold, the proportion or\nthe year. The exact combination is **1 billion+ / half / under 25 / by 2050**."
+    },
+    {
+      "id": "swep_day3_02",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the mobile-generation timeline in the 5G lecture, which technology is paired with the correct generation and decade?",
+      "options": [
+        "3G \u2014 LTE \u2014 2010s",
+        "2G \u2014 WCDMA/HSPA \u2014 1990s",
+        "4G \u2014 LTE \u2014 2010s",
+        "5G \u2014 cdma2000 \u2014 2020s"
+      ],
+      "correct": 2,
+      "short": "4G is LTE, belonging to the 2010s.",
+      "solution": "### Why this is the answer\nThe deck's \"From 1G to 5G\" slide notes that the world has witnessed **five\nmobile generations in the last 40 years**, each with its own technology and\ndecade:\n\n| Gen | Technology | Decade | Described as |\n|---|---|---|---|\n| 1G | AMPS, TACS, NMT | 1980s | Foundation of mobile telephony |\n| 2G | GSM, D-AMPS, PDC, IS-95 | 1990s | Mobile telephony for everybody |\n| 3G | WCDMA/HSPA, cdma2000 | 2000s | Foundation of mobile broadband |\n| **4G** | **LTE** | **2010s** | Further enhanced mobile broadband |\n| 5G | **NR** (New Radio) | 2020s | Interconnected devices, sensors and systems (verticals) |\n\nOnly **4G \u2014 LTE \u2014 2010s** is correctly paired.\n\n### The distinction that matters\n3G is the **foundation** of mobile broadband; 4G **enhances** it; 5G changes the\ntarget altogether, moving from phones to **verticals** \u2014 industry, cities,\nmachines.\n\n### Source\nProf. A. B. Ayanwale, \"Mobile network \u2014 From 1G to 5G\" slide (3GPP New Radio).\n\n### Why the others fail\nLTE is 4G, not 3G. WCDMA/HSPA is 3G, not 2G. cdma2000 is 3G; 5G's radio is\n**NR**."
+    },
+    {
+      "id": "swep_day3_03",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture describes three 5G \"superpowers\". Which one is defined as near-instantaneous response times with extreme reliability?",
+      "options": [
+        "Enhanced Mobile Broadband (eMBB)",
+        "Massive Machine-Type Communications (mMTC)",
+        "Ultra-Reliable Low-Latency Communication (URLLC)",
+        "Network Slicing"
+      ],
+      "correct": 2,
+      "short": "URLLC delivers near-instantaneous response with extreme reliability.",
+      "solution": "### Why this is the answer\n**URLLC** is described as *near-instantaneous response times (as low as **1ms**)\nwith extreme reliability* \u2014 the **\"real-time control and safety\" superpower**.\n\n### The three superpowers, kept apart\n| Superpower | What it is | Entrepreneurial framing |\n|---|---|---|\n| **eMBB** | Insanely high speeds, massive bandwidth \u2014 *\"a firehose for data\"* | Content and data delivery |\n| **URLLC** | **~1 ms latency**, extreme reliability | **Real-time control and safety** |\n| **mMTC** | Connect a staggering number of low-power devices | Massive data collection |\n\n### What URLLC unlocks\nAutonomous drone fleets for last-mile delivery and industrial inspection;\nmission-critical services such as remote-controlled manufacturing robotics and\n**tele-surgery**; and competitive multiplayer gaming where latency is\nimperceptible.\n\n### Source\nProf. A. B. Ayanwale, \"Superpower #2: Ultra-Reliable Low-Latency\nCommunication (URLLC)\" slide.\n\n### Why the others fail\neMBB is about **bandwidth**, mMTC about **device count**. Network Slicing is not\na superpower at all \u2014 it is listed separately as an **underlying enabler**."
+    },
+    {
+      "id": "swep_day3_04",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which pairing of a 5G superpower with its stated entrepreneurial advantage is correct?",
+      "options": [
+        "eMBB \u2014 \"massive data collection\" superpower",
+        "mMTC \u2014 \"real-time control and safety\" superpower",
+        "URLLC \u2014 \"content and data delivery\" superpower",
+        "mMTC \u2014 \"massive data collection\" superpower"
+      ],
+      "correct": 3,
+      "short": "mMTC is the \"massive data collection\" superpower.",
+      "solution": "### Why this is the answer\nEach superpower is given a specific entrepreneurial label in the deck, and this\nquestion tests whether the labels are matched to the right capability:\n\n| Superpower | Its stated advantage |\n|---|---|\n| eMBB | *\"content and data delivery\"* superpower |\n| URLLC | *\"real-time control and safety\"* superpower |\n| **mMTC** | ***\"massive data collection\"*** **superpower** |\n\n### Why mMTC earns that label\nIt connects a *staggering number of low-power devices simultaneously*, enabling\nsmart agriculture with thousands of soil, weather and crop sensors; end-to-end\nasset tracking across a supply chain; and analysis of data from **billions** of\nsmart-city devices for traffic, waste and energy optimisation.\n\nThe logic is simple: mMTC's value is in the **number of sources**, not the speed\nof any one of them \u2014 so its business model is collection, not delivery.\n\n### Source\nProf. A. B. Ayanwale, \"Superpower #3: Massive Machine-Type Communications\"\nslide.\n\n### Why the others fail\nEach swaps a label onto the wrong superpower. All three labels are real; only\none pairing is right."
+    },
+    {
+      "id": "swep_day3_05",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the 5G targets slide, what are the stated peak data rate and radio latency targets for 5G?",
+      "options": [
+        ">10 Gbps peak data rates and <1 ms radio latency",
+        ">1 Gbps peak data rates and <10 ms radio latency",
+        "100 Mbps peak data rates and <1 ms radio latency",
+        ">10 Gbps peak data rates and <10 ms radio latency"
+      ],
+      "correct": 0,
+      "short": "5G targets >10 Gbps peak data rates and <1 ms radio latency.",
+      "solution": "### Why this is the answer\nThe \"5G targets\" slide sets out the headline numbers:\n\n| Target | Value |\n|---|---|\n| **Peak data rates** | **>10 Gbps** |\n| **Radio latency** | **<1 ms** |\n| Guaranteed experience | **100 Mbps** whenever needed |\n| Traffic growth | **10 000\u00d7** more traffic |\n| Device density | **10\u2013100\u00d7** more devices |\n| Battery life | **10 years** on battery |\n\n### The trap inside this question\n**100 Mbps** is a real 5G figure \u2014 but it is the *\"whenever needed\"* guaranteed\nrate, **not** the peak. Peak is **>10 Gbps**. One slide, two speed numbers, two\nvery different meanings.\n\n### How the targets map to the superpowers\nThe slide groups them: *\"Unlimited experience\"* \u2192 eMBB; *\"For everything\"* \u2192\nIoT/mMTC; *\"Instant action\"* \u2192 URLLC.\n\n### Source\nProf. A. B. Ayanwale, \"What is 5G? \u2014 5G targets\" slide (3GPP New Radio)."
+    },
+    {
+      "id": "swep_day3_06",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "On the 5G capabilities comparison against LTE, 5G targets 10\u00d7 lower latency. What specific target value is given?",
+      "options": [
+        "<10 ms",
+        "<10 \u03bcWh per tx",
+        "<2 cent/GB",
+        "<1 ms"
+      ],
+      "correct": 3,
+      "short": "The 10\u00d7 lower latency target is <1 ms.",
+      "solution": "### Why this is the answer\nThe \"5G capabilities\" table lists each gain against LTE alongside a hard target\nvalue:\n\n| Gain vs LTE | Target value |\n|---|---|\n| 10\u00d7 data rates | 10 Gbps |\n| 10\u00d7 lower cost | <2 cent/GB |\n| **10\u00d7 lower latency** | **<1 ms** |\n| 10\u00d7 lower IoT power | <10 \u03bcWh per tx |\n| 5\u00d7 energy efficiency | <2 kWh/TB |\n| 5\u00d7 spectral efficiency | >10 bps/cell/Hz |\n\n### Why the distractors are dangerous\nEvery wrong option is a **real target value from the very same table** \u2014 just\nattached to a different row. `<2 cent/GB` is the cost target; `<10 \u03bcWh per tx`\nis the IoT power target. Reading the row, not just recognising the number, is\nwhat earns the mark.\n\n### Note the pattern\nThe first four gains are **10\u00d7**; the last two are **5\u00d7**. Energy and spectral\nefficiency improve less dramatically than speed, cost, latency and IoT power.\n\n### Source\nProf. A. B. Ayanwale, \"What is 5G? \u2014 5G capabilities\" slide."
+    },
+    {
+      "id": "swep_day3_07",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the 5G spectrum table, what data rate is associated with the 20\u201390 GHz band, and what spectrum per operator does it assume?",
+      "options": [
+        "2 Gbps with 100 MHz per operator",
+        "0.2 Gbps with 10 MHz per operator",
+        "5\u201320 Gbps with 1 GHz per operator",
+        "5\u201320 Gbps with 100 MHz per operator"
+      ],
+      "correct": 2,
+      "short": "The 20\u201390 GHz band gives 5\u201320 Gbps with 1 GHz of spectrum per operator.",
+      "solution": "### Why this is the answer\nThe 5G spectrum table pairs each band with the spectrum an operator gets and the\nresulting data rate:\n\n| Spectrum | Per operator | Data rate |\n|---|---|---|\n| **20\u201390 GHz** | **1 GHz** | **5\u201320 Gbps** |\n| Below 6 GHz | 100 MHz | 2 Gbps |\n| Below 1 GHz | 10 MHz | 0.2 Gbps |\n\n### The engineering principle behind the table\nMore bandwidth buys more speed, but higher frequencies travel less far and\npenetrate buildings poorly. So the slide maps each band to a coverage role:\n\n- **20\u201390 GHz** \u2192 *extreme local data rates*\n- **Below 6 GHz** \u2192 *high rates with urban macro sites*\n- **Below 1 GHz** \u2192 *wide area and deep indoor coverage*\n\nThat is the trade-off an entrepreneur must design around \u2014 you cannot have\n20 Gbps **and** deep indoor coverage from the same band.\n\n### Also stated\n5G NR is designed for flexible use of all spectrum from **400 MHz to 90 GHz**,\nincluding licensed, shared and unlicensed (TDD/FDD). New IMT bands were\nidentified at **WRC-19**.\n\n### Source\nProf. A. B. Ayanwale, \"What is 5G? \u2014 5G Spectrum\" slide."
+    },
+    {
+      "id": "swep_day3_08",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the five 5G technology components?",
+      "options": [
+        "New spectrum",
+        "Beamforming",
+        "Network slicing",
+        "Quantum encryption"
+      ],
+      "correct": 3,
+      "short": "Quantum encryption is not one of the five 5G technology components.",
+      "solution": "### Why this is the answer\nA **NOT** question. The deck names exactly five technology components:\n\n1. **New spectrum**\n2. **Beamforming**\n3. **Network slicing**\n4. LTE dual connectivity and LTE coexistence\n5. Cloud-optimised architecture \u2014 *move part of the cloud processing to the edge*\n\n**Quantum encryption** appears nowhere in the component list.\n\n### The near-miss worth noting\n**Quantum computing** *is* mentioned in this lecture \u2014 but on the **6G** slide,\nas a future convergence alongside AI and advanced sensing. It is a\n*forward-looking* technology, not a current 5G component. Recognising a term\nfrom elsewhere in the deck is not the same as it belonging here.\n\n### Two components double as business opportunities\n**Network slicing** lets a founder rent a virtual network optimised for their\napplication instead of building infrastructure, and **edge computing** enables\nprivacy-first, real-time AI. Both are explicitly framed as lowering the barrier\nto entry.\n\n### Source\nProf. A. B. Ayanwale, \"What is 5G? \u2014 Technology components\" and \"The Underlying\nEnablers\" slides."
+    },
+    {
+      "id": "swep_day3_09",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does the lecture describe Network Slicing as an entrepreneurial enabler?",
+      "options": [
+        "It allows founders to buy discounted spectrum licences from regulators",
+        "It lets a founder rent a virtual network slice optimised for their application, lowering the barrier to entry",
+        "It splits company equity among technical and business co-founders",
+        "It processes data locally instead of in a distant cloud"
+      ],
+      "correct": 1,
+      "short": "Network slicing lets founders rent an optimised virtual network instead of building one.",
+      "solution": "### Why this is the answer\nThe slide addresses the founder directly: *\"Don't have the capital to build a\nmassive network? No problem. You can **rent a virtual network slice** perfectly\noptimised for your application's needs, whether it's for low latency or high\nbandwidth. This **dramatically lowers the barrier to entry** for\nentrepreneurs.\"*\n\n### The two enablers side by side\n| Enabler | What it does | Business effect |\n|---|---|---|\n| **Network Slicing** | Rent a virtual network tuned to your needs | **Removes the capital barrier** |\n| **Edge Computing** | Process data **locally**, not in a distant cloud | Privacy-first models, real-time AI |\n\n### The trap in option D\n*\"Processes data locally instead of in a distant cloud\"* is a genuine, correctly\nworded definition \u2014 **of edge computing**, the other enabler on the same slide.\nClassic adjacent-fact distractor.\n\n### Source\nProf. A. B. Ayanwale, \"The Underlying Enablers: Fueling Your Business\" slide."
+    },
+    {
+      "id": "swep_day3_10",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Under Smart Manufacturing (Industry 4.0), what problem does the lecture say 5G addresses?",
+      "options": [
+        "Manufacturing is inefficient, with costly downtime and reliance on rigid, wired infrastructure",
+        "Access to specialists is limited and patient monitoring is cumbersome",
+        "Urban infrastructure is static and reactive, causing congestion",
+        "Content is passive and AR/VR requires expensive hardware"
+      ],
+      "correct": 0,
+      "short": "Manufacturing suffers costly downtime and rigid, wired infrastructure.",
+      "solution": "### Why this is the answer\nThe lecture structures each industry as **Problem \u2192 5G Solution \u2192 Startup\nIdeas**. For **Smart Manufacturing (Industry 4.0)** the problem is that\nmanufacturing is *often inefficient, with **costly downtime** and a reliance on\n**rigid, wired infrastructure***. The 5G solution is *wireless, flexible and\nreal-time*.\n\n### Every distractor is another industry's problem statement\n| Problem stated | Belongs to |\n|---|---|\n| Limited specialist access, cumbersome monitoring | **Smart Healthcare** |\n| Static, reactive urban infrastructure | **Smart Cities & Urban Tech** |\n| Passive content, expensive AR/VR hardware | **Media & Entertainment** |\n\nAll four are verbatim problems from the deck \u2014 only one belongs to\nmanufacturing.\n\n### The startup ideas that follow\n**Predictive Maintenance as a Service** (5G sensors plus edge AI predicting\ncomponent failure, sold on subscription), **AR-Powered Training**, and\n**Autonomous Warehouse Logistics** using 5G-enabled AGVs.\n\n### Source\nProf. A. B. Ayanwale, \"Part 2: Industry-Specific Opportunities for Founders \u2014\n1. Smart Manufacturing\" slide."
+    },
+    {
+      "id": "swep_day3_11",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture recommends a specific method for finding a 5G business idea. What is the correct order of that approach?",
+      "options": [
+        "Start with a 5G capability, then search for an industry that might need it",
+        "Start with a pain point, then apply the \"5G lens\" to see how a superpower uniquely solves it",
+        "Start with a business model canvas, then choose a technology",
+        "Start by assembling a technical team, then let them choose the product"
+      ],
+      "correct": 1,
+      "short": "Start with a pain point, then apply the \"5G lens\".",
+      "solution": "### Why this is the answer\nThe instruction is explicit: *\"**Don't start with a solution; start with a pain\npoint.** What's a major problem in an industry you're passionate about?\"* Only\nthen do you apply the **\"5G lens\"** \u2014 asking how high speed, low latency or\nmassive connectivity can solve that problem in a way that **wasn't possible\nbefore**.\n\n### The lecture's worked example\n> **Pain point:** it is difficult for remote doctors to get a high-quality,\n> real-time view of a patient's wound.\n> **5G lens:** use **eMBB** to stream ultra-HD video from a portable camera, and\n> **URLLC** to let the remote doctor control the camera's focus.\n\nNote that one pain point pulls in **two different superpowers** \u2014 that is what\napplying the lens properly looks like.\n\n### Why the sequence matters\nOption A is precisely the trap: starting from the technology produces a solution\nhunting for a problem. The other two steps are real \u2014 the Business Model Canvas\nand team-building both appear \u2014 but they come **later** in Part 3, after the\nidea exists.\n\n### Source\nProf. A. B. Ayanwale, \"Part 3: The Entrepreneurial Journey in 5G \u2014 1. Finding\nYour Idea: The '5G Lens'\" slide."
+    },
+    {
+      "id": "swep_day3_12",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, a great 5G startup team is multidisciplinary. Which three roles are named?",
+      "options": [
+        "Domain experts, technical experts and business strategists",
+        "Investors, marketers and software developers",
+        "Network operators, regulators and hardware suppliers",
+        "Data scientists, lawyers and accountants"
+      ],
+      "correct": 0,
+      "short": "Domain experts, technical experts and business strategists.",
+      "solution": "### Why this is the answer\n*\"A great 5G startup isn't just a tech team. It's a **multidisciplinary\nteam**.\"* The three named roles are:\n\n| Role | What they bring | Example given |\n|---|---|---|\n| **Domain experts** | Deep understanding of the target industry | A **nurse** for health tech; a **supply chain manager** for logistics |\n| **Technical experts** | Networking, cloud/edge computing, data science | Engineers |\n| **Business strategists** | A viable business model and funding | \u2014 |\n\n### The point being made\nThe **domain expert is listed first**, ahead of the engineers. A team that\nunderstands 5G but not the industry will build something technically impressive\nthat nobody in that sector needs. This mirrors the \"start with a pain point\"\nrule \u2014 you cannot identify a real pain point without someone who lives it.\n\n### Why option C is tempting\nMobile operators and hardware manufacturers **are** named in the deck \u2014 but as\n**Key Partners** on the Business Model Canvas, not as members of your team.\n\n### Source\nProf. A. B. Ayanwale, \"2. Building Your Team: The Right Mix\" slide."
+    },
+    {
+      "id": "swep_day3_13",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which monetisation strategy does the lecture identify as \"a key theme\" for 5G startups?",
+      "options": [
+        "Selling expensive hardware outright with a one-off margin",
+        "Licensing patents to mobile network operators",
+        "\"As-a-Service\" models, selling functionality rather than hardware",
+        "Advertising-funded free access for all users"
+      ],
+      "correct": 2,
+      "short": "\"As-a-Service\" models are named as the key theme.",
+      "solution": "### Why this is the answer\nThe slide states: *\"**'As-a-Service' Models:** This is a **key theme**. Instead\nof selling expensive hardware, sell the **functionality as a service** (e.g.\nRobotics-as-a-Service, Predictive Maintenance-as-a-Service).\"*\n\n### The three monetisation strategies listed\n1. **\"As-a-Service\" models** \u2014 the key theme\n2. **Usage-based pricing** \u2014 charge per data transmitted or per hour of usage\n3. **Subscription & platform fees** \u2014 monthly consumer subscriptions, or a\n   platform fee for developers building on your technology\n\n### Why \"as-a-service\" fits 5G specifically\nIt mirrors what 5G does to infrastructure itself. **Network slicing** lets you\nrent a network instead of building one; the same logic then flows to your\ncustomers, who rent your capability instead of buying your hardware. Option A is\nthe exact model the slide tells founders to move **away** from.\n\n### Where it reappears\nThe Smart Manufacturing section applies it directly \u2014 *Predictive Maintenance as\na Service*, sold on a **subscription model**.\n\n### Source\nProf. A. B. Ayanwale, \"3. Monetization Strategies for Startups\" slide."
+    },
+    {
+      "id": "swep_day3_14",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the \"Beyond 5G\" discussion, which technologies is 6G expected to converge with?",
+      "options": [
+        "Blockchain, 3D printing and biotechnology",
+        "Artificial Intelligence, Quantum Computing and advanced sensing technologies",
+        "Satellite television, fibre optics and copper broadband",
+        "Virtual reality, cloud gaming and social media"
+      ],
+      "correct": 1,
+      "short": "6G is expected to converge with AI, quantum computing and advanced sensing.",
+      "solution": "### Why this is the answer\n*\"5G is here, but the research for **6G** has already begun... Expect even\ngreater convergence with **Artificial Intelligence (AI)**, **Quantum\nComputing**, and **advanced sensing technologies**. The lines between the\nphysical and digital worlds will continue to blur.\"*\n\n6G is envisioned to be more **immersive, intelligent and integrated**.\n\n### Why this matters for the exam\nThis is also where **quantum computing** appears \u2014 a fact tested from the other\ndirection in the technology-components question. Quantum belongs to **6G's\nfuture**, not to 5G's present architecture. Knowing *which slide* a term sits on\nis what separates recall from understanding.\n\n### The closing posture\n*\"The entrepreneurial journey in connectivity is **just beginning**\"* \u2014 the\nlecture deliberately ends by pointing past the technology students just learned.\n\n### Source\nProf. A. B. Ayanwale, \"Beyond 5G: Towards 6G and the Future\" slide."
+    },
+    {
+      "id": "swep_day3_15",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Dr. F. K. Ariyo opens by arguing that solar is not merely a panel on a roof. How is it characterised instead?",
+      "options": [
+        "A purely electrical installation governed by wiring regulations",
+        "A financial product best understood through payback periods",
+        "A civil engineering structure requiring roof reinforcement",
+        "A multidisciplinary engineering system"
+      ],
+      "correct": 3,
+      "short": "Solar is presented as a multidisciplinary engineering system.",
+      "solution": "### Why this is the answer\nThe opening hook is unambiguous: *\"Solar is **not just a panel on a roof** \u2014 it\nis a **multidisciplinary engineering system**.\"* The slide frames it across four\npillars:\n\n| Pillar | Activity |\n|---|---|\n| **POWER** | Generate \u2022 convert \u2022 protect |\n| **DATA** | Measure \u2022 monitor \u2022 predict |\n| **DESIGN** | Size \u2022 model \u2022 optimise |\n| **IMPACT** | Homes \u2022 clinics \u2022 farms |\n\nSummarised as **SUN \u2192 PV \u2192 POWER**.\n\n### Why \"multidisciplinary\" is the operative word\nThe following slide maps solar onto six disciplines students are already\nstudying \u2014 **Electrical** (power systems, machines, protection), **Electronics**\n(converters, sensors, embedded), **Control** (MPPT, regulation, automation),\n**AI/Data** (forecasting, fault diagnosis), **Materials** (semiconductors, PV\ndevices) and **Enterprise** (design, installation, service, finance).\n\nThe lecture's framing: **your degree \u2192 your solar specialisation**. Solar is not\na separate subject; it is where existing skills converge.\n\n### Source\nDr. F. K. Ariyo, \"Opening Hook\" and \"Career Signal\" slides."
+    },
+    {
+      "id": "swep_day3_16",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the solar energy chain described as \"from sunlight to useful work\", what is the correct order of the five stages?",
+      "options": [
+        "Sunlight \u2192 PV cell \u2192 inverter \u2192 MPPT \u2192 load/grid",
+        "Sunlight \u2192 MPPT \u2192 PV cell \u2192 inverter \u2192 load/grid",
+        "Sunlight \u2192 PV cell \u2192 MPPT \u2192 inverter \u2192 load/grid",
+        "PV cell \u2192 sunlight \u2192 MPPT \u2192 load/grid \u2192 inverter"
+      ],
+      "correct": 2,
+      "short": "Sunlight \u2192 PV cell \u2192 MPPT \u2192 inverter \u2192 load/grid.",
+      "solution": "### Why this is the answer\n\"The Big Picture\" slide sets out the energy flow in five numbered stages:\n\n| # | Stage | What happens |\n|---|---|---|\n| 1 | **Sunlight** | Photons |\n| 2 | **PV cell** | DC electricity |\n| 3 | **MPPT** | Extract maximum power |\n| 4 | **Inverter** | DC \u2192 AC |\n| 5 | **Load / Grid** | Useful work |\n\n### Why MPPT must precede the inverter\nThe PV array produces **variable DC**. MPPT tracks the moving maximum-power\npoint and delivers a **regulated DC bus**; only then does the inverter convert\nthat to **controlled AC**. Swapping them \u2014 as option A does \u2014 would ask the\ninverter to work from an unoptimised, fluctuating input.\n\nThe deck confirms the chain elsewhere: *PV array (variable DC) \u2192 MPPT controller\n(search/track) \u2192 DC bus (regulated energy) \u2192 inverter (controlled AC)*.\n\n### The engineering question attached\n*\"**Where are the losses \u2014 and how do we reduce them?**\"* Each arrow in the\nchain is a place efficiency is lost.\n\n### Source\nDr. F. K. Ariyo, \"The Big Picture\" and \"Power Electronics\" slides."
+    },
+    {
+      "id": "swep_day3_17",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Inside a solar cell, what sequence does the lecture use to explain how light becomes current?",
+      "options": [
+        "The semiconductor stores light as heat, which is later converted to electricity",
+        "Light creates electron\u2013hole pairs; the junction and contacts separate charge; the external circuit carries current",
+        "The p\u2013n junction emits photons which are captured by the contacts",
+        "Sunlight directly induces alternating current in the cell wiring"
+      ],
+      "correct": 1,
+      "short": "Light creates electron\u2013hole pairs; the junction separates charge; the external circuit carries current.",
+      "solution": "### Why this is the answer\nThe device-physics slide asks students to *\"think like an electron\"* and gives\nthree steps:\n\n1. **Semiconductor absorbs light** \u2014 light creates **electron\u2013hole pairs**\n2. **Charge carriers are separated** \u2014 by the **p\u2013n junction** and contacts\n3. **External circuit carries current**\n\nSummarised as **PHYSICS \u2192 DEVICE \u2192 POWER**.\n\n### Why option D is decisively wrong\nA PV cell produces **DC**, not AC. That is the entire reason an **inverter**\nexists later in the chain. If sunlight induced AC directly, stage 4 of the\nenergy flow would be unnecessary.\n\n### Scaling the device\nOne cell is tiny, so engineering scales it: **CELL \u2192 MODULE \u2192 STRING \u2192 ARRAY**\n(single photovoltaic device \u2192 cells connected and packaged \u2192 modules in series \u2192\nstrings forming a field). The challenge grows with scale: **mismatch,\nprotection, wiring, thermal behaviour, control and maintenance**.\n\n### Source\nDr. F. K. Ariyo, \"Device Physics\" and \"From Cell to Array\" slides."
+    },
+    {
+      "id": "swep_day3_18",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "On the I\u2013V curve of a photovoltaic panel, which three points are labelled?",
+      "options": [
+        "Isc, MPP and Voc",
+        "Isc, MPPT and Vmax",
+        "Imax, MPP and Vsc",
+        "Ioc, MPP and Vsc"
+      ],
+      "correct": 0,
+      "short": "The I\u2013V curve is labelled with Isc, MPP and Voc.",
+      "solution": "### Why this is the answer\nThe characteristics slide plots current and power against voltage, labelling\nthree points:\n\n| Symbol | Meaning | Where it sits |\n|---|---|---|\n| **Isc** | Short-circuit current | Vertical axis, zero volts |\n| **MPP** | **Maximum Power Point** | The knee of the curve |\n| **Voc** | Open-circuit voltage | Horizontal axis, zero current |\n\n### The distinction the distractors exploit\n**MPP** is the *point* on the curve. **MPPT** is the **tracking technology** \u2014\nthe controller that hunts for that point. Option B swaps the point for the\ntechnique, which is the single most common confusion in introductory PV.\n\nLikewise the subscripts are not interchangeable: **sc** = short-circuit,\n**oc** = open-circuit. \"Vsc\" and \"Ioc\" are meaningless \u2014 short-circuit voltage\nis zero, and open-circuit current is zero.\n\n### The engineering question on the slide\n*\"Where should the converter operate to capture maximum power?\"* \u2014 the answer,\nof course, is at the **MPP**, which is precisely what MPPT is for.\n\n### Source\nDr. F. K. Ariyo, \"Characteristics\" slide."
+    },
+    {
+      "id": "swep_day3_19",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Why is Maximum Power Point Tracking (MPPT) necessary rather than simply fixing the operating point once?",
+      "options": [
+        "Because inverters can only accept one fixed voltage",
+        "Because the grid frequency varies through the day",
+        "Because batteries must always be charged at constant current",
+        "Because irradiance and temperature change, so the maximum-power point moves"
+      ],
+      "correct": 3,
+      "short": "Irradiance and temperature change, so the maximum-power point moves.",
+      "solution": "### Why this is the answer\nThe slide states the cause directly: *\"Irradiance changes \u2192 temperature changes\n\u2192 **the maximum-power point moves**.\"* A fixed operating point would be optimal\nonly for one instant; MPPT is described as *\"making every ray count\"*.\n\n### The two drivers, from the design-reality slide\n| Condition | Effect on the panel |\n|---|---|\n| **Less irradiance** | Less **current** |\n| **Higher cell temperature** | Lower **voltage** |\n\nSince power is the product of the two, any change in sun or heat shifts the MPP\nalong the I\u2013V curve. Both vary continuously through a day.\n\n### Where MPPT sits\n**PV array** (variable DC) \u2192 **MPPT controller** (search/track) \u2192 **DC bus**\n(regulated) \u2192 **inverter** (controlled AC). The deck labels this the meeting\npoint of **control systems + power electronics**.\n\n### Source\nDr. F. K. Ariyo, \"Power Electronics: MPPT\" and \"Design Reality\" slides."
+    },
+    {
+      "id": "swep_day3_20",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed among the six factors affecting solar system performance?",
+      "options": [
+        "Soiling",
+        "Shading",
+        "Grid tariff structure",
+        "Degradation"
+      ],
+      "correct": 2,
+      "short": "Grid tariff structure is not one of the six performance factors.",
+      "solution": "### Why this is the answer\nA **NOT** question. \"Design Reality\" names exactly six factors:\n\n| Factor | Effect |\n|---|---|\n| **Irradiance** | Less sunlight \u2192 less current |\n| **Temperature** | Higher cell temperature \u2192 lower voltage |\n| **Shading** | Mismatch can hurt a **whole string** |\n| **Soiling** | Dust reduces optical input |\n| **Mismatch** | Cells/modules are never perfectly identical |\n| **Degradation** | Performance changes with age |\n\n**Grid tariff structure** is a commercial consideration, not a physical\nperformance factor, and appears nowhere on the slide.\n\n### The design principle attached\n*\"Good design is **not 'buy more panels'**. It is understanding the **full chain\nof causes and effects**.\"* Adding capacity does not fix shading, soiling or\nmismatch \u2014 diagnosis does.\n\n### Note how severe shading is\nShading is not local: partial shade on one module can **hurt a whole string**\nthrough mismatch. That is why it reappears in the diagnostics slide as a named\nfault.\n\n### Source\nDr. F. K. Ariyo, \"Design Reality\" slide."
+    },
+    {
+      "id": "swep_day3_21",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture describes three PV system architectures. Which description matches the OFF-GRID configuration?",
+      "options": [
+        "PV \u2192 inverter \u2192 grid/load, used for homes, offices and campuses",
+        "PV \u2192 controller \u2192 battery \u2192 loads, used for remote sites such as primary health centres",
+        "PV + grid/generator + battery, used for critical loads and resilience",
+        "PV \u2192 grid only, with no storage or local loads"
+      ],
+      "correct": 1,
+      "short": "Off-grid runs PV \u2192 controller \u2192 battery \u2192 loads, for remote sites.",
+      "solution": "### Why this is the answer\nThree architectures are set out side by side:\n\n| Architecture | Flow | Typical use |\n|---|---|---|\n| **Grid-tied** | PV \u2192 inverter \u2192 grid/load | Homes, offices, campuses |\n| **Off-grid** | **PV \u2192 controller \u2192 battery \u2192 loads** | **Remote sites: PHCs** |\n| **Hybrid** | PV + grid/generator + battery | Critical loads, resilience |\n\n### The defining feature of off-grid\nThere is **no grid in the chain at all**. Because nothing else can supply power\nwhen the sun is down, the **battery is mandatory** \u2014 it is the only thing\nstanding between the load and darkness. In grid-tied systems the grid plays that\nrole; in hybrid, both are available.\n\n### The rule the slide insists on\n> **Choose architecture from the load and reliability need \u2014 not from the panel\n> count.**\n\nA rural clinic needing 24-hour refrigeration has a *reliability* requirement,\nand that dictates off-grid or hybrid before anyone counts panels.\n\n### Source\nDr. F. K. Ariyo, \"System Architectures\" slide."
+    },
+    {
+      "id": "swep_day3_22",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the battery storage discussion, what distinction does the lecture draw between kW and kWh?",
+      "options": [
+        "kW is energy and kWh is power",
+        "kW measures battery capacity and kWh measures charging speed",
+        "kW applies to DC systems and kWh to AC systems",
+        "kW measures how fast (power) and kWh measures how much (energy)"
+      ],
+      "correct": 3,
+      "short": "kW is power \u2014 how fast; kWh is energy \u2014 how much.",
+      "solution": "### Why this is the answer\nThe slide instructs students to *\"think in kW and kWh\"*:\n\n| Unit | Question it answers |\n|---|---|\n| **kW** | **Power \u2014 how fast?** |\n| **kWh** | **Energy \u2014 how much?** |\n\n### The worked example on the slide\n> A **2-kW** load running for **4 h** needs **8 kWh** of energy.\n\nThat is simply **power \u00d7 time = energy**, and it is the calculation behind every\nbattery sizing decision.\n\n### The related battery terms introduced\n- **SoC** \u2014 state of charge\n- **DoD** \u2014 depth of discharge\n- **BMS** \u2014 battery management system\n- **Efficiency** \u2014 charge/discharge losses\n\n### Why the distinction matters\n> **Storage turns sunshine into dispatchable energy.**\n\nAn inverter must be rated in **kW** to survive the peak load; a battery must be\nsized in **kWh** to last the night. Confuse the two and the system fails in one\ndirection or the other.\n\n### Source\nDr. F. K. Ariyo, \"Energy Storage\" slide."
+    },
+    {
+      "id": "swep_day3_23",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which three components does the lecture say students should be able to identify immediately?",
+      "options": [
+        "Inverter, MPPT controller and LiFePO\u2084 battery",
+        "PV module, junction box and earthing rod",
+        "Transformer, circuit breaker and busbar",
+        "Irradiance sensor, thermocouple and data logger"
+      ],
+      "correct": 0,
+      "short": "Inverter, MPPT charge controller and LiFePO\u2084 battery.",
+      "solution": "### Why this is the answer\nThe \"Component Deep Dive\" slide names three components *\"students should be able\nto identify immediately\"*, each with its one-line function:\n\n| Component | Function |\n|---|---|\n| **Inverter** | **DC \u2192 AC** |\n| **MPPT controller** | Regulates PV/battery charging |\n| **LiFePO\u2084 battery** | Stores electrical energy |\n\n### The fuller component chain\nThe recognition slide lists the whole system: **PV module \u2192 inverter \u2192 MPPT\ncharge controller \u2192 battery storage \u2192 protection/distribution**.\n\n### Inside the inverter \u2014 \"the system translator\"\n| Aspect | Detail |\n|---|---|\n| DC input | PV array / battery |\n| Switching | **MOSFET / IGBT** power stage |\n| Control | **PWM**, current/voltage loops |\n| Synchronisation | Grid **frequency and phase** |\n| Protection | Overcurrent, overvoltage, **islanding** |\n\nSummarised as **DC \u2192 CONTROL \u2192 AC**: power electronics + control + protection.\n\n### Source\nDr. F. K. Ariyo, \"Component Recognition\", \"Component Deep Dive\" and \"System\nHeart\" slides."
+    },
+    {
+      "id": "swep_day3_24",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The lecture argues a solar plant is also a data system. Which set of quantities does it list as measured, transmitted and visualised?",
+      "options": [
+        "Share price, tariff rate and payback period",
+        "Irradiance, PV voltage, PV current, temperature, energy yield and battery SoC",
+        "Wind speed, rainfall, humidity and air pressure",
+        "Panel dimensions, weight, tilt angle and azimuth"
+      ],
+      "correct": 1,
+      "short": "Irradiance, PV voltage, PV current, temperature, energy yield and battery state of charge.",
+      "solution": "### Why this is the answer\n\"Digital Solar\" lists six measured quantities, each following the same pipeline\nof **MEASURE \u2192 TRANSMIT \u2192 VISUALISE**:\n\n| Quantity | Unit |\n|---|---|\n| Irradiance | W/m\u00b2 |\n| PV voltage | V |\n| PV current | A |\n| Temperature | \u00b0C |\n| Energy yield | kWh |\n| Battery SoC | % |\n\n### The line that matters\n> **Once you can measure performance, you can start predicting it.**\n\nThat single sentence is the bridge from hardware to **IoT \u2022 embedded systems \u2022\ncloud \u2022 AI**, and it sets up the entire diagnostics and AI section that follows.\n\n### Why option C is a near-miss\nWeather data is genuinely used in this lecture \u2014 but on the **AI** slide, where\nforecasting predicts *\"PV output from **weather** + history\"*. It is an **input\nto prediction**, not one of the six quantities the plant itself measures.\n\n### Source\nDr. F. K. Ariyo, \"Digital Solar\" slide."
+    },
+    {
+      "id": "swep_day3_25",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the diagnostics section, which fault is paired with the correct consequence?",
+      "options": [
+        "Partial shade \u2192 no AC output",
+        "Loose connector \u2192 arcing/outage",
+        "Inverter trip \u2192 thermal risk",
+        "Hot spot \u2192 power loss only"
+      ],
+      "correct": 1,
+      "short": "A loose connector causes arcing/outage.",
+      "solution": "### Why this is the answer\nThe diagnostics slide maps five faults to five consequences:\n\n| Fault | Consequence |\n|---|---|\n| Dust/soiling | Power loss |\n| Partial shade | **Mismatch** |\n| Hot spot | **Thermal risk** |\n| **Loose connector** | **Arcing / outage** |\n| Inverter trip | **No AC output** |\n\nOnly **loose connector \u2192 arcing/outage** is correctly paired.\n\n### How the distractors were built\nEach wrong option takes a real fault and attaches **another fault's real\nconsequence**: *no AC output* belongs to inverter trip, *thermal risk* to hot\nspot, *power loss* to soiling. Every term is genuine; only the pairing is wrong.\n\n### The workflow being taught\n**SENSOR DATA \u2192 ANOMALY \u2192 DIAGNOSIS \u2192 ACTION \u2192 VERIFY.**\nThe slide calls this *\"**predictive maintenance thinking** \u2014 applied to energy\ninfrastructure\"*, which is the same concept the 5G lecture sells as\n*Predictive-Maintenance-as-a-Service*. Two Day 3 lectures, one idea.\n\n### Source\nDr. F. K. Ariyo, \"Diagnostics\" slide."
+    },
+    {
+      "id": "swep_day3_26",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the mini design challenge for a small rural clinic, what three illustrative assumptions are given?",
+      "options": [
+        "Daily energy 8 kWh/day, peak load 2 kW, autonomy 1 day",
+        "Daily energy 2 kWh/day, peak load 8 kW, autonomy 2 days",
+        "Daily energy 8 kWh/day, peak load 4 kW, autonomy 3 days",
+        "Daily energy 4 kWh/day, peak load 2 kW, autonomy 1 day"
+      ],
+      "correct": 0,
+      "short": "Daily energy 8 kWh/day, peak load 2 kW, autonomy 1 day.",
+      "solution": "### Why this is the answer\nThe brief asks students to design an introductory solar-battery system for a\nsmall rural clinic, with three illustrative assumptions:\n\n| Assumption | Value |\n|---|---|\n| **Daily energy** | **8 kWh/day** |\n| **Peak load** | **2 kW** |\n| **Autonomy** | **1 day** |\n\nStudents must then choose **PV capacity, battery capacity, inverter rating and\nbasic protection**.\n\n### These are not arbitrary numbers\nThey are the same figures as the storage worked example: *a **2-kW** load running\nfor **4 h** needs **8 kWh***. The challenge reuses them deliberately, so each\nassumption drives one sizing decision:\n\n- **Peak load (2 kW)** \u2192 sizes the **inverter**\n- **Daily energy (8 kWh)** \u2192 sizes the **PV array**\n- **Autonomy (1 day)** \u2192 sizes the **battery**\n\nThat mapping is the actual lesson \u2014 which number governs which component.\n\n### Source\nDr. F. K. Ariyo, \"Mini Design Challenge\" slide; cross-referenced with \"Energy\nStorage\"."
+    },
+    {
+      "id": "swep_day3_27",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the PV safety slide, why is isolation planning stressed as non-negotiable?",
+      "options": [
+        "Because inverters cannot be switched off once installed",
+        "Because AC wiring is more dangerous than DC wiring",
+        "Because batteries discharge instantly when disconnected",
+        "Because PV DC can remain energised in sunlight"
+      ],
+      "correct": 3,
+      "short": "PV DC can remain energised in sunlight, so isolation must be planned.",
+      "solution": "### Why this is the answer\nThe safety slide opens with the hazard that makes PV different from ordinary\nelectrical work: *\"**PV DC can remain energised in sunlight** \u2014 isolation must be\nplanned.\"*\n\nYou cannot switch off the sun. A conventional circuit is made safe by opening a\nbreaker upstream; a PV array keeps generating whenever light falls on it, so the\nisolation strategy has to be **designed in**, not improvised at the point of\nmaintenance.\n\n### The five safety requirements listed\n| Requirement | Purpose |\n|---|---|\n| **Isolation** | PV DC stays live in sunlight |\n| **Overcurrent protection** | Protect strings, conductors, equipment |\n| **Surge protection & earthing** | Manage transient and fault energy |\n| **Battery hazards** | Correct **BMS**, enclosure and procedures |\n| **Competent installation** | Follow manuals and applicable standards |\n\n### Source\nDr. F. K. Ariyo, \"Safety\" slide.\n\n### Why the others fail\nNothing in the deck claims AC is more dangerous than DC \u2014 the point is the\nopposite, that PV's **DC side** carries an unusual, persistent hazard."
+    },
+    {
+      "id": "swep_day3_28",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Prof. V. Omidiji defines workshop practice as hands-on training using three categories of resource. Which item is correctly classified?",
+      "options": [
+        "The lathe is a hand tool",
+        "Powder metallurgy is a machine tool",
+        "The power hack saw is a machine tool",
+        "Marking tools are manufacturing methods"
+      ],
+      "correct": 2,
+      "short": "The power hack saw is classified as a machine tool.",
+      "solution": "### Why this is the answer\nWorkshop practice *\"refers to **hands-on training and skills** required in\nengineering workshops\"*, and the deck sorts its resources into three groups:\n\n| Category | Examples given |\n|---|---|\n| **Hand tools** | Hammers, saws, pliers, **marking tools** |\n| **Machine tools** | The **lathe**, milling machine, drilling machine, **power hack saw** |\n| **Manufacturing methods** | Machining, casting, **powder metallurgy**, welding, **additive manufacturing** |\n\nOnly the **power hack saw \u2192 machine tool** pairing is correct.\n\n### Why the classification is examinable\nEach distractor moves a real item into the wrong category \u2014 the lathe (a machine\ntool) called a hand tool, powder metallurgy (a *method*) called a tool, marking\ntools (hand tools) called methods. The distinction is between **what you hold**,\n**what you operate**, and **what you do**.\n\n### Note on automation\nThe deck adds that *\"many manufacturing processes are **automated** and some are\n**hand-crafted**\"*, accomplished by human effort or machinery \u2014 and that each\nprocess has various sub-divisions.\n\n### Source\nProf. V. Omidiji, \"What is workshop practice?\" slide."
+    },
+    {
+      "id": "swep_day3_29",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Workshop practice is described as starting from a defined sequence. What is the correct order of the first five stages?",
+      "options": [
+        "Measurements \u2192 identification of materials \u2192 marking out \u2192 cutting \u2192 joining or machining",
+        "Identification of materials \u2192 measurements \u2192 marking out \u2192 cutting to measured sizes \u2192 joining or machining",
+        "Marking out \u2192 cutting \u2192 measurements \u2192 identification of materials \u2192 joining",
+        "Identification of materials \u2192 marking out \u2192 measurements \u2192 joining \u2192 cutting"
+      ],
+      "correct": 1,
+      "short": "Materials \u2192 measurements \u2192 marking out \u2192 cutting \u2192 joining or machining.",
+      "solution": "### Why this is the answer\nThe deck numbers the stages explicitly:\n\n| # | Stage | Detail |\n|---|---|---|\n| 1 | **Identification of materials and their properties** | Where can each material be used? |\n| 2 | **Measurements** | Meter rule, **vernier calliper**, micrometer screw gauge |\n| 3 | **Marking out** | *\"Done on the **marking-out table**, not on the floor\"* |\n| 4 | **Cutting to measured sizes** | Hack saw or other cutting devices |\n| 5 | **Joining or machining** | Joining by **welding**; machining by conventional methods |\n\n### Why the order is logical, not arbitrary\nYou cannot measure sensibly until you know what the material is and how it\nbehaves; you cannot mark out before measuring; and you certainly cannot cut\nbefore marking. Each stage supplies the input for the next \u2014 which is exactly why\nan examiner can test it as a sequence.\n\n### The detail worth remembering\nMarking out is done **on the marking-out table, not on the floor** \u2014 a small\ninstruction, but the deck states it pointedly, and precision in marking is what\nmakes the later cut accurate.\n\n### Source\nProf. V. Omidiji, \"Workshop practice starts from:\" slide."
+    },
+    {
+      "id": "swep_day3_30",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Activities in workshop practice are broadly categorised into three focuses. Which three?",
+      "options": [
+        "Skill development, team building and problem-solving",
+        "Lecturing, examination and certification",
+        "Design, procurement and installation",
+        "Marking, cutting and welding"
+      ],
+      "correct": 0,
+      "short": "Skill development, team building and problem-solving.",
+      "solution": "### Why this is the answer\n*\"Workshop practice activities can be broadly categorised into those focused on\n**skill development**, **team building**, and **problem-solving**.\"* These are\ndelivered through **hands-on tasks, group discussions and simulations** to\nfacilitate learning and collaboration.\n\n### Note what is absent\nOnly one of the three is purely technical. **Team building** and\n**problem-solving** are human competencies \u2014 the same ground Day 2's\nemployability lecture covered under *collaboration and teamwork* and *critical\nthinking and problem-solving*. The workshop is being presented as a place where\nsoft skills are trained alongside technical ones.\n\n### Why option D is the trap\nMarking, cutting and welding are genuine workshop **operations** \u2014 they appear in\nthe five-stage sequence \u2014 but they are *tasks*, not the *focus categories* of the\nactivities. The question asks what the activities are **for**, not what they\nconsist of.\n\n### Source\nProf. V. Omidiji, \"Activities in Workshop Practice\" slide."
+    },
+    {
+      "id": "swep_day3_31",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Among the detailed outcomes of workshop practice, which is listed under \"Skill Development\" rather than another heading?",
+      "options": [
+        "Direct exposure to machine tools like lathes and milling machines",
+        "Covering production methods such as casting, forging, welding and machining",
+        "Teaching proper handling of tools to prevent workplace accidents",
+        "Enhancing precision, accuracy and efficiency with metals, plastics and composites"
+      ],
+      "correct": 3,
+      "short": "Enhancing precision, accuracy and efficiency is listed under Skill Development.",
+      "solution": "### Why this is the answer\nThe deck numbers five detailed outcomes, and each distractor belongs to a\ndifferent one:\n\n| # | Outcome | What it covers |\n|---|---|---|\n| 1 | **Hands-on Experience** | Direct exposure to lathes, milling, drilling, welding equipment |\n| 2 | **Skill Development** | **Precision, accuracy, efficiency** with metals, plastics, composites; troubleshooting |\n| 3 | **Safety Awareness** | Proper handling of tools; **PPE** |\n| 4 | **Understanding Manufacturing Processes** | Casting, forging, welding, machining |\n| 5 | **Application in Industrial Production** | Prototypes, assembly, testing finished products |\n\n### The category-placement pattern\nAs in Day 2's warning-sign questions, **every option here is a genuine outcome\nfrom the same slide** \u2014 placed under the wrong heading. The mark is earned by\nknowing *which* heading owns it, not by recognising the words.\n\n### The overall claim\nWorkshop practice *\"enhances technical skills, improves problem-solving\nabilities, and ensures precision in manufacturing and assembly\"*, while\npromoting safety awareness and preparing engineers for real-world industrial\nchallenges.\n\n### Source\nProf. V. Omidiji, \"Why is workshop practice important?\" slides."
+    },
+    {
+      "id": "swep_day3_32",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT among the workshop safety precautions listed by Prof. Omidiji?",
+      "options": [
+        "Wear tight clothes, as loose clothing or long hair brings danger",
+        "Never use a file or screwdriver without a handle",
+        "Work alone whenever possible to avoid distraction",
+        "Never operate a machine unless you thoroughly understand its mechanism"
+      ],
+      "correct": 2,
+      "short": "Working alone is not advised \u2014 the listed precautions never recommend it.",
+      "solution": "### Why this is the answer\nA **NOT** question. The precautions listed are:\n\n- Wear **tight clothes** \u2014 loose clothing or long hair brings danger\n- Wear **covered footwear** \u2014 never sandals or slippers\n- Never use a **file or screwdriver without a handle**\n- Do not use a **hammer without a wedge**\n- Never operate a machine unless you **thoroughly understand its mechanism**\n- Wear **goggles** while chipping, welding or grinding\n- Always wear **safety gloves, apron or dungaree and leather shoes**\n- Never touch overhead lines unless properly **earthed and dead**\n- Do not throw **water** on equipment \u2014 water conducts electricity\n\nNothing endorses working alone.\n\n### It is in fact the opposite\nDay 2's safety lecture stated plainly that *\"it is advisable to **avoid working\nalone** in a workshop to ensure there is someone available to assist in case of\nan accident.\"* Option C inverts a real safety rule \u2014 the most dangerous kind of\ndistractor, because it sounds disciplined.\n\n### The reasoning behind the rest\nEach precaution removes a specific mechanism of injury: entanglement (clothing,\nhair), impalement (unhandled tools), flying debris (goggles), electrocution\n(overhead lines, water).\n\n### Source\nProf. V. Omidiji, \"Workshop Safety Precautions\" slide."
+    },
+    {
+      "id": "swep_day3_33",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does Prof. Omidiji define \"workforce\"?",
+      "options": [
+        "Only those currently in paid employment",
+        "The total number of physically fit people in a country able to do jobs and available for work, employed and unemployed alike",
+        "Graduates of technical colleges awaiting placement",
+        "All citizens above the age of eighteen"
+      ],
+      "correct": 1,
+      "short": "Workforce is everyone physically able and available to work \u2014 employed and unemployed.",
+      "solution": "### Why this is the answer\n*\"Workforce is the **total number of people in a country who are able\n(physically fit) to do jobs** and they are **available** for the works.\nTherefore **employed and unemployed people are referred to as workforce**.\"*\n\nTwo conditions: **able** and **available**. Employment status is irrelevant to\nmembership.\n\n### The question the lecture then poses\n> *\"How many are the employed of the employable?\"*\n\nThat is where workshop practice enters \u2014 the gap between being counted in the\nworkforce and being genuinely **employable**. It is the same distinction Day 2\ndrew between *unemployment* and *unemployability*.\n\n### How workshop practice closes the gap\n- **Skill development and competency** \u2014 hands-on experience with manufacturing,\n  design and analysis makes graduates **more employable**\n- **Bridging education and employment** \u2014 workshops **simulate real-world\n  workplace scenarios**\n- **Addressing workforce challenges** \u2014 safety and health workshops improve\n  well-being and reduce hazards\n- **Fostering innovation and adaptation** \u2014 creative problem-solving and\n  adaptability, including **AI workshops** preparing people for the future of work\n- **Cross-functional collaboration** \u2014 broadens perspectives, enhances strategic\n  thinking\n\n### Source\nProf. V. Omidiji, \"How does Workshop Practice enhance Workforce?\" slides."
+    },
+    {
+      "id": "swep_day3_34",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Prof. Omidiji expresses the relationship between workshop practice, workforce and national growth as two equations. What does Equation 1 state?",
+      "options": [
+        "Workshop Practice + Workforce = National Growth",
+        "Workforce + Development Plan = \u00bd(National Growth)",
+        "Workshop Practice + Development Plan = National Growth",
+        "Workshop Practice + Workforce = \u00bd(National Growth)"
+      ],
+      "correct": 3,
+      "short": "Equation 1: Workshop Practice + Workforce = \u00bd(National Growth).",
+      "solution": "### Why this is the answer\nThe lecture states two equations:\n\n> **Eq. 1:** Workshop Practice + Workforce = **\u00bd(National Growth)**\n> **Eq. 2:** Workshop Practice + Workforce + **Development Plan** = National Growth\n\n### What the halving is saying\nSkills and people alone deliver only **half** of national growth. The missing\nhalf is the **development plan**. As the deck puts it: *\"Equation 2 tells us that\n**without proper planning, national growth would wobble**.\"*\n\n### The roles, stated precisely\n> **Engineering (workshop practice and workforce) is the *driver* of the good\n> standard of living, while the developmental plan *catalyses* it.**\n\nDriver and catalyst \u2014 two different functions. Neither alone is sufficient.\n\n### The definition underneath\nNational growth is *\"the increase in a country's wealth and economic output over\ntime\"*, spanning political, economic, social, cultural, scientific and material\nspheres. Its key indicator is *\"the capacity of a nation to enhance its\ncitizens' **standard of living**.\"*\n\n### Source\nProf. V. Omidiji, \"Relationship between workshop practice, workforce and\nnational growth\" slide."
+    },
+    {
+      "id": "swep_day3_35",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, what were Nigeria's Q1 2025 GDP growth rate and the comparative figure for Ghana?",
+      "options": [
+        "2.27% for Nigeria and 5.4% for Ghana",
+        "3.13% for Nigeria and 5.4% for Ghana",
+        "3.13% for Nigeria and 2.27% for Ghana",
+        "5.4% for Nigeria and 3.13% for Ghana"
+      ],
+      "correct": 1,
+      "short": "Nigeria's Q1 2025 GDP growth was 3.13%; Ghana's was 5.4%.",
+      "solution": "### Why this is the answer\n*\"Nigeria's GDP growth in **Q1 2025** was reported at **3.13%**, an increase from\nthe **2.27%** recorded in **Q1 2024**. The GDP of **Ghana** was reported at\n**5.4%** growth.\"*\n\n| Economy | Period | Growth |\n|---|---|---|\n| Nigeria | Q1 2024 | 2.27% |\n| **Nigeria** | **Q1 2025** | **3.13%** |\n| **Ghana** | \u2014 | **5.4%** |\n\n### Three numbers, easily mixed\n**2.27%** is the trap: it is Nigeria's, but from the **previous year**. The\nquestion asks for Q1 **2025**. Option C uses it as Ghana's figure.\n\n### The driver the lecture identifies\nAsked what drove the improvement, the deck answers: *\"**Reduction in petrol\nimports** driven by the operation of the **Dangote Refinery**.\"* A\nmanufacturing-capacity change moving a national statistic \u2014 which is the\nlecture's entire thesis about engineering and growth.\n\n### The question posed alongside\n*\"Do we have enough goods and services produced within the country that would\nenhance the GDP?\"* \u2014 GDP being *the total value of goods and services produced\nwithin a country*.\n\n### Source\nProf. V. Omidiji, \"Economic growth\" slide."
+    },
+    {
+      "id": "swep_day3_36",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which three factors influencing national growth are named in the lecture?",
+      "options": [
+        "Government policies, global economy and human capital",
+        "Population size, land mass and natural resources",
+        "Foreign aid, tourism and remittances",
+        "Interest rates, inflation and exchange rates"
+      ],
+      "correct": 0,
+      "short": "Government policies, the global economy and human capital.",
+      "solution": "### Why this is the answer\nThe slide lists exactly three:\n\n| # | Factor | How it acts |\n|---|---|---|\n| 1 | **Government policies** | Taxation, trade and investment can significantly impact growth |\n| 2 | **Global economy** | International trade and global conditions influence the growth trajectory |\n| 3 | **Human capital** | *\"A **skilled and educated workforce** is essential for sustained growth\"* |\n\n### Why factor 3 is the lecture's anchor\n**Human capital** is exactly what workshop practice produces. Of the three\nfactors, it is the only one a university can act on directly \u2014 policies belong\nto government and the global economy is external. That is the argument for SWEP\nitself.\n\n### Note the qualifier\nIt is not *any* workforce but a **skilled and educated** one. This connects\nstraight back to the employability question: being in the workforce is not the\nsame as being employable, and only the skilled portion drives growth.\n\n### Source\nProf. V. Omidiji, \"Factors influencing national growth\" slide."
+    },
+    {
+      "id": "swep_day3_37",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the stated period of Nigeria's National Development Plan referenced in the lecture, and which long-term aspiration is it aligned with?",
+      "options": [
+        "NDP 2021\u20132025, aligned with Nigeria Agenda 2050",
+        "NDP 2020\u20132024, aligned with Vision 2020",
+        "NDP 2021\u20132025, aligned with Vision 2030",
+        "NDP 2023\u20132027, aligned with Nigeria Agenda 2050"
+      ],
+      "correct": 0,
+      "short": "NDP 2021\u20132025, aligned with Nigeria Agenda 2050.",
+      "solution": "### Why this is the answer\nThe lecture quotes the Plan directly: the vision of Nigeria's **National\nDevelopment Plan (NDP, 2021\u20132025)** is consistent with the socio-economic\ntransformation envisioned in the long-term aspiration *\"encapsulated in the\n**Nigeria Agenda 2050**.\"*\n\n### The approach it adopts\nAn **integrated and multi-sectoral development approach**, recognising the\n*\"multi-faceted and interlinked nature of sustainable development\"*, which\nrequires interventions tackled **simultaneously** through coordinated\nimplementation.\n\n### Its four strategic objectives\n1. Establishing a strong foundation for a **concentric diversified economy**\n2. Investment in critical **physical, financial, science and innovation\n   infrastructure**\n3. Building a solid framework and capacities to **strengthen security and ensure\n   good governance**\n4. Enabling a **vibrant, educated and healthy populace**\n\n### Why the plan appears in an engineering lecture\nIt is the **\"Development Plan\"** term of **Equation 2**. Without it, by the\nlecture's own arithmetic, workshop practice and workforce deliver only half of\nnational growth.\n\n### Source\nProf. V. Omidiji, \"The development plan of Nigeria\" slide."
+    },
+    {
+      "id": "swep_day3_38",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which two outcomes from the National Development Plan does the lecture highlight?",
+      "options": [
+        "Free tertiary education and a new national minimum wage",
+        "Mandatory AI training and a national apprenticeship levy",
+        "Establishment of new federal polytechnics and abolition of SIWES",
+        "Introduction of the TVET Programme to all Technical Colleges, and COREN regulating admissions into engineering programmes"
+      ],
+      "correct": 3,
+      "short": "The TVET Programme in all Technical Colleges, and COREN regulating engineering admissions.",
+      "solution": "### Why this is the answer\nThe deck lists two outcomes from the Plan:\n\n1. **Introduction of the TVET Programme to all the Technical Colleges in\n   Nigeria** \u2014 with **incentives promised to would-be candidates** to make the\n   programme attractive\n2. **COREN will now regulate admissions into our engineering programmes**\n\n### What each one targets\n| Outcome | Effect on the growth equation |\n|---|---|\n| **TVET** in all technical colleges | Expands the **skilled workforce** \u2014 the human-capital factor |\n| **COREN** regulating admissions | Raises **quality control** at entry into engineering |\n\nOne widens the pipeline, the other guards its standard. Both act on **human\ncapital**, the one growth factor a university can influence.\n\n### The conclusion drawn\n> *\"The **handshake** between the workshop practice and workforce to produce\n> national growth cannot be over-emphasised. There must be a top relationship\n> between them, revised and renewed to enhance rapid development.\"*\n\n### Source\nProf. V. Omidiji, \"Outcomes from the PLAN\" and \"Conclusion\" slides."
+    },
+    {
+      "id": "swep_day3_39",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the Day 3 orientation ledger, who delivered the lecture on Renewable Energy and PV Technology?",
+      "options": [
+        "Prof. A. B. Ayanwale",
+        "Prof. V. Omidiji",
+        "Dr. F. K. Ariyo",
+        "Prof. A. A. Adeleke"
+      ],
+      "correct": 2,
+      "short": "Dr. F. K. Ariyo delivered the Renewable Energy & PV Technology lecture.",
+      "solution": "### Why this is the answer\nThe Day 3 ledger (Wednesday, 16th September) records **Renewable Energy & PV\nTechnology (Dr. F. K. Ariyo)**, noting that he introduced solar energy as a\n**multidisciplinary field** encompassing materials science and control\nregulations, and covered the mechanics of PV cells, system design (e.g.\noff-grid), energy storage, AI integration and career pathways in solar\nengineering.\n\nHis title slide confirms: **Dr. F. K. Ariyo, Department of Electronic and\nElectrical Engineering, Obafemi Awolowo University, Ile-Ife**.\n\n### Day 3 at a glance\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Entrepreneurship in the 5G Era | Prof. A. B. Ayanwale |\n| 2 | **Renewable Energy & PV Technology** | **Dr. F. K. Ariyo** |\n| 3 | Workshop Practice, Workforce & National Growth | Prof. V. Omidiji |\n\n### Note the title and the decoy\nAriyo is **Dr.**, the other two Day 3 speakers are **Prof.** And **Prof. A. A.\nAdeleke** is a real SWEP lecturer \u2014 but he delivered **Day 2's** Workshop &\nIndustrial Safety. Speakers from adjacent days make the sharpest distractors.\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 3; deck title slide."
+    },
+    {
+      "id": "swep_day3_40",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which Day 3 speaker is correctly matched with the department or discipline stated on their material?",
+      "options": [
+        "Prof. A. B. Ayanwale \u2014 Department of Electronic and Electrical Engineering",
+        "Dr. F. K. Ariyo \u2014 Department of Agricultural Economics",
+        "Prof. V. Omidiji \u2014 PhD, REng (Mech), MNIMechE, MNIEM, MNSE",
+        "Prof. A. B. Ayanwale \u2014 Department of Materials Science and Engineering"
+      ],
+      "correct": 2,
+      "short": "Prof. V. Omidiji is credited as PhD, REng (Mech), MNIMechE, MNIEM, MNSE.",
+      "solution": "### Why this is the answer\nEach Day 3 deck carries its author's own credentials on the title slide:\n\n| Speaker | As stated on their material |\n|---|---|\n| Prof. A. B. Ayanwale | Professor, **Department of Agricultural Economics**, OAU |\n| Dr. F. K. Ariyo | **Department of Electronic and Electrical Engineering**, OAU |\n| **Prof. V. Omidiji** | **PhD, REng (Mech), MNIMechE, MNIEM, MNSE** |\n\nOnly the Omidiji pairing is correct.\n\n### The detail worth pausing on\nThe 5G entrepreneurship lecture was delivered by a professor of **Agricultural\nEconomics** \u2014 not an engineer. That is not an oddity; it reinforces the lecture's\nown argument that a 5G venture needs **domain experts and business strategists**,\nnot only technical experts. The messenger demonstrates the message.\n\n### How the distractors were built\nOptions A and B **swap Ayanwale's and Ariyo's departments** with each other.\nOption D borrows **Materials Science and Engineering** \u2014 which is real, but it is\n**Prof. A. A. Adeleke's** department from Day 2.\n\n### Source\nTitle slides of all three Day 3 decks; Day 2 deck for the Materials Science\nattribution."
     }
   ],
   "eee282": [

@@ -26,6 +26,7 @@ sys.path.insert(0, str(HERE))
 
 from swep200_day1 import QUESTIONS as DAY1  # noqa: E402
 from swep200_day2 import QUESTIONS as DAY2  # noqa: E402
+from swep200_day3 import QUESTIONS as DAY3  # noqa: E402
 
 DATA = ROOT / 'src' / 'data.js'
 
@@ -248,9 +249,110 @@ capability \u00b7 evidence of practical experience \u00b7 a professional network
 - **8** skill clusters, but **5** things to build. Different lists.
 """,
     },
+    {
+        "id": "swep-day-3",
+        "name": "Day 3 \u2014 Wednesday, 16th September",
+        "categoryId": "swep-days",
+        "summaryNotes": """### What Day 3 covered
+| # | Lecture | Speaker |
+|---|---|---|
+| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** (Agricultural Economics) |
+| 2 | Renewable Energy & PV Technology | **Dr. F. K. Ariyo** (Electronic & Electrical Engineering) |
+| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** (PhD, REng (Mech), MNIMechE, MNIEM, MNSE) |
+
+### 5G \u2014 the three superpowers
+| Superpower | What it is | Its label |
+|---|---|---|
+| **eMBB** | Insanely high speed, massive bandwidth | \u201ccontent and data delivery\u201d |
+| **URLLC** | **~1 ms** latency, extreme reliability | \u201creal-time control and safety\u201d |
+| **mMTC** | Huge numbers of low-power devices | \u201cmassive data collection\u201d |
+
+**Enablers:** **Network slicing** (rent a virtual network \u2014 lowers barrier to entry)
+and **Edge computing** (process locally \u2014 privacy-first, real-time AI).
+
+**Generations:** 1G AMPS/TACS/NMT (1980s) \u00b7 2G GSM (1990s) \u00b7 3G WCDMA/HSPA (2000s) \u00b7
+**4G LTE (2010s)** \u00b7 **5G NR (2020s)**.
+
+**5G targets:** **>10 Gbps** peak \u00b7 **<1 ms** radio latency \u00b7 100 Mbps whenever needed \u00b7
+10 000\u00d7 traffic \u00b7 10\u2013100\u00d7 devices \u00b7 10 years on battery.
+
+**Capabilities vs LTE:** 10\u00d7 data rates \u2192 10 Gbps \u00b7 10\u00d7 lower cost \u2192 <2 cent/GB \u00b7
+10\u00d7 lower latency \u2192 **<1 ms** \u00b7 10\u00d7 lower IoT power \u2192 <10 \u03bcWh/tx \u00b7
+5\u00d7 energy efficiency \u2192 <2 kWh/TB \u00b7 5\u00d7 spectral efficiency \u2192 >10 bps/cell/Hz.
+
+**Spectrum:** 20\u201390 GHz \u2192 1 GHz/operator \u2192 5\u201320 Gbps \u00b7 Below 6 GHz \u2192 100 MHz \u2192 2 Gbps \u00b7
+Below 1 GHz \u2192 10 MHz \u2192 0.2 Gbps. NR spans **400 MHz \u2013 90 GHz**.
+
+**5 technology components:** new spectrum \u00b7 beamforming \u00b7 network slicing \u00b7
+LTE dual connectivity/coexistence \u00b7 cloud-optimised architecture.
+
+**Journey:** start with a **pain point**, then apply the **5G lens**. Team =
+domain + technical + business. Monetise **as-a-service**. **6G** converges with
+**AI, quantum computing and advanced sensing**.
+
+### PV \u2014 solar as a multidisciplinary system
+**Energy flow:** Sunlight \u2192 **PV cell** \u2192 **MPPT** \u2192 **inverter** \u2192 load/grid.
+**Scaling:** CELL \u2192 MODULE \u2192 STRING \u2192 ARRAY.
+**I\u2013V curve:** **Isc**, **MPP**, **Voc** \u2014 MPP is the *point*, MPPT the *technology*.
+**Why MPPT:** irradiance and temperature change, so the MPP **moves**
+(less sun \u2192 less current; hotter cell \u2192 lower voltage).
+
+**Six performance factors:** irradiance \u00b7 temperature \u00b7 shading \u00b7 soiling \u00b7
+mismatch \u00b7 degradation.
+
+| Architecture | Flow | Use |
+|---|---|---|
+| Grid-tied | PV \u2192 inverter \u2192 grid/load | Homes, offices, campuses |
+| **Off-grid** | PV \u2192 controller \u2192 battery \u2192 loads | Remote sites, PHCs |
+| Hybrid | PV + grid/generator + battery | Critical loads, resilience |
+
+**Storage:** **kW = how fast** (power), **kWh = how much** (energy).
+A 2-kW load for 4 h needs **8 kWh**. Terms: SoC, DoD, BMS, efficiency.
+**Three components to recognise:** inverter (DC\u2192AC) \u00b7 MPPT controller \u00b7 LiFePO\u2084 battery.
+**Diagnostics:** soiling\u2192power loss \u00b7 partial shade\u2192mismatch \u00b7 hot spot\u2192thermal risk \u00b7
+loose connector\u2192arcing/outage \u00b7 inverter trip\u2192no AC output.
+**Clinic challenge:** 8 kWh/day, 2 kW peak, 1 day autonomy.
+**Safety:** **PV DC stays energised in sunlight** \u2014 isolation must be planned.
+
+### Workshop practice, workforce & national growth
+**Resources:** hand tools (hammers, saws, pliers, marking tools) \u00b7 machine tools
+(lathe, milling, drilling, **power hack saw**) \u00b7 manufacturing methods (machining,
+casting, powder metallurgy, welding, additive).
+
+**Sequence:** identify materials \u2192 measurements \u2192 marking out (**on the
+marking-out table**) \u2192 cutting to size \u2192 joining or machining.
+
+**Activity focuses:** skill development \u00b7 team building \u00b7 problem-solving.
+**Five outcomes:** hands-on experience \u00b7 skill development \u00b7 safety awareness \u00b7
+understanding manufacturing processes \u00b7 application in industrial production.
+
+**Workforce** = all physically able and available people, **employed and
+unemployed**. The question: *how many of the employable are employed?*
+
+**Eq. 1:** Workshop Practice + Workforce = **\u00bd(National Growth)**
+**Eq. 2:** Workshop Practice + Workforce + **Development Plan** = National Growth
+Engineering **drives**; the development plan **catalyses**.
+
+**GDP:** Nigeria Q1 2025 **3.13%** (up from **2.27%** in Q1 2024); Ghana **5.4%**.
+Driver: reduced petrol imports via the **Dangote Refinery**.
+**Growth factors:** government policies \u00b7 global economy \u00b7 **human capital**.
+**NDP 2021\u20132025**, aligned with **Nigeria Agenda 2050**, four strategic objectives.
+**Outcomes:** **TVET** in all Technical Colleges \u00b7 **COREN** to regulate engineering admissions.
+
+### Traps to watch
+- **100 Mbps** is the \u201cwhenever needed\u201d rate; **>10 Gbps** is the peak.
+- **Quantum computing** belongs to the **6G** slide, not the 5 technology components.
+- **MPP** is a point on the curve; **MPPT** is the tracking technology.
+- **kW vs kWh** \u2014 inverter rated in kW, battery sized in kWh.
+- **2.27%** is Nigeria\u2019s **Q1 2024** figure, not 2025.
+- Eq. 1 gives only **half** of national growth \u2014 the plan supplies the rest.
+- Ayanwale teaches 5G but is from **Agricultural Economics**; Adeleke (Materials
+  Science) belongs to **Day 2**.
+""",
+    },
 ]
 
-QUESTION_SETS = [DAY1, DAY2]
+QUESTION_SETS = [DAY1, DAY2, DAY3]
 
 BEGIN = '// ==== SWEP 200 BEGIN (generated by scripts/splice_swep200.py) ===='
 END = '// ==== SWEP 200 END ===='
