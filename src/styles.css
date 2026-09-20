@@ -789,3 +789,22 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   background: rgba(0, 0, 0, .07); color: var(--muted, #6b7280);
   vertical-align: middle;
 }
+
+/* ---------- Gate: server-verified step state ---------- */
+.gate-state {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .86rem; color: var(--muted, #6b7280); font-weight: 600;
+}
+.gate-state.ok { color: var(--green, #16a34a); }
+.gate-state.ok::before { content: '✓'; font-weight: 800; }
+.gate-state.waiting { color: var(--muted, #6b7280); }
+.gate-state.waiting::before {
+  content: ''; width: 11px; height: 11px; border-radius: 50%;
+  border: 2px solid rgba(0,0,0,.18); border-top-color: var(--primary, #010080);
+  animation: gate-spin .8s linear infinite;
+}
+@keyframes gate-spin { to { transform: rotate(360deg); } }
+.gate-hint-line {
+  text-align: center; font-size: .82rem; margin-top: 10px;
+  color: var(--muted, #6b7280);
+}

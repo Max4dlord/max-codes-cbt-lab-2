@@ -1,41 +1,40 @@
 // ---------------------------------------------------------------------------
-// POST /api/issue   { deviceId, steps }  ->  { ok, token, exp }
+// POST /api/issue   { deviceId }  ->  { ok, token, exp }
 //
-// FULLY AUTOMATED ACCESS. Replaces the manual "DM me and I'll send a code"
-// loop: once the visitor has completed the required steps, the server mints a
-// signed 7-day session for THAT device on the spot. No code is typed, nothing
-// is shared, and the admin is never in the critical path.
+// Grants a device-bound 7-day session — but ONLY on evidence the server itself
+// recorded. It no longer believes anything the browser says about progress.
 //
-// What this does and does not claim
+// How a step is proven
 // ---------------------------------------------------------------------------
-// There is no public API that can prove someone followed a WhatsApp channel or
-// a LinkedIn page, so no free (or paid) service can verify that server-side.
-// What this endpoint DOES enforce:
-//   * a real, well-formed device id,
-//   * every REQUIRED step reported complete,
-//   * a minimum dwell time per step, so nobody can machine-gun through,
-//   * a per-device rate limit on issuance.
-// Access is then bound to that device by HMAC, which is the part that actually
-// stops sharing. Honesty over theatre: the friction is real, the "proof" is not.
+// Every required step must present a valid "visit ticket" cookie, set by
+// /api/go when the server actually performed the redirect. Each ticket is an
+// HttpOnly cookie signed with GATE_SECRET, so page JavaScript can neither read
+// nor forge one, and a curl request that skips the UI simply has no cookies.
 //
-// Stateless by design — no database, no KV, no add-ons. Free Hobby tier.
+// Two server-side timestamps are compared:
+//   * ticket time  — when the server sent them to WhatsApp/LinkedIn
+//   * now          — when they came back and asked for access
+// The gap must be at least MIN_DWELL_MS. Both readings come from server clocks,
+// so the browser cannot shorten the wait.
+//
+// What this still cannot do (stated plainly, not papered over)
+// ---------------------------------------------------------------------------
+// No public API can confirm that someone pressed "Follow" once WhatsApp or
+// LinkedIn has them. What is now provably true is that this device really was
+// sent to the destination and really did spend time there. That is a genuine
+// server-verified click-through, not a self-reported checkbox.
+//
+// Stateless: signed cookies only. No database, no KV. Free Hobby tier.
 // ---------------------------------------------------------------------------
 
-import {
-  signToken, cleanDevice, json, readBody, configError, hmac, b64url,
-} from './_lib.js'
-
-// Must match the required steps declared in src/gateConfig.js.
-const REQUIRED_STEPS = ['save-contact', 'partner-channel']
-
-// A visitor cannot plausibly complete a step faster than this.
-const MIN_DWELL_MS = 4000
+import { signToken, cleanDevice, json, readBody, configError } from './_lib.js'
+import { REQUIRED_STEPS, MIN_DWELL_MS } from './_steps.js'
+import { parseCookies, readTicket } from './go.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { ok: false, error: 'Method not allowed' })
 
-  const cfg = configError()
-  if (cfg) {
+  if (configError()) {
     return json(res, 503, {
       ok: false,
       error: 'Access system is not configured yet. Please try again shortly.',
@@ -46,32 +45,32 @@ export default async function handler(req, res) {
   const deviceId = cleanDevice(body.deviceId)
   if (!deviceId) return json(res, 400, { ok: false, error: 'Could not identify this device.' })
 
-  const steps = body.steps && typeof body.steps === 'object' ? body.steps : {}
+  const cookies = parseCookies(req.headers.cookie)
 
-  // Every required step must be reported complete, with a credible dwell.
-  for (const id of REQUIRED_STEPS) {
-    const s = steps[id]
-    if (!s || !s.done) {
-      return json(res, 400, {
+  for (const stepId of REQUIRED_STEPS) {
+    const ts = readTicket(cookies, stepId, deviceId)
+
+    // No server-recorded visit: the step was never actually opened on this
+    // device (or someone tried to skip the UI altogether).
+    if (!ts) {
+      return json(res, 403, {
         ok: false,
-        error: 'Please complete the steps above first.',
-        missing: id,
+        error: 'Please tap the button for each step — we could not confirm that one yet.',
+        missing: stepId,
       })
     }
-    if (typeof s.dwellMs === 'number' && s.dwellMs < MIN_DWELL_MS) {
+
+    // Opened, but bounced straight back.
+    if (Date.now() - ts < MIN_DWELL_MS) {
       return json(res, 429, {
         ok: false,
-        error: 'That was a little too quick — give the page a moment and try again.',
-        missing: id,
+        error: 'That was a little too quick — please finish the step, then come back.',
+        missing: stepId,
+        retryInMs: MIN_DWELL_MS - (Date.now() - ts),
       })
     }
   }
 
   const { token, exp } = signToken(deviceId)
-
-  // A short, verifiable receipt of this issuance. Stateless: it proves the
-  // server issued it, without needing anywhere to store it.
-  const receipt = b64url(hmac(`issue|v1|${deviceId}|${exp}`)).slice(0, 12)
-
-  return json(res, 200, { ok: true, token, exp, receipt })
+  return json(res, 200, { ok: true, token, exp })
 }

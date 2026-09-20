@@ -1,38 +1,60 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { gateConfig } from '../gateConfig.js'
-import { loadSteps, saveSteps, requestAccess, redeemCode } from '../gateStore.js'
-import { normalizeWhatsApp } from '../phone.js'
+import { stepUrl, fetchStepStatus, requestAccess, redeemCode } from '../gateStore.js'
 
 /**
  * Access gate.
  *
- * Design rules this component follows:
- *  - Progress is PERSISTED (localStorage) the instant a step is opened or
- *    confirmed. Tapping a link sends the visitor to WhatsApp/LinkedIn, which on
- *    phones often replaces the tab; when they return, nothing may restart.
- *  - Nothing admin-facing appears here. No phone number, no device id, no
- *    admin link, no mention of how codes are minted.
- *  - Steps read as friendly requests, never as "tasks".
- *  - Optional steps are clearly marked and never block access.
- *  - Access is granted automatically by the server once required steps are
- *    complete — the visitor never types a code.
+ * The important design change: there are NO self-certifying checkboxes. A step
+ * is marked complete only because the SERVER recorded the visitor passing
+ * through /api/go on the way to the destination. The UI simply reflects that
+ * server state, so clicking around in DevTools changes nothing that matters.
+ *
+ * Other rules this component follows:
+ *  - Nothing admin-facing: no phone number, no device id, no admin link.
+ *  - Progress survives redirects and reloads, because the evidence is a
+ *    server-side cookie rather than React state.
+ *  - Steps read as friendly requests; optional ones never block access.
  */
 export default function Gate({ onUnlock }) {
   const steps = gateConfig.steps || []
   const required = steps.filter((s) => !s.optional)
 
-  const [progress, setProgress] = useState(() => loadSteps())
-  const [, setTick] = useState(0)
+  const [status, setStatus] = useState(null)   // server truth
+  const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
-  const timers = useRef({})
+  const pollRef = useRef(null)
 
-  // Drives the "please wait Ns" countdown label.
-  useEffect(() => {
-    const id = setInterval(() => setTick((t) => t + 1), 500)
-    return () => clearInterval(id)
+  const refresh = useCallback(async () => {
+    const s = await fetchStepStatus()
+    if (s) setStatus(s)
+    setLoading(false)
+    return s
   }, [])
-  useEffect(() => () => Object.values(timers.current).forEach(clearTimeout), [])
+
+  // Initial read, plus a re-read whenever they come back to the tab — that is
+  // the moment they return from WhatsApp or LinkedIn.
+  useEffect(() => {
+    refresh()
+    const onFocus = () => refresh()
+    const onVis = () => { if (!document.hidden) refresh() }
+    window.addEventListener('focus', onFocus)
+    document.addEventListener('visibilitychange', onVis)
+    return () => {
+      window.removeEventListener('focus', onFocus)
+      document.removeEventListener('visibilitychange', onVis)
+    }
+  }, [refresh])
+
+  // While any step is visited-but-still-counting-down, poll so the button
+  // arms by itself without the visitor having to do anything.
+  useEffect(() => {
+    const waiting = status && Object.values(status).some((s) => s.visited && !s.ready)
+    clearInterval(pollRef.current)
+    if (waiting) pollRef.current = setInterval(refresh, 1500)
+    return () => clearInterval(pollRef.current)
+  }, [status, refresh])
 
   // Magic-link fallback: .../#/?c=CODE redeems automatically.
   useEffect(() => {
@@ -49,68 +71,18 @@ export default function Gate({ onUnlock }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const dwellMs = (gateConfig.dwellSeconds ?? 6) * 1000
-
-  function update(next) {
-    setProgress(next)
-    saveSteps(next)          // persist immediately — survives redirect + reload
-  }
-
-  function openStep(step) {
-    const next = {
-      ...progress,
-      [step.id]: { ...(progress[step.id] || {}), openedAt: Date.now() },
-    }
-    update(next)
-  }
-
-  function toggleDone(step) {
-    if (!isArmed(step)) return
-    const cur = progress[step.id] || {}
-    update({ ...progress, [step.id]: { ...cur, done: !cur.done } })
-    setError('')
-  }
-
-  const isOpened = (step) => !!(progress[step.id] && progress[step.id].openedAt)
-  const isDone = (step) => !!(progress[step.id] && progress[step.id].done)
-
-  // A confirm box arms only after the visitor opened the link and the dwell
-  // has elapsed. Because openedAt is persisted, time spent away counts too —
-  // coming back from WhatsApp lands on an already-armed step.
-  function isArmed(step) {
-    const p = progress[step.id]
-    if (!p || !p.openedAt) return false
-    return Date.now() - p.openedAt >= dwellMs
-  }
-
-  function secondsLeft(step) {
-    const p = progress[step.id]
-    if (!p || !p.openedAt) return Math.ceil(dwellMs / 1000)
-    return Math.max(0, Math.ceil((dwellMs - (Date.now() - p.openedAt)) / 1000))
-  }
-
-  function hrefFor(step) {
-    if (step.kind === 'contact') {
-      const wa = normalizeWhatsApp(gateConfig.whatsappNumber, gateConfig.defaultCountryCode)
-      const text = step.message ? `?text=${encodeURIComponent(step.message)}` : ''
-      return `https://wa.me/${wa}${text}`
-    }
-    return step.url
-  }
-
-  const allRequiredDone = required.every((s) => isDone(s))
-  const doneCount = steps.filter((s) => isDone(s)).length
+  const st = (step) => (status && status[step.id]) || { visited: false, ready: false, waitMs: 0 }
+  const allRequiredReady = required.every((s) => st(s).ready)
+  const doneCount = steps.filter((s) => st(s).ready).length
 
   async function unlock() {
     setError('')
-    if (!allRequiredDone) {
-      setError('Please complete the steps above first.')
-      return
-    }
     setBusy(true)
-    const r = await requestAccess(progress)
-    if (r.ok) onUnlock(r.exp)
-    else { setError(r.error); setBusy(false) }
+    const r = await requestAccess()
+    if (r.ok) { onUnlock(r.exp); return }
+    setError(r.error)
+    setBusy(false)
+    refresh()
   }
 
   return (
@@ -135,13 +107,12 @@ export default function Gate({ onUnlock }) {
 
         <ol className="gate-steps">
           {steps.map((step, i) => {
-            const opened = isOpened(step)
-            const done = isDone(step)
-            const armed = isArmed(step)
+            const s = st(step)
+            const secs = Math.ceil((s.waitMs || 0) / 1000)
             return (
-              <li key={step.id} className={`gate-step ${done ? 'is-done' : ''}`}>
+              <li key={step.id} className={`gate-step ${s.ready ? 'is-done' : ''}`}>
                 <div className="gate-step-head">
-                  <span className="gate-step-no">{done ? '✓' : i + 1}</span>
+                  <span className="gate-step-no">{s.ready ? '✓' : i + 1}</span>
                   <div>
                     <div className="gate-step-label">
                       {step.heading}
@@ -152,34 +123,26 @@ export default function Gate({ onUnlock }) {
                 </div>
 
                 <div className="gate-step-actions">
+                  {/* Goes to our own server first, which records the visit and
+                      then redirects. Not a normal outbound link. */}
                   <a
-                    className={`btn gate-btn-wa ${done ? 'btn-ghost' : ''}`}
-                    href={hrefFor(step)}
+                    className={`btn gate-btn-wa ${s.ready ? 'btn-ghost' : ''}`}
+                    href={stepUrl(step.id)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => openStep(step)}
                   >
-                    {step.action} →
+                    {s.ready ? `${step.action} again` : step.action} →
                   </a>
 
-                  <label
-                    className={`gate-check ${done ? 'checked' : ''} ${armed ? '' : 'disabled'}`}
-                    aria-disabled={!armed}
-                  >
-                    <input
-                      type="checkbox"
-                      checked={done}
-                      disabled={!armed}
-                      onChange={() => toggleDone(step)}
-                    />
-                    <span>
-                      {armed
+                  <span className={`gate-state ${s.ready ? 'ok' : s.visited ? 'waiting' : ''}`}>
+                    {loading
+                      ? 'Checking…'
+                      : s.ready
                         ? step.confirm
-                        : opened
-                          ? `One moment… ${secondsLeft(step)}s`
-                          : 'Tap the button above first'}
-                    </span>
-                  </label>
+                        : s.visited
+                          ? `Confirming… ${secs}s`
+                          : 'Not yet done'}
+                  </span>
                 </div>
               </li>
             )
@@ -191,10 +154,17 @@ export default function Gate({ onUnlock }) {
         <button
           className="btn btn-primary btn-lg gate-unlock"
           onClick={unlock}
-          disabled={!allRequiredDone || busy}
+          disabled={!allRequiredReady || busy || loading}
         >
           {busy ? 'Setting you up…' : 'Enter the CBT Lab →'}
         </button>
+
+        {!allRequiredReady && !loading && (
+          <p className="gate-hint-line">
+            Tap each button above to continue — we confirm it automatically when
+            you come back.
+          </p>
+        )}
 
         <p className="gate-note">
           Your access lasts 7 days on this device and renews in seconds. Your

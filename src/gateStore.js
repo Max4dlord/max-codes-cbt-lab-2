@@ -61,6 +61,9 @@ async function post(url, body) {
   const r = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
+    // Visit tickets are HttpOnly cookies on our own origin; without this the
+    // server cannot see the evidence it wrote.
+    credentials: 'same-origin',
     body: JSON.stringify(body),
   })
   let data = {}
@@ -109,22 +112,42 @@ export function clearSteps() {
 }
 
 /**
- * Automated access: the server issues a device-bound 7-day session once the
- * required steps are complete. No code is typed and nothing is shared.
+ * The URL a step button must point at. The visitor goes to OUR server first,
+ * which records the click and then redirects them on. That server-side record
+ * is the only thing /api/issue will accept as proof, which is precisely why
+ * ticking a box without clicking cannot work.
  */
-export async function requestAccess(steps) {
-  // Send only what the server needs: completion + how long they dwelled.
-  const payload = {}
-  for (const [id, v] of Object.entries(steps || {})) {
-    payload[id] = {
-      done: !!v.done,
-      dwellMs: v.openedAt ? Math.max(0, Date.now() - v.openedAt) : 0,
-    }
-  }
+export function stepUrl(stepId) {
+  return `/api/go?step=${encodeURIComponent(stepId)}&d=${encodeURIComponent(deviceId())}`
+}
+
+/**
+ * Ask the server which steps it has actually recorded for this device.
+ * Returns { id: { visited, ready, waitMs } }.
+ */
+export async function fetchStepStatus() {
   try {
-    const { data } = await post('/api/issue', { deviceId: deviceId(), steps: payload })
+    const { data } = await post('/api/status', { deviceId: deviceId() })
+    return data.ok ? data.steps : null
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Automated access: the server issues a device-bound 7-day session, but only
+ * against visit tickets it recorded itself. Nothing about progress is sent
+ * from here, because nothing the browser says would be trusted anyway.
+ */
+export async function requestAccess() {
+  try {
+    const { data } = await post('/api/issue', { deviceId: deviceId() })
     if (data.ok && data.token) { setToken(data.token); return { ok: true, exp: data.exp } }
-    return { ok: false, error: data.error || 'Could not grant access just yet.' }
+    return {
+      ok: false,
+      error: data.error || 'Could not grant access just yet.',
+      missing: data.missing,
+    }
   } catch {
     return { ok: false, error: 'No internet connection. Connect and try again.' }
   }
