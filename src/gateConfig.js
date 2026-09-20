@@ -23,7 +23,9 @@
 // ===========================================================================
 
 export const gateConfig = {
-  enabled: true,          // ← false = app wide open (kill switch)
+  // ⚠️ GATE TEMPORARILY OPEN. The app is wide open to everyone.
+  // Set this back to `true` to re-arm the gate (nothing else to change).
+  enabled: false,
   accessVersion: 4,       // ← bump to force everyone to re-verify
 
   // NOTE: the actual destination URLs (WhatsApp contact, partner channel,
