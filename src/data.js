@@ -53,6 +53,12 @@ export const topicMeta = {
       "name": "Day 1 \u2014 Monday, 14th September",
       "categoryId": "swep-days",
       "summaryNotes": "### What Day 1 covered\nThree lectures, recorded in the orientation ledger:\n\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Introduction to SWEP & SIWES; scope, durations, rules & regulations | **Prof. O. A. Olojede** |\n| 2 | History & spread of the Industrial Training Fund (ITF) in Nigeria | **Prof. M. D. Shittu** |\n| 3 | Benefits of Industrial Training for Science & Engineering students | **Prof. E. A. Taiwo** |\n\n### The dates that carry marks\n| Year | Event |\n|---|---|\n| **1971** | ITF established under **Act No. 47**; take-off grant **\u20a61,000,000 (\u00a3500,000)** |\n| **1973** | SIWES established by ITF; **OAU (then University of Ife) among the first participants** |\n| 1974 | SIWES actually started |\n| to 1978 | ITF **fully funded** SIWES |\n| **1979** | FME makes a **one-year IT programme compulsory** for Polytechnics/Colleges of Technology |\n| **Jan 1980** | ITF **withdraws** from financing SIWES |\n| 1980\u20131984 | **NUC & NBTE** fund the scheme; NBTE renames SIWES **COSITA** |\n| **1984** | Scheme **expanded** to sciences, environmental sciences, agriculture; ITF resumes management **Nov 1984** (**IAGR** Dept.) |\n| **1985** | **Decree No. 16 of August 1985** gives SIWES legal backing |\n| 1987 | Austerity measures + **SAP** \u2014 firms stop providing accommodation |\n| 1994 | **30% of firms** reject institutional requests; individual-merit applications |\n| **1995** | ITF/NUC allocate **3\u201315 credit units** |\n| 2011 | **ITF Amendment Act** \u2014 NISDP, WOSEP, STEPP-C, CONSEP, **SUPA** |\n\n### Durations and credit units\n- **SWEP 200** \u2014 ideally **12 weeks**, strict minimum **8 weeks** (after 200-Level Rain Semester)\n- **SIWES I** \u2014 12 weeks, after the **300**-Level Rain Semester\n- **SIWES II** \u2014 **24 weeks (6 months)**, 400-Level Rain Semester + vacation. **Only SIWES II receives ITF stipends.**\n- Polytechnics/Colleges of Education **4 months**; Universities **6 months**\n- Credit units: **Year II: 3 \u00b7 Year III: 3 \u00b7 Year IV: 9** (Technology & EDM)\n- Exempt 4-year programmes: **Architecture, Fine and Applied Arts, Industrial Chemistry**\n- **Faculty of Agriculture** \u2014 consolidated **1-year 'Farm Year'**\n\n### The daily schedule\n| Time | Activity |\n|---|---|\n| 08:00 \u2013 08:30 | Arrival + **first** attendance check |\n| 08:30 \u2013 09:00 | Recap of previous day |\n| 09:00 \u2013 10:30 | Lecture 1 |\n| 10:30 \u2013 12:00 | Lecture 2 |\n| 12:00 \u2013 12:30 | Break \u2014 **second check strictly 12:25\u201312:30** |\n| 12:30 \u2013 14:00 | Lecture 3 |\n\nOrientation = **5 days, 14 lectures**. Signing the register for another student\nis **handled as a criminal act**.\n\n### ITF structure\n**13-member Governing Council**; **15 Departments and 5 Units** at HQ; **42 Area\nOffices**; **5 Skills Training Centres**. Four units report straight to the\nDirector-General: **Legal and Council Affairs, Internal Audit, Public Relations\nand Publicity, SERVICOM**.\n\n### Institutions participating in SIWES\n| Type | Federal | State | Private |\n|---|---|---|---|\n| Universities | 56 | 58 | 72 |\n| Polytechnics | 78 | **107** | 31 |\n| Colleges of Education | 6 | 10 | 6 |\n| **Total** | **140** | **175** | **109** |\n\n### Traps to watch\n- **SWEP = Students *Workshop* Experience Programme** (not \"Work\").\n- **Act 47 \u2192 1971 \u2192 created the ITF.** **Decree 16 \u2192 1985 \u2192 backed SIWES.**\n- \u20a690 is the **1976** allowance, not 1981 (**\u20a6250**).\n- Supervisory allowance is **10%** of the student allowance.\n- **42** = Area Offices, not HQ units.\n- E-SIWES portal is **www.siwesdata.org**; e-payment came from **Yar'Adua's 2009 budget**.\n"
+    },
+    {
+      "id": "swep-day-2",
+      "name": "Day 2 \u2014 Tuesday, 15th September",
+      "categoryId": "swep-days",
+      "summaryNotes": "### What Day 2 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Substance Abuse Awareness | **Dr. A. Olatunji** |\n| 2 | Workshop & Industrial Safety | **Prof. A. A. Adeleke** |\n| 3 | 21st-Century Employability Skills | **Prof. A. B. Ekanola** |\n\n### Substance abuse \u2014 the numbers\n| Measure | Figure |\n|---|---|\n| Global average use | **5.3%** |\n| Nigeria, aged 15\u201364 | **14.3%** (\u2248 14.4 million people) |\n| Lifetime prevalence, SW Nigerian universities | **45% \u2013 84.5%** |\n\nMost abused: **alcohol, tobacco, codeine cough syrups, tramadol, cannabis**.\n\n**Five categories of warning sign** \u2014 know which is which:\n- **Physical** \u2014 bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene\n- **Behavioural** \u2014 new friend groups, secrecy, stealing, **impulsivity/risk-taking**\n- **Academic** \u2014 absenteeism, falling grades, discipline, **unsubmitted assignments**\n- **Psychological/Emotional** \u2014 mood swings, anxiety, depression, **hallucinations**\n- **Social/Lifestyle** \u2014 money trouble, fights/cultism, sleep changes, drug joints\n\n**Prevention** (before) vs **Intervention** (after):\n- Prevention: campus drug education, life skills, peer support, restricting access, parents/community\n- Intervention: early screening, counselling, medical treatment/rehab, policy & discipline, media campaigns\n- **Multi-sectoral collaboration**: **NDLEA**, Federal Ministry of Health, NGOs, campus health services\n\n### Safety \u2014 the numbers\n- **5,486** US fatal occupational injuries in 2022 (**+5.7%** on 2021)\n- **WHO**: **20\u201350%** of workers face workplace hazards\n- **ILO**: economic cost **1.8%\u20136% of GDP**\n\n**High-risk industries**: construction, healthcare, manufacturing, transportation,\nagriculture, iron & steel, chemical/petrochemical, heavy equipment operation.\n\n**PPE standards**\n| Standard | Covers | Region |\n|---|---|---|\n| **ANSI Z87.1** | Safety glasses | **US** |\n| EN 166 | Safety glasses | Europe |\n| EN ISO 20471 | High-visibility clothing | Europe |\n| EN ISO 11611 | Welding protection | Europe |\n\n**Hierarchy of control** (most \u2192 least effective):\n**Elimination** \u2192 Substitution \u2192 Engineering \u2192 Administrative \u2192 **PPE (last line)**\n\n**Safety signs \u2014 shape + colour**\n| Type | Shape | Colour |\n|---|---|---|\n| Prohibition | Circular | Red border + diagonal |\n| Warning | **Triangular** | Yellow/amber |\n| Mandatory | Circular | **Blue** |\n| Emergency/First-aid | Rectangular | **Green** |\n\n**Fire extinguishers** \u2014 all red bodies, coded markings:\nWater **green triangle** (A) \u00b7 CO2 **black square** (B, C) \u00b7\nFoam **cream label** (A, B) \u00b7 Dry powder **blue circle** (A, B, C).\nNever use water on an electrical fire.\n\n**Bodies**: US \u2014 **OSHA** (enforces), **NIOSH** (research).\nNigeria \u2014 **NISCN**, **ISPON**, OSHAssociation, MAN, NACCIMA.\n\n### Employability\n**Definition**: the capabilities to **obtain, retain, perform and progress** in\nemployment. You can be employed yet barely employable if your skills are going obsolete.\n\n**Agents of transformation**: AI, automation, digital platforms, globalisation, remote work.\n\n**8 clusters**: communication \u00b7 critical thinking & problem-solving \u00b7 digital &\ntechnological \u00b7 creativity & innovation \u00b7 collaboration & teamwork \u00b7 personal\neffectiveness & emotional intelligence \u00b7 career management, entrepreneurship &\nleadership \u00b7 adaptability, lifelong learning & professional development.\n\n**Critical thinking order**: identify the problem \u2192 research \u2192 determine data\nrelevance \u2192 ask questions \u2192 identify best solution \u2192 present \u2192 analyse the decision.\n\n**Key distinctions**\n- **Creativity** sees possibilities; **innovation** converts them into useful outcomes.\n- **Adaptability** = functioning through change; **resilience** = recovering from setbacks.\n- A **skill** performs a task; a **capability** applies knowledge in *changing* circumstances.\n- A **CV claims**; a **portfolio demonstrates**.\n- Goal with AI: an **AI-enabled professional**, not competing with AI, not blind delegation.\n\n**Career model**: Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 transition \u2192\nlifelong learning (via micro-credentials and short courses).\n\n**Five things to build alongside the degree**: communication ability \u00b7 digital\ncapability \u00b7 evidence of practical experience \u00b7 a professional network \u00b7 a learning habit.\n\n### Traps to watch\n- **5.3%** global vs **14.3%** Nigeria vs **45\u201384.5%** university lifetime prevalence.\n- Every warning-sign distractor is a **real** sign under a **different** category.\n- **Prevention** precedes the problem; **intervention** follows it.\n- **EN** = European, so **ANSI Z87.1** is the US one.\n- **PPE is the weakest** control, not the strongest.\n- Prohibition and mandatory signs are **both circular** \u2014 red vs blue decides.\n- **8** skill clusters, but **5** things to build. Different lists.\n"
     }
   ],
   "eee282": [
@@ -784,6 +790,726 @@ export const questionBank = {
       "correct": 2,
       "short": "SIWES is funded by the Federal Government of Nigeria.",
       "solution": "### Why this is the answer\nOn \"THE SIWES PROGRAMME\" slide, **Funding** is listed with a single line:\n**\"Federal Government of Nigeria\"**.\n\n### Don't confuse operators with funders\nThe same slide separates the roles clearly:\n\n| Role | Who |\n|---|---|\n| **Operators** | ITF, coordinating agencies (**NUC, NBTE, NCCE**), employers of labour, institutions |\n| **Funding** | **Federal Government of Nigeria** |\n| Beneficiaries | Agriculture, Engineering, Technology, Environmental Sciences, Education, Medical Sciences, Pure & Applied Sciences, Computing, etc. |\n\nEmployers **operate** the scheme by hosting and supervising students \u2014 that is\nnot the same as funding it.\n\n### Source\nProf. M. D. Shittu, \"THE SIWES PROGRAMME\" slide.\n\n### Why the others fail\n- **Jointly with Private Industries** \u2014 industries host and may pay stipends,\n  but formal funding is Federal Government.\n- **Solely by NUC and NBTE** \u2014 true only for the **1980\u20131984** interregnum.\n- **Student union contributions** \u2014 never a funding source."
+    },
+    {
+      "id": "swep_day2_01",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the estimated global average for psychoactive substance use?",
+      "options": [
+        "5.3%",
+        "10.2%",
+        "14.3%",
+        "45.0%"
+      ],
+      "correct": 0,
+      "short": "The global average for psychoactive substance use is 5.3%.",
+      "solution": "### Why this is the answer\nThe slide gives **5.3%** as the **global average** for psychoactive substance\nuse, and uses it as the benchmark against which Nigeria is compared.\n\n### The comparison that matters\n| Measure | Figure |\n|---|---|\n| **Global average** | **5.3%** |\n| Nigeria (aged 15-64) | **14.3%** |\n\nNigeria's rate is roughly **2.7 times** the world average \u2014 that contrast is the\nwhole point of the opening slide, so expect both numbers to be examined.\n\n### Source\nDr. A. Olatunji, \"Introduction\" slide, *Substance Abuse Among University\nUndergraduates* (Medical and Health Services, OAU).\n\n### Why the others fail\n- **14.3%** \u2014 that is Nigeria's figure, not the world's. The commonest slip.\n- **10.2%** \u2014 does not appear anywhere in the deck.\n- **45.0%** \u2014 the lower bound of the university *lifetime prevalence* range,\n  a completely different measure."
+    },
+    {
+      "id": "swep_day2_02",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What percentage of the Nigerian population aged 15-64 is estimated to engage in psychoactive substance use?",
+      "options": [
+        "5.3%",
+        "14.3%",
+        "25.5%",
+        "45.0%"
+      ],
+      "correct": 1,
+      "short": "Approximately 14.3% of Nigerians aged 15-64 engage in psychoactive substance use.",
+      "solution": "### Why this is the answer\nAround **14.4 million Nigerians** \u2014 approximately **14.3% of the population\naged 15-64** \u2014 are estimated to engage in psychoactive substance use.\n\n### Do not confuse the two 14s\n- **14.4 million** = the number of people\n- **14.3%** = the share of the 15-64 age group\n\nThey sit in the same sentence and look almost identical. The question asks for a\n**percentage**, so the answer is **14.3%**.\n\n### Context\nThis is *notably higher* than the global average of **5.3%**, which is exactly\nwhy the lecture opens with it.\n\n### Source\nDr. A. Olatunji, \"Introduction\" slide.\n\n### Why the others fail\n- **5.3%** \u2014 the global average.\n- **25.5%** \u2014 not in the material.\n- **45.0%** \u2014 the floor of the 45%-84.5% university lifetime-prevalence band."
+    },
+    {
+      "id": "swep_day2_03",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the estimated lifetime prevalence of substance use in several southwestern Nigerian universities?",
+      "options": [
+        "10% - 25%",
+        "25% - 40%",
+        "45% - 84.5%",
+        "85% - 95%"
+      ],
+      "correct": 2,
+      "short": "Lifetime prevalence ranges between 45% and 84.5%.",
+      "solution": "### Why this is the answer\nIn several **southwestern Nigerian universities**, the **lifetime prevalence**\nof substance use ranges between **45% and 84.5%**.\n\n### Why the number is so much larger than 14.3%\nTwo different measures are in play:\n- **14.3%** is *current* use across the whole 15-64 population.\n- **45%-84.5%** is *lifetime* prevalence \u2014 ever used, even once \u2014 and only\n  within a university population.\n\nLifetime prevalence is always higher than current use, and students are a\nhigher-risk group. Read the wording carefully before answering.\n\n### Most frequently abused substances\nAlcohol, tobacco, **codeine-containing cough syrups**, **tramadol**, and\ncannabis.\n\n### Source\nDr. A. Olatunji, \"Introduction\" slide.\n\n### Why the others fail\nThe three distractors are all plausible-looking bands, but the deck states one\nspecific range: **45%-84.5%**."
+    },
+    {
+      "id": "swep_day2_04",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is considered a physical sign of substance abuse?",
+      "options": [
+        "Declining grades",
+        "Bloodshot or glassy eyes",
+        "Secretive behavior",
+        "Social withdrawal"
+      ],
+      "correct": 1,
+      "short": "Bloodshot or glassy eyes are a physical sign of substance abuse.",
+      "solution": "### Why this is the answer\nThe deck separates the warning signs into **five distinct categories**, and this\nquestion tests whether you can place a sign in the right one.\n\n**Physical signs** are the bodily, visible ones:\n- **Bloodshot or glassy eyes**\n- Sudden weight loss or gain\n- Unusual body odours (e.g. alcohol, cannabis)\n- Poor hygiene and self-care\n- Frequent nosebleeds or sniffing (may indicate snorting)\n- Tremors, slurred speech, or unsteady gait\n\n### Where the distractors actually belong\n| Sign | Correct category |\n|---|---|\n| Declining grades | **Academic** |\n| Secretive behaviour | **Behavioural** |\n| Social withdrawal | **Psychological/Emotional** |\n\nEvery distractor is a **real** warning sign \u2014 just filed under a different\nheading. That is the trap.\n\n### Source\nDr. A. Olatunji, \"Signs and Symptoms \u2014 Physical Signs\" slide."
+    },
+    {
+      "id": "swep_day2_05",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following describes a behavioral change commonly associated with substance abuse?",
+      "options": [
+        "Increased impulsivity or risk-taking behaviors",
+        "Frequent visits to high-risk areas",
+        "Frequent absenteeism from lectures",
+        "Unexplained mood swings"
+      ],
+      "correct": 0,
+      "short": "Increased impulsivity or risk-taking behaviour is a behavioural change indicator.",
+      "solution": "### Why this is the answer\n**Behavioural changes** listed in the deck:\n- Sudden change in friend groups, especially peers known for drug use\n- Secretive or suspicious behaviour\n- Lying, stealing, or manipulation to obtain money or substances\n- **Increased impulsivity or risk-taking behaviours**\n- Loss of interest in hobbies, academics, or extracurriculars\n- Neglect of responsibilities (missed classes or deadlines)\n\n### Where the distractors belong\n| Sign | Correct category |\n|---|---|\n| Frequent visits to high-risk areas | **Social and Lifestyle** |\n| Frequent absenteeism from lectures | **Academic** |\n| Unexplained mood swings | **Psychological and Emotional** |\n\nAgain, all four are genuine warning signs from the same lecture \u2014 only one sits\nunder *Behavioural Changes*.\n\n### Source\nDr. A. Olatunji, \"Behavioral Changes\" slide."
+    },
+    {
+      "id": "swep_day2_06",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Hallucinations and delusions are categorized under which type of substance abuse symptom?",
+      "options": [
+        "Physical Signs",
+        "Academic Signs",
+        "Psychological and Emotional Symptoms",
+        "Social and Lifestyle Indicators"
+      ],
+      "correct": 2,
+      "short": "They are psychological and emotional symptoms.",
+      "solution": "### Why this is the answer\n**Psychological and Emotional Symptoms** are listed as:\n- Unexplained mood swings or irritability\n- Anxiety, restlessness, or panic attacks\n- Periods of excessive energy or agitation (may indicate **stimulant** use)\n- Depression, social withdrawal, or emotional numbness\n- **Hallucinations or delusions** \u2014 in severe cases, or from specific substances\n  such as **cannabis or hallucinogens**\n\n### A tempting trap\nHallucinations *feel* physical because the person may appear visibly disturbed.\nBut the symptom is one of **perception and cognition**, not of the body, so the\ndeck files it under psychological/emotional. Physical signs are things you could\nphotograph \u2014 eyes, weight, tremors, gait.\n\n### Source\nDr. A. Olatunji, \"Psychological and Emotional Symptoms\" slide."
+    },
+    {
+      "id": "swep_day2_07",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is an academic sign of substance abuse?",
+      "options": [
+        "Loss of interest in hobbies",
+        "Conflict with roommates",
+        "Failure to submit assignments",
+        "Unusual sleeping patterns"
+      ],
+      "correct": 2,
+      "short": "Failure to submit assignments is an academic sign.",
+      "solution": "### Why this is the answer\n**Academic signs** in the deck are exactly four:\n- Frequent absenteeism from lectures and academic activities\n- Declining grades and academic performance\n- Disciplinary issues or warnings from faculty or administration\n- **Failure to submit assignments or participate in group work**\n\n### Where the distractors belong\n| Sign | Correct category |\n|---|---|\n| Loss of interest in hobbies | **Behavioural** |\n| Conflict with roommates | **Social and Lifestyle** |\n| Unusual sleeping patterns | **Social and Lifestyle** |\n\nNote the fine line: *loss of interest in academics* is listed under\n**behavioural**, while *failure to submit assignments* is **academic**. The\ndistinction is between a change in attitude and a measurable academic failure.\n\n### Source\nDr. A. Olatunji, \"Academic Signs\" slide."
+    },
+    {
+      "id": "swep_day2_08",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which strategy falls under 'Preventive Strategies' for substance abuse?",
+      "options": [
+        "Medical Treatment and Rehabilitation",
+        "Campus-Based Drug Education",
+        "Early Identification and Screening",
+        "Counseling and Psychological Support"
+      ],
+      "correct": 1,
+      "short": "Campus-Based Drug Education is a preventive strategy.",
+      "solution": "### Why this is the answer\nThe deck splits the response into **two numbered groups**, and every distractor\nhere comes from the *other* group.\n\n**1. Preventive Strategies** \u2014 stop it before it starts:\n- **Campus-Based Drug Education**\n- Life Skills and Coping Mechanisms\n- Peer Support Networks\n- Restricting Access to Substances\n- Parental and Community Involvement\n\n**2. Intervention Strategies** \u2014 respond once it has started:\n- Early Identification and Screening\n- Counselling and Psychological Support\n- Medical Treatment and Rehabilitation\n- Policy and Disciplinary Framework\n- Digital and Media Campaigns\n\n### The rule of thumb\n**Prevention comes before the problem; intervention comes after it.** Screening,\ncounselling and rehabilitation all presuppose that use has already begun.\n\n### Source\nDr. A. Olatunji, \"Prevention and Intervention Strategies\" slides."
+    },
+    {
+      "id": "swep_day2_09",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The National Drug Law Enforcement Agency (NDLEA) is involved in which substance abuse strategy?",
+      "options": [
+        "Academic penalty execution",
+        "Multi-Sectoral Collaboration",
+        "Life Skills Assessment",
+        "Parental Involvement"
+      ],
+      "correct": 1,
+      "short": "The NDLEA is a key part of multi-sectoral collaboration.",
+      "solution": "### Why this is the answer\n**Multi-Sectoral Collaboration** is its own heading, listing the four bodies\nthat must work together:\n- **National Drug Law Enforcement Agency (NDLEA)**\n- Federal Ministry of Health\n- Non-Governmental Organizations (NGOs)\n- Campus health services\n\n### Why \"multi-sectoral\"\nEach body covers a sector the others cannot: the NDLEA brings **law\nenforcement**, the Ministry of Health brings **public health policy**, NGOs\nbring **community reach**, and campus health services bring **direct student\naccess**. No single one can address substance abuse alone.\n\n### Source\nDr. A. Olatunji, \"Multi-Sectoral Collaboration\" slide.\n\n### Why the others fail\nLife Skills and Parental Involvement are **preventive strategies**, not\ncollaboration partners, and \"academic penalty execution\" is not in the deck at\nall \u2014 disciplinary work appears as *Policy and Disciplinary Framework* under\nintervention."
+    },
+    {
+      "id": "swep_day2_10",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who delivered the orientation session on Substance Abuse Awareness?",
+      "options": [
+        "Prof. A. A. Adeleke",
+        "Prof. A. B. Ekanola",
+        "Dr. A. Olatunji",
+        "The NDLEA Chairman"
+      ],
+      "correct": 2,
+      "short": "Dr. A. Olatunji delivered the session on Substance Abuse Awareness.",
+      "solution": "### Why this is the answer\nThe Day 2 ledger (Tuesday, 15th September) records **Substance Abuse Awareness\n(Dr. A. Olatunji)**, noting that he addressed the statistical prevalence of\npsychoactive substance use, particularly within Nigerian universities, while\noutlining signs, consequences, preventative intervention strategies and coping\nskills.\n\n### Day 2 at a glance\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Substance Abuse Awareness | **Dr. A. Olatunji** |\n| 2 | Workshop & Industrial Safety | Prof. A. A. Adeleke |\n| 3 | 21st-Century Employability Skills | Prof. A. B. Ekanola |\n\n### Note the title\nHe is **Dr.**, while the other two Day 2 speakers are **Prof.** Titles are\nexaminable \u2014 read them as carefully as the names.\n\n### Source\nHandwritten \"Record of the Orientation Week Activities\", Day 2; deck attributed\nto Medical and Health Services, OAU."
+    },
+    {
+      "id": "swep_day2_11",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How many fatal occupational injuries were recorded in the US in 2022?",
+      "options": [
+        "2,500",
+        "4,205",
+        "5,486",
+        "8,902"
+      ],
+      "correct": 2,
+      "short": "The US recorded 5,486 fatal occupational injuries in 2022.",
+      "solution": "### Why this is the answer\nIn **2022** the United States recorded **5,486 fatal occupational injuries** \u2014\na **5.7% increase** on 2021.\n\n### The two numbers to hold together\n- **5,486** \u2014 the fatality count\n- **5.7%** \u2014 the year-on-year rise\n\nThey sit in the same sentence and the digits are similar, so it is easy to swap\nthem under exam pressure.\n\n### Why the lecture opens here\nThe trend is uneven: overall fatal-injury rates are falling in many countries\nthanks to safety interventions, **but rising among migrants and ethnic\nminorities in high-risk industries**. Safety is improving on average and getting\nworse for the most exposed groups.\n\n### Source\nProf. A. A. Adeleke, \"USA Statistics on Industry Injuries\" slide."
+    },
+    {
+      "id": "swep_day2_12",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What percentage of workers globally face workplace hazards according to WHO estimates?",
+      "options": [
+        "5-10%",
+        "10-20%",
+        "20-50%",
+        "50-70%"
+      ],
+      "correct": 2,
+      "short": "The WHO estimates 20-50% of workers face workplace hazards globally.",
+      "solution": "### Why this is the answer\nGlobally, the **World Health Organization (WHO)** estimates that between\n**20% and 50%** of workers face workplace hazards \u2014 with **developing countries\npotentially having higher exposure**, which is precisely why this matters for\nNigerian trainees.\n\n### Keep the three agencies apart\n| Body | What it supplies in this lecture |\n|---|---|\n| **WHO** | **20-50%** of workers face hazards |\n| **ILO** | Economic cost: **1.8%-6% of GDP** |\n| US BLS figures | **5,486** fatalities in 2022 |\n\nMixing up which organisation produced which statistic is the likeliest error.\n\n### Source\nProf. A. A. Adeleke, \"USA Statistics on Industry Injuries\" slide."
+    },
+    {
+      "id": "swep_day2_13",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The ILO estimates that the economic costs of work-related injuries and diseases range from:",
+      "options": [
+        "0.5% to 1.5% of GDP",
+        "1.8% to 6% of GDP",
+        "5% to 10% of GDP",
+        "10% to 15% of GDP"
+      ],
+      "correct": 1,
+      "short": "The economic costs range from 1.8% to 6% of GDP.",
+      "solution": "### Why this is the answer\nThe **International Labour Organization (ILO)** and other studies estimate the\neconomic cost of work-related injuries and diseases at **1.8% to 6% of GDP**.\n\n### Why express it as GDP\nFraming safety as a share of **national output** makes the point that workplace\ninjury is not only a human tragedy but a macroeconomic drain: lost productivity,\nmedical costs, compensation and retraining. At the top of the range, **6% of\nGDP** is a very large slice of a national economy.\n\n### Source\nProf. A. A. Adeleke, \"USA Statistics on Industry Injuries\" slide.\n\n### Why the others fail\nAll three are plausible-sounding economic bands, but the deck names one\nspecific range: **1.8% to 6%**. Note the precision of the lower bound \u2014 1.8%,\nnot 2%."
+    },
+    {
+      "id": "swep_day2_14",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT listed as a high-risk industry?",
+      "options": [
+        "Construction",
+        "Agriculture",
+        "Software Development",
+        "Transportation"
+      ],
+      "correct": 2,
+      "short": "Software Development is not listed as a high-risk industry.",
+      "solution": "### Why this is the answer\nThis is a **NOT** question \u2014 find the one that does not belong.\n\nThe high-risk industries named are **construction, healthcare, manufacturing,\ntransportation and agriculture**, plus **iron and steel**, the **chemical and\npetrochemical** industry, and work involving **heavy equipment and machine\noperation**. **Software development** appears nowhere.\n\n### Why the others are high-risk\n| Industry | Principal hazards |\n|---|---|\n| **Construction** | Working at heights, falls, crush injuries, hazardous materials |\n| **Agriculture** | Machinery, livestock handling, pesticide exposure |\n| **Transportation** | Traffic accidents, long shifts, musculoskeletal injury from loading |\n\nThe common thread is **physical** exposure \u2014 machinery, heights, chemicals,\nvehicles. Software work carries ergonomic risk, but it is not in this lecture's\nlist.\n\n### Source\nProf. A. A. Adeleke, \"High Risk Industries\" slides."
+    },
+    {
+      "id": "swep_day2_15",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the primary standard for safety glasses for industrial use in the United States?",
+      "options": [
+        "EN 166",
+        "EN ISO 20471",
+        "ANSI Z87.1",
+        "EN ISO 11611"
+      ],
+      "correct": 2,
+      "short": "ANSI Z87.1 is the primary standard in the US.",
+      "solution": "### Why this is the answer\nThe primary standard for industrial safety glasses in the **US** is\n**ANSI Z87.1**; in **Europe** the equivalent is **EN 166**.\n\n### The quick way to tell them apart\n**EN = European Norm.** Any code starting \"EN\" is European, so the only\nnon-EN option must be the American one. That single rule answers this question\neven if you cannot recall the number.\n\n### The four standards in this lecture\n| Standard | Covers | Region |\n|---|---|---|\n| **ANSI Z87.1** | Safety glasses | **US** |\n| EN 166 | Safety glasses | Europe |\n| EN ISO 20471 | High-visibility clothing | Europe |\n| EN ISO 11611 | Welding protection | Europe |\n\nThese standards ensure glasses withstand impacts, give clear vision, and protect\nagainst dust, debris and chemical splashes.\n\n### Source\nProf. A. A. Adeleke, \"Personal Protective Equipment \u2014 Safety Glasses\" slide."
+    },
+    {
+      "id": "swep_day2_16",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which standard dictates the minimum requirements for high-visibility clothing?",
+      "options": [
+        "EN 166",
+        "EN ISO 20471",
+        "ANSI Z87.1",
+        "EN ISO 11611"
+      ],
+      "correct": 1,
+      "short": "EN ISO 20471 is the standard for high-visibility clothing.",
+      "solution": "### Why this is the answer\nProtective-clothing standards named in the deck are **EN ISO 20471 for\nhigh-visibility clothing** and **EN ISO 11611 for welding protection**. These\ndictate the minimum requirements for **materials, design and performance**.\n\n### Do not confuse the two EN ISO codes\n| Standard | Protects against |\n|---|---|\n| **EN ISO 20471** | Being **unseen** \u2014 high-visibility clothing |\n| EN ISO 11611 | **Welding** \u2014 heat, flame, spatter |\n\nA memory hook: **20471 \u2192 20/20 vision \u2192 being seen**.\n\n### Why compliance matters\nIt minimises risk from chemicals, heat, flames and impacts. On a site with\nmoving vehicles or forklifts, visibility *is* the control measure.\n\n### Source\nProf. A. A. Adeleke, \"Personal Protective Equipment (cntd.)\" slide."
+    },
+    {
+      "id": "swep_day2_17",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is considered the most effective control measure for industrial hazards?",
+      "options": [
+        "Substitution",
+        "Personal Protective Equipment (PPE)",
+        "Elimination",
+        "Administrative Controls"
+      ],
+      "correct": 2,
+      "short": "Elimination is the most effective control measure.",
+      "solution": "### Why this is the answer\n**Completely removing the hazard from the workplace** \u2014 **Elimination** \u2014 is\nstated to be **the most effective control measure**. If the hazard is not there,\nit cannot hurt anyone; every other measure only *manages* a hazard that still\nexists.\n\n### The hierarchy, most to least effective\n| Rank | Control | What it does |\n|---|---|---|\n| 1 | **Elimination** | Removes the hazard entirely |\n| 2 | Substitution | Replaces it with something safer |\n| 3 | Engineering controls | Machine guarding, ventilation, noise reduction |\n| 4 | Administrative controls | Procedures, policies, training |\n| 5 | **PPE** | Protects the individual person |\n\n### Why PPE ranks last\nPPE is the **last line of defence**. It does nothing to the hazard itself \u2014 it\nonly stands between the hazard and one worker, and it fails the moment it is\nworn incorrectly, removed, or damaged. It is the most visible control, which is\nwhy students wrongly assume it is the strongest.\n\n### Source\nProf. A. A. Adeleke, \"Control Measures\" slide."
+    },
+    {
+      "id": "swep_day2_18",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Establishing procedures, policies, and training to minimize exposure to hazards is an example of:",
+      "options": [
+        "Engineering Controls",
+        "Administrative Controls",
+        "Substitution",
+        "Housekeeping"
+      ],
+      "correct": 1,
+      "short": "This defines Administrative Controls.",
+      "solution": "### Why this is the answer\n**Administrative Controls** are defined as *establishing procedures, policies\nand training to minimise exposure to hazards* \u2014 for example, training employees\non safe machine operation.\n\n### Administrative vs engineering \u2014 the key distinction\n- **Engineering controls change the workplace.** Machine guarding, ventilation\n  systems, noise reduction. They work whether or not anyone remembers them.\n- **Administrative controls change behaviour.** Procedures, rotas, training,\n  signage. They depend on people following them.\n\nThat is why engineering ranks **above** administrative in the hierarchy.\n\n### The lecture's own worked example\nIn a manufacturing setting: **machine guarding** (engineering) prevents\naccidental contact with moving parts; **training on safe operation**\n(administrative) and **safety glasses** (PPE) further enhance protection. One\nscenario, three layers.\n\n### Source\nProf. A. A. Adeleke, \"Control Measures (cntd.)\" slide."
+    },
+    {
+      "id": "swep_day2_19",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which safety sign is typically circular with a red border and a red diagonal line through the symbol?",
+      "options": [
+        "Warning Signs",
+        "Mandatory Signs",
+        "Emergency Signs",
+        "Prohibition Signs"
+      ],
+      "correct": 3,
+      "short": "Prohibition signs feature a red border and a red diagonal line.",
+      "solution": "### Why this is the answer\n**Prohibition signs** indicate actions that are **not permitted**. They are\n**circular with a red border, a red diagonal line through the symbol**, and a\n**black pictogram on a white background** \u2014 for example \"No Smoking\", \"No\nEntry\", \"Do Not Touch\", \"No Parking\".\n\n### The four sign families \u2014 learn shape + colour together\n| Type | Shape | Colour | Means |\n|---|---|---|---|\n| **Prohibition** | **Circular** | **Red border + diagonal** | Must **NOT** do |\n| Warning | Triangular | Yellow/amber, black border | **Be careful** |\n| Mandatory | Circular | **Blue** background, white symbol | **Must** do |\n| Emergency/First-aid | Rectangular/square | **Green** background | **Safety/escape** |\n\n### The trap in this question\nProhibition and mandatory signs are **both circular**. Colour is what separates\nthem: **red = don't, blue = do**. Shape alone is not enough.\n\n### Source\nProf. A. A. Adeleke, \"Signage\" and \"Prohibition Sign\" slides."
+    },
+    {
+      "id": "swep_day2_20",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What do Warning Signs typically look like?",
+      "options": [
+        "Triangular with a yellow or amber background",
+        "Circular with a blue background",
+        "Rectangular with a green background",
+        "Circular with a red border"
+      ],
+      "correct": 0,
+      "short": "Warning signs are triangular with a yellow or amber background.",
+      "solution": "### Why this is the answer\n**Warning signs** alert people to potential hazards that may not be immediately\napparent. They are **triangular, with a yellow or amber background, a black\nborder and a black pictogram** \u2014 for example \"High Voltage\", \"Slippery\nSurface\", \"Falling Objects\", \"Flammable Material\", \"Caution: Forklift Traffic\".\n\n### Every distractor is a real sign type\n| Description | Actual type |\n|---|---|\n| Circular, blue background | **Mandatory** (\"Wear Hard Hat\") |\n| Rectangular, green background | **Emergency / First-aid** (\"Fire Exit\") |\n| Circular, red border | **Prohibition** (\"No Smoking\") |\n\nSo this question is really asking whether you can map **shape + colour \u2192 meaning**\nfor all four families, not just one.\n\n### Memory hook\n**Triangle = think.** A triangle points upward like an alert; yellow is the\nuniversal caution colour.\n\n### Source\nProf. A. A. Adeleke, \"Warning Signs\" slides."
+    },
+    {
+      "id": "swep_day2_21",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the color code for a Water Fire Extinguisher, suitable for Class A fires?",
+      "options": [
+        "Red with a black square",
+        "Red with a green triangle",
+        "Red with a cream-colored label",
+        "Red with a blue circle"
+      ],
+      "correct": 1,
+      "short": "Water extinguishers are red with a green triangle.",
+      "solution": "### Why this is the answer\n**All** extinguisher bodies are red in this scheme \u2014 the **colour-coded band or\nlabel** is what identifies the type. **Water extinguishers are red with a green\ntriangle**, for **Class A** fires (wood, paper and similar solids).\n\n### The full colour code\n| Type | Marking | Fire classes |\n|---|---|---|\n| **Water** | **Green triangle** | **A** |\n| CO2 | Black square | B and C |\n| Foam | Cream label | A and B |\n| Dry powder | Blue circle | A, B and C |\n\n### The critical safety point\nWater is **electrically conductive**, so a water extinguisher must **never** be\nused on an electrical fire \u2014 it can conduct current straight back to the\noperator. That single fact is worth more than the colour code itself.\n\n### Source\nProf. A. A. Adeleke, \"Fire Extinguisher Signs\" slides."
+    },
+    {
+      "id": "swep_day2_22",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "A Dry Powder fire extinguisher is identified by:",
+      "options": [
+        "A black square",
+        "A green triangle",
+        "A cream-colored label",
+        "A blue circle"
+      ],
+      "correct": 3,
+      "short": "Dry powder extinguishers have a blue circle.",
+      "solution": "### Why this is the answer\n**Dry powder extinguishers are red with a blue circle** and can be used on\n**Class A, B and C** fires \u2014 the widest coverage of the four types listed.\n\n### Why it covers the most classes\nDry powder smothers solids (A), flammable liquids (B) and flammable gases (C),\nwhich is why it is often the default choice in a mixed workshop where you cannot\npredict what will burn.\n\n### Cross-check the whole set\n| Marking | Type | Classes |\n|---|---|---|\n| Green triangle | Water | A |\n| Black square | CO2 | B, C |\n| Cream label | Foam | A, B |\n| **Blue circle** | **Dry powder** | **A, B, C** |\n\nEach distractor here is a genuine marking belonging to a different extinguisher,\nso the shapes and colours must be learned as pairs.\n\n### Source\nProf. A. A. Adeleke, \"Fire Extinguisher Signs\" slide."
+    },
+    {
+      "id": "swep_day2_23",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which symbol is used to visually communicate the need for protection against radiation?",
+      "options": [
+        "A white cross",
+        "A skull and crossbones",
+        "A trefoil",
+        "A stylized flame"
+      ],
+      "correct": 2,
+      "short": "The trefoil is the universal radiation symbol.",
+      "solution": "### Why this is the answer\nRadioactive signs feature the **universal radiation symbol**, known as the\n**trefoil** \u2014 a propeller-like image of **three blades pointing to the centre**,\nblack or magenta on a **yellow** background.\n\n### Where you meet it\nNuclear power plants, medical facilities, research laboratories and industrial\nsettings. In nuclear plants the trefoil also appears alongside a figure of a\nworker in a full-body suit with a respirator, marking the PPE required.\n\n### What the other symbols mean\n| Symbol | Meaning |\n|---|---|\n| White cross on green | **First aid** |\n| Skull and crossbones | **Toxic / poison** |\n| Stylised flame | **Flammable** |\n\nAll three are real safety symbols from the same lecture \u2014 just for different\nhazards.\n\n### Source\nProf. A. A. Adeleke, \"Radioactive Signs\" and nuclear PPE slides."
+    },
+    {
+      "id": "swep_day2_24",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Nigeria, which of the following is a key association for industrial safety?",
+      "options": [
+        "OSHA",
+        "NIOSH",
+        "ISPON",
+        "ANSI"
+      ],
+      "correct": 2,
+      "short": "The Institute of Safety Professionals of Nigeria (ISPON) is a key association.",
+      "solution": "### Why this is the answer\nThe deck devotes separate slides to the **US** and to **Nigeria**, and this\nquestion checks that you did not merge them.\n\n**Nigeria:**\n- National Industrial Safety Council of Nigeria (**NISCN**)\n- **Institute of Safety Professionals of Nigeria (ISPON)**\n- Occupational Safety and Health Association (**OSHAssociation**)\n- Plus **MAN** and **NACCIMA**, which provide resources and training\n\n**United States:**\n- **OSHA** \u2014 Occupational Safety and Health *Administration*; a federal agency\n  that **enforces** safety legislation\n- **NIOSH** \u2014 a **research** agency that develops and recommends standards\n\n### The deliberate trap\nNigeria's **OSHAssociation** looks almost identical to America's **OSHA**. They\nare different bodies, and only one of them appears on the Nigeria slide. **ANSI**\nis the US standards body behind ANSI Z87.1.\n\n### Source\nProf. A. A. Adeleke, \"Associations for Industrial Safety \u2014 USA / Nigeria\" slides."
+    },
+    {
+      "id": "swep_day2_25",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who delivered the presentation on Workshop and Industrial Safety?",
+      "options": [
+        "Dr. A. Olatunji",
+        "Prof. A. A. Adeleke",
+        "Prof. A. B. Ekanola",
+        "The Dean of Engineering"
+      ],
+      "correct": 1,
+      "short": "Prof. A. A. Adeleke delivered the presentation on Workshop and Industrial Safety.",
+      "solution": "### Why this is the answer\nThe Day 2 ledger records **Workshop & Industrial Safety (Prof. A. A. Adeleke)**,\nnoting that he examined fatal workplace injury statistics and engineering\nworkshop protocols, highlighting high-risk industries, proper use of PPE, common\nhazard control measures, and safety signage / first aid.\n\nThe title slide confirms it: **A. A. Adeleke, Department of Materials Science\nand Engineering**.\n\n### Day 2 speakers\n| Lecture | Speaker |\n|---|---|\n| Substance Abuse Awareness | Dr. A. Olatunji |\n| **Workshop & Industrial Safety** | **Prof. A. A. Adeleke** |\n| 21st-Century Employability Skills | Prof. A. B. Ekanola |\n\nNote the shared initial \"A.\" across all three names \u2014 match the **surname**, not\nthe initial.\n\n### Source\nHandwritten Day 2 ledger; deck title slide."
+    },
+    {
+      "id": "swep_day2_26",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the orientation presentation, employability is defined as the capability to:",
+      "options": [
+        "Memorize and recall facts for examinations",
+        "Obtain, retain, perform, and progress in employment",
+        "Manage large teams immediately after graduation",
+        "Write advanced code without errors"
+      ],
+      "correct": 1,
+      "short": "Employability is about obtaining, retaining, performing and progressing in employment.",
+      "solution": "### Why this is the answer\nEmployability is **\"having the capabilities required to obtain, retain, perform\nand progress in employment.\"** Four verbs, and all four matter \u2014 getting the job\nis only the first of them.\n\n### The sharpest line in the lecture\n> A person may be **employed today but have limited employability** if their\n> skills are becoming obsolete.\n\nEmployment is your status right now; employability is your capacity to keep\nearning as the world changes. They are not the same thing.\n\n### What it involves in practice\nEntering the labour market, performing effectively, adapting to organisational\nand technological change, learning new skills, moving between occupations,\ncreating employment opportunities, pursuing entrepreneurship, and continuing to\ndevelop throughout a career.\n\n### Source\nProf. A. B. Ekanola, \"Employability\" slide."
+    },
+    {
+      "id": "swep_day2_27",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is NOT an agent of global transformation mentioned in the materials?",
+      "options": [
+        "Artificial intelligence",
+        "Digital platforms",
+        "Analog transcription",
+        "Remote work"
+      ],
+      "correct": 2,
+      "short": "Analog transcription was not mentioned as an agent of global transformation.",
+      "solution": "### Why this is the answer\nA **NOT** question. The five agents of global transformation listed are:\n\n1. Artificial intelligence\n2. Automation\n3. Digital platforms\n4. Globalisation\n5. Remote work\n\n**Analog transcription** does not appear \u2014 and it is conceptually the opposite\nof the list, which is entirely about **digital** transformation.\n\n### The point of the slide\nTechnology is transforming **virtually every sector of the economy**. That is\nthe premise the whole lecture builds on: if the economy is changing this fast,\na fixed set of skills cannot carry a whole career.\n\n### Source\nProf. A. B. Ekanola, \"The global reality today\" slide."
+    },
+    {
+      "id": "swep_day2_28",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How many clusters of 21st-century employability skills were identified?",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 2,
+      "short": "There are 8 clusters of 21st-century employability skills.",
+      "solution": "### Why this is the answer\nThe lecture identifies **8 clusters**:\n\n1. Communication and interpersonal skills\n2. Critical thinking and problem-solving skills\n3. Digital and technological skills\n4. Creativity and innovation skills\n5. Collaboration and teamwork\n6. Personal effectiveness and emotional intelligence\n7. Career management, entrepreneurship and leadership\n8. Adaptability, lifelong learning and professional development\n\n### Don't confuse it with the other list\nThe same lecture also gives **five** things to develop alongside your degree:\na strong communication ability, a digital capability, evidence of practical\nexperience, a professional network, and a learning habit.\n\n**8 clusters of skills; 5 things to build.** Two different numbers, two\ndifferent slides.\n\n### Source\nProf. A. B. Ekanola, \"What are the 21st-century employability skills: 8\nclusters\" slide."
+    },
+    {
+      "id": "swep_day2_29",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is considered perhaps the most fundamental employability skill?",
+      "options": [
+        "Digital programming",
+        "Communication skills",
+        "Financial accounting",
+        "Data science"
+      ],
+      "correct": 1,
+      "short": "Communication skills are considered the most fundamental employability skill.",
+      "solution": "### Why this is the answer\nThe slide says it plainly: *\"Perhaps the most fundamental employability skill is\n**communication**.\"* It is also cluster **number 1** of the eight.\n\n### What communication covers here\nOral and written communication; presentation skills and listening; negotiation\nand interpersonal communication; professional correspondence and digital\ncommunication; and the ability to **communicate ideas to different audiences**.\n\nThe expanded list adds: listening, non-verbal communication, clarity and\nconcision, friendliness, confidence, empathy, open-mindedness, respect,\nfeedback, and picking the right medium.\n\n### The warning attached\n> A highly intelligent person who cannot communicate effectively **may struggle\n> in the workplace**.\n\nNote the parallel with teamwork: *\"A brilliant individual who cannot work with\nothers can become an organisational liability.\"* Technical brilliance alone is\nnot enough \u2014 that is the lecture's recurring theme.\n\n### How it is acquired\n**Through practice**: speak and write, present and debate, teach, join\nprofessional organisations, write reports, ask for feedback, and record yourself\nspeaking to review your performance.\n\n### Source\nProf. A. B. Ekanola, \"Communication skills\" slides."
+    },
+    {
+      "id": "swep_day2_30",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the first step in the critical thinking process model provided?",
+      "options": [
+        "Present your solution",
+        "Research",
+        "Identify the problem/issue",
+        "Ask questions"
+      ],
+      "correct": 2,
+      "short": "The first step is to identify the problem/issue.",
+      "solution": "### Why this is the answer\nThe critical-thinking process runs in a fixed order:\n\n1. **Identify the problem/issue**\n2. Research\n3. Determine data relevance\n4. Ask questions\n5. Identify the best solution\n6. Present your solution\n7. Analyse your decision\n\nEvery distractor is a genuine step \u2014 just not the first one. The question tests\nthe **sequence**, not the content.\n\n### Why identification must come first\nResearching before you know what the problem actually is wastes the effort. The\nproblem-solving slide makes the same point: the first capability is\n**\"identifying the real problem\"** \u2014 the *real* one, not the presenting symptom.\n\n### What critical thinking is for\nAnalysing information objectively, evaluating evidence, identifying assumptions,\nand reaching reasoned conclusions. It is developed by reading widely, comparing\nperspectives, debating, tackling problems with no obvious answer \u2014 and\n**learning to change your mind when better evidence appears**.\n\n### Source\nProf. A. B. Ekanola, \"Critical Thinking\" slides."
+    },
+    {
+      "id": "swep_day2_31",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the recommended approach to Artificial Intelligence for a future worker?",
+      "options": [
+        "Compete directly with AI algorithms",
+        "Become a professional who can work intelligently with AI",
+        "Refuse to use AI to preserve authentic work",
+        "Delegate all routine tasks blindly to AI"
+      ],
+      "correct": 1,
+      "short": "The goal is to become an AI-enabled professional.",
+      "solution": "### Why this is the answer\nThe slide is explicit: *\"The goal should **not** be to compete with AI. It\nshould be to become a professional who can work **intelligently with** AI.\"*\n\n> The future may belong more to **\"AI-enabled professionals\"** rather than\n> simply \"AI specialists\".\n\n### What AI literacy requires\nUnderstanding what AI **can and cannot** do; its limitations; how to formulate\neffective instructions; how to **evaluate AI-generated outputs**; and issues of\nbias, privacy, intellectual property and ethical use.\n\n### Why the other two extremes both fail\n- **Refusing to use AI** leaves you behind in an economy being transformed by it.\n- **Delegating blindly** ignores the closing instruction: *\"The ability to use AI\n  effectively must be combined with **human judgement**.\"*\n\nThe recommended position sits between refusal and blind trust \u2014 capable use with\njudgement retained.\n\n### Source\nProf. A. B. Ekanola, \"Artificial Intelligence Literacy\" and \"Note\" slides."
+    },
+    {
+      "id": "swep_day2_32",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "How does innovation differ from creativity?",
+      "options": [
+        "Creativity involves risk, while innovation does not",
+        "Innovation converts creative ideas into useful outcomes",
+        "Creativity requires funding, while innovation is free",
+        "There is no difference; they are synonymous"
+      ],
+      "correct": 1,
+      "short": "Innovation converts ideas into useful outcomes.",
+      "solution": "### Why this is the answer\n- **Creativity** involves *seeing possibilities that others may not see*.\n- **Innovation** takes creativity *a step further by **converting ideas into\n  useful outcomes***.\n\nCreativity generates the idea; innovation delivers the result. An idea that\nnever becomes anything is creativity without innovation.\n\n### How the lecture says to build both\nAsk unconventional questions and attend to details; learn to analyse; stay\nopen-minded; solve problems; **don't be afraid of failure**; assess and negate\nrisks; seek to do more or better with less.\n\nTo develop creativity: expose yourself to different disciplines, read outside\nyour field, travel, talk to people with different perspectives, experiment.\n\n> Innovation often begins with the question: **\"Is there a better way of doing\n> this?\"**\n\n### Source\nProf. A. B. Ekanola, \"Creativity and Innovation\" slides."
+    },
+    {
+      "id": "swep_day2_33",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is a component of Emotional Intelligence?",
+      "options": [
+        "Self-regulation",
+        "Software development",
+        "Statistical analysis",
+        "Project management"
+      ],
+      "correct": 0,
+      "short": "Self-regulation is a component of Emotional Intelligence.",
+      "solution": "### Why this is the answer\nEmotional Intelligence involves understanding one's own emotions and recognising\nand appropriately responding to the emotions of others. Its components are:\n\n- Self-awareness\n- **Self-regulation**\n- Empathy\n- Social awareness\n- Relationship management\n\n(The expanded slide adds **internal motivation**.)\n\n### Why the distractors cannot qualify\nSoftware development, statistical analysis and project management are all\n**technical or functional** skills. EI belongs to cluster 6 \u2014 *personal\neffectiveness and emotional intelligence* \u2014 which is about managing yourself and\nyour relationships, not performing a technical task.\n\n### Why it still matters in an automated world\n> Technology may automate many processes, but **human relationships remain\n> fundamental**.\n\nDeveloped by: practising active listening, receiving criticism without becoming\ndefensive, reflecting on your behaviour, developing empathy, managing anger\nprofessionally, and seeking honest feedback.\n\n### Source\nProf. A. B. Ekanola, \"Emotional Intelligence\" slides."
+    },
+    {
+      "id": "swep_day2_34",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "The ability to recover from setbacks and continue moving forward is defined as:",
+      "options": [
+        "Innovation",
+        "Adaptability",
+        "Resilience",
+        "Networking"
+      ],
+      "correct": 2,
+      "short": "This defines Resilience.",
+      "solution": "### Why this is the answer\n**Resilience** is *\"the ability to recover from setbacks and continue moving\nforward.\"*\n\nIt is needed because *\"a career will contain **rejection, failure, redundancy,\norganisational change and uncertainty**\"* \u2014 so employability requires\n**psychological and professional resilience**, not only technical skill.\n\n### Resilience vs adaptability \u2014 the distinction being tested\nThey appear on neighbouring slides and are easily confused:\n\n| Term | Definition |\n|---|---|\n| **Adaptability** | Functioning effectively **in the face of change** |\n| **Resilience** | **Recovering** from setbacks and carrying on |\n\nAdaptability is about **adjusting**; resilience is about **bouncing back**. One\nhandles change, the other handles failure.\n\n### The premise underneath both\n> If there is one certainty about the future of work, it is **change**.\n\n### Source\nProf. A. B. Ekanola, \"Adaptability and Resilience\" slides."
+    },
+    {
+      "id": "swep_day2_35",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is one of the best ways to acquire employability skills by converting knowledge into competence?",
+      "options": [
+        "Experiential learning",
+        "Memorization",
+        "Listening to lectures",
+        "Avoiding extracurricular activities"
+      ],
+      "correct": 0,
+      "short": "Experiential learning converts knowledge into competence.",
+      "solution": "### Why this is the answer\nThe slide closes with the line this question is built on:\n**\"Experience converts knowledge into competence.\"**\n\n**Experiential learning** includes internships and industrial attachments,\napprenticeships, volunteering, community and research projects, part-time work,\nstudent leadership, and entrepreneurial activities.\n\n### Why this lands in a SWEP lecture\nSWEP 200 **is** experiential learning \u2014 a workshop attachment, not a classroom.\nThe lecture is explaining why the programme you are sitting in exists.\n\n### The direct criticism of passive study\n> Students should **not simply listen to lectures and reproduce information in\n> examinations**. The classroom must increasingly become a place where students\n> **do, not merely listen**.\n\nThat is why \"memorization\" and \"listening to lectures\" are wrong here \u2014 the\nlecture explicitly argues against both as sufficient.\n\n### Source\nProf. A. B. Ekanola, \"Experiential Learning\" and \"Formal Education\" slides."
+    },
+    {
+      "id": "swep_day2_36",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the primary difference between a 'skill' and a 'capability'?",
+      "options": [
+        "A skill requires a degree; a capability does not",
+        "A capability is the ability to apply knowledge and skills in changing circumstances",
+        "A capability is a physical trait, while a skill is mental",
+        "Skills are permanent, while capabilities are temporary"
+      ],
+      "correct": 1,
+      "short": "A capability is the ability to adapt skills to changing circumstances.",
+      "solution": "### Why this is the answer\n- A **skill** is the ability to **perform a particular task**.\n- A **capability** is the ability to **apply knowledge and skills effectively in\n  changing circumstances**.\n\n### The lecture's own example\n> Knowing how to use a **particular software package** is a **skill**.\n> Being able to **learn new software when the technology changes** is a\n> **capability**.\n\n### Why the distinction carries the whole argument\nSkills go obsolete; capabilities do not. It is exactly why *\"a person may be\nemployed today but have limited employability if their skills are becoming\nobsolete\"* \u2014 they have the skill but not the capability.\n\nThis is also why the closing slide says the future is not about producing people\nwho **know everything**, but people who can **learn anything they need to know**.\n\nNote the last distractor inverts the truth: skills are the *perishable* ones.\n\n### Source\nProf. A. B. Ekanola, \"From Skills to Capabilities\" slide."
+    },
+    {
+      "id": "swep_day2_37",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the presentation, why is a portfolio superior to a standard CV?",
+      "options": [
+        "It is cheaper to produce",
+        "It demonstrates what you can do, rather than just claiming it",
+        "It forces employers to read more text",
+        "It is required by law"
+      ],
+      "correct": 1,
+      "short": "A portfolio demonstrates evidence of your claims.",
+      "solution": "### Why this is the answer\nThe slide states the contrast directly:\n> **A CV tells an employer what you claim you can do. A portfolio can\n> demonstrate it.**\n\nA CV is an assertion; a portfolio is **evidence**.\n\n### What a graduate's portfolio should contain\nResearch projects; presentations; software projects; designs; business ideas;\ncommunity projects; certificates; professional achievements; and **evidence of\nimpact**.\n\n### The connected idea\n> Employability is not only about **what you know** but also about **who knows\n> what you can do**.\n\nA portfolio is how you make your capability visible to people who have never met\nyou \u2014 which is also why networking sits in the same cluster.\n\n### Source\nProf. A. B. Ekanola, \"Building a Portfolio\" and \"Networking\" slides."
+    },
+    {
+      "id": "swep_day2_38",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who presented the session on 21st-Century Employability Skills?",
+      "options": [
+        "Prof. A. A. Adeleke",
+        "Dr. A. Olatunji",
+        "Prof. A. B. Ekanola",
+        "The Vice Chancellor"
+      ],
+      "correct": 2,
+      "short": "Prof. A. B. Ekanola presented the session.",
+      "solution": "### Why this is the answer\nThe Day 2 ledger records **21st-Century Employability Skills (Prof. A. B.\nEkanola)**, noting that he explored global technological transformations (like\nAI) and **the gap between unemployment and unemployability**, emphasising core\ntraits needed to secure and advance in employment \u2014 adaptability, communication,\nethical awareness and lifelong learning.\n\nThe title slide confirms: *\"21st-Century Employability Skills: What They Are and\nHow Best to Acquire Them \u2014 15 Sept 2026, Prof. A. B. Ekanola\"*, delivered under\n**ACCESS** (African Center for Career Enhancement and Skills Support).\n\n### Watch the initials\nProf. A. **A.** Adeleke and Prof. A. **B.** Ekanola differ by a single middle\ninitial. Match surnames to subjects: **Adeleke \u2192 Safety**, **Ekanola \u2192\nEmployability**.\n\n### Source\nHandwritten Day 2 ledger; deck title slide."
+    },
+    {
+      "id": "swep_day2_39",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Instead of the traditional 'Degree \u2192 employment \u2192 retirement' path, what model is suggested for modern careers?",
+      "options": [
+        "Degree \u2192 permanent employment",
+        "Degree \u2192 work \u2192 transition \u2192 reskill \u2192 work \u2192 upskill",
+        "Retirement \u2192 degree \u2192 work",
+        "Work \u2192 retirement \u2192 degree"
+      ],
+      "correct": 1,
+      "short": "The modern career path requires continuous reskilling and upskilling.",
+      "solution": "### Why this is the answer\nThe lecture contrasts the old and new models directly:\n\n**Instead of:** Degree \u2192 employment \u2192 retirement\n**We move towards:** Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 career\ntransition \u2192 **lifelong learning**\n\nThe defining feature is that learning **recurs** \u2014 it is no longer a single\nblock at the start of life.\n\n### What makes it possible\n**Micro-credentials, professional certificates and short courses.** Traditional\ndegrees remain important, but should be **complemented** by shorter forms of\nlearning that build specific competencies quickly.\n\n### Reskill vs upskill\n- **Reskill** \u2014 learn something new to move into a *different* role\n- **Upskill** \u2014 deepen what you already do\n\n### Source\nProf. A. B. Ekanola, \"Micro-credentials and Short Courses\" slide."
+    },
+    {
+      "id": "swep_day2_40",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the ultimate message regarding the future of employability?",
+      "options": [
+        "You must know everything before graduating",
+        "Degrees alone guarantee a stable career",
+        "You must be a lifelong learner who can learn anything needed",
+        "Soft skills are no longer necessary due to AI"
+      ],
+      "correct": 2,
+      "short": "The future of employability relies on being a lifelong learner.",
+      "solution": "### Why this is the answer\nThe closing slide states that the future of employability is:\n- **not** about producing people who know everything \u2014 *\"That is impossible\"*\n- **about** producing people who **can learn anything they need to know**\n- about becoming digitally capable, intellectually curious, emotionally\n  intelligent, ethically responsible, entrepreneurial, collaborative, creative\n  and adaptable\n- **above all: be a lifelong learner**\n\n### Why each distractor is explicitly contradicted\n| Claim | The lecture's position |\n|---|---|\n| Know everything before graduating | Called **impossible** outright |\n| Degrees guarantee a career | *\"Your degree is the **beginning** of your professional learning\"* |\n| AI removes the need for soft skills | *\"Human relationships remain fundamental\"*; the goal is to work **with** AI |\n\n### The challenge to students\n> At all times, consciously and purposively develop soft, digital and technical\n> skills. **There should be at least one you are working on at any point in\n> time.**\n\n### Source\nProf. A. B. Ekanola, \"The Future of Employability is\" and \"Special Message\"\nslides."
+    },
+    {
+      "id": "swep_day2_41",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the substance abuse lecture, which substances are listed among the most frequently abused in southwestern Nigerian universities?",
+      "options": [
+        "Alcohol, tobacco, codeine-containing cough syrups, tramadol and cannabis",
+        "Heroin, cocaine, methamphetamine and LSD",
+        "Caffeine, energy drinks, nicotine patches and painkillers",
+        "Alcohol, steroids, inhalants and barbiturates"
+      ],
+      "correct": 0,
+      "short": "Alcohol, tobacco, codeine cough syrups, tramadol and cannabis are the most frequently abused.",
+      "solution": "### Why this is the answer\nThe lecture names five substances as the most frequently abused in the\nsouthwestern Nigerian university context: **alcohol, tobacco,\ncodeine-containing cough syrups, tramadol, and cannabis**.\n\n### What the list tells you\nThree of the five \u2014 **alcohol, codeine syrup and tramadol** \u2014 are **legally\navailable** products, not street narcotics. That is the uncomfortable point: the\nsubstances driving the **45%-84.5%** lifetime prevalence figure are largely ones\nstudents can obtain over a counter, which is exactly why *\"Restricting Access to\nSubstances\"* appears as a **preventive strategy**.\n\n### A supporting clue elsewhere in the deck\nCannabis is singled out again under psychological symptoms as a substance that\ncan produce **hallucinations or delusions**.\n\n### Source\nDr. A. Olatunji, \"Introduction\" slide.\n\n### Why the others fail\nThe alternatives list plausible drugs of abuse, but the hard drugs in options B\nand D and the stimulants in option C are not the ones this lecture names."
+    },
+    {
+      "id": "swep_day2_42",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Under the risks and consequences of substance abuse, which of the following categories was NOT listed?",
+      "options": [
+        "Health Risks",
+        "Academic Consequences",
+        "Environmental Degradation Consequences",
+        "Legal and Financial Consequences"
+      ],
+      "correct": 2,
+      "short": "Environmental degradation is not one of the listed consequence categories.",
+      "solution": "### Why this is the answer\nA **NOT** question. The deck lists exactly **five** categories of risk and\nconsequence:\n\n1. Health Risks\n2. Academic Consequences\n3. Social and Behavioural Consequences\n4. Legal and Financial Consequences\n5. Long-Term Societal Impact\n\n**Environmental degradation** does not appear.\n\n### Note the widening scope\nThe five run outward from the individual to society: **health** (the body) \u2192\n**academic** (studies) \u2192 **social/behavioural** (relationships) \u2192 **legal and\nfinancial** (money and the law) \u2192 **long-term societal impact** (the country).\nSubstance abuse is framed as never staying a private matter.\n\n### The near-miss worth spotting\n**Long-Term Societal Impact** is a real category and sounds broad enough that\nstudents sometimes stretch it to cover \"environmental\". It does not \u2014 the deck\nlists it separately and never mentions environmental harm.\n\n### Source\nDr. A. Olatunji, \"Risks and Consequences of Substance Abuse\" slide."
+    },
+    {
+      "id": "swep_day2_43",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the safety lecture, what is an engineering workshop?",
+      "options": [
+        "An office where engineering designs are approved and filed",
+        "A facility equipped with tools, machinery and workspaces for practical training, design and fabrication",
+        "A lecture theatre used for teaching engineering theory",
+        "A storage warehouse for unused industrial equipment"
+      ],
+      "correct": 1,
+      "short": "It is a facility equipped with tools, machinery and workspaces for practical training, design and fabrication.",
+      "solution": "### Why this is the answer\nAn engineering workshop is defined as *\"a facility equipped with **tools,\nmachinery, and workspaces** for **practical training, design, and\nfabrication** in engineering disciplines.\"*\n\nThese workshops provide **hands-on experience** with processes including\nmachining, welding and carpentry \u2014 crucial for developing practical skills and\nunderstanding engineering principles.\n\n### The common types\nMachine shops, fitting shops, **foundries**, **smithies**, welding shops and\ncarpentry workshops \u2014 each with specialised tools for particular tasks. They\nexist for hands-on training, project manufacturing, equipment maintenance and\nindustrial training.\n\n### Why this definition opens a safety lecture\nEverything that makes a workshop useful \u2014 powered machinery, heat, sharp tools,\nfabrication processes \u2014 is also what makes it **hazardous**. The definition\nexplains why PPE, hazard controls and signage occupy the remaining 60 slides.\n\n### Source\nProf. A. A. Adeleke, \"What is an Engineering Workshop?\" and \"Types of\nEngineering Workshops\" slides."
+    },
+    {
+      "id": "swep_day2_44",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which pairing of hazard type and example is correct according to the safety lecture?",
+      "options": [
+        "Ergonomic hazards \u2014 exposure to bacteria and viruses",
+        "Chemical hazards \u2014 noise, vibration and extreme temperatures",
+        "Physical hazards \u2014 repetitive tasks and awkward postures",
+        "Biological hazards \u2014 exposure to bacteria, viruses and fungi"
+      ],
+      "correct": 3,
+      "short": "Biological hazards are exposure to bacteria, viruses, fungi and other biological agents.",
+      "solution": "### Why this is the answer\nThe lecture defines four hazard families, and the three wrong options each swap\na definition into the wrong family.\n\n| Hazard type | What it covers |\n|---|---|\n| **Chemical** | Toxic substances, flammable materials, corrosive agents |\n| **Physical** | Noise, vibration, radiation, extreme temperatures, poor lighting |\n| **Ergonomic** | Repetitive tasks, awkward postures, poor workstation design |\n| **Biological** | **Bacteria, viruses, fungi and other biological agents** |\n\nOnly the biological pairing is stated correctly.\n\n### The distinction students most often miss\n**Physical hazards** are *energy* \u2014 noise, vibration, radiation, heat.\n**Ergonomic hazards** are *how the body is used* \u2014 posture, repetition,\nworkstation layout, leading to musculoskeletal disorders. Both harm the body,\nbut through entirely different mechanisms.\n\n### Alongside these\nThe deck also lists general industrial hazards: **slips, trips and falls,\nunguarded machinery, electrical hazards and confined spaces**.\n\n### Source\nProf. A. A. Adeleke, \"Common Industrial Hazards\" slides."
+    },
+    {
+      "id": "swep_day2_45",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What five things does the employability lecture urge students to develop alongside their academic qualification?",
+      "options": [
+        "Five foreign languages, a car, a house, savings and a business",
+        "A strong communication ability, a digital capability, evidence of practical experience, a professional network and a learning habit",
+        "Five certificates, five referees, five internships, five projects and five mentors",
+        "A first-class degree, a postgraduate offer, a scholarship, a publication and an award"
+      ],
+      "correct": 1,
+      "short": "Communication ability, digital capability, practical experience, a professional network and a learning habit.",
+      "solution": "### Why this is the answer\nUnder **\"A Special Message to Students and Graduates\"**, the lecture opens with\n*\"Your degree is the **beginning** of your professional learning\"* and then lists\nfive things to develop **while still in university**:\n\n1. A strong **communication** ability\n2. A **digital** capability\n3. Evidence of **practical experience**\n4. A professional **network**\n5. A **learning habit**\n\n### Why these five\nEach maps onto a theme running through the whole lecture:\n\n| Item | Where it comes from |\n|---|---|\n| Communication | *\"Perhaps the most fundamental employability skill\"* |\n| Digital capability | *\"A basic requirement for participation in modern economic life\"* |\n| Practical experience | *\"Experience converts knowledge into competence\"* |\n| Network | *\"Not only what you know but who knows what you can do\"* |\n| Learning habit | *\"Above all: be a lifelong learner\"* |\n\n### Do not confuse it with the 8 clusters\n**8** clusters of employability skills; **5** things to build alongside the\ndegree. Two different lists on two different slides.\n\n### Source\nProf. A. B. Ekanola, \"A Special Message to Students and Graduates\" slide."
     }
   ],
   "eee282": [

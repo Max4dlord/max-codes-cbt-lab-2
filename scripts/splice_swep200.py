@@ -25,6 +25,7 @@ ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 
 from swep200_day1 import QUESTIONS as DAY1  # noqa: E402
+from swep200_day2 import QUESTIONS as DAY2  # noqa: E402
 
 DATA = ROOT / 'src' / 'data.js'
 
@@ -143,9 +144,113 @@ and Publicity, SERVICOM**.
 - E-SIWES portal is **www.siwesdata.org**; e-payment came from **Yar'Adua's 2009 budget**.
 """,
     },
+    {
+        "id": "swep-day-2",
+        "name": "Day 2 \u2014 Tuesday, 15th September",
+        "categoryId": "swep-days",
+        "summaryNotes": """### What Day 2 covered
+| # | Lecture | Speaker |
+|---|---|---|
+| 1 | Substance Abuse Awareness | **Dr. A. Olatunji** |
+| 2 | Workshop & Industrial Safety | **Prof. A. A. Adeleke** |
+| 3 | 21st-Century Employability Skills | **Prof. A. B. Ekanola** |
+
+### Substance abuse \u2014 the numbers
+| Measure | Figure |
+|---|---|
+| Global average use | **5.3%** |
+| Nigeria, aged 15\u201364 | **14.3%** (\u2248 14.4 million people) |
+| Lifetime prevalence, SW Nigerian universities | **45% \u2013 84.5%** |
+
+Most abused: **alcohol, tobacco, codeine cough syrups, tramadol, cannabis**.
+
+**Five categories of warning sign** \u2014 know which is which:
+- **Physical** \u2014 bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene
+- **Behavioural** \u2014 new friend groups, secrecy, stealing, **impulsivity/risk-taking**
+- **Academic** \u2014 absenteeism, falling grades, discipline, **unsubmitted assignments**
+- **Psychological/Emotional** \u2014 mood swings, anxiety, depression, **hallucinations**
+- **Social/Lifestyle** \u2014 money trouble, fights/cultism, sleep changes, drug joints
+
+**Prevention** (before) vs **Intervention** (after):
+- Prevention: campus drug education, life skills, peer support, restricting access, parents/community
+- Intervention: early screening, counselling, medical treatment/rehab, policy & discipline, media campaigns
+- **Multi-sectoral collaboration**: **NDLEA**, Federal Ministry of Health, NGOs, campus health services
+
+### Safety \u2014 the numbers
+- **5,486** US fatal occupational injuries in 2022 (**+5.7%** on 2021)
+- **WHO**: **20\u201350%** of workers face workplace hazards
+- **ILO**: economic cost **1.8%\u20136% of GDP**
+
+**High-risk industries**: construction, healthcare, manufacturing, transportation,
+agriculture, iron & steel, chemical/petrochemical, heavy equipment operation.
+
+**PPE standards**
+| Standard | Covers | Region |
+|---|---|---|
+| **ANSI Z87.1** | Safety glasses | **US** |
+| EN 166 | Safety glasses | Europe |
+| EN ISO 20471 | High-visibility clothing | Europe |
+| EN ISO 11611 | Welding protection | Europe |
+
+**Hierarchy of control** (most \u2192 least effective):
+**Elimination** \u2192 Substitution \u2192 Engineering \u2192 Administrative \u2192 **PPE (last line)**
+
+**Safety signs \u2014 shape + colour**
+| Type | Shape | Colour |
+|---|---|---|
+| Prohibition | Circular | Red border + diagonal |
+| Warning | **Triangular** | Yellow/amber |
+| Mandatory | Circular | **Blue** |
+| Emergency/First-aid | Rectangular | **Green** |
+
+**Fire extinguishers** \u2014 all red bodies, coded markings:
+Water **green triangle** (A) \u00b7 CO2 **black square** (B, C) \u00b7
+Foam **cream label** (A, B) \u00b7 Dry powder **blue circle** (A, B, C).
+Never use water on an electrical fire.
+
+**Bodies**: US \u2014 **OSHA** (enforces), **NIOSH** (research).
+Nigeria \u2014 **NISCN**, **ISPON**, OSHAssociation, MAN, NACCIMA.
+
+### Employability
+**Definition**: the capabilities to **obtain, retain, perform and progress** in
+employment. You can be employed yet barely employable if your skills are going obsolete.
+
+**Agents of transformation**: AI, automation, digital platforms, globalisation, remote work.
+
+**8 clusters**: communication \u00b7 critical thinking & problem-solving \u00b7 digital &
+technological \u00b7 creativity & innovation \u00b7 collaboration & teamwork \u00b7 personal
+effectiveness & emotional intelligence \u00b7 career management, entrepreneurship &
+leadership \u00b7 adaptability, lifelong learning & professional development.
+
+**Critical thinking order**: identify the problem \u2192 research \u2192 determine data
+relevance \u2192 ask questions \u2192 identify best solution \u2192 present \u2192 analyse the decision.
+
+**Key distinctions**
+- **Creativity** sees possibilities; **innovation** converts them into useful outcomes.
+- **Adaptability** = functioning through change; **resilience** = recovering from setbacks.
+- A **skill** performs a task; a **capability** applies knowledge in *changing* circumstances.
+- A **CV claims**; a **portfolio demonstrates**.
+- Goal with AI: an **AI-enabled professional**, not competing with AI, not blind delegation.
+
+**Career model**: Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 transition \u2192
+lifelong learning (via micro-credentials and short courses).
+
+**Five things to build alongside the degree**: communication ability \u00b7 digital
+capability \u00b7 evidence of practical experience \u00b7 a professional network \u00b7 a learning habit.
+
+### Traps to watch
+- **5.3%** global vs **14.3%** Nigeria vs **45\u201384.5%** university lifetime prevalence.
+- Every warning-sign distractor is a **real** sign under a **different** category.
+- **Prevention** precedes the problem; **intervention** follows it.
+- **EN** = European, so **ANSI Z87.1** is the US one.
+- **PPE is the weakest** control, not the strongest.
+- Prohibition and mandatory signs are **both circular** \u2014 red vs blue decides.
+- **8** skill clusters, but **5** things to build. Different lists.
+""",
+    },
 ]
 
-QUESTION_SETS = [DAY1]
+QUESTION_SETS = [DAY1, DAY2]
 
 BEGIN = '// ==== SWEP 200 BEGIN (generated by scripts/splice_swep200.py) ===='
 END = '// ==== SWEP 200 END ===='
