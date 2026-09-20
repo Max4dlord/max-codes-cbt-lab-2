@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url'
 import path from 'node:path'
 
 const PORT = process.env.API_PORT || 3001
-const routes = ['unlock', 'verify', 'admin-code', 'issue', 'go', 'status']
+const routes = ['unlock', 'verify', 'admin-code', 'issue', 'go', 'status', 'dm-link', 'whatsapp']
 const mods = {}
 for (const r of routes) {
   mods[r] = (await import(pathToFileURL(path.resolve('api', `${r}.js`)).href)).default

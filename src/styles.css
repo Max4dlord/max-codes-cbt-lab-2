@@ -808,3 +808,44 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   text-align: center; font-size: .82rem; margin-top: 10px;
   color: var(--muted, #6b7280);
 }
+
+/* ---------- Gate: WhatsApp-bot primary flow ---------- */
+.gate-primary {
+  border: 1px solid var(--border, #DCE2F2); border-radius: 14px;
+  padding: 16px; margin: 16px 0 12px;
+  background: rgba(37, 211, 102, .05);
+}
+.gate-primary-head { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+.gate-wa-cta { width: 100%; text-align: center; }
+
+.gate-fallback { margin: 4px 0 8px; }
+.gate-fallback summary {
+  cursor: pointer; font-size: .85rem; color: var(--muted, #6b7280);
+  padding: 6px 0; user-select: none;
+}
+.gate-fallback summary:hover { color: var(--text, #0E1436); }
+.gate-fallback .gate-code { display: flex; gap: 8px; align-items: stretch; margin-top: 8px; }
+.gate-fallback .gate-input { flex: 1; }
+
+.gate-asks {
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px dashed var(--border, #DCE2F2);
+}
+.gate-asks-head {
+  font-size: .9rem; font-weight: 700; margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.gate-ask {
+  display: flex; gap: 12px; align-items: center; justify-content: space-between;
+  padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.gate-ask:last-child { border-bottom: none; }
+.gate-ask-title { font-size: .88rem; font-weight: 600; }
+.gate-ask-note { font-size: .78rem; color: var(--muted, #6b7280); margin-top: 2px; }
+.gate-ask .btn { flex-shrink: 0; }
+.gate-ask .btn.is-done { color: var(--green, #16a34a); border-color: var(--green, #16a34a); }
+
+.gate-tiny {
+  text-align: center; font-size: .68rem; color: var(--muted, #9ca3af);
+  opacity: .6; margin-top: 10px; letter-spacing: .04em;
+}

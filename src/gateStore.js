@@ -117,6 +117,10 @@ export function clearSteps() {
  * is the only thing /api/issue will accept as proof, which is precisely why
  * ticking a box without clicking cannot work.
  */
+export function dmLinkUrl() {
+  return `/api/dm-link?d=${encodeURIComponent(deviceId())}`
+}
+
 export function stepUrl(stepId) {
   return `/api/go?step=${encodeURIComponent(stepId)}&d=${encodeURIComponent(deviceId())}`
 }

@@ -1,62 +1,46 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { gateConfig } from '../gateConfig.js'
-import { stepUrl, fetchStepStatus, requestAccess, redeemCode } from '../gateStore.js'
+import {
+  dmLinkUrl, stepUrl, fetchStepStatus, redeemCode, deviceLabel,
+} from '../gateStore.js'
 
 /**
- * Access gate.
+ * Access gate — WhatsApp-bot flow.
  *
- * The important design change: there are NO self-certifying checkboxes. A step
- * is marked complete only because the SERVER recorded the visitor passing
- * through /api/go on the way to the destination. The UI simply reflects that
- * server state, so clicking around in DevTools changes nothing that matters.
+ * The student taps one button, WhatsApp opens with the message already typed,
+ * they press send, and a bot replies within seconds with a tap-to-enter link.
+ * Nobody waits on the admin, and there is no code hunting in a pinned post.
  *
- * Other rules this component follows:
- *  - Nothing admin-facing: no phone number, no device id, no admin link.
- *  - Progress survives redirects and reloads, because the evidence is a
- *    server-side cookie rather than React state.
- *  - Steps read as friendly requests; optional ones never block access.
+ * The two community asks (partner channel, LinkedIn) sit below as genuine,
+ * clearly-optional requests — because channel membership is not verifiable by
+ * anybody, and pretending otherwise would just be theatre.
  */
 export default function Gate({ onUnlock }) {
-  const steps = gateConfig.steps || []
-  const required = steps.filter((s) => !s.optional)
+  const asks = gateConfig.steps || []
 
-  const [status, setStatus] = useState(null)   // server truth
-  const [loading, setLoading] = useState(true)
+  const [code, setCode] = useState('')
+  const [status, setStatus] = useState(null)
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
+  const [messaged, setMessaged] = useState(false)
   const pollRef = useRef(null)
 
   const refresh = useCallback(async () => {
     const s = await fetchStepStatus()
     if (s) setStatus(s)
-    setLoading(false)
-    return s
   }, [])
 
-  // Initial read, plus a re-read whenever they come back to the tab — that is
-  // the moment they return from WhatsApp or LinkedIn.
   useEffect(() => {
     refresh()
     const onFocus = () => refresh()
-    const onVis = () => { if (!document.hidden) refresh() }
     window.addEventListener('focus', onFocus)
-    document.addEventListener('visibilitychange', onVis)
-    return () => {
-      window.removeEventListener('focus', onFocus)
-      document.removeEventListener('visibilitychange', onVis)
-    }
+    return () => window.removeEventListener('focus', onFocus)
   }, [refresh])
 
-  // While any step is visited-but-still-counting-down, poll so the button
-  // arms by itself without the visitor having to do anything.
-  useEffect(() => {
-    const waiting = status && Object.values(status).some((s) => s.visited && !s.ready)
-    clearInterval(pollRef.current)
-    if (waiting) pollRef.current = setInterval(refresh, 1500)
-    return () => clearInterval(pollRef.current)
-  }, [status, refresh])
+  useEffect(() => () => clearInterval(pollRef.current), [])
 
-  // Magic-link fallback: .../#/?c=CODE redeems automatically.
+  // Magic link: the bot's reply contains .../#/?c=CODE, so tapping it lands
+  // here and redeems with no typing at all.
   useEffect(() => {
     const qs = window.location.hash.split('?')[1]
     if (!qs) return
@@ -71,19 +55,16 @@ export default function Gate({ onUnlock }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const st = (step) => (status && status[step.id]) || { visited: false, ready: false, waitMs: 0 }
-  const allRequiredReady = required.every((s) => st(s).ready)
-  const doneCount = steps.filter((s) => st(s).ready).length
-
-  async function unlock() {
+  async function submitCode() {
     setError('')
+    if (!code.trim()) { setError('Paste the code the bot sent you.'); return }
     setBusy(true)
-    const r = await requestAccess()
-    if (r.ok) { onUnlock(r.exp); return }
-    setError(r.error)
-    setBusy(false)
-    refresh()
+    const r = await redeemCode(code.trim())
+    if (r.ok) onUnlock(r.exp)
+    else { setError(r.error); setBusy(false) }
   }
+
+  const askState = (id) => (status && status[id]) || { visited: false, ready: false }
 
   return (
     <div className="gate-shell">
@@ -98,78 +79,98 @@ export default function Gate({ onUnlock }) {
         <h1>{gateConfig.title}</h1>
         <p className="gate-sub">{gateConfig.subtitle}</p>
 
-        <div className="gate-progress" aria-hidden="true">
-          <div
-            className="gate-progress-bar"
-            style={{ width: `${(doneCount / Math.max(1, steps.length)) * 100}%` }}
-          />
+        {/* ---------------- the one required action ---------------- */}
+        <div className="gate-primary">
+          <div className="gate-primary-head">
+            <span className="gate-step-no">1</span>
+            <div>
+              <div className="gate-step-label">Get your access on WhatsApp</div>
+              <div className="gate-step-desc">
+                Tap below — the message is already written. Just press send and
+                our assistant replies instantly with your personal entry link.
+              </div>
+            </div>
+          </div>
+
+          <a
+            className="btn btn-primary btn-lg gate-wa-cta"
+            href={dmLinkUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMessaged(true)}
+          >
+            Message us on WhatsApp →
+          </a>
+
+          {messaged && (
+            <p className="gate-hint-line">
+              Sent it? Your reply arrives in a few seconds — just tap the link
+              in it and you are in. You can also paste the code below.
+            </p>
+          )}
         </div>
 
-        <ol className="gate-steps">
-          {steps.map((step, i) => {
-            const s = st(step)
-            const secs = Math.ceil((s.waitMs || 0) / 1000)
-            return (
-              <li key={step.id} className={`gate-step ${s.ready ? 'is-done' : ''}`}>
-                <div className="gate-step-head">
-                  <span className="gate-step-no">{s.ready ? '✓' : i + 1}</span>
-                  <div>
-                    <div className="gate-step-label">
-                      {step.heading}
-                      {step.optional && <span className="gate-optional">optional</span>}
-                    </div>
-                    <div className="gate-step-desc">{step.note}</div>
-                  </div>
-                </div>
-
-                <div className="gate-step-actions">
-                  {/* Goes to our own server first, which records the visit and
-                      then redirects. Not a normal outbound link. */}
-                  <a
-                    className={`btn gate-btn-wa ${s.ready ? 'btn-ghost' : ''}`}
-                    href={stepUrl(step.id)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {s.ready ? `${step.action} again` : step.action} →
-                  </a>
-
-                  <span className={`gate-state ${s.ready ? 'ok' : s.visited ? 'waiting' : ''}`}>
-                    {loading
-                      ? 'Checking…'
-                      : s.ready
-                        ? step.confirm
-                        : s.visited
-                          ? `Confirming… ${secs}s`
-                          : 'Not yet done'}
-                  </span>
-                </div>
-              </li>
-            )
-          })}
-        </ol>
+        {/* ---------------- manual code fallback ---------------- */}
+        <details className="gate-fallback" open={messaged}>
+          <summary>Prefer to type the code?</summary>
+          <div className="gate-code">
+            <input
+              className="gate-input"
+              type="text"
+              placeholder="e.g. EEE-XXXXXX"
+              value={code}
+              onChange={(e) => { setCode(e.target.value); setError('') }}
+              onKeyDown={(e) => { if (e.key === 'Enter') submitCode() }}
+              autoComplete="off"
+              spellCheck="false"
+            />
+            <button
+              className="btn btn-primary"
+              onClick={submitCode}
+              disabled={!code.trim() || busy}
+            >
+              {busy ? 'Checking…' : 'Enter'}
+            </button>
+          </div>
+        </details>
 
         {error && <p className="gate-error" role="alert">{error}</p>}
 
-        <button
-          className="btn btn-primary btn-lg gate-unlock"
-          onClick={unlock}
-          disabled={!allRequiredReady || busy || loading}
-        >
-          {busy ? 'Setting you up…' : 'Enter the CBT Lab →'}
-        </button>
-
-        {!allRequiredReady && !loading && (
-          <p className="gate-hint-line">
-            Tap each button above to continue — we confirm it automatically when
-            you come back.
-          </p>
+        {/* ---------------- optional community asks ---------------- */}
+        {asks.length > 0 && (
+          <div className="gate-asks">
+            <div className="gate-asks-head">
+              A small favour, if you don’t mind 💚
+              <span className="gate-optional">optional</span>
+            </div>
+            {asks.map((ask) => {
+              const s = askState(ask.id)
+              return (
+                <div key={ask.id} className="gate-ask">
+                  <div>
+                    <div className="gate-ask-title">{ask.heading}</div>
+                    <div className="gate-ask-note">{ask.note}</div>
+                  </div>
+                  <a
+                    className={`btn btn-ghost btn-sm ${s.visited ? 'is-done' : ''}`}
+                    href={stepUrl(ask.id)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {s.visited ? 'Thank you ✓' : ask.action}
+                  </a>
+                </div>
+              )
+            })}
+          </div>
         )}
 
         <p className="gate-note">
-          Your access lasts 7 days on this device and renews in seconds. Your
-          test progress, scores and saved sessions are never affected.
+          Access lasts 7 days on this device and renews in seconds. Your test
+          progress, scores and saved sessions are never affected.
         </p>
+
+        <p className="gate-tiny">Your ID: {deviceLabel()}</p>
       </div>
     </div>
   )
