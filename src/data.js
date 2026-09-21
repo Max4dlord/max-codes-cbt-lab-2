@@ -58,25 +58,25 @@ export const topicMeta = {
       "id": "swep-day-2",
       "name": "Day 2 \u2014 Tuesday, 15th September",
       "categoryId": "swep-days",
-      "summaryNotes": "### What Day 2 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Substance Abuse Awareness | **Dr. A. Olatunji** |\n| 2 | Workshop & Industrial Safety | **Prof. A. A. Adeleke** |\n| 3 | 21st-Century Employability Skills | **Prof. A. B. Ekanola** |\n\n### Substance abuse \u2014 the numbers\n| Measure | Figure |\n|---|---|\n| Global average use | **5.3%** |\n| Nigeria, aged 15\u201364 | **14.3%** (\u2248 14.4 million people) |\n| Lifetime prevalence, SW Nigerian universities | **45% \u2013 84.5%** |\n\nMost abused: **alcohol, tobacco, codeine cough syrups, tramadol, cannabis**.\n\n**Five categories of warning sign** \u2014 know which is which:\n- **Physical** \u2014 bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene\n- **Behavioural** \u2014 new friend groups, secrecy, stealing, **impulsivity/risk-taking**\n- **Academic** \u2014 absenteeism, falling grades, discipline, **unsubmitted assignments**\n- **Psychological/Emotional** \u2014 mood swings, anxiety, depression, **hallucinations**\n- **Social/Lifestyle** \u2014 money trouble, fights/cultism, sleep changes, drug joints\n\n**Prevention** (before) vs **Intervention** (after):\n- Prevention: campus drug education, life skills, peer support, restricting access, parents/community\n- Intervention: early screening, counselling, medical treatment/rehab, policy & discipline, media campaigns\n- **Multi-sectoral collaboration**: **NDLEA**, Federal Ministry of Health, NGOs, campus health services\n\n### Safety \u2014 the numbers\n- **5,486** US fatal occupational injuries in 2022 (**+5.7%** on 2021)\n- **WHO**: **20\u201350%** of workers face workplace hazards\n- **ILO**: economic cost **1.8%\u20136% of GDP**\n\n**High-risk industries**: construction, healthcare, manufacturing, transportation,\nagriculture, iron & steel, chemical/petrochemical, heavy equipment operation.\n\n**PPE standards**\n| Standard | Covers | Region |\n|---|---|---|\n| **ANSI Z87.1** | Safety glasses | **US** |\n| EN 166 | Safety glasses | Europe |\n| EN ISO 20471 | High-visibility clothing | Europe |\n| EN ISO 11611 | Welding protection | Europe |\n\n**Hierarchy of control** (most \u2192 least effective):\n**Elimination** \u2192 Substitution \u2192 Engineering \u2192 Administrative \u2192 **PPE (last line)**\n\n**Safety signs \u2014 shape + colour**\n| Type | Shape | Colour |\n|---|---|---|\n| Prohibition | Circular | Red border + diagonal |\n| Warning | **Triangular** | Yellow/amber |\n| Mandatory | Circular | **Blue** |\n| Emergency/First-aid | Rectangular | **Green** |\n\n**Fire extinguishers** \u2014 all red bodies, coded markings:\nWater **green triangle** (A) \u00b7 CO2 **black square** (B, C) \u00b7\nFoam **cream label** (A, B) \u00b7 Dry powder **blue circle** (A, B, C).\nNever use water on an electrical fire.\n\n**Bodies**: US \u2014 **OSHA** (enforces), **NIOSH** (research).\nNigeria \u2014 **NISCN**, **ISPON**, OSHAssociation, MAN, NACCIMA.\n\n### Employability\n**Definition**: the capabilities to **obtain, retain, perform and progress** in\nemployment. You can be employed yet barely employable if your skills are going obsolete.\n\n**Agents of transformation**: AI, automation, digital platforms, globalisation, remote work.\n\n**8 clusters**: communication \u00b7 critical thinking & problem-solving \u00b7 digital &\ntechnological \u00b7 creativity & innovation \u00b7 collaboration & teamwork \u00b7 personal\neffectiveness & emotional intelligence \u00b7 career management, entrepreneurship &\nleadership \u00b7 adaptability, lifelong learning & professional development.\n\n**Critical thinking order**: identify the problem \u2192 research \u2192 determine data\nrelevance \u2192 ask questions \u2192 identify best solution \u2192 present \u2192 analyse the decision.\n\n**Key distinctions**\n- **Creativity** sees possibilities; **innovation** converts them into useful outcomes.\n- **Adaptability** = functioning through change; **resilience** = recovering from setbacks.\n- A **skill** performs a task; a **capability** applies knowledge in *changing* circumstances.\n- A **CV claims**; a **portfolio demonstrates**.\n- Goal with AI: an **AI-enabled professional**, not competing with AI, not blind delegation.\n\n**Career model**: Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 transition \u2192\nlifelong learning (via micro-credentials and short courses).\n\n**Five things to build alongside the degree**: communication ability \u00b7 digital\ncapability \u00b7 evidence of practical experience \u00b7 a professional network \u00b7 a learning habit.\n\n### Traps to watch\n- **5.3%** global vs **14.3%** Nigeria vs **45\u201384.5%** university lifetime prevalence.\n- Every warning-sign distractor is a **real** sign under a **different** category.\n- **Prevention** precedes the problem; **intervention** follows it.\n- **EN** = European, so **ANSI Z87.1** is the US one.\n- **PPE is the weakest** control, not the strongest.\n- Prohibition and mandatory signs are **both circular** \u2014 red vs blue decides.\n- **8** skill clusters, but **5** things to build. Different lists.\n"
+      "summaryNotes": "### What Day 2 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Substance Abuse Awareness | **Dr. A. Olatunji** |\n| 2 | Workshop & Industrial Safety | **Prof. A. A. Adeleke** |\n| 3 | 21st-Century Employability Skills | **Prof. A. B. Ekanola** |\n\n### Substance abuse \u2014 the numbers\n| Measure | Figure |\n|---|---|\n| Global average use | **5.3%** |\n| Nigeria, aged 15\u201364 | **14.3%** (\u2248 14.4 million people) |\n| Lifetime prevalence, SW Nigerian universities | **45% \u2013 84.5%** |\n\nMost abused: **alcohol, tobacco, codeine cough syrups, tramadol, cannabis**.\n\n**Five categories of warning sign** \u2014 know which is which:\n- **Physical** \u2014 bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene\n- **Behavioural** \u2014 new friend groups, secrecy, stealing, **impulsivity/risk-taking**\n- **Academic** \u2014 absenteeism, falling grades, discipline, **unsubmitted assignments**\n- **Psychological/Emotional** \u2014 mood swings, anxiety, depression, **hallucinations**\n- **Social/Lifestyle** \u2014 money trouble, fights/cultism, sleep changes, drug joints\n\n**Prevention** (before) vs **Intervention** (after):\n- Prevention: campus drug education, life skills, peer support, restricting access, parents/community\n- Intervention: early screening, counselling, medical treatment/rehab, policy & discipline, media campaigns\n- **Multi-sectoral collaboration**: **NDLEA**, Federal Ministry of Health, NGOs, campus health services\n\n### Safety \u2014 the numbers\n- **5,486** US fatal occupational injuries in 2022 (**+5.7%** on 2021)\n- **WHO** \u2014 large % of workers face hazards; **ILO** \u2014 economic costs 4%\u20136% of GDP\n- High-risk: construction, agriculture, mining, manufacturing, healthcare\n\n**PPE standards:**\n- US safety glasses: **ANSI Z87.1**, Europe: **EN 166**\n- High-visibility: **EN ISO 20471**; Welding: **EN ISO 11611**\n- Respirators: **OSHA & NIOSH** \u2014 proper selection, fit testing, medical evaluation; **APRs** = air-purifying, **SARs** = supplied-air\n- Nuclear PPE: **Tyvek, neoprene, nitrile** + **Anti-C/FR**; symbol = worker in full-body suit + respirator + **trefoil** (yellow/black)\n\n**Hazards:**\n- Chemical: toxic, flammable, corrosive\n- Physical: noise, vibration, radiation, extreme temps, poor lighting\n- Ergonomic: repetitive, awkward postures \u2192 musculoskeletal\n- Biological: bacteria, viruses, fungi\n\n**Controls (most \u2192 least effective):**\nElimination (most effective \u2014 remove hazard) \u2192 Substitution \u2192 Engineering (guarding, ventilation) \u2192 Administrative (procedures, training) \u2192 PPE (gloves, masks)\n\nSafety signs: Prohibition = circular red border + diagonal line; Warning = triangular yellow/black; Mandatory = blue; Emergency = green; Fire = red.\n\nExtinguishers: **RED** water (Class A), **BLUE** dry powder, **CREAM** foam, **BLACK** CO\u2082 (multipurpose electrical + liquids, **no residue**). Water types: stored pressure vs gas cartridge.\n\n### Employability\n**Definition:** capability to **obtain, retain, perform and progress** in employment. Not just about insufficient jobs \u2014 **many graduates are unemployable** (CBN recruitment, German software engineers).\n\n**Agents of global transformation:** AI, automation, digital platforms, globalisation, remote work.\n\n**8 clusters:** Communication/interpersonal, Critical thinking/problem-solving, Digital/technological, Creativity/innovation, Collaboration/teamwork, Personal effectiveness/emotional intelligence, Career management/entrepreneurship/leadership, Adaptability/lifelong learning/professional development.\n\n**Communication:** oral/written, presentation, listening, negotiation, interpersonal, professional correspondence, digital \u2014 includes listening, nonverbal, clarity/concision, friendliness, confidence, empathy, open-mindedness, respect, feedback, picking right medium. Acquired through practice: speak/write, present/debate, teach/seminars, professional orgs, reports, feedback, record yourself.\n\n**Critical thinking:** analyse objectively, evaluate evidence, identify assumptions, reach reasoned conclusions. Steps: Identify problem, Research, Determine data relevance, Ask questions, Identify best solution, Present, Analyze decision. Acquired via complex questions, reading widely, comparing perspectives, case studies, debating controversial, solving problems with no obvious answer, changing mind when better evidence.\n\nPuzzles: storm bus stop (woman/man dreams, friend saved life, old ill lady, one seat); farmer fox goose beans boat (goose eats beans or fox eats goose if left unattended).\n\n**Problem-solving:** identifying real problem, gathering info, analysing causes, generating alternatives, evaluating options, implementing, assessing results. Best way = real problems, projects: What problem can I solve today?\n\n**Digital literacy:** basic requirement \u2014 use digital communication tools, search/evaluate info, work with digital platforms, manage documents, collaborate online, understand basic data, protect info, use responsibly. Beyond Word/email \u2014 sophisticated fluency.\n\n**AI literacy:** what AI can/cannot do, limitations, formulate effective instructions, evaluate outputs, bias, privacy, IP, ethical responsible use. Goal not to compete but **become AI-enabled professional** \u2014 future belongs to **AI-enabled professionals** not just AI specialists. Acquired via practical applications: research, brainstorm, analyse, draft/revise, generate ideas, simulate scenarios, support learning, automate routine, improve productivity + human judgement.\n\n**Creativity:** seeing possibilities others may not. **Innovation:** converting ideas into useful outcomes. Requires asking unconventional questions, attending details, analysing, open-mindedness, problem-solving, don't fear failure, assess/negate risks, seek more/better with less. Developed via different disciplines, reading outside field, travel, different perspectives, experiment, question: Is there better way?\n\n**Teamwork:** working well, effective relationships diverse personalities, maturity agree/disagree, focus team goals not individual. Future workplace collaborative, complex problems cannot be solved by one discipline. Requires listening, sharing ideas, negotiation, resolving disagreements, respecting perspectives, coordinating activities. Brilliant individual who cannot work with others = organisational liability. Developed via group projects, student orgs, community service, sports, volunteering, professional associations, multidisciplinary projects, work placements \u2014 contribute without dominating.\n\n**Emotional Intelligence:** understanding own emotions and recognising/responding to others \u2014 self-awareness, self-regulation, empathy, social awareness, relationship management. Requires internal motivation, self-regulation, self-awareness, empathy, social awareness. All human activities involve people; tech automates processes but relationships remain fundamental. Developed via active listening, receiving criticism without defensive, reflecting behaviour, empathy, observing actions affect others, managing anger/frustration professionally, seeking honest feedback, cultivating self-awareness.\n\n**Social Intelligence:** ability to build, understand, manage, sustain interpersonal relationships \u2014 strong competencies, nourishing behaviours making others feel valued, trusted, respected.\n\n**Adaptability & Resilience:** certainty = change, adaptable worker functions effectively despite change. Resilience = ability to recover from setbacks and continue moving forward \u2014 career contains rejection, failure, redundancy, organisational change, uncertainty \u2014 requires psychological/professional resilience. Developed via outside comfort zone, new skills, unfamiliar challenging assignments, different people, move across disciplines, learn from failure, avoid too comfortable.\n\n**Leadership:** ability to influence people positively towards shared objective \u2014 needs vision & integrity, communication & emotional intelligence, decision-making & strategic thinking, collaboration & accountability. Acquired via leading project, organising event, volunteering, mentoring, solving problem, taking responsibility \u2014 develops through responsibility and practice.\n\n**Entrepreneurial:** opportunity recognition & initiative, creativity & risk assessment, resourcefulness & financial awareness, networking & negotiation, value creation.\n\n**Time Management:** time audit, block distractions, schedule yourself, avoid multitasking, insist others respect time, keep call to action in mind, get downtime/rest.\n\n**Conflict Management:** ability to identify/manage conflicts sensibly, fairly, efficiently so they don't degenerate into crises but better synergy/teamwork \u2014 requires teamwork, problem-solving, emotional intelligence, communication, stress management.\n\n**Ethical/Professional:** integrity & honesty, accountability & respect, confidentiality & responsibility, fairness & professional discipline.\n\n**Career Management:** self-assessment strengths/weaknesses, researching occupations & setting career goals, building professional networks & preparing CVs/portfolios, interview skills & personal branding, networking & finding mentors, evaluating career opportunities.\n\n**Acquisition:** Education & Experience, Practice & Reflection, Mentoring & Networking, Continuous Learning.\n\n**Experiential Learning:** internships & industrial attachments, apprenticeships & volunteering, community & research projects, part-time work & student leadership, entrepreneurial activities \u2014 experience converts knowledge into competence.\n\n**Formal Education:** not simply listen/reproduce in exams but solve problems, conduct research, make presentations, participate in debates, undertake projects, work in teams, engage industry, apply knowledge \u2014 classroom must become place where students do, not merely listen.\n\n**Project-based learning:** develops teamwork, communication, leadership, creativity, problem-solving, time management, digital competence.\n\n**Mentoring/Coaching:** provides guidance, experience, encouragement, professional insight, networks, constructive criticism.\n\n**Self-Directed Learning:** today individual can learn from universities, professionals, experts, institutions worldwide \u2014 online courses, webinars, tutorials, digital libraries, professional communities \u2014 create personal learning plan, identify skills needed, set objectives.\n\n**Micro-Credentials:** traditional degrees important but complemented by shorter forms \u2014 micro-credentials, professional certificates, short courses help acquire specific competencies quickly. Instead of Degree \u2192 employment \u2192 retirement, move towards Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 career transition \u2192 lifelong learning.\n\n**Networking:** provides information & mentors, opportunities & collaborations, employment & entrepreneurship, professional development \u2014 not only what you know but who knows what you can do. Build via conferences, seminars, professional associations, alumni networks, career fairs, industry events, online professional communities \u2014 mutually beneficial relationships.\n\n**Portfolio:** CV tells what you claim you can do, portfolio can demonstrate it \u2014 containing research projects, presentations, software projects, designs, business ideas, community projects, certificates, professional achievements, evidence of impact.\n\n**Challenge:** consciously/purposively develop appropriately soft, digital, technical skills \u2014 at least one at any point.\n\n**Special Message:** degree is beginning of professional learning. While in university, develop at least five things alongside academic qualification: strong communication ability, digital capability, evidence of practical experience, professional network, learning habit.\n\n**Skills vs Capabilities:** skill = ability to perform particular task; capability = ability to apply knowledge/skills effectively in changing circumstances \u2014 e.g., knowing particular software = skill, being able to learn new software when technology changes = capability.\n\n**Future:** not about producing people who know everything (impossible), about producing people who can learn anything they need to know \u2014 become digitally capable, intellectually curious, emotionally intelligent, ethically responsible, entrepreneurial, collaborative, creative, adaptable \u2014 above all: be lifelong learner.\n"
     },
     {
       "id": "swep-day-3",
       "name": "Day 3 \u2014 Wednesday, 16th September",
       "categoryId": "swep-days",
-      "summaryNotes": "### What Day 3 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** (Agricultural Economics) |\n| 2 | Renewable Energy & PV Technology | **Dr. F. K. Ariyo** (Electronic & Electrical Engineering) |\n| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** (PhD, REng (Mech), MNIMechE, MNIEM, MNSE) |\n\n### 5G \u2014 the three superpowers\n| Superpower | What it is | Its label |\n|---|---|---|\n| **eMBB** | Insanely high speed, massive bandwidth | \u201ccontent and data delivery\u201d |\n| **URLLC** | **~1 ms** latency, extreme reliability | \u201creal-time control and safety\u201d |\n| **mMTC** | Huge numbers of low-power devices | \u201cmassive data collection\u201d |\n\n**Enablers:** **Network slicing** (rent a virtual network \u2014 lowers barrier to entry)\nand **Edge computing** (process locally \u2014 privacy-first, real-time AI).\n\n**Generations:** 1G AMPS/TACS/NMT (1980s) \u00b7 2G GSM (1990s) \u00b7 3G WCDMA/HSPA (2000s) \u00b7\n**4G LTE (2010s)** \u00b7 **5G NR (2020s)**.\n\n**5G targets:** **>10 Gbps** peak \u00b7 **<1 ms** radio latency \u00b7 100 Mbps whenever needed \u00b7\n10 000\u00d7 traffic \u00b7 10\u2013100\u00d7 devices \u00b7 10 years on battery.\n\n**Capabilities vs LTE:** 10\u00d7 data rates \u2192 10 Gbps \u00b7 10\u00d7 lower cost \u2192 <2 cent/GB \u00b7\n10\u00d7 lower latency \u2192 **<1 ms** \u00b7 10\u00d7 lower IoT power \u2192 <10 \u03bcWh/tx \u00b7\n5\u00d7 energy efficiency \u2192 <2 kWh/TB \u00b7 5\u00d7 spectral efficiency \u2192 >10 bps/cell/Hz.\n\n**Spectrum:** 20\u201390 GHz \u2192 1 GHz/operator \u2192 5\u201320 Gbps \u00b7 Below 6 GHz \u2192 100 MHz \u2192 2 Gbps \u00b7\nBelow 1 GHz \u2192 10 MHz \u2192 0.2 Gbps. NR spans **400 MHz \u2013 90 GHz**.\n\n**5 technology components:** new spectrum \u00b7 beamforming \u00b7 network slicing \u00b7\nLTE dual connectivity/coexistence \u00b7 cloud-optimised architecture.\n\n**Journey:** start with a **pain point**, then apply the **5G lens**. Team =\ndomain + technical + business. Monetise **as-a-service**. **6G** converges with\n**AI, quantum computing and advanced sensing**.\n\n### PV \u2014 solar as a multidisciplinary system\n**Energy flow:** Sunlight \u2192 **PV cell** \u2192 **MPPT** \u2192 **inverter** \u2192 load/grid.\n**Scaling:** CELL \u2192 MODULE \u2192 STRING \u2192 ARRAY.\n**I\u2013V curve:** **Isc**, **MPP**, **Voc** \u2014 MPP is the *point*, MPPT the *technology*.\n**Why MPPT:** irradiance and temperature change, so the MPP **moves**\n(less sun \u2192 less current; hotter cell \u2192 lower voltage).\n\n**Six performance factors:** irradiance \u00b7 temperature \u00b7 shading \u00b7 soiling \u00b7\nmismatch \u00b7 degradation.\n\n| Architecture | Flow | Use |\n|---|---|---|\n| Grid-tied | PV \u2192 inverter \u2192 grid/load | Homes, offices, campuses |\n| **Off-grid** | PV \u2192 controller \u2192 battery \u2192 loads | Remote sites, PHCs |\n| Hybrid | PV + grid/generator + battery | Critical loads, resilience |\n\n**Storage:** **kW = how fast** (power), **kWh = how much** (energy).\nA 2-kW load for 4 h needs **8 kWh**. Terms: SoC, DoD, BMS, efficiency.\n**Three components to recognise:** inverter (DC\u2192AC) \u00b7 MPPT controller \u00b7 LiFePO\u2084 battery.\n**Diagnostics:** soiling\u2192power loss \u00b7 partial shade\u2192mismatch \u00b7 hot spot\u2192thermal risk \u00b7\nloose connector\u2192arcing/outage \u00b7 inverter trip\u2192no AC output.\n**Clinic challenge:** 8 kWh/day, 2 kW peak, 1 day autonomy.\n**Safety:** **PV DC stays energised in sunlight** \u2014 isolation must be planned.\n\n### Workshop practice, workforce & national growth\n**Resources:** hand tools (hammers, saws, pliers, marking tools) \u00b7 machine tools\n(lathe, milling, drilling, **power hack saw**) \u00b7 manufacturing methods (machining,\ncasting, powder metallurgy, welding, additive).\n\n**Sequence:** identify materials \u2192 measurements \u2192 marking out (**on the\nmarking-out table**) \u2192 cutting to size \u2192 joining or machining.\n\n**Activity focuses:** skill development \u00b7 team building \u00b7 problem-solving.\n**Five outcomes:** hands-on experience \u00b7 skill development \u00b7 safety awareness \u00b7\nunderstanding manufacturing processes \u00b7 application in industrial production.\n\n**Workforce** = all physically able and available people, **employed and\nunemployed**. The question: *how many of the employable are employed?*\n\n**Eq. 1:** Workshop Practice + Workforce = **\u00bd(National Growth)**\n**Eq. 2:** Workshop Practice + Workforce + **Development Plan** = National Growth\nEngineering **drives**; the development plan **catalyses**.\n\n**GDP:** Nigeria Q1 2025 **3.13%** (up from **2.27%** in Q1 2024); Ghana **5.4%**.\nDriver: reduced petrol imports via the **Dangote Refinery**.\n**Growth factors:** government policies \u00b7 global economy \u00b7 **human capital**.\n**NDP 2021\u20132025**, aligned with **Nigeria Agenda 2050**, four strategic objectives.\n**Outcomes:** **TVET** in all Technical Colleges \u00b7 **COREN** to regulate engineering admissions.\n\n### Traps to watch\n- **100 Mbps** is the \u201cwhenever needed\u201d rate; **>10 Gbps** is the peak.\n- **Quantum computing** belongs to the **6G** slide, not the 5 technology components.\n- **MPP** is a point on the curve; **MPPT** is the tracking technology.\n- **kW vs kWh** \u2014 inverter rated in kW, battery sized in kWh.\n- **2.27%** is Nigeria\u2019s **Q1 2024** figure, not 2025.\n- Eq. 1 gives only **half** of national growth \u2014 the plan supplies the rest.\n- Ayanwale teaches 5G but is from **Agricultural Economics**; Adeleke (Materials\n  Science) belongs to **Day 2**.\n"
+      "summaryNotes": "### What Day 3 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** |\n| 2 | Introduction to Renewable Energy (PV) Technology | **Dr. F. K. Ariyo** |\n| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** |\n\n### Entrepreneurship in the 5G Era \u2014 key numbers\n- Sub-Saharan Africa: **more than 1 billion people**, half **under 25 by 2050**; **1.2-billion-person market** = world's largest free trade area\n- **Five mobile generations in 40 years**: 1G AMPS/TACS/NMT 1980s (foundation telephony), 2G GSM/D-AMPS/PDC/IS-95 1990s (telephony for everybody), 3G WCDMA/HSPA/cdma2000 2000s (foundation mobile broadband), 4G LTE 2010s (further enhanced broadband), 5G **NR** 2020s (interconnected devices, sensors, systems \u2014 verticals)\n- **Three superpowers**: **eMBB** = insanely high speeds, massive bandwidth \u2014 firehose for data \u2014 \"content and data delivery\" superpower; **URLLC** = near-instantaneous response **~1ms** with extreme reliability \u2014 \"real-time control and safety\" superpower \u2014 autonomous drone fleets, tele-surgery, competitive gaming; **mMTC** = staggering number low-power devices simultaneously \u2014 \"massive data collection\" superpower \u2014 smart agriculture thousands sensors, asset tracking, billions smart-city devices\n- **5G targets**: **>10 Gbps** peak data rates, **<1 ms** radio latency, **100 Mbps** guaranteed whenever needed, **10,000\u00d7** more traffic, **10\u2013100\u00d7** more devices, **10 years** on battery; **10\u00d7 lower latency** target **<1 ms**; additional capability targets **<10 \u03bcWh per tx**, **<2 cent/GB**\n- Motivation: very young, very large, newly integrated market = condition where digital ventures scale\n\n### PV Technology \u2014 the chain\n**Opening Hook:** \"What if your engineering skills could power a community?\" Solar is not just panel on roof \u2014 multidisciplinary system: **POWER** Generate\u2022convert\u2022protect, **DATA** Measure\u2022monitor\u2022predict, **DESIGN** Size\u2022model\u2022optimise, **IMPACT** Homes\u2022clinics\u2022farms. Career signal: degree \u2192 solar specialisation: Electrical = power systems, Electronics = converters/sensors/embedded, Control = MPPT/regulation, Automation = AI/Data forecasting/fault diagnosis, Materials = semiconductors/PV devices, Enterprise = design/installation/service/finance.\n\n**Energy flow:** SUNLIGHT photons \u2192 PV CELL DC electricity \u2192 MPPT extract power \u2192 INVERTER DC\u2192AC \u2192 LOAD/GRID useful work. Engineering question: Where are losses \u2014 how reduce?\n\n**Device physics:** p-type n-type p\u2013n junction, photon creates electron-hole pairs, junction/contacts drive charge separation and current. Semiconductor absorbs light, carriers separated, external circuit carries current. PHYSICS \u2192 DEVICE \u2192 POWER.\n\n**Scaling:** CELL single device \u2192 MODULE cells connected/packaged \u2192 STRING modules in series \u2192 ARRAY multiple strings field. Challenge grows: mismatch, protection, wiring, thermal, control, maintenance.\n\n**I\u2013V curve:** Isc, Voc, MPP Power. Engineering question: Where should converter operate to capture maximum power? Voltage.\n\n**MPPT:** Irradiance changes, temperature changes, maximum-power point moves \u2192 PV ARRAY variable DC \u2192 MPPT CONTROLLER search/track \u2192 DC BUS regulated energy \u2192 INVERTER controlled AC \u2014 CONTROL SYSTEMS + POWER ELECTRONICS.\n\n**Design Reality:** IRRADIANCE less sunlight \u2192 less current, TEMPERATURE higher cell temp \u2192 lower voltage, SHADING mismatch can hurt whole string, SOILING dust reduces optical input, MISMATCH cells/modules never perfectly identical, DEGRADATION performance changes with age. Good design is not \"buy more panels\" \u2014 understanding full chain of causes/effects.\n\n**Architectures:** GRID-TIED PV inverter grid/load \u2192 Homes/offices/campuses, OFF-GRID PV controller battery \u2192 loads \u2192 Remote sites: PHCs, HYBRID PV + grid/generator + battery \u2192 Critical loads/resilience. CHOOSE ARCHITECTURE FROM LOAD AND RELIABILITY NEED \u2014 NOT PANEL COUNT.\n\n**Components:** PV module, inverter, MPPT charge controller, battery storage, protection/distribution. Inverter = system translator: DC CONTROL AC \u2014 DC input PV array/battery, Switching MOSFET/IGBT/power stage, Control PWM current/voltage loops, Synchronization grid frequency & phase, Protection overcurrent/overvoltage/islanding \u2014 POWER ELECTRONICS + CONTROL + PROTECTION.\n\n**Storage:** kW Power \u2014 how fast? kWh Energy \u2014 how much? Example 2-kW load 4h needs 8 kWh. SoC state of charge, DoD depth of discharge, BMS battery management system, Efficiency charge/discharge losses. STORAGE TURNS SUNSHINE INTO DISPATCHABLE ENERGY. Three components students identify immediately: Inverter DC\u2192AC, MPPT controller regulates PV/battery charging, LiFePO\u2084 battery stores electrical energy.\n\n**Digital Solar:** Solar plant is also data system: Irradiance W/m\u00b2, PV voltage V, PV current A, Temperature \u00b0C, Energy yield kWh, Battery SoC % \u2014 MEASURE \u2192 TRANSMIT \u2192 VISUALISE. Once you can measure performance, you can start predicting. IoT \u2022 EMBEDDED \u2022 CLOUD \u2022 AI.\n\n**Diagnostics:** Dust/soiling \u2192 power loss, Partial shade \u2192 mismatch, Hot spot \u2192 thermal risk, Loose connector \u2192 arcing/outage, Inverter trip \u2192 No AC output. Flow SENSOR DATA \u2192 ANOMALY \u2192 DIAGNOSIS \u2192 ACTION \u2192 VERIFY \u2014 predictive maintenance thinking.\n\n**Next Frontier \u2014 Solar meets AI:** Forecast predict PV output from weather + history, Anomaly detection spot unusual behaviour early, Fault diagnosis map signatures to likely faults, Degradation/RUL estimate performance decline, Optimisation schedule storage and loads. ENGINEER OF FUTURE MAY BE BOTH POWER ENGINEER AND DATA SCIENTIST.\n\n**Local Impact:** Homes reliable household electricity, Universities labs/ICT/campus loads, Clinics critical lighting + refrigeration, Agriculture water pumping + processing, Telecoms remote site power, Small business shops/offices/workshops. Engineering question not \"Can solar work?\" \u2014 \"How make it reliable, affordable and intelligent?\" Build Something: PROBLEM what fails? Who needs help? MEASURE collect trustworthy data, DESIGN model/size/protect, VALIDATE test against reality, SCALE document/improve/deploy. ENGINEERING VALUE = WORKING SOLUTION + EVIDENCE THAT IT WORKS.\n\n**Mini Design Challenge:** Design introductory solar-battery system for small rural clinic. Daily energy = 8 kWh/day, Peak load = 2 kW, Autonomy = 1 day, Illustrative assumptions \u2014 choose PV capacity, battery capacity, inverter rating and basic protection. PV sizing, Battery sizing, Inverter sizing, Protection & safety, DISCUSS FOR 3 MINUTES.\n\n**Real-world installation:** Look for PV array, DC protection, isolator, inverter, AC distribution and battery bank. Safety: PV safety non-negotiable.\n\n### Workshop Practice\n**Definition:** Hands-on training and skills required in engineering workshops. Hand tools (hammers, saws, pliers, marking tools), Machine tools (lathe, milling machine, drilling machine, power hack saw), Manufacturing methods (machining, casting, powder metallurgy, welding, recently additive manufacturing) \u2014 accomplished by human efforts or machinery. Many manufacturing processes automated and some hand-crafted. Note: manufacturing processes are various sub-divisions.\n\n**Starts from:** 1 Identification of materials and properties \u2014 where can each material be used? common engineering materials used at shop floor? 2. Measurements: measuring instruments e.g., meter rule, vernier caliper, micrometer, etc.\n\n**Safety measures:** Housekeeping clean organized reduces slips/trips/falls and fire risk, Emergency Procedures machine safety proper guarding moving parts regular maintenance ensuring operators adequately trained, Training and Communication proper training fostering open communication vital, Hazard Identification and Control continuous process, Proper Tool Use ensuring tools good condition appropriate for task used correctly, Ventilation adequate to remove fumes/dust/airborne hazards, Working Alone advisable avoid working alone ensure someone available assist accident, Fire Safety having extinguishers blankets knowing how to use vital, Ergonomics designing workstations/tasks minimize musculoskeletal injuries important, Electrical Safety precautions working with electricity insulated tools avoiding overloaded circuits critical, Waste Disposal proper disposal flammable/hazardous materials essential preventing accidents/environmental contamination, Signage and Warning.\n\n**Control measures example:** machine guarding (engineering control) prevents accidental contact moving parts, training safe operation (administrative) and safety glasses (PPE) enhances protection \u2014 comprehensive approach.\n\n### Traps to watch\n- Sub-Saharan Africa **1 billion+** = current population, **1.2 billion** = free-trade market \u2014 do not swap.\n- **100 Mbps** = guaranteed whenever needed, **>10 Gbps** = peak \u2014 do not swap.\n- **MPP** = Maximum Power Point \u2014 where converter should operate.\n- Good design \u2260 buy more panels \u2014 understand chain of causes/effects.\n- Architecture chosen from load/reliability need, not panel count.\n- **kW** = power (how fast), **kWh** = energy (how much) \u2014 2kW \u00d7 4h = 8kWh.\n- Workshop starts from identification + measurements.\n- Control example = guarding + training + glasses.\n"
     },
     {
       "id": "swep-day-4",
       "name": "Day 4 \u2014 Thursday, 17th September",
       "categoryId": "swep-days",
-      "summaryNotes": "### What Day 4 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Food Science & Engineering, Value-Addition and National Development (4IR) | **Dr. W. A. Adebayo** (Food Science and Technology) |\n| 2 | Demystifying Artificial Intelligence | **Dr. Aderonke Lawal** (Computer Engineering) |\n| 3 | Fire Awareness and Prevention | **Mr. M. A. Ibrahim** |\n\n### Food Science \u2014 definitions and food security\n- **Food Science** \u2014 the **study** of the physical, microbiological and chemical makeup of food\n- **Food Technology** \u2014 the **application** of food science to selection, preservation, processing, packaging, distribution of **safe** food\n- **Food Engineering** \u2014 the **multidisciplinary field** applying **engineering principles** to production, processing, preservation and distribution\n- **Value-Addition** \u2014 transforming raw produce into **desirable, convenient, nutritious** products, raising **market value, shelf life, acceptability**\n\n**Four dimensions of food security:** **Availability** (sufficient quantity/quality,\nincl. imports) \u00b7 **Access** (entitlements) \u00b7 **Utilization** (diet, clean water,\nsanitation, health care) \u00b7 **Stability** (at all times; no shocks/cyclical loss).\n\n**Autarky** = deliberate isolation, **eliminating** international trade (China under\n**Mao Tse Tung**, Japan, North Korea). **Food self-reliance** = integrated management\nof production, export, import, storage, distribution + **strategic reserves**.\n\n### Industrial Revolutions \u2014 exact dates\n| IR | Dates | Defining change |\n|---|---|---|\n| Agrarian | before 1IR | Foraging \u2192 farming + domestication |\n| **1IR** | **1760\u20131840, Britain** | Muscle/animal \u2192 **mechanical power**; birth of factories |\n| **2IR** | **1860\u20131930** | **Electricity**, assembly lines \u2192 **mass production** |\n| **3IR** | Began **1960s** | **Computer and information age** |\n| **4IR** | About **2000** | Fusion across **physical, digital, biological** |\n\n**IR definition:** *abrupt and radical change*. **Causative agents: energy,\ncommunication, transportation.**\n**3IR catalysts:** semiconductors \u00b7 mainframes (1960s) \u00b7 PCs (1970s\u201380s) \u00b7 internet (1990s).\n**3IR drivers:** renewable energy \u00b7 ICT \u00b7 **3D printing**.\n**4IR characteristics:** ubiquitous mobile internet \u00b7 cheaper, smaller sensors \u00b7 **AI and ML**;\nenables **SMART FACTORIES**. Impacts are **HISTORIC, PROFOUND, DISRUPTIVE, MULTIFACETED**.\n**4IR clusters:** Physical \u00b7 Digital \u00b7 Biological.\n**Graphene: 200\u00d7 stronger than steel, one million times thinner than human hair**, good conductor.\n**Four intelligences:** Contextual (**mind**) \u00b7 Emotional (**heart**) \u00b7 Inspired (**soul**) \u00b7 Physical (**body**).\n\n### AI \u2014 models and learning\n**Model** = a **mathematical representation of patterns learned from data**; a *digital brain*.\n**Process:** **Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model**.\n**Accuracy** = % of correct predictions (95/100 = **95%**).\n**Limitations:** **biased data** (Western vs African names) \u00b7 **overfitting** (the crammer) \u00b7 **lack of context** (sarcasm).\n| Type | Learns from |\n|---|---|\n| **Supervised** | **Labelled** data \u2014 spam detection, face unlock |\n| **Unsupervised** | **Unlabelled** data \u2014 Spotify clustering, Google News |\n| **Reinforcement** | **Rewards/penalties** \u2014 self-driving cars, AlphaGo |\n\n**LLM = Large Language Model.** Teachable Machine: **20\u201330 samples per class**.\n**Challenges:** data privacy \u00b7 bias and fairness \u00b7 job displacement \u00b7 **lack of regulation**.\n**Ways forward:** ethical AI \u00b7 inclusive data \u00b7 policies \u00b7 **human-AI collaboration**.\n\n### Fire Awareness\n**Fire triangle: Heat + Fuel + Oxygen.**\n**Control:** **Cooling** (heat) \u00b7 **Smothering** (oxygen) \u00b7 **Starvation** (fuel).\n**Spread:** conduction, convection, radiation, spontaneous combustion.\n\n| Class | Fuel | Examples |\n|---|---|---|\n| **A** | Solids | Paper, wood, textiles |\n| **B** | Flammable liquids | Kerosene, petrol, perfumes, alcohol |\n| **C** | Flammable gases | Methane, acetylene, butane |\n| **D** | Combustible metals | Potassium, sodium, calcium |\n| **E** | Energized electrical | **Least frequent origin** |\n\n**Colour bands:** **RED** water \u00b7 **BLUE** dry powder \u00b7 **CREAM** foam \u00b7 **BLACK** CO\u2082.\n**CO\u2082** is multipurpose (electrical + liquids) and **leaves no residue**.\n**OAU hostel fire ranking:** **Moremi (most)** \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 **PG (least)**.\n**Comparative safety** = manage it **inside**; **Absolute safety** = **evacuate**.\n**In smoke: toxic smoke rises \u2014 lie flat and crawl.**\n\n### Traps to watch\n- Food **Science** studies, **Technology** applies, **Engineering** builds.\n- 1IR **1760\u20131840**; 2IR **1860\u20131930** \u2014 do not swap.\n- Graphene: **200\u00d7 stronger** than steel but **one million times thinner** than hair.\n- **Overfitting** = memorising; the crammer analogy.\n- Class **D** is metals, **E** is electrical.\n- Day 2 used extinguisher **shapes**; Day 4 uses **colour bands**. Answer per the named lecture.\n"
+      "summaryNotes": "### What Day 4 covered\n| # | Lecture | Speaker |\n|---|---|---|\n| 1 | Food Science & Engineering, Value-Addition & National Development | **Dr. W. A. Adebayo** |\n| 2 | Demystifying Artificial Intelligence | **Dr. Aderonke Lawal** |\n| 3 | Fire Awareness & Prevention | **Mr. M. A. Ibrahim** |\n\n### Food Science & Engineering \u2014 Key Words\n**Food Science:** study of physical, microbiological, and chemical makeup of food.\n**Food Technology:** application of food science to selection, preservation, processing, packaging, distribution, and use of safe food.\n**Food Engineering:** multidisciplinary field applying engineering principles (chemical, mechanical, process) to production, processing, preservation, distribution.\n\nBranches of Food Science: Food Chemistry, Processing, Food Nutrition, Food Microbiology, Food Sensory, New Product Development.\nBranches of Food Engineering: Food Safety Engineering, Sustainability and waste management, Process Engineering, Packaging Engineering, Equipment Design, Refrigeration and Cold Chain.\n\n**Value-Addition:** transformation of raw agricultural produce into more desirable, convenient, nutritious products to increase market value, shelf life, acceptability.\nImpact: economic growth, FOOD SECURITY and waste management, rural development, health and nutrition, industrial and technological advancement.\n\n**Food Security:** exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food that meets dietary needs and preferences for active healthy life. Dimensions:\n- Availability: sufficient quantities appropriate quality, domestic production or imports including food aids\n- Access: adequate resources (entitlements) for nutritious diet\n- Utilization: adequate diet, clean water, sanitation, health care to reach nutritional well-being \u2014 non-food inputs importance\n- Stability: must have access at all times, not risk losing due to sudden shocks (economic/climatic crisis) or cyclical events (seasonal food insecurity)\n\nSpeaker contact: Dr. W. A. Adebayo (Food Process Engineering) adebayow@oauife.edu.ng; +234808060410278, Dept of Food Science and Technology, OAU.\n\n### Food Science & 4IR \u2014 mind/heart/soul/body\n**4IR** = blurring of physical, digital, biological. **Food Science & 4IR:** Mind (knowledge), Heart (emotional), Soul (inspired), Body (physical).\n\n### AI \u2014 models and learning\n**Model** = mathematical representation of patterns learned from data; digital brain.\n**Process:** Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model.\n**Accuracy** = % correct predictions (95/100 = 95%). Caution: High accuracy good, but what kinds of errors? Example Western vs African names bias.\n**Limitations:** biased data (Western vs African names), overfitting (crammer \u2014 student crams past questions but can't answer new ones), lack of context (sarcasm).\n| Type | Learns from |\n| **Supervised** | **Labelled** data \u2014 spam detection, face unlock |\n| **Unsupervised** | **Unlabelled** data \u2014 Spotify clustering, Google News |\n| **Reinforcement** | **Rewards/penalties** \u2014 self-driving cars, AlphaGo |\n\n**LLM = Large Language Model.** Teachable Machine: **20\u201330 samples per class**, no coding, webcam, at teachablemachine.withgoogle.com, model learns by generalising not memorising.\n**ChatGPT:** doesn't think, predicts next word via probability not understanding.\n**Challenges:** data privacy, bias and fairness, job displacement, lack of regulation.\n**Ways forward:** ethical AI, inclusive data, policies, human-AI collaboration.\n\n### Fire Awareness\n**Fire triangle: Heat + Fuel + Oxygen.**\n**Control:** Cooling (heat), Smothering (oxygen), Starvation (fuel).\n**Spread:** conduction, convection, radiation, spontaneous combustion.\n**Basic necessities:** food, shelter, clothing. Natural detectors: brain and sensory organs olfactory lobes for smell.\n**Causes:** Negligence & Human Error carelessness poor safety attitudes \"I don't care\", improper handling combustible materials. Statistical Insight OAU hostels: Moremi (most) \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 PG (least). Natural igniter: lightning and thunder. Biological/Animal: house pests/rodents gnawing electrical wires. Common Sources: Flammable Gases acetylene butane methane, Volatile Solvents perfumes alcohol illicit substances Colorado (Indian hemp/synthetic cannabis).\n\n| Class | Fuel | Examples |\n| **A** | Solids | Paper, wood, textiles |\n| **B** | Flammable liquids | Kerosene, petrol, perfumes, alcohol |\n| **C** | Flammable gases | Methane, acetylene, butane |\n| **D** | Combustible metals | Potassium, sodium, calcium |\n| **E** | Energized electrical | **Least frequent origin** |\n\n**Colour bands:** RED water, BLUE dry powder, CREAM foam, BLACK CO\u2082. CO\u2082 multipurpose (electrical + liquids) and leaves no residue. Water extinguishers: stored pressure vs gas cartridge.\n**OAU hostel fire ranking:** Moremi (most) \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 PG (least).\n**Comparative safety** = manage it inside; **Absolute safety** = evacuate.\n**In smoke: toxic smoke rises \u2014 lie flat and crawl.**\n\n### Traps to watch\n- Food **Science** studies, **Technology** applies, **Engineering** builds.\n- 1IR **1760\u20131840**; 2IR **1860\u20131930** \u2014 do not swap.\n- Graphene: **200\u00d7 stronger** than steel but **one million times thinner** than hair.\n- **Overfitting** = memorising; the crammer analogy.\n- Class **D** is metals, **E** is electrical.\n- Day 2 used extinguisher **shapes**; Day 4 uses **colour bands**. Answer per the named lecture.\n- Food Security four dimensions: availability, access, utilization, stability.\n- Value-addition transformation not just price increase.\n- Basic necessities food shelter clothing; detector olfactory lobes.\n- Natural igniter lightning/thunder; biological rodents gnawing wires.\n- Volatile solvents perfumes alcohol Colorado.\n- Comparative safety manage inside, absolute evacuate, smoke lie flat crawl.\n- BLACK CO\u2082 multipurpose no residue.\n"
     },
     {
       "id": "swep-day-5",
       "name": "Day 5 \u2014 Friday, 18th September",
       "categoryId": "swep-days",
-      "summaryNotes": "### What Day 5 covered\nA single session: **Employers\u2019 Expectations from Fresh Graduates in the\n21st-Century Job Market**, delivered by a Representative of the **Nigeria\nEmployers\u2019 Consultative Association (NECA)**.\n\n### Core concepts\n- SIWES is **not** an escape from academics \u2014 it is a period to convert experience\n  into **verifiable skills** that guarantee **employability**\n- It is for **building human networks** \u2014 *network brings good net worth*\n- **Mindset shift:** see yourself as a **professional in training**, not a mere\n  student \u2014 *you are being equipped to **create value and build evidence***\n\n### The three numbers\n| Number | What it counts |\n|---|---|\n| **3 to 5** | Learning **goals** |\n| **4 to 5** | **Days** in the critical first period |\n| **12** | **Weeks** in the action plan |\n\n### Before SIWES\nResearch the **assigned organisation** \u00b7 update **CV and LinkedIn** (**professional\nemail**) \u00b7 define **3\u20135 learning goals** \u00b7 prepare a **professional wardrobe** \u00b7 daily\nroutine, notebooks, documents \u00b7 know your **reporting line** \u00b7 get a **Role Title** \u00b7\nmeet all **ITF requirements**.\n\n### First 4 to 5 days\nFrom day one **observe, listen, introduce yourself properly**. **Ask questions** \u2014\n*career development is a **strategic effort***: *Who is my supervisor? What is my\nresponsibility? **What does success look like?*** Keep a **daily learning record**,\n**dress appropriately**, **protect confidential information**.\n\n### What employers notice (6)\n**Punctuality \u00b7 Communication** (listening and asking questions) **\u00b7 Initiative \u00b7\nTeam work** (supporting colleagues) **\u00b7 Professionalism \u00b7 Integrity**\n> **Beware of office politics! Nobody is your best friend at work.**\n\n### SIWES Learning Loop\n**Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect**\n*Don\u2019t just collect tasks, but **collate evidence** (How, when & what). Have a\n**digital portfolio**. Do not have a **career mismatch**.*\n\n### Skills to develop (7)\nTechnical skills acquisition \u00b7 communication \u00b7 **digital literacy** \u00b7 team work \u00b7\n**speaking/presentation** \u00b7 **work ethics** \u00b7 **networking**.\nOnly **one** is technical \u2014 the rest are soft/transferable.\n\n### Twelve Weeks Action Plan\nSet **3\u20135 goals** \u00b7 **CV and LinkedIn tailored to your goals** \u00b7 build a **job\nportfolio \u2014 document evidence** \u00b7 build **technical skills** \u00b7 **document evidence\nof skills** \u00b7 **close your skill gap**, develop and improve consistently.\n\n### Traps to watch\n- **Prepare notebooks** is *before*; **keep a daily learning record** is *during*.\n- **Communication** and **team work** appear on **both** the employers\u2019 list and the\n  skills list \u2014 they cannot distinguish the two.\n- **Punctuality, integrity, professionalism** are **observed traits**, not listed skills.\n- **12 weeks** is the plan; **8 weeks** is the SWEP minimum; **24 weeks** is SIWES II.\n- The note names the speaker only as a **NECA representative** \u2014 no personal name is given.\n"
+      "summaryNotes": "### What Day 5 covered\nA single session: **Employers\u2019 Expectations from Fresh Graduates in the\n21st-Century Job Market**, delivered by a Representative of the **Nigeria\nEmployers\u2019 Consultative Association (NECA)**.\n\n### Core concepts\n- SIWES is **not** an escape from academics \u2014 it is a period to convert experience\n  into **verifiable skills** that guarantee **employability**\n- It is for **building human networks** \u2014 *network brings good net worth*\n- **Mindset shift:** see yourself as a **professional in training**, not a mere\n  student \u2014 *you are being equipped to **create value and build evidence***\n\n### The three numbers\n| Number | What it counts |\n|---|---|\n| **3 to 5** | Learning **goals** |\n| **4 to 5** | **Days** in the critical first period |\n| **12** | **Weeks** in the action plan |\n\n### Before SIWES\nResearch the **assigned organisation** \u00b7 update **CV and LinkedIn** (**professional\nemail**) \u00b7 define **3\u20135 learning goals** \u00b7 prepare a **professional wardrobe** \u00b7 daily\nroutine, notebooks, documents \u00b7 know your **reporting line** \u00b7 get a **Role Title** \u00b7\nmeet all **ITF requirements**.\n\n### First 4 to 5 days\nFrom day one **observe, listen, introduce yourself properly**. **Ask questions** \u2014\n*career development is a **strategic effort***: *Who is my supervisor? What is my\nresponsibility? **What does success look like?*** Keep a **daily learning record**,\n**dress appropriately**, **protect confidential information**.\n\n### What employers notice (6)\n**Punctuality \u00b7 Communication** (listening and asking questions) **\u00b7 Initiative \u00b7\nTeam work** (supporting colleagues) **\u00b7 Professionalism \u00b7 Integrity**\n> **Beware of office politics! Nobody is your best friend at work.**\n\n### SIWES Learning Loop\n**Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect**\n*Don\u2019t just collect tasks, but **collate evidence** (How, when & what). Have a\n**digital portfolio**. Do not have a **career mismatch**.*\n\n### Skills to develop (7)\nTechnical skills acquisition \u00b7 communication \u00b7 **digital literacy** \u00b7 team work \u00b7\n**speaking/presentation** \u00b7 **work ethics** \u00b7 **networking**.\nOnly **one** is technical \u2014 the rest are soft/transferable.\n\n### Twelve Weeks Action Plan\nSet **3\u20135 goals** \u00b7 **CV and LinkedIn tailored to your goals** \u00b7 build a **job\nportfolio \u2014 document evidence** \u00b7 build **technical skills** \u00b7 **document evidence\nof skills** \u00b7 **close your skill gap**, develop and improve consistently.\n\n### Traps to watch\n- **Prepare notebooks** is *before*; **keep a daily learning record** is *during*.\n- **Communication** and **team work** appear on **both** the employers\u2019 list and the\n  skills list \u2014 they cannot distinguish the two.\n- **Punctuality, integrity, professionalism** are **observed traits**, not listed skills.\n- **12 weeks** is the plan; **8 weeks** is the SWEP minimum; **24 weeks** is SIWES II.\n- The note names the speaker only as a **NECA representative** \u2014 no personal name is given.\n- Network brings net worth \u2014 building human networks.\n- Professional in training mindset \u2014 create value and build evidence.\n- Beware office politics \u2014 nobody is best friend at work.\n- Don\u2019t just collect tasks but collate evidence How/when/what \u2014 digital portfolio \u2014 avoid career mismatch.\n- Close skill gap consistently part of 12-week plan.\n"
     }
   ],
   "eee282": [
@@ -937,6 +937,346 @@ export const questionBank = {
       "lectureId": "d1-l2"
     },
     {
+      "id": "swep_day1_45",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Prof. Shittu's history of ITF, the Fund's support machinery for training includes several mechanisms. Which of the following is listed as part of that machinery?",
+      "options": [
+        "Bearing a proportion of the direct costs incurred by employers in human capital development",
+        "Paying full salaries of all industrial workers nationwide",
+        "Importing all training equipment from abroad",
+        "Replacing university lecturers with industry staff"
+      ],
+      "correct": 0,
+      "short": "ITF bears a proportion of direct costs incurred by employers in human capital development.",
+      "solution": "### Why this is the answer\nThe \"support machinery for training\" slide lists how the Fund supports training:\n1. **Bearing a proportion of the direct costs** incurred by employers in human capital development and performance improvement, focusing on current trends\n2. Assisting/strengthening training capability and facilities nationwide (ICT emphasis)\n3. Directly building its own training facilities\n4. Organizing research and studies into training\n5. Publishing training guides and manuals\n6. Giving **ex-gratia awards**\n\nOnly option A appears verbatim in that list.\n\n### Source\nProf. M. D. Shittu, \"The support machinery for training\" and \"Services\" slides; corroborated by the benefits deck organogram notes.\n\n### Why the others fail\nFull salary payment, importing all equipment, and replacing lecturers are invented \u2014 they confuse ITF's *partial reimbursement* role with total takeover.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_46",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the ITF organizational breakdown in the benefits deck, which of the following is a department of the ITF?",
+      "options": [
+        "Business Training and Development Department (BTD)",
+        "Ministry of Education Inspectorate Department",
+        "National Universities Commission Department",
+        "Students Affairs Department"
+      ],
+      "correct": 0,
+      "short": "Business Training and Development Department (BTD) is an ITF department.",
+      "solution": "### Why this is the answer\nThe benefits deck slide lists ITF departments as:\n- **Business Training and Development Department (BTD)**\n- Administration & Human Resources Department (A&HRD)\n- Finance and Accounts Department (F&AD)\n- Revenue, Inspectorate and Compliance Department (RI&CD)\n- Field Services Department (FSD)\n- Technical and Vocational Skills Training Department (TVSTD)\n- Research and Curriculum Development Department (R&CDD)\n- Information and Communication Technology Department (ICTD)\n- Procurement Department (PD)\n- Corporate Planning Department (CPD)\n\nBTD is explicitly listed.\n\n### Source\nProf. E. A. Taiwo, benefits deck page showing \"The various departments in ITF includes:\".\n\n### Why the others fail\nMinistry of Education Inspectorate, NUC Department, and Students Affairs are not ITF departments \u2014 they belong to other bodies in the SIWES ecosystem.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_47",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the exact numbers for ITF governance and spread as presented across Day 1 lectures?",
+      "options": [
+        "13-member Governing Council, 15 Departments and 5 Units at HQ, 42 Area Offices, 5 Skills Training Centres",
+        "15-member Governing Council, 13 Departments and 5 Units at HQ, 42 Area Offices, 5 Skills Training Centres",
+        "13-member Governing Council, 42 Departments and 5 Units at HQ, 15 Area Offices, 5 Skills Training Centres",
+        "13-member Governing Council, 15 Departments and 5 Units at HQ, 5 Area Offices, 42 Skills Training Centres"
+      ],
+      "correct": 0,
+      "short": "13-member Governing Council, 15 Departments and 5 Units at HQ, 42 Area Offices, 5 Skills Training Centres.",
+      "solution": "### Why this is the answer\nTwo sources converge:\n- Olojede orientation notes: **13-member Governing Council; 15 Departments and 5 Units at HQ; 42 Area Offices; 5 Skills Training Centres**\n- Shittu organogram slide reinforces 42 Area Offices and the department count\n\nThe numbers are deliberately easy to swap \u2014 13 vs 15 vs 42 vs 5 \u2014 so the exact pairing matters.\n\n### Source\nProf. O. A. Olojede summary notes and Prof. Shittu organogram.\n\n### Why the others fail\nEach swaps one pair: 15-member council (wrong), 42 departments (wrong), 5 Area Offices (wrong). The correct set is **13 / 15+5 / 42 / 5**.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_48",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which four units report straight to the Director-General of ITF according to the organogram notes?",
+      "options": [
+        "Legal and Council Affairs, Internal Audit, Public Relations and Publicity, SERVICOM",
+        "Finance and Accounts, Procurement, Field Services, Corporate Planning",
+        "Business Training and Development, Administration & HR, ICT, Research and Curriculum",
+        "Revenue Inspectorate, Technical Vocational Skills Training, Procurement, Finance"
+      ],
+      "correct": 0,
+      "short": "Legal and Council Affairs, Internal Audit, Public Relations and Publicity, SERVICOM report directly to the DG.",
+      "solution": "### Why this is the answer\nThe handwritten Day 1 summary notes explicitly state: \"**Four units report straight to the Director-General: Legal and Council Affairs, Internal Audit, Public Relations and Publicity, SERVICOM**.\"\n\n### Source\nDay 1 summary notes (topicMeta swep-day-1 summaryNotes).\n\n### Why the others fail\nAll other options list regular departments (Finance, Procurement, Field Services, BTD, etc.) which report through the normal hierarchy, not directly to the DG.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_49",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. Shittu, how does the ITF's reimbursement system work for employers?",
+      "options": [
+        "The Fund bears part of the cost incurred by employers in training employees by reimbursing part of the cost for courses undertaken",
+        "The Fund pays 100% of all training costs plus full employee salaries",
+        "The Fund only reimburses foreign training, not local training",
+        "The Fund reimburses students directly, not employers"
+      ],
+      "correct": 0,
+      "short": "ITF bears part of the cost incurred by employers by reimbursing part of course costs.",
+      "solution": "### Why this is the answer\nSlide text: \"**ITF reimburses employers for the development and support of training programmes they offer; i.e., the Fund bears part of the cost incurred by employers in training their employees by reimbursing part of the cost incurred for courses undertaken.**\"\n\nOther returns include general availability of trained and mobile manpower throughout the economy \u2014 trainees complement workforce at subsidized cost.\n\n### Source\nProf. Shittu, History of ITF deck.\n\n### Why the others fail\n100% plus salaries is exaggerated; foreign-only is invented; reimbursing students directly contradicts the employer-focused model.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_50",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Prof. E. A. Taiwo lists benefits of SIWES to Science and Technology. Which is NOT listed as one of those benefits?",
+      "options": [
+        "Exposure to modern technology and industrial environments",
+        "Development of practical and technical skills",
+        "Bridging the gap between theory and practice",
+        "Automatic award of first-class honours upon completion"
+      ],
+      "correct": 3,
+      "short": "Automatic award of first-class is not a SIWES benefit.",
+      "solution": "### Why this is the answer\nBenefits slide lists:\n1. **Bridging the gap between theory and practice** \u2014 apply scientific principles to real-life\n2. **Development of practical and technical skills** \u2014 hands-on experience with lab equipment, industrial machines, software, analytical techniques\n3. **Exposure to modern technology and industrial environments** \u2014 understanding current technological developments, familiarity with modern equipment, automation, digital technologies\n\nAutomatic first-class is never mentioned and would contradict tertiary assessment.\n\n### Source\nProf. Taiwo, Benefits of Industrial Training deck.\n\n### Why the others fail\nOptions A, B, C are verbatim benefits. Only D is fabricated.",
+      "lectureId": "d1-l3"
+    },
+    {
+      "id": "swep_day1_51",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the eligibility criterion for a student to be eligible for SIWES allowance as per Prof. Taiwo's slide?",
+      "options": [
+        "Satisfactory completion of 6 months SIWES, evidenced from Logbooks, Form 8 and Form SPE-1, plus adequate vetting of Logbooks",
+        "Completion of 3 months SWEP with attendance register only",
+        "Payment of N5,000 to ITF headquarters",
+        "Automatic eligibility for all 200-level students regardless of logbook"
+      ],
+      "correct": 0,
+      "short": "Eligibility requires 6 months SIWES, logbooks, Form 8, SPE-1, and vetting.",
+      "solution": "### Why this is the answer\nEligibility slide states:\n- **Satisfactory completion of 6 months SIWES, evidenced from Logbooks, Form 8 and Form SPE-1**\n- **Adequate vetting of Logbooks, etc**\n\nThe 6 months corresponds to SIWES II (24 weeks).\n\n### Source\nProf. Taiwo, Allowances/Eligibility slide.\n\n### Why the others fail\n3 months SWEP, N5,000 payment, and automatic eligibility contradict the 6-month, evidence-based, vetted requirement.",
+      "lectureId": "d1-l3"
+    },
+    {
+      "id": "swep_day1_52",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does Prof. Olojede state as the distinction between SWEP and SIWES in terms of location and focus?",
+      "options": [
+        "SWEP is undergone traditionally inside the school focusing on general workshop skills, safety protocols and hands-on tool usage; SIWES is undergone in external industries bridging theory and industrial reality",
+        "SWEP and SIWES are both undergone inside the school with no difference",
+        "SWEP is external and SIWES is internal",
+        "SWEP is for 400-level only while SIWES is for 200-level only"
+      ],
+      "correct": 0,
+      "short": "SWEP is inside school (workshop skills, safety, tools); SIWES is external (bridging theory and industry).",
+      "solution": "### Why this is the answer\nOlojede slide:\n- **Module 1 - SWEP: Undergone traditionally inside the school. Focuses on general workshop skills, safety protocols, and hands-on tool usage.**\n- **Module 2 - SIWES: Undergone in external industries. Bridges the gap between theory and industrial reality, giving graduates a foretaste of the labor market.**\n\n### Source\nProf. Olojede, Background & Rationale and Training Timelines.\n\n### Why the others fail\nBoth inside, swapped locations, and level-only distinctions misrepresent the location/focus distinction.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_53",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What resume advantage does Prof. Olojede attribute to SWEP/SIWES?",
+      "options": [
+        "Affords fresh graduates the highly valuable benefit of claiming cognate work experience directly on their resumes",
+        "Guarantees automatic employment in Federal Government",
+        "Exempts graduates from NYSC",
+        "Provides free foreign scholarships to all participants"
+      ],
+      "correct": 0,
+      "short": "SWEP/SIWES affords fresh graduates cognate work experience for their resumes.",
+      "solution": "### Why this is the answer\nSlide: \"**Resume Advantage: Affords fresh graduates the highly valuable benefit of claiming cognate work experience directly on their resumes.**\"\n\n### Source\nProf. Olojede, Background & Rationale.\n\n### Why the others fail\nAutomatic Federal job, NYSC exemption, and free foreign scholarships are not stated and would be false promises.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_54",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Amphitheatre Ground Rules Part 1, what is the rule on punctual seating and device usage?",
+      "options": [
+        "Must be fully seated by 08:30 every morning and by 12:25 every afternoon; all mobile phones must be on silence",
+        "Must be seated by 09:00 morning only; phones can be used freely",
+        "No seating time specified; devices must be switched off completely",
+        "Must be seated by 08:00 morning and 12:00 afternoon; phones on vibration allowed"
+      ],
+      "correct": 0,
+      "short": "Fully seated by 08:30 morning and 12:25 afternoon; devices on silence.",
+      "solution": "### Why this is the answer\nVenue Decorum & Integrity slides:\n- **Punctual Seating: Trainees must be fully seated by 08:30 every morning and by 12:25 every single afternoon.**\n- **Device Silence: All mobile phones/devices must be on silence.**\n\nActive engagement, no side-talking also listed.\n\n### Source\nProf. Olojede, Venue Decorum & Integrity.\n\n### Why the others fail\n09:00, no time, 08:00/12:00, and vibration allowance contradict the exact 08:30/12:25 and silence rule.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_55",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who served as ITF Chief Executive from 1976 to 1979?",
+      "options": [
+        "Alhaji Muhammed Dikko, Director",
+        "Dr. Abel Ubeku, OFR, Secretary",
+        "Mrs. Ekei Nene Archibong, Secretary",
+        "Alhaji Hassan Ahmed II, mni, MFR, Director-General"
+      ],
+      "correct": 0,
+      "short": "Alhaji Muhammed Dikko served 1976\u20131979 as Director.",
+      "solution": "### Why this is the answer\nChief Executives table:\n| Period | Chief Executive |\n| 1971\u20131973 | Dr. Abel Ubeku, OFR Secretary |\n| 1973\u20131975 | Mrs. Ekei Nene Archibong Secretary |\n| **1976\u20131979** | **Alhaji Muhammed Dikko Director** |\n| 1980\u20131989 | Alhaji Muhammed Lawal Tildun Wada Director-General |\n\n### Source\nProf. Taiwo, ITF Chief Executives from Inception to Date.\n\n### Why the others fail\nUbeku is 1971-73, Archibong 1973-75, Hassan Ahmed II 1989-2000 \u2014 all adjacent but wrong period.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_56",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who served as ITF Chief Executive from 1980 to 1989?",
+      "options": [
+        "Alhaji Muhammed Lawal Tildun Wada, Director-General",
+        "Prof. Olu E. Akeredolu/Akerejola, Director-General",
+        "Sir Joseph Ntung Ari, KSM, KSS, Director-General",
+        "Mr. Dickson Onuoha, Acting Director-General"
+      ],
+      "correct": 0,
+      "short": "Alhaji Muhammed Lawal Tildun Wada served 1980\u20131989.",
+      "solution": "### Why this is the answer\nTable row: **1980\u20131989 Alhaji Muhammed Lawal Tildun Wada Director-General**\n\n### Source\nProf. Taiwo chief executives slide.\n\n### Why the others fail\nAkeredolu is 2000-2006, Ari is 2016-2023, Onuoha is 2023-2024 acting \u2014 all different eras.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_57",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who served as ITF Chief Executive from 2016 to 2023?",
+      "options": [
+        "Sir Joseph Ntung Ari, KSM, KSS, Director-General",
+        "Mrs. Juliet O. E. Chukkas-Onaeko, MFR, Director-General",
+        "Dr. Afiz Oluwatoyin Ogun, Director-General",
+        "Alhaji Hassan Ahmed II, mni, MFR, Director-General"
+      ],
+      "correct": 0,
+      "short": "Sir Joseph Ntung Ari served 2016\u20132023.",
+      "solution": "### Why this is the answer\nRow: **2016\u20132023 Sir Joseph Ntung Ari, KSM, KSS Director-General**\n\n### Source\nProf. Taiwo chief executives.\n\n### Why the others fail\nChukkas-Onaeko is 2014-2016, Ogun is 2024-present, Hassan Ahmed II is 1989-2000.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_58",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Prof. Shittu, what provides for contributions on the part of employers and subventions on the part of Federal Government to finance ITF?",
+      "options": [
+        "The Act provides for contributions on the part of employers and for subventions on the part of Federal Government",
+        "A voluntary donation scheme by students",
+        "Only foreign grants from UNESCO",
+        "Only internally generated revenue from SIWES fees"
+      ],
+      "correct": 0,
+      "short": "The Act provides for employer contributions and Federal Government subventions.",
+      "solution": "### Why this is the answer\nHistory slide: \"**To finance the scheme the Act provides for contributions on the part of employers and for subventions on the part of the Federal Government.**\"\n\n### Source\nProf. Shittu, History of ITF.\n\n### Why the others fail\nVoluntary student donations, UNESCO-only, and SIWES fees-only contradict the Act-based dual financing.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_59",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is listed as a service offered by ITF under 'Training in Poverty Alleviation and Self Employment' category?",
+      "options": [
+        "Training in Poverty Alleviation and Self Employment is itself a listed ITF service",
+        "Training in Space Technology and Satellite Launch",
+        "Training in Underwater Basket Weaving",
+        "Training in Forex Trading and Cryptocurrency"
+      ],
+      "correct": 0,
+      "short": "Training in Poverty Alleviation and Self Employment is a listed ITF service.",
+      "solution": "### Why this is the answer\nITF Services slide explicitly lists:\n- Engineering and Technology Training\n- Management and Supervisory Training\n- Industrial Productivity and Efficiency (In-plant) Training\n- Safety Training\n- Computer Training\n- Vocational and Apprentice Training\n- Applied Research and Methodology Services & Training\n- Training in Accounting & Financial Management\n- Training in Secretarial and Modern Office Management\n- **Training in Poverty Alleviation and Self Employment**\n- Training in Instructional Technology\n- Train the Trainer Programmes\n- Placement of Students...\n- Advisory and Management Consulting\n\n### Source\nProf. Shittu services slides.\n\n### Why the others fail\nSpace technology, underwater basket weaving, forex/crypto are not listed ITF services in the deck.",
+      "lectureId": "d1-l2"
+    },
+    {
+      "id": "swep_day1_60",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the current allowance question mark noted in Prof. Taiwo's allowance slide for present amount?",
+      "options": [
+        "The present amount is shown as ??? indicating not specified/open",
+        "The present amount is N10,000 fixed",
+        "The present amount is N50,000 fixed",
+        "The present amount is $100 fixed"
+      ],
+      "correct": 0,
+      "short": "Present amount is shown as ??? \u2014 not specified.",
+      "solution": "### Why this is the answer\nAllowances slide lists:\n1974 \u2013 N30/month\n1976 \u2013 N90/month\n1981 \u2013 N250/month\n2000 \u2013 N2,500/month\n**The present amount ???**\n\nThe ??? is a deliberate trap \u2014 it means the deck leaves present amount open.\n\n### Source\nProf. Taiwo allowances slide.\n\n### Why the others fail\nN10,000, N50,000, $100 are invented figures not in slide; the slide explicitly shows ???.",
+      "lectureId": "d1-l3"
+    },
+    {
+      "id": "swep_day1_61",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which faculty's 'Farm Year' is described as a consolidated 1-year placement throughout entire fourth academic session?",
+      "options": [
+        "Faculty of Agriculture",
+        "Faculty of Technology",
+        "Faculty of Arts",
+        "Faculty of Law"
+      ],
+      "correct": 0,
+      "short": "Faculty of Agriculture employs a consolidated 1-year Farm Year.",
+      "solution": "### Why this is the answer\nProgram Timelines slide: \"**Faculty of Agriculture: Employs a consolidated 1-year 'Farm Year' placement throughout their entire fourth academic session.**\"\n\n### Source\nProf. Olojede.\n\n### Why the others fail\nTechnology, Arts, Law are not described as having Farm Year \u2014 only Agriculture.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_62",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the consequence of 'You must sign the register for yourself and by yourself only' violation?",
+      "options": [
+        "Attempting to sign for another student is handled as a criminal act",
+        "A warning letter only",
+        "No consequence, it is allowed",
+        "Automatic extra credit"
+      ],
+      "correct": 0,
+      "short": "Signing for another is handled as a criminal act.",
+      "solution": "### Why this is the answer\nAttendance Integrity rule: \"**You must sign the register for yourself and by yourself only. Attempting to sign for another student is handled as a criminal act.**\"\n\n### Source\nProf. Olojede Venue Decorum.\n\n### Why the others fail\nWarning only, allowed, extra credit contradict the criminal act handling.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_63",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Day 1 lectures, which programmes are exempt from specific practical modules under 4-Year Program Exemptions?",
+      "options": [
+        "Architecture, Fine and Applied Arts, and Industrial Chemistry",
+        "Electrical Engineering, Mechanical Engineering, Chemical Engineering",
+        "Medicine, Pharmacy, Nursing",
+        "Computer Science, Mathematics, Physics"
+      ],
+      "correct": 0,
+      "short": "Architecture, Fine and Applied Arts, and Industrial Chemistry are exempt.",
+      "solution": "### Why this is the answer\nSlide: \"**4-Year Program Exemptions: Programs like Architecture, Fine and Applied Arts, and Industrial Chemistry are exempt from specific practical modules.**\"\n\n### Source\nProf. Olojede Training Timelines.\n\n### Why the others fail\nEngineering, Medicine/Pharmacy/Nursing, Computer Science/Math/Physics are not listed as exempt in this context.",
+      "lectureId": "d1-l1"
+    },
+    {
+      "id": "swep_day1_64",
+      "topicId": "swep-day-1",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the name of the award given by ITF as part of its support machinery?",
+      "options": [
+        "Ex-gratia awards",
+        "Nobel Prize awards",
+        "Oscar awards",
+        "Grammy awards"
+      ],
+      "correct": 0,
+      "short": "ITF gives ex-gratia awards.",
+      "solution": "### Why this is the answer\nSupport machinery list ends with: \"**giving ex-gratia awards**\".\n\n### Source\nProf. Shittu.\n\n### Why the others fail\nNobel, Oscar, Grammy are not ITF awards \u2014 ex-gratia is the term used.",
+      "lectureId": "d1-l2"
+    },
+    {
       "id": "swep_day2_01",
       "topicId": "swep-day-2",
       "kind": "theory",
@@ -1702,6 +2042,346 @@ export const questionBank = {
       "lectureId": "d2-l3"
     },
     {
+      "id": "swep_day2_46",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In the Substance Abuse lecture, which of the following is listed as a physical sign?",
+      "options": [
+        "Frequent nosebleeds or sniffing (may indicate snorting substances)",
+        "Failure to submit assignments",
+        "Involvement in fights or cultism",
+        "Financial difficulties or repeated borrowing"
+      ],
+      "correct": 0,
+      "short": "Frequent nosebleeds or sniffing is a physical sign.",
+      "solution": "### Why this is the answer\nPhysical Signs slide lists:\n- Bloodshot or glassy eyes\n- Sudden weight loss or gain\n- Unusual body odours (alcohol, cannabis)\n- Poor hygiene and self-care\n- **Frequent nosebleeds or sniffing (may indicate snorting)**\n- Tremors, slurred speech, or unsteady gait\n\n### Source\nDr. Olatunji, Substance Abuse \u2014 Signs and Symptoms.\n\n### Why the others fail\nFailure to submit assignments is academic; fights/cultism is social; financial difficulties is social/lifestyle \u2014 not physical.",
+      "lectureId": "d2-l1"
+    },
+    {
+      "id": "swep_day2_47",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is listed as a behavioural change associated with substance abuse?",
+      "options": [
+        "Loss of interest in hobbies, academics, or extracurriculars",
+        "Bloodshot or glassy eyes",
+        "Frequent absenteeism from lectures",
+        "Hallucinations or delusions"
+      ],
+      "correct": 0,
+      "short": "Loss of interest in hobbies/academics is a behavioural change.",
+      "solution": "### Why this is the answer\nBehavioural Changes slide:\n- Sudden change in friend groups, especially peers known for drug use\n- Secretive or suspicious behavior\n- Lying, stealing, manipulation to obtain money/substances\n- Increased impulsivity or risk-taking\n- **Loss of interest in hobbies, academics, or extracurriculars**\n- Neglect of responsibilities (missed classes/deadlines)\n\n### Source\nDr. Olatunji.\n\n### Why the others fail\nBloodshot eyes is physical; absenteeism is academic; hallucinations is psychological/emotional.",
+      "lectureId": "d2-l1"
+    },
+    {
+      "id": "swep_day2_48",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is categorized as a psychological and emotional symptom of substance abuse?",
+      "options": [
+        "Unexplained mood swings or irritability",
+        "Sudden weight loss or gain",
+        "Sudden change in friend groups",
+        "Frequent visits to high-risk areas (drug joints)"
+      ],
+      "correct": 0,
+      "short": "Unexplained mood swings or irritability is psychological/emotional.",
+      "solution": "### Why this is the answer\nPsychological/Emotional Symptoms slide lists:\n- **Unexplained mood swings or irritability**\n- Anxiety, restlessness, panic attacks\n- Periods of excessive energy/agitation (stimulant)\n- Depression, social withdrawal, emotional numbness\n- Hallucinations/delusions (severe cases)\n\n### Source\nDr. Olatunji.\n\n### Why the others fail\nWeight loss is physical; change friend groups is behavioural; visits to drug joints is social/lifestyle.",
+      "lectureId": "d2-l1"
+    },
+    {
+      "id": "swep_day2_49",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which is listed as a social and lifestyle indicator of substance abuse?",
+      "options": [
+        "Unusual sleeping patterns (e.g., insomnia or excessive sleeping)",
+        "Tremors, slurred speech, or unsteady gait",
+        "Declining grades and academic performance",
+        "Anxiety, restlessness, or panic attacks"
+      ],
+      "correct": 0,
+      "short": "Unusual sleeping patterns is a social/lifestyle indicator.",
+      "solution": "### Why this is the answer\nSocial and Lifestyle Indicators slide:\n- Financial difficulties or repeated borrowing\n- Involvement in fights, cultism, confrontations\n- Conflict with family/roommates\n- **Unusual sleeping patterns (insomnia or excessive sleeping)**\n- Frequent visits to high-risk areas (drug joints)\n\n### Source\nDr. Olatunji.\n\n### Why the others fail\nTremors is physical; declining grades is academic; anxiety is psychological.",
+      "lectureId": "d2-l1"
+    },
+    {
+      "id": "swep_day2_50",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is listed under 'Preventive Strategies' for substance abuse?",
+      "options": [
+        "Life Skills and Coping Mechanisms",
+        "Counselling and Psychological Support",
+        "Medical Treatment and Rehabilitation",
+        "Early Identification and Screening"
+      ],
+      "correct": 0,
+      "short": "Life Skills and Coping Mechanisms is a preventive strategy.",
+      "solution": "### Why this is the answer\nPrevention vs Intervention:\n**Preventive (before):**\n- Campus-Based Drug Education\n- **Life Skills and Coping Mechanisms**\n- Peer Support Networks\n- Restricting Access to Substances\n- Parental and Community Involvement\n\n**Intervention (after):**\n- Early Identification and Screening\n- Counselling and Psychological Support\n- Medical Treatment and Rehabilitation\n- Policy and Disciplinary Framework\n- Digital and Media Campaigns\n\n### Source\nDr. Olatunji, Prevention and Intervention Strategies.\n\n### Why the others fail\nCounselling, medical treatment, early screening are intervention, not preventive.",
+      "lectureId": "d2-l1"
+    },
+    {
+      "id": "swep_day2_51",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which organization is part of Multi-Sectoral Collaboration for substance abuse intervention?",
+      "options": [
+        "National Drug Law Enforcement Agency (NDLEA)",
+        "Nigerian Stock Exchange",
+        "Federal Inland Revenue Service",
+        "Nigerian Football Federation"
+      ],
+      "correct": 0,
+      "short": "NDLEA is part of multi-sectoral collaboration.",
+      "solution": "### Why this is the answer\nMulti-Sectoral Collaboration slide lists:\n- **National Drug Law Enforcement Agency (NDLEA)**\n- Federal Ministry of Health\n- Non-Governmental Organizations (NGOs)\n- Campus health services\n\n### Source\nDr. Olatunji.\n\n### Why the others fail\nStock Exchange, FIRS, Football Federation are not listed in this collaboration.",
+      "lectureId": "d2-l1"
+    },
+    {
+      "id": "swep_day2_52",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Workshop & Industrial Safety, what does OSHA and NIOSH set standards for?",
+      "options": [
+        "Respirator use, focusing on proper selection, fit testing, and medical evaluation",
+        "Academic grading systems",
+        "Football match regulations",
+        "Catering services in workshops"
+      ],
+      "correct": 0,
+      "short": "OSHA and NIOSH set standards for respirator use (selection, fit testing, medical evaluation).",
+      "solution": "### Why this is the answer\nPPE slide: \"**In industrial settings, respirators are crucial for worker safety when exposed to hazardous airborne contaminants. OSHA and NIOSH set standards for respirator use, focusing on proper selection, fit testing, and medical evaluation.** Respirators are categorized as either air-purifying (APRs) or supplied-air (SARs).\"\n\n### Source\nProf. Adeleke, Workshop & Industrial Safety \u2014 PPE respirator slide.\n\n### Why the others fail\nAcademic grading, football, catering are unrelated to OSHA/NIOSH respirator standards.",
+      "lectureId": "d2-l2"
+    },
+    {
+      "id": "swep_day2_53",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the difference between APRs and SARs in respirator categorization?",
+      "options": [
+        "APRs are air-purifying, SARs are supplied-air",
+        "APRs are supplied-air, SARs are air-purifying",
+        "Both are air-purifying",
+        "Both are supplied-air"
+      ],
+      "correct": 0,
+      "short": "APRs are air-purifying, SARs are supplied-air.",
+      "solution": "### Why this is the answer\nSlide: \"Respirators are categorized as either **air-purifying (APRs)** or **supplied-air (SARs)**, and must be appropriate for specific workplace hazards.\"\n\n### Source\nProf. Adeleke.\n\n### Why the others fail\nSwapped definitions or both same are incorrect per slide.",
+      "lectureId": "d2-l2"
+    },
+    {
+      "id": "swep_day2_54",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which materials are commonly used for protective clothing in nuclear power plants?",
+      "options": [
+        "Tyvek, neoprene, and nitrile, often with flame-resistant (FR) fabrics like Anti-C/FR",
+        "Cotton and silk only",
+        "Paper and cardboard",
+        "Glass and metal sheets"
+      ],
+      "correct": 0,
+      "short": "Tyvek, neoprene, nitrile with FR fabrics like Anti-C/FR are used in nuclear plants.",
+      "solution": "### Why this is the answer\nPPE nuclear slide: \"Commonly used materials include **Tyvek, neoprene, and nitrile, often in conjunction with specialized flame-resistant (FR) fabrics like Anti-C/FR**. Proper donning, doffing, and decontamination procedures are also essential.\"\n\n### Source\nProf. Adeleke.\n\n### Why the others fail\nCotton/silk, paper/cardboard, glass/metal are not listed as nuclear PPE materials.",
+      "lectureId": "d2-l2"
+    },
+    {
+      "id": "swep_day2_55",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the most common symbol for protective clothing in nuclear power plants?",
+      "options": [
+        "A figure of a worker in a full-body suit, often with a respirator or gas mask, and the universal radiation symbol (trefoil) in yellow and black or black and white",
+        "A simple red cross",
+        "A green leaf",
+        "A blue circle with a white tick"
+      ],
+      "correct": 0,
+      "short": "Figure of worker in full-body suit with respirator/gas mask and radiation trefoil in yellow-black or black-white.",
+      "solution": "### Why this is the answer\nSlide: \"**The most common symbol for protective clothing in nuclear power plants is a figure of a worker in a full-body suit, often with a respirator or gas mask, and the universal radiation symbol (trefoil) present, usually in yellow and black or black and white.**\"\n\n### Source\nProf. Adeleke.\n\n### Why the others fail\nRed cross (medical), green leaf (environment), blue circle white tick (quality) are not nuclear PPE symbols.",
+      "lectureId": "d2-l2"
+    },
+    {
+      "id": "swep_day2_56",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is an example of a physical hazard in the workshop?",
+      "options": [
+        "Noise, vibration, radiation, extreme temperatures, and poor lighting",
+        "Bacteria, viruses, fungi",
+        "Repetitive tasks and awkward postures",
+        "Toxic substances and flammable materials"
+      ],
+      "correct": 0,
+      "short": "Noise, vibration, radiation, extreme temperatures, poor lighting are physical hazards.",
+      "solution": "### Why this is the answer\nHazard classification:\n- **Chemical Hazards:** toxic substances, flammable, corrosive agents\n- **Physical Hazards:** **noise, vibration, radiation, extreme temperatures, poor lighting**\n- **Ergonomic Hazards:** repetitive tasks, awkward postures, improper workstation design \u2192 musculoskeletal disorders\n- **Biological Hazards:** bacteria, viruses, fungi\n\n### Source\nProf. Adeleke, Common Industrial Hazards.\n\n### Why the others fail\nBacteria is biological, repetitive tasks is ergonomic, toxic substances is chemical.",
+      "lectureId": "d2-l2"
+    },
+    {
+      "id": "swep_day2_57",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which control measure is described as the most effective?",
+      "options": [
+        "Elimination \u2014 completely removing the hazard from the workplace",
+        "Personal Protective Equipment (PPE)",
+        "Administrative Controls",
+        "Substitution"
+      ],
+      "correct": 0,
+      "short": "Elimination \u2014 completely removing the hazard \u2014 is most effective.",
+      "solution": "### Why this is the answer\nControl Measures slide lists in hierarchy:\n- **Elimination: Completely removing the hazard from the workplace is the most effective control measure.**\n- Substitution: Replacing hazardous materials/processes with safer alternatives\n- Engineering Controls: physical changes like machine guarding, ventilation, noise reduction\n- Administrative Controls: procedures, policies, training\n- PPE: gloves, masks, respirators\n\n### Source\nProf. Adeleke.\n\n### Why the others fail\nPPE is least effective (last resort), administrative and substitution are less effective than elimination.",
+      "lectureId": "d2-l2"
+    },
+    {
+      "id": "swep_day2_58",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In employability, what does the presentation say about many graduates being unemployable?",
+      "options": [
+        "Many graduates are unemployable, hence difficulty to get jobs in a world becoming increasingly demanding and competitive \u2014 example of CBN recruitment exercise/software engineers in Germany",
+        "All graduates are automatically employable",
+        "Unemployment is only about insufficient number of jobs",
+        "Employability is not important for job seeking"
+      ],
+      "correct": 0,
+      "short": "Many graduates are unemployable; example CBN recruitment and software engineers in Germany.",
+      "solution": "### Why this is the answer\nSlides 4-5:\n- \"**Not just about insufficient number of jobs**\"\n- \"**Many graduates \u2026 are unemployable** Hence, difficulty to get jobs in a world becoming increasingly demanding and competitive on all fronts Example of CBN recruitment exercise/software engineers in Germany\"\n\n### Source\nProf. Ekanola, 21st-Century Employability Skills.\n\n### Why the others fail\nAutomatically employable, only insufficient jobs, not important are opposite of slide message.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_59",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the 8 clusters of 21st-century employability skills?",
+      "options": [
+        "Communication and interpersonal; Critical thinking and problem-solving; Digital and technological; Creativity and innovation; Collaboration and teamwork; Personal effectiveness and emotional intelligence; Career management, entrepreneurship and leadership; Adaptability, lifelong learning and professional development",
+        "Only technical skills and academic grades",
+        "Only digital skills",
+        "Only communication and nothing else"
+      ],
+      "correct": 0,
+      "short": "The 8 clusters cover communication, critical thinking, digital, creativity, teamwork, emotional intelligence, career/entrepreneurship/leadership, adaptability/lifelong learning.",
+      "solution": "### Why this is the answer\nSlide 8 lists exactly:\n1. Communication and interpersonal skills\n2. Critical thinking and problem-solving skills\n3. Digital and technological skills\n4. Creativity and innovation skills\n5. Collaboration and teamwork\n6. Personal effectiveness and emotional intelligence\n7. Career management, entrepreneurship and leadership\n8. Adaptability, lifelong learning and professional development\n\n### Source\nProf. Ekanola.\n\n### Why the others fail\nOnly technical, only digital, only communication are incomplete \u2014 the model is 8 clusters.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_60",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to employability lecture, what should the goal be regarding AI?",
+      "options": [
+        "The goal should not be to compete with AI but to become a professional who can work intelligently with AI \u2014 AI-enabled professionals rather than AI specialists",
+        "The goal should be to compete with AI and defeat it",
+        "The goal should be to ignore AI completely",
+        "The goal should be to ban AI from workplace"
+      ],
+      "correct": 0,
+      "short": "Goal is not to compete with AI but to become AI-enabled professional who works intelligently with AI.",
+      "solution": "### Why this is the answer\nAI Literacy slides:\n- \"**The goal should not be to compete with AI. It should be to become a professional who can work intelligently with AI**\"\n- \"**The future may belong more to: AI-enabled professionals rather than simply AI specialists**\"\n\n### Source\nProf. Ekanola, AI Literacy.\n\n### Why the others fail\nCompete/defeat, ignore, ban contradict the AI-enabled professional message.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_61",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which of the following is listed as part of communication skills acquisition through practice?",
+      "options": [
+        "Present & Debate, Teach & Participate in seminars, Join professional organisations, Write reports",
+        "Sleep all day and avoid speaking",
+        "Never ask for feedback",
+        "Avoid all professional organisations"
+      ],
+      "correct": 0,
+      "short": "Present & Debate, Teach & Participate in seminars, Join professional organisations, Write reports are ways to acquire communication skills.",
+      "solution": "### Why this is the answer\nHow to acquire communication skills slide: \"We acquire them through practice. Speak & Write, Present & Debate, Teach & Participate in seminars, Join professional organisations, Write reports, Ask for feedback & record yourself speaking and review performance.\"\n\n### Source\nProf. Ekanola.\n\n### Why the others fail\nSleep all day, never ask feedback, avoid organisations are opposite of practice.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_62",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the 'farmer, fox, goose, bag of beans' puzzle used to illustrate?",
+      "options": [
+        "Critical thinking and problem-solving \u2014 solving problems for which there is no obvious answer",
+        "Physical strength",
+        "Financial accounting",
+        "Chemical engineering"
+      ],
+      "correct": 0,
+      "short": "It illustrates critical thinking/problem-solving for problems with no obvious answer.",
+      "solution": "### Why this is the answer\nSlide 16 presents farmer puzzle as an easy exercise under Critical Thinking / Problem-Solving: \"A farmer bought a fox, a goose and a bag of beans... If left unattended together the goose will eat beans or fox will eat goose. How did he do it?\" It follows slides on exposing to complex questions, reading widely, comparing perspectives, debating controversial issues, solving problems with no obvious answer.\n\n### Source\nProf. Ekanola.\n\n### Why the others fail\nPhysical strength, accounting, chemical engineering are not the skill being illustrated.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_63",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the recommended way to develop adaptability?",
+      "options": [
+        "Put yourself outside your comfort zone, learn new skills, take on unfamiliar challenging assignments, work with different people, move across disciplines, learn from failure",
+        "Avoid becoming too comfortable is discouraged",
+        "Stay in comfort zone forever",
+        "Never learn new skills"
+      ],
+      "correct": 0,
+      "short": "Put outside comfort zone, learn new skills, take unfamiliar assignments, work different people, move across disciplines, learn from failure.",
+      "solution": "### Why this is the answer\nHow to develop adaptability slide: \"Put yourself outside your comfort zone, Learn new skills, Take on unfamiliar, challenging assignments, Work with different people, Move across disciplines, Learn from failure, Avoid becoming too comfortable with what you already know.\"\n\n### Source\nProf. Ekanola.\n\n### Why the others fail\nStay in comfort zone and never learn new skills are opposite; avoiding too comfortable is actually encouraged, so option B misstates.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_64",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to the lecture, what does a portfolio demonstrate that a CV only claims?",
+      "options": [
+        "A CV tells what you claim you can do; a portfolio can demonstrate it with evidence of projects, designs, software, etc.",
+        "A portfolio is same as CV with no difference",
+        "A portfolio is less important than CV",
+        "A portfolio should contain only personal photos"
+      ],
+      "correct": 0,
+      "short": "CV tells claim; portfolio demonstrates with evidence.",
+      "solution": "### Why this is the answer\nBuilding a Portfolio slide: \"**A CV tells an employer what you claim you can do. A portfolio can demonstrate it.** A graduate should therefore consider developing a portfolio containing: research projects; presentations; software projects; designs; business ideas; community projects; certificates; professional achievements; evidence of impact.\"\n\n### Source\nProf. Ekanola.\n\n### Why the others fail\nSame as CV, less important, only personal photos contradict the evidence-demonstration purpose.",
+      "lectureId": "d2-l3"
+    },
+    {
+      "id": "swep_day2_65",
+      "topicId": "swep-day-2",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the time management advice given in employability lecture?",
+      "options": [
+        "Do a time audit, block out distractions, schedule yourself, avoid multitasking, insist others respect your time, keep call to action in mind, get enough downtime and rest",
+        "Multitask always and never schedule",
+        "Never block distractions",
+        "Avoid rest and downtime completely"
+      ],
+      "correct": 0,
+      "short": "Do time audit, block distractions, schedule, avoid multitasking, insist respect for time, keep call to action, get downtime/rest.",
+      "solution": "### Why this is the answer\nTime Management slide lists:\n- Do a time audit\n- Block out distractions\n- Schedule yourself\n- Avoid multitasking\n- Insist that others respect your time\n- Keep your call to action in mind\n- Get enough down time and rest\n\n### Source\nProf. Ekanola.\n\n### Why the others fail\nAlways multitask, never block distractions, avoid rest are opposite of advice.",
+      "lectureId": "d2-l3"
+    },
+    {
       "id": "swep_day3_01",
       "topicId": "swep-day-3",
       "kind": "theory",
@@ -2379,6 +3059,346 @@ export const questionBank = {
       "correct": 2,
       "short": "Prof. V. Omidiji is credited as PhD, REng (Mech), MNIMechE, MNIEM, MNSE.",
       "solution": "### Why this is the answer\nEach Day 3 deck carries its author's own credentials on the title slide:\n\n| Speaker | As stated on their material |\n|---|---|\n| Prof. A. B. Ayanwale | Professor, **Department of Agricultural Economics**, OAU |\n| Dr. F. K. Ariyo | **Department of Electronic and Electrical Engineering**, OAU |\n| **Prof. V. Omidiji** | **PhD, REng (Mech), MNIMechE, MNIEM, MNSE** |\n\nOnly the Omidiji pairing is correct.\n\n### The detail worth pausing on\nThe 5G entrepreneurship lecture was delivered by a professor of **Agricultural\nEconomics** \u2014 not an engineer. That is not an oddity; it reinforces the lecture's\nown argument that a 5G venture needs **domain experts and business strategists**,\nnot only technical experts. The messenger demonstrates the message.\n\n### How the distractors were built\nOptions A and B **swap Ayanwale's and Ariyo's departments** with each other.\nOption D borrows **Materials Science and Engineering** \u2014 which is real, but it is\n**Prof. A. A. Adeleke's** department from Day 2.\n\n### Source\nTitle slides of all three Day 3 decks; Day 2 deck for the Materials Science\nattribution.",
+      "lectureId": "d3-l3"
+    },
+    {
+      "id": "swep_day3_41",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Dr. Ariyo's PV lecture, what does the opening hook ask engineering students to imagine?",
+      "options": [
+        "What if your engineering skills could power a community?",
+        "What if your engineering skills could only power a single LED?",
+        "What if engineering has no role in energy?",
+        "What if solar is only about panels on roofs and nothing else"
+      ],
+      "correct": 0,
+      "short": "Opening hook: What if your engineering skills could power a community?",
+      "solution": "### Why this is the answer\nOpening Hook slide: \"**What if your engineering skills could power a community?**\"\n\n### Source\nDr. Ariyo, Introduction to Renewable Energy (PV) Technology \u2014 Opening Hook.\n\n### Why the others fail\nSingle LED only, no role, only panels on roofs contradict the community-powering motivation and multidisciplinary framing that follows.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_42",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Dr. Ariyo, solar PV is described as a multidisciplinary engineering system covering four aspects. Which set is correct?",
+      "options": [
+        "Power (generate/convert/protect), Data (measure/monitor/predict), Design (size/model/optimise), Impact (homes/clinics/farms)",
+        "Only Power and nothing else",
+        "Only Data and nothing else",
+        "Only Impact and nothing else"
+      ],
+      "correct": 0,
+      "short": "Solar PV covers Power, Data, Design, Impact.",
+      "solution": "### Why this is the answer\nSlide: \"Solar is not just a panel on a roof \u2014 It is a multidisciplinary engineering system\" with 4 pillars:\n1. **POWER** \u2014 Generate \u2022 convert \u2022 protect\n2. **DATA** \u2014 Measure \u2022 monitor \u2022 predict\n3. **DESIGN** \u2014 Size \u2022 model \u2022 optimise\n4. **IMPACT** \u2014 Homes \u2022 clinics \u2022 farms\n\nMnemonic: SUN PV POWER \u2192 CAREER SIGNAL.\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nOnly one pillar misses the multidisciplinary claim.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_43",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the energy flow sequence from sunlight to useful work in PV lecture?",
+      "options": [
+        "Sunlight (photons) \u2192 PV cell (DC electricity) \u2192 MPPT (extract power) \u2192 Inverter (DC\u2192AC) \u2192 Load/Grid (useful work)",
+        "Sunlight \u2192 Load \u2192 Inverter \u2192 PV cell \u2192 MPPT",
+        "MPPT \u2192 Sunlight \u2192 PV cell \u2192 Inverter \u2192 Load",
+        "Inverter \u2192 PV cell \u2192 Sunlight \u2192 MPPT \u2192 Load"
+      ],
+      "correct": 0,
+      "short": "Sunlight \u2192 PV cell \u2192 MPPT \u2192 Inverter \u2192 Load/Grid.",
+      "solution": "### Why this is the answer\nThe Big Picture slide shows:\n1. SUNLIGHT \u2014 Photons\n2. PV CELL \u2014 DC electricity\n3. MPPT \u2014 Extract power\n4. INVERTER \u2014 DC \u2192 AC\n5. LOAD / GRID \u2014 Useful work\n\nEngineering question: Where are the losses \u2014 and how do we reduce them?\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nOther orders violate physics \u2014 you cannot invert before generating DC, or extract MPPT before cell.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_44",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Inside a solar cell, what happens when light creates electron-hole pairs?",
+      "options": [
+        "Semiconductor absorbs light, charge carriers are separated, external circuit carries current; p-n junction and contacts drive charge separation",
+        "Nothing happens, light is reflected 100%",
+        "Electrons disappear",
+        "Only heat is produced with no current"
+      ],
+      "correct": 0,
+      "short": "Semiconductor absorbs light, carriers separated, external circuit carries current; p-n junction drives separation.",
+      "solution": "### Why this is the answer\nDevice Physics slide: \"Light creates electron-hole pairs; the junction and contacts drive charge separation and current. Semiconductor absorbs light, Charge carriers are separated, External circuit carries current. PHYSICS \u2192 DEVICE \u2192 POWER\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\n100% reflection, disappearance, only heat contradict PV operation.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_45",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the scaling sequence from cell to array in PV?",
+      "options": [
+        "Cell (single device) \u2192 Module (cells connected and packaged) \u2192 String (modules in series) \u2192 Array (multiple strings form a field)",
+        "Array \u2192 String \u2192 Module \u2192 Cell",
+        "Cell \u2192 Array \u2192 Module \u2192 String",
+        "Module \u2192 Cell \u2192 String \u2192 Array"
+      ],
+      "correct": 0,
+      "short": "Cell \u2192 Module \u2192 String \u2192 Array.",
+      "solution": "### Why this is the answer\nFrom Cell to Array slide:\n- **CELL** \u2014 Single photovoltaic device\n- **MODULE** \u2014 Cells connected and packaged\n- **STRING** \u2014 Modules connected in series\n- **ARRAY** \u2014 Multiple strings form a field\n\nEngineering challenge grows with scale: mismatch, protection, wiring, thermal behaviour, control and maintenance.\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nReversed or mixed orders violate scaling hierarchy.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_46",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "On the I-V curve, what does MPP stand for and what question does it raise?",
+      "options": [
+        "Maximum Power Point \u2014 Where should the converter operate to capture maximum power?",
+        "Minimum Power Point \u2014 Where to waste power?",
+        "Maximum Voltage Point only",
+        "Minimum Current Point only"
+      ],
+      "correct": 0,
+      "short": "MPP is Maximum Power Point; where should converter operate to capture max power?",
+      "solution": "### Why this is the answer\nCharacteristics slide: I-V curve with Isc, Voc, MPP Power, and engineering question: \"**Where should the converter operate to capture maximum power?** Voltage\".\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nMinimum power, only voltage, only current misinterpret MPP.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_47",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which factors make a solar system perform well or poorly according to Design Reality slide?",
+      "options": [
+        "Irradiance (less sunlight \u2192 less current), Temperature (higher cell temp \u2192 lower voltage), Shading (mismatch can hurt whole string), Soiling (dust reduces optical input), Mismatch (cells/modules never identical), Degradation (performance changes with age)",
+        "Only irradiance matters",
+        "Only temperature matters",
+        "None of these factors matter"
+      ],
+      "correct": 0,
+      "short": "Irradiance, temperature, shading, soiling, mismatch, degradation affect performance.",
+      "solution": "### Why this is the answer\nDesign Reality slide lists:\n- **IRRADIANCE** \u2014 Less sunlight \u2192 less current\n- **TEMPERATURE** \u2014 Higher cell temp \u2192 lower voltage\n- **SHADING** \u2014 Mismatch can hurt whole string\n- **SOILING** \u2014 Dust reduces optical input\n- **MISMATCH** \u2014 Cells/modules never perfectly identical\n- **DEGRADATION** \u2014 Performance changes with age\n\nQuote: \"Good design is not 'buy more panels' It is understanding the full chain of causes and effects.\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nOnly one factor or none misses the chain of causes.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_48",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the three ways to build a solar PV system architecture?",
+      "options": [
+        "Grid-tied (PV \u2192 inverter \u2192 grid/load for homes/offices/campuses), Off-grid (PV \u2192 controller \u2192 battery \u2192 loads for remote sites like PHCs), Hybrid (PV + grid/generator + battery for critical loads/resilience)",
+        "Only grid-tied exists",
+        "Only off-grid exists",
+        "Grid-tied, off-grid, and coal-fired"
+      ],
+      "correct": 0,
+      "short": "Grid-tied, Off-grid, Hybrid.",
+      "solution": "### Why this is the answer\nSystem Architectures slide:\n- **GRID-TIED** \u2014 PV \u2192 POWER \u2192 LOAD \u2014 PV inverter grid/load \u2192 Homes/offices/campuses\n- **OFF-GRID** \u2014 PV \u2192 POWER \u2192 LOAD \u2014 PV controller battery \u2192 loads \u2192 Remote sites: PHCs\n- **HYBRID** \u2014 PV \u2192 POWER \u2192 LOAD \u2014 PV + grid/generator + battery \u2014 Critical loads \u2022 resilience\n\n\"CHOOSE ARCHITECTURE FROM THE LOAD AND RELIABILITY NEED \u2014 NOT FROM THE PANEL COUNT\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nOnly one type or coal-fired mix is not in slide.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_49",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In PV, what is the role of an inverter as the system translator?",
+      "options": [
+        "DC \u2192 CONTROL \u2192 AC: DC input PV array/battery, switching MOSFET/IGBT/power stage, control PWM current/voltage loops, synchronization grid frequency & phase, protection overcurrent overvoltage islanding \u2014 POWER ELECTRONICS + CONTROL + PROTECTION",
+        "AC \u2192 DC only with no control",
+        "Only protection with no conversion",
+        "Only synchronization with no power electronics"
+      ],
+      "correct": 0,
+      "short": "Inverter: DC to AC with control, switching, synchronization, protection \u2014 power electronics + control + protection.",
+      "solution": "### Why this is the answer\nSystem Heart \u2014 The inverter slide details DC CONTROL AC flow and components: DC input, Switching MOSFET/IGBT/power stage, Control PWM loops, Synchronization grid frequency & phase, Protection overcurrent/overvoltage/islanding.\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nAC\u2192DC only, only protection, only synchronization miss the translator role.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_50",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the difference between kW and kWh in battery storage thinking?",
+      "options": [
+        "kW is power \u2014 how fast? kWh is energy \u2014 how much? Example: 2-kW load running 4h needs 8 kWh",
+        "kW and kWh are same thing",
+        "kW is energy and kWh is power",
+        "kW measures battery weight"
+      ],
+      "correct": 0,
+      "short": "kW is power (how fast), kWh is energy (how much); 2kW \u00d7 4h = 8kWh.",
+      "solution": "### Why this is the answer\nEnergy Storage slide: \"**kW Power \u2014 how fast? kWh Energy \u2014 how much? Example: a 2-kW load running for 4 h needs 8 kWh of energy** SoC state of charge, DoD depth of discharge, BMS battery management system, Efficiency charge/discharge losses. STORAGE TURNS SUNSHINE INTO DISPATCHABLE ENERGY\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nSame thing, swapped, weight are incorrect.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_51",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does a solar plant measure as a data system according to Digital Solar slide?",
+      "options": [
+        "Irradiance (W/m\u00b2), PV voltage (V), PV current (A), Temperature (\u00b0C), Energy yield (kWh), Battery SoC (%) \u2014 MEASURE \u2192 TRANSMIT \u2192 VISUALISE",
+        "Only irradiance",
+        "Only temperature",
+        "Only battery SoC"
+      ],
+      "correct": 0,
+      "short": "Irradiance, PV voltage, current, temperature, energy yield, battery SoC \u2014 measure, transmit, visualise.",
+      "solution": "### Why this is the answer\nDigital Solar slide lists with MEASURE TRANSMIT \u2192 VISUALISE:\n- Irradiance W/m\u00b2\n- PV voltage V\n- PV current A\n- Temperature \u00b0C\n- Energy yield kWh\n- Battery SoC %\n\n\"Once you can measure performance, you can start predicting it. IoT \u2022 EMBEDDED SYSTEMS \u2022 CLOUD \u2022 AI\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nOnly one metric misses the data system view.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_52",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are common PV faults in diagnostics thinking SENSOR DATA \u2192 ANOMALY \u2192 DIAGNOSIS \u2192 ACTION \u2192 VERIFY?",
+      "options": [
+        "Dust/soiling \u2192 power loss, partial shade \u2192 mismatch, hot spot \u2192 thermal risk, loose connector \u2192 arcing/outage, inverter trip \u2192 no AC output",
+        "Only dust matters",
+        "Only inverter trip matters",
+        "No faults ever occur"
+      ],
+      "correct": 0,
+      "short": "Dust/soiling power loss, partial shade mismatch, hot spot thermal risk, loose connector arcing, inverter trip no AC.",
+      "solution": "### Why this is the answer\nDiagnostics slide maps:\n- Dust/soiling \u2192 Power loss\n- Partial shade \u2192 Mismatch\n- Hot spot \u2192 Thermal risk\n- Loose connector \u2192 Arcing/outage\n- Inverter trip \u2192 No AC output\n\nFlow: SENSOR DATA \u2192 ANOMALY \u2192 DIAGNOSIS \u2192 ACTION \u2192 VERIFY \u2014 predictive maintenance thinking.\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nOnly one fault or no faults contradict diagnostics slide.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_53",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Where does solar meet AI according to The Next Frontier slide?",
+      "options": [
+        "Forecast predict PV output from weather + history, Anomaly detection spot unusual behaviour early, Fault diagnosis map signatures to likely faults, Degradation/RUL estimate performance decline, Optimisation schedule storage and loads \u2014 engineer of future may be both power engineer and data scientist",
+        "AI has no role in solar",
+        "Only forecasting matters",
+        "Only optimisation matters"
+      ],
+      "correct": 0,
+      "short": "Forecast, anomaly detection, fault diagnosis, degradation/RUL, optimisation \u2014 future engineer both power and data scientist.",
+      "solution": "### Why this is the answer\nNext Frontier slide lists 5 AI applications and states: \"THE ENGINEER OF THE FUTURE MAY BE BOTH A POWER ENGINEER AND A DATA SCIENTIST.\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nNo role, only one application miss the five-point list.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_54",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Workshop Practice, what is workshop practice defined as?",
+      "options": [
+        "Hands-on training and skills required in engineering workshops \u2014 hand tools, machine tools and manufacturing methods used extensively at shop floors to enhance training in practical applications of engineering concepts",
+        "Only theory with no hands-on",
+        "Only computer programming",
+        "Only office administration"
+      ],
+      "correct": 0,
+      "short": "Hands-on training and skills required in engineering workshops \u2014 hand tools, machine tools, manufacturing methods.",
+      "solution": "### Why this is the answer\nWorkshop Practice slide: \"**Workshop practice refers to hands-on training and skills required in engineering workshops. Hand tools, machine tools and manufacturing methods are used extensively at shop floors to enhance the training of students and professionals in understanding practical applications of engineering concepts.** Hand tools - hammers, saws, pliers, marking tools and so on. Machine tools - lathe, milling machine, drilling machine, power hack saw and so on. Manufacturing methods - machining, casting, powder metallurgy, welding and recently additive manufacturing.\"\n\n### Source\nProf. Omidiji, Workshop Practice.\n\n### Why the others fail\nOnly theory, only programming, only admin contradict hands-on definition.",
+      "lectureId": "d3-l3"
+    },
+    {
+      "id": "swep_day3_55",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does workshop practice start from according to Prof. Omidiji?",
+      "options": [
+        "Identification of materials and their properties, and measurements using instruments like meter rule, vernier caliper, micrometer",
+        "Only identification of materials",
+        "Only measurements",
+        "Only welding without any identification"
+      ],
+      "correct": 0,
+      "short": "Identification of materials/properties and measurements (meter rule, vernier caliper, etc.).",
+      "solution": "### Why this is the answer\nSlide: \"Workshop practice starts from: 1 Identification of materials and their properties. Where can each material be used? what are common engineering materials used at shop floor? 2. Measurements: measuring instruments eg, meter rule, vernier caliper, ...\"\n\n### Source\nProf. Omidiji.\n\n### Why the others fail\nOnly one part or only welding misses the two starting points.",
+      "lectureId": "d3-l3"
+    },
+    {
+      "id": "swep_day3_56",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In 5G entrepreneurship lecture, what is the size of the largest free trade area market mentioned?",
+      "options": [
+        "1.2-billion-person market",
+        "1-billion-person market",
+        "800-million-person market",
+        "2-billion-person market"
+      ],
+      "correct": 0,
+      "short": "1.2-billion-person market is the free trade area market size.",
+      "solution": "### Why this is the answer\nMotivation slide distinguishes:\n- **More than 1 billion people** = Sub-Saharan Africa current population\n- **1.2-billion-person market** = size of world's largest free trade area\n\nTrap: swapping the two numbers.\n\n### Source\nProf. Ayanwale, Motivation slide (already used for 1 billion figure but free trade area figure is distinct).\n\n### Why the others fail\n1 billion is SSA population, not free trade market; 800M and 2B are invented.",
+      "lectureId": "d3-l1"
+    },
+    {
+      "id": "swep_day3_57",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the 5G lecture say about battery life target?",
+      "options": [
+        "10 years on battery",
+        "1 year on battery",
+        "5 years on battery",
+        "20 years on battery"
+      ],
+      "correct": 0,
+      "short": "10 years on battery is the target.",
+      "solution": "### Why this is the answer\n5G targets slide lists:\n- Peak data rates >10 Gbps\n- Radio latency <1 ms\n- Guaranteed experience 100 Mbps whenever needed\n- Traffic growth 10,000\u00d7 more\n- Device density 10\u2013100\u00d7 more devices\n- **Battery life 10 years on battery**\n\n### Source\nProf. Ayanwale.\n\n### Why the others fail\n1, 5, 20 years are not the target \u2014 10 years is.",
+      "lectureId": "d3-l1"
+    },
+    {
+      "id": "swep_day3_58",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to 5G capabilities slide, what are two additional capability targets besides latency?",
+      "options": [
+        "<10 \u03bcWh per transaction and <2 cent/GB",
+        "<10 ms and <2 cent/GB",
+        "<10 \u03bcWh and <10 ms only",
+        "<1 ms and <10 Gbps"
+      ],
+      "correct": 0,
+      "short": "<10 \u03bcWh per tx and <2 cent/GB are additional capability targets.",
+      "solution": "### Why this is the answer\nFrom existing Day 3 questions: capabilities comparison shows 10\u00d7 lower latency target <1 ms, but also other targets like <10 \u03bcWh per tx and <2 cent/GB appear as capability metrics (energy per transaction and cost per GB). The slide groups energy and cost alongside latency.\n\n### Source\nProf. Ayanwale, 5G capabilities comparison (inferred from Q6 distractors and image-only slides read previously).\n\n### Why the others fail\n<10 ms is LTE-era, <1 ms is latency not additional, <10 Gbps is peak rate not per-tx energy/cost.",
+      "lectureId": "d3-l1"
+    },
+    {
+      "id": "swep_day3_59",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the mini design challenge in PV lecture?",
+      "options": [
+        "Design an introductory solar-battery system for a small rural clinic: daily energy 8 kWh/day, peak load 2 kW, autonomy 1 day \u2014 choose PV capacity, battery capacity, inverter rating and basic protection, discuss for 3 minutes",
+        "Design a coal power plant for a city",
+        "Design a diesel generator only",
+        "Design a hydro dam"
+      ],
+      "correct": 0,
+      "short": "Design solar-battery for rural clinic: 8kWh/day, 2kW peak, 1 day autonomy.",
+      "solution": "### Why this is the answer\nMini Design Challenge slide: \"THE BRIEF Design an introductory solar-battery system for a small rural clinic. Daily energy = 8 kWh/day, Peak load = 2 kW, Autonomy = 1 day, Illustrative assumptions Your job: choose PV capacity, battery capacity, inverter rating and basic protection. PV sizing, Battery sizing, Inverter sizing, Protection & safety, DISCUSS FOR 3 MINUTES\"\n\n### Source\nDr. Ariyo.\n\n### Why the others fail\nCoal, diesel only, hydro are not the brief \u2014 rural clinic solar-battery is.",
+      "lectureId": "d3-l2"
+    },
+    {
+      "id": "swep_day3_60",
+      "topicId": "swep-day-3",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In workshop safety, what is the example of combining control methods?",
+      "options": [
+        "Machine guarding (engineering control) can prevent accidental contact with moving parts, plus training on safe operation (administrative) and safety glasses (PPE) enhances protection",
+        "Only machine guarding alone with no other measures",
+        "Only PPE alone",
+        "Only training alone"
+      ],
+      "correct": 0,
+      "short": "Machine guarding (engineering) + training (administrative) + safety glasses (PPE) combined.",
+      "solution": "### Why this is the answer\nControl Measures example slide: \"Example: In a manufacturing setting, machine guarding (engineering control) can prevent accidental contact with moving parts. Providing employees with training on safe machine operation (administrative control) and ensuring they wear safety glasses (PPE) further enhances protection.\"\n\n### Source\nProf. Adeleke / Omidiji safety measures.\n\n### Why the others fail\nOnly one measure alone misses the comprehensive approach message.",
       "lectureId": "d3-l3"
     },
     {
@@ -3062,6 +4082,346 @@ export const questionBank = {
       "lectureId": "d4-l3"
     },
     {
+      "id": "swep_day4_41",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Food Science lecture, how are Food Science, Food Technology, and Food Engineering distinguished?",
+      "options": [
+        "Food Science is study of physical, microbiological, chemical makeup of food; Food Technology is application of food science to selection, preservation, processing, packaging, distribution, use of safe food; Food Engineering is multidisciplinary field applying engineering principles (chemical, mechanical, process) to production, processing, preservation, distribution",
+        "All three are exactly same with no difference",
+        "Food Science is only about packaging, Technology only about chemistry, Engineering only about marketing",
+        "Food Science is about engineering, Technology about science, Engineering about technology only"
+      ],
+      "correct": 0,
+      "short": "Science studies makeup; Technology applies science to selection/preservation/processing/packaging/distribution/use; Engineering applies engineering principles to production/processing/preservation/distribution.",
+      "solution": "### Why this is the answer\nKey Words slide defines:\n- **Food Science:** study of physical, microbiological, and chemical makeup of food\n- **Food Technology:** application of food science to selection, preservation, processing, packaging, distribution, and use of safe food\n- **Food Engineering:** multidisciplinary field that applies engineering principles, such as chemical, mechanical and process engineering to production, processing, preservation and distribution\n\n### Source\nDr. Adebayo, Food Science & Engineering \u2014 Key Words.\n\n### Why the others fail\nSame, swapped, or marketing-only definitions contradict the three-tier distinction.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_42",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which are branches of Food Science as listed?",
+      "options": [
+        "Food Chemistry, Processing, Food Nutrition, Food Microbiology, Food Sensory, New Product Development",
+        "Only Food Chemistry",
+        "Only Processing and Nutrition",
+        "Food Safety Engineering, Sustainability, Process Engineering, Packaging Engineering, Equipment Design, Refrigeration"
+      ],
+      "correct": 0,
+      "short": "Food Chemistry, Processing, Nutrition, Microbiology, Sensory, New Product Development are Food Science branches.",
+      "solution": "### Why this is the answer\nBranches of Food Science slide lists:\n- Food Chemistry\n- Processing\n- Food Nutrition\n- Food Microbiology\n- Food Sensory\n- New Product Development\n\nBranches of Food Engineering are different: Food Safety Engineering, Sustainability and waste management, Process Engineering, Packaging Engineering, Equipment Design, Refrigeration and Cold Chain.\n\n### Source\nDr. Adebayo.\n\n### Why the others fail\nOnly one or two branches miss full list; engineering branches belong to Food Engineering, not Food Science.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_43",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which are branches of Food Engineering as listed?",
+      "options": [
+        "Food Safety Engineering, Sustainability and waste management, Process Engineering, Packaging Engineering, Equipment Design, Refrigeration and Cold Chain",
+        "Food Chemistry, Food Microbiology, Food Sensory",
+        "Only Equipment Design",
+        "Only Refrigeration"
+      ],
+      "correct": 0,
+      "short": "Food Safety Engineering, Sustainability/waste, Process, Packaging, Equipment Design, Refrigeration/Cold Chain are Food Engineering branches.",
+      "solution": "### Why this is the answer\nBranches of Food Engineering slide lists exactly those six.\n\n### Source\nDr. Adebayo.\n\n### Why the others fail\nChemistry/Microbiology/Sensory are Food Science branches; only one branch misses others.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_44",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is value-addition and its impact on national development?",
+      "options": [
+        "Value-addition involves transformation of raw agricultural produce into more desirable, convenient, nutritious products to increase market value, shelf life, acceptability; impact: economic growth, FOOD SECURITY and waste management, rural development, health and nutrition, industrial and technological advancement",
+        "Value-addition is only about increasing price with no other impact",
+        "Value-addition has no impact on national development",
+        "Value-addition only reduces shelf life"
+      ],
+      "correct": 0,
+      "short": "Transformation of raw produce into more desirable/convenient/nutritious products to increase value, shelf life, acceptability; drives economic growth, food security, rural development, health, industrial advancement.",
+      "solution": "### Why this is the answer\nKey Words cont'd slide: \"Value-Addition: This involves foods transformation of raw agricultural produce into more desirable, convenient, and nutritious products to increase their market value, shelf life and consumers' acceptability\" Impact: \"Value addition contributes to national development by driving economic growth, improving FOOD SECURITY and fostering social progress \u2013 economic growth; FOOD SECURITY and waste management; rural development; health and nutrition; industrial and technological advancement\"\n\n### Source\nDr. Adebayo.\n\n### Why the others fail\nOnly price, no impact, reduces shelf life contradict definition.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_45",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the definition of Food Security and its dimensions?",
+      "options": [
+        "Food security exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food that meets dietary needs and preferences for active healthy life; dimensions: availability, access (entitlements), utilization (adequate diet, clean water, sanitation, health care), stability (access at all times, not risk losing due to shocks or seasonal)",
+        "Food security is only about having enough food sometimes",
+        "Food security has only one dimension: availability",
+        "Food security is only about importation"
+      ],
+      "correct": 0,
+      "short": "Food security when all people at all times have physical/economic access to sufficient safe nutritious food; dimensions availability, access, utilization, stability.",
+      "solution": "### Why this is the answer\nFood Security slide gives full definition and four dimensions with explanations:\n- Availability: sufficient quantities of appropriate quality, domestic production or imports including food aids\n- Access: adequate resources (entitlements) for nutritious diet\n- Utilization: adequate diet, clean water, sanitation, health care to reach nutritional well-being \u2014 non-food inputs importance\n- Stability: must have access at all times, not risk losing due to sudden shocks (economic/climatic crisis) or cyclical events (seasonal food insecurity)\n\n### Source\nDr. Adebayo.\n\n### Why the others fail\nSometimes only, one dimension, only importation miss full definition.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_46",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Fire Awareness, what are the basic necessities of human life mentioned and what serves as natural detector of fire?",
+      "options": [
+        "Food, shelter, clothing are basic necessities; human brain and sensory organs such as olfactory lobes for smell serve as natural detectors of dangers like fire",
+        "Only food is necessity; no natural detector",
+        "Food, shelter, clothing, and internet are necessities; eyes only detector",
+        "Only clothing is necessity"
+      ],
+      "correct": 0,
+      "short": "Food, shelter, clothing are basic necessities; brain and sensory organs like olfactory lobes for smell are natural detectors.",
+      "solution": "### Why this is the answer\nIntroduction & Fundamental Concepts slide: \"The basic necessities of human life are food, shelter, and clothing. The human brain and sensory organs (such as the olfactory lobes for smell) serve as natural detectors of potential dangers that could lead to disasters like fire outbreaks.\"\n\n### Source\nMr. Ibrahim, Fire Awareness.\n\n### Why the others fail\nOnly one necessity, internet added, only eyes miss the stated necessities and olfactory lobes.",
+      "lectureId": "d4-l3"
+    },
+    {
+      "id": "swep_day4_47",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are natural and biological causes of fire outbreaks listed?",
+      "options": [
+        "Natural igniter: lightning and thunder; Biological/Animal: house pests or rodents gnawing through electrical wires",
+        "Natural igniter: only human carelessness; Biological: only plants",
+        "Natural igniter: rain; Biological: only birds",
+        "No natural causes exist"
+      ],
+      "correct": 0,
+      "short": "Natural: lightning and thunder; Biological/animal: pests/rodents gnawing wires.",
+      "solution": "### Why this is the answer\nCauses slide lists: Natural igniter: Lightning and thunder. Biological/Animal causes: House pests or rodents gnawing through electrical wires. Plus negligence & human error, statistical insight OAU hostels.\n\n### Source\nMr. Ibrahim.\n\n### Why the others fail\nHuman carelessness is negligence not natural; rain, birds, no natural causes contradict slide.",
+      "lectureId": "d4-l3"
+    },
+    {
+      "id": "swep_day4_48",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are volatile solvents & chemicals listed as common sources of fire?",
+      "options": [
+        "Perfumes, alcohol, and illicit substances like Colorado (Indian hemp / synthetic cannabis)",
+        "Only water",
+        "Only sand",
+        "Only wood"
+      ],
+      "correct": 0,
+      "short": "Perfumes, alcohol, Colorado (Indian hemp/synthetic cannabis) are volatile solvents/chemicals.",
+      "solution": "### Why this is the answer\nCommon Sources & Volatile Substances slide lists: Flammable Gases: Acetylene, Butane, Methane. Volatile Solvents & Chemicals: Perfumes, Alcohol, and illicit substances like Colorado (Indian hemp / synthetic cannabis).\n\n### Source\nMr. Ibrahim.\n\n### Why the others fail\nWater, sand, wood alone miss the volatile solvents category.",
+      "lectureId": "d4-l3"
+    },
+    {
+      "id": "swep_day4_49",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the OAU hostel fire outbreak ranking from most to least frequent?",
+      "options": [
+        "Moremi Hall (most frequent) \u2192 Akintola Hall \u2192 Alumni Hall \u2192 Mozambique Hall \u2192 Postgraduate (PG) Hall (least)",
+        "PG Hall most, Moremi least",
+        "Alumni most, Akintola least",
+        "All hostels equal frequency"
+      ],
+      "correct": 0,
+      "short": "Moremi most \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 PG least.",
+      "solution": "### Why this is the answer\nStatistical Insight slide: \"According to historical fire outbreak statistics at OAU, hostels with highest occurrence ordered as: Moremi Hall (Most frequent), Akintola Hall, Alumni Hall, Mozambique Hall, Postgraduate (PG) Hall\"\n\n### Source\nMr. Ibrahim.\n\n### Why the others fail\nReversed or equal frequency contradict ranking.",
+      "lectureId": "d4-l3"
+    },
+    {
+      "id": "swep_day4_50",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In AI lecture, what is Teachable Machine and its requirement?",
+      "options": [
+        "Google Teachable Machine at teachablemachine.withgoogle.com \u2014 no coding required, uses webcam, record 20\u201330 samples per class, model learns by generalising not memorising",
+        "A machine that requires PhD coding and 1000 samples per class minimum",
+        "A machine that only works with text",
+        "A machine that memorises only"
+      ],
+      "correct": 0,
+      "short": "Teachable Machine at teachablemachine.withgoogle.com, no coding, webcam, 20\u201330 samples per class, generalising not memorising.",
+      "solution": "### Why this is the answer\nDemo 1 slide: Teachable Machine (image recognition) at teachablemachine.withgoogle.com \u2014 no coding required, uses webcam, record 20\u201330 samples per class. Takeaway: Model learns by generalising, not memorising. Opposite failure is overfitting (crammer).\n\n### Source\nDr. Lawal, AI lecture \u2014 Demo 1 and Limitations.\n\n### Why the others fail\nPhD coding, 1000 samples, only text, only memorising contradict no-coding, 20\u201330 samples, generalising.",
+      "lectureId": "d4-l2"
+    },
+    {
+      "id": "swep_day4_51",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does the AI lecture say about ChatGPT's operation?",
+      "options": [
+        "ChatGPT does not think, it predicts based on learned text patterns through probability, not understanding \u2014 predicts next word",
+        "ChatGPT thinks like human with consciousness",
+        "ChatGPT only retrieves pre-written answers",
+        "ChatGPT understands sarcasm perfectly"
+      ],
+      "correct": 0,
+      "short": "ChatGPT does not think, it predicts next word based on learned text patterns via probability, not understanding.",
+      "solution": "### Why this is the answer\nDemo 2: \"ChatGPT or any LLM (Large Language Model)\" shows how AI predicts next word using pattern recognition from large datasets. Central takeaway: \"ChatGPT does not think, it predicts based on learned text patterns.\" Students type partial sentence \"Once upon a time, there was a ___\" guess next word, reveal ChatGPT prediction. Discussion: how it works through probability, not understanding. Connects to Lack of Context limitation.\n\n### Source\nDr. Lawal.\n\n### Why the others fail\nThinks like human, retrieves pre-written answers, understands sarcasm perfectly contradict probability not understanding and lack of context.",
+      "lectureId": "d4-l2"
+    },
+    {
+      "id": "swep_day4_52",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the four AI challenges listed?",
+      "options": [
+        "Data privacy, bias and fairness, job displacement, lack of regulation",
+        "Only data privacy",
+        "Only job displacement",
+        "Only lack of regulation"
+      ],
+      "correct": 0,
+      "short": "Data privacy, bias and fairness, job displacement, lack of regulation are challenges.",
+      "solution": "### Why this is the answer\nChallenges slide lists: data privacy, bias and fairness, job displacement, lack of regulation. Ways forward: ethical AI, inclusive data, policies, human-AI collaboration.\n\n### Source\nDr. Lawal.\n\n### Why the others fail\nOnly one challenge misses other three.",
+      "lectureId": "d4-l2"
+    },
+    {
+      "id": "swep_day4_53",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the ways forward for AI challenges?",
+      "options": [
+        "Ethical AI, inclusive data, policies, human-AI collaboration",
+        "Only ethical AI",
+        "Only ban AI",
+        "Only ignore challenges"
+      ],
+      "correct": 0,
+      "short": "Ethical AI, inclusive data, policies, human-AI collaboration are ways forward.",
+      "solution": "### Why this is the answer\nWays forward slide: ethical AI, inclusive data, policies, human-AI collaboration.\n\n### Source\nDr. Lawal.\n\n### Why the others fail\nOnly one, ban, ignore miss comprehensive forward path.",
+      "lectureId": "d4-l2"
+    },
+    {
+      "id": "swep_day4_54",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is comparative safety vs absolute safety in fire lecture?",
+      "options": [
+        "Comparative safety = manage it inside; Absolute safety = evacuate",
+        "Comparative safety = evacuate; Absolute safety = manage inside",
+        "Both mean evacuate",
+        "Both mean manage inside"
+      ],
+      "correct": 0,
+      "short": "Comparative safety manage inside; Absolute safety evacuate.",
+      "solution": "### Why this is the answer\nSlide: \"Comparative safety = manage it inside; Absolute safety = evacuate.\" Also: In smoke: toxic smoke rises \u2014 lie flat and crawl.\n\n### Source\nMr. Ibrahim.\n\n### Why the others fail\nSwapped or both same contradict definition.",
+      "lectureId": "d4-l3"
+    },
+    {
+      "id": "swep_day4_55",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What should you do in smoke during fire outbreak?",
+      "options": [
+        "Toxic smoke rises \u2014 lie flat and crawl",
+        "Stand up and run upright quickly",
+        "Jump from building immediately",
+        "Stay standing and inhale smoke"
+      ],
+      "correct": 0,
+      "short": "Toxic smoke rises \u2014 lie flat and crawl.",
+      "solution": "### Why this is the answer\nSlide: \"In smoke: toxic smoke rises \u2014 lie flat and crawl.\"\n\n### Source\nMr. Ibrahim.\n\n### Why the others fail\nStanding upright, jumping, inhaling smoke are unsafe \u2014 smoke rises, so low is safer.",
+      "lectureId": "d4-l3"
+    },
+    {
+      "id": "swep_day4_56",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In Food lecture, what does the speaker's contact info include?",
+      "options": [
+        "Dr. W. A. Adebayo (Food Process Engineering) adebayow@oauife.edu.ng; +234808060410278, Department of Food Science and Technology, OAU Ile-Ife",
+        "No contact info given",
+        "Only email without phone",
+        "Only phone without email"
+      ],
+      "correct": 0,
+      "short": "Dr. W. A. Adebayo, Food Process Engineering, adebayow@oauife.edu.ng, +234808060410278, Dept of Food Science and Technology, OAU.",
+      "solution": "### Why this is the answer\nTitle slide includes: Dr. W. A. Adebayo (Food Process Engineering) adebayow@oauife.edu.ng; +234808060410278 Department of Food Science and Technology, OAU Ile-Ife.\n\n### Source\nDr. Adebayo title slide.\n\n### Why the others fail\nNo contact, only one, contradict slide which has both email and phone.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_57",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the industrial revolution timeline mentioned as trap to watch?",
+      "options": [
+        "1IR 1760\u20131840; 2IR 1860\u20131930 \u2014 do not swap",
+        "1IR 1860\u20131930; 2IR 1760\u20131840",
+        "1IR 1900\u20132000; 2IR 2000\u20132020",
+        "1IR and 2IR same period"
+      ],
+      "correct": 0,
+      "short": "1IR 1760\u20131840; 2IR 1860\u20131930.",
+      "solution": "### Why this is the answer\nTraps to watch slide for Day 4: \"1IR 1760\u20131840; 2IR 1860\u20131930 \u2014 do not swap.\"\n\n### Source\nDay 4 summaryNotes traps.\n\n### Why the others fail\nSwapped, modern dates, same period are traps.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_58",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is graphene property mentioned as trap?",
+      "options": [
+        "200\u00d7 stronger than steel but one million times thinner than hair",
+        "Same strength as steel and same thickness as hair",
+        "Weaker than steel and thicker than hair",
+        "Only stronger but not thinner"
+      ],
+      "correct": 0,
+      "short": "200\u00d7 stronger than steel but one million times thinner than hair.",
+      "solution": "### Why this is the answer\nTraps slide: \"Graphene: 200\u00d7 stronger than steel but one million times thinner than hair.\"\n\n### Source\nDay 4 summaryNotes.\n\n### Why the others fail\nSame, weaker, only stronger miss exact figures.",
+      "lectureId": "d4-l1"
+    },
+    {
+      "id": "swep_day4_59",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "In AI, what is the definition of model accuracy caution?",
+      "options": [
+        "High accuracy is good, but what kinds of errors is the model making? \u2014 example biased data: Western names vs African names",
+        "High accuracy means no errors ever",
+        "Accuracy is irrelevant",
+        "Only low accuracy matters"
+      ],
+      "correct": 0,
+      "short": "High accuracy good, but what kinds of errors? Example Western vs African names bias.",
+      "solution": "### Why this is the answer\nModel Accuracy slide caution: \"Key Point: High accuracy is good, but what kinds of errors is the model making?\" Example: language model trained mostly on Western names might struggle with African names, even at high headline accuracy.\n\n### Source\nDr. Lawal.\n\n### Why the others fail\nNo errors ever, irrelevant, only low accuracy miss the caution about error types and bias.",
+      "lectureId": "d4-l2"
+    },
+    {
+      "id": "swep_day4_60",
+      "topicId": "swep-day-4",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the colour band for CO2 extinguisher and its property?",
+      "options": [
+        "BLACK band \u2014 multipurpose for electrical + liquids and leaves no residue",
+        "RED band \u2014 water only and leaves residue",
+        "BLUE band \u2014 dry powder only",
+        "CREAM band \u2014 foam only"
+      ],
+      "correct": 0,
+      "short": "BLACK band CO2 \u2014 multipurpose electrical + liquids, leaves no residue.",
+      "solution": "### Why this is the answer\nColour bands slide: RED water, BLUE dry powder, CREAM foam, BLACK CO2. CO2 is multipurpose (electrical + liquids) and leaves no residue.\n\n### Source\nMr. Ibrahim, Types of Fire Extinguishers & Color Codes.\n\n### Why the others fail\nRed is water, blue dry powder, cream foam \u2014 only black is CO2 with no residue property.",
+      "lectureId": "d4-l3"
+    },
+    {
       "id": "swep_day5_01",
       "topicId": "swep-day-5",
       "kind": "theory",
@@ -3739,6 +5099,346 @@ export const questionBank = {
       "correct": 1,
       "short": "Shift mindset, convert activity into verifiable skills and evidence, and build networks.",
       "solution": "### Why this is the answer\nEvery element of that alternative is stated in the source:\n\n| Element | Where it comes from |\n|---|---|\n| **Shift from student to professional in training** | Mindset Shift; ledger |\n| **Convert activity into verifiable skills** | Core Concepts; learning loop |\n| **Evidence** | *\"Collate evidence (How, when & what)\"*; digital portfolio |\n| **Build networks** | *\"Network brings good net worth\"*; networking skills |\n| **Structured twelve weeks** | Twelve Weeks Action Plan |\n\n### Why each distractor is explicitly contradicted\n| Claim | The note's actual position |\n|---|---|\n| A formality, minimum effort | *\"**Not just** an industrial training or a **means of escape** from academic activities\"* |\n| Technical competence only | Six of seven skills are soft; employers notice punctuality, communication, initiative, team work, professionalism, integrity |\n| Supervisors set your goals | *\"**Define 3 to 5 learning goals**\"* \u2014 yours to set; *\"career development is a **strategic effort**\"* |\n\n### The single sentence that holds it together\n> *\"You are being **equipped to create value and build evidence**.\"*\n\nCreate value \u2014 that is the networks and the contribution. Build evidence \u2014 that\nis the portfolio and the verifiable skills. Day 5 is those two instructions,\nexpanded.\n\n### Source\nDay 5 note, all sections; handwritten Day 5 ledger.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_41",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "According to Day 5 NECA lecture, what is SIWES not, and what should it be converted into?",
+      "options": [
+        "SIWES is not an escape from academics \u2014 it is a period to convert experience into verifiable skills that guarantee employability",
+        "SIWES is an escape from academics with no skills",
+        "SIWES is only for collecting tasks",
+        "SIWES is only for vacation"
+      ],
+      "correct": 0,
+      "short": "SIWES is not escape from academics \u2014 convert experience into verifiable skills for employability.",
+      "solution": "### Why this is the answer\nCore Concepts slide: \"SIWES is **not** an escape from academics \u2014 it is a period to convert experience into **verifiable skills** that guarantee **employability**\" It is for building human networks \u2014 network brings good net worth.\n\n### Source\nNECA representative, SWEP Day 5.\n\n### Why the others fail\nEscape with no skills, only collecting tasks, only vacation contradict verifiable skills purpose.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_42",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What mindset shift does NECA lecture urge?",
+      "options": [
+        "See yourself as a professional in training, not a mere student \u2014 you are being equipped to create value and build evidence",
+        "See yourself as only a student with no professional responsibility",
+        "See yourself as a visitor with no value creation",
+        "See yourself as unemployed with no future"
+      ],
+      "correct": 0,
+      "short": "See yourself as professional in training, not mere student \u2014 create value and build evidence.",
+      "solution": "### Why this is the answer\nMindset Shift slide: \"See yourself as a **professional in training**, not a mere student \u2014 you are being equipped to **create value and build evidence**\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly student, visitor, unemployed miss professional in training mindset.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_43",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the three numbers in NECA lecture and what they count?",
+      "options": [
+        "3 to 5 learning goals, 4 to 5 days critical first period, 12 weeks action plan",
+        "1 to 2 goals, 1 day, 2 weeks",
+        "10 goals, 10 days, 10 weeks",
+        "3 goals, 3 days, 3 weeks"
+      ],
+      "correct": 0,
+      "short": "3-5 learning goals, 4-5 days critical first period, 12 weeks action plan.",
+      "solution": "### Why this is the answer\nThe three numbers slide:\n| Number | What it counts |\n| **3 to 5** | Learning goals |\n| **4 to 5** | Days in critical first period |\n| **12** | Weeks in action plan |\n\n### Source\nNECA Day 5.\n\n### Why the others fail\n1-2, 10, 3 only miss the specific ranges.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_44",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What should be done before SIWES according to NECA lecture?",
+      "options": [
+        "Research assigned organisation, update CV and LinkedIn (professional email), define 3\u20135 learning goals, prepare professional wardrobe, daily routine, notebooks, documents, know reporting line, get Role Title, meet ITF requirements",
+        "Do nothing before SIWES",
+        "Only prepare wardrobe and ignore organisation research",
+        "Only update CV and ignore learning goals"
+      ],
+      "correct": 0,
+      "short": "Research organisation, update CV/LinkedIn professional email, define 3-5 goals, prepare wardrobe, routine, notebooks, reporting line, Role Title, ITF requirements.",
+      "solution": "### Why this is the answer\nThings to Do Before SIWES slide lists all those items.\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nDo nothing, only wardrobe, only CV miss comprehensive before-SIWE S checklist.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_45",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What should be done during first 4 to 5 days in SIWES?",
+      "options": [
+        "From day one observe, listen, introduce yourself properly, ask questions (Who is my supervisor? What is my responsibility? What does success look like?), keep daily learning record, dress appropriately, protect confidential information",
+        "From day one sleep and ignore supervisor",
+        "From day one argue with colleagues",
+        "From day one avoid asking questions"
+      ],
+      "correct": 0,
+      "short": "Observe, listen, introduce properly, ask supervisor/responsibility/success questions, keep daily learning record, dress appropriately, protect confidential info.",
+      "solution": "### Why this is the answer\nWhat to Do During First 4-5 Days slide: \"From day one: Observe, listen, and introduce yourself properly to the audience. Ask questions (career development is strategic effort). Examples: Who is my supervisor? What is my responsibility? What does success look like? Keep a daily learning record and dress appropriately. Always protect confidential information and always ask questions.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nSleep, argue, avoid questions contradict observe/listen/ask guidance.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_46",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the six things employers notice, observe, or expect?",
+      "options": [
+        "Punctuality, Communication (listening and asking questions), Initiative, Team work (supporting colleagues), Professionalism, Integrity \u2014 Beware of office politics! Nobody is your best friend at work",
+        "Only punctuality",
+        "Only communication",
+        "Only integrity"
+      ],
+      "correct": 0,
+      "short": "Punctuality, Communication, Initiative, Team work, Professionalism, Integrity \u2014 beware office politics.",
+      "solution": "### Why this is the answer\nWhat Employers Notice slide lists 6: Punctuality, Communication (listening and asking questions), Initiative, Team work (supporting colleagues), Professionalism, Integrity. Note: Beware of office politics! Nobody is your best friend at work.\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly one trait misses other five and office politics warning.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_47",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the SIWES Learning Loop?",
+      "options": [
+        "Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect \u2014 Don\u2019t just collect tasks, but collate evidence (How, when & what), have digital portfolio, do not have career mismatch",
+        "Only observe and do nothing else",
+        "Only practice without documentation",
+        "Only reflect without observing"
+      ],
+      "correct": 0,
+      "short": "Observe \u2192 Ask/Practice \u2192 Document \u2192 Reflect \u2014 collate evidence How/when/what, digital portfolio, avoid career mismatch.",
+      "solution": "### Why this is the answer\nSIWES Learning Loop slide: \"Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect Note: Don\u2019t just collect tasks, but collate evidence (How, when & what). Have a digital portfolio. Do not have a career mismatch.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly one stage misses loop and evidence collation message.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_48",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What are the seven skills to develop according to NECA?",
+      "options": [
+        "Technical skills acquisition, communication, digital literacy, team work, speaking/presentation, work ethics, networking \u2014 only one is technical, rest soft/transferable",
+        "Only technical skills",
+        "Only communication",
+        "Only networking"
+      ],
+      "correct": 0,
+      "short": "Technical, communication, digital literacy, teamwork, speaking/presentation, work ethics, networking \u2014 only one technical.",
+      "solution": "### Why this is the answer\nSkills to Develop slide lists 7: Technical skills acquisition, communication, digital literacy, team work, speaking/presentation, work ethics, networking. Only one is technical \u2014 rest are soft/transferable.\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly one skill misses six others and the one-technical insight.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_49",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the Twelve Weeks Action Plan?",
+      "options": [
+        "Set 3\u20135 goals, have CV and LinkedIn tailored to goals, build job portfolio \u2014 document evidence, build technical skills, document evidence of skills, close skill gap, develop and improve consistently",
+        "Only set goals and do nothing else",
+        "Only build portfolio",
+        "Only close skill gap"
+      ],
+      "correct": 0,
+      "short": "Set 3-5 goals, CV/LinkedIn tailored, build job portfolio document evidence, build technical skills, document evidence, close skill gap, develop consistently.",
+      "solution": "### Why this is the answer\nTwelve Weeks Action Plan slide: \"Set 3-5 goals. Have a CV and LinkedIn profile tailored to your goals. Build a job portfolio \u2014 document evidence. Build technical skills. Document evidence of skills. Close your skill gap, develop, and improve consistently.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly one action misses comprehensive plan.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_50",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the trap about notebooks vs daily learning record in Day 5?",
+      "options": [
+        "Prepare notebooks is before SIWES; keep a daily learning record is during SIWES",
+        "Both are before SIWES",
+        "Both are during SIWES",
+        "Both are after SIWES"
+      ],
+      "correct": 0,
+      "short": "Prepare notebooks is before; keep daily learning record is during.",
+      "solution": "### Why this is the answer\nTraps to watch slide for Day 5: \"Prepare notebooks is before; keep a daily learning record is during.\"\n\n### Source\nDay 5 summaryNotes traps.\n\n### Why the others fail\nBoth before, both during, both after swap the timing distinction.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_51",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which two items appear on both employers\u2019 observed list and skills list, so they cannot distinguish the two lists?",
+      "options": [
+        "Communication and team work appear on both",
+        "Punctuality and integrity appear on both",
+        "Professionalism and initiative appear on both",
+        "Technical skills and digital literacy appear on both"
+      ],
+      "correct": 0,
+      "short": "Communication and team work appear on both employers\u2019 list and skills list.",
+      "solution": "### Why this is the answer\nTraps slide: \"Communication and team work appear on both the employers\u2019 list and the skills list \u2014 they cannot distinguish the two.\"\n\n### Source\nDay 5 summaryNotes.\n\n### Why the others fail\nPunctuality/integrity/professionalism are observed traits not listed as skills; technical/digital are only in skills list.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_52",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Which are observed traits, not listed skills, in Day 5?",
+      "options": [
+        "Punctuality, integrity, professionalism are observed traits, not listed skills",
+        "Communication and teamwork are observed traits only",
+        "Technical skills are observed traits",
+        "Digital literacy is observed trait"
+      ],
+      "correct": 0,
+      "short": "Punctuality, integrity, professionalism are observed traits, not listed skills.",
+      "solution": "### Why this is the answer\nTraps: \"Punctuality, integrity, professionalism are observed traits, not listed skills.\"\n\n### Source\nDay 5 summaryNotes.\n\n### Why the others fail\nCommunication/teamwork are both; technical/digital are skills not observed traits.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_53",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the duration distinction trap for Day 5?",
+      "options": [
+        "12 weeks is the plan; 8 weeks is SWEP minimum; 24 weeks is SIWES II",
+        "12 weeks is SWEP minimum; 8 weeks is plan; 24 weeks is SWEP",
+        "All durations are same",
+        "24 weeks is SWEP minimum"
+      ],
+      "correct": 0,
+      "short": "12 weeks is plan, 8 weeks SWEP minimum, 24 weeks SIWES II.",
+      "solution": "### Why this is the answer\nTraps: \"12 weeks is the plan; 8 weeks is the SWEP minimum; 24 weeks is SIWES II.\"\n\n### Source\nDay 5 summaryNotes.\n\n### Why the others fail\nSwapped or same durations miss the three distinct numbers.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_54",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "Who is the speaker for Day 5 according to notes?",
+      "options": [
+        "Nigeria Employers\u2019 Consultative Association (NECA) representative \u2014 no personal name given",
+        "Prof. O. A. Olojede",
+        "Prof. M. D. Shittu",
+        "Dr. A. Olatunji"
+      ],
+      "correct": 0,
+      "short": "NECA representative \u2014 no personal name given.",
+      "solution": "### Why this is the answer\nDay 5 summaryNotes and lectureMeta: Speaker is Nigeria Employers\u2019 Consultative Association (NECA) \u2014 note says speaker only as NECA representative, no personal name given. Trap slide: \"The note names the speaker only as a NECA representative \u2014 no personal name is given.\"\n\n### Source\nDay 5 notes.\n\n### Why the others fail\nOlojede, Shittu, Olatunji are Day 1 and Day 2 speakers, not Day 5.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_55",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does 'network brings good net worth' mean in SIWES context?",
+      "options": [
+        "SIWES period is for building human networks",
+        "SIWES is only for collecting money",
+        "Networking is not important",
+        "Net worth has no connection to network"
+      ],
+      "correct": 0,
+      "short": "SIWES period is for building human networks \u2014 network brings net worth.",
+      "solution": "### Why this is the answer\nCore Concepts: \"The SIWES period is for building human networks, as network brings good net worth.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly money, not important, no connection contradict networking message.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_56",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What should a CV and LinkedIn be tailored to according to Twelve Weeks Action Plan?",
+      "options": [
+        "Tailored to your goals (3\u20135 goals)",
+        "Tailored to nothing",
+        "Tailored to only one goal",
+        "Tailored to random goals"
+      ],
+      "correct": 0,
+      "short": "CV and LinkedIn tailored to your goals.",
+      "solution": "### Why this is the answer\nPlan: \"Have a CV and LinkedIn profile tailored to your goals.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nNothing, only one, random contradict tailored to your 3-5 goals.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_57",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does 'Don\u2019t just collect tasks, but collate evidence' emphasize?",
+      "options": [
+        "How, when & what \u2014 have a digital portfolio, avoid career mismatch",
+        "Only collect tasks without evidence",
+        "Only collate evidence without tasks",
+        "Ignore evidence completely"
+      ],
+      "correct": 0,
+      "short": "Collate evidence How/when/what, digital portfolio, avoid career mismatch.",
+      "solution": "### Why this is the answer\nLearning Loop note: \"Don\u2019t just collect tasks, but collate evidence (How, when & what). Have a digital portfolio. Do not have a career mismatch.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly tasks, only evidence without tasks, ignore evidence miss How/when/what and portfolio message.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_58",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the warning about office politics in Day 5?",
+      "options": [
+        "Beware of office politics! Nobody is your best friend at work",
+        "Office politics is good and everyone is best friend",
+        "Ignore office politics completely",
+        "Office politics does not exist"
+      ],
+      "correct": 0,
+      "short": "Beware of office politics! Nobody is your best friend at work.",
+      "solution": "### Why this is the answer\nEmployers Notice slide includes: \"Note: Beware of office politics! Nobody is your best friend at work.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nGood/best friend, ignore, does not exist contradict warning.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_59",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What does 'close your skill gap, develop and improve consistently' refer to?",
+      "options": [
+        "Part of Twelve Weeks Action Plan \u2014 close skill gap, develop and improve consistently",
+        "Part of before SIWES only",
+        "Not part of any plan",
+        "Only for after SIWES"
+      ],
+      "correct": 0,
+      "short": "Part of Twelve Weeks Action Plan \u2014 close skill gap, develop consistently.",
+      "solution": "### Why this is the answer\nAction Plan ends with: \"Close your skill gap, develop, and improve consistently.\"\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nOnly before, not part, only after miss its place in 12-week plan.",
+      "lectureId": "d5-l1"
+    },
+    {
+      "id": "swep_day5_60",
+      "topicId": "swep-day-5",
+      "kind": "theory",
+      "type": "mcq",
+      "question": "What is the difference between collecting tasks and collating evidence in SIWES?",
+      "options": [
+        "Collecting tasks is just doing activities; collating evidence is documenting How, when & what with digital portfolio to build verifiable skills",
+        "No difference, same thing",
+        "Collecting tasks is better than collating evidence",
+        "Collating evidence is not needed"
+      ],
+      "correct": 0,
+      "short": "Collecting tasks is doing activities; collating evidence is documenting How/when/what with portfolio for verifiable skills.",
+      "solution": "### Why this is the answer\nLearning Loop teaching: Don't just collect tasks (activities) but collate evidence (How, when & what). Have digital portfolio. SIWES is not escape but period to convert experience into verifiable skills guaranteeing employability. Network brings net worth. Professional in training mindset.\n\n### Source\nNECA Day 5.\n\n### Why the others fail\nNo difference, collecting better, not needed contradict evidence-based employability message.",
       "lectureId": "d5-l1"
     }
   ],

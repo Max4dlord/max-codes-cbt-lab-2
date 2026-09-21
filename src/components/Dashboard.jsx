@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { courses } from '../data.js'
-import { getTopics, getCategories, getLectures, getQuestionCount, buildQuestionSet } from '../utils.js'
+import { getTopics, getCategories, getLectures, buildQuestionSet } from '../utils.js'
 import { loadSession, clearSession, saveSession } from '../progress.js'
 import { saveStudySession } from '../progress.js'
 
@@ -35,13 +35,6 @@ export default function Dashboard() {
   const lectures = getLectures(courseId)
   const selectedTopic = topics.find((t) => t.id === topicId)
   const selectedLecture = lectures.find((l) => l.id === lectureId)
-
-  const poolSize =
-    mode === 'topic' && topicId
-      ? getQuestionCount(courseId, topicId)
-      : mode === 'lecture' && lectureId
-      ? selectedLecture?.count ?? 0
-      : getQuestionCount(courseId)
 
   function startTest() {
     setError('')
@@ -164,7 +157,7 @@ export default function Dashboard() {
               <div className="r-title">You have a test in progress</div>
               <div className="r-sub">
                 {existing.courseCode}{existing.topicName ? ` · ${existing.topicName}` : ' · Full course'} ·
-                {' '}{existing.questionSet.length} questions · {existing.index + 1} answered ·
+                {' '}{existing.index + 1} answered ·
                 {' '}{Math.floor(existing.remainingSec / 60)} min left{existing.paused ? ' · paused' : ''}
               </div>
             </div>
@@ -211,9 +204,6 @@ export default function Dashboard() {
               <div className="course-pill" style={{ padding: '10px 14px', border: '1px solid var(--border)', borderRadius: 10 }}>
                 <span className="course-dot" style={{ background: course.accent }} />
                 <strong style={{ fontSize: 15 }}>{course.code} — {course.title}</strong>
-                <span className="muted" style={{ fontSize: 12, marginLeft: 'auto' }}>
-                  {getQuestionCount(course.id)} questions
-                </span>
               </div>
             )}
             <p className="info-line">{course.blurb}</p>
@@ -249,7 +239,7 @@ export default function Dashboard() {
                           onClick={() => setLectureId(l.id)}
                         >
                           <div className="lecture-name">{l.name}</div>
-                          <div className="lecture-meta">{l.speaker} · {l.count} Qs</div>
+                          <div className="lecture-meta">{l.speaker}</div>
                         </button>
                       ))}
                     </div>
@@ -277,7 +267,6 @@ export default function Dashboard() {
                             onClick={() => setTopicId(t.id)}
                           >
                             <div className="t-name">{t.name}</div>
-                            <div className="t-count">{t.count}</div>
                           </button>
                         ))}
                       </div>
@@ -320,11 +309,10 @@ export default function Dashboard() {
 
           <p className="info-line">
             {mode === 'topic' && topicId
-              ? <>Pool for <strong>{selectedTopic?.name}</strong>: <strong>{poolSize}</strong> question(s) available.</>
+              ? <>Ready for <strong>{selectedTopic?.name}</strong> — questions will be shuffled on start.</>
               : mode === 'lecture' && lectureId
-              ? <>Pool for <strong>{selectedLecture?.name}</strong>: <strong>{poolSize}</strong> question(s) available.</>
-              : <>Full course pool: <strong>{poolSize}</strong> question(s) available.</>}
-            {' '}Questions will be shuffled on start.
+              ? <>Ready for <strong>{selectedLecture?.name}</strong> — questions will be shuffled on start.</>
+              : <>Full course pool ready — questions will be shuffled on start.</>}
           </p>
 
           {error && <p style={{ color: 'var(--red)', fontSize: 14, marginTop: 12 }}>{error}</p>}
@@ -343,24 +331,19 @@ export default function Dashboard() {
         <div className="card">
           <h2>Overview</h2>
           <p className="muted" style={{ fontSize: 14 }}>
-            {course.code} currently has <strong style={{ color: 'var(--text)' }}>{getQuestionCount(courseId)}</strong> total questions
-            across <strong style={{ color: 'var(--text)' }}>{topics.length}</strong> topics{hasCats ? (
-              <> in <strong style={{ color: 'var(--text)' }}>{categories.length}</strong> main categories</>
-            ) : ''}.
+            {course.code} covers <strong style={{ color: 'var(--text)' }}>{topics.length}</strong> topic{topics.length===1?'':'s'} in tertiary-standard depth. Select a mode on the left to begin.
           </p>
 
           {hasCats ? (
-            categories.map((c) => (
+            categories.filter(c=>!c.spansAll).map((c) => (
               <div key={c.id} style={{ marginTop: 16 }}>
                 <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>
                   {c.name}
-                  <span className="cat-badge">{c.count === 0 ? 'Coming soon' : `${c.count} Qs`}</span>
                 </div>
                 <div className="topic-grid" style={{ marginTop: 4 }}>
                   {c.topics.length > 0 ? c.topics.map((t) => (
                     <div key={t.id} style={{ padding: 10, borderRadius: 10, background: 'var(--bg-soft)', border: '1px solid var(--border)', fontSize: 13 }}>
-                      <span style={{ fontWeight: 600 }}>{t.name}</span>{' '}
-                      <span className="muted" style={{ fontSize: 12 }}>· {t.count}</span>
+                      <span style={{ fontWeight: 600 }}>{t.name}</span>
                     </div>
                   )) : (
                     <p className="muted" style={{ fontSize: 13, margin: 0 }}>
@@ -446,8 +429,8 @@ export default function Dashboard() {
                     {c.count === 0
                       ? 'Coming soon'
                       : c.spansAll
-                      ? `${c.count} questions · everything, shuffled`
-                      : `${c.count} questions · ${c.topics.length} topics`}
+                      ? `Everything, shuffled`
+                      : `${c.topics.length} topics`}
                   </div>
                 </button>
               ))}
@@ -471,7 +454,6 @@ export default function Dashboard() {
                           onClick={() => setStudyTopicId(t.id)}
                         >
                           <div className="t-name">{t.name}</div>
-                          <div className="t-count">{t.count}</div>
                         </button>
                       ))}
                     </div>
@@ -504,10 +486,10 @@ export default function Dashboard() {
           </select>
           <p className="info-line" style={{ marginTop: 8 }}>
             {studyMode === 'topic' && studyTopicId
-              ? <>You’ll study <strong>{getTopics(studyCourseId).find(t=>t.id===studyTopicId)?.name}</strong>: <strong>{getQuestionCount(studyCourseId, studyTopicId)}</strong> available — shown with correct answer pre-ticked.</>
+              ? <>You’ll study <strong>{getTopics(studyCourseId).find(t=>t.id===studyTopicId)?.name}</strong> — shown with correct answer pre-ticked.</>
               : studyMode === 'category' && studyCategoryId
-              ? <>You’ll study <strong>{studyCats.find(c=>c.id===studyCategoryId)?.name}</strong>: <strong>{studyCats.find(c=>c.id===studyCategoryId)?.count}</strong> available — shown with correct answer pre-ticked.</>
-              : <>You’ll study <strong>{getQuestionCount(studyCourseId)}</strong> questions — each shown with correct answer ticked and a detailed explanation button.</>}
+              ? <>You’ll study <strong>{studyCats.find(c=>c.id===studyCategoryId)?.name}</strong> — shown with correct answer pre-ticked.</>
+              : <>You’ll study with correct answer ticked and a detailed explanation button.</>}
           </p>
         </div>
 

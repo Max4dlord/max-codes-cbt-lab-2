@@ -29,6 +29,29 @@ from swep200_day2 import QUESTIONS as DAY2  # noqa: E402
 from swep200_day3 import QUESTIONS as DAY3  # noqa: E402
 from swep200_day4 import QUESTIONS as DAY4  # noqa: E402
 from swep200_day5 import QUESTIONS as DAY5  # noqa: E402
+
+# Extra 20 per day (100 total) - fresh material not in original bank
+try:
+    from swep200_day1_extra import QUESTIONS as DAY1_EXTRA
+except ImportError:
+    DAY1_EXTRA = []
+try:
+    from swep200_day2_extra import QUESTIONS as DAY2_EXTRA
+except ImportError:
+    DAY2_EXTRA = []
+try:
+    from swep200_day3_extra import QUESTIONS as DAY3_EXTRA
+except ImportError:
+    DAY3_EXTRA = []
+try:
+    from swep200_day4_extra import QUESTIONS as DAY4_EXTRA
+except ImportError:
+    DAY4_EXTRA = []
+try:
+    from swep200_day5_extra import QUESTIONS as DAY5_EXTRA
+except ImportError:
+    DAY5_EXTRA = []
+
 from swep200_lectures import LECTURES, question_lecture_map  # noqa: E402
 
 DATA = ROOT / 'src' / 'data.js'
@@ -43,7 +66,7 @@ COURSE = {
         "tripartite structure, programme timelines and durations, the history and "
         "spread of the Industrial Training Fund, the SIWES story at OAU, and the "
         "amphitheatre rules you are assessed on. Test yourself across the whole "
-        "course, one orientation day, or a single lecture \u2014 every question carries "
+        "course, one orientation day, or a single lecture — every question carries "
         "a full explanation traced back to the slide it came from."
     ),
     "accent": "#0F7B3F",
@@ -52,13 +75,10 @@ COURSE = {
 
 CATEGORIES = [
     {
-        # VIRTUAL category: owns no topics. `spansAll` makes the app shuffle
-        # across every question in the course, so "General" = test everything
-        # from all SWEP Days and all lectures at once.
         "id": "general",
         "name": "General",
         "spansAll": True,
-        "blurb": "Shuffled across every SWEP Day and lecture \u2014 the full-course mix.",
+        "blurb": "Shuffled across every SWEP Day and lecture — the full-course mix.",
     },
     {
         "id": "swep-days",
@@ -75,7 +95,7 @@ CATEGORIES = [
 TOPICS = [
     {
         "id": "swep-day-1",
-        "name": "Day 1 \u2014 Monday, 14th September",
+        "name": "Day 1 — Monday, 14th September",
         "categoryId": "swep-days",
         "summaryNotes": """### What Day 1 covered
 Three lectures, recorded in the orientation ledger:
@@ -89,38 +109,38 @@ Three lectures, recorded in the orientation ledger:
 ### The dates that carry marks
 | Year | Event |
 |---|---|
-| **1971** | ITF established under **Act No. 47**; take-off grant **\u20a61,000,000 (\u00a3500,000)** |
+| **1971** | ITF established under **Act No. 47**; take-off grant **₦1,000,000 (£500,000)** |
 | **1973** | SIWES established by ITF; **OAU (then University of Ife) among the first participants** |
 | 1974 | SIWES actually started |
 | to 1978 | ITF **fully funded** SIWES |
 | **1979** | FME makes a **one-year IT programme compulsory** for Polytechnics/Colleges of Technology |
 | **Jan 1980** | ITF **withdraws** from financing SIWES |
-| 1980\u20131984 | **NUC & NBTE** fund the scheme; NBTE renames SIWES **COSITA** |
+| 1980–1984 | **NUC & NBTE** fund the scheme; NBTE renames SIWES **COSITA** |
 | **1984** | Scheme **expanded** to sciences, environmental sciences, agriculture; ITF resumes management **Nov 1984** (**IAGR** Dept.) |
 | **1985** | **Decree No. 16 of August 1985** gives SIWES legal backing |
-| 1987 | Austerity measures + **SAP** \u2014 firms stop providing accommodation |
+| 1987 | Austerity measures + **SAP** — firms stop providing accommodation |
 | 1994 | **30% of firms** reject institutional requests; individual-merit applications |
-| **1995** | ITF/NUC allocate **3\u201315 credit units** |
-| 2011 | **ITF Amendment Act** \u2014 NISDP, WOSEP, STEPP-C, CONSEP, **SUPA** |
+| **1995** | ITF/NUC allocate **3–15 credit units** |
+| 2011 | **ITF Amendment Act** — NISDP, WOSEP, STEPP-C, CONSEP, **SUPA** |
 
 ### Durations and credit units
-- **SWEP 200** \u2014 ideally **12 weeks**, strict minimum **8 weeks** (after 200-Level Rain Semester)
-- **SIWES I** \u2014 12 weeks, after the **300**-Level Rain Semester
-- **SIWES II** \u2014 **24 weeks (6 months)**, 400-Level Rain Semester + vacation. **Only SIWES II receives ITF stipends.**
+- **SWEP 200** — ideally **12 weeks**, strict minimum **8 weeks** (after 200-Level Rain Semester)
+- **SIWES I** — 12 weeks, after the **300**-Level Rain Semester
+- **SIWES II** — **24 weeks (6 months)**, 400-Level Rain Semester + vacation. **Only SIWES II receives ITF stipends.**
 - Polytechnics/Colleges of Education **4 months**; Universities **6 months**
-- Credit units: **Year II: 3 \u00b7 Year III: 3 \u00b7 Year IV: 9** (Technology & EDM)
+- Credit units: **Year II: 3 · Year III: 3 · Year IV: 9** (Technology & EDM)
 - Exempt 4-year programmes: **Architecture, Fine and Applied Arts, Industrial Chemistry**
-- **Faculty of Agriculture** \u2014 consolidated **1-year 'Farm Year'**
+- **Faculty of Agriculture** — consolidated **1-year 'Farm Year'**
 
 ### The daily schedule
 | Time | Activity |
 |---|---|
-| 08:00 \u2013 08:30 | Arrival + **first** attendance check |
-| 08:30 \u2013 09:00 | Recap of previous day |
-| 09:00 \u2013 10:30 | Lecture 1 |
-| 10:30 \u2013 12:00 | Lecture 2 |
-| 12:00 \u2013 12:30 | Break \u2014 **second check strictly 12:25\u201312:30** |
-| 12:30 \u2013 14:00 | Lecture 3 |
+| 08:00 – 08:30 | Arrival + **first** attendance check |
+| 08:30 – 09:00 | Recap of previous day |
+| 09:00 – 10:30 | Lecture 1 |
+| 10:30 – 12:00 | Lecture 2 |
+| 12:00 – 12:30 | Break — **second check strictly 12:25–12:30** |
+| 12:30 – 14:00 | Lecture 3 |
 
 Orientation = **5 days, 14 lectures**. Signing the register for another student
 is **handled as a criminal act**.
@@ -141,8 +161,8 @@ and Publicity, SERVICOM**.
 
 ### Traps to watch
 - **SWEP = Students *Workshop* Experience Programme** (not "Work").
-- **Act 47 \u2192 1971 \u2192 created the ITF.** **Decree 16 \u2192 1985 \u2192 backed SIWES.**
-- \u20a690 is the **1976** allowance, not 1981 (**\u20a6250**).
+- **Act 47 → 1971 → created the ITF.** **Decree 16 → 1985 → backed SIWES.**
+- ₦90 is the **1976** allowance, not 1981 (**₦250**).
 - Supervisory allowance is **10%** of the student allowance.
 - **42** = Area Offices, not HQ units.
 - E-SIWES portal is **www.siwesdata.org**; e-payment came from **Yar'Adua's 2009 budget**.
@@ -150,7 +170,7 @@ and Publicity, SERVICOM**.
     },
     {
         "id": "swep-day-2",
-        "name": "Day 2 \u2014 Tuesday, 15th September",
+        "name": "Day 2 — Tuesday, 15th September",
         "categoryId": "swep-days",
         "summaryNotes": """### What Day 2 covered
 | # | Lecture | Speaker |
@@ -159,302 +179,288 @@ and Publicity, SERVICOM**.
 | 2 | Workshop & Industrial Safety | **Prof. A. A. Adeleke** |
 | 3 | 21st-Century Employability Skills | **Prof. A. B. Ekanola** |
 
-### Substance abuse \u2014 the numbers
+### Substance abuse — the numbers
 | Measure | Figure |
 |---|---|
 | Global average use | **5.3%** |
-| Nigeria, aged 15\u201364 | **14.3%** (\u2248 14.4 million people) |
-| Lifetime prevalence, SW Nigerian universities | **45% \u2013 84.5%** |
+| Nigeria, aged 15–64 | **14.3%** (≈ 14.4 million people) |
+| Lifetime prevalence, SW Nigerian universities | **45% – 84.5%** |
 
 Most abused: **alcohol, tobacco, codeine cough syrups, tramadol, cannabis**.
 
-**Five categories of warning sign** \u2014 know which is which:
-- **Physical** \u2014 bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene
-- **Behavioural** \u2014 new friend groups, secrecy, stealing, **impulsivity/risk-taking**
-- **Academic** \u2014 absenteeism, falling grades, discipline, **unsubmitted assignments**
-- **Psychological/Emotional** \u2014 mood swings, anxiety, depression, **hallucinations**
-- **Social/Lifestyle** \u2014 money trouble, fights/cultism, sleep changes, drug joints
+**Five categories of warning sign** — know which is which:
+- **Physical** — bloodshot/glassy eyes, weight change, odours, tremors, poor hygiene
+- **Behavioural** — new friend groups, secrecy, stealing, **impulsivity/risk-taking**
+- **Academic** — absenteeism, falling grades, discipline, **unsubmitted assignments**
+- **Psychological/Emotional** — mood swings, anxiety, depression, **hallucinations**
+- **Social/Lifestyle** — money trouble, fights/cultism, sleep changes, drug joints
 
 **Prevention** (before) vs **Intervention** (after):
 - Prevention: campus drug education, life skills, peer support, restricting access, parents/community
 - Intervention: early screening, counselling, medical treatment/rehab, policy & discipline, media campaigns
 - **Multi-sectoral collaboration**: **NDLEA**, Federal Ministry of Health, NGOs, campus health services
 
-### Safety \u2014 the numbers
+### Safety — the numbers
 - **5,486** US fatal occupational injuries in 2022 (**+5.7%** on 2021)
-- **WHO**: **20\u201350%** of workers face workplace hazards
-- **ILO**: economic cost **1.8%\u20136% of GDP**
+- **WHO** — large % of workers face hazards; **ILO** — economic costs 4%–6% of GDP
+- High-risk: construction, agriculture, mining, manufacturing, healthcare
 
-**High-risk industries**: construction, healthcare, manufacturing, transportation,
-agriculture, iron & steel, chemical/petrochemical, heavy equipment operation.
+**PPE standards:**
+- US safety glasses: **ANSI Z87.1**, Europe: **EN 166**
+- High-visibility: **EN ISO 20471**; Welding: **EN ISO 11611**
+- Respirators: **OSHA & NIOSH** — proper selection, fit testing, medical evaluation; **APRs** = air-purifying, **SARs** = supplied-air
+- Nuclear PPE: **Tyvek, neoprene, nitrile** + **Anti-C/FR**; symbol = worker in full-body suit + respirator + **trefoil** (yellow/black)
 
-**PPE standards**
-| Standard | Covers | Region |
-|---|---|---|
-| **ANSI Z87.1** | Safety glasses | **US** |
-| EN 166 | Safety glasses | Europe |
-| EN ISO 20471 | High-visibility clothing | Europe |
-| EN ISO 11611 | Welding protection | Europe |
+**Hazards:**
+- Chemical: toxic, flammable, corrosive
+- Physical: noise, vibration, radiation, extreme temps, poor lighting
+- Ergonomic: repetitive, awkward postures → musculoskeletal
+- Biological: bacteria, viruses, fungi
 
-**Hierarchy of control** (most \u2192 least effective):
-**Elimination** \u2192 Substitution \u2192 Engineering \u2192 Administrative \u2192 **PPE (last line)**
+**Controls (most → least effective):**
+Elimination (most effective — remove hazard) → Substitution → Engineering (guarding, ventilation) → Administrative (procedures, training) → PPE (gloves, masks)
 
-**Safety signs \u2014 shape + colour**
-| Type | Shape | Colour |
-|---|---|---|
-| Prohibition | Circular | Red border + diagonal |
-| Warning | **Triangular** | Yellow/amber |
-| Mandatory | Circular | **Blue** |
-| Emergency/First-aid | Rectangular | **Green** |
+Safety signs: Prohibition = circular red border + diagonal line; Warning = triangular yellow/black; Mandatory = blue; Emergency = green; Fire = red.
 
-**Fire extinguishers** \u2014 all red bodies, coded markings:
-Water **green triangle** (A) \u00b7 CO2 **black square** (B, C) \u00b7
-Foam **cream label** (A, B) \u00b7 Dry powder **blue circle** (A, B, C).
-Never use water on an electrical fire.
-
-**Bodies**: US \u2014 **OSHA** (enforces), **NIOSH** (research).
-Nigeria \u2014 **NISCN**, **ISPON**, OSHAssociation, MAN, NACCIMA.
+Extinguishers: **RED** water (Class A), **BLUE** dry powder, **CREAM** foam, **BLACK** CO₂ (multipurpose electrical + liquids, **no residue**). Water types: stored pressure vs gas cartridge.
 
 ### Employability
-**Definition**: the capabilities to **obtain, retain, perform and progress** in
-employment. You can be employed yet barely employable if your skills are going obsolete.
+**Definition:** capability to **obtain, retain, perform and progress** in employment. Not just about insufficient jobs — **many graduates are unemployable** (CBN recruitment, German software engineers).
 
-**Agents of transformation**: AI, automation, digital platforms, globalisation, remote work.
+**Agents of global transformation:** AI, automation, digital platforms, globalisation, remote work.
 
-**8 clusters**: communication \u00b7 critical thinking & problem-solving \u00b7 digital &
-technological \u00b7 creativity & innovation \u00b7 collaboration & teamwork \u00b7 personal
-effectiveness & emotional intelligence \u00b7 career management, entrepreneurship &
-leadership \u00b7 adaptability, lifelong learning & professional development.
+**8 clusters:** Communication/interpersonal, Critical thinking/problem-solving, Digital/technological, Creativity/innovation, Collaboration/teamwork, Personal effectiveness/emotional intelligence, Career management/entrepreneurship/leadership, Adaptability/lifelong learning/professional development.
 
-**Critical thinking order**: identify the problem \u2192 research \u2192 determine data
-relevance \u2192 ask questions \u2192 identify best solution \u2192 present \u2192 analyse the decision.
+**Communication:** oral/written, presentation, listening, negotiation, interpersonal, professional correspondence, digital — includes listening, nonverbal, clarity/concision, friendliness, confidence, empathy, open-mindedness, respect, feedback, picking right medium. Acquired through practice: speak/write, present/debate, teach/seminars, professional orgs, reports, feedback, record yourself.
 
-**Key distinctions**
-- **Creativity** sees possibilities; **innovation** converts them into useful outcomes.
-- **Adaptability** = functioning through change; **resilience** = recovering from setbacks.
-- A **skill** performs a task; a **capability** applies knowledge in *changing* circumstances.
-- A **CV claims**; a **portfolio demonstrates**.
-- Goal with AI: an **AI-enabled professional**, not competing with AI, not blind delegation.
+**Critical thinking:** analyse objectively, evaluate evidence, identify assumptions, reach reasoned conclusions. Steps: Identify problem, Research, Determine data relevance, Ask questions, Identify best solution, Present, Analyze decision. Acquired via complex questions, reading widely, comparing perspectives, case studies, debating controversial, solving problems with no obvious answer, changing mind when better evidence.
 
-**Career model**: Degree \u2192 work \u2192 reskill \u2192 work \u2192 upskill \u2192 transition \u2192
-lifelong learning (via micro-credentials and short courses).
+Puzzles: storm bus stop (woman/man dreams, friend saved life, old ill lady, one seat); farmer fox goose beans boat (goose eats beans or fox eats goose if left unattended).
 
-**Five things to build alongside the degree**: communication ability \u00b7 digital
-capability \u00b7 evidence of practical experience \u00b7 a professional network \u00b7 a learning habit.
+**Problem-solving:** identifying real problem, gathering info, analysing causes, generating alternatives, evaluating options, implementing, assessing results. Best way = real problems, projects: What problem can I solve today?
 
-### Traps to watch
-- **5.3%** global vs **14.3%** Nigeria vs **45\u201384.5%** university lifetime prevalence.
-- Every warning-sign distractor is a **real** sign under a **different** category.
-- **Prevention** precedes the problem; **intervention** follows it.
-- **EN** = European, so **ANSI Z87.1** is the US one.
-- **PPE is the weakest** control, not the strongest.
-- Prohibition and mandatory signs are **both circular** \u2014 red vs blue decides.
-- **8** skill clusters, but **5** things to build. Different lists.
+**Digital literacy:** basic requirement — use digital communication tools, search/evaluate info, work with digital platforms, manage documents, collaborate online, understand basic data, protect info, use responsibly. Beyond Word/email — sophisticated fluency.
+
+**AI literacy:** what AI can/cannot do, limitations, formulate effective instructions, evaluate outputs, bias, privacy, IP, ethical responsible use. Goal not to compete but **become AI-enabled professional** — future belongs to **AI-enabled professionals** not just AI specialists. Acquired via practical applications: research, brainstorm, analyse, draft/revise, generate ideas, simulate scenarios, support learning, automate routine, improve productivity + human judgement.
+
+**Creativity:** seeing possibilities others may not. **Innovation:** converting ideas into useful outcomes. Requires asking unconventional questions, attending details, analysing, open-mindedness, problem-solving, don't fear failure, assess/negate risks, seek more/better with less. Developed via different disciplines, reading outside field, travel, different perspectives, experiment, question: Is there better way?
+
+**Teamwork:** working well, effective relationships diverse personalities, maturity agree/disagree, focus team goals not individual. Future workplace collaborative, complex problems cannot be solved by one discipline. Requires listening, sharing ideas, negotiation, resolving disagreements, respecting perspectives, coordinating activities. Brilliant individual who cannot work with others = organisational liability. Developed via group projects, student orgs, community service, sports, volunteering, professional associations, multidisciplinary projects, work placements — contribute without dominating.
+
+**Emotional Intelligence:** understanding own emotions and recognising/responding to others — self-awareness, self-regulation, empathy, social awareness, relationship management. Requires internal motivation, self-regulation, self-awareness, empathy, social awareness. All human activities involve people; tech automates processes but relationships remain fundamental. Developed via active listening, receiving criticism without defensive, reflecting behaviour, empathy, observing actions affect others, managing anger/frustration professionally, seeking honest feedback, cultivating self-awareness.
+
+**Social Intelligence:** ability to build, understand, manage, sustain interpersonal relationships — strong competencies, nourishing behaviours making others feel valued, trusted, respected.
+
+**Adaptability & Resilience:** certainty = change, adaptable worker functions effectively despite change. Resilience = ability to recover from setbacks and continue moving forward — career contains rejection, failure, redundancy, organisational change, uncertainty — requires psychological/professional resilience. Developed via outside comfort zone, new skills, unfamiliar challenging assignments, different people, move across disciplines, learn from failure, avoid too comfortable.
+
+**Leadership:** ability to influence people positively towards shared objective — needs vision & integrity, communication & emotional intelligence, decision-making & strategic thinking, collaboration & accountability. Acquired via leading project, organising event, volunteering, mentoring, solving problem, taking responsibility — develops through responsibility and practice.
+
+**Entrepreneurial:** opportunity recognition & initiative, creativity & risk assessment, resourcefulness & financial awareness, networking & negotiation, value creation.
+
+**Time Management:** time audit, block distractions, schedule yourself, avoid multitasking, insist others respect time, keep call to action in mind, get downtime/rest.
+
+**Conflict Management:** ability to identify/manage conflicts sensibly, fairly, efficiently so they don't degenerate into crises but better synergy/teamwork — requires teamwork, problem-solving, emotional intelligence, communication, stress management.
+
+**Ethical/Professional:** integrity & honesty, accountability & respect, confidentiality & responsibility, fairness & professional discipline.
+
+**Career Management:** self-assessment strengths/weaknesses, researching occupations & setting career goals, building professional networks & preparing CVs/portfolios, interview skills & personal branding, networking & finding mentors, evaluating career opportunities.
+
+**Acquisition:** Education & Experience, Practice & Reflection, Mentoring & Networking, Continuous Learning.
+
+**Experiential Learning:** internships & industrial attachments, apprenticeships & volunteering, community & research projects, part-time work & student leadership, entrepreneurial activities — experience converts knowledge into competence.
+
+**Formal Education:** not simply listen/reproduce in exams but solve problems, conduct research, make presentations, participate in debates, undertake projects, work in teams, engage industry, apply knowledge — classroom must become place where students do, not merely listen.
+
+**Project-based learning:** develops teamwork, communication, leadership, creativity, problem-solving, time management, digital competence.
+
+**Mentoring/Coaching:** provides guidance, experience, encouragement, professional insight, networks, constructive criticism.
+
+**Self-Directed Learning:** today individual can learn from universities, professionals, experts, institutions worldwide — online courses, webinars, tutorials, digital libraries, professional communities — create personal learning plan, identify skills needed, set objectives.
+
+**Micro-Credentials:** traditional degrees important but complemented by shorter forms — micro-credentials, professional certificates, short courses help acquire specific competencies quickly. Instead of Degree → employment → retirement, move towards Degree → work → reskill → work → upskill → career transition → lifelong learning.
+
+**Networking:** provides information & mentors, opportunities & collaborations, employment & entrepreneurship, professional development — not only what you know but who knows what you can do. Build via conferences, seminars, professional associations, alumni networks, career fairs, industry events, online professional communities — mutually beneficial relationships.
+
+**Portfolio:** CV tells what you claim you can do, portfolio can demonstrate it — containing research projects, presentations, software projects, designs, business ideas, community projects, certificates, professional achievements, evidence of impact.
+
+**Challenge:** consciously/purposively develop appropriately soft, digital, technical skills — at least one at any point.
+
+**Special Message:** degree is beginning of professional learning. While in university, develop at least five things alongside academic qualification: strong communication ability, digital capability, evidence of practical experience, professional network, learning habit.
+
+**Skills vs Capabilities:** skill = ability to perform particular task; capability = ability to apply knowledge/skills effectively in changing circumstances — e.g., knowing particular software = skill, being able to learn new software when technology changes = capability.
+
+**Future:** not about producing people who know everything (impossible), about producing people who can learn anything they need to know — become digitally capable, intellectually curious, emotionally intelligent, ethically responsible, entrepreneurial, collaborative, creative, adaptable — above all: be lifelong learner.
 """,
     },
     {
         "id": "swep-day-3",
-        "name": "Day 3 \u2014 Wednesday, 16th September",
+        "name": "Day 3 — Wednesday, 16th September",
         "categoryId": "swep-days",
         "summaryNotes": """### What Day 3 covered
 | # | Lecture | Speaker |
 |---|---|---|
-| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** (Agricultural Economics) |
-| 2 | Renewable Energy & PV Technology | **Dr. F. K. Ariyo** (Electronic & Electrical Engineering) |
-| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** (PhD, REng (Mech), MNIMechE, MNIEM, MNSE) |
+| 1 | Entrepreneurship in the 5G Era | **Prof. A. B. Ayanwale** |
+| 2 | Introduction to Renewable Energy (PV) Technology | **Dr. F. K. Ariyo** |
+| 3 | Workshop Practice, Workforce & National Growth | **Prof. V. Omidiji** |
 
-### 5G \u2014 the three superpowers
-| Superpower | What it is | Its label |
-|---|---|---|
-| **eMBB** | Insanely high speed, massive bandwidth | \u201ccontent and data delivery\u201d |
-| **URLLC** | **~1 ms** latency, extreme reliability | \u201creal-time control and safety\u201d |
-| **mMTC** | Huge numbers of low-power devices | \u201cmassive data collection\u201d |
+### Entrepreneurship in the 5G Era — key numbers
+- Sub-Saharan Africa: **more than 1 billion people**, half **under 25 by 2050**; **1.2-billion-person market** = world's largest free trade area
+- **Five mobile generations in 40 years**: 1G AMPS/TACS/NMT 1980s (foundation telephony), 2G GSM/D-AMPS/PDC/IS-95 1990s (telephony for everybody), 3G WCDMA/HSPA/cdma2000 2000s (foundation mobile broadband), 4G LTE 2010s (further enhanced broadband), 5G **NR** 2020s (interconnected devices, sensors, systems — verticals)
+- **Three superpowers**: **eMBB** = insanely high speeds, massive bandwidth — firehose for data — "content and data delivery" superpower; **URLLC** = near-instantaneous response **~1ms** with extreme reliability — "real-time control and safety" superpower — autonomous drone fleets, tele-surgery, competitive gaming; **mMTC** = staggering number low-power devices simultaneously — "massive data collection" superpower — smart agriculture thousands sensors, asset tracking, billions smart-city devices
+- **5G targets**: **>10 Gbps** peak data rates, **<1 ms** radio latency, **100 Mbps** guaranteed whenever needed, **10,000×** more traffic, **10–100×** more devices, **10 years** on battery; **10× lower latency** target **<1 ms**; additional capability targets **<10 μWh per tx**, **<2 cent/GB**
+- Motivation: very young, very large, newly integrated market = condition where digital ventures scale
 
-**Enablers:** **Network slicing** (rent a virtual network \u2014 lowers barrier to entry)
-and **Edge computing** (process locally \u2014 privacy-first, real-time AI).
+### PV Technology — the chain
+**Opening Hook:** "What if your engineering skills could power a community?" Solar is not just panel on roof — multidisciplinary system: **POWER** Generate•convert•protect, **DATA** Measure•monitor•predict, **DESIGN** Size•model•optimise, **IMPACT** Homes•clinics•farms. Career signal: degree → solar specialisation: Electrical = power systems, Electronics = converters/sensors/embedded, Control = MPPT/regulation, Automation = AI/Data forecasting/fault diagnosis, Materials = semiconductors/PV devices, Enterprise = design/installation/service/finance.
 
-**Generations:** 1G AMPS/TACS/NMT (1980s) \u00b7 2G GSM (1990s) \u00b7 3G WCDMA/HSPA (2000s) \u00b7
-**4G LTE (2010s)** \u00b7 **5G NR (2020s)**.
+**Energy flow:** SUNLIGHT photons → PV CELL DC electricity → MPPT extract power → INVERTER DC→AC → LOAD/GRID useful work. Engineering question: Where are losses — how reduce?
 
-**5G targets:** **>10 Gbps** peak \u00b7 **<1 ms** radio latency \u00b7 100 Mbps whenever needed \u00b7
-10 000\u00d7 traffic \u00b7 10\u2013100\u00d7 devices \u00b7 10 years on battery.
+**Device physics:** p-type n-type p–n junction, photon creates electron-hole pairs, junction/contacts drive charge separation and current. Semiconductor absorbs light, carriers separated, external circuit carries current. PHYSICS → DEVICE → POWER.
 
-**Capabilities vs LTE:** 10\u00d7 data rates \u2192 10 Gbps \u00b7 10\u00d7 lower cost \u2192 <2 cent/GB \u00b7
-10\u00d7 lower latency \u2192 **<1 ms** \u00b7 10\u00d7 lower IoT power \u2192 <10 \u03bcWh/tx \u00b7
-5\u00d7 energy efficiency \u2192 <2 kWh/TB \u00b7 5\u00d7 spectral efficiency \u2192 >10 bps/cell/Hz.
+**Scaling:** CELL single device → MODULE cells connected/packaged → STRING modules in series → ARRAY multiple strings field. Challenge grows: mismatch, protection, wiring, thermal, control, maintenance.
 
-**Spectrum:** 20\u201390 GHz \u2192 1 GHz/operator \u2192 5\u201320 Gbps \u00b7 Below 6 GHz \u2192 100 MHz \u2192 2 Gbps \u00b7
-Below 1 GHz \u2192 10 MHz \u2192 0.2 Gbps. NR spans **400 MHz \u2013 90 GHz**.
+**I–V curve:** Isc, Voc, MPP Power. Engineering question: Where should converter operate to capture maximum power? Voltage.
 
-**5 technology components:** new spectrum \u00b7 beamforming \u00b7 network slicing \u00b7
-LTE dual connectivity/coexistence \u00b7 cloud-optimised architecture.
+**MPPT:** Irradiance changes, temperature changes, maximum-power point moves → PV ARRAY variable DC → MPPT CONTROLLER search/track → DC BUS regulated energy → INVERTER controlled AC — CONTROL SYSTEMS + POWER ELECTRONICS.
 
-**Journey:** start with a **pain point**, then apply the **5G lens**. Team =
-domain + technical + business. Monetise **as-a-service**. **6G** converges with
-**AI, quantum computing and advanced sensing**.
+**Design Reality:** IRRADIANCE less sunlight → less current, TEMPERATURE higher cell temp → lower voltage, SHADING mismatch can hurt whole string, SOILING dust reduces optical input, MISMATCH cells/modules never perfectly identical, DEGRADATION performance changes with age. Good design is not "buy more panels" — understanding full chain of causes/effects.
 
-### PV \u2014 solar as a multidisciplinary system
-**Energy flow:** Sunlight \u2192 **PV cell** \u2192 **MPPT** \u2192 **inverter** \u2192 load/grid.
-**Scaling:** CELL \u2192 MODULE \u2192 STRING \u2192 ARRAY.
-**I\u2013V curve:** **Isc**, **MPP**, **Voc** \u2014 MPP is the *point*, MPPT the *technology*.
-**Why MPPT:** irradiance and temperature change, so the MPP **moves**
-(less sun \u2192 less current; hotter cell \u2192 lower voltage).
+**Architectures:** GRID-TIED PV inverter grid/load → Homes/offices/campuses, OFF-GRID PV controller battery → loads → Remote sites: PHCs, HYBRID PV + grid/generator + battery → Critical loads/resilience. CHOOSE ARCHITECTURE FROM LOAD AND RELIABILITY NEED — NOT PANEL COUNT.
 
-**Six performance factors:** irradiance \u00b7 temperature \u00b7 shading \u00b7 soiling \u00b7
-mismatch \u00b7 degradation.
+**Components:** PV module, inverter, MPPT charge controller, battery storage, protection/distribution. Inverter = system translator: DC CONTROL AC — DC input PV array/battery, Switching MOSFET/IGBT/power stage, Control PWM current/voltage loops, Synchronization grid frequency & phase, Protection overcurrent/overvoltage/islanding — POWER ELECTRONICS + CONTROL + PROTECTION.
 
-| Architecture | Flow | Use |
-|---|---|---|
-| Grid-tied | PV \u2192 inverter \u2192 grid/load | Homes, offices, campuses |
-| **Off-grid** | PV \u2192 controller \u2192 battery \u2192 loads | Remote sites, PHCs |
-| Hybrid | PV + grid/generator + battery | Critical loads, resilience |
+**Storage:** kW Power — how fast? kWh Energy — how much? Example 2-kW load 4h needs 8 kWh. SoC state of charge, DoD depth of discharge, BMS battery management system, Efficiency charge/discharge losses. STORAGE TURNS SUNSHINE INTO DISPATCHABLE ENERGY. Three components students identify immediately: Inverter DC→AC, MPPT controller regulates PV/battery charging, LiFePO₄ battery stores electrical energy.
 
-**Storage:** **kW = how fast** (power), **kWh = how much** (energy).
-A 2-kW load for 4 h needs **8 kWh**. Terms: SoC, DoD, BMS, efficiency.
-**Three components to recognise:** inverter (DC\u2192AC) \u00b7 MPPT controller \u00b7 LiFePO\u2084 battery.
-**Diagnostics:** soiling\u2192power loss \u00b7 partial shade\u2192mismatch \u00b7 hot spot\u2192thermal risk \u00b7
-loose connector\u2192arcing/outage \u00b7 inverter trip\u2192no AC output.
-**Clinic challenge:** 8 kWh/day, 2 kW peak, 1 day autonomy.
-**Safety:** **PV DC stays energised in sunlight** \u2014 isolation must be planned.
+**Digital Solar:** Solar plant is also data system: Irradiance W/m², PV voltage V, PV current A, Temperature °C, Energy yield kWh, Battery SoC % — MEASURE → TRANSMIT → VISUALISE. Once you can measure performance, you can start predicting. IoT • EMBEDDED • CLOUD • AI.
 
-### Workshop practice, workforce & national growth
-**Resources:** hand tools (hammers, saws, pliers, marking tools) \u00b7 machine tools
-(lathe, milling, drilling, **power hack saw**) \u00b7 manufacturing methods (machining,
-casting, powder metallurgy, welding, additive).
+**Diagnostics:** Dust/soiling → power loss, Partial shade → mismatch, Hot spot → thermal risk, Loose connector → arcing/outage, Inverter trip → No AC output. Flow SENSOR DATA → ANOMALY → DIAGNOSIS → ACTION → VERIFY — predictive maintenance thinking.
 
-**Sequence:** identify materials \u2192 measurements \u2192 marking out (**on the
-marking-out table**) \u2192 cutting to size \u2192 joining or machining.
+**Next Frontier — Solar meets AI:** Forecast predict PV output from weather + history, Anomaly detection spot unusual behaviour early, Fault diagnosis map signatures to likely faults, Degradation/RUL estimate performance decline, Optimisation schedule storage and loads. ENGINEER OF FUTURE MAY BE BOTH POWER ENGINEER AND DATA SCIENTIST.
 
-**Activity focuses:** skill development \u00b7 team building \u00b7 problem-solving.
-**Five outcomes:** hands-on experience \u00b7 skill development \u00b7 safety awareness \u00b7
-understanding manufacturing processes \u00b7 application in industrial production.
+**Local Impact:** Homes reliable household electricity, Universities labs/ICT/campus loads, Clinics critical lighting + refrigeration, Agriculture water pumping + processing, Telecoms remote site power, Small business shops/offices/workshops. Engineering question not "Can solar work?" — "How make it reliable, affordable and intelligent?" Build Something: PROBLEM what fails? Who needs help? MEASURE collect trustworthy data, DESIGN model/size/protect, VALIDATE test against reality, SCALE document/improve/deploy. ENGINEERING VALUE = WORKING SOLUTION + EVIDENCE THAT IT WORKS.
 
-**Workforce** = all physically able and available people, **employed and
-unemployed**. The question: *how many of the employable are employed?*
+**Mini Design Challenge:** Design introductory solar-battery system for small rural clinic. Daily energy = 8 kWh/day, Peak load = 2 kW, Autonomy = 1 day, Illustrative assumptions — choose PV capacity, battery capacity, inverter rating and basic protection. PV sizing, Battery sizing, Inverter sizing, Protection & safety, DISCUSS FOR 3 MINUTES.
 
-**Eq. 1:** Workshop Practice + Workforce = **\u00bd(National Growth)**
-**Eq. 2:** Workshop Practice + Workforce + **Development Plan** = National Growth
-Engineering **drives**; the development plan **catalyses**.
+**Real-world installation:** Look for PV array, DC protection, isolator, inverter, AC distribution and battery bank. Safety: PV safety non-negotiable.
 
-**GDP:** Nigeria Q1 2025 **3.13%** (up from **2.27%** in Q1 2024); Ghana **5.4%**.
-Driver: reduced petrol imports via the **Dangote Refinery**.
-**Growth factors:** government policies \u00b7 global economy \u00b7 **human capital**.
-**NDP 2021\u20132025**, aligned with **Nigeria Agenda 2050**, four strategic objectives.
-**Outcomes:** **TVET** in all Technical Colleges \u00b7 **COREN** to regulate engineering admissions.
+### Workshop Practice
+**Definition:** Hands-on training and skills required in engineering workshops. Hand tools (hammers, saws, pliers, marking tools), Machine tools (lathe, milling machine, drilling machine, power hack saw), Manufacturing methods (machining, casting, powder metallurgy, welding, recently additive manufacturing) — accomplished by human efforts or machinery. Many manufacturing processes automated and some hand-crafted. Note: manufacturing processes are various sub-divisions.
+
+**Starts from:** 1 Identification of materials and properties — where can each material be used? common engineering materials used at shop floor? 2. Measurements: measuring instruments e.g., meter rule, vernier caliper, micrometer, etc.
+
+**Safety measures:** Housekeeping clean organized reduces slips/trips/falls and fire risk, Emergency Procedures machine safety proper guarding moving parts regular maintenance ensuring operators adequately trained, Training and Communication proper training fostering open communication vital, Hazard Identification and Control continuous process, Proper Tool Use ensuring tools good condition appropriate for task used correctly, Ventilation adequate to remove fumes/dust/airborne hazards, Working Alone advisable avoid working alone ensure someone available assist accident, Fire Safety having extinguishers blankets knowing how to use vital, Ergonomics designing workstations/tasks minimize musculoskeletal injuries important, Electrical Safety precautions working with electricity insulated tools avoiding overloaded circuits critical, Waste Disposal proper disposal flammable/hazardous materials essential preventing accidents/environmental contamination, Signage and Warning.
+
+**Control measures example:** machine guarding (engineering control) prevents accidental contact moving parts, training safe operation (administrative) and safety glasses (PPE) enhances protection — comprehensive approach.
 
 ### Traps to watch
-- **100 Mbps** is the \u201cwhenever needed\u201d rate; **>10 Gbps** is the peak.
-- **Quantum computing** belongs to the **6G** slide, not the 5 technology components.
-- **MPP** is a point on the curve; **MPPT** is the tracking technology.
-- **kW vs kWh** \u2014 inverter rated in kW, battery sized in kWh.
-- **2.27%** is Nigeria\u2019s **Q1 2024** figure, not 2025.
-- Eq. 1 gives only **half** of national growth \u2014 the plan supplies the rest.
-- Ayanwale teaches 5G but is from **Agricultural Economics**; Adeleke (Materials
-  Science) belongs to **Day 2**.
+- Sub-Saharan Africa **1 billion+** = current population, **1.2 billion** = free-trade market — do not swap.
+- **100 Mbps** = guaranteed whenever needed, **>10 Gbps** = peak — do not swap.
+- **MPP** = Maximum Power Point — where converter should operate.
+- Good design ≠ buy more panels — understand chain of causes/effects.
+- Architecture chosen from load/reliability need, not panel count.
+- **kW** = power (how fast), **kWh** = energy (how much) — 2kW × 4h = 8kWh.
+- Workshop starts from identification + measurements.
+- Control example = guarding + training + glasses.
 """,
     },
     {
         "id": "swep-day-4",
-        "name": "Day 4 \u2014 Thursday, 17th September",
+        "name": "Day 4 — Thursday, 17th September",
         "categoryId": "swep-days",
         "summaryNotes": """### What Day 4 covered
 | # | Lecture | Speaker |
 |---|---|---|
-| 1 | Food Science & Engineering, Value-Addition and National Development (4IR) | **Dr. W. A. Adebayo** (Food Science and Technology) |
-| 2 | Demystifying Artificial Intelligence | **Dr. Aderonke Lawal** (Computer Engineering) |
-| 3 | Fire Awareness and Prevention | **Mr. M. A. Ibrahim** |
+| 1 | Food Science & Engineering, Value-Addition & National Development | **Dr. W. A. Adebayo** |
+| 2 | Demystifying Artificial Intelligence | **Dr. Aderonke Lawal** |
+| 3 | Fire Awareness & Prevention | **Mr. M. A. Ibrahim** |
 
-### Food Science \u2014 definitions and food security
-- **Food Science** \u2014 the **study** of the physical, microbiological and chemical makeup of food
-- **Food Technology** \u2014 the **application** of food science to selection, preservation, processing, packaging, distribution of **safe** food
-- **Food Engineering** \u2014 the **multidisciplinary field** applying **engineering principles** to production, processing, preservation and distribution
-- **Value-Addition** \u2014 transforming raw produce into **desirable, convenient, nutritious** products, raising **market value, shelf life, acceptability**
+### Food Science & Engineering — Key Words
+**Food Science:** study of physical, microbiological, and chemical makeup of food.
+**Food Technology:** application of food science to selection, preservation, processing, packaging, distribution, and use of safe food.
+**Food Engineering:** multidisciplinary field applying engineering principles (chemical, mechanical, process) to production, processing, preservation, distribution.
 
-**Four dimensions of food security:** **Availability** (sufficient quantity/quality,
-incl. imports) \u00b7 **Access** (entitlements) \u00b7 **Utilization** (diet, clean water,
-sanitation, health care) \u00b7 **Stability** (at all times; no shocks/cyclical loss).
+Branches of Food Science: Food Chemistry, Processing, Food Nutrition, Food Microbiology, Food Sensory, New Product Development.
+Branches of Food Engineering: Food Safety Engineering, Sustainability and waste management, Process Engineering, Packaging Engineering, Equipment Design, Refrigeration and Cold Chain.
 
-**Autarky** = deliberate isolation, **eliminating** international trade (China under
-**Mao Tse Tung**, Japan, North Korea). **Food self-reliance** = integrated management
-of production, export, import, storage, distribution + **strategic reserves**.
+**Value-Addition:** transformation of raw agricultural produce into more desirable, convenient, nutritious products to increase market value, shelf life, acceptability.
+Impact: economic growth, FOOD SECURITY and waste management, rural development, health and nutrition, industrial and technological advancement.
 
-### Industrial Revolutions \u2014 exact dates
-| IR | Dates | Defining change |
-|---|---|---|
-| Agrarian | before 1IR | Foraging \u2192 farming + domestication |
-| **1IR** | **1760\u20131840, Britain** | Muscle/animal \u2192 **mechanical power**; birth of factories |
-| **2IR** | **1860\u20131930** | **Electricity**, assembly lines \u2192 **mass production** |
-| **3IR** | Began **1960s** | **Computer and information age** |
-| **4IR** | About **2000** | Fusion across **physical, digital, biological** |
+**Food Security:** exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food that meets dietary needs and preferences for active healthy life. Dimensions:
+- Availability: sufficient quantities appropriate quality, domestic production or imports including food aids
+- Access: adequate resources (entitlements) for nutritious diet
+- Utilization: adequate diet, clean water, sanitation, health care to reach nutritional well-being — non-food inputs importance
+- Stability: must have access at all times, not risk losing due to sudden shocks (economic/climatic crisis) or cyclical events (seasonal food insecurity)
 
-**IR definition:** *abrupt and radical change*. **Causative agents: energy,
-communication, transportation.**
-**3IR catalysts:** semiconductors \u00b7 mainframes (1960s) \u00b7 PCs (1970s\u201380s) \u00b7 internet (1990s).
-**3IR drivers:** renewable energy \u00b7 ICT \u00b7 **3D printing**.
-**4IR characteristics:** ubiquitous mobile internet \u00b7 cheaper, smaller sensors \u00b7 **AI and ML**;
-enables **SMART FACTORIES**. Impacts are **HISTORIC, PROFOUND, DISRUPTIVE, MULTIFACETED**.
-**4IR clusters:** Physical \u00b7 Digital \u00b7 Biological.
-**Graphene: 200\u00d7 stronger than steel, one million times thinner than human hair**, good conductor.
-**Four intelligences:** Contextual (**mind**) \u00b7 Emotional (**heart**) \u00b7 Inspired (**soul**) \u00b7 Physical (**body**).
+Speaker contact: Dr. W. A. Adebayo (Food Process Engineering) adebayow@oauife.edu.ng; +234808060410278, Dept of Food Science and Technology, OAU.
 
-### AI \u2014 models and learning
-**Model** = a **mathematical representation of patterns learned from data**; a *digital brain*.
-**Process:** **Data \u2192 Training \u2192 Model \u2192 Prediction \u2192 Feedback \u2192 Improved Model**.
-**Accuracy** = % of correct predictions (95/100 = **95%**).
-**Limitations:** **biased data** (Western vs African names) \u00b7 **overfitting** (the crammer) \u00b7 **lack of context** (sarcasm).
+### Food Science & 4IR — mind/heart/soul/body
+**4IR** = blurring of physical, digital, biological. **Food Science & 4IR:** Mind (knowledge), Heart (emotional), Soul (inspired), Body (physical).
+
+### AI — models and learning
+**Model** = mathematical representation of patterns learned from data; digital brain.
+**Process:** Data → Training → Model → Prediction → Feedback → Improved Model.
+**Accuracy** = % correct predictions (95/100 = 95%). Caution: High accuracy good, but what kinds of errors? Example Western vs African names bias.
+**Limitations:** biased data (Western vs African names), overfitting (crammer — student crams past questions but can't answer new ones), lack of context (sarcasm).
 | Type | Learns from |
-|---|---|
-| **Supervised** | **Labelled** data \u2014 spam detection, face unlock |
-| **Unsupervised** | **Unlabelled** data \u2014 Spotify clustering, Google News |
-| **Reinforcement** | **Rewards/penalties** \u2014 self-driving cars, AlphaGo |
+| **Supervised** | **Labelled** data — spam detection, face unlock |
+| **Unsupervised** | **Unlabelled** data — Spotify clustering, Google News |
+| **Reinforcement** | **Rewards/penalties** — self-driving cars, AlphaGo |
 
-**LLM = Large Language Model.** Teachable Machine: **20\u201330 samples per class**.
-**Challenges:** data privacy \u00b7 bias and fairness \u00b7 job displacement \u00b7 **lack of regulation**.
-**Ways forward:** ethical AI \u00b7 inclusive data \u00b7 policies \u00b7 **human-AI collaboration**.
+**LLM = Large Language Model.** Teachable Machine: **20–30 samples per class**, no coding, webcam, at teachablemachine.withgoogle.com, model learns by generalising not memorising.
+**ChatGPT:** doesn't think, predicts next word via probability not understanding.
+**Challenges:** data privacy, bias and fairness, job displacement, lack of regulation.
+**Ways forward:** ethical AI, inclusive data, policies, human-AI collaboration.
 
 ### Fire Awareness
 **Fire triangle: Heat + Fuel + Oxygen.**
-**Control:** **Cooling** (heat) \u00b7 **Smothering** (oxygen) \u00b7 **Starvation** (fuel).
+**Control:** Cooling (heat), Smothering (oxygen), Starvation (fuel).
 **Spread:** conduction, convection, radiation, spontaneous combustion.
+**Basic necessities:** food, shelter, clothing. Natural detectors: brain and sensory organs olfactory lobes for smell.
+**Causes:** Negligence & Human Error carelessness poor safety attitudes "I don't care", improper handling combustible materials. Statistical Insight OAU hostels: Moremi (most) → Akintola → Alumni → Mozambique → PG (least). Natural igniter: lightning and thunder. Biological/Animal: house pests/rodents gnawing electrical wires. Common Sources: Flammable Gases acetylene butane methane, Volatile Solvents perfumes alcohol illicit substances Colorado (Indian hemp/synthetic cannabis).
 
 | Class | Fuel | Examples |
-|---|---|---|
 | **A** | Solids | Paper, wood, textiles |
 | **B** | Flammable liquids | Kerosene, petrol, perfumes, alcohol |
 | **C** | Flammable gases | Methane, acetylene, butane |
 | **D** | Combustible metals | Potassium, sodium, calcium |
 | **E** | Energized electrical | **Least frequent origin** |
 
-**Colour bands:** **RED** water \u00b7 **BLUE** dry powder \u00b7 **CREAM** foam \u00b7 **BLACK** CO\u2082.
-**CO\u2082** is multipurpose (electrical + liquids) and **leaves no residue**.
-**OAU hostel fire ranking:** **Moremi (most)** \u2192 Akintola \u2192 Alumni \u2192 Mozambique \u2192 **PG (least)**.
-**Comparative safety** = manage it **inside**; **Absolute safety** = **evacuate**.
-**In smoke: toxic smoke rises \u2014 lie flat and crawl.**
+**Colour bands:** RED water, BLUE dry powder, CREAM foam, BLACK CO₂. CO₂ multipurpose (electrical + liquids) and leaves no residue. Water extinguishers: stored pressure vs gas cartridge.
+**OAU hostel fire ranking:** Moremi (most) → Akintola → Alumni → Mozambique → PG (least).
+**Comparative safety** = manage it inside; **Absolute safety** = evacuate.
+**In smoke: toxic smoke rises — lie flat and crawl.**
 
 ### Traps to watch
 - Food **Science** studies, **Technology** applies, **Engineering** builds.
-- 1IR **1760\u20131840**; 2IR **1860\u20131930** \u2014 do not swap.
-- Graphene: **200\u00d7 stronger** than steel but **one million times thinner** than hair.
+- 1IR **1760–1840**; 2IR **1860–1930** — do not swap.
+- Graphene: **200× stronger** than steel but **one million times thinner** than hair.
 - **Overfitting** = memorising; the crammer analogy.
 - Class **D** is metals, **E** is electrical.
 - Day 2 used extinguisher **shapes**; Day 4 uses **colour bands**. Answer per the named lecture.
+- Food Security four dimensions: availability, access, utilization, stability.
+- Value-addition transformation not just price increase.
+- Basic necessities food shelter clothing; detector olfactory lobes.
+- Natural igniter lightning/thunder; biological rodents gnawing wires.
+- Volatile solvents perfumes alcohol Colorado.
+- Comparative safety manage inside, absolute evacuate, smoke lie flat crawl.
+- BLACK CO₂ multipurpose no residue.
 """,
     },
     {
         "id": "swep-day-5",
-        "name": "Day 5 \u2014 Friday, 18th September",
+        "name": "Day 5 — Friday, 18th September",
         "categoryId": "swep-days",
         "summaryNotes": """### What Day 5 covered
-A single session: **Employers\u2019 Expectations from Fresh Graduates in the
+A single session: **Employers’ Expectations from Fresh Graduates in the
 21st-Century Job Market**, delivered by a Representative of the **Nigeria
-Employers\u2019 Consultative Association (NECA)**.
+Employers’ Consultative Association (NECA)**.
 
 ### Core concepts
-- SIWES is **not** an escape from academics \u2014 it is a period to convert experience
+- SIWES is **not** an escape from academics — it is a period to convert experience
   into **verifiable skills** that guarantee **employability**
-- It is for **building human networks** \u2014 *network brings good net worth*
+- It is for **building human networks** — *network brings good net worth*
 - **Mindset shift:** see yourself as a **professional in training**, not a mere
-  student \u2014 *you are being equipped to **create value and build evidence***
+  student — *you are being equipped to **create value and build evidence***
 
 ### The three numbers
 | Number | What it counts |
@@ -464,77 +470,70 @@ Employers\u2019 Consultative Association (NECA)**.
 | **12** | **Weeks** in the action plan |
 
 ### Before SIWES
-Research the **assigned organisation** \u00b7 update **CV and LinkedIn** (**professional
-email**) \u00b7 define **3\u20135 learning goals** \u00b7 prepare a **professional wardrobe** \u00b7 daily
-routine, notebooks, documents \u00b7 know your **reporting line** \u00b7 get a **Role Title** \u00b7
+Research the **assigned organisation** · update **CV and LinkedIn** (**professional
+email**) · define **3–5 learning goals** · prepare a **professional wardrobe** · daily
+routine, notebooks, documents · know your **reporting line** · get a **Role Title** ·
 meet all **ITF requirements**.
 
 ### First 4 to 5 days
-From day one **observe, listen, introduce yourself properly**. **Ask questions** \u2014
+From day one **observe, listen, introduce yourself properly**. **Ask questions** —
 *career development is a **strategic effort***: *Who is my supervisor? What is my
 responsibility? **What does success look like?*** Keep a **daily learning record**,
 **dress appropriately**, **protect confidential information**.
 
 ### What employers notice (6)
-**Punctuality \u00b7 Communication** (listening and asking questions) **\u00b7 Initiative \u00b7
-Team work** (supporting colleagues) **\u00b7 Professionalism \u00b7 Integrity**
+**Punctuality · Communication** (listening and asking questions) **· Initiative ·
+Team work** (supporting colleagues) **· Professionalism · Integrity**
 > **Beware of office politics! Nobody is your best friend at work.**
 
 ### SIWES Learning Loop
-**Observe \u2192 Ask questions / Practice \u2192 Document experiences \u2192 Reflect**
-*Don\u2019t just collect tasks, but **collate evidence** (How, when & what). Have a
+**Observe → Ask questions / Practice → Document experiences → Reflect**
+*Don’t just collect tasks, but **collate evidence** (How, when & what). Have a
 **digital portfolio**. Do not have a **career mismatch**.*
 
 ### Skills to develop (7)
-Technical skills acquisition \u00b7 communication \u00b7 **digital literacy** \u00b7 team work \u00b7
-**speaking/presentation** \u00b7 **work ethics** \u00b7 **networking**.
-Only **one** is technical \u2014 the rest are soft/transferable.
+Technical skills acquisition · communication · **digital literacy** · team work ·
+**speaking/presentation** · **work ethics** · **networking**.
+Only **one** is technical — the rest are soft/transferable.
 
 ### Twelve Weeks Action Plan
-Set **3\u20135 goals** \u00b7 **CV and LinkedIn tailored to your goals** \u00b7 build a **job
-portfolio \u2014 document evidence** \u00b7 build **technical skills** \u00b7 **document evidence
-of skills** \u00b7 **close your skill gap**, develop and improve consistently.
+Set **3–5 goals** · **CV and LinkedIn tailored to your goals** · build a **job
+portfolio — document evidence** · build **technical skills** · **document evidence
+of skills** · **close your skill gap**, develop and improve consistently.
 
 ### Traps to watch
 - **Prepare notebooks** is *before*; **keep a daily learning record** is *during*.
-- **Communication** and **team work** appear on **both** the employers\u2019 list and the
-  skills list \u2014 they cannot distinguish the two.
+- **Communication** and **team work** appear on **both** the employers’ list and the
+  skills list — they cannot distinguish the two.
 - **Punctuality, integrity, professionalism** are **observed traits**, not listed skills.
 - **12 weeks** is the plan; **8 weeks** is the SWEP minimum; **24 weeks** is SIWES II.
-- The note names the speaker only as a **NECA representative** \u2014 no personal name is given.
+- The note names the speaker only as a **NECA representative** — no personal name is given.
+- Network brings net worth — building human networks.
+- Professional in training mindset — create value and build evidence.
+- Beware office politics — nobody is best friend at work.
+- Don’t just collect tasks but collate evidence How/when/what — digital portfolio — avoid career mismatch.
+- Close skill gap consistently part of 12-week plan.
 """,
     },
 ]
 
-QUESTION_SETS = [DAY1, DAY2, DAY3, DAY4, DAY5]
+QUESTION_SETS = [DAY1, DAY1_EXTRA, DAY2, DAY2_EXTRA, DAY3, DAY3_EXTRA, DAY4, DAY4_EXTRA, DAY5, DAY5_EXTRA]
 
 BEGIN = '// ==== SWEP 200 BEGIN (generated by scripts/splice_swep200.py) ===='
 END = '// ==== SWEP 200 END ===='
 
 
 def js(obj, indent):
-    """Dump as JSON (valid JS) with a fixed indent.
-
-    ensure_ascii=True is deliberate: it escapes newlines inside long markdown
-    strings (summaryNotes, solution) as \\n, so the emitted data.js stays a
-    single valid JS expression instead of breaking across raw line breaks.
-    """
     raw = json.dumps(obj, indent=2, ensure_ascii=True)
     pad = ' ' * indent
     return '\n'.join(pad + line if i else line for i, line in enumerate(raw.split('\n')))
 
 
 def strip_previous(src):
-    """Remove a previously spliced SWEP 200 block, if any, for idempotency."""
-    # lectureMeta FIRST: its own `"swep200": [...]` would otherwise be consumed
-    # by the generic loop below and throw the one-to-one order off.
     src = re.sub(r'export const lectureMeta = \{[\s\S]*?\n\}\n\n', '', src, count=1)
-    # course entry
-    src = re.sub(r'\n\s*\{\s*"id":\s*"swep200".*?\n\s*\},(?=\n\])', '', src, flags=re.S)
-    # categoryMeta / topicMeta / questionBank entries (now the only remaining
-    # `"swep200": [...]` blocks, in that exact order).
+    src = re.sub(r'\n\s*\{\s*\"id\":\s*\"swep200\".*?\n\s*\},(?=\n\])', '', src, flags=re.S)
     for key in ('categoryMeta', 'topicMeta', 'questionBank'):
-        src = re.sub(r'\n  "swep200": \[.*?\n  \],(?=\n)', '', src, count=1, flags=re.S)
+        src = re.sub(r'\n  \"swep200\": \[.*?\n  \],(?=\n)', '', src, count=1, flags=re.S)
     return src
 
 
@@ -546,8 +545,6 @@ def main():
 
     questions = [q for group in QUESTION_SETS for q in group]
 
-    # Stamp each question with the lecture it belongs to (SWEP 200 has a
-    # per-lecture test mode that splits the bank by slide title).
     lmap = question_lecture_map()
     for q in questions:
         lid = lmap.get(q['id'])
@@ -555,15 +552,11 @@ def main():
             raise SystemExit(f"{q['id']}: no lecture mapped")
         q['lectureId'] = lid
 
-    # Guard: every question must point at a declared topic, and every declared
-    # category must end up owning at least one topic (the validator enforces
-    # this too, but failing here gives a far clearer message).
     topic_ids = {t['id'] for t in TOPICS}
     for q in questions:
         if q['topicId'] not in topic_ids:
             raise SystemExit(f"{q['id']}: unknown topicId {q['topicId']!r}")
     used_cats = {t['categoryId'] for t in TOPICS}
-    # Keep a category if it owns topics OR if it is a virtual span-all one.
     cats = [c for c in CATEGORIES
             if c['id'] in used_cats or c.get('spansAll')]
     dropped = [c['id'] for c in CATEGORIES
@@ -571,15 +564,9 @@ def main():
     if dropped:
         print(f'  (categories with no topics yet, omitted: {", ".join(dropped)})')
 
-    # 1. courses ------------------------------------------------------------
     src = src.replace('  "available": true\n},\n]',
                       '  "available": true\n},\n' + js(COURSE, 0) + ',\n]', 1)
 
-    # NOTE: plain str.replace, never re.sub, for these insertions. The JSON
-    # payload contains backslash escapes (\n, \u2014) which re.sub would try to
-    # interpret as regex replacement escapes and choke on.
-
-    # 2. categoryMeta -------------------------------------------------------
     cat_payload = f'  "swep200": {js(cats, 2)},\n'
     if 'export const categoryMeta = {}' in src:
         src = src.replace('export const categoryMeta = {}',
@@ -588,18 +575,12 @@ def main():
         src = src.replace('export const categoryMeta = {\n',
                           'export const categoryMeta = {\n' + cat_payload, 1)
 
-    # 3. topicMeta ----------------------------------------------------------
     src = src.replace('export const topicMeta = {\n',
                       'export const topicMeta = {\n  "swep200": ' + js(TOPICS, 2) + ',\n', 1)
 
-    # 4. lectureMeta -------------------------------------------------------
-    # Inserted before questionBank purely for readability; order is irrelevant
-    # to the ES module imports. Each lecture carries the slide title it is
-    # identified by, plus the day it belongs to and its speaker.
     src = src.replace('export const questionBank = {\n',
                       'export const lectureMeta = {\n  "swep200": ' + js(LECTURES, 2) + ',\n}\n\nexport const questionBank = {\n', 1)
 
-    # 5. questionBank -------------------------------------------------------
     src = src.replace('export const questionBank = {\n',
                       'export const questionBank = {\n  "swep200": ' + js(questions, 2) + ',\n', 1)
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { courses } from '../data.js'
-import { getTopics, getCategories, getQuestionCount } from '../utils.js'
+import { getTopics, getCategories } from '../utils.js'
 
 const UNIVERSITY = 'Obafemi Awolowo University'
 const CAMPUS = 'Ile-Ife, Osun State · Faculty of Technology'
@@ -22,12 +22,7 @@ const STEPS = [
 ]
 
 export default function Landing() {
-  // The landing page is COURSE-NEUTRAL by design. Nothing here is driven by a
-  // single "selected" course any more, because that made whichever course came
-  // first in data.js dominate the whole page. Every live course is rendered in
-  // its own equally sized card and syllabus block.
   const availableCourses = courses.filter((c) => c.available)
-  const totalQuestions = availableCourses.reduce((n, c) => n + getQuestionCount(c.id), 0)
   function scrollToFeatures() {
     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
@@ -61,7 +56,7 @@ export default function Landing() {
 
         <div className="hero-card">
           <div className="stat"><div className="num grad">{availableCourses.length}</div><div className="lbl">Courses available</div></div>
-          <div className="stat"><div className="num">{totalQuestions}</div><div className="lbl">Questions in total</div></div>
+          <div className="stat"><div className="num">OAU</div><div className="lbl">Tertiary standard</div></div>
           <div className="stat"><div className="num grad">100%</div><div className="lbl">Free to practice</div></div>
           <div className="stat"><div className="num">∞</div><div className="lbl">Reshuffles per test</div></div>
         </div>
@@ -81,7 +76,7 @@ export default function Landing() {
               <article className="course-card" key={c.id} style={{ '--accent': c.accent }}>
                 <div className="course-card-top">
                   <span className="course-card-code">{c.code}</span>
-                  <span className="course-card-count">{getQuestionCount(c.id)} questions</span>
+                  <span className="course-card-count" style={{ background: 'var(--bg-soft)', border: '1px solid var(--border)' }}>Available</span>
                 </div>
                 <h3 className="course-card-title">{c.title}</h3>
                 {c.department && <p className="course-card-dept">{c.department}</p>}
@@ -153,7 +148,6 @@ export default function Landing() {
               <div className="syllabus-head">
                 <span className="syllabus-code">{c.code}</span>
                 <span className="syllabus-name">{c.title}</span>
-                <span className="syllabus-count">{getQuestionCount(c.id)} Qs</span>
               </div>
 
               {cats.length > 0 ? (
@@ -161,14 +155,12 @@ export default function Landing() {
                   <div key={cat.id} className="topic-group">
                     <div className="topic-group-head">
                       {cat.name}
-                      <span className="cat-badge">{cat.count === 0 ? 'Coming soon' : `${cat.count} Qs`}</span>
                     </div>
                     {cat.topics.length > 0 ? (
                       <div className="topic-grid">
                         {cat.topics.map((t) => (
                           <Link to="/dashboard" className="topic-chip" key={t.id} style={{ textDecoration: 'none' }}>
                             <div className="t-name">{t.name}</div>
-                            <div className="t-count">{t.count}</div>
                           </Link>
                         ))}
                       </div>
@@ -182,7 +174,6 @@ export default function Landing() {
                   {getTopics(c.id).map((t) => (
                     <Link to="/dashboard" className="topic-chip" key={t.id} style={{ textDecoration: 'none' }}>
                       <div className="t-name">{t.name}</div>
-                      <div className="t-count">{t.count}</div>
                     </Link>
                   ))}
                 </div>

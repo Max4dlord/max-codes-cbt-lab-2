@@ -48,7 +48,7 @@ LECTURES = [
      'dayId': 'swep-day-4', 'speaker': 'Mr. M. A. Ibrahim'},
 
     {'id': 'd5-l1', 'name': "Employers' Expectations from Fresh Graduates in the 21st-Century Job Market",
-     'dayId': 'swep-day-5', 'speaker': 'Nigeria Employers\u2019 Consultative Association (NECA)'},
+     'dayId': 'swep-day-5', 'speaker': 'Nigeria Employers’ Consultative Association (NECA)'},
 ]
 
 
@@ -72,8 +72,18 @@ def question_lecture_map():
         for n in nums:
             m[f'swep_day1_{n:02d}'] = lec
 
+    # Day1 extra 20 (45-64) - explicit mapping based on content
+    day1_extra = {
+        'd1-l1': [47, 48, 52, 53, 54, 61, 62, 63],
+        'd1-l2': [45, 46, 49, 55, 56, 57, 58, 59, 64],
+        'd1-l3': [50, 51, 60],
+    }
+    for lec, nums in day1_extra.items():
+        for n in nums:
+            m[f'swep_day1_{n:02d}'] = lec
+
     # ---- Days 2-5: questions were authored in contiguous lecture blocks. ----
-    # Day 2
+    # Day 2 original 45
     for n in list(range(1, 11)) + [41, 42]:
         m[f'swep_day2_{n:02d}'] = 'd2-l1'     # substance abuse
     for n in list(range(11, 26)) + [43, 44]:
@@ -81,7 +91,15 @@ def question_lecture_map():
     for n in list(range(26, 41)) + [45]:
         m[f'swep_day2_{n:02d}'] = 'd2-l3'     # employability
 
-    # Day 3
+    # Day2 extra 20 (46-65)
+    for n in range(46, 52):
+        m[f'swep_day2_{n:02d}'] = 'd2-l1'
+    for n in range(52, 58):
+        m[f'swep_day2_{n:02d}'] = 'd2-l2'
+    for n in range(58, 66):
+        m[f'swep_day2_{n:02d}'] = 'd2-l3'
+
+    # Day 3 original 40
     for n in range(1, 15):
         m[f'swep_day3_{n:02d}'] = 'd3-l1'     # 5G entrepreneurship
     for n in range(15, 28):
@@ -89,7 +107,15 @@ def question_lecture_map():
     for n in range(28, 41):
         m[f'swep_day3_{n:02d}'] = 'd3-l3'     # workshop practice
 
-    # Day 4
+    # Day3 extra 20 (41-60) - distribution: 3 to 5G, 14 to PV, 3 to workshop
+    for n in [56, 57, 58]:
+        m[f'swep_day3_{n:02d}'] = 'd3-l1'
+    for n in [41,42,43,44,45,46,47,48,49,50,51,52,53,59]:
+        m[f'swep_day3_{n:02d}'] = 'd3-l2'
+    for n in [54,55,60]:
+        m[f'swep_day3_{n:02d}'] = 'd3-l3'
+
+    # Day 4 original 40
     for n in range(1, 16):
         m[f'swep_day4_{n:02d}'] = 'd4-l1'     # food science & 4IR
     for n in range(16, 29):
@@ -97,8 +123,16 @@ def question_lecture_map():
     for n in range(29, 41):
         m[f'swep_day4_{n:02d}'] = 'd4-l3'     # fire
 
-    # Day 5
-    for n in range(1, 41):
+    # Day4 extra 20 (41-60)
+    for n in [41,42,43,44,45,56,57,58]:
+        m[f'swep_day4_{n:02d}'] = 'd4-l1'
+    for n in [50,51,52,53,59]:
+        m[f'swep_day4_{n:02d}'] = 'd4-l2'
+    for n in [46,47,48,49,54,55,60]:
+        m[f'swep_day4_{n:02d}'] = 'd4-l3'
+
+    # Day 5 original 40 + extra 20 all NECA
+    for n in range(1, 61):
         m[f'swep_day5_{n:02d}'] = 'd5-l1'     # employers' expectations
 
     return m
