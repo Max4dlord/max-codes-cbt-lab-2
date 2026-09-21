@@ -180,6 +180,18 @@ export default function Dashboard() {
         </div>
       )}
 
+      {/* ================= TEST MODE ================= */}
+      <div className="mode-band mode-band-test">
+        <div className="mode-band-icon">⏱️</div>
+        <div>
+          <h2 className="mode-band-title">Test Mode</h2>
+          <p className="mode-band-sub">
+            Timed and scored, just like the real CBT. A countdown runs, answers stay
+            hidden until you submit, then you get your score with explanations.
+          </p>
+        </div>
+      </div>
+
       <div className="grid-2">
         {/* ---- Configuration ---- */}
         <div className="card">
@@ -372,16 +384,24 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* -------- STUDY MODE — No timer, immediate explanation, correct pre-ticked, very long explanations -------- */}
-      <div className="card" style={{ marginTop: 24, borderLeft: '4px solid var(--primary)', background: 'linear-gradient(135deg, rgba(1,0,128,0.04), rgba(138,106,18,0.02))' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12, marginBottom: 8 }}>
-          <div>
-            <h2 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: 10 }}>📖 Study Mode <span style={{ fontSize: 12, background: 'var(--primary)', color: '#fff', padding: '4px 10px', borderRadius: 999 }}>NEW</span></h2>
-            <p className="muted" style={{ fontSize: 14, marginTop: 6, maxWidth: 720 }}>
-              The same questions as Test Mode, but <strong>no timer</strong>, <strong>correct answer already ticked in green</strong>, and an immediate <strong>“See Detailed Explanation →”</strong> button. Explanations here are <strong>much longer</strong> than in Test Mode — with extra deep dives, common mistakes, and how to approach similar questions.
-            </p>
-          </div>
+      {/* ================= STUDY MODE ================= */}
+      <div className="mode-divider"><span>or learn without pressure</span></div>
+
+      <div className="mode-band mode-band-study">
+        <div className="mode-band-icon">📖</div>
+        <div>
+          <h2 className="mode-band-title">
+            Study Mode <span className="mode-band-tag">NO TIMER</span>
+          </h2>
+          <p className="mode-band-sub">
+            The same questions, but nothing is timed and the correct answer is already
+            ticked in green. Explanations here are much longer than in Test Mode — deep
+            dives, common mistakes, and how to approach similar questions.
+          </p>
         </div>
+      </div>
+
+      <div className="card study-card">
 
         <div className="field">
           <label>Course for Study Mode</label>

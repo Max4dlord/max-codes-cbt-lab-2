@@ -849,3 +849,134 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   text-align: center; font-size: .68rem; color: var(--muted, #9ca3af);
   opacity: .6; margin-top: 10px; letter-spacing: .04em;
 }
+
+/* ===========================================================================
+   LANDING — course-neutral layout
+   Every live course gets an identically sized card, so no single course can
+   dominate the page just because it comes first in data.js.
+   =========================================================================== */
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+.course-card {
+  display: flex; flex-direction: column;
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #DCE2F2);
+  border-top: 5px solid var(--accent, var(--primary));
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.course-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,.10); }
+.course-card-top {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 12px;
+}
+.course-card-code {
+  font-weight: 800; font-size: 1.05rem; letter-spacing: .5px;
+  color: var(--accent, var(--primary));
+  background: color-mix(in srgb, var(--accent, #010080) 10%, transparent);
+  padding: 5px 12px; border-radius: 999px;
+}
+.course-card-count { font-size: .78rem; color: var(--muted, #6b7280); font-weight: 600; }
+.course-card-title { margin: 0 0 4px; font-size: 1.12rem; line-height: 1.35; }
+.course-card-dept { margin: 0 0 8px; font-size: .78rem; color: var(--muted, #6b7280); }
+.course-card-blurb {
+  margin: 0 0 16px; font-size: .88rem; line-height: 1.6;
+  color: var(--muted, #6b7280);
+}
+.course-card-meta {
+  display: flex; gap: 14px; flex-wrap: wrap;
+  font-size: .78rem; font-weight: 600; color: var(--muted, #6b7280);
+  margin-bottom: 12px;
+}
+.course-card-topics {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px;
+}
+.mini-chip {
+  font-size: .72rem; padding: 4px 10px; border-radius: 999px;
+  background: var(--bg-soft, rgba(0,0,0,.04));
+  border: 1px solid var(--border, #DCE2F2);
+  color: var(--muted, #6b7280);
+}
+.mini-chip.more { font-weight: 700; color: var(--accent, var(--primary)); }
+.course-card-actions {
+  display: flex; gap: 10px; margin-top: auto; flex-wrap: wrap;
+}
+.course-card-actions .btn { flex: 1; text-align: center; min-width: 130px; }
+
+/* ---- Per-course syllabus blocks ---- */
+.syllabus-block {
+  border: 1px solid var(--border, #DCE2F2);
+  border-left: 5px solid var(--accent, var(--primary));
+  border-radius: 14px; padding: 20px 22px; margin-bottom: 22px;
+  background: var(--card, #fff);
+}
+.syllabus-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding-bottom: 14px; margin-bottom: 16px;
+  border-bottom: 1px solid var(--border, #DCE2F2);
+}
+.syllabus-code {
+  font-weight: 800; color: var(--accent, var(--primary));
+  background: color-mix(in srgb, var(--accent, #010080) 10%, transparent);
+  padding: 4px 12px; border-radius: 999px; font-size: .9rem;
+}
+.syllabus-name { font-weight: 600; font-size: .95rem; }
+.syllabus-count {
+  margin-left: auto; font-size: .78rem; font-weight: 700;
+  color: var(--muted, #6b7280);
+}
+
+/* ===========================================================================
+   DASHBOARD — clear separation between Test Mode and Study Mode
+   =========================================================================== */
+.mode-band {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px 22px; border-radius: 14px; margin: 0 0 18px;
+  border: 1px solid var(--border, #DCE2F2);
+}
+.mode-band-test {
+  background: color-mix(in srgb, var(--primary, #010080) 6%, transparent);
+  border-left: 5px solid var(--primary, #010080);
+}
+.mode-band-study {
+  background: color-mix(in srgb, var(--green, #16a34a) 8%, transparent);
+  border-left: 5px solid var(--green, #16a34a);
+}
+.mode-band-icon { font-size: 1.7rem; line-height: 1; flex-shrink: 0; }
+.mode-band-title {
+  margin: 0 0 4px; font-size: 1.15rem;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.mode-band-sub {
+  margin: 0; font-size: .87rem; line-height: 1.6;
+  color: var(--muted, #6b7280); max-width: 760px;
+}
+.mode-band-tag {
+  font-size: .66rem; font-weight: 800; letter-spacing: .06em;
+  background: var(--green, #16a34a); color: #fff;
+  padding: 3px 9px; border-radius: 999px;
+}
+
+/* A visible break so the two modes never read as one long page */
+.mode-divider {
+  display: flex; align-items: center; gap: 16px;
+  margin: 40px 0 22px; color: var(--muted, #9ca3af);
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 700;
+}
+.mode-divider::before, .mode-divider::after {
+  content: ''; flex: 1; height: 1px;
+  background: var(--border, #DCE2F2);
+}
+.study-card { border-left: 5px solid var(--green, #16a34a); }
+
+@media (max-width: 560px) {
+  .course-card { padding: 20px; }
+  .mode-band { padding: 16px; gap: 12px; }
+  .mode-band-icon { font-size: 1.4rem; }
+}

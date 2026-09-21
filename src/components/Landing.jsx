@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { courses } from '../data.js'
 import { getTopics, getCategories, getQuestionCount } from '../utils.js'
@@ -23,15 +22,12 @@ const STEPS = [
 ]
 
 export default function Landing() {
+  // The landing page is COURSE-NEUTRAL by design. Nothing here is driven by a
+  // single "selected" course any more, because that made whichever course came
+  // first in data.js dominate the whole page. Every live course is rendered in
+  // its own equally sized card and syllabus block.
   const availableCourses = courses.filter((c) => c.available)
-  // Landing showcases one course at a time. With more than one live course the
-  // visitor picks which to preview; everything below is derived from that
-  // choice, so no copy is hard-wired to a single course any more.
-  const [courseId, setCourseId] = useState(
-    () => (availableCourses[0] || courses[0]).id
-  )
-  const course = courses.find((c) => c.id === courseId) || courses[0]
-  const topics = getTopics(course.id)
+  const totalQuestions = availableCourses.reduce((n, c) => n + getQuestionCount(c.id), 0)
   function scrollToFeatures() {
     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
@@ -45,37 +41,18 @@ export default function Landing() {
             <div className="oau-uni">{UNIVERSITY}</div>
             <div className="oau-place">{CAMPUS}</div>
           </div>
-          <div className="oau-dept">
-            {/* Department line is opt-in per course: a course only shows one if
-                it declares `department` in data.js. SWEP 200 is faculty-wide,
-                so it deliberately has none — no misleading fallback. */}
-            {course.department && <strong>{course.department}</strong>}
-            {course.code} · {course.title}
-          </div>
         </div>
 
         <span className="badge"><span className="dot" /> OAU CBT Practice Platform · Live</span>
         <h1>
-          Master <span className="grad">{course.code}</span> {course.heroTagline || 'before the exam'}
+          Practise for your <span className="grad">OAU</span> papers, one course at a time
         </h1>
-        <p className="lead">{course.blurb}</p>
+        <p className="lead">
+          A clean, exam-realistic testing environment. Choose a course below, set your
+          duration, and start — with a live timer, auto-saved progress and a full worked
+          solution behind every question.
+        </p>
 
-        {availableCourses.length > 1 && (
-          <div className="course-switch" role="tablist" aria-label="Choose a course">
-            {availableCourses.map((c) => (
-              <button
-                key={c.id}
-                role="tab"
-                aria-selected={c.id === courseId}
-                className={`course-switch-btn ${c.id === courseId ? 'active' : ''}`}
-                onClick={() => setCourseId(c.id)}
-              >
-                <span className="course-dot" style={{ background: c.accent }} />
-                {c.code}
-              </button>
-            ))}
-          </div>
-        )}
         <div className="hero-cta">
           <Link to="/dashboard" className="btn btn-primary btn-lg">Start a test →</Link>
           <button type="button" onClick={scrollToFeatures} className="btn btn-ghost btn-lg">Explore features</button>
@@ -83,10 +60,52 @@ export default function Landing() {
         <p className="hero-note">No sign-up needed · works offline · your progress is saved on this device</p>
 
         <div className="hero-card">
-          <div className="stat"><div className="num grad">{getQuestionCount(course.id)}</div><div className="lbl">Questions in the bank</div></div>
-          <div className="stat"><div className="num">{getTopics(course.id).length}</div><div className="lbl">Topic areas</div></div>
+          <div className="stat"><div className="num grad">{availableCourses.length}</div><div className="lbl">Courses available</div></div>
+          <div className="stat"><div className="num">{totalQuestions}</div><div className="lbl">Questions in total</div></div>
           <div className="stat"><div className="num grad">100%</div><div className="lbl">Free to practice</div></div>
           <div className="stat"><div className="num">∞</div><div className="lbl">Reshuffles per test</div></div>
+        </div>
+      </section>
+
+      {/* ---------- COURSE PICKER: every course gets equal, distinct space ---------- */}
+      <section className="section" id="courses">
+        <div className="section-head">
+          <h2>Choose your course</h2>
+          <p>Each course has its own question bank, topics and worked solutions.</p>
+        </div>
+        <div className="course-cards">
+          {availableCourses.map((c) => {
+            const cats = getCategories(c.id).filter((x) => !x.spansAll)
+            const tps = getTopics(c.id)
+            return (
+              <article className="course-card" key={c.id} style={{ '--accent': c.accent }}>
+                <div className="course-card-top">
+                  <span className="course-card-code">{c.code}</span>
+                  <span className="course-card-count">{getQuestionCount(c.id)} questions</span>
+                </div>
+                <h3 className="course-card-title">{c.title}</h3>
+                {c.department && <p className="course-card-dept">{c.department}</p>}
+                <p className="course-card-blurb">{c.blurb}</p>
+
+                <div className="course-card-meta">
+                  <span>{tps.length} topic{tps.length === 1 ? '' : 's'}</span>
+                  {cats.length > 0 && <span>{cats.length + 1} categories</span>}
+                </div>
+
+                <div className="course-card-topics">
+                  {tps.slice(0, 5).map((t) => (
+                    <span className="mini-chip" key={t.id}>{t.name}</span>
+                  ))}
+                  {tps.length > 5 && <span className="mini-chip more">+{tps.length - 5} more</span>}
+                </div>
+
+                <div className="course-card-actions">
+                  <Link to="/dashboard" className="btn btn-primary">Take a test →</Link>
+                  <Link to="/dashboard" className="btn btn-ghost">Study mode</Link>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </section>
 
@@ -121,45 +140,56 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="syllabus">
         <div className="section-head">
-          <h2>Topics covered in {course.code}</h2>
-          <p>Comprehensive coverage across all core areas you need to master.</p>
+          <h2>What each course covers</h2>
+          <p>Every topic below is a bank you can drill on its own.</p>
         </div>
-        {getCategories(course.id).length > 0 ? (
-          <div>
-            {/* Virtual span-all categories (e.g. "General") own no topics, so
-                they are not listed in this topic breakdown. */}
-            {getCategories(course.id).filter((c) => !c.spansAll).map((c) => (
-              <div key={c.id} className="topic-group">
-                <div className="topic-group-head">
-                  {c.name}
-                  <span className="cat-badge">{c.count === 0 ? 'Coming soon' : `${c.count} Qs`}</span>
-                </div>
-                {c.topics.length > 0 ? (
-                  <div className="topic-grid">
-                    {c.topics.map((t) => (
-                      <Link to="/dashboard" className="topic-chip" key={t.id} style={{ textDecoration: 'none' }}>
-                        <div className="t-name">{t.name}</div>
-                        <div className="t-count">{t.count}</div>
-                      </Link>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="muted" style={{ fontSize: 14 }}>Content coming soon — check back later.</p>
-                )}
+
+        {availableCourses.map((c) => {
+          const cats = getCategories(c.id).filter((x) => !x.spansAll)
+          return (
+            <div className="syllabus-block" key={c.id} style={{ '--accent': c.accent }}>
+              <div className="syllabus-head">
+                <span className="syllabus-code">{c.code}</span>
+                <span className="syllabus-name">{c.title}</span>
+                <span className="syllabus-count">{getQuestionCount(c.id)} Qs</span>
               </div>
-            ))}
-          </div>
-        ) : (
-          <div className="topic-grid">
-            {topics.map((t) => (
-              <Link to="/dashboard" className="topic-chip" key={t.id} style={{ textDecoration: 'none' }}>
-                <div className="t-name">{t.name}</div>
-              </Link>
-            ))}
-          </div>
-        )}
+
+              {cats.length > 0 ? (
+                cats.map((cat) => (
+                  <div key={cat.id} className="topic-group">
+                    <div className="topic-group-head">
+                      {cat.name}
+                      <span className="cat-badge">{cat.count === 0 ? 'Coming soon' : `${cat.count} Qs`}</span>
+                    </div>
+                    {cat.topics.length > 0 ? (
+                      <div className="topic-grid">
+                        {cat.topics.map((t) => (
+                          <Link to="/dashboard" className="topic-chip" key={t.id} style={{ textDecoration: 'none' }}>
+                            <div className="t-name">{t.name}</div>
+                            <div className="t-count">{t.count}</div>
+                          </Link>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="muted" style={{ fontSize: 14 }}>Content coming soon — check back later.</p>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <div className="topic-grid">
+                  {getTopics(c.id).map((t) => (
+                    <Link to="/dashboard" className="topic-chip" key={t.id} style={{ textDecoration: 'none' }}>
+                      <div className="t-name">{t.name}</div>
+                      <div className="t-count">{t.count}</div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          )
+        })}
       </section>
 
       <div className="cta-band">
