@@ -5,7 +5,7 @@
 // are ever reordered.
 
 import { existsSync } from 'fs'
-import { courses, topicMeta, questionBank, categoryMeta, componentSymbols } from '../src/data.js'
+import { courses, topicMeta, questionBank, categoryMeta, lectureMeta, componentSymbols } from '../src/data.js'
 
 const errors = []
 const warnings = []
@@ -29,6 +29,30 @@ const IMAGE_ALLOW = {
 // Courses that ship a category layer must declare it properly: every topic
 // needs a categoryId, every category needs at least one topic, and ids must be
 // unique. Checked generically so any new course is covered automatically.
+function checkLectureIntegrity(course, bank, errors) {
+  const lectures = lectureMeta[course.id]
+  if (!lectures || !lectures.length) return   // no lecture dimension for this course
+  const ids = new Set(lectures.map((l) => l.id))
+  if (ids.size !== lectures.length) errors.push(`${course.id}: duplicate lecture id`)
+  // Several lectures legitimately belong to the same day. The dayId must
+  // reference a real day topic, but sharing one is expected (3 lectures/day).
+  const dayIds = new Set((topicMeta[course.id] || []).map((t) => t.id))
+  for (const l of lectures) {
+    if (!l.name || !String(l.name).trim()) errors.push(`${course.id}/${l.id}: lecture needs a name`)
+    if (!l.dayId) errors.push(`${course.id}/${l.id}: lecture needs a dayId`)
+    else if (!dayIds.has(l.dayId)) errors.push(`${course.id}/${l.id}: unknown dayId '${l.dayId}'`)
+  }
+  const counted = {}
+  for (const q of bank) {
+    if (!q.lectureId) { errors.push(`${course.id}/${q.id}: missing lectureId`); continue }
+    if (!ids.has(q.lectureId)) errors.push(`${course.id}/${q.id}: unknown lectureId '${q.lectureId}'`)
+    counted[q.lectureId] = (counted[q.lectureId] || 0) + 1
+  }
+  for (const l of lectures) {
+    if (!counted[l.id]) errors.push(`${course.id}/${l.id}: lecture has no questions`)
+  }
+}
+
 function checkCategoryIntegrity(course, cats, topics, errors) {
   const seenCat = new Set()
   for (const c of cats) {
@@ -150,6 +174,7 @@ for (const course of courses) {
   // ---- category structure checks ----
   if (cats.length > 0) {
     checkCategoryIntegrity(course, cats, topicMeta[course.id] || [], errors)
+    checkLectureIntegrity(course, bank, errors)
     for (const t of topicMeta[course.id] || []) {
       if (!t.categoryId || !catIds.has(t.categoryId))
         errors.push(`${course.id}: topic '${t.id}' has unknown categoryId '${t.categoryId}'`)

@@ -1,4 +1,4 @@
-import { courses, topicMeta, questionBank, categoryMeta } from './data.js'
+import { courses, topicMeta, questionBank, categoryMeta, lectureMeta } from './data.js'
 
 // Fisher-Yates shuffle (returns a new array).
 export function shuffle(arr) {
@@ -63,18 +63,31 @@ export function getCategories(courseId) {
   })
 }
 
+// Lectures (a SWEP 200 concept): each question also carries a `lectureId`
+// pointing at the slide-titled lecture it came from. getLectures derives live
+// counts, grouped by their day for display.
+export function getLectures(courseId) {
+  const meta = lectureMeta[courseId] || []
+  const qs = questionBank[courseId] || []
+  return meta.map((l) => ({ ...l, count: qs.filter((q) => q.lectureId === l.id).length }))
+}
+
 export function getQuestionCount(courseId, topicId = null) {
   const qs = questionBank[courseId] || []
   return topicId ? qs.filter((q) => q.topicId === topicId).length : qs.length
 }
 
 // Build the actual ordered question set for a test.
-// mode: 'full' (all topics) | 'category' (one main category) | 'topic' (single topic)
+// mode: 'full' (all topics) | 'category' (one main category) | 'topic' (single
+// topic/day) | 'lecture' (a single slide-titled lecture)
 // count: number, or 'all'
-export function buildQuestionSet(courseId, { mode, topicId, categoryId, count }) {
+export function buildQuestionSet(courseId, { mode, topicId, categoryId, lectureId, count }) {
   let pool = questionBank[courseId] || []
   if (mode === 'topic' && topicId) {
     pool = pool.filter((q) => q.topicId === topicId)
+  }
+  if (mode === 'lecture' && lectureId) {
+    pool = pool.filter((q) => q.lectureId === lectureId)
   }
   // A span-all category ("General") deliberately does NOT filter: it shuffles
   // right across every topic in the course.

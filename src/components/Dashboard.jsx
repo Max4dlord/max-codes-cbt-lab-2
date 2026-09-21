@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { courses } from '../data.js'
-import { getTopics, getCategories, getQuestionCount, buildQuestionSet } from '../utils.js'
+import { getTopics, getCategories, getLectures, getQuestionCount, buildQuestionSet } from '../utils.js'
 import { loadSession, clearSession, saveSession } from '../progress.js'
 import { saveStudySession } from '../progress.js'
 
@@ -13,9 +13,9 @@ export default function Dashboard() {
   const existing = loadSession()
 
   const [courseId, setCourseId] = useState(courses.find((c) => c.available)?.id || courses[0].id)
-  const [mode, setMode] = useState('full') // 'full' | 'category' | 'topic'
-  const [categoryId, setCategoryId] = useState(null)
+  const [mode, setMode] = useState('full') // 'full' | 'topic' (SWEP day) | 'lecture'
   const [topicId, setTopicId] = useState(null)
+  const [lectureId, setLectureId] = useState(null)
   const [duration, setDuration] = useState(25)
   const [count, setCount] = useState(20)
   const [error, setError] = useState('')
@@ -32,14 +32,15 @@ export default function Dashboard() {
   const topics = getTopics(courseId)
   const categories = getCategories(courseId)
   const hasCats = categories.length > 0
+  const lectures = getLectures(courseId)
   const selectedTopic = topics.find((t) => t.id === topicId)
-  const selectedCategory = categories.find((c) => c.id === categoryId)
+  const selectedLecture = lectures.find((l) => l.id === lectureId)
 
   const poolSize =
     mode === 'topic' && topicId
       ? getQuestionCount(courseId, topicId)
-      : mode === 'category' && categoryId
-      ? selectedCategory?.count ?? 0
+      : mode === 'lecture' && lectureId
+      ? selectedLecture?.count ?? 0
       : getQuestionCount(courseId)
 
   function startTest() {
@@ -48,22 +49,18 @@ export default function Dashboard() {
       setError('This course is coming soon. Please check back later or choose an available course.')
       return
     }
-    if (mode === 'category' && !categoryId) {
-      setError('Please pick a main category to start a category-based test.')
-      return
-    }
     if (mode === 'topic' && !topicId) {
-      setError('Please pick a topic to start a topic-based test.')
+      setError('Please pick a SWEP day to start.')
       return
     }
-    if ((mode === 'category' && !categoryId) || (mode === 'topic' && !topicId)) {
-      setError('Please pick a selection to start.')
+    if (mode === 'lecture' && !lectureId) {
+      setError('Please pick a lecture to start.')
       return
     }
     const set = buildQuestionSet(courseId, {
       mode,
       topicId: mode === 'topic' ? topicId : null,
-      categoryId: mode === 'category' ? categoryId : null,
+      lectureId: mode === 'lecture' ? lectureId : null,
       count
     })
     if (set.length === 0) {
@@ -77,9 +74,9 @@ export default function Dashboard() {
       courseCode: course.code,
       courseTitle: course.title,
       topicId: mode === 'topic' ? topicId : null,
-      categoryId: mode === 'category' ? categoryId : null,
+      lectureId: mode === 'lecture' ? lectureId : null,
       topicName:
-        mode === 'topic' ? selectedTopic?.name : mode === 'category' ? selectedCategory?.name : null,
+        mode === 'topic' ? selectedTopic?.name : mode === 'lecture' ? selectedLecture?.name : null,
       mode,
       durationSec: duration * 60,
       remainingSec: duration * 60,
@@ -149,7 +146,6 @@ export default function Dashboard() {
     window.location.reload()
   }
 
-  const testCats = categories
   const studyCats = getCategories(studyCourseId)
   const studyHasCats = studyCats.length > 0
 
@@ -201,7 +197,7 @@ export default function Dashboard() {
             <label>Course</label>
             {courses.length > 1 ? (
               <div className="course-select-wrap">
-                <select value={courseId} onChange={(e) => { setCourseId(e.target.value); setCategoryId(null); setTopicId(null); setMode('full') }}>
+                <select value={courseId} onChange={(e) => { setCourseId(e.target.value); setTopicId(null); setLectureId(null); setMode('full') }}>
                   {courses.map((c) => (
                     <option key={c.id} value={c.id}>{c.code} — {c.title}{c.available ? '' : ' (soon)'}</option>
                   ))}
@@ -227,41 +223,45 @@ export default function Dashboard() {
             <label>Test mode</label>
             <div className="tabs">
               <button className={`tab ${mode === 'full' ? 'active' : ''}`} onClick={() => setMode('full')}>Full test (all topics)</button>
-              {hasCats && (
-                <button className={`tab ${mode === 'category' ? 'active' : ''}`} onClick={() => setMode('category')}>By main category</button>
+              <button className={`tab ${mode === 'topic' ? 'active' : ''}`} onClick={() => setMode('topic')}>Test across SWEP Days</button>
+              {lectures.length > 0 && (
+                <button className={`tab ${mode === 'lecture' ? 'active' : ''}`} onClick={() => setMode('lecture')}>Test per Lecture/Presentation/Slide</button>
               )}
-              <button className={`tab ${mode === 'topic' ? 'active' : ''}`} onClick={() => setMode('topic')}>Topic-based test</button>
             </div>
           </div>
 
-          {mode === 'category' && hasCats && (
+          {mode === 'lecture' && (
             <div className="field">
-              <label>Pick a main category</label>
-              <div className="cat-grid">
-                {testCats.map((c) => (
-                  <button
-                    key={c.id}
-                    className={`cat-chip ${categoryId === c.id ? 'selected' : ''} ${c.count === 0 ? 'empty' : ''}`}
-                    disabled={c.count === 0}
-                    onClick={() => setCategoryId(c.id)}
-                  >
-                    <div className="cat-name">{c.name}</div>
-                    <div className="cat-count">
-                      {c.count === 0
-                        ? 'Coming soon'
-                        : c.spansAll
-                        ? `${c.count} questions · everything, shuffled`
-                        : `${c.count} questions · ${c.topics.length} topics`}
+              <label>Pick a lecture / presentation</label>
+              {Array.from(new Set(lectures.map((l) => l.dayId))).map((dayId) => {
+                const day = topics.find((t) => t.id === dayId)
+                const dayLectures = lectures.filter((l) => l.dayId === dayId)
+                return (
+                  <div key={dayId} className="topic-group">
+                    {dayLectures.length > 0 && (
+                      <div className="topic-group-head">{day?.name || dayId}</div>
+                    )}
+                    <div className="lecture-grid">
+                      {dayLectures.map((l) => (
+                        <button
+                          key={l.id}
+                          className={`lecture-chip ${lectureId === l.id ? 'selected' : ''}`}
+                          onClick={() => setLectureId(l.id)}
+                        >
+                          <div className="lecture-name">{l.name}</div>
+                          <div className="lecture-meta">{l.speaker} · {l.count} Qs</div>
+                        </button>
+                      ))}
                     </div>
-                  </button>
-                ))}
-              </div>
+                  </div>
+                )
+              })}
             </div>
           )}
 
           {mode === 'topic' && (
             <div className="field">
-              <label>Pick a topic</label>
+              <label>Pick a SWEP day</label>
               {hasCats ? (
                 <div>
                   {categories.filter((c) => !c.spansAll).map((c) => (
@@ -321,8 +321,8 @@ export default function Dashboard() {
           <p className="info-line">
             {mode === 'topic' && topicId
               ? <>Pool for <strong>{selectedTopic?.name}</strong>: <strong>{poolSize}</strong> question(s) available.</>
-              : mode === 'category' && categoryId
-              ? <>Pool for <strong>{selectedCategory?.name}</strong>: <strong>{poolSize}</strong> question(s) available.</>
+              : mode === 'lecture' && lectureId
+              ? <>Pool for <strong>{selectedLecture?.name}</strong>: <strong>{poolSize}</strong> question(s) available.</>
               : <>Full course pool: <strong>{poolSize}</strong> question(s) available.</>}
             {' '}Questions will be shuffled on start.
           </p>
@@ -331,7 +331,7 @@ export default function Dashboard() {
 
           <div style={{ marginTop: 20 }}>
             <button className="btn btn-primary btn-lg" onClick={startTest} style={{ width: '100%' }}>
-              Start {mode === 'topic' ? 'topic' : mode === 'category' ? 'category' : 'full'} test →
+              Start {mode === 'topic' ? 'SWEP day' : mode === 'lecture' ? 'lecture' : 'full'} test →
             </button>
           </div>
           <p className="hint">

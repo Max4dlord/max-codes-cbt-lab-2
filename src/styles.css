@@ -980,3 +980,26 @@ select:focus, input:focus { outline: none; border-color: var(--primary); box-sha
   .mode-band { padding: 16px; gap: 12px; }
   .mode-band-icon { font-size: 1.4rem; }
 }
+
+/* ===========================================================================
+   DASHBOARD — per-lecture picker (SWEP 200 "Test per Lecture" mode)
+   =========================================================================== */
+.lecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+.lecture-chip {
+  display: flex; flex-direction: column; gap: 5px; align-items: flex-start;
+  text-align: left; padding: 14px 16px; border-radius: 12px;
+  border: 1px solid var(--border, #DCE2F2);
+  background: var(--card, #fff); cursor: pointer;
+  font-family: inherit; transition: border-color .15s ease, box-shadow .15s ease, transform .12s ease;
+}
+.lecture-chip:hover { border-color: var(--primary, #010080); box-shadow: 0 4px 14px rgba(0,0,0,.06); }
+.lecture-chip.selected {
+  border-color: var(--primary, #010080);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary, #010080) 18%, transparent);
+}
+.lecture-name { font-weight: 650; font-size: .92rem; line-height: 1.35; color: var(--text, #0E1436); }
+.lecture-meta { font-size: .76rem; color: var(--muted, #6b7280); }

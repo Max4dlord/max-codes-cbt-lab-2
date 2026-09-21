@@ -29,6 +29,7 @@ from swep200_day2 import QUESTIONS as DAY2  # noqa: E402
 from swep200_day3 import QUESTIONS as DAY3  # noqa: E402
 from swep200_day4 import QUESTIONS as DAY4  # noqa: E402
 from swep200_day5 import QUESTIONS as DAY5  # noqa: E402
+from swep200_lectures import LECTURES, question_lecture_map  # noqa: E402
 
 DATA = ROOT / 'src' / 'data.js'
 
@@ -525,9 +526,13 @@ def js(obj, indent):
 
 def strip_previous(src):
     """Remove a previously spliced SWEP 200 block, if any, for idempotency."""
+    # lectureMeta FIRST: its own `"swep200": [...]` would otherwise be consumed
+    # by the generic loop below and throw the one-to-one order off.
+    src = re.sub(r'export const lectureMeta = \{[\s\S]*?\n\}\n\n', '', src, count=1)
     # course entry
     src = re.sub(r'\n\s*\{\s*"id":\s*"swep200".*?\n\s*\},(?=\n\])', '', src, flags=re.S)
-    # categoryMeta / topicMeta / questionBank entries
+    # categoryMeta / topicMeta / questionBank entries (now the only remaining
+    # `"swep200": [...]` blocks, in that exact order).
     for key in ('categoryMeta', 'topicMeta', 'questionBank'):
         src = re.sub(r'\n  "swep200": \[.*?\n  \],(?=\n)', '', src, count=1, flags=re.S)
     return src
@@ -540,6 +545,15 @@ def main():
         src = strip_previous(src)
 
     questions = [q for group in QUESTION_SETS for q in group]
+
+    # Stamp each question with the lecture it belongs to (SWEP 200 has a
+    # per-lecture test mode that splits the bank by slide title).
+    lmap = question_lecture_map()
+    for q in questions:
+        lid = lmap.get(q['id'])
+        if lid is None:
+            raise SystemExit(f"{q['id']}: no lecture mapped")
+        q['lectureId'] = lid
 
     # Guard: every question must point at a declared topic, and every declared
     # category must end up owning at least one topic (the validator enforces
@@ -578,12 +592,19 @@ def main():
     src = src.replace('export const topicMeta = {\n',
                       'export const topicMeta = {\n  "swep200": ' + js(TOPICS, 2) + ',\n', 1)
 
-    # 4. questionBank -------------------------------------------------------
+    # 4. lectureMeta -------------------------------------------------------
+    # Inserted before questionBank purely for readability; order is irrelevant
+    # to the ES module imports. Each lecture carries the slide title it is
+    # identified by, plus the day it belongs to and its speaker.
+    src = src.replace('export const questionBank = {\n',
+                      'export const lectureMeta = {\n  "swep200": ' + js(LECTURES, 2) + ',\n}\n\nexport const questionBank = {\n', 1)
+
+    # 5. questionBank -------------------------------------------------------
     src = src.replace('export const questionBank = {\n',
                       'export const questionBank = {\n  "swep200": ' + js(questions, 2) + ',\n', 1)
 
     DATA.write_text(src)
-    print(f'✅ SWEP 200 spliced: {len(questions)} questions, '
+    print(f'✅ SWEP 200 spliced: {len(questions)} questions across {len(LECTURES)} lectures, '
           f'{len(TOPICS)} topic(s), {len(cats)} categor(ies)')
 
 
